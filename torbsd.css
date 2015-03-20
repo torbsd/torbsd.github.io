@@ -1,8 +1,8 @@
 body {
   position: relative;
-  background-color: white;
-  color: black;
-  font: small "Andale Mono", "Courier", monospace;
+  background-color: black;
+  color: green;
+  font: medium "Andale Mono", "Courier", monospace;
   margin: 0;
   padding: 0;
 }

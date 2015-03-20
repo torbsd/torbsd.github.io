@@ -41,13 +41,14 @@ Tor relays could be devastating. We want to see a stronger Tor
 network, and we believe one critical ingredient for that is operating
 system diversity.
 
-There are three aspects of the TDP’s approach
+There are three aspects of the TDP’s approach:
 
 * to increase the number of Tor relays running BSDs, focused on the server/network layer
-*  to develop a solid, Tor-compatible browser easily portable to other POSIX-based operating systems, focused on the client layer
-*  to engage the broader BSD community about the Tor anonymity network
+* to develop a solid, Tor-compatible browser easily portable to other POSIX-based operating systems, focused on the client layer
+* to engage the broader BSD community about the Tor anonymity network
 
 Currently, the TDP implementation plan includes:
+
 * documentation for configuring FreeBSD and OpenBSD relays
 * the creation of an OpenBSD port for the Tor Browser Bundle
 * various events for engaging BSD users about Tor, including birds-of-a-feather sessions and informal meetings

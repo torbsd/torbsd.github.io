@@ -13,6 +13,10 @@ RM?=rm
 # or
 #   $ make mydoc.html
 
+PAGES=index.html
+
+all: $(PAGES)
+
 index.html: index.md
 
 ## The rest of this file makes the above possible...
