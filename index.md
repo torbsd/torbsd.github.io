@@ -54,6 +54,6 @@ Currently, the TDP implementation plan includes:
 * various events for engaging BSD users about Tor, including birds-of-a-feather sessions and informal meetings
 
 We look forward to inquiries and involvement in TDP. Please use this
-contact form form for any communications.
+[contact form](/contact.html) form for any communications.
 
 `last updated: 2015-03-20`
