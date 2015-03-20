@@ -85,6 +85,17 @@ ul li {
   line-height: 0.99;
 }
 
+dl {
+    margin-left: 1.5em;
+}
+dl dt {
+    font-weight: bold;
+}
+
+dl dd {
+    font-style: italic;
+}
+
 tt {
   font-size: 100%;
 }

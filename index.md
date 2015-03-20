@@ -7,10 +7,10 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 # The Tor BSD Diversity Project (TDP) #
 
-**GitHub**
+GitHub
 :    [https://github.com/torbsd](https://github.com/torbsd)
 
-**Contact**
+Contact
 :    [https://torbsd.github.io/contact.html](https://torbsd.github.io/contact.html)
 
 The Tor-BSD Diversity Project is an initiative that seeks to extend
