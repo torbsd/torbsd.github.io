@@ -5,7 +5,7 @@ Editors: attila
 Date: 2015-03-20
 Note: These lines at the top are multimarkdown metadata; leave them.
 
-# The Tor BSD Diversity Project #
+# The Tor BSD Diversity Project (TDP) #
 
 The Tor-BSD Diversity Project is an initiative that seeks to extend
 the use of the BSD Unix operating systems in the
