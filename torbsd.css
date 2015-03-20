@@ -86,14 +86,23 @@ ul li {
 }
 
 dl {
-    margin-left: 1.5em;
-}
-dl dt {
-    font-weight: bold;
+    margin: 1.5em;
 }
 
 dl dd {
+    display: inline;
     font-style: italic;
+    margin: 0;
+}
+dl dd:after {
+    display: block;
+    content: '';
+}
+dl dt {
+    display: inline-block;
+    font-weight: bold;
+    min-width: 100px;
+    border-right: 1px dotted black;
 }
 
 tt {
