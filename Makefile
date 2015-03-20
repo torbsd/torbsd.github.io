@@ -17,7 +17,7 @@ PAGES=index.html
 
 all: $(PAGES)
 
-index.html: index.md
+index.html: index.md torbsd.css
 
 ## The rest of this file makes the above possible...
 ## ... but only YOU can make it necessary.
