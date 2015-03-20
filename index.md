@@ -56,4 +56,4 @@ Currently, the TDP implementation plan includes:
 We look forward to inquiries and involvement in TDP. Please use this
 contact form form for any communications.
 
-`last updated: 03/20/15`
+`last updated: 2015-03-20`
