@@ -1,8 +1,8 @@
-# TDP FreeBSD & OpenBSD Guides for Tor Relays
+# TDP FreeBSD & OpenBSD Guides for Tor Relays #
 
 TDP produces two guides to building and configuring Tor relays for FreeBSD and OpenBSD.
 
-There are two versions of each. The first is considered 'production' quality and can be printed, translated, etc.  The second is considered 'development' in that future ideas are noted and confirmed.
+There are two versions of each. The first is considered 'production' quality and can be printed, translated, etc.  The second is considered 'development' in that future ideas are noted, tested and confirmed.
 
 ## FreeBSD Tor Relay Guide
 
@@ -15,4 +15,3 @@ development:
 production: http://5uipwxqcyvj7wvhc.onion/
 
 development:
-
