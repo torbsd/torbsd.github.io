@@ -13,7 +13,7 @@ RM?=rm
 # or
 #   $ make mydoc.html
 
-PAGES=index.html contact.html relay-guides.html footer.html
+PAGES=index.html contact.html relay-guides.html footer.html faq.html
 
 all: $(PAGES)
 
