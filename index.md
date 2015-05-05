@@ -58,6 +58,7 @@ There are three aspects of the TDP’s approach:
 Currently, the TDP implementation plan includes:
 
 * documentation for configuring FreeBSD and OpenBSD relays
+[https://torbsd.github.io/relay-guides.html](https://torbsd.github.io/relay-guides.html)
 
 * the creation of an OpenBSD port for the Tor Browser Bundle
 
