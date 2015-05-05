@@ -1,3 +1,10 @@
+Title: TDP Tor BSD Relay Guides
+CSS: torbsd.css
+Author: gman999
+Editors:
+Date: 20150505
+Note: These lines at the top are multimarkdown metadata; leave them.
+
 # TDP FreeBSD & OpenBSD Guides for Tor Relays #
 
 TDP produces two guides to building and configuring Tor relays for FreeBSD and OpenBSD.
