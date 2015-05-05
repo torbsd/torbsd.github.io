@@ -13,13 +13,17 @@ RM?=rm
 # or
 #   $ make mydoc.html
 
-PAGES=index.html contact.html
+PAGES=index.html contact.html relay-guides.html footer.html
 
 all: $(PAGES)
 
 index.html: index.md
 
 contact.html: contact.md
+
+footer.html: footer.md
+
+relay-guides.html: relay-guides.md
 
 ## The rest of this file makes the above possible...
 ## ... but only YOU can make it necessary.
