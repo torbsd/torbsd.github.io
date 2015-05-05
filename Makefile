@@ -25,7 +25,7 @@ footer.html: footer.md
 
 relay-guides.html: relay-guides.md
 
-faq.html : faq.md
+faq.html: faq.md
 
 ## The rest of this file makes the above possible...
 ## ... but only YOU can make it necessary.
