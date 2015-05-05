@@ -57,7 +57,7 @@ There are three aspects of the TDP’s approach:
 
 Current TDP work includes:
 
-* [documentation for configuring FreeBSD and OpenBSD relays](/relay-guides.html)
+* [guides for configuring FreeBSD and OpenBSD relays](/relay-guides.html)
 
 * [the creation of an OpenBSD port for the Tor Browser Bundle](https://github.com/torbsd/openbsd-ports)
 
