@@ -55,11 +55,11 @@ There are three aspects of the TDP’s approach:
 
 * to engage the broader BSD community about the Tor anonymity network
 
-Currently, the TDP implementation plan includes:
+Current TDP work includes:
 
-* documentation for configuring FreeBSD and OpenBSD relays
+* [documentation for configuring FreeBSD and OpenBSD relays](/relay-guides.html)
 
-* the creation of an OpenBSD port for the Tor Browser Bundle
+* [the creation of an OpenBSD port for the Tor Browser Bundle](https://github.com/torbsd/openbsd-ports)
 
 * various events for engaging BSD users about Tor, including birds-of-a-feather sessions and informal meetings
 
