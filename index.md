@@ -13,6 +13,8 @@ GitHub
 Contact
 :    [https://torbsd.github.io/contact.html](https://torbsd.github.io/contact.html)
 
+[Frequently Asked Questions] (/faq.html)
+
 The Tor-BSD Diversity Project is an initiative that seeks to extend
 the use of the BSD Unix operating systems in the
 [Tor public anonymity network](http://www.torproject.org).
