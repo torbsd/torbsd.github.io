@@ -56,6 +56,6 @@ Current __TDP__ work includes:
 * organizing various events for engaging BSD users about Tor, including birds-of-a-feather sessions and informal meetings
 
 We look forward to inquiries and involvement in __TDP__. Please use this
-[contact form](contact.html) form for any communications.
+[contact form](contact.html) for any communications.
 
 `last updated: 2015-05-06`
