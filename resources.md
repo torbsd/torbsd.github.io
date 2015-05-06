@@ -16,8 +16,9 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 * [Tor-BSD Mailing List](http://lists.nycbug.org/mailman/listinfo/tor-bsd) hosted by the [New York City *BSD User Group](http://www.nycbug.org)
 
-* Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twvlhadsu5oznuux.onion)    
-Birds-of-a-Feather session at vBSDCon in fall 2013 and NYCBSDCon 2014
+* Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twvlhadsu5oznuux.onion)
+
+Birds-of-a-Feather session at vBSDCon in fall 2013 and NYCBSDCon 2014.
 
 ### The Danger of Monocultures in Technology ###
 
