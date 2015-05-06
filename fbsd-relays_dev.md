@@ -9,6 +9,8 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## Introduction ##
 
+This document is meant to be a staging arena for additions to the [production version](/fbsd-relays.html), in addition to notes for more advanced FreeBSD users.
+
 [FreeBSD](https://www.freebsd.org) is a Unix-derived operating system focused on reliability and performance. FreeBSD maintains a large user base in the backend infrastructures of the world, not to mention in products and services such as Juniper, Netflix, NetApp and Isilon. Widely used systems such as pfSense and FreeNAS are also based on FreeBSD.
 
 FreeBSD makes an ideal platform for running a Tor relay. This guide aims to provide insights for those interested in running a Tor relay on FreeBSD. It assumes a certain level of basic comfort with traditional Unix tools such as editors and starting and stopping daemons, not to mention navigating through the install process and general setup.  This is not a full step-by-step instructional for those who are new to the Unix command-line.
