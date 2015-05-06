@@ -7,7 +7,7 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 # The Tor BSD Diversity Project (TDP) #
 
-| [GitHub Repositories](https://github.com/torbsd) | [Frequently Asked Questions] (faq.html) |  [Contact](contact.html) | (TDP As a Hidden Service) (http://bptfp7pywclht26.onion) |
+| [GitHub Repositories](https://github.com/torbsd) | [Frequently Asked Questions] (faq.html) |  [Contact](contact.html) | [TDP Hidden Service] (http://bptfp7pywclht26.onion) |
 
 The __Tor BSD Diversity Project (TDP)__ is an initiative that seeks to extend
 the use of the BSD Unix operating systems in the
