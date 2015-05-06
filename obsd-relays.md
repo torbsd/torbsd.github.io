@@ -1,3 +1,10 @@
+Title: OpenBSD Guide to Configuring Tor Relays
+CSS: torbsd.css
+Author: gman999
+Editors:
+Date: 20150505
+Note: These lines are at the top are multimarkdown metadata; leave them.
+
 # OpenBSD Guide to Configuring Tor Relays #
 
 ## Introduction ##
