@@ -19,7 +19,7 @@ It is important to note that the BSD projects are unlike the GNU/Linux projects.
 
 The uniting aspects for all the BSDs is the simple BSD/ISC/MIT license and the aim to stick to the tenets of classic Unix, such as portability, modularity and interoperability.
 
-## How many Tor relays are running a BSD ##
+## How many Tor relays are running a BSD? ##
 
 The number and percentage of public Tor relays varies. In the fall of 2014, almost 6% of relays were running a BSD. As of May 2015, the percentage is about 3.8%. Web sites such as [BlutMagie](http://torstatus.blutmagie.de) provides a full list of relays with a simple query form to determine the exact current amount among other data.
 
