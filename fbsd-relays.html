@@ -1,0 +1,410 @@
+<h1 id="freebsdtoconfiguringtorrelays">FreeBSD to Configuring Tor Relays</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p><a href="https://www.freebsd.org">FreeBSD</a> is a Unix-derived operating system focused on reliability and performance. FreeBSD maintains a large user base in the backend infrastructures of the world, not to mention in products and services such as Juniper, Netflix, NetApp and Isilon. Widely used systems such as pfSense and FreeNAS are also based on FreeBSD.</p>
+
+<p>FreeBSD makes an ideal platform for running a Tor relay. This guide aims to provide insights for those interested in running a Tor relay on FreeBSD. It assumes a certain level of basic comfort with traditional Unix tools such as editors and starting and stopping daemons, not to mention navigating through the install process and general setup. This is not a full step-by-step instructional for those who are new to the Unix command-line.</p>
+
+<p>For installing applications, the FreeBSD ports system is the best method, as it maintains the most current versions, as opposed to the new pkg system.</p>
+
+<p>There are version FreeBSD branches in regular development. It is recommended to use the most recent production release, which is the 10-branch.</p>
+
+<p>This guide is based on the FreeBSD 10-branch.</p>
+
+<h3 id="syntax">Syntax</h3>
+
+<p>The shell is denoted with % and a single tab indent.</p>
+
+<blockquote>
+<p>% this is a shell command</p>
+</blockquote>
+
+<p>File names and paths are italicized.</p>
+
+<p><em>/usr/local/etc/tor/torrc</em></p>
+
+<p>Standard out, or what the computer is displaying is indicated in bold. For instance, if Tor starts successfully, as a client, this line would appear in the log file:</p>
+
+<p><strong>Nov 22 22:14:20.000 [notice] Bootstrapped 100%: Done</strong></p>
+
+<p>File additions are indicated with a plus symbol with a single tab indent.</p>
+
+<blockquote>
+<p>+add this line=1</p>
+</blockquote>
+
+<p>FreeBSD maintains documentation in the <a href="https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/index.html" title="FreeBSD Handbook">FreeBSD Handbook</a> and in the <a href="https://www.freebsd.org/cgi/man.cgi" title="manual pages">manual pages</a>. The man pages are also available directly on a FreeBSD system. Parenthesis after a word indicates the relevant manual page number. To access the man page for ntpd(8), for instance, type:</p>
+
+<blockquote>
+<p>% man 8 ntpd</p>
+</blockquote>
+
+<h2 id="thequickandshortversion">The Quick and Short Version</h2>
+
+<p>These are the basic steps to configure a Tor relay with FreeBSD. This will create an operational relay. For more detailed instructions and for additional tips on securing and optimizing the relay</p>
+
+<ol>
+<li><p>Install FreeBSD 10 and update to most recent -STABLE version</p></li>
+<li><p>Update the ports tree under <em>/usr/ports</em></p></li>
+</ol>
+
+<blockquote>
+<p>% svnlite update /usr/ports</p>
+</blockquote>
+
+<ol>
+<li>Install either the stable or development version of Tor from the ports tree.</li>
+</ol>
+
+<blockquote>
+<p>% cd /usr/ports/security/tor &amp;&amp; make install clean</p>
+</blockquote>
+
+<p>or</p>
+
+<blockquote>
+<p>% cd /usr/ports/security/tor-devel &amp;&amp; make install clean</p>
+</blockquote>
+
+<ol>
+<li>Copy the torrc.sample file to torrc</li>
+</ol>
+
+<blockquote>
+<p>% cp /usr/local/etc/tor/torrc.sample /usr/local/etc/tor/torrc</p>
+</blockquote>
+
+<ol>
+<li><p>Edit <em>/usr/local/etc/tor/torrc</em> appropriately</p></li>
+<li><p>Create the appropriate log file with the correct permission:</p></li>
+</ol>
+
+<blockquote>
+<p>% touch /var/log tor &amp;&amp; chown _tor:_tor /var/log/tor &amp;&amp; chmod 600 /var/log/tor</p>
+</blockquote>
+
+<ol>
+<li>Add &#8220;tor_enable=YES&#8221; in the /etc/rc.conf file</li>
+</ol>
+
+<blockquote>
+<p>% echo &#8220;tor_enable=YES&#8221; &gt;&gt;/etc/rc.conf</p>
+</blockquote>
+
+<ol>
+<li>Enable random IP ID numbers, and make it permanent by adding to /etc/sysctl.conf:</li>
+</ol>
+
+<blockquote>
+<p>% sysctl net.inet.ip.random_id=1</p>
+
+<p>% echo &#8220;net.inet.ip.random_id=1&#8221; &gt;&gt;/etc/sysctl.conf</p>
+</blockquote>
+
+<ol>
+<li>Start Tor</li>
+</ol>
+
+<blockquote>
+<p>% /usr/local/etc/rc.d/tor start</p>
+</blockquote>
+
+<ol>
+<li>Watch the log to make sure Tor starts correctly:</li>
+</ol>
+
+<blockquote>
+<p>% tail -f /var/log/tor</p>
+</blockquote>
+
+<ol>
+<li>Reboot to confirm that Tor starts correctly.</li>
+</ol>
+
+<h2 id="someadditionalconfigurationconsiderationsoptions">Some Additional Configuration Considerations &amp; Options</h2>
+
+<h2 id="installingfreebsd">Installing FreeBSD</h2>
+
+<p>select ports tree</p>
+
+<p>Further Configuration After the First Boot</p>
+
+<p>Using RAM-Based Filesystems</p>
+
+<p>/var/log
+/tmp
+/var/tmp
+tmpfs(5)
+md(4)</p>
+
+<h2 id="encryptingtheswapfile">Encrypting the Swap File</h2>
+
+<p>By default, FreeBSD does not encrypt the swap file. The steps to implement an encrypted swap file is simple:</p>
+
+<p>steps to implement an encrypted swap file is simple:</p>
+
+<ol>
+<li>Identify the swap file partition with swapinfo(8)</li>
+</ol>
+
+<blockquote>
+<p>% /usr/sbin/swapinfo</p>
+</blockquote>
+
+<p><strong>Device 1K-blocks Used Avail Capacity</strong></p>
+
+<p><strong>/dev/ada0p3 4194304 0 2194304 0%</strong></p>
+
+<p>In that example, our swap file is <em>/dev/ada0p3</em>.</p>
+
+<ol>
+<li>Now clear the current contents of the swap file with dd(1)</li>
+</ol>
+
+<blockquote>
+<p>% dd if=/dev/random of=/dev/ada0p3 bs=1m</p>
+</blockquote>
+
+<ol>
+<li>Either gdbe(8) or geli(8) can be used to encrypt the swap file. In this case, geli(8) is used by adding the .eli suffix to the swap file entry in <em>/etc/fstab</em> so that it reads similar to this:</li>
+</ol>
+
+<h1 id="devicemountpointfstypeoptionsdumppass">Device Mountpoint FStype Options Dump Pass</h1>
+
+<p>/dev/ada0p3.eli none swap sw 0 0</p>
+
+<p>By default, geli(8) employs AES/128-bit encryption. This can be changed by referring to geli(8) man page.</p>
+
+<p>After the system is rebooted, encryption of the swap file can be confirmed with swapinfo(8):</p>
+
+<p><strong>Device 1K-blocks Used Avail Capacity</strong></p>
+
+<p><strong>/dev/ada0p3.eli 4194304 0 2194304 0%</strong></p>
+
+<blockquote>
+<p>% dd if=/dev/</p>
+</blockquote>
+
+<h2 id="someinitialsysctl8changes">Some Initial sysctl(8) Changes</h2>
+
+<blockquote>
+<p>security.bsd.see_other_uids=1</p>
+</blockquote>
+
+<p>By default, FreeBSD does not enable random IP identification numbers. To enable for a running system add the following line to the /etc/sysctl.conf file:</p>
+
+<blockquote>
+<p>net.inet.ip.random_id=1</p>
+</blockquote>
+
+<p>For enabling that sysctl(8) setting, type the following:</p>
+
+<blockquote>
+<p>% sysctl net.inet.random.ip_id=1</p>
+</blockquote>
+
+<p>To confirm this setting, type:</p>
+
+<blockquote>
+<p>% sysctl net.inet.ip.random_id</p>
+</blockquote>
+
+<p>The output should display the following line:</p>
+
+<blockquote>
+<p>net.inet.ip.random_id: 1</p>
+</blockquote>
+
+<h2 id="keepingtheportstreeupdated">Keeping the Ports Tree Updated</h2>
+
+<p>svnlite(1) is a light-weight version of Subversion, the primary tool for updating the FreeBSD source code on a local machine. It is integrated in the base of FreeBSD as-of the 10 branch. Subversion commands work with svnlite(1) as they would with the svn command.</p>
+
+<p>To update the ports tree with svnlite(1), where MIRROR refers to the FreeBSD Subversion mirror chosen (us-east, us-west, europe):</p>
+
+<p>svnlite co svn://svn0.MIRROR.freebsd.org/ports/head</p>
+
+<p>Once the /usr/ports directory has been fully populated with svnlite(1), the ports tree can be updated with:</p>
+
+<p>svnlite update /usr/ports</p>
+
+<h2 id="keepingaccuratetimewithntpd8">Keeping Accurate Time with ntpd(8)</h2>
+
+<p>Accurate time is an important requirement of a Tor relay. On FreeBSD, ntpd(8) is in the base operating system. Note that ntpdate(8) is depracated and its function is replaced with <i>ntpd_sync_on_start</i>. To enable and run:</p>
+
+<p>Edit /etc/rc.conf and add the following lines:</p>
+
+<blockquote>
+<p>ntpd_enable=&#8220;YES&#8221;</p>
+
+<p>ntpd_sync_on_start=&#8220;YES&#8221;</p>
+</blockquote>
+
+<p>To start ntpd</p>
+
+<blockquote>
+<p>% /etc/rc.d/ntpd start</p>
+</blockquote>
+
+<p>ntpd(8) status can be checked by viewing the /var/db/ntpd.drift file, or with the command:</p>
+
+<blockquote>
+<p>% ntpq -p</p>
+</blockquote>
+
+<p>Alternately, the ports collection contains OpenBSD&#8217;s OpenNTPD.</p>
+
+<h2 id="installingtor">Installing Tor</h2>
+
+<p>Currently, the preferred method for installing FreeBSD applications is the ports system. The ports tree contains the most current versions of FreeBSD applications. In the future, the new FreeBSD package system, known as pkg, should be synchronized with the port versions. In the case of embedded hardware on i386 or amd64 architectures, pkg may be the preferred method. For arm-based hardware such as the RaspberryPi or BeagleBone, there is no pkg repository yet available. Therefore, for ARM-based systems, either install Tor from ports or create a custom repository.</p>
+
+<blockquote>
+<p>/etc/rc.conf: tor_enable=&#8220;YES&#8221;</p>
+</blockquote>
+
+<p>/var/log/tor</p>
+
+<p>chown _tor:_tor</p>
+
+<p>chmod 600</p>
+
+<h2 id="filepathsfortoronfreebsd">File Paths for Tor on FreeBSD</h2>
+
+<p>Tor configuration file: <em>/usr/local/etc/tor/torrc</em></p>
+
+<p>Tor executible: <em>/usr/local/etc/rc.d/tor</em></p>
+
+<p>Tor data, including private key, statistics and Hidden Services: <em>/var/db/tor</em></p>
+
+<p>Tor log file: <em>/var/log/tor</em></p>
+
+<h2 id="startingrestartingandstoppingtor">Starting, Restarting and Stopping Tor</h2>
+
+<p>/usr/local/etc/rc.d/tor [start|stop|restart|</p>
+
+<p>Notes on the FreeBSD /usr/local/etc/tor/torrc</p>
+
+<h2 id="firewallingwithpf4">Firewalling with pf(4)</h2>
+
+<p>obfsproxy and the problem</p>
+
+<p>security/obfsproxy</p>
+
+<h2 id="keepingfreebsdupdated">Keeping FreeBSD Updated</h2>
+
+<p>svnlite co svn://svn0.MIRROR.freebsd.org/stable/10</p>
+
+<p>svnlite update /usr/src</p>
+
+<p>Rebuild kernel as per instructions in FreeBSD Handbook</p>
+
+<p>Tweaks</p>
+
+<p>sysctls and determining changes</p>
+
+<p>limits</p>
+
+<p>netstat -s</p>
+
+<h2 id="utilizinghardwarecryptographicdevices">Utilizing Hardware Cryptographic Devices</h2>
+
+<p>hardware crypto.. .glxsb</p>
+
+<h2 id="otheroptionalchangestoconsider">Other Optional Changes to Consider</h2>
+
+<h2 id="buildingaleanerlighterfreebsd">Building a Leaner, Lighter FreeBSD</h2>
+
+<p>Like most operating systems, FreeBSD has grown in size with increased hardware support and features. The most obvious direction is to minimize the kernel size, but that is beyond the scope of this document. However, there are many features than can be easily removed using the src.conf(5) file. The src.conf file sets parameters for compiling the FreeBSD source code. By default, there is not /etc/src.conf file. It can be manually created, with variables listed in the man page. Ultimately, a smaller operating system means a smaller attack surface for a adversary to attack.</p>
+
+<p>For those building embedded systems on small disks, a comprehensive src.conf(5) file can be useful.</p>
+
+<p>For a Tor relay running on server hardware, there are some obvious variables to set.</p>
+
+<p>Most modern hardware do not have a floppy disk.
+</p></p>
+
+<p>
+<i>
+WITHOUT_FLOPPY=yes
+</i>
+</p>
+
+<p>
+In our example, we used pf(4) for a firewall, which makes ipfw(4) and ipfilter(1) superfluous.
+</p>
+
+<p>
+<ul>
+<i>
+<li>WITHOUT_IPFW=yes</li>
+<li>WITHOUT_IPFILTER=yes</li>
+</li>
+</i>
+</ul>
+</p>
+
+<p>
+Other src.conf variables to consider include:
+</p>
+
+<ul>
+<i>
+<li>WITHOUT_IPX=yes</li>
+<li>WITHOUT_BLUETOOTH=yes</li>
+<li>WITHOUT_GAMES=yes</li>
+<li>WITHOUT_LPR=yes</li>
+<li>WITHOUT_WIRELESS=yes</li>
+<li>WITHOUT_WPA_SUPPLICANT_EAPOL=yes</li>
+</i>
+</ul>
+
+<p>
+security/OpenSSL as opposed to base version of OpenSSL: test it.  but you probably update ports more anyways /usr/bin/openssl v /usr/local/bin/openssl
+</p>
+
+<p>/etc/make.conf
+either:</p>
+
+<p>WITH_OPENSSL_BASE=yes (default)
+WITH_OPENSSL_PORTS=yes</p>
+
+<p>disabled ciphers for ssl&#8230; /etc/make.conf</p>
+
+<p>dailies: read them.</p>
+
+<p>
+It is critical to remember that setting an incorrect variable can disable a working system.  Set variables in the src.conf(5) file carefully.  You have been warned. A proposed default copy of /etc/src.conf resides <a href="here"></a>.
+</p>
+
+<h2 id="possibleerrorswarnings">Possible Errors/Warnings</h2>
+
+<p>Nov 21 07:46:56.000 [notice] {GENERAL} We were built to run on a 64-bit CPU, with OpenSSL 1.0.1 or later, but with a version of OpenSSL that apparently lacks accelerated support for the NIST P&#8211;224 and P&#8211;256 groups. Building openssl with such support (using the enable-ec_nistp_64_gcc_128 option when configuring it) would make ECDH much faster.
+</p></p>
+
+<p>Dec 19 09:26:11.000 [notice] We weren&#8217;t able to find support for all of the TLS ciphersuites that we wanted to advertise. This won&#8217;t hurt security, but it might make your Tor (if run as a client) more easy for censors to block.</p>
+
+<p>Dec 19 09:26:11.000 [notice] To correct this, use a more recent OpenSSL, built without disabling any secure ciphers or features.</p>
+
+<h2 id="futureadditions">Future Additions</h2>
+
+<p>to ZFS or not</p>
+
+<p>recommended network cards</p>
+
+<p>enabling IDEA with /etc/src.conf</p>
+
+<p>hardware crypto with glxsb, aesni</p>
+
+<h2 id="resources">Resources</h2>
+
+<p><a href="http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/configtuning-sysctl.html">FreeBSD Handbook 12.9 Tuning with sysctl(8)</a></p>
+
+<p><a href="http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/configtuning-kernel-limits.html">FreeBSD Handbook 12.11 Tuning Kernel Limits</a></p>
+
+<p><a href="https://wiki.freebsd.org/SystemTuning">SystemTuning FreeBSD Wiki</a></p>
+
+<p><a href="https://wiki.freebsd.org/NetworkPerformanceTuning">Network Performance Tuning on the FreeBSD Wiki</a></p>
+
+<p><a href="https://wiki.freebsd.org/PerformanceTweaks">Performance Tweaks on the FreeBSD Wiki</a></p>
+
+<p><a href="https://wiki.freebsd.org/Performance">Performance on the FreeBSD Wiki</a></p>

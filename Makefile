@@ -13,7 +13,7 @@ RM?=rm
 # or
 #   $ make mydoc.html
 
-PAGES=index.html contact.html relay-guides.html footer.html faq.html
+PAGES=index.html contact.html relay-guides.html footer.html faq.html fbsd-relays.html obsd-relays.html
 
 all: $(PAGES)
 
@@ -26,6 +26,10 @@ footer.html: footer.md
 relay-guides.html: relay-guides.md
 
 faq.html: faq.md
+
+fbsd-relays.html: fbsd-relays.md
+
+obsd-relays.html: obsd-relays.md
 
 ## The rest of this file makes the above possible...
 ## ... but only YOU can make it necessary.
