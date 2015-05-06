@@ -15,7 +15,7 @@ Contact
 
 [Frequently Asked Questions] (/faq.html)
 
-The Tor-BSD Diversity Project is an initiative that seeks to extend
+The __Tor BSD Diversity Project (TDP)__ is an initiative that seeks to extend
 the use of the BSD Unix operating systems in the
 [Tor public anonymity network](http://www.torproject.org).
 
@@ -49,7 +49,7 @@ Tor relays could be devastating. We want to see a stronger Tor
 network, and we believe one critical ingredient for that is operating
 system diversity.
 
-There are three aspects of the TDP’s approach:
+There are three aspects of the __TDP’s__ approach:
 
 * to increase the number of Tor relays running BSDs, focused on the server/network layer
 
@@ -57,7 +57,7 @@ There are three aspects of the TDP’s approach:
 
 * to engage the broader BSD community about the Tor anonymity network
 
-Current TDP work includes:
+Current __TDP__ work includes:
 
 * [guides for configuring FreeBSD and OpenBSD relays](/relay-guides.html)
 
@@ -65,7 +65,7 @@ Current TDP work includes:
 
 * various events for engaging BSD users about Tor, including birds-of-a-feather sessions and informal meetings
 
-We look forward to inquiries and involvement in TDP. Please use this
+We look forward to inquiries and involvement in __TDP__. Please use this
 [contact form](/contact.html) form for any communications.
 
 `last updated: 2015-05-05`
