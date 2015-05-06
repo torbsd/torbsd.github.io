@@ -1,11 +1,11 @@
-Title: FreeBSD Guide to Configuring Tor Relays
+Title: Development Version of FreeBSD Guide to Configuring Tor Relays
 CSS: torbsd.css
 Author: gman999
 Editors:
 Date: 20150505
 Note: These lines at the top are multimarkdown metadata; leave them.
 
-# FreeBSD Guide to Configuring Tor Relays #
+# Development Version: FreeBSD Guide to Configuring Tor Relays #
 
 ## Introduction ##
 
