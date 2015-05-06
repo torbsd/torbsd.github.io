@@ -17,12 +17,12 @@ Contributions for NetBSD, DragonFly BSD, etc., are welcomed.
 
 ## FreeBSD Tor Relay Guide
 
-production: http://6nk4dja27p4mn6xb.onion/
+production: [https://torbsd.github.io/fbsd-relays.html](https://torbsd.github.io/fbsd-relays.html)
 
 development:
 
 ## OpenBSD Tor Relay Guide
 
-production: http://5uipwxqcyvj7wvhc.onion/
+production: [https://torbsd.github.io/obsd-relays.html](https://torbsd.github.io/obsd-relays.html)
 
 development:
