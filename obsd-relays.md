@@ -9,9 +9,9 @@ Note: These lines are at the top are multimarkdown metadata; leave them.
 
 ## Introduction ##
 
-[OpenBSD] is a Unix-derived operating system focused on security and the adherence to standards. It is considered among the most secure systems available. OpenBSD developers rebuilt SSH from the ground up, until the omnipresent adoption of OpenSSH. OpenBSD developers are now building LibreSSL from scratch, frustrated by the accumulated laundry list of OpenSSL vulnerabilities.
+[OpenBSD] is a Unix-derived operating system focused on security and the adherence to standards. It is considered among the most secure systems available. OpenBSD developers rebuilt SSH from the ground up, until the omnipresent adoption of OpenSSH. OpenBSD developers are now building LibreSSL as a replacement for OpenSSL, frustrated by the accumulated laundry list of vulnerabilities.
 
-With its default install, OpenBSD is not a high-bandwidth relay due to its secure configuration. Allowing a large number of open files on a system is a short route to a compromised device. This guide provides a number of simple yet fundamental changes to the default OpenBSD install.
+With its default install, OpenBSD is not a high-bandwidth relay due to its secure configuration. Allowing a large number of open files on a system is a short route to a compromised device. This guide provides a number of simple changes to the default OpenBSD install.
 
 For installing applications, OpenBSD's [recommended method] is the [pkg_add(1)] system, as opposed to using ports build from source. pkg_add uses pre-compiled binary files with set options. Rarely should a user have an issue with the defaults. There are cases in which a more experienced OpenBSD user would opt for the ports system.
 
@@ -94,9 +94,9 @@ RAM-based disks such as tmpfs or are useful for avoiding writes to the hard disk
 
 #### Layout of Tor Files on OpenBSD ###
 
-The torrc file is located in /etc/tor/.
+The torrc file is located in /etc/tor/torrc.
 
-sample file is in /usr/local/share/examples/tor/torrc.sample
+The sample file is in /usr/local/share/examples/tor/torrc.sample
 
 Log
 
@@ -132,7 +132,7 @@ By default, OpenBSD enables encrypted swap in /etc/sysctl.conf:
 
 `#vm.swapencrypt.enable=0        # 0=Do not encrypt pages that go to swap`
 
-Removing the # disables the encrypting of swap.
+Removing the # __disables__ the encrypting of swap.
 
 ## Future ##
 
