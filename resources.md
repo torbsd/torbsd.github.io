@@ -8,8 +8,6 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 # The Tor BSD Diversity Project (TDP) #
 
 | [GitHub Repositories](https://github.com/torbsd) | [Frequently Asked Questions
-] (faq.html) |  [Contact](contact.html) | [Resources](resources.html) | [TDP Hid
-den Service] (http://bptfp7pywclht26.onion) |
-
+] (faq.html) |  [Contact](contact.html) | [Resources](resources.html) | [TDP Hidden Service] (http://bptfp7pywclht26.onion) |
 ## Resources ##
 
