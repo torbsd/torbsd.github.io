@@ -13,7 +13,7 @@
 
 <h1 id="frequentlyaskedquestions">Frequently Asked Questions</h1>
 
-<p>Below are some typical questions about <strong>TDP</strong>. Feel free to <a href="/contact.html">contact us</a> for questions or comments not mentioned.</p>
+<p>Below are some typical questions about <strong>Tor BSD Diversity Project</strong>. Feel free to <a href="/contact.html">contact us</a> for questions or comments not mentioned.</p>
 
 <h2 id="iftdpisconcernedaboutoperatingsystemdiversitywhydoesitjustfocusonbsdsystemsandnototheroperatingsystemssuchasilluminos">If <strong>TDP</strong> is concerned about operating system diversity, why does it just focus on BSD Systems, and not other operating systems such as Illuminos?</h2>
 
@@ -21,13 +21,27 @@
 
 <p>In other words, if someone wanted to take <strong>TDP</strong> code and materials and utilize it to spawn a Plan 9 or BeOS project with the same eye on Tor diversity, <strong>TDP</strong> groundwork should make that task easier.</p>
 
-<h2 id="howmanytorrelaysarerunningabsdvariant">How many Tor relays are running a BSD variant?</h2>
+<p>It is important to note that the BSD projects are unlike the GNU/Linux projects. While the Linux distributions share a common kernel, each BSD project maintains its own kernel and userland, and determines the third-party applications available. Each BSD project is distinct even though each ultimately originates with 386BSD Unix from the early 1990s. There is and continues to be a good deal of code-sharing between the projects, including many kernel features and device drivers. However over time, the major BSDs have chosen different paths causing whole aspects of their systems to diverge from each other. For instance, each of the BSDs has ported OpenBSD&#8217;s packet filter. Yet in the 1990&#8217;s, all the BSDs used ipf by default. FreeBSD continues to provide ipfw, and NetBSD recently created npf, another firewall alternative.</p>
+
+<p>The uniting aspects for all the BSDs is the simple BSD/ISC/MIT license and the aim to stick to the tenets of classic Unix, such as portability, modularity and interoperability.</p>
+
+<h2 id="howmanytorrelaysarerunningabsd">How many Tor relays are running a BSD</h2>
 
 <p>The number and percentage of public Tor relays varies. In the fall of 2014, almost 6% of relays were running a BSD. As of May 2015, the percentage is about 3.8%.</p>
 
 <h2 id="doesntthetorwebsitedownloadpagelistatorbrowserforgnulinuxthatalsolistsunixbsd">Doesn&#8217;t the <a href="https://www.torproject.org/download/download-easy.html.en">Tor web site download page</a> list a Tor Browser for GNU/Linux, that also lists &#8220;Unix, BSD&#8221;?</h2>
 
-<p>That is true, but inaccurate. The current Tor download does not work on any of the BSDs for a variety of reasons.</p>
+<p>That is true, but inaccurate unfortunately. The current Tor download does not work on any of the BSDs for a variety of reasons.</p>
+
+<h2 id="irunatorrelayonsuchandsuchlinux.howhardwoulditbetorunarelayonabsdforme">&quot;I run a Tor relay on such and such Linux. How hard would it be to run a relay on a BSD for me?</h2>
+
+<p>On the surface of a BSD system, command-line interactions are similar to most Linux distros. While not the default shell on any BSD, bash is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves.</p>
+
+<p>The BSD install processes vary, but after a few tries, it&#8217;s hardly a difficult task.</p>
+
+<p>Installing a package isn&#8217;t difficult. To install a package on FreeBSD, for instance, the user just has to type &#8220;pkg install <package-name>. For OpenBSD, it&#8217;s just &#8221;pkg_add <package-name>&quot;.</p>
+
+<p>With a little time and patience, running a BSD relay shouldn&#8217;t be difficult for any Linux user beyond those brand-new to computing.</p>
 
 <h2 id="whydidtorbrowserworkstartwithopenbsdisntfreebsdmorepopular">Why did Tor Browser work start with OpenBSD? Isn&#8217;t FreeBSD more popular?</h2>
 
