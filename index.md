@@ -21,20 +21,13 @@ the use of the BSD Unix operating systems in the
 
 BSD Unix is an open source operating system family noted for its
 security and stability. The major BSD projects include
-[FreeBSD](http://www.freebsd.org), [NetBSD](http://www.netbsd.org) and
-[OpenBSD](http://www.openbsd.org), with a number of tangential
-projects including [pfSense](http://www.pfsense.org),
-[FreeNAS](http://www.freenas.org) and
-[PC-BSD](http://www.pcbsd.org). BSD software such as
-[OpenSSH](http://www.openssh.org) is the default communication tool
-for innumerable devices on the internet. And BSD software is renowned
-for its role in internet operations since its earliest days.
+[FreeBSD](http://www.freebsd.org), [NetBSD](http://www.netbsd.org), 
+[OpenBSD](http://www.openbsd.org) and [DragonFly BSD](http://www.dragonflybsd.org), with a number of tangential projects including [pfSense](http://www.pfsense.org), [FreeNAS](http://www.freenas.org) and [PC-BSD](http://www.pcbsd.org). BSD software such as [OpenSSH](http://www.openssh.org) is the default communication tool for innumerable devices on the internet. And BSD software is renowned for its role in internet infrastructure since its earliest days.
 
-The Tor Project plays a critical role in anonymity and privacy
+The Tor Project continues to play a critical role in anonymity and privacy
 solutions. With ever-increasing surveillance and censorship, Tor is a
 vital tool, and the project has grown by leaps-and-bounds since its
-origin as a US Naval Labs project in the 1990’s. Hundreds of thousands
-rely on Tor’s operation in a world filled with threats to anonymity
+origin as a US Naval Labs project in the 1990’s. Hundreds of thousands rely on Tor’s operation in a world filled with threats to anonymity
 and privacy.
 
 While recognizing that the Tor Project is an admirable project that is
@@ -44,7 +37,7 @@ Achilles’ Heel. Monocultures in nature are dangerous, as
 vulnerabilities are held in common across a broad spectrum. Diversity
 means single vulnerabilities are less likely to harm the entire
 ecosystem. In a global anonymity network, monocultures are potentially
-disastrous. A single kernel vulnerability in GNU/Linux that impacting
+disastrous. A single kernel vulnerability in GNU/Linux impacting
 Tor relays could be devastating. We want to see a stronger Tor
 network, and we believe one critical ingredient for that is operating
 system diversity.
@@ -61,11 +54,11 @@ Current __TDP__ work includes:
 
 * [guides for configuring FreeBSD and OpenBSD relays](/relay-guides.html)
 
-* [the creation of an OpenBSD port for the Tor Browser Bundle](https://github.com/torbsd/openbsd-ports)
+* [the creation of an OpenBSD Tor Browser port](https://github.com/torbsd/openbsd-ports)
 
-* various events for engaging BSD users about Tor, including birds-of-a-feather sessions and informal meetings
+* organizing various events for engaging BSD users about Tor, including birds-of-a-feather sessions and informal meetings
 
 We look forward to inquiries and involvement in __TDP__. Please use this
 [contact form](/contact.html) form for any communications.
 
-`last updated: 2015-05-05`
+`last updated: 2015-05-06`
