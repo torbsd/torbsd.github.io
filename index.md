@@ -13,7 +13,7 @@ GitHub
 Contact
 :    [https://torbsd.github.io/contact.html](https://torbsd.github.io/contact.html)
 
-| _[Frequently Asked Questions]_ (/faq.html) |  [Contact](/contact.html) |
+| [Frequently Asked Questions] (/faq.html) |  [Contact](/contact.html) |
 
 The __Tor BSD Diversity Project (TDP)__ is an initiative that seeks to extend
 the use of the BSD Unix operating systems in the
