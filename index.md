@@ -17,24 +17,21 @@ Contact
 
 The __Tor BSD Diversity Project (TDP)__ is an initiative that seeks to extend
 the use of the BSD Unix operating systems in the
-[Tor public anonymity network](http://www.torproject.org).
+[Tor public anonymity network](https://www.torproject.org).
 
 BSD Unix is an open source operating system family noted for its
 security and stability. The major BSD projects include
-[FreeBSD](http://www.freebsd.org), [NetBSD](http://www.netbsd.org), 
-[OpenBSD](http://www.openbsd.org) and [DragonFly BSD](http://www.dragonflybsd.org), with a number of tangential projects including [pfSense](http://www.pfsense.org), [FreeNAS](http://www.freenas.org) and [PC-BSD](http://www.pcbsd.org). BSD software such as [OpenSSH](http://www.openssh.org) is the default communication tool for innumerable devices on the internet. And BSD software is renowned for its role in internet infrastructure since its earliest days.
+[FreeBSD](https://www.freebsd.org), [NetBSD](https://www.netbsd.org), 
+[OpenBSD](http://www.openbsd.org) and [DragonFly BSD](http://www.dragonflybsd.org), with a number of tangential projects including [pfSense](https://www.pfsense.org), [FreeNAS](https://www.freenas.org) and [PC-BSD](https://www.pcbsd.org). BSD software such as [OpenSSH](http://www.openssh.com) is the default communication tool for innumerable devices on the internet. And BSD software is renowned for its role in internet infrastructure since its earliest days.
 
 The Tor Project continues to play a critical role in anonymity and privacy
-solutions. With ever-increasing surveillance and censorship, Tor is a
+solutions. With increasing surveillance and censorship, Tor is a
 vital tool, and the project has grown by leaps-and-bounds since its
 origin as a US Naval Labs project in the 1990’s. Hundreds of thousands rely on Tor’s operation in a world filled with threats to anonymity
 and privacy.
 
-While recognizing that the Tor Project is an admirable project that is
-open source and well-documented with a vibrant community, we also
-worry about the overwhelming GNU/Linux monoculture that is an
-Achilles’ Heel. Monocultures in nature are dangerous, as
-vulnerabilities are held in common across a broad spectrum. Diversity
+While recognizing that the Tor Project is vibrant open source project
+with a vibrant community, we are also concerned with the overwhelming GNU/Linux monoculture that is an Achilles’ Heel. Monocultures in nature are dangerous, as vulnerabilities are held in common across a broad spectrum. Diversity
 means single vulnerabilities are less likely to harm the entire
 ecosystem. In a global anonymity network, monocultures are potentially
 disastrous. A single kernel vulnerability in GNU/Linux impacting
@@ -52,13 +49,13 @@ There are three aspects of the __TDP’s__ approach:
 
 Current __TDP__ work includes:
 
-* [guides for configuring FreeBSD and OpenBSD relays](/relay-guides.html)
+* [guides for configuring FreeBSD and OpenBSD relays](relay-guides.html)
 
 * [the creation of an OpenBSD Tor Browser port](https://github.com/torbsd/openbsd-ports)
 
 * organizing various events for engaging BSD users about Tor, including birds-of-a-feather sessions and informal meetings
 
 We look forward to inquiries and involvement in __TDP__. Please use this
-[contact form](/contact.html) form for any communications.
+[contact form](contact.html) form for any communications.
 
 `last updated: 2015-05-06`
