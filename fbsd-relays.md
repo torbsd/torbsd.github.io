@@ -83,11 +83,11 @@ or
 
 >% /usr/local/etc/rc.d/tor start
 
-10. Watch the log to make sure Tor starts correctly:
+10. Use tail(4) to confirm Tor starts correctly:
 
 >% tail -f /var/log/tor
 
-11. Reboot to confirm that Tor starts correctly.
+11. Reboot to confirm that Tor starts after a reboot.
 
 ## Some Additional Configuration Considerations & Options ##
 
@@ -131,7 +131,7 @@ In that example, our swap file is */dev/ada0p3*.
 #Device		Mountpoint	FStype	Options	Dump	Pass#
 /dev/ada0p3.eli	none		swap	sw	0	0
 
-By default, geli(8) employs AES/128-bit encryption. This can be changed by referring to geli(8) man page.
+By default, geli(8) employs AES/128-bit encryption. The geli(8) man page offers other options.
 
 After the system is rebooted, encryption of the swap file can be confirmed with swapinfo(8):
 
@@ -178,7 +178,7 @@ svnlite update /usr/ports
 
 ## Keeping Accurate Time with ntpd(8) ##
 
-Accurate time is an important requirement of a Tor relay. On FreeBSD, ntpd(8) is in the base operating system. Note that ntpdate(8) is depracated and its function is replaced with <i>ntpd_sync_on_start</i>. To enable and run:
+Accurate time is an important requirement of a Tor relay. On FreeBSD, ntpd(8) is in the base operating system. Note that ntpdate(8) is deprecated and its function is replaced with <i>ntpd_sync_on_start</i>. To enable and run:
 
 Edit /etc/rc.conf and add the following lines:
 

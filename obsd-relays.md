@@ -42,11 +42,11 @@ Parenthesis after a word indicates the relevant manual page number. To access
 
 >$ man 8 ntpd
 
-### Some Preliminary Issues: OpenBSD -STABLE or -CURRENT? Ports or Packages? ###
+### Some Preliminary Issues: OpenBSD -STABLE -CURRENT or snapshots? Ports or Packages? ###
 
 OpenBSD's -STABLE branch is released every six months. The -CURRENT branch, in the form of snapshots, are updated as often, sometimes on a daily basis. Upgrading OpenBSD is easiest with either physical or serial console access to the server. Without immediate access, the -STABLE version is the recommended route.
 
-OpenBSD's [pkg_add] system is reliable and errors are rare. For most users, the [ports] system is not recommended. However, it is important to note that OpenBSD does not include the alpha version of Tor in its packages. In one case, OpenBSD did use the alpha version as its default package due to a significant Tor vulnerability.
+OpenBSD's [pkg_add] system is reliable and errors are rare. For most users, the [ports] system is not recommended. However, it is important to note that OpenBSD does not include the alpha or unstable versions of Tor in its packages. In one case, OpenBSD did use the alpha version as its default package due to a significant Tor vulnerability.
 
 ## The Quick and Short Version ##
 
@@ -90,7 +90,7 @@ Installing OpenBSD
 
 System Configuration
 
-RAM-based disks such as tmpfs or are useful for avoiding writes to the hard disk, which limits residual data after reboots and can increase the longevity of the hard disk.
+RAM-based disks such as tmpfs or are useful for avoiding writes to the hard disk, which limits residual data after reboots and can increase the longevity of sensitive disk media, particularly compact flash cards.
 
 #### Layout of Tor Files on OpenBSD ###
 
@@ -111,8 +111,6 @@ $ cat /etc/rc.conf.local
 >ntpd_flags="-s"
 
 >sndiod_flags=NO
-
->smtpd_flags=NO
 
 /etc/sysctl.conf
 

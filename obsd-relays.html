@@ -54,11 +54,11 @@
 <p>$ man 8 ntpd</p>
 </blockquote>
 
-<h3 id="somepreliminaryissues:openbsd-stableor-currentportsorpackages">Some Preliminary Issues: OpenBSD -STABLE or -CURRENT? Ports or Packages?</h3>
+<h3 id="somepreliminaryissues:openbsd-stable-currentorsnapshotsportsorpackages">Some Preliminary Issues: OpenBSD -STABLE -CURRENT or snapshots? Ports or Packages?</h3>
 
 <p>OpenBSD&#8217;s -STABLE branch is released every six months. The -CURRENT branch, in the form of snapshots, are updated as often, sometimes on a daily basis. Upgrading OpenBSD is easiest with either physical or serial console access to the server. Without immediate access, the -STABLE version is the recommended route.</p>
 
-<p>OpenBSD&#8217;s [pkg_add] system is reliable and errors are rare. For most users, the <a href="http://www.openbsd.org/faq/faq15.html#Ports" title="ports system">ports</a> system is not recommended. However, it is important to note that OpenBSD does not include the alpha version of Tor in its packages. In one case, OpenBSD did use the alpha version as its default package due to a significant Tor vulnerability.</p>
+<p>OpenBSD&#8217;s [pkg_add] system is reliable and errors are rare. For most users, the <a href="http://www.openbsd.org/faq/faq15.html#Ports" title="ports system">ports</a> system is not recommended. However, it is important to note that OpenBSD does not include the alpha or unstable versions of Tor in its packages. In one case, OpenBSD did use the alpha version as its default package due to a significant Tor vulnerability.</p>
 
 <h2 id="thequickandshortversion">The Quick and Short Version</h2>
 
@@ -125,7 +125,7 @@
 
 <p>System Configuration</p>
 
-<p>RAM-based disks such as tmpfs or are useful for avoiding writes to the hard disk, which limits residual data after reboots and can increase the longevity of the hard disk.</p>
+<p>RAM-based disks such as tmpfs or are useful for avoiding writes to the hard disk, which limits residual data after reboots and can increase the longevity of sensitive disk media, particularly compact flash cards.</p>
 
 <h4 id="layoutoftorfilesonopenbsd">Layout of Tor Files on OpenBSD</h4>
 
@@ -147,8 +147,6 @@
 <p>ntpd_flags=&#8220;-s&#8221;</p>
 
 <p>sndiod_flags=NO</p>
-
-<p>smtpd_flags=NO</p>
 </blockquote>
 
 <p>/etc/sysctl.conf</p>
