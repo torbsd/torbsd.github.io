@@ -21,6 +21,14 @@
 
 <p>In other words, if someone wanted to take <strong>TDP</strong> code and materials and utilize it to spawn a Plan 9 or BeOS project with the same eye on Tor diversity, <strong>TDP</strong> groundwork should make that task easier.</p>
 
+<h2 id="howmanytorrelaysarerunningabsdvariant">How many Tor relays are running a BSD variant?</h2>
+
+<p>The number and percentage of public Tor relays varies. In the fall of 2014, almost 6% of relays were running a BSD. As of May 2015, the percentage is about 3.8%.</p>
+
+<h2 id="doesntthetorwebsitedownloadpagelistatorbrowserforgnulinuxthatalsolistsunixbsd">Doesn&#8217;t the <a href="https://www.torproject.org/download/download-easy.html.en">Tor web site download page</a> list a Tor Browser for GNU/Linux, that also lists &#8220;Unix, BSD&#8221;?</h2>
+
+<p>That is true, but inaccurate. The current Tor download does not work on any of the BSDs for a variety of reasons.</p>
+
 <h2 id="whydidtorbrowserworkstartwithopenbsdisntfreebsdmorepopular">Why did Tor Browser work start with OpenBSD? Isn&#8217;t FreeBSD more popular?</h2>
 
 <p>FreeBSD may very well be more widely used, but operating system usage statistics are wildly untrustworthy, particularly when the BSD license doesn&#8217;t require users to publicize using BSD code.</p>
@@ -28,6 +36,26 @@
 <p>While all the BSDs aim to be standards compliant, OpenBSD is the most orthodox in this respect. The tail(4) command won&#8217;t even allow -f with multiple files. But if it runs on OpenBSD and is accepted into the base or ports trees, it is likely the easiest operating system to port software <strong>from</strong>. There are popular examples to mention, such as OpenSSH, arc4random, OpenNTPD and for those who only read Slashdot.org over the past year, LibreSSL is quickly gaining momentum as another piece of easily portable OpenBSD code.</p>
 
 <p>With a production-quality OpenBSD Tor Browser port, FreeBSD, NetBSD, DragonFly BSD, etc., ports should be trivial.</p>
+
+<h2 id="whatdoyouhopetoaccomplishwithportingthetorbrowsertoopenbsd">What do you hope to accomplish with porting the Tor Browser to OpenBSD?</h2>
+
+<h2 id="whatarethehurdlestoportingtorbrowsertoopenbsd">What are the hurdles to porting Tor Browser to OpenBSD?</h2>
+
+<h2 id="willthetorbrowserbeintheopenbsdportstreeandavailableasapackage">Will the Tor Browser be in the OpenBSD ports tree and available as a package?</h2>
+
+<h2 id="besidesportingtorbrowsertoopenbsdandtherelayguideswhatotheractivitiesdoestdplooktoconduct">Besides porting Tor Browser to OpenBSD and the relay guides, what other activities does <strong>TDP</strong> look to conduct?</h2>
+
+<p><strong>A presence at BSD Events</strong> There are a number of BSD conferences that take place around the globe, such as <a href="http://www.bsdcan.org">BSDCan in Ottawa, Canada</a>, <a href="http://www.eurobsdcon.org">EuroBSDCon</a>, <a href="http://www.meetbsd.com">MeetBSD in California</a> and alternates with <a href="http://www.meetbsd.org">MeetBSD in Polska</a> and <a href="http://www.nycbsdcon.org">NYCBSDCon in New York City</a>. These are opportune places to interact face-to-face with the broader BSD community with presentations and birds-of-a-feather sessions (BoFs). To date, BoFs has been conducted at vBSDCon in the fall of 2013 and NYCBSDCon in February 2014. We are planning another BoF at BSDCan in June 2014, and look to provide an informational flier about <strong>TDP</strong>.</p>
+
+<p><strong>BSD Relay Configuration Video Tutorials</strong> For many people, written tutorials are a fine medium for assistance in configuring BSD relays. However, for some, especially groups of people, professional video tutorials are more appropriate.</p>
+
+<p><strong>Relay Guide Translations</strong> While English tends to dominate technical documentation, it is hardly the only language. We are looking to keep current translations of the &#8216;production&#8217; versions of our relay configuration guides online and available. This could also increase the geographical diversity of the Tor network beyond its concentrations in the US, Canada and Europe.</p>
+
+<p><strong>High-Bandwidth BSD Relays</strong> An immediate way to diversify available Tor relay bandwidth is to operate several relays. At a certain moment in May 2015, only two of the top thirty relays, in terms of bandwidth, are not running GNU/Linux. Both are running FreeBSD. Building and maintaining at least two high-bandwidth relays, one running OpenBSD and the other FreeBSD, with a minimum bandwidth of 20Mbps would change this situation in the short-term. More importantly, these relays would allow further testing and optimizing of high-bandwidth Tor relays running BSDs.</p>
+
+<p><strong>A FreeBSD Port of the Tor Browser</strong> After the OpenBSD Tor Browser port is completed, the next client target would be FreeBSD, which should also make PC-BSD an easy porting task.</p>
+
+<p>We have additional ideas in consideration for <strong>TDP</strong>, and will be regularly assessing and reassessing new ones. Ultimately, <strong>TDP</strong> needs more involvement of users and developers to have the impact we are aiming for.</p>
 
 </body>
 </html>
