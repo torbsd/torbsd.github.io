@@ -15,9 +15,9 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p><a href="http://www.openbsd.org" title="OpenBSD Project">OpenBSD</a> is a Unix-derived operating system focused on security and the adherence to standards. It is considered among the most secure systems available. OpenBSD developers rebuilt SSH from the ground up, until the omnipresent adoption of OpenSSH. OpenBSD developers are now building LibreSSL from scratch, frustrated by the accumulated laundry list of OpenSSL vulnerabilities.</p>
+<p><a href="http://www.openbsd.org" title="OpenBSD Project">OpenBSD</a> is a Unix-derived operating system focused on security and the adherence to standards. It is considered among the most secure systems available. OpenBSD developers rebuilt SSH from the ground up, until the omnipresent adoption of OpenSSH. OpenBSD developers are now building LibreSSL as a replacement for OpenSSL, frustrated by the accumulated laundry list of vulnerabilities.</p>
 
-<p>With its default install, OpenBSD is not a high-bandwidth relay due to its secure configuration. Allowing a large number of open files on a system is a short route to a compromised device. This guide provides a number of simple yet fundamental changes to the default OpenBSD install.</p>
+<p>With its default install, OpenBSD is not a high-bandwidth relay due to its secure configuration. Allowing a large number of open files on a system is a short route to a compromised device. This guide provides a number of simple changes to the default OpenBSD install.</p>
 
 <p>For installing applications, OpenBSD&#8217;s <a href="http://www.openbsd.org/faq/faq15.html#Intro" title="The OpenBSD packages and ports system">recommended method</a> is the <a href="http://www.openbsd.org/faq/faq15.html#PkgMgmt" title="pkg_add system">pkg_add(1)</a> system, as opposed to using ports build from source. pkg_add uses pre-compiled binary files with set options. Rarely should a user have an issue with the defaults. There are cases in which a more experienced OpenBSD user would opt for the ports system.</p>
 
@@ -129,9 +129,9 @@
 
 <h4 id="layoutoftorfilesonopenbsd">Layout of Tor Files on OpenBSD</h4>
 
-<p>The torrc file is located in /etc/tor/.</p>
+<p>The torrc file is located in /etc/tor/torrc.</p>
 
-<p>sample file is in /usr/local/share/examples/tor/torrc.sample</p>
+<p>The sample file is in /usr/local/share/examples/tor/torrc.sample</p>
 
 <p>Log</p>
 
@@ -171,7 +171,7 @@
 
 <p><code>#vm.swapencrypt.enable=0        # 0=Do not encrypt pages that go to swap</code></p>
 
-<p>Removing the # disables the encrypting of swap.</p>
+<p>Removing the # <strong>disables</strong> the encrypting of swap.</p>
 
 <h2 id="future">Future</h2>
 
