@@ -9,5 +9,10 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 | [GitHub Repositories](https://github.com/torbsd) | [Frequently Asked Questions
 ] (faq.html) |  [Contact](contact.html) | [Resources](resources.html) | [TDP Hidden Service] (http://bptfp7pywclht26.onion) |
+
 ## Resources ##
+
+### BSDs and Tor Diversity ###
+
+### The Danger of Monocultures in Technology ###
 
