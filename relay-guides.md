@@ -19,10 +19,10 @@ Contributions for NetBSD, DragonFly BSD, etc., are welcomed.
 
 production: [https://torbsd.github.io/fbsd-relays.html](https://torbsd.github.io/fbsd-relays.html)
 
-development:
+development: [https://torbsd.github.io/fbsd-relays_dev.html](https://torbsd.github.io/fbsd-relays_dev.html)
 
 ## OpenBSD Tor Relay Guide
 
 production: [https://torbsd.github.io/obsd-relays.html](https://torbsd.github.io/obsd-relays.html)
 
-development:
+development: [https://torbsd.github.io/obsd-relays_dev.html](https://torbsd.github.io/obsd-relays_dev.html) 
