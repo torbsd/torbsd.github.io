@@ -7,16 +7,16 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 # The Tor BSD Diversity Project (TDP) #
 
-| [GitHub Repositories](https://github.com/torbsd) | [Frequently Asked Questions] (faq.html) |  [Contact](contact.html) | [TDP Hidden Service] (http://bptfp7pywclht26.onion) |
+| [GitHub Repositories](https://github.com/torbsd) | [Frequently Asked Questions] (faq.html) |  [Contact](contact.html) | [Resources](resources.html) | [TDP Hidden Service] (http://bptfp7pywclht26.onion) |
 
-The __Tor BSD Diversity Project (TDP)__ is an initiative that seeks to extend
+The __Tor BSD Diversity Project (TDP)__ is an initiative seeking to extend
 the use of the BSD Unix operating systems in the
 [Tor public anonymity network](https://www.torproject.org).
 
 BSD Unix is an open source operating system family noted for its
 security and stability. The major BSD projects include
 [FreeBSD](https://www.freebsd.org), [NetBSD](https://www.netbsd.org), 
-[OpenBSD](http://www.openbsd.org) and [DragonFly BSD](http://www.dragonflybsd.org), with a number of tangential projects including [pfSense](https://www.pfsense.org), [FreeNAS](https://www.freenas.org) and [PC-BSD](https://www.pcbsd.org). BSD software such as [OpenSSH](http://www.openssh.com) is the default communication tool for innumerable devices on the internet. And BSD software is renowned for its role in internet infrastructure since its earliest days.
+[OpenBSD](http://www.openbsd.org) and [DragonFly BSD](http://www.dragonflybsd.org), with a number of tangential projects including [pfSense](https://www.pfsense.org), [FreeNAS](https://www.freenas.org) and [PC-BSD](https://www.pcbsd.org). BSD software such as [OpenSSH](http://www.openssh.com) is the default communication tool for innumerable devices on the internet. BSD software is renowned for its role in internet infrastructure since its earliest days.
 
 The Tor Project continues to play a critical role in anonymity and privacy
 solutions. With increasing surveillance and censorship, Tor is a
