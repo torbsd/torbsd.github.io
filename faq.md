@@ -27,7 +27,7 @@ The number and percentage of public Tor relays varies. In the fall of 2014, almo
 
 That is true, but inaccurate unfortunately. The current Tor download does not work on any of the BSDs for a variety of reasons.
 
-## "I run a Tor relay on such and such Linux. How hard would it be to run a relay on a BSD for me? ##
+## "I run a Tor relay on such and such Linux. How hard would it be to run a relay on a BSD for me?" ##
 
 On the surface of a BSD system, command-line interactions are similar to most Linux distros. While not the default shell on any BSD, bash is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves.
 
