@@ -1,5 +1,5 @@
 Title: TDP handout for BSD events
-CSS: torbsd.css
+CSS: ../torbsd.css
 Author: gman999
 Editors: 
 Date: 20150507
