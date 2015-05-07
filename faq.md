@@ -29,7 +29,7 @@ Run a BSD relay, use and review the relay guides, contribute input.
 
 As a BSD Tor Browser is available, start using and testing it. Submit comments and questions.
 
-## If __TDP__ is concerned about operating system diversity, why does it just focus on BSD Systems, and not other operating systems such as Illuminos? ##
+## "If __TDP__ is concerned about operating system diversity, why does it just focus on BSD Systems, and not other operating systems such as Illuminos?" ##
 
 __TDP__ focuses on the BSDs due to our backgrounds and experiences. It is critical to note that our code and materials respect established standards, and everything we produce has the 2-clause BSD license. __TDP__ is commited to portability and interoperability. We are building an open ecosystem.
 
@@ -39,11 +39,11 @@ It is important to note that unlike the GNU/Linux distributions, the BSD project
 
 The uniting aspects for all the BSDs is the preference for the simplicity of BSD/ISC/MIT licensing and adherence to the guiding tenets of classic Unix, such as portability, modularity and interoperability.
 
-## How many Tor relays are running a BSD? ##
+## "How many Tor relays are running a BSD?" ##
 
 The number and percentage of public Tor relays fluctuates. In the fall of 2014, almost 6% of relays were running a BSD. As of May 2015, the percentage is about 3.8%. Web sites such as [BlutMagie](http://torstatus.blutmagie.de) provide a full list of relays with a simple query form to determine the exact current number among other data.
 
-## Doesn't the [Tor web site download page](https://www.torproject.org/download/download-easy.html.en) list a Tor Browser for GNU/Linux, that also supports "Unix, BSD"? ##
+## "Doesn't the [Tor web site download page](https://www.torproject.org/download/download-easy.html.en) list a Tor Browser for GNU/Linux, that also supports 'Unix, BSD'?" ##
 
 That is true, but unfortunately inaccurate. The current Tor download does not work on any of the BSDs for a variety of reasons.
 
@@ -57,7 +57,7 @@ Installing a package isn't difficult either. To install the rsync package on Fre
 
 With a little time and patience, running a BSD relay shouldn't be difficult for any Linux user beyond those brand-new to computing. For someone comfortable in the shell, editing files, and so on, it should be simple enough.
 
-## Why did Tor Browser work start with OpenBSD? On the desktop at least, isn't FreeBSD more popular? ##
+## "Why did Tor Browser work start with OpenBSD? On the desktop at least, isn't FreeBSD more popular?" ##
 
 FreeBSD may very well be more widely used, but operating system usage statistics are wildly untrustworthy, particularly when the BSD license doesn't require users to publicize using BSD code.
 
@@ -65,13 +65,13 @@ While all the BSDs aim to be standards compliant, OpenBSD is the most orthodox i
 
 With a production-quality OpenBSD Tor Browser port, FreeBSD, NetBSD, DragonFly BSD, etc., ports should be trivial. Not to mention any other POSIX-based operating systems.
 
-## What do you hope to accomplish with porting the Tor Browser to OpenBSD? ##
+## "What do you hope to accomplish with porting the Tor Browser to OpenBSD?" ##
 
-## What are the hurdles to porting Tor Browser to OpenBSD? ##
+## "What are the hurdles to porting Tor Browser to OpenBSD?" ##
 
-## Will the Tor Browser be in the OpenBSD ports tree and available as a package? ##
+## "Will the Tor Browser be in the OpenBSD ports tree and available as a package?" ##
 
-## Beyond porting Tor Browser to OpenBSD and the relay guides, what other activities does __TDP__ look to conduct? ##
+## "Beyond porting Tor Browser to OpenBSD and the relay guides, what other activities does __TDP__ look to conduct?" ##
 
 We have a long list of potential projects, some of which already commenced years ago. This is a list in flux, and we only consider it a loose guide.
 
