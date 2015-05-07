@@ -36,11 +36,11 @@ While recognizing that the Tor Project is dynamic open source project with a vib
 
 * Organizing various events for engaging *BSD users about Tor, including birds-of-a-feather sessions and informal meetings
 
-## __TDP__ has a number of other projects in the pipeline, but ultimately our success depends on the broader *BSD community involvement. ##
+## __TDP__ success depends on broader *BSD community involvement. ##
 
-* Join the Tor-BSD mailing list at http://lists.nycbug.org/mailman/listinfo/tor-bsd
+* Join NYC*BUG's Tor-BSD mailing list http://lists.nycbug.org/mailman/listinfo/tor-bsd
 
-* Clone github.com/torbsd/opebsd-ports and start testing and contributing
+* Clone github.com/torbsd/openbsd-ports and start testing and contributing
 
 * Run a *BSD Tor relay and join the BSD Buildbot at http://81.7.14.172
 
