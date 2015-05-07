@@ -1,8 +1,11 @@
 Title: TDP handout for BSD events
 CSS: torbsd.css
+Author: gman999
+Editors: 
+Date: 20150507
+Note: These lines are above the markdown text.  Leave them.
 
-
-##The Tor BSD Diversity Project (TDP)
+##The Tor BSD Diversity Project (TDP) ##
 
 ----
 
