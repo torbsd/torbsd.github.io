@@ -5,12 +5,11 @@ Editors:
 Date: 20150507
 Note: These lines are above the markdown text.  Leave them.
 
-##The Tor BSD Diversity Project (TDP) ##
+## The Tor BSD Diversity Project (TDP) ##
 
 Web Site: https://torbsd.github.io or http://bptfp7py2wclht26.onion  
-Repositories: https://github.com/torbsd  
 
------
+Repositories: https://github.com/torbsd  
 
 ### What is __TDP__? ###
 
