@@ -7,8 +7,6 @@ Note: These lines are above the markdown text.  Leave them.
 
 ##The Tor BSD Diversity Project (TDP) ##
 
-----
-
 Web Site: https://torbsd.github.io or http://bptfp7py2wclht26.onion  
 Repositories: https://github.com/torbsd  
 
@@ -45,3 +43,5 @@ __TDP__ has a number of other projects in the pipeline, but ultimately our succe
 * Run a *BSD Tor relay and join the BSD Buildbot at http://81.7.14.172
 
 * Spread the word about __TDP__
+
+flier url: https://torbsd.github.io/materials/flier-bsd.html
