@@ -49,4 +49,4 @@ While recognizing that the Tor Project is dynamic open source project with a vib
 
 
 
-*url: https://torbsd.github.io/materials/flier-bsd.html*
+*https://torbsd.github.io/materials/flier-bsd.html*
