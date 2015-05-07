@@ -6,13 +6,13 @@ Date: 20150507
 Note: These lines are above the markdown text.  Leave them.
 
 
-## The Tor BSD Diversity Project (TDP) ##
+# The Tor BSD Diversity Project (TDP) #
 
 Web Site: https://torbsd.github.io or http://bptfp7py2wclht26.onion  
 
 Repositories: https://github.com/torbsd  
 
-### What is __TDP__? ###
+## What is __TDP__? ##
 
 The __Tor BSD Diversity Project (TDP)__ is an initiative seeking to extend the use of the BSD Unix operating systems in the Tor public anonymity network.
 
@@ -20,7 +20,7 @@ The Tor Project continues to play a critical role in anonymity and privacy solut
 
 While recognizing that the Tor Project is dynamic open source project with a vibrant community, we are also concerned with the overwhelming GNU/Linux monoculture that is an Achilles’ Heel. Monocultures in nature are dangerous, as vulnerabilities are held in common across a broad spectrum. Diversity means single vulnerabilities are less likely to harm the entire ecosystem. In a global anonymity network, monocultures are potentially disastrous. A single kernel vulnerability in GNU/Linux impacting Tor relays could be devastating. We want to see a stronger Tor network, and we believe one critical ingredient for that is operating system diversity.
 
-### There are three aspects of the __TDP’s__ approach: ###
+## There are three aspects of the __TDP’s__ approach: ##
 
 * To increase the number of Tor relays running *BSDs, focused on the server/network layer
 
@@ -28,7 +28,7 @@ While recognizing that the Tor Project is dynamic open source project with a vib
 
 * To engage the broader *BSD community about the Tor anonymity network
 
-### Current __TDP__ work includes: ###
+## Current __TDP__ work includes: ##
 
 * Guides for configuring FreeBSD and OpenBSD relays
 
@@ -36,7 +36,7 @@ While recognizing that the Tor Project is dynamic open source project with a vib
 
 * Organizing various events for engaging *BSD users about Tor, including birds-of-a-feather sessions and informal meetings
 
-### __TDP__ has a number of other projects in the pipeline, but ultimately our success depends on the broader *BSD community involvement. ###
+## __TDP__ has a number of other projects in the pipeline, but ultimately our success depends on the broader *BSD community involvement. ##
 
 * Join the Tor-BSD mailing list at http://lists.nycbug.org/mailman/listinfo/tor-bsd
 
@@ -49,4 +49,4 @@ While recognizing that the Tor Project is dynamic open source project with a vib
 
 
 
-flier url: https://torbsd.github.io/materials/flier-bsd.html
+*url: https://torbsd.github.io/materials/flier-bsd.html*
