@@ -1,8 +1,16 @@
-The Tor BSD Diversity Project (TDP)
+Title: TDP handout for BSD events
+CSS: torbsd.css
+
+
+##The Tor BSD Diversity Project (TDP)
+
+----
 
 Web Site: https://torbsd.github.io or http://bptfp7py2wclht26.onion
 Repositories: https://github.com/torbsd
 A Developer's Blog:
+
+-----
 
 The Tor BSD Diversity Project (TDP) is an initiative seeking to extend the use of the BSD Unix operating systems in the Tor public anonymity network.
 
@@ -12,26 +20,26 @@ While recognizing that the Tor Project is dynamic open source project with a vib
 
 There are three aspects of the TDP’s approach:
 
-to increase the number of Tor relays running *BSDs, focused on the server/network layer
+* To increase the number of Tor relays running *BSDs, focused on the server/network layer
 
-to develop a solid, Tor-compatible browser easily portable to other POSIX-based operating systems, focused on the client layer
+* To develop a solid, Tor-compatible browser easily portable to other POSIX-based operating systems, focused on the client layer
 
-to engage the broader *BSD community about the Tor anonymity network
+* To engage the broader *BSD community about the Tor anonymity network
 
 Current TDP work includes:
 
-guides for configuring FreeBSD and OpenBSD relays
+* Guides for configuring FreeBSD and OpenBSD relays
 
-the creation of an OpenBSD Tor Browser port
+* The creation of an OpenBSD Tor Browser port
 
-organizing various events for engaging *BSD users about Tor, including birds-of-a-feather sessions and informal meetings
+* Organizing various events for engaging *BSD users about Tor, including birds-of-a-feather sessions and informal meetings
 
 TDP has a number of other projects in the pipeline, but ultimately our success depends on the broader *BSD community involvement.
 
-Join the Tor-BSD mailing list at http://lists.nycbug.org/mailman/listinfo/tor-bsd
+* Join the Tor-BSD mailing list at http://lists.nycbug.org/mailman/listinfo/tor-bsd
 
-Clone the repo to start testing and contributing
+* Clone the repo to start testing and contributing
 
-Run a *BSD Tor relay and join the BSD Buildbot at http://81.7.14.172
+* Run a *BSD Tor relay and join the BSD Buildbot at http://81.7.14.172
 
-Spread the word about TDP
+* Spread the word about TDP
