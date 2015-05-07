@@ -5,6 +5,7 @@ Editors:
 Date: 20150507
 Note: These lines are above the markdown text.  Leave them.
 
+
 ## The Tor BSD Diversity Project (TDP) ##
 
 Web Site: https://torbsd.github.io or http://bptfp7py2wclht26.onion  
@@ -44,5 +45,8 @@ While recognizing that the Tor Project is dynamic open source project with a vib
 * Run a *BSD Tor relay and join the BSD Buildbot at http://81.7.14.172
 
 * Spread the word about __TDP__
+
+
+
 
 flier url: https://torbsd.github.io/materials/flier-bsd.html
