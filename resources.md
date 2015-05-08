@@ -50,7 +50,7 @@ A distributed test build system for finding problems with BSD Tor builds.
 
 * Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twvlhadsu5oznuux.onion)
 
-Birds-of-a-Feather session at vBSDCon in fall 2013 and NYCBSDCon 2014.
+Birds-of-a-Feather sessions at vBSDCon in fall 2013 and NYCBSDCon 2014.
 
 * [Tor Network Status](http://torstatus.blutmagie.de)
 
@@ -79,6 +79,10 @@ A tool for building FreeBSD images for embedded systems on a variety of architec
 Appreciated nonetheless, Moritz.
 
 * [Followed up by a headline on BSDNow.tv](http://www.bsdnow.tv/episodes/2015_05_06-below_the_clouds)
+
+* [Reddit on __TDP__](https://www.reddit.com/r/linux/comments/356iyy/torbsd_diversity_project_help_move_tor_nodes_from/)
+
+And again, before we meant to have anything totally public, a Reddit thread on __TDP__. Very appreciated still, but one important point of clarification: we are not interested in having Linux relays being transformed into BSD relays. If someone runs a relay, they should use the operating system they are most comfortable with. And __TDP__ is more about affecting the BSD community than converting anyone __to__ the BSDs. Another quick comment is that we strongly agree in the larger monoculture problem. Ideal diversity would encompass a variety of applications and hardware, and that applies to Tor as much as anything. But there's a major issue to address first, and that's interoperability. Everything needs to have some agreement on protocols before there can be any routing or communications in general.
 
 ### Materials ###
 
