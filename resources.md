@@ -36,6 +36,10 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 * [Tor-BSD Mailing List](http://lists.nycbug.org/mailman/listinfo/tor-bsd) hosted by the [New York City *BSD User Group](http://www.nycbug.org)
 
+* [An Unofficial BSD Buildbot for the Tor Project](http://81.7.14.172)
+
+A distributed test build system for finding problems in Tor builds on BSDs.
+
 * Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twvlhadsu5oznuux.onion)
 
 Birds-of-a-Feather session at vBSDCon in fall 2013 and NYCBSDCon 2014.
