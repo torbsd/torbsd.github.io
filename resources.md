@@ -46,7 +46,7 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 * [An Unofficial BSD Buildbot for the Tor Project](http://81.7.14.172)
 
-A distributed test build system for finding problems in Tor builds on BSDs.
+A distributed test build system for finding problems with BSD Tor builds.
 
 * Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twvlhadsu5oznuux.onion)
 
@@ -55,6 +55,10 @@ Birds-of-a-Feather session at vBSDCon in fall 2013 and NYCBSDCon 2014.
 * [Tor Network Status](http://torstatus.blutmagie.de)
 
 A useful overview of the current public Tor relays, with a query function to check relay numbers by operating system.
+
+* [Tor Metrics](http://metrics.torproject.org)
+
+More useful graphs about the Tor network, including platform usage.
 
 ### The Danger of Monocultures in Technology ###
 
@@ -67,6 +71,12 @@ Building small OpenBSD i386 and amd64 embedded systems. An ideal platform for sm
 * [FreeBSD's Crochet](https://github.com/freebsd/crochet)
 
 A tool for building FreeBSD images for embedded systems on a variety of architectures, including contemporary armv6 and armv7 hardware such as Raspberry Pis and BeagleBones. 
+
+### Chatter About __TDP__ ###
+
+* [__TDP__ prematurely announced on the Tor-talk mailing list](https://lists.torproject.org/pipermail/tor-talk/2015-April/037649.html)
+
+* [Followed up by a headline on BSDNow.tv](http://www.bsdnow.tv/episodes/2015_05_06-below_the_clouds)
 
 ### Materials ###
 
