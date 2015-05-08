@@ -30,5 +30,4 @@ Building small OpenBSD i386 and amd64 embedded systems. An ideal platform for sm
 
 * [FreeBSD's Crochet](https://github.com/freebsd/crochet)
 
-A tool for building FreeBSD images for embedded systems on a variety of platforms, including contemporary armv6 and armv7 hardware such as Raspberry Pis and BeagleBones. 
-
+A tool for building FreeBSD images for embedded systems on a variety of architectures, including contemporary armv6 and armv7 hardware such as Raspberry Pis and BeagleBones. 
