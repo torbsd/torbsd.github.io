@@ -12,6 +12,26 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## Resources ##
 
+### The BSDs and Related Projects ###
+
+* [FreeBSD](https://www.freebsd.org)
+
+* [NetBSD](http://www.netbsd.org)
+
+* [OpenBSD](http://www.openbsd.org)
+
+* [DragonFly BSD](http://www.dragonflybsd.org)
+
+* [OpenSSH](http://www.openssh.com)
+
+* [LibreSSL](http://www.libressl.org)
+
+* [FreeNAS](https://www.freenas.org)
+
+### Relevant BSD Features ###
+
+* [Theo de Raadt slides on arc4random](http://www.openbsd.org/papers/hackfest2014-arc4random/index.html)
+
 ### BSDs and Tor ###
 
 * [Tor-BSD Mailing List](http://lists.nycbug.org/mailman/listinfo/tor-bsd) hosted by the [New York City *BSD User Group](http://www.nycbug.org)
