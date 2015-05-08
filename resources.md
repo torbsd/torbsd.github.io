@@ -28,13 +28,17 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 * [FreeNAS](https://www.freenas.org)
 
-### Relevant BSD Insights ###
+### Relevant BSD Bits ###
 
 * [Theo de Raadt slides on arc4random](http://www.openbsd.org/papers/hackfest2014-arc4random/index.html)
 
 * [Kode Vicious' Column from ACM's Queue Magazine](https://queue.acm.org/listing.cfm?typefilter=Kodevicious&sort=publication_date&order=desc&qc_type=Kodevicious&article_type=&item_topic=all&filter_type=topic&page_title=Kode%20Vicious&filter=all)
 
 * [Ted Unangst post on OpenBSD-misc "Improving Browser Security"](https://marc.info/?l=openbsd-misc&m=142523501726732)
+
+* [Theo de Raadt slides on "Exploit Mitigation Techniques: An Update After 10 Yars](http://www.openbsd.org/papers/ru13-deraadt/)
+
+* [Ted Unangst on "LibreSSL: More than 30 Days Late"](http://www.openbsd.org/papers/eurobsdcon2014-libressl.html)
 
 ### BSDs and Tor ###
 
