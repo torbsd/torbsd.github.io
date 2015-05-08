@@ -7,7 +7,7 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 # __TDP__ Frequently Asked Questions #
 
-Below are some typical questions about __Tor BSD Diversity Project__. Feel free to [contact us](/contact.html) for questions or comments not mentioned.
+Below are some typical questions about __Tor BSD Diversity Project__. Feel free to [contact us](/contact.html) for questions or comments not mentioned. Sooner rather than later this FAQ will need to be organized for clarity by categories.
 
 ## "How can I contribute to __TDP__?" ##
 
@@ -48,6 +48,8 @@ The number and percentage of public Tor relays fluctuates. In the fall of 2014, 
 That is true, but unfortunately inaccurate. The current Tor download does not work on any of the BSDs for a variety of reasons.
 
 ## "I run a Tor relay on such and such Linux distribution. How hard would it be to run a BSD relay for me?" ##
+
+First, particularly in reference to [this Reddit thread](https://www.reddit.com/r/linux/comments/356iyy/torbsd_diversity_project_help_move_tor_nodes_from/), anyone technical enough to run a robust and secure Tor relay should stick with the operating system they are most comfortable with. Nothing is more dangerous than someone running a public anonymity server on an operating system with which they are unfamiliar. __We are not interested in moving "Tor nodes from Linux to BSD."__ We want __more__ nodes, preferably by increasing the number of BSD nodes faster, not by converting anyone to anything.
 
 On the surface of a BSD system, command-line interactions are similar to most Linux distros. While not the default shell on any BSD, bash is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves.
 
