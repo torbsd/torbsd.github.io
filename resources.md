@@ -58,7 +58,7 @@ A useful overview of the current public Tor relays, with a query function to che
 
 * [Tor Metrics](http://metrics.torproject.org)
 
-More useful graphs about the Tor network, including platform usage.
+More useful graphs about the Tor network, including [platform usage](https://metrics.torproject.org/platforms.html).
 
 ### The Danger of Monocultures in Technology ###
 
@@ -75,6 +75,8 @@ A tool for building FreeBSD images for embedded systems on a variety of architec
 ### Chatter About __TDP__ ###
 
 * [__TDP__ prematurely announced on the Tor-talk mailing list](https://lists.torproject.org/pipermail/tor-talk/2015-April/037649.html)
+
+Appreciated nonetheless, Moritz.
 
 * [Followed up by a headline on BSDNow.tv](http://www.bsdnow.tv/episodes/2015_05_06-below_the_clouds)
 
