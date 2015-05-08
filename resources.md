@@ -44,6 +44,10 @@ A distributed test build system for finding problems in Tor builds on BSDs.
 
 Birds-of-a-Feather session at vBSDCon in fall 2013 and NYCBSDCon 2014.
 
+* [Tor Network Status](http://torstatus.blutmagie.de)
+
+A useful overview of the current public Tor relays, with a query function to check relay numbers by operating system.
+
 ### The Danger of Monocultures in Technology ###
 
 ### Related and Useful Projects ###
