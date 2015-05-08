@@ -62,4 +62,4 @@ A tool for building FreeBSD images for embedded systems on a variety of architec
 
 ### Materials ###
 
-* A one-page [informational flier](materials/flier-bsd.html) providing an overview of __TDP__ for a *BSD audience.  It's a call for engagement without explaining the case for using the *BSDs.
+* A one-page [informational flier](materials/flier-bsd.html) providing an overview of __TDP__ for a BSD audience.  It's a call for engagement without explaining the case for using the *BSDs. The flier should print out on a single page.
