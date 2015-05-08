@@ -59,3 +59,7 @@ Building small OpenBSD i386 and amd64 embedded systems. An ideal platform for sm
 * [FreeBSD's Crochet](https://github.com/freebsd/crochet)
 
 A tool for building FreeBSD images for embedded systems on a variety of architectures, including contemporary armv6 and armv7 hardware such as Raspberry Pis and BeagleBones. 
+
+### Materials ###
+
+* A one-page [informational flier](materials/flier-bsd.html) providing an overview of __TDP__ for a *BSD audience.  It's a call for engagement without explaining the case for using the *BSDs.
