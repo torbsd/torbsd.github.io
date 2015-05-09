@@ -72,15 +72,17 @@ nd questions.</p>
 
 <p>In reference to <a href="https://www.reddit.com/r/linux/comments/356iyy/torbsd_diversity_project_help_move_tor_nodes_from/">this Reddit thread</a>, anyone technical enough to run a robust and secure Tor relay should stick with the operating system they are most comfortable with. Nothing is more dangerous than someone running a public anonymity server on an unfamiliar operating system. <strong>We are not interested in moving &#8220;Tor nodes from Linux to BSD.&#8221;</strong> We want <em>more</em> nodes, preferably by increasing the number of BSD nodes faster, not by converting anyone to anything.</p>
 
-<p>To a large extent, <strong>TDP&#8217;s</strong> target audience is those already familiar with the BSDs. Significant numbers in the BSD community have access to data center space for running relays or are developers, hack code, etc. It&#8217;s about getting the BSD community engaged into the Tor scene, not so much vice-versa.</p>
+<p>To a large extent, <strong>TDP&#8217;s</strong> target audience is those already familiar with the BSDs. Significant numbers in the BSD community have access to data center space for running relays, are developers who hack code, etc. It&#8217;s about getting the BSD community engaged into the Tor scene, not so much vice-versa.</p>
 
-<p>For those interested in running a BSD relay, command-line interactions are similar to most Linux distros. While not the default shell on any BSD, bash is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves.</p>
+<p>For those interested in running a BSD relay, command-line interactions are similar enough to the Linux distros. While not the default shell on any BSD, bash is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves.</p>
 
 <p>The BSD install processes vary, but after a few tries, it&#8217;s hardly a difficult task. For the BSDs, there is no assumption that graphical installers are &#8220;easier&#8221; than non-graphical ones.</p>
 
 <p>Installing a package isn&#8217;t difficult either. To install the rsync package on FreeBSD, for instance, the user just has to type &#8220;pkg install rsync.&#8221; For OpenBSD, it&#8217;s just &#8220;pkg_add rsync.&#8221; NetBSD&#8217;s <a href="http://www.netbsd.org/docs/pkgsrc/">pkgsrc</a> also maintains simple syntax, and happens to run on a variety of other operating systems.</p>
 
-<p>With a little time and patience, running a BSD relay shouldn&#8217;t be an insurmoutable task for any Linux user beyond those brand-new to computing. For someone comfortable in the shell, editing files, and so on, it should be simple enough.</p>
+<p>The important principle is to minimize the operating system footprint, including daemons listening, applications installed, etc. If it&#8217;s a Tor relay, it should not be multi-user system, and not a file server, web server, etc. Use the default shell, use the base utilities as opposed to third-party applications, keep the attack surface minimized.</p>
+
+<p>With a little time and patience, running a BSD relay shouldn&#8217;t be an insurmoutable task for any Linux user beyond those brand-new to computing. For someone comfortable in the shell, editing files, and so on, it is simple enough.</p>
 
 <h2 id="whydidtorbrowserworkstartwithopenbsdonthedesktopatleastisntfreebsdmorepopular">&#8220;Why did Tor Browser work start with OpenBSD? On the desktop at least, isn&#8217;t FreeBSD more popular?&#8221;</h2>
 
@@ -88,7 +90,7 @@ nd questions.</p>
 
 <p>While all the BSDs aim to be standards compliant, OpenBSD is the most orthodox in this respect. Therefore, if software runs on OpenBSD and is accepted into their base or ports trees, porting that software to another POSIX-compliant operating system is very possible. There are popular examples to mention, such as OpenSSH, arc4random, OpenNTPD and for those who only read Slashdot.org over the past year, LibreSSL is quickly gaining momentum as another piece of easily portable code from the OpenBSD project.</p>
 
-<p>With a production-quality OpenBSD Tor Browser port, ports for others BSDs or any other POSIX-based systems should be trivial.</p>
+<p>With a production-quality OpenBSD Tor Browser port, porting to other BSDs or any other POSIX-based systems should be relatively trivial task.</p>
 
 <h2 id="areyouassociatedwiththetorproject">&#8220;Are you associated with the Tor Project?&#8221;</h2>
 
