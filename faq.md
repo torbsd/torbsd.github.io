@@ -63,7 +63,7 @@ For those interested in running a BSD relay, command-line interactions are simil
 
 The BSD install processes vary, but after a few tries, it's hardly a difficult task. For the BSDs, there is no assumption that graphical installers are "easier" than non-graphical ones.
 
-Installing a package isn't difficult either. To install the rsync package on FreeBSD, for instance, the user just has to type "pkg install rsync."  For OpenBSD, it's just "pkg_add rsync." NetBSD's [pkgsrc](http://www.netbsd.org/docs/pkgsrc/) also maintains simple syntax, and it also happens to run on a variety of other operating systems.
+Installing a package isn't difficult either. To install the rsync package on FreeBSD, for instance, the user just has to type "pkg install rsync."  For OpenBSD, it's just "pkg_add rsync." NetBSD's [pkgsrc](http://www.netbsd.org/docs/pkgsrc/) also maintains simple syntax, and happens to run on a variety of other operating systems.
 
 With a little time and patience, running a BSD relay shouldn't be an insurmoutable task for any Linux user beyond those brand-new to computing. For someone comfortable in the shell, editing files, and so on, it should be simple enough.
 
@@ -71,9 +71,9 @@ With a little time and patience, running a BSD relay shouldn't be an insurmoutab
 
 FreeBSD may very well be more widely used, but operating system usage statistics are wildly untrustworthy, particularly when the BSD license doesn't require users to publicize using BSD code.
 
-While all the BSDs aim to be standards compliant, OpenBSD is the most orthodox in this respect. Therefore, if it runs on OpenBSD and is accepted into their base or ports trees, it is likely the easiest operating system to port software __from__. There are popular examples to mention, such as OpenSSH, arc4random, OpenNTPD and for those who only read Slashdot.org over the past year, LibreSSL is quickly gaining momentum as another piece of easily portable code from the OpenBSD project.
+While all the BSDs aim to be standards compliant, OpenBSD is the most orthodox in this respect. Therefore, if software runs on OpenBSD and is accepted into their base or ports trees, porting that software to another POSIX-compliant operating system is very possible. There are popular examples to mention, such as OpenSSH, arc4random, OpenNTPD and for those who only read Slashdot.org over the past year, LibreSSL is quickly gaining momentum as another piece of easily portable code from the OpenBSD project.
 
-With a production-quality OpenBSD Tor Browser port, FreeBSD, NetBSD, DragonFly BSD, etc., ports should be trivial. Not to mention any other POSIX-based operating systems.
+With a production-quality OpenBSD Tor Browser port, ports for others BSDs or any other POSIX-based systems should be trivial.
 
 ## "What do you hope to accomplish with porting the Tor Browser to OpenBSD?" ##
 
@@ -83,7 +83,7 @@ With a production-quality OpenBSD Tor Browser port, FreeBSD, NetBSD, DragonFly B
 
 ## "Beyond porting Tor Browser to OpenBSD and the relay guides, what other activities does __TDP__ look to conduct?" ##
 
-We have a long list of potential projects, some of which already commenced years ago. This is a list in flux, and we only consider it a loose guide.
+We have a long list of potential projects, some of which commenced years ago. This is a list in flux, and we only consider it a loose guide.
 
 __A presence at BSD Events__ There are a number of BSD conferences that take place around the globe, such as [BSDCan in Ottawa, Canada](http://www.bsdcan.org), [AsiaBSDCon in Tokyo, Japan](http://www.asiabsdcon.org), [EuroBSDCon](http://www.eurobsdcon.org), [MeetBSD in California](http://www.meetbsd.com) and which alternates with [MeetBSD in Polska](http://www.meetbsd.org) and finally [NYCBSDCon in New York City](http://www.nycbsdcon.org). These are opportune places to interact face-to-face with the broader BSD community with presentations and birds-of-a-feather sessions (BoFs). To date, BoFs has been conducted at vBSDCon in the fall of 2013 and NYCBSDCon in February 2014. We are planning another BoF at BSDCan in June 2014, and look to distribute a [__TDP__ informational flier](materials/flier-bsd.html).
 
