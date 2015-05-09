@@ -7,6 +7,9 @@ Note: These lines are at the top are multimarkdown metadata; leave them.
 
 # OpenBSD Guide to Configuring Tor Relays #
 
+## THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO P
+LEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. ##
+
 ## Introduction ##
 
 [OpenBSD] is a Unix-derived operating system focused on security and the adherence to standards. It is considered among the most secure systems available. OpenBSD developers rebuilt SSH from the ground up, until the omnipresent adoption of OpenSSH. OpenBSD developers are now building LibreSSL as a replacement for OpenSSL, frustrated by the accumulated laundry list of vulnerabilities.

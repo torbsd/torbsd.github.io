@@ -7,6 +7,9 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 # Development Version: FreeBSD Guide to Configuring Tor Relays #
 
+## THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO P
+LEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. ##
+
 ## Introduction ##
 
 This document is meant to be a staging arena for additions to the [production version](/fbsd-relays.html), in addition to notes for more advanced FreeBSD users.

@@ -7,6 +7,9 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 # FreeBSD Guide to Configuring Tor Relays #
 
+## THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO P
+LEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. ##
+
 ## Introduction ##
 
 [FreeBSD](https://www.freebsd.org) is a Unix-derived operating system focused on reliability and performance. FreeBSD maintains a large user base in the backend infrastructures of the world, not to mention in products and services such as Juniper, Netflix, NetApp and Isilon. Widely used systems such as pfSense and FreeNAS are also based on FreeBSD.

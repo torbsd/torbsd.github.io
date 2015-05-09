@@ -5,9 +5,11 @@ Editors:
 Date: 20150505
 Note: These lines at the top are multimarkdown metadata; leave them.
 
-# TDP FreeBSD & OpenBSD Guides for Tor Relays #
+# __TDP__ FreeBSD & OpenBSD Guides for Tor Relays #
 
-TDP maintains two guides to building and configuring Tor relays for FreeBSD and OpenBSD.
+## THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO PLEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. ##
+
+__TDP__ is creating two guides to building and configuring Tor relays for FreeBSD and OpenBSD.
 
 There are two versions of each. The first is considered 'production' quality for printing, translation and distribution. The second is considered 'development' in that future ideas are noted, tested and confirmed. Contributations are more than welcomed.
 
