@@ -19,7 +19,7 @@ Tor is a (more or less) randomized routing network. That lack of consistency inh
 
 Nonetheless, there are some system-level changes we do recommend. But do not expect long lists of sysctl values and graphs illustrating the effects.
 
-__TDP__ will look at optimizing Tor relay performance on high-bandwidth BSDs in the future, but we suspect that the default operating system installs (outside of some recommended changes) should be sufficient for most relay operators' hardware and bandwidth. If Netflix can server [one-third of peak internet traffic in North America](https://www.youtube.com/watch?v=FL5U4wr86L4) with a default FreeBSD install, it's likely sufficient for the vast majority of Tor relays.
+__TDP__ will look at optimizing Tor relay performance on high-bandwidth BSDs in the future, but we suspect that the default operating system installs (outside of some recommended changes) should be sufficient for most relay operators' hardware and bandwidth. If Netflix can serve [one-third of peak internet traffic in North America](https://www.youtube.com/watch?v=FL5U4wr86L4) with a default FreeBSD install, it's likely sufficient for the vast majority of Tor relays.
 
 Contributions for NetBSD and DragonFly BSD are welcomed.
 
