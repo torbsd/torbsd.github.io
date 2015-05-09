@@ -18,7 +18,11 @@ Note that skipping any of these steps will likely result in failure. And since t
 
 * To ease cloning the Git repository, change the permissions on /usr/ports/mystuff with "chown -R _your user_ /usr/ports/mystuff"
 
-* OpenBSD can employ a lot of disk space when compiling ports from source.  The main directory to be concerned with is /usr/ports/pobj. With sufficient RAM, a shortcut to bypass filling the /usr/ports partition is to use mount_tmpfs(8). Type "mount -t tmpfs tmpfs /usr/ports/tmpfs" which will produce a large tmpfs mount.
+* Firefox and the associated dependencies can employ a lot of disk space when compiling from source.  The main directory to be concerned with is /usr/ports/pobj. With sufficient RAM, a shortcut to bypass filling the /usr/ports/pobj partition is to use mount_tmpfs(8). Type "mount -t tmpfs tmpfs /usr/ports/"s which will produce a large tmpfs mount.
+
+Once mounted, a df(1) output might look something like this:
+
+tmpfs         20931536   3232176  17699360    15%    /usr/ports/pobj
 
 ## Cloning the Git Repository ##
 
@@ -31,3 +35,7 @@ Note that skipping any of these steps will likely result in failure. And since t
 ## Installing Tor Browser ##
 
 * From /usr/ports/mystuff/www/tbb/tor-browser, run "make install"
+
+## Updating the Port ##
+
+* To update the local copy of the Git repository, run "git pull /usr/ports/mystuff"

@@ -22,8 +22,12 @@
 <li><p>Install OpenBSD ports tree into the default /usr/ports location as <a href="http://www.openbsd.org/anoncvs.html">per the FAQ instructions</a> on a recent snapshot of OpenBSD</p></li>
 <li><p>Create a a &#8220;mystuff&#8221; directory at /usr/ports/mystuff</p></li>
 <li><p>To ease cloning the Git repository, change the permissions on /usr/ports/mystuff with &#8220;chown -R <em>your user</em> /usr/ports/mystuff&#8221;</p></li>
-<li><p>OpenBSD can employ a lot of disk space when compiling ports from source. The main directory to be concerned with is /usr/ports/pobj. With sufficient RAM, a shortcut to bypass filling the /usr/ports partition is to use mount_tmpfs(8). Type &#8220;mount -t tmpfs tmpfs /usr/ports/tmpfs&#8221; which will produce a large tmpfs mount.</p></li>
+<li><p>Firefox and the associated dependencies can employ a lot of disk space when compiling from source. The main directory to be concerned with is /usr/ports/pobj. With sufficient RAM, a shortcut to bypass filling the /usr/ports/pobj partition is to use mount_tmpfs(8). Type &#8220;mount -t tmpfs tmpfs /usr/ports/&#8221;s which will produce a large tmpfs mount.</p></li>
 </ul>
+
+<p>Once mounted, a df(1) output might look something like this:</p>
+
+<p>tmpfs 20931536 3232176 17699360 15% /usr/ports/pobj</p>
 
 <h2 id="cloningthegitrepository">Cloning the Git Repository</h2>
 
@@ -37,6 +41,12 @@
 
 <ul>
 <li>From /usr/ports/mystuff/www/tbb/tor-browser, run &#8220;make install&#8221;</li>
+</ul>
+
+<h2 id="updatingtheport">Updating the Port</h2>
+
+<ul>
+<li>To update the local copy of the Git repository, run &#8220;git pull /usr/ports/mystuff&#8221;</li>
 </ul>
 
 </body>
