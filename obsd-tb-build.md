@@ -8,7 +8,9 @@ Note: above is markdown data, edit or leave alone.
 
 amd64/snapshots only?
 
-Note that skipping any of these steps will likely result in failure. And since the port is in development and has a lot of moving parts, it may just break anyways.
+As there is no binary, pre-built package available, it is necessary to compile the Tor Browser from source. Depending on hardware specifications, this will take a while.
+
+Skipping any of these steps will likely result in failure. And since the port is in development and has a lot of moving parts, it may just break anyways.
 
 ## Preparations ##
 
