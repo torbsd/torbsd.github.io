@@ -36,7 +36,7 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 * [Ted Unangst post on OpenBSD-misc "Improving Browser Security"](https://marc.info/?l=openbsd-misc&m=142523501726732)
 
-* [Theo de Raadt slides on "Exploit Mitigation Techniques: An Update After 10 Yars](http://www.openbsd.org/papers/ru13-deraadt/)
+* [Theo de Raadt slides on "Exploit Mitigation Techniques: An Update After 10 Years"](http://www.openbsd.org/papers/ru13-deraadt/)
 
 * [Ted Unangst on "LibreSSL: More than 30 Days Late"](http://www.openbsd.org/papers/eurobsdcon2014-libressl.html)
 
