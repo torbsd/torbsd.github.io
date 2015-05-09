@@ -41,13 +41,13 @@ The uniting aspects for all the BSDs is the preference for the simplicity of BSD
 
 ## "Diversity?  It's all written in C. The Linux distros and some of the BSDs have a lot of common pieces like GCC, OpenSSL, etc." ##
 
-Ultimately *diversity* does mean asking much broader questions. More diversity in operating systems, hardware, SSL versions, geographical locations, the list could continue endlessly. It's the right question to ask, but __TDP__ is only beginning to provide a small piece of a response.
+Ultimately diversity does mean asking much broader questions. More diversity in operating systems, hardware, SSL versions, geographical locations, the list could continue endlessly. It's the right question to ask, but __TDP__ is only beginning to provide a small piece of a response.
 
 ## "How many Tor relays are running a BSD?" ##
 
-The number and percentage of public Tor relays fluctuates, as much as in quantity as in operating systems in use. In the fall of 2014, almost 6% of relays were running a BSD. As of May 2015, the percentage is about 3.8%. Web sites such as [BlutMagie](http://torstatus.blutmagie.de) provide a full list of relays with a simple query form to determine the exact current number among other data.
+The number and percentage of public Tor relays fluctuates, and this applies to BSD relays as well. In the fall of 2014, almost 6% of relays were running a BSD. As of May 2015, the percentage is about 3.8%. Web sites such as [BlutMagie](http://torstatus.blutmagie.de) provide a full list of relays with a simple query form to determine the exact current number among other data.
 
-[Tor Metrics](https://metrics.torproject.org/platforms.html) provides a clear graph that perfectly, and disturbingly in our opinions, illustrates the monoculture in relay platforms.
+[Tor Metrics](https://metrics.torproject.org/platforms.html) provides a clear graph that strikingly, and disturbingly in our opinions, illustrates the monoculture in relay platforms.
 
 ## "Doesn't the [Tor web site download page](https://www.torproject.org/download/download-easy.html.en) list a Tor Browser for GNU/Linux, that also supports 'Unix, BSD'?" ##
 
@@ -57,17 +57,17 @@ That is true, but unfortunately inaccurate. The current Tor download does not wo
 
 First, particularly in reference to [this Reddit thread](https://www.reddit.com/r/linux/comments/356iyy/torbsd_diversity_project_help_move_tor_nodes_from/), anyone technical enough to run a robust and secure Tor relay should stick with the operating system they are most comfortable with. Nothing is more dangerous than someone running a public anonymity server on an operating system with which they are unfamiliar. __We are not interested in moving "Tor nodes from Linux to BSD."__ We want __more__ nodes, preferably by increasing the number of BSD nodes faster, not by converting anyone to anything.
 
-To some extent, __TDP's__ target audience is those already familiar with the BSDs to some extent or another. Significant numbers in the BSD community have access to data center space for running relays or are developers, hack code, etc. It's about getting the BSD community engaged into the Tor scene, not so much vice-versa.
+To some extent, __TDP's__ target audience is those already familiar with the BSDs. Significant numbers in the BSD community have access to data center space for running relays or are developers, hack code, etc. It's about getting the BSD community engaged into the Tor scene, not so much vice-versa.
 
-On the surface of a BSD system, command-line interactions are similar to most Linux distros. While not the default shell on any BSD, bash is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves.
+For those interested in running a BSD relay, command-line interactions are similar to most Linux distros. While not the default shell on any BSD, bash is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves.
 
 The BSD install processes vary, but after a few tries, it's hardly a difficult task. For the BSDs, there is no assumption that graphical installers are "easier" than non-graphical ones.
 
-Installing a package isn't difficult either. To install the rsync package on FreeBSD, for instance, the user just has to type "pkg install rsync."  For OpenBSD, it's just "pkg_add rsync." NetBSD's [pkgsrc](www.ned.org/docs/pkgsrc/bsd.org/docs/pkgsrc/) also maintains simple syntax, and it also happens to run on a variety of other operating systems.
+Installing a package isn't difficult either. To install the rsync package on FreeBSD, for instance, the user just has to type "pkg install rsync."  For OpenBSD, it's just "pkg_add rsync." NetBSD's [pkgsrc](http://www.netbsd.org/docs/pkgsrc/) also maintains simple syntax, and it also happens to run on a variety of other operating systems.
 
-With a little time and patience, running a BSD relay shouldn't be difficult for any Linux user beyond those brand-new to computing. For someone comfortable in the shell, editing files, and so on, it should be simple enough.
+With a little time and patience, running a BSD relay shouldn't be an insurmoutable task for any Linux user beyond those brand-new to computing. For someone comfortable in the shell, editing files, and so on, it should be simple enough.
 
-## "Why did Tor Browser work start with OpenBSD? On the desktop at least, isn't FreeBSD more popular(www.netbsd.org/docs/pkgsrc/)?" ##
+## "Why did Tor Browser work start with OpenBSD? On the desktop at least, isn't FreeBSD more popular?" ##
 
 FreeBSD may very well be more widely used, but operating system usage statistics are wildly untrustworthy, particularly when the BSD license doesn't require users to publicize using BSD code.
 
