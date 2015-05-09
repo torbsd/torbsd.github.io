@@ -71,7 +71,7 @@ With a little time and patience, running a BSD relay shouldn't be difficult for 
 
 FreeBSD may very well be more widely used, but operating system usage statistics are wildly untrustworthy, particularly when the BSD license doesn't require users to publicize using BSD code.
 
-While all the BSDs aim to be standards compliant, OpenBSD is the most orthodox in this respect. The tail(4) command won't even allow -f with multiple files. Therefore, if it runs on OpenBSD and is accepted into their base or ports trees, it is likely the easiest operating system to port software __from__. There are popular examples to mention, such as OpenSSH, arc4random, OpenNTPD and for those who only read Slashdot.org over the past year, LibreSSL is quickly gaining momentum as another piece of easily portable code from the OpenBSD project.
+While all the BSDs aim to be standards compliant, OpenBSD is the most orthodox in this respect. Therefore, if it runs on OpenBSD and is accepted into their base or ports trees, it is likely the easiest operating system to port software __from__. There are popular examples to mention, such as OpenSSH, arc4random, OpenNTPD and for those who only read Slashdot.org over the past year, LibreSSL is quickly gaining momentum as another piece of easily portable code from the OpenBSD project.
 
 With a production-quality OpenBSD Tor Browser port, FreeBSD, NetBSD, DragonFly BSD, etc., ports should be trivial. Not to mention any other POSIX-based operating systems.
 
