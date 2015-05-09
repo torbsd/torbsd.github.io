@@ -15,19 +15,20 @@ To answer this question, we have to start with your particular skills.
 
 * __General__
 
-Review our web site and documentation, and let us know if something is unclear or unstated. If you attend any BSD or open source events, print out a copy of the __TDP__ informational flier. Join the Tor-BSD list.
-
-* __Developers__
-
-Pull our repositories, build and break the software, submit tickets and patches.
-
-* __Tor BSD Relay Operators/Admins__
-
-Run a BSD relay, use and review the relay guides, contribute input.
+Review our web site and documentation, and let us know if something is unclear or unstated. If you attend any BSD or open source events, print out some copies of the __TDP__ informational flier. Join the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd).
 
 * __Users__
 
-As a BSD Tor Browser is available, start using and testing it. Submit comments and questions.
+As a BSD Tor Browser is available, start using and testing it. Submit comments a
+nd questions.
+
+* __Developers__
+
+Clone our repositories, build and break the software, submit tickets and patches.
+
+* __Tor BSD Relay Operators/Admins__
+
+Run a BSD relay, use and review the relay guides, contribute input. Enlist your relay(s) the (unofficial) [BSD Buildbot](http://81.7.14.172).
 
 ## "If __TDP__ is concerned about operating system diversity, why does it just focus on BSD Systems, and not other operating systems such as Illuminos?" ##
 
@@ -55,9 +56,9 @@ That is true, but unfortunately inaccurate. The current Tor download does not wo
 
 ## "I run a Tor relay on such and such Linux distribution. How hard would it be to run a BSD relay for me?" ##
 
-First, particularly in reference to [this Reddit thread](https://www.reddit.com/r/linux/comments/356iyy/torbsd_diversity_project_help_move_tor_nodes_from/), anyone technical enough to run a robust and secure Tor relay should stick with the operating system they are most comfortable with. Nothing is more dangerous than someone running a public anonymity server on an operating system with which they are unfamiliar. __We are not interested in moving "Tor nodes from Linux to BSD."__ We want __more__ nodes, preferably by increasing the number of BSD nodes faster, not by converting anyone to anything.
+In reference to [this Reddit thread](https://www.reddit.com/r/linux/comments/356iyy/torbsd_diversity_project_help_move_tor_nodes_from/), anyone technical enough to run a robust and secure Tor relay should stick with the operating system they are most comfortable with. Nothing is more dangerous than someone running a public anonymity server on an unfamiliar operating system. __We are not interested in moving "Tor nodes from Linux to BSD."__ We want *more* nodes, preferably by increasing the number of BSD nodes faster, not by converting anyone to anything.
 
-To some extent, __TDP's__ target audience is those already familiar with the BSDs. Significant numbers in the BSD community have access to data center space for running relays or are developers, hack code, etc. It's about getting the BSD community engaged into the Tor scene, not so much vice-versa.
+To a large extent, __TDP's__ target audience is those already familiar with the BSDs. Significant numbers in the BSD community have access to data center space for running relays or are developers, hack code, etc. It's about getting the BSD community engaged into the Tor scene, not so much vice-versa.
 
 For those interested in running a BSD relay, command-line interactions are similar to most Linux distros. While not the default shell on any BSD, bash is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves.
 
