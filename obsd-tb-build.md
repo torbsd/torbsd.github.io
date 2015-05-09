@@ -38,4 +38,4 @@ tmpfs         20931536   3232176  17699360    15%    /usr/ports/pobj
 
 ## Updating the Port ##
 
-* To update the local copy of the Git repository, run "git pull /usr/ports/mystuff"
+* To update the local copy from the Git repository, run "cd /usr/ports/mystuff && git pull"
