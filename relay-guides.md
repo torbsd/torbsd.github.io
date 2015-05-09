@@ -7,7 +7,7 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 # __TDP__ FreeBSD & OpenBSD Guides for Tor Relays #
 
-## THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO PLEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. ##
+## THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO PLEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. YOU HAVE BEEN WARNED. ##
 
 __TDP__ is creating two guides to building and configuring Tor relays for FreeBSD and OpenBSD.
 
