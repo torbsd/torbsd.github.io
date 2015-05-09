@@ -75,6 +75,10 @@ While all the BSDs aim to be standards compliant, OpenBSD is the most orthodox i
 
 With a production-quality OpenBSD Tor Browser port, ports for others BSDs or any other POSIX-based systems should be trivial.
 
+## "Are you associated with the Tor Project?" ##
+
+__TDP__ is __not__ an official project of Tor. We are merely long-time Tor users and relay operators whose preferred platform is BSD Unix. But we have no formal association with Tor.
+
 ## "What do you hope to accomplish with porting the Tor Browser to OpenBSD?" ##
 
 ## "What are the hurdles to porting Tor Browser to OpenBSD?" ##
@@ -93,6 +97,6 @@ __Relay Guide Translations__ While English remains the de facto language of tech
 
 __High-Bandwidth BSD Relays__ An immediate way to diversify available Tor relay bandwidth is to operate several high-bandwidth relays. At a certain moment in May 2015, only two of the top thirty relays, in terms of bandwidth, are __not__ running GNU/Linux. Both are running FreeBSD. Building and maintaining at least two high-bandwidth "bare metal" relays, one running OpenBSD and the other FreeBSD, with a minimum bandwidth of 20Mbps, would change this situation in the short-term. But we don't aim to individually act as a band-aid to the diversity problem. These relays would allow further testing and optimizing of high-bandwidth Tor relays running BSDs, and ideally become a model for others.
 
-__A FreeBSD Port of the Tor Browser__ After the OpenBSD Tor Browser port is completed, the next client software target would likely be be FreeBSD, which should also make PC-BSD an easy porting task.
+__A FreeBSD Port of the Tor Browser__ After the OpenBSD Tor Browser port is completed, the next client software target would likely be be FreeBSD. Note that PC-BSD's Kris Moore has [created a "Tor-Mode"](http://blog.pcbsd.org/2015/03/a-look-at-the-upcoming-features-for-10-1-2/) for their desktop's browser. 
 
-We have additional ideas in consideration for __TDP__, and will be regularly assessing and reassessing both old and new ones. Ultimately, __TDP__ needs broader BSD community involvement of both users and developers to have the impact we are aiming for.
+We have additional ideas in consideration for __TDP__, and will regularly assessand reassess both old and new ones. Ultimately, __TDP__ needs broader BSD community involvement of both users and developers to have the impact we are aiming for.
