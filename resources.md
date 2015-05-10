@@ -2,7 +2,7 @@ Title: Tor BSD Diversity Project Resources
 CSS: torbsd.css
 Author: gman
 Editors: attila
-Date: 2015-03-20
+Date: 20150509
 Note: These lines at the top are multimarkdown metadata; leave them.
 
 # The Tor BSD Diversity Project (TDP) #
