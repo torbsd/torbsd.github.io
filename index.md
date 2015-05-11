@@ -11,7 +11,7 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 The __Tor BSD Diversity Project (TDP)__ is an initiative seeking to extend the use of the BSD Unix operating systems in the [Tor public anonymity network](https://www.torproject.org).
 
-## __TDP__ received a lot of unexpected publicity before any formal announcement. Please see our [FAQ](faq.html) which approaches some of the comments generated out of the mini-frenzy. We were unprepared for any public traffic, significant work still needs to be done on this web site. ##
+## __TDP__ received a lot of unexpected publicity before any formal announcement. The [FAQ](faq.html) approaches some of the comments generated out of the mini-frenzy. We were unprepared for any public traffic, significant work still needs to be done on this web site. ##
 
 BSD Unix is an open source operating system family noted for its security and stability. The major BSD projects include [FreeBSD](https://www.freebsd.org), [NetBSD](https://www.netbsd.org), [OpenBSD](http://www.openbsd.org) and [DragonFly BSD](http://www.dragonflybsd.org), with a number of tangential projects including [pfSense](https://www.pfsense.org), [FreeNAS](https://www.freenas.org) and [PC-BSD](https://www.pcbsd.org). BSD software such as [OpenSSH](http://www.openssh.com) is the default communication tool for innumerable devices on the internet. BSD software is renowned for its internet infrastructure role since its earliest days.
 
