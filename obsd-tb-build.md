@@ -16,6 +16,8 @@ Skipping any of these steps will likely result in failure. And since the port is
 
 * Install OpenBSD ports tree into the default /usr/ports location as [per the FAQ instructions](http://www.openbsd.org/anoncvs.html) on a recent snapshot of OpenBSD
 
+* As the OpenBSD ports tree will need to current and regularly update, add the appropriate remote CVS root to ~/.profile: "export CVSROOT=anoncvs@...:/cvs"
+
 * Create a "mystuff" directory at /usr/ports/mystuff where the Git repository will be located: "mkdir -p /usr/ports/mystuff"
 
 * Create a "pobj" which OpenBSD uses to compile ports: "mkdir -p /usr/ports/pobj", which we will later add as a tmpfs mount
@@ -45,3 +47,5 @@ tmpfs         20931536   3232176  17699360    15%    /usr/ports/pobj
 ## Updating the Port ##
 
 * To update the local copy from the Git repository, run "cd /usr/ports/mystuff && git pull"
+
+* To update the ports tree, "cd /usr && cvs up -Pd"

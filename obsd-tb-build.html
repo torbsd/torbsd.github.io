@@ -22,6 +22,7 @@
 
 <ul>
 <li><p>Install OpenBSD ports tree into the default /usr/ports location as <a href="http://www.openbsd.org/anoncvs.html">per the FAQ instructions</a> on a recent snapshot of OpenBSD</p></li>
+<li><p>As the OpenBSD ports tree will need to current and regularly update, add the appropriate remote CVS root to ~/.profile: &#8220;export CVSROOT=anoncvs@&#8230;:/cvs&#8221;</p></li>
 <li><p>Create a &#8220;mystuff&#8221; directory at /usr/ports/mystuff where the Git repository will be located: &#8220;mkdir -p /usr/ports/mystuff&#8221;</p></li>
 <li><p>Create a &#8220;pobj&#8221; which OpenBSD uses to compile ports: &#8220;mkdir -p /usr/ports/pobj&#8221;, which we will later add as a tmpfs mount</p></li>
 <li><p>To ease cloning the Git repository, change the permissions on /usr/ports/mystuff with &#8220;chown -R <em>your user</em> /usr/ports/mystuff&#8221;</p></li>
@@ -50,7 +51,8 @@
 <h2 id="updatingtheport">Updating the Port</h2>
 
 <ul>
-<li>To update the local copy from the Git repository, run &#8220;cd /usr/ports/mystuff &amp;&amp; git pull&#8221;</li>
+<li><p>To update the local copy from the Git repository, run &#8220;cd /usr/ports/mystuff &amp;&amp; git pull&#8221;</p></li>
+<li><p>To update the ports tree, &#8220;cd /usr &amp;&amp; cvs up -Pd&#8221;</p></li>
 </ul>
 
 </body>
