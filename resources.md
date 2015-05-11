@@ -62,9 +62,9 @@ More useful graphs about the Tor network, including [platform usage](https://met
 
 ### The Danger of Monocultures in Technology ###
 
-* [CybeInsecurity: The Cost of Monopoly. How the Dominance of Microsoft's Products Pose a Risk to Security](http://www.ccianet.org/papers/cybersecurity.pdf)
+* [CyberInsecurity: The Cost of Monopoly. How the Dominance of Microsoft's Products Pose a Risk to Security](http://www.ccianet.org/papers/cybersecurity.pdf)
 
-An explosive paper that argued Microsoft's desktop monopoly is a critical weakness in global infrastructure. The paper prompted the firing of one of the authors [Dan Geer](https://en.wikipedia.org/wiki/Dan_Geer) from @Stake (later acquired by Symantec) in 2003.
+An explosive paper arguing Microsoft's desktop monopoly is a critical weakness in global infrastructure. The paper prompted the firing of one of the authors [Dan Geer](https://en.wikipedia.org/wiki/Dan_Geer) from @Stake (later acquired by Symantec) in 2003.
 
 * [Monoculture on the Back of the Envelope](https://www.usenix.org/legacy/publiccations/login/2005-12/openpds/geer.pdf)
 
@@ -76,7 +76,7 @@ In 2010, Bruce Schneier and Marcus Ranum debate the issue. Note that a login is 
 
 * [Bruce Schneier's blog entry on "Software Monoculture"](https://www.schneier.com/blog/archives/2010/12/software_monocu.html)
 
-Bruce Schneier illustrates some of the weaknesses in the "monoculture is insecurity" argument. First, even seemingly identical computer hosts have some diversity in terms of networks, software, and so on. Second, there are significant costs to diversity. Verisign diversified its infrastructure among three operating systems, including FreeBSD, and they incur significant costs in doing so. Finally, diversity does not mean two's and three's of each, but hundreds or thousands to robustly mitigate system-wide disasters.
+Bruce Schneier illustrates some of the weaknesses in the "monoculture is insecurity" argument. First, even seemingly identical computer hosts have some diversity in terms of networks, software, and so on. Second, there are significant costs to diversity. [Verisign diversified its infrastructure](http://www.eweek.com/enterprise-apps/verisign-embraces-open-source-freebsd-for-diversity) with three operating systems, including FreeBSD, and they incur significant costs in doing so. Finally, diversity does not mean two's and three's of each, but hundreds or thousands to robustly mitigate system-wide disasters.
 
 * [Risks of Monoculture Revisited](https://blogs.microsoft.com/cybertrust/2010/12/03/risks-of-monoculture-revisited/)
 
