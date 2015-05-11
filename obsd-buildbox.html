@@ -1,0 +1,32 @@
+<p>OpenBSD Build/Test Box for Tor Browser</p>
+
+<p>Assuming decent specs with multi-cores, &gt;8Gb of RAM</p>
+
+<ul>
+<li><p>Install OpenBSD snapshot</p></li>
+<li><p>Populate the ports tree with:</p></li>
+</ul>
+
+<p>cd /usr &amp;&amp; cvs -d anoncvs@anoncvs.comstyle.com:/cvs get -P ports</p>
+
+<ul>
+<li>Create a tmpfs mount for /usr/ports/pobj in /etc/fstab</li>
+</ul>
+
+<p>+swap /usr/ports/pobj tmpfs rw 0 0</p>
+
+<ul>
+<li>Install Git, Tor and Torsocks packages</li>
+</ul>
+
+<p>pkg_add -r git</p>
+
+<p>pkg_add -r tor</p>
+
+<p>pkg_add -r torsocks</p>
+
+<ul>
+<li>Clone Tor Browser repository</li>
+</ul>
+
+<p>git clone https://github.com/torbsd/openbsd-ports /usr/ports/mystuff</p>

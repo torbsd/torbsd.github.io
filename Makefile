@@ -13,7 +13,7 @@ RM?=rm
 # or
 #   $ make mydoc.html
 
-PAGES=index.html contact.html relay-guides.html footer.html faq.html fbsd-relays.html obsd-relays.html fbsd-relays_dev.html obsd-relays_dev.html resources.html header.html licensing.html materials/flier-bsd.html obsd-tb-build.html
+PAGES=index.html contact.html relay-guides.html footer.html faq.html fbsd-relays.html obsd-relays.html fbsd-relays_dev.html obsd-relays_dev.html resources.html header.html licensing.html materials/flier-bsd.html obsd-tb-build.html obsd-buildbox.html
 
 all: $(PAGES)
 
@@ -44,6 +44,8 @@ licensing.html: licensing.md
 materials/flier-bsd.html: materials/flier-bsd.html
 
 obsd-tb-build.html: obsd-tb-build.md
+
+obsd-buildbox.html: obsd-buildbox.md
 
 ## The rest of this file makes the above possible...
 ## ... but only YOU can make it necessary.
