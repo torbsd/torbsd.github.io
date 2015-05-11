@@ -80,7 +80,7 @@ Bruce Schneier illustrates some of the weaknesses in the "monoculture is insecur
 
 * [Risks of Monoculture Revisited](https://blogs.microsoft.com/cybertrust/2010/12/03/risks-of-monoculture-revisited/)
 
-After the followup debate, the Microsoft Principal Cybersecurity Strategist concludes that monocultures aren't really that bad after all.
+After the followup debate, the Microsoft Principal Cybersecurity Strategist concludes that monocultures aren't really that bad after all. Desktop diversity seems to have established with the advent of Android and Ubuntu, and the expansion of Apple products, so the relevance of the Windows desktop monoculture may have decreased.
 
 
 ### Related and Useful Projects ###
