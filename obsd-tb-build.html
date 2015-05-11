@@ -22,9 +22,11 @@
 
 <ul>
 <li><p>Install OpenBSD ports tree into the default /usr/ports location as <a href="http://www.openbsd.org/anoncvs.html">per the FAQ instructions</a> on a recent snapshot of OpenBSD</p></li>
-<li><p>Create a a &#8220;mystuff&#8221; directory at /usr/ports/mystuff</p></li>
+<li><p>Create a &#8220;mystuff&#8221; directory at /usr/ports/mystuff where the Git repository will be located: &#8220;mkdir -p /usr/ports/mystuff&#8221;</p></li>
+<li><p>Create a &#8220;pobj&#8221; which OpenBSD uses to compile ports: &#8220;mkdir -p /usr/ports/pobj&#8221;, which we will later add as a tmpfs mount</p></li>
 <li><p>To ease cloning the Git repository, change the permissions on /usr/ports/mystuff with &#8220;chown -R <em>your user</em> /usr/ports/mystuff&#8221;</p></li>
 <li><p>Firefox and the associated dependencies can employ a lot of disk space when compiling from source. The main directory to be concerned with is /usr/ports/pobj. With sufficient RAM, a shortcut to bypass filling the /usr/ports/pobj partition is to use mount_tmpfs(8). Type &#8220;mount -t tmpfs tmpfs /usr/ports/&#8221;s which will produce a large tmpfs mount.</p></li>
+<li><p>To maintain a tmpfs mount after reboots for /usr/ports/pobj, add the following line to the /etc/fstab file: &#8220;swap /usr/ports/pobj tmpfs rw 0 0&#8221;</p></li>
 </ul>
 
 <p>Once mounted, a df(1) output might look something like this:</p>
