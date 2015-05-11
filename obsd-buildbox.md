@@ -6,11 +6,27 @@ Note: above is markdown data, edit or leave alone.
 
 # OpenBSD Build/Test Box for Tor Browser #
 
-Desktops are slow, servers are (supposed to be) fast. For testing builds, keeping the port in sync with the GitHub repository, the OpenBSD ports tree, creating and updating package. This also requires keeping base operating system, the ports tree and the Tor Browser repository updated with each new build. 
+Desktops are slow, servers are (supposed to be) fast. For those interested in doing more than just compiling the current version of OpenBSD Tor Browser, a full server configuration might be of-interest. This might include testing builds, keeping the port in-sync with the [GitHub repository]{https://github.com/torbsd/openbsd-ports), maintaining a current OpenBSD ports tree, creating and updating the package. This also requires keeping base operating system, the ports tree and the Tor Browser repository updated with each new build. 
 
 Assuming decent specs with multi-cores, >8Gb of RAM
 
 * Install OpenBSD snapshot
+
+* OpenBSD is sanely restrictive on how much resources each users can utilize.  Therefore, it is necessary to make some system changes to allow something as collassal as building the Tor Browser on OpenBSD.
+
+A new login class entitled "builders" is created, limits dropped in /etc/login.conf and the file is regenerated and the build user is added to the group.
+
+builders:\
+        :datasize-cur=infinity:\
+        :datasize-max=infinity:\
+        :filesize-max=infinity:\
+        :stacksize-max=infinity:\
+        :maxproc-max=infinity:\
+        :maxproc-cur=256:\
+        :memorylocked-max=infinity:\
+        :openfiles-max=infinity:\
+        :tc=default:
+
 
 * Populate the ports tree with:
 

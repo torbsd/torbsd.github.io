@@ -8,7 +8,9 @@ Note: above is markdown data, edit or leave alone.
 
 amd64/snapshots only?
 
-As there is no binary, pre-built package available, it is necessary to compile the Tor Browser from source. Depending on hardware specifications, this will take a while.
+These instructions are aimed at an audience interested in building the OpenBSD Tor Browser for the desktop/laptop client computer. For those interested in more comprehensive testings, buildings packages, etc., please refer to our [OpenBSD Build Box piece](obsd-buildbox.html].
+
+As there is currently no binary, pre-built package available, it is necessary to compile the Tor Browser from source. Depending on hardware specifications, this will take a while.
 
 Skipping any of these steps will likely result in failure. And since the port is in development and has a lot of moving parts, it may just break anyways.
 
