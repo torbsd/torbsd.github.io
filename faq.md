@@ -19,8 +19,7 @@ Review our web site and documentation, and let us know if something is unclear o
 
 * __Users__
 
-As a BSD Tor Browser is available, start using and testing it. Submit comments a
-nd questions.
+As a BSD Tor Browser is available, start using and testing it on OpenBSD. Submit comments and questions.
 
 * __Developers__
 
@@ -42,7 +41,7 @@ The uniting aspects for all the BSDs is the preference for the simplicity of BSD
 
 ## "Diversity?  It's all written in C. The Linux distros and some of the BSDs have a lot of common pieces like GCC, OpenSSL, etc." ##
 
-Ultimately diversity does mean asking much broader questions. More diversity in operating systems, hardware, SSL versions, geographical locations, the list could continue endlessly. It's the right question to ask, but __TDP__ is only beginning to provide a small piece of a response.
+Ultimately diversity *does* mean asking much broader questions. More diversity in operating systems, hardware, SSL versions, geographical locations, the list could continue endlessly. It's the right question to ask, but __TDP__ is only beginning to provide a small piece of a response.
 
 ## "How many Tor relays are running a BSD?" ##
 
@@ -60,7 +59,7 @@ In reference to [this Reddit thread](https://www.reddit.com/r/linux/comments/356
 
 To a large extent, __TDP's__ target audience is those already familiar with the BSDs. Significant numbers in the BSD community have access to data center space for running relays, are developers who hack code, etc. It's about getting the BSD community engaged into the Tor scene, not so much vice-versa.
 
-For those interested in running a BSD relay, command-line interactions are similar enough to the Linux distros. While not the default shell on any BSD, bash is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves.
+For those interested in running a BSD relay, command-line interactions are similar enough to the Linux distros. While not the default shell on any BSD, bash is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves. As a matter of fact, migrating from bash might [decrease security patching time](https://web.nvd.nist.gov/view/vuln/search-results?query=bash&search_type=all&cves=on) compared to [tcsh](https://web.nvd.nist.gov/view/vuln/search-results?query=tcsh&search_type=all&cves=on) or even [ancient, non-OpenBSD versions of ksh](https://web.nvd.nist.gov/view/vuln/search-results?query=ksh&search_type=all&cves=on).
 
 The BSD install processes vary, but after a few tries, it's hardly a difficult task. For the BSDs, there is no assumption that graphical installers are "easier" than non-graphical ones.
 
