@@ -51,3 +51,5 @@ tmpfs         20931536   3232176  17699360    15%    /usr/ports/pobj
 * To update the local copy from the Git repository, run "cd /usr/ports/mystuff && git pull"
 
 * To update the ports tree, "cd /usr && cvs up -Pd"
+
+?? make -j on OBSD?
