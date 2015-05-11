@@ -28,6 +28,30 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 * [FreeNAS](https://www.freenas.org)
 
+### BSDs and Tor ###
+
+* [Tor-BSD Mailing List](http://lists.nycbug.org/mailman/listinfo/tor-bsd) hoste
+d by the [New York City *BSD User Group](http://www.nycbug.org)
+
+* [An Unofficial BSD Buildbot for the Tor Project](http://81.7.14.172)
+
+A distributed test build system for finding problems with BSD Tor builds.
+
+* Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twv
+ihadsu5oznuux.onion/)
+
+Birds-of-a-Feather sessions at vBSDCon in fall 2013 and NYCBSDCon 2014.
+
+* [Tor Network Status](http://torstatus.blutmagie.de)
+
+A useful overview of the current public Tor relays, with a query function to che
+ck relay numbers by operating system.
+
+* [Tor Metrics](http://metrics.torproject.org)
+
+More useful graphs about the Tor network, including [platform usage](https://met
+rics.torproject.org/platforms.html).
+
 ### Relevant BSD Bits ###
 
 * [Theo de Raadt slides on arc4random](http://www.openbsd.org/papers/hackfest2014-arc4random/index.html)
@@ -39,26 +63,6 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 * [Theo de Raadt slides on "Exploit Mitigation Techniques: An Update After 10 Years"](http://www.openbsd.org/papers/ru13-deraadt/)
 
 * [Ted Unangst on "LibreSSL: More than 30 Days Late"](http://www.openbsd.org/papers/eurobsdcon2014-libressl.html)
-
-### BSDs and Tor ###
-
-* [Tor-BSD Mailing List](http://lists.nycbug.org/mailman/listinfo/tor-bsd) hosted by the [New York City *BSD User Group](http://www.nycbug.org)
-
-* [An Unofficial BSD Buildbot for the Tor Project](http://81.7.14.172)
-
-A distributed test build system for finding problems with BSD Tor builds.
-
-* Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twvihadsu5oznuux.onion/)
-
-Birds-of-a-Feather sessions at vBSDCon in fall 2013 and NYCBSDCon 2014.
-
-* [Tor Network Status](http://torstatus.blutmagie.de)
-
-A useful overview of the current public Tor relays, with a query function to check relay numbers by operating system.
-
-* [Tor Metrics](http://metrics.torproject.org)
-
-More useful graphs about the Tor network, including [platform usage](https://metrics.torproject.org/platforms.html).
 
 ### The Danger of Monocultures in Technology ###
 
