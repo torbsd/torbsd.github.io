@@ -6,6 +6,8 @@ Note: above is markdown data, edit or leave alone.
 
 # OpenBSD Build/Test Box for Tor Browser #
 
+For testing builds, creating package, keeping port updated
+
 Assuming decent specs with multi-cores, >8Gb of RAM
 
 * Install OpenBSD snapshot
@@ -28,6 +30,6 @@ pkg_add -r torsocks
 
 * Clone Tor Browser repository
 
-git clone https://github.com/torbsd/openbsd-ports /usr/ports/mystuff
+cd /usr/ports/mystuff && git clone https://github.com/torbsd/openbsd-ports
 
 ? make -j .. time(1)
