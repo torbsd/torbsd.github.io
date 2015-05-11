@@ -44,6 +44,8 @@ tmpfs         20931536   3232176  17699360    15%    /usr/ports/pobj
 
 * From /usr/ports/mystuff/www/tbb/tor-browser, run "make install"
 
+* Alternately, to get a measure of the time to build the port, run "time make install"
+
 ## Updating the Port ##
 
 * To update the local copy from the Git repository, run "cd /usr/ports/mystuff && git pull"
