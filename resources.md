@@ -48,7 +48,7 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 A distributed test build system for finding problems with BSD Tor builds.
 
-* Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twvlhadsu5oznuux.onion)
+* Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twvihadsu5oznuux.onion/)
 
 Birds-of-a-Feather sessions at vBSDCon in fall 2013 and NYCBSDCon 2014.
 
