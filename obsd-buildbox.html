@@ -12,7 +12,7 @@
 
 <h1 id="openbsdbuildtestboxfortorbrowser">OpenBSD Build/Test Box for Tor Browser</h1>
 
-<p>For testing builds, creating package, keeping port updated</p>
+<p>Desktops are slow, servers are (supposed to be) fast. For testing builds, keeping the port in sync with the GitHub repository, the OpenBSD ports tree, creating and updating package. This also requires keeping base operating system, the ports tree and the Tor Browser repository updated with each new build. </p>
 
 <p>Assuming decent specs with multi-cores, &gt;8Gb of RAM</p>
 
@@ -24,13 +24,14 @@
 <p>cd /usr &amp;&amp; cvs -d anoncvs@anoncvs.comstyle.com:/cvs get -P ports</p>
 
 <ul>
-<li>Create a tmpfs mount for /usr/ports/pobj in /etc/fstab</li>
+<li><p>Is /usr big enough? 2G isn&#8217;t</p></li>
+<li><p>Create a tmpfs mount for /usr/ports/pobj in /etc/fstab</p></li>
 </ul>
 
 <p>+swap /usr/ports/pobj tmpfs rw 0 0</p>
 
 <ul>
-<li>Install Git, Tor and Torsocks packages</li>
+<li>Install Git, Tor and Torsocks packages, the latter two assuming GitHub&#8217; pulls are accessed over Tor. At this end of the install, there will be many, many more packages installed.</li>
 </ul>
 
 <p>pkg_add -r git</p>
@@ -45,7 +46,22 @@
 
 <p>cd /usr/ports/mystuff &amp;&amp; git clone https://github.com/torbsd/openbsd-ports</p>
 
+<ul>
+<li>Future Builds</li>
+</ul>
+
+<p>As the Tor Browser port is in regular development, keeping the port builds updated requires updating the OpenBSD snapshot in use, the ports tree and Tor Browser repository on GitHub. Note that after the required dependencies are installed, subsequent Tor Browser builds will be significantly faster.</p>
+
+<ul>
+<li><p>To keep the ports tree updated after the initial checkout:
+cd /usr/ports &amp;&amp; cvs up -Pd</p></li>
+<li><p>To update Github&#8217;s openbsd-ports repository:
+cd /usr/ports/mystuff &amp;&amp; git pull</p></li>
+</ul>
+
 <p>? make -j .. time(1)</p>
+
+<p>pkg_create(1)</p>
 
 </body>
 </html>
