@@ -37,8 +37,7 @@ d by the [New York City *BSD User Group](http://www.nycbug.org)
 
 A distributed test build system for finding problems with BSD Tor builds.
 
-* Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twv
-ihadsu5oznuux.onion/)
+* Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twvihadsu5oznuux.onion/)
 
 Birds-of-a-Feather sessions at vBSDCon in fall 2013 and NYCBSDCon 2014.
 
