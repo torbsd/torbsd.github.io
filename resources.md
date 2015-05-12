@@ -28,10 +28,10 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 * [FreeNAS](https://www.freenas.org)
 
+
 ### BSDs and Tor ###
 
-* [Tor-BSD Mailing List](http://lists.nycbug.org/mailman/listinfo/tor-bsd) hoste
-d by the [New York City *BSD User Group](http://www.nycbug.org)
+* [Tor-BSD Mailing List](http://lists.nycbug.org/mailman/listinfo/tor-bsd) hosted by the [New York City *BSD User Group](http://www.nycbug.org)
 
 * [An Unofficial BSD Buildbot for the Tor Project](http://81.7.14.172)
 
@@ -43,12 +43,12 @@ Birds-of-a-Feather sessions at vBSDCon in fall 2013 and NYCBSDCon 2014.
 
 * [Tor Network Status](http://torstatus.blutmagie.de)
 
-A useful overview of the current public Tor relays, with a query function to che
-ck relay numbers by operating system.
+A useful overview of the current public Tor relays, with a query function to check relay numbers by operating system.
 
 * [Tor Metrics](http://metrics.torproject.org)
 
 More useful graphs about the Tor network, including [platform usage](https://metrics.torproject.org/platforms.html).
+
 
 ### Relevant BSD Bits ###
 
@@ -61,6 +61,7 @@ More useful graphs about the Tor network, including [platform usage](https://met
 * [Theo de Raadt slides on "Exploit Mitigation Techniques: An Update After 10 Years"](http://www.openbsd.org/papers/ru13-deraadt/)
 
 * [Ted Unangst on "LibreSSL: More than 30 Days Late"](http://www.openbsd.org/papers/eurobsdcon2014-libressl.html)
+
 
 ### The Danger of Monocultures in Technology ###
 
@@ -95,17 +96,19 @@ Building small OpenBSD i386 and amd64 embedded systems. An ideal platform for sm
 
 A tool for building FreeBSD images for embedded systems on a variety of architectures, including contemporary armv6 and armv7 hardware such as Raspberry Pis and BeagleBones. 
 
+
 ### Chatter About __TDP__ ###
 
 * [__TDP__ prematurely announced on the Tor-talk mailing list](https://lists.torproject.org/pipermail/tor-talk/2015-April/037649.html)
 
-Appreciated nonetheless, Moritz.
+Appreciated nonetheless.
 
 * [Followed up by a headline on BSDNow.tv](http://www.bsdnow.tv/episodes/2015_05_06-below_the_clouds)
 
 * [Reddit on __TDP__](https://www.reddit.com/r/linux/comments/356iyy/torbsd_diversity_project_help_move_tor_nodes_from/)
 
 And again, before we publicly announced, a __TDP__ Reddit thread. Very appreciated, but one important point of clarification: we are not interested in having Linux relays being transformed into BSD relays. If someone runs a relay, they should use the operating system they are most comfortable with. And __TDP__ is more about affecting the BSD community than converting anyone __to__ the BSDs. Another quick comment is that we strongly agree in the larger monoculture problem. Ideal diversity would encompass a variety of applications and hardware, and that applies to Tor as much as anything. But there's a major issue to consider, and that's interoperability. There needs to be some agreement on protocols before there can be any routing or communications in general. If one mail server only talks SMTP and the other only UUCP, email routing does not happen.
+
 
 ### Materials ###
 
