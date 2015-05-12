@@ -79,13 +79,15 @@ With a production-quality OpenBSD Tor Browser port, porting to other BSDs or any
 
 ## "Are you associated with the Tor Project?" ##
 
-__TDP__ is __not__ an official project of Tor. We are merely long-time Tor users and relay operators whose preferred platform is BSD Unix. But we have no formal association with Tor.
+__TDP__ is __not__ an official project of Tor. We are merely long-time Tor users and relay operators whose preferred platform is BSD Unix.
 
 ## "What do you hope to accomplish with porting the Tor Browser to OpenBSD?" ##
 
 ## "What are the hurdles to porting Tor Browser to OpenBSD?" ##
 
 ## "Will the Tor Browser be in the OpenBSD ports tree and available as a package?" ##
+
+Yes.  Definitely.
 
 ## "Beyond porting Tor Browser to OpenBSD and the relay guides, what other activities does __TDP__ look to conduct?" ##
 
