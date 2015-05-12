@@ -71,7 +71,7 @@ With a little time and patience, running a BSD relay shouldn't be an insurmoutab
 
 ## "Why did Tor Browser work start with OpenBSD? On the desktop at least, isn't FreeBSD more popular?" ##
 
-FreeBSD may very well be more widely used, but operating system usage statistics are wildly untrustworthy, particularly when the BSD license doesn't require users to publicize using BSD code.
+FreeBSD may very well be more widely used, but operating system usage statistics are wildly untrustworthy.
 
 While all the BSDs aim to be standards compliant, OpenBSD is the most orthodox in this respect. Therefore, if software runs on OpenBSD and is accepted into their base or ports trees, porting that software to another POSIX-compliant operating system is very possible. There are popular examples to mention, such as OpenSSH, arc4random, OpenNTPD and for those who only read Slashdot.org over the past year, LibreSSL is quickly gaining momentum as another piece of easily portable code from the OpenBSD project.
 
