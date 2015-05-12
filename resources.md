@@ -48,8 +48,7 @@ ck relay numbers by operating system.
 
 * [Tor Metrics](http://metrics.torproject.org)
 
-More useful graphs about the Tor network, including [platform usage](https://met
-rics.torproject.org/platforms.html).
+More useful graphs about the Tor network, including [platform usage](https://metrics.torproject.org/platforms.html).
 
 ### Relevant BSD Bits ###
 
