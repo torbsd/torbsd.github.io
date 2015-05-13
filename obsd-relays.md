@@ -21,21 +21,9 @@ This guide is based on OpenBSD 5.6, which was released on November 1, 2014.
 
 ### Syntax ###
 
-The shell is denoted with $ and an indent with one tab.
+Refer to the [Documentation Style Guide](doc-guide.html) for information about syntax in this document.
 
->$ this is a shell command
-
-File names and paths are italicized.
-
-*/etc/tor/torrc*
-
-Any text displayed on the screen is indicated in __bold__. For instance, if Tor starts successfully, as a client, this line would appear in the log file:
-
-__Nov 22 22:14:20.000 [notice] Bootstrapped 100%: Done__
-
-File additions are indicated with a plus symbol with a single tab indent.
-
->+add this line=1 
+### OpenBSD Documentation ###
 
 OpenBSD documentation, both its [FAQ] and [manual pages], are comprehensive and accurate. The vast majority of stop-gaps faced by a user are answered there.
 
