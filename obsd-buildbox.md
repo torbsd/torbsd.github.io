@@ -6,9 +6,7 @@ Note: above is markdown data, edit or leave alone.
 
 # OpenBSD Build/Test Box for Tor Browser #
 
-Desktops are slow, servers are (supposed to be) fast. For those interested in doing more than just compiling the current version of OpenBSD Tor Browser, a full server configuration might be of-interest. This might include testing builds, keeping the port in-sync with the [GitHub repository]{https://github.com/torbsd/openbsd-ports), maintaining a current OpenBSD ports tree, creating and updating the package. This also requires keeping base operating system, the ports tree and the Tor Browser repository updated with each new build. 
-
-Assuming decent specs with multi-cores, >8Gb of RAM
+This piece is aimed at those looking to test the Tor Browser port. Full instructions for configuring the OpenBSD system are included, keeping the system updated, plus creating a Tor Browser package. While any system could be used for this purpose, it is strongly recommended that the specifications include at least 8Gb of RAM and a 1Tb hard disk.
 
 * Install OpenBSD snapshot
 
@@ -16,13 +14,13 @@ Assuming decent specs with multi-cores, >8Gb of RAM
 
 * For partitions creation, do a manual setup.
 
-Add a separate partition for /usr/ports/pobj with 20G or so.
+Add a separate partition for /usr/ports/pobj 20Gb in size.
 
-/usr should also be around 10G
+/usr should also be around 10G.
 
 Create a group in /etc/group entitled "builders" and add the non-privileged user
 
-builders:*:32768:
+builders:*:32768:root,<your_user>
 
 A new login class entitled "builders" for the builders group is created, limits dropped in /etc/login.conf and the file is regenerated and the build user is added to the group.
 
@@ -39,12 +37,9 @@ builders:\
         :openfiles-max=infinity:\
         :tc=default:
 
-
-* Populate the ports tree with:
-
-cd /usr && cvs -d anoncvs@anoncvs.comstyle.com:/cvs get -P ports
-
-* Install Git, Tor and Torsocks packages, the latter two assuming GitHub' pulls are accessed over Tor. At this end of the install, there will be many, many more packages installed.
+* Install Git, Tor and Torsocks packages, the latter two assuming GitHub' pulls
+are accessed over Tor. At this end of the install, there will be many, many more
+ packages installed.
 
 pkg_add -r git
 
@@ -52,15 +47,46 @@ pkg_add -r tor
 
 pkg_add -r torsocks
 
-To pull GitHub over Tor, remove the hash at line 18:
+* Instructions for configurating Tor and torsocks are included, for those who want to pull from GitHub anonymously.
+
+* /etc/rc.conf.local
+
+ntpd_flags=
+sndiod_flags=NO
+smtpd_flags=NO
+tor_flags="-f /etc/tor/torrc"
+
+* /etc/tor/torrc
 
 SocksPort 9050
 
-Start Tor by typing:
+Log notice file /var/log/tor
+
+* Log file
+
+touch /var/log/tor
+
+chown _tor:_tor /var/log/tor
+
+chmod 700 /var/log/tor
 
 /etc/rc.d/tor start
 
-* Clone Tor Browser repository
+To watch Tor start:
+
+tail -f /var/log/tor
+
+netstat -na | grep 9050
+
+tcp          0      0  127.0.0.1.9050         *.*                    LISTEN
+
+* Populate the Ports Tree
+
+For more detailed instructions and to find an anoncvs server, see the [FAQ instructions](http://www.openbsd.org/anoncvs.html).
+
+cd /usr && cvs -d anoncvs@anoncvs.comstyle.com:/cvs get -P ports
+
+* Clone Tor Browser Repository with Git
 
 cd /usr/ports/mystuff && git clone https://github.com/torbsd/openbsd-ports
 
@@ -77,6 +103,18 @@ The Tor Browser build files are in openbsd-ports/www/tbb
 
 cd /usr/ports/mystuff/openbsd-ports/www/tbb/
 
+make install
+
+or to allow more four synchronous processes:
+
+make -j 4 install
+
+To calculate the build time, use time(1):
+
+time make -j 4 install
+
+The initial build will take a while, but once the dependencies and build dependencies are installed, future builds will be significantly faster.
+
 * Future Builds
 
 As the Tor Browser port is in regular development, keeping the port builds updated requires updating the OpenBSD snapshot in use, the ports tree and Tor Browser repository on GitHub. Note that after the required dependencies are installed, subsequent Tor Browser builds will be significantly faster.
@@ -85,8 +123,6 @@ As the Tor Browser port is in regular development, keeping the port builds updat
 cd /usr/ports && cvs up -Pd
 
 * To update Github's openbsd-ports repository:
-cd /usr/ports/mystuff && git pull
-
-? make -j .. time(1)
+cd /usr/ports/mystuff && git pull (or "torsocks git pull" to perform over Tor)
 
 pkg_create(1)

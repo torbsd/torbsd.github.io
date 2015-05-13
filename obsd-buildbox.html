@@ -12,9 +12,7 @@
 
 <h1 id="openbsdbuildtestboxfortorbrowser">OpenBSD Build/Test Box for Tor Browser</h1>
 
-<p>Desktops are slow, servers are (supposed to be) fast. For those interested in doing more than just compiling the current version of OpenBSD Tor Browser, a full server configuration might be of-interest. This might include testing builds, keeping the port in-sync with the [GitHub repository]{https://github.com/torbsd/openbsd-ports), maintaining a current OpenBSD ports tree, creating and updating the package. This also requires keeping base operating system, the ports tree and the Tor Browser repository updated with each new build. </p>
-
-<p>Assuming decent specs with multi-cores, &gt;8Gb of RAM</p>
+<p>This piece is aimed at those looking to test the Tor Browser port. Full instructions for configuring the OpenBSD system are included, keeping the system updated, plus creating a Tor Browser package. While any system could be used for this purpose, it is strongly recommended that the specifications include at least 8Gb of RAM and a 1Tb hard disk.</p>
 
 <ul>
 <li><p>Install OpenBSD snapshot</p></li>
@@ -22,13 +20,13 @@
 <li><p>For partitions creation, do a manual setup.</p></li>
 </ul>
 
-<p>Add a separate partition for /usr/ports/pobj with 20G or so.</p>
+<p>Add a separate partition for /usr/ports/pobj 20Gb in size.</p>
 
-<p>/usr should also be around 10G</p>
+<p>/usr should also be around 10G.</p>
 
 <p>Create a group in /etc/group entitled &#8220;builders&#8221; and add the non-privileged user</p>
 
-<p>builders:*:32768:</p>
+<p>builders:*:32768:root,&lt;your_user&gt;</p>
 
 <p>A new login class entitled &#8220;builders&#8221; for the builders group is created, limits dropped in /etc/login.conf and the file is regenerated and the build user is added to the group.</p>
 
@@ -46,13 +44,9 @@
  :tc=default:</p>
 
 <ul>
-<li>Populate the ports tree with:</li>
-</ul>
-
-<p>cd /usr &amp;&amp; cvs -d anoncvs@anoncvs.comstyle.com:/cvs get -P ports</p>
-
-<ul>
-<li>Install Git, Tor and Torsocks packages, the latter two assuming GitHub&#8217; pulls are accessed over Tor. At this end of the install, there will be many, many more packages installed.</li>
+<li>Install Git, Tor and Torsocks packages, the latter two assuming GitHub&#8217; pulls
+are accessed over Tor. At this end of the install, there will be many, many more
+ packages installed.</li>
 </ul>
 
 <p>pkg_add -r git</p>
@@ -61,16 +55,54 @@
 
 <p>pkg_add -r torsocks</p>
 
-<p>To pull GitHub over Tor, remove the hash at line 18:</p>
+<ul>
+<li><p>Instructions for configurating Tor and torsocks are included, for those who want to pull from GitHub anonymously.</p></li>
+<li><p>/etc/rc.conf.local</p></li>
+</ul>
+
+<p>ntpd_flags=
+sndiod_flags=NO
+smtpd_flags=NO
+tor_flags=&#8220;-f /etc/tor/torrc&#8221;</p>
+
+<ul>
+<li>/etc/tor/torrc</li>
+</ul>
 
 <p>SocksPort 9050</p>
 
-<p>Start Tor by typing:</p>
+<p>Log notice file /var/log/tor</p>
+
+<ul>
+<li>Log file</li>
+</ul>
+
+<p>touch /var/log/tor</p>
+
+<p>chown _tor:_tor /var/log/tor</p>
+
+<p>chmod 700 /var/log/tor</p>
 
 <p>/etc/rc.d/tor start</p>
 
+<p>To watch Tor start:</p>
+
+<p>tail -f /var/log/tor</p>
+
+<p>netstat -na | grep 9050</p>
+
+<p>tcp 0 0 127.0.0.1.9050 <em>.</em> LISTEN</p>
+
 <ul>
-<li>Clone Tor Browser repository</li>
+<li>Populate the Ports Tree</li>
+</ul>
+
+<p>For more detailed instructions and to find an anoncvs server, see the <a href="http://www.openbsd.org/anoncvs.html">FAQ instructions</a>.</p>
+
+<p>cd /usr &amp;&amp; cvs -d anoncvs@anoncvs.comstyle.com:/cvs get -P ports</p>
+
+<ul>
+<li>Clone Tor Browser Repository with Git</li>
 </ul>
 
 <p>cd /usr/ports/mystuff &amp;&amp; git clone https://github.com/torbsd/openbsd-ports</p>
@@ -90,6 +122,18 @@
 
 <p>cd /usr/ports/mystuff/openbsd-ports/www/tbb/</p>
 
+<p>make install</p>
+
+<p>or to allow more four synchronous processes:</p>
+
+<p>make -j 4 install</p>
+
+<p>To calculate the build time, use time(1):</p>
+
+<p>time make -j 4 install</p>
+
+<p>The initial build will take a while, but once the dependencies and build dependencies are installed, future builds will be significantly faster.</p>
+
 <ul>
 <li>Future Builds</li>
 </ul>
@@ -100,10 +144,8 @@
 <li><p>To keep the ports tree updated after the initial checkout:
 cd /usr/ports &amp;&amp; cvs up -Pd</p></li>
 <li><p>To update Github&#8217;s openbsd-ports repository:
-cd /usr/ports/mystuff &amp;&amp; git pull</p></li>
+cd /usr/ports/mystuff &amp;&amp; git pull (or &#8220;torsocks git pull&#8221; to perform over Tor)</p></li>
 </ul>
-
-<p>? make -j .. time(1)</p>
 
 <p>pkg_create(1)</p>
 
