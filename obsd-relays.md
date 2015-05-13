@@ -27,11 +27,6 @@ Refer to the [Documentation Style Guide](doc-guide.html) for information about s
 
 OpenBSD documentation, both its [FAQ] and [manual pages], are comprehensive and accurate. The vast majority of stop-gaps faced by a user are answered there.
 
-Parenthesis after a word indicates the relevant manual page number. To access
- the man page for ntpd(8), for instance, type:
-
->$ man 8 ntpd
-
 ### Some Preliminary Issues: OpenBSD -STABLE -CURRENT or snapshots? Ports or Packages? ###
 
 OpenBSD's -STABLE branch is released every six months. The -CURRENT branch, in the form of snapshots, are updated as often, sometimes on a daily basis. Upgrading OpenBSD is easiest with either physical or serial console access to the server. Without immediate access, the -STABLE version is the recommended route.

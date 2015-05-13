@@ -23,25 +23,11 @@ This guide is based on the FreeBSD 10-branch.
 
 ### Syntax ###
 
-The shell is denoted with % and a single tab indent.
+Refer to the [Documentation Style Guide](doc-guide.html) for information about syntax in this document.
 
->% this is a shell command
+### FreeBSD Documentation ###
 
-File names and paths are italicized.
-
-*/usr/local/etc/tor/torrc*
-
-Standard out, or what the computer is displaying is indicated in bold. For instance, if Tor starts successfully, as a client, this line would appear in the log file:
-
-__Nov 22 22:14:20.000 [notice] Bootstrapped 100%: Done__
-
-File additions are indicated with a plus symbol with a single tab indent.
-
->+add this line=1
-
-FreeBSD maintains documentation in the [FreeBSD Handbook] and in the [manual pages]. The man pages are also available directly on a FreeBSD system. Parenthesis after a word indicates the relevant manual page number. To access the man page for ntpd(8), for instance, type:
-
->% man 8 ntpd
+FreeBSD maintains documentation in the [FreeBSD Handbook] and in the [manual pages]. The man pages are also available directly on a FreeBSD system.
 
 ## The Quick and Short Version ##
 
