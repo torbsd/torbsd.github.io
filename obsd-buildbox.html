@@ -24,24 +24,32 @@
 
 <p>/usr should also be around 10G.</p>
 
+<p>In the event of smaller hard disks, tmpfs can be considered for /usr/ports/pobj, although any preexisting files will disappear on reboots.</p>
+
+<p>$ mount -t tmpfs tmpfs /usr/ports/pobj</p>
+
+<ul>
+<li>A Builders Group to Reduce System Limits</li>
+</ul>
+
 <p>Create a group in /etc/group entitled &#8220;builders&#8221; and add the non-privileged user</p>
 
-<p>builders:*:32768:root,&lt;your_user&gt;</p>
+<p>+builders:*:32768:root,&lt;your_user&gt;</p>
 
 <p>A new login class entitled &#8220;builders&#8221; for the builders group is created, limits dropped in /etc/login.conf and the file is regenerated and the build user is added to the group.</p>
 
-<p>builders:
- :datasize-cur=infinity:
- :datasize-max=infinity:
- :filesize-max=infinity:
- :stacksize-max=infinity:
- :maxproc-max=infinity:
- :maxproc-cur=256:
- :memorylocked-max=infinity:
- :memoryuse-max=infinity:
- :vmemoryuse-max=infinity:
- :openfiles-max=infinity:
- :tc=default:</p>
+<p>+builders:
++ :datasize-cur=infinity:
++ :datasize-max=infinity:
++ :filesize-max=infinity:
++ :stacksize-max=infinity:
++ :maxproc-max=infinity:
++ :maxproc-cur=256:
++ :memorylocked-max=infinity:
++ :memoryuse-max=infinity:
++ :vmemoryuse-max=infinity:
++ :openfiles-max=infinity:
++ :tc=default:</p>
 
 <ul>
 <li>Install Git, Tor and Torsocks packages, the latter two assuming GitHub&#8217; pulls
@@ -142,7 +150,7 @@ tor_flags=&#8220;-f /etc/tor/torrc&#8221;</p>
 
 <ul>
 <li><p>To keep the ports tree updated after the initial checkout:
-cd /usr/ports &amp;&amp; cvs up -Pd</p></li>
+$cd /usr/ports &amp;&amp; cvs up -Pd</p></li>
 <li><p>To update Github&#8217;s openbsd-ports repository:
 cd /usr/ports/mystuff &amp;&amp; git pull (or &#8220;torsocks git pull&#8221; to perform over Tor)</p></li>
 </ul>

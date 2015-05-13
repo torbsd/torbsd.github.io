@@ -18,24 +18,30 @@ Add a separate partition for /usr/ports/pobj 20Gb in size.
 
 /usr should also be around 10G.
 
+In the event of smaller hard disks, tmpfs can be considered for /usr/ports/pobj, although any preexisting files will disappear on reboots.
+
+$ mount -t tmpfs tmpfs /usr/ports/pobj
+
+* A Builders Group to Reduce System Limits
+
 Create a group in /etc/group entitled "builders" and add the non-privileged user
 
-builders:*:32768:root,<your_user>
++builders:*:32768:root,<your_user>
 
 A new login class entitled "builders" for the builders group is created, limits dropped in /etc/login.conf and the file is regenerated and the build user is added to the group.
 
-builders:\
-        :datasize-cur=infinity:\
-        :datasize-max=infinity:\
-        :filesize-max=infinity:\
-        :stacksize-max=infinity:\
-        :maxproc-max=infinity:\
-        :maxproc-cur=256:\
-        :memorylocked-max=infinity:\
-	:memoryuse-max=infinity:\
-	:vmemoryuse-max=infinity:\
-        :openfiles-max=infinity:\
-        :tc=default:
++builders:\
++        :datasize-cur=infinity:\
++        :datasize-max=infinity:\
++        :filesize-max=infinity:\
++        :stacksize-max=infinity:\
++        :maxproc-max=infinity:\
++        :maxproc-cur=256:\
++        :memorylocked-max=infinity:\
++	 :memoryuse-max=infinity:\
++   	 :vmemoryuse-max=infinity:\
++        :openfiles-max=infinity:\
++        :tc=default:
 
 * Install Git, Tor and Torsocks packages, the latter two assuming GitHub' pulls
 are accessed over Tor. At this end of the install, there will be many, many more
@@ -120,7 +126,7 @@ The initial build will take a while, but once the dependencies and build depende
 As the Tor Browser port is in regular development, keeping the port builds updated requires updating the OpenBSD snapshot in use, the ports tree and Tor Browser repository on GitHub. Note that after the required dependencies are installed, subsequent Tor Browser builds will be significantly faster.
 
 * To keep the ports tree updated after the initial checkout:
-cd /usr/ports && cvs up -Pd
+$cd /usr/ports && cvs up -Pd
 
 * To update Github's openbsd-ports repository:
 cd /usr/ports/mystuff && git pull (or "torsocks git pull" to perform over Tor)

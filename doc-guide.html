@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link type="text/css" rel="stylesheet" href="torbsd.css"/>
+</head>
+<body>
+
+<h1 id="documentationstyleguide">Documentation Style Guide</h1>
+
+<p>This piece is meant to illustrate <strong>TDP</strong> documentation. This is standard for all <strong>TDP</strong> syntax in the tutorials and guides.</p>
+
+<h3 id="shellcommand-line">Shell/Command-Line</h3>
+
+<p>All shell commands will be indicated by a dollar sign <code>$</code>, the default symbol of /bin/ksh, which a single-tab indent.</p>
+
+<p>Example:</p>
+
+<blockquote>
+<p>$ <em>run this command</em></p>
+</blockquote>
+
+<h3 id="filenamesandpaths">File Names and Paths</h3>
+
+<p>Both file names and paths are in <strong>bold</strong>, unless it is part of a shell command.</p>
+
+<p>Examples:</p>
+
+<blockquote>
+<p>Change to the <strong>/usr/ports/mystuff/openbsd-ports/www/tbb/tor-browser</strong> directory.</p>
+
+<p>Edit the <strong>torrc</strong> file.</p>
+</blockquote>
+
+<h3 id="openbsdbaseprograms">OpenBSD Base Programs</h3>
+
+<p>When base programs are referenced, they are appended with a number, representing the relevant manual page.</p>
+
+<p>Example:</p>
+
+<blockquote>
+<p>ls(1)</p>
+</blockquote>
+
+<p>That particular manual page can be accessed by typing:</p>
+
+<blockquote>
+<p>$ man 1 ls</p>
+</blockquote>
+
+<h3 id="editsadditionsdeletionsfromfiles">Edits/Additions/Deletions from Files</h3>
+
+<p>The standard notation for adding lines is the plus symbol <code>+</code></p>
+
+<p>Example:</p>
+
+<blockquote>
+<p>+<em>add this line</em></p>
+</blockquote>
+
+<p>Removing lines is indicated by the minus symbol <code>-</code></p>
+
+<p>Example:</p>
+
+<blockquote>
+<p>-<em>remove this line</em></p>
+</blockquote>
+
+<h3 id="outputfromcommands">Output from Commands</h3>
+
+<p>After a command is run, there is often expected output that is displayed on the screen which is indicated by <em>italics</em>. In this example, Tor is restarted.</p>
+
+<p>Example:</p>
+
+<blockquote>
+<p>$ sudo /etc/rc.d/tor restart<br/>
+<em>tor(ok)</em><br/>
+<em>tor(ok)</em><br/>
+$ </p>
+</blockquote>
+
+</body>
+</html>
