@@ -12,7 +12,7 @@ Assuming decent specs with multi-cores, >8Gb of RAM
 
 * Install OpenBSD snapshot
 
-* OpenBSD is sanely restrictive on how much resources each users can utilize.  Therefore, it is necessary to make some system changes to allow something as collassal as building the Tor Browser on OpenBSD.
+* OpenBSD is restrictive on how much resources such as open file descriptors that each user or daemon can utilize.  Therefore, it is necessary to make some system changes to allow something as enormous as building the Tor Browser on OpenBSD.
 
 * For partitions creation, do a manual setup.
 
@@ -34,6 +34,8 @@ builders:\
         :maxproc-max=infinity:\
         :maxproc-cur=256:\
         :memorylocked-max=infinity:\
+	:memoryuse-max=infinity:\
+	:vmemoryuse-max=infinity:\
         :openfiles-max=infinity:\
         :tc=default:
 
@@ -50,9 +52,30 @@ pkg_add -r tor
 
 pkg_add -r torsocks
 
+To pull GitHub over Tor, remove the hash at line 18:
+
+SocksPort 9050
+
+Start Tor by typing:
+
+/etc/rc.d/tor start
+
 * Clone Tor Browser repository
 
 cd /usr/ports/mystuff && git clone https://github.com/torbsd/openbsd-ports
+
+/usr/ports/mystuff should be populated with:
+
+mystuff/
+	CVS/
+	openbsd-ports/
+	x11/
+
+The Tor Browser build files are in openbsd-ports/www/tbb
+
+* Performing the Build
+
+cd /usr/ports/mystuff/openbsd-ports/www/tbb/
 
 * Future Builds
 
