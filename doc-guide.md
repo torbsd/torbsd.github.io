@@ -22,7 +22,7 @@ Examples:
 
 >Edit the __torrc__ file.
 
-### OpenBSD Base Programs ###
+### Base Operating System Commands ###
 
 When base programs are referenced, they are appended with a number, representing the relevant manual page.
 
@@ -33,6 +33,21 @@ Example:
 That particular manual page can be accessed by typing:
 
 >$ man 1 ls
+
+The standard manual page sections are:
+
+1  General commands (tools and utilities).  
+2  System calls and error numbers.  
+3   Libraries.  
+3f  Fortran programmer's reference guide.  
+3p  perl(1) programmer's reference guide.  
+4   Device drivers.  
+5   File formats.  
+6   Games.  
+7   Miscellaneous.  
+8   System maintenance and operation commands.  
+9   Kernel internals.  
+
 
 ### Edits/Additions/Deletions from Files ###
 
