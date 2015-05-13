@@ -17,7 +17,7 @@ With its default install, OpenBSD is not a high-bandwidth relay due to its secur
 
 For installing applications, OpenBSD's [recommended method] is the [pkg_add(1)] system, as opposed to using ports build from source. pkg_add uses pre-compiled binary files with set options. Rarely should a user have an issue with the defaults. There are cases in which a more experienced OpenBSD user would opt for the ports system.
 
-This guide is based on OpenBSD 5.6, which was released on November 1, 2014.
+This guide is based on OpenBSD 5.7, which was released on May 1, 2015.
 
 ### Syntax ###
 
@@ -25,7 +25,7 @@ Refer to the [Documentation Style Guide](doc-guide.html) for information about s
 
 ### OpenBSD Documentation ###
 
-OpenBSD documentation, both its [FAQ] and [manual pages], are comprehensive and accurate. The vast majority of stop-gaps faced by a user are answered there.
+OpenBSD documentation, both its [FAQ] and [manual pages], are comprehensive and accurate. The vast majority of questions faced by a user are answered there. The manual pages are also available directly on an OpenBSD system.
 
 ### Some Preliminary Issues: OpenBSD -STABLE -CURRENT or snapshots? Ports or Packages? ###
 
