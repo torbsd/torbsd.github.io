@@ -19,9 +19,18 @@
 <ul>
 <li><p>Install OpenBSD snapshot</p></li>
 <li><p>OpenBSD is sanely restrictive on how much resources each users can utilize. Therefore, it is necessary to make some system changes to allow something as collassal as building the Tor Browser on OpenBSD.</p></li>
+<li><p>For partitions creation, do a manual setup.</p></li>
 </ul>
 
-<p>A new login class entitled &#8220;builders&#8221; is created, limits dropped in /etc/login.conf and the file is regenerated and the build user is added to the group.</p>
+<p>Add a separate partition for /usr/ports/pobj with 20G or so.</p>
+
+<p>/usr should also be around 10G</p>
+
+<p>Create a group in /etc/group entitled &#8220;builders&#8221; and add the non-privileged user</p>
+
+<p>builders:*:32768:</p>
+
+<p>A new login class entitled &#8220;builders&#8221; for the builders group is created, limits dropped in /etc/login.conf and the file is regenerated and the build user is added to the group.</p>
 
 <p>builders:
  :datasize-cur=infinity:
@@ -39,13 +48,6 @@
 </ul>
 
 <p>cd /usr &amp;&amp; cvs -d anoncvs@anoncvs.comstyle.com:/cvs get -P ports</p>
-
-<ul>
-<li><p>Is /usr big enough? 2G isn&#8217;t</p></li>
-<li><p>Create a tmpfs mount for /usr/ports/pobj in /etc/fstab</p></li>
-</ul>
-
-<p>+swap /usr/ports/pobj tmpfs rw 0 0</p>
 
 <ul>
 <li>Install Git, Tor and Torsocks packages, the latter two assuming GitHub&#8217; pulls are accessed over Tor. At this end of the install, there will be many, many more packages installed.</li>
