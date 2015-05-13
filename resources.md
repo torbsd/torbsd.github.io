@@ -28,6 +28,8 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 * [FreeNAS](https://www.freenas.org)
 
+* [OPNSense firewall](https://opnsense.org)
+
 
 ### BSDs and Tor ###
 
@@ -40,6 +42,8 @@ A distributed test build system for finding problems with BSD Tor builds.
 * Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twvihadsu5oznuux.onion/)
 
 Birds-of-a-Feather sessions at vBSDCon in fall 2013 and NYCBSDCon 2014.
+
+* Christian Bruffer at [MeetBSD 2007 presentation on FreeBSD, Protecting Privacy with Tor](https://www.youtube.com/watch?v=OwBh8ro7xHQ)
 
 * [Tor Network Status](http://torstatus.blutmagie.de)
 
