@@ -1,9 +1,11 @@
 Title: Development Version of FreeBSD Guide to Configuring Tor Relays
 CSS: torbsd.css
 Author: gman999
-Editors:
+Editors: attila
 Date: 20150505
 Note: These lines at the top are multimarkdown metadata; leave them.
+
+{{header.md}}
 
 # Development Version: FreeBSD Guide to Configuring Tor Relays #
 
@@ -362,3 +364,5 @@ hardware crypto with glxsb, aesni
 [FreeBSD Handbook]: https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/index.html "FreeBSD Handbook"
 [manual pages]: https://www.freebsd.org/cgi/man.cgi "manual pages"
 [FreeBSD Sysctl]: http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/configtuning-sysctl.html "FreeBSD sysctl"
+
+{{footer.md}}

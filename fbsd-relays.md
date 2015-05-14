@@ -1,37 +1,59 @@
 Title: FreeBSD Guide to Configuring Tor Relays
 CSS: torbsd.css
 Author: gman999
-Editors:
+Editors: attila
 Date: 20150505
 Note: These lines at the top are multimarkdown metadata; leave them.
 
-# FreeBSD Guide to Configuring Tor Relays #
+{{header.md}}
 
-# THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO PLEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. YOU HAVE BEEN WARNED. #
+## FreeBSD Guide to Configuring Tor Relays ##
+
+__THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO PLEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. YOU HAVE BEEN WARNED.__
 
 ## Introduction ##
 
-[FreeBSD](https://www.freebsd.org) is a Unix-derived operating system focused on reliability and performance. FreeBSD maintains a large user base in the backend infrastructures of the world, not to mention in products and services such as Juniper, Netflix, NetApp and Isilon. Widely used systems such as pfSense and FreeNAS are also based on FreeBSD.
+[FreeBSD](https://www.freebsd.org) is a Unix-derived operating system
+focused on reliability and performance. FreeBSD maintains a large user
+base in the backend infrastructures of the world, not to mention in
+products and services such as Juniper, Netflix, NetApp and
+Isilon. Widely used systems such as pfSense and FreeNAS are also based
+on FreeBSD.
 
-FreeBSD makes an ideal platform for running a Tor relay. This guide aims to provide insights for those interested in running a Tor relay on FreeBSD. It assumes a certain level of basic comfort with traditional Unix tools such as editors and starting and stopping daemons, not to mention navigating through the install process and general setup.  This is not a full step-by-step instructional for those who are new to the Unix command-line.
+FreeBSD makes an ideal platform for running a Tor relay. This guide
+aims to provide insights for those interested in running a Tor relay
+on FreeBSD. It assumes a certain level of basic comfort with
+traditional Unix tools such as editors and starting and stopping
+daemons, not to mention navigating through the install process and
+general setup.  This is not a full step-by-step instructional for
+those who are new to the Unix command-line.
 
-For installing applications, the FreeBSD ports system is the best method, as it maintains the most current versions, as opposed to the new pkg system.
+For installing applications, the FreeBSD ports system is the best
+method, as it maintains the most current versions, as opposed to the
+new pkg system.
 
-There are version FreeBSD branches in regular development.  It is recommended to use the most recent production release, which is the 10-branch.
+There are version FreeBSD branches in regular development.  It is
+recommended to use the most recent production release, which is the
+10-branch.
 
 This guide is based on the FreeBSD 10-branch.
 
 ### Syntax ###
 
-Refer to the [Documentation Style Guide](doc-guide.html) for information about syntax in this document.
+Refer to the [Documentation Style Guide](doc-guide.html) for
+information about syntax in this document.
 
 ### FreeBSD Documentation ###
 
-FreeBSD maintains documentation in the [FreeBSD Handbook] and in the [manual pages]. The man pages are also available directly on a FreeBSD system.
+FreeBSD maintains documentation in the [FreeBSD Handbook] and in the
+[manual pages]. The man pages are also available directly on a FreeBSD
+system.
 
 ## The Quick and Short Version ##
 
-These are the basic steps to configure a Tor relay with FreeBSD.  This will create an operational relay.  For more detailed instructions and for additional tips on securing and optimizing the relay
+These are the basic steps to configure a Tor relay with FreeBSD.  This
+will create an operational relay.  For more detailed instructions and
+for additional tips on securing and optimizing the relay
 
 1. Install FreeBSD 10 and update to most recent -STABLE version
 
@@ -346,3 +368,5 @@ hardware crypto with glxsb, aesni
 [FreeBSD Handbook]: https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/index.html "FreeBSD Handbook"
 [manual pages]: https://www.freebsd.org/cgi/man.cgi "manual pages"
 [FreeBSD Sysctl]: http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/configtuning-sysctl.html "FreeBSD sysctl"
+
+{{footer.md}}

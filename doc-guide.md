@@ -1,6 +1,13 @@
+Title: The Tor-BSD Diversity Project : Documentation Style Guide
 CSS: torbsd.css
+Author: gman
+Editors: attila
+Date: 2015-05-14
+Note: These lines at the top are multimarkdown metadata; leave them.
 
-# Documentation Style Guide #
+{{header.md}}
+
+## Documentation Style Guide ##
 
 This piece is meant to illustrate __TDP__ documentation. This is standard for all __TDP__ syntax in the tutorials and guides.
 
@@ -55,13 +62,17 @@ The standard notation for adding lines is the plus symbol `+`
 
 Example:
 
+```
 >+*add this line*
+```
 
 Removing lines is indicated by the minus symbol `-`
 
 Example:
 
+```
 >-*remove this line*
+```
 
 ### Output from Commands ###
 
@@ -69,7 +80,11 @@ After a command is run, there is often expected output that is displayed on the 
 
 Example:
 
+```
 >$ sudo /etc/rc.d/tor restart  
 *tor(ok)*  
 *tor(ok)*  
 $ 
+```
+
+{{footer.md}}

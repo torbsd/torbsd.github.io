@@ -11,35 +11,80 @@
 </head>
 <body>
 
-<h1 id="tdpfreebsdopenbsdguidesfortorrelays"><strong>TDP</strong> FreeBSD &amp; OpenBSD Guides for Tor Relays</h1>
+<h1 id="thetorbsddiversityprojecttdp">The Tor BSD Diversity Project (TDP)</h1>
 
-<h2 id="thesearepreliminaryworksattheearlystage.anonymityisnotagamesopleasedonotjustassumetheseguidesarefineas-is.youhavebeenwarned.">THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO PLEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. YOU HAVE BEEN WARNED.</h2>
+<p><a href="index.html">Home</a> | <a href="faq.html">Frequently Asked Questions</a> | <a href="resources.html">Resources</a> | <a href="https://github.com/torbsd">GitHub Repositories</a> | <a href="contact.html">Contact</a> | <a href="http://bptfp7py2wclht26.onion/">TDP Hidden Service</a></p>
+
+<h2 id="tdpfreebsdopenbsdguidesfortorrelays"><strong>TDP</strong> FreeBSD &amp; OpenBSD Guides for Tor Relays</h2>
+
+<p><strong>THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO PLEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. YOU HAVE BEEN WARNED.</strong></p>
 
 <p><strong>TDP</strong> is creating two guides to building and configuring Tor relays for FreeBSD and OpenBSD.</p>
 
-<p>There are two versions of each. The first is considered &#8216;production&#8217; quality ready for printing, translation and distribution. The second is considered &#8216;development&#8217; where future ideas are noted, tested and confirmed. The development version will also contain more advanced changes on a BSD relay that are beyond the scope of the production version. Contributions are more than welcomed.</p>
+<p>There are two versions of each. The first is considered &#8216;production&#8217;
+quality ready for printing, translation and distribution. The second
+is considered &#8216;development&#8217; where future ideas are noted, tested and
+confirmed. The development version will also contain more advanced
+changes on a BSD relay that are beyond the scope of the production
+version. Contributions are more than welcomed.</p>
 
-<p>One issue to note is that we view various &#8220;optimization&#8221; attempts as a complex road, beyond just reading <a href="https://en.wikipedia.org/wiki/TCP/IP_Illustrated">Stevens&#8217; &#8220;TCP/IP Illustrated&#8221;</a>. It is not easy to understand the true effects of sysctl value changes and other kernel-level hacks, particularly with TCP traffic.</p>
+<p>One issue to note is that we view various &#8220;optimization&#8221; attempts as a
+complex road, beyond just reading
+<a href="https://en.wikipedia.org/wiki/TCP/IP_Illustrated">Stevens&#8217; &#8220;TCP/IP Illustrated&#8221;</a>.
+It is not easy to understand the true effects of sysctl value changes
+and other kernel-level hacks, particularly with TCP traffic.</p>
 
-<p>Tor is a (more or less) randomized routing network. That lack of consistency inhibits comparisons in performance beyond the obvious. Tor traffic on a relay can wildly vary day-to-day and month-to-month, regardless of any system optimization. For a useful overview of the problems with testing, see Kode Vicious&#8217; <a href="https://queue.acm.org/detail.cfm?id=2732268">reply to &#8220;How Not Why&#8221;</a> in ACM&#8217;s Queue magazine from February 2015. His emphasis on repeatability tends to undercut many assumptions that are made about testing a host on an anonymity network. It can quickly degenerate into being a blind, counter-productive endeavor.</p>
+<p>Tor is a (more or less) randomized routing network. That lack of
+consistency inhibits comparisons in performance beyond the
+obvious. Tor traffic on a relay can vary wildly day-to-day and
+month-to-month, regardless of any system optimization. For a useful
+overview of the problems with testing, see Kode Vicious&#8217;
+<a href="https://queue.acm.org/detail.cfm?id=2732268">reply to &#8220;How Not Why&#8221;</a>
+in ACM&#8217;s Queue magazine from February 2015. His emphasis on
+repeatability tends to undercut many assumptions that are made about
+testing a host on an anonymity network. It can quickly degenerate into
+being a blind, counter-productive endeavor.</p>
 
-<p>Nonetheless, there are some system-level changes we do recommend. But do not expect long lists of sysctl values and graphs illustrating the effects.</p>
+<p>Nonetheless, there are some system-level changes we do recommend. But
+do not expect long lists of sysctl values and graphs illustrating the
+effects.</p>
 
-<p><strong>TDP</strong> will look at optimizing Tor relay performance on high-bandwidth BSDs in the future, but we suspect that the default operating system installs (outside of some recommended changes) should be sufficient for most relay operators&#8217; hardware and bandwidth. If Netflix can serve <a href="https://www.youtube.com/watch?v=FL5U4wr86L4">one-third of peak internet traffic in North America</a> with a default FreeBSD install, it&#8217;s likely sufficient for the vast majority of Tor relays.</p>
+<p><strong>TDP</strong> will look at optimizing Tor relay performance on
+high-bandwidth BSDs in the future, but we suspect that the default
+operating system installs (outside of some recommended changes) should
+be sufficient for most relay operators&#8217; hardware and bandwidth. If
+Netflix can serve
+<a href="https://www.youtube.com/watch?v=FL5U4wr86L4">one-third of peak internet traffic in North America</a>
+with a default FreeBSD install, it&#8217;s likely sufficient for the vast
+majority of Tor relays.</p>
 
 <p>Contributions for NetBSD and DragonFly BSD are welcomed.</p>
 
 <h2 id="freebsdtorrelayguide">FreeBSD Tor Relay Guide</h2>
 
-<p>production: <a href="https://torbsd.github.io/fbsd-relays.html">https://torbsd.github.io/fbsd-relays.html</a></p>
+<dl>
+<dt>Production</dt>
+<dd><a href="fbsd-relays.html">https://torbsd.github.io/fbsd-relays.html</a></dd>
 
-<p>development: <a href="https://torbsd.github.io/fbsd-relays_dev.html">https://torbsd.github.io/fbsd-relays_dev.html</a></p>
+<dt>Development</dt>
+<dd><a href="fbsd-relays_dev.html">https://torbsd.github.io/fbsd-relays_dev.html</a></dd>
+</dl>
 
 <h2 id="openbsdtorrelayguide">OpenBSD Tor Relay Guide</h2>
 
-<p>production: <a href="https://torbsd.github.io/obsd-relays.html">https://torbsd.github.io/obsd-relays.html</a></p>
+<dl>
+<dt>Production</dt>
+<dd><a href="obsd-relays.html">https://torbsd.github.io/obsd-relays.html</a></dd>
 
-<p>development: <a href="https://torbsd.github.io/obsd-relays_dev.html">https://torbsd.github.io/obsd-relays_dev.html</a> </p>
+<dt>Development</dt>
+<dd><a href="obsd-relays_dev.html">https://torbsd.github.io/obsd-relays_dev.html</a></dd>
+</dl>
+
+<p><hr></p>
+
+<p><em>Copyright &copy; 2015 by The Tor Diversity Project (TDP). All Rights Reserved.</em></p>
+
+<p><code>last updated: 20150514</code></p>
 
 </body>
 </html>

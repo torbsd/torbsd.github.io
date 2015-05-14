@@ -1,9 +1,11 @@
 Title: Development Version of OpenBSD Guide to Configuring Tor Relays
 CSS: torbsd.css
 Author: gman999
-Editors:
+Editors: attila
 Date: 20150505
 Note: These lines are at the top are multimarkdown metadata; leave them.
+
+{{header.md}}
 
 # Development Version: OpenBSD Guide to Configuring Tor Relays #
 
@@ -152,3 +154,5 @@ OpenBSD's pkg_add system is easy to use and smooth in operation. However, the pk
 [recommended method]: http://www.openbsd.org/faq/faq15.html#Intro "The OpenBSD packages and ports system"
 [pkg_add(1)]: http://www.openbsd.org/faq/faq15.html#PkgMgmt "pkg_add system"
 [ports]: http://www.openbsd.org/faq/faq15.html#Ports "ports system"
+
+{{footer.md}}

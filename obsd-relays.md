@@ -5,6 +5,8 @@ Editors:
 Date: 20150505
 Note: These lines are at the top are multimarkdown metadata; leave them.
 
+{{header.md}}
+
 # OpenBSD Guide to Configuring Tor Relays #
 
 ## THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO PLEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. YOU HAVE BEEN WARNED. ##
@@ -131,3 +133,5 @@ OpenBSD's pkg_add system is easy to use and smooth in operation. However, the pk
 [recommended method]: http://www.openbsd.org/faq/faq15.html#Intro "The OpenBSD packages and ports system"
 [pkg_add(1)]: http://www.openbsd.org/faq/faq15.html#PkgMgmt "pkg_add system"
 [ports]: http://www.openbsd.org/faq/faq15.html#Ports "ports system"
+
+{{footer.md}}

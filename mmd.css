@@ -1,0 +1,115 @@
+/*@import url(http://fonts.googleapis.com/css?family=Lobster);*/
+
+body {
+  font: 14px/1.5em Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman";
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  width: 40em;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: 'Lobster', arial, serif;
+  font-weight: normal;
+  text-align: left; 
+}
+
+a { 
+  color: #fff;
+  background: #4d97ff;
+  text-decoration: none;
+  padding: 0 2px 0 2px;
+}
+
+a.markdowncitation {
+  color: blue;
+  background: none;
+  text-decoration: underline;
+}
+
+.footnotes, .bibliography {
+  background: #ddd;
+}
+a.footnote {
+  color: blue;
+  background: none;
+  text-decoration: underline;  
+}
+
+img {
+  padding: 0.5em;
+  margin-left: 1em;
+  margin-right: 2em;
+}
+
+blockquote {
+  margin: 0;
+  padding: 10px;
+  font-style: italic;
+  background-color: #ddd;
+}
+
+blockquote p {
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: courier;
+  line-height: 1.75em;
+  background-color: #E2E8F2;
+}
+pre {
+  background-color: #E2E8F2;
+  border-left: 4px solid #CAD0DA;
+  padding: 0.5em;
+  font-family: courier;
+  font-size: 0.857em;
+  line-height: 1.75em;
+  margin: 0 0 1.75em 0;
+  white-space: pre-wrap;
+  white-space: moz-pre-wrap !important;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+
+table {
+  border: solid black;
+  border-width: 2px 0px;
+  empty-cells: hide;
+  border-spacing: 0px;
+  padding: 2px;
+  margin: 20px auto;
+}
+table caption {
+  margin: 5px;
+  text-align: center;
+}
+thead th {
+  border: solid gray;
+  border-width: 0 0 2px 0;
+  padding: 5px;
+}
+.h {
+  background: #d3e5ff;
+}
+thead > tr:last-child > th { border-style: none; }
+tbody > tr:first-child > td {
+  border: solid gray;
+  border-width: 1px 0 0 0;
+}
+tbody > tr:first-child > th {
+  border: solid gray;
+  border-width: 1px 0 0 0;
+}
+thead + tbody > tr:first-child > td {
+  border: solid black;
+  border-width: 1px 0 0 0;
+}
+thead + tbody > tr:first-child > th {
+  border: solid black;
+  border-width: 1px 0 0 0;
+}

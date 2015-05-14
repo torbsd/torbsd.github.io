@@ -5,39 +5,63 @@
 	<title>FreeBSD Guide to Configuring Tor Relays</title>
 	<link type="text/css" rel="stylesheet" href="torbsd.css"/>
 	<meta name="author" content="gman999"/>
-	<meta name="editors" content=""/>
+	<meta name="editors" content="attila"/>
 	<meta name="date" content="20150505"/>
 	<meta name="note" content="These lines at the top are multimarkdown metadata; leave them."/>
 </head>
 <body>
 
-<h1 id="freebsdguidetoconfiguringtorrelays">FreeBSD Guide to Configuring Tor Relays</h1>
+<h1 id="thetorbsddiversityprojecttdp">The Tor BSD Diversity Project (TDP)</h1>
 
-<h1 id="thesearepreliminaryworksattheearlystage.anonymityisnotagamesopleasedonotjustassumetheseguidesarefineas-is.youhavebeenwarned.">THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO PLEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. YOU HAVE BEEN WARNED.</h1>
+<p><a href="index.html">Home</a> | <a href="faq.html">Frequently Asked Questions</a> | <a href="resources.html">Resources</a> | <a href="https://github.com/torbsd">GitHub Repositories</a> | <a href="contact.html">Contact</a> | <a href="http://bptfp7py2wclht26.onion/">TDP Hidden Service</a></p>
+
+<h2 id="freebsdguidetoconfiguringtorrelays">FreeBSD Guide to Configuring Tor Relays</h2>
+
+<p><strong>THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO PLEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. YOU HAVE BEEN WARNED.</strong></p>
 
 <h2 id="introduction">Introduction</h2>
 
-<p><a href="https://www.freebsd.org">FreeBSD</a> is a Unix-derived operating system focused on reliability and performance. FreeBSD maintains a large user base in the backend infrastructures of the world, not to mention in products and services such as Juniper, Netflix, NetApp and Isilon. Widely used systems such as pfSense and FreeNAS are also based on FreeBSD.</p>
+<p><a href="https://www.freebsd.org">FreeBSD</a> is a Unix-derived operating system
+focused on reliability and performance. FreeBSD maintains a large user
+base in the backend infrastructures of the world, not to mention in
+products and services such as Juniper, Netflix, NetApp and
+Isilon. Widely used systems such as pfSense and FreeNAS are also based
+on FreeBSD.</p>
 
-<p>FreeBSD makes an ideal platform for running a Tor relay. This guide aims to provide insights for those interested in running a Tor relay on FreeBSD. It assumes a certain level of basic comfort with traditional Unix tools such as editors and starting and stopping daemons, not to mention navigating through the install process and general setup. This is not a full step-by-step instructional for those who are new to the Unix command-line.</p>
+<p>FreeBSD makes an ideal platform for running a Tor relay. This guide
+aims to provide insights for those interested in running a Tor relay
+on FreeBSD. It assumes a certain level of basic comfort with
+traditional Unix tools such as editors and starting and stopping
+daemons, not to mention navigating through the install process and
+general setup. This is not a full step-by-step instructional for
+those who are new to the Unix command-line.</p>
 
-<p>For installing applications, the FreeBSD ports system is the best method, as it maintains the most current versions, as opposed to the new pkg system.</p>
+<p>For installing applications, the FreeBSD ports system is the best
+method, as it maintains the most current versions, as opposed to the
+new pkg system.</p>
 
-<p>There are version FreeBSD branches in regular development. It is recommended to use the most recent production release, which is the 10-branch.</p>
+<p>There are version FreeBSD branches in regular development. It is
+recommended to use the most recent production release, which is the
+10-branch.</p>
 
 <p>This guide is based on the FreeBSD 10-branch.</p>
 
 <h3 id="syntax">Syntax</h3>
 
-<p>Refer to the <a href="doc-guide.html">Documentation Style Guide</a> for information about syntax in this document.</p>
+<p>Refer to the <a href="doc-guide.html">Documentation Style Guide</a> for
+information about syntax in this document.</p>
 
 <h3 id="freebsddocumentation">FreeBSD Documentation</h3>
 
-<p>FreeBSD maintains documentation in the <a href="https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/index.html" title="FreeBSD Handbook">FreeBSD Handbook</a> and in the <a href="https://www.freebsd.org/cgi/man.cgi" title="manual pages">manual pages</a>. The man pages are also available directly on a FreeBSD system.</p>
+<p>FreeBSD maintains documentation in the <a href="https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/index.html" title="FreeBSD Handbook">FreeBSD Handbook</a> and in the
+<a href="https://www.freebsd.org/cgi/man.cgi" title="manual pages">manual pages</a>. The man pages are also available directly on a FreeBSD
+system.</p>
 
 <h2 id="thequickandshortversion">The Quick and Short Version</h2>
 
-<p>These are the basic steps to configure a Tor relay with FreeBSD. This will create an operational relay. For more detailed instructions and for additional tips on securing and optimizing the relay</p>
+<p>These are the basic steps to configure a Tor relay with FreeBSD. This
+will create an operational relay. For more detailed instructions and
+for additional tips on securing and optimizing the relay</p>
 
 <ol>
 <li><p>Install FreeBSD 10 and update to most recent -STABLE version</p></li>
@@ -403,6 +427,12 @@ It is critical to remember that setting an incorrect variable can disable a work
 <p><a href="https://wiki.freebsd.org/PerformanceTweaks">Performance Tweaks on the FreeBSD Wiki</a></p>
 
 <p><a href="https://wiki.freebsd.org/Performance">Performance on the FreeBSD Wiki</a></p>
+
+<p><hr></p>
+
+<p><em>Copyright &copy; 2015 by The Tor Diversity Project (TDP). All Rights Reserved.</em></p>
+
+<p><code>last updated: 20150514</code></p>
 
 </body>
 </html>

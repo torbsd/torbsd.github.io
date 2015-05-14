@@ -2,11 +2,20 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
+	<title>The Tor-BSD Diversity Project : Documentation Style Guide</title>
 	<link type="text/css" rel="stylesheet" href="torbsd.css"/>
+	<meta name="author" content="gman"/>
+	<meta name="editors" content="attila"/>
+	<meta name="date" content="2015-05-14"/>
+	<meta name="note" content="These lines at the top are multimarkdown metadata; leave them."/>
 </head>
 <body>
 
-<h1 id="documentationstyleguide">Documentation Style Guide</h1>
+<h1 id="thetorbsddiversityprojecttdp">The Tor BSD Diversity Project (TDP)</h1>
+
+<p><a href="index.html">Home</a> | <a href="faq.html">Frequently Asked Questions</a> | <a href="resources.html">Resources</a> | <a href="https://github.com/torbsd">GitHub Repositories</a> | <a href="contact.html">Contact</a> | <a href="http://bptfp7py2wclht26.onion/">TDP Hidden Service</a></p>
+
+<h2 id="documentationstyleguide">Documentation Style Guide</h2>
 
 <p>This piece is meant to illustrate <strong>TDP</strong> documentation. This is standard for all <strong>TDP</strong> syntax in the tutorials and guides.</p>
 
@@ -68,17 +77,15 @@
 
 <p>Example:</p>
 
-<blockquote>
-<p>+<em>add this line</em></p>
-</blockquote>
+<pre><code>&gt;+*add this line*
+</code></pre>
 
 <p>Removing lines is indicated by the minus symbol <code>-</code></p>
 
 <p>Example:</p>
 
-<blockquote>
-<p>-<em>remove this line</em></p>
-</blockquote>
+<pre><code>&gt;-*remove this line*
+</code></pre>
 
 <h3 id="outputfromcommands">Output from Commands</h3>
 
@@ -86,12 +93,17 @@
 
 <p>Example:</p>
 
-<blockquote>
-<p>$ sudo /etc/rc.d/tor restart<br/>
-<em>tor(ok)</em><br/>
-<em>tor(ok)</em><br/>
-$ </p>
-</blockquote>
+<pre><code>&gt;$ sudo /etc/rc.d/tor restart  
+*tor(ok)*  
+*tor(ok)*  
+$ 
+</code></pre>
+
+<p><hr></p>
+
+<p><em>Copyright &copy; 2015 by The Tor Diversity Project (TDP). All Rights Reserved.</em></p>
+
+<p><code>last updated: 20150514</code></p>
 
 </body>
 </html>

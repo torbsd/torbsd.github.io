@@ -1,2 +1,4 @@
 
-The Tor Diversity Project (TDP) 2015
+<hr>
+
+_Copyright &copy; 2015 by The Tor Diversity Project (TDP).  All Rights Reserved._
