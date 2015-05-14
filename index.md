@@ -57,7 +57,7 @@ Current __TDP__ work includes:
 
 * [guides for configuring FreeBSD and OpenBSD relays](relay-guides.html)
 
-* [the creation of an OpenBSD Tor Browser port](https://github.com/torbsd/openbsd-ports)
+* [the creation of an OpenBSD Tor Browser Bundle port](https://github.com/torbsd/openbsd-ports)
 
 * organizing various events for engaging BSD users about Tor,
   including birds-of-a-feather sessions and informal meetings

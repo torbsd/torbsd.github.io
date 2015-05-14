@@ -31,7 +31,7 @@ categorized for clarity.</p>
 <dd>Review our web site and documentation, and let us know if something is unclear or unstated. If you attend any BSD or open source events, print out some copies of the <strong>TDP</strong> informational flier. Join the <a href="http://lists.nycbug.org/mailman/listinfo/tor-bsd">Tor-BSD mailing list</a>.</dd>
 
 <dt><strong>Users</strong></dt>
-<dd>As a BSD Tor Browser is available, start using and testing it on OpenBSD. Submit comments and questions.</dd>
+<dd>As a BSD TBB is available, start using and testing it on OpenBSD. Submit comments and questions.</dd>
 
 <dt><strong>Developers</strong></dt>
 <dd>Clone our repositories, build and break the software, submit tickets and patches.</dd>
@@ -96,7 +96,7 @@ the exact current number among other data.</p>
 a clear graph that strikingly, and disturbingly in our opinions,
 illustrates the monoculture in relay platforms.</p>
 
-<h2 id="doesntthetorwebsitedownloadpagelistatorbrowserforgnulinuxthatalsosupportsunixbsd">&#8220;Doesn&#8217;t the <a href="https://www.torproject.org/download/download-easy.html.en">Tor web site download page</a> list a Tor Browser for GNU/Linux, that also supports &#8216;Unix, BSD&#8217;?&#8221;</h2>
+<h2 id="doesntthetorwebsitedownloadpagelistatorbrowserbundleforgnulinuxthatalsosupportsunixbsd">&#8220;Doesn&#8217;t the <a href="https://www.torproject.org/download/download-easy.html.en">Tor web site download page</a> list a Tor Browser Bundle for GNU/Linux, that also supports &#8216;Unix, BSD&#8217;?&#8221;</h2>
 
 <p>That is true, but unfortunately inaccurate. The current Tor download
 does not work on any of the BSDs for a variety of reasons.</p>
@@ -144,7 +144,7 @@ insurmoutable task for any Linux user beyond those brand-new to
 computing. For someone comfortable in the shell, editing files, and so
 on, it is simple enough.</p>
 
-<h2 id="whydidtorbrowserworkstartwithopenbsdonthedesktopatleastisntfreebsdmorepopular">&#8220;Why did Tor Browser work start with OpenBSD? On the desktop at least, isn&#8217;t FreeBSD more popular?&#8221;</h2>
+<h2 id="whydidtorbrowserbundleworkstartwithopenbsdonthedesktopatleastisntfreebsdmorepopular">&#8220;Why did Tor Browser Bundle work start with OpenBSD? On the desktop at least, isn&#8217;t FreeBSD more popular?&#8221;</h2>
 
 <p>FreeBSD may very well be more widely used, but operating system usage
 statistics are wildly untrustworthy.</p>
@@ -158,7 +158,7 @@ for those who only read Slashdot.org over the past year, LibreSSL is
 quickly gaining momentum as another piece of easily portable code from
 the OpenBSD project.</p>
 
-<p>With a production-quality OpenBSD Tor Browser port, porting to other
+<p>With a production-quality OpenBSD Tor Browser Bundle port, porting to other
 BSDs or any other POSIX-based systems should be relatively trivial
 task.</p>
 
@@ -166,7 +166,7 @@ task.</p>
 
 <p><strong>TDP</strong> is <strong>not</strong> an official project of Tor. We are merely long-time Tor users and relay operators whose preferred platform is BSD Unix.</p>
 
-<h2 id="whatdoyouhopetoaccomplishwithportingthetorbrowsertoopenbsd">&#8220;What do you hope to accomplish with porting the Tor Browser to OpenBSD?&#8221;</h2>
+<h2 id="whatdoyouhopetoaccomplishwithportingthetorbrowserbundletoopenbsd">&#8220;What do you hope to accomplish with porting the Tor Browser Bundle to OpenBSD?&#8221;</h2>
 
 <p>First, some definitions. There are several different but related
 software packages that are often confused or called by the same name:</p>
@@ -224,27 +224,52 @@ Windows. This means not only the Tor Browser, but all of the add-ons
 that are required for it to function as designed and all of the
 external components that make up Pluggable Transports.</p>
 
-<h2 id="whatarethehurdlestoportingtorbrowsertoopenbsd">&#8220;What are the hurdles to porting Tor Browser to OpenBSD?&#8221;</h2>
+<h2 id="whatarethehurdlestoportingthetorbrowserbundletoopenbsd">&#8220;What are the hurdles to porting the Tor Browser Bundle to OpenBSD?&#8221;</h2>
 
 <p><a href="http://trac.haqistan.net/blog/adventures-ports-tor-browser">This blog post</a>
 by one of the TDP project members summarized many of the issues
 and problems presented by the TBB in the context of OpenBSD, but
 for the sake of completeness we will summarize here.</p>
 
+<p>At the risk of putting words in other peoples&#8217; mouths, we can say with
+some authority that many current trends in software packaging and
+development leave a bad taste in the mouths of BSD users. Most of us
+would prefer that third-party installed on our machines used OpenBSD&#8217;s
+native packaging system to produce signed packages with proper
+dependency meta-data in them for all of the components of any
+multi-component system. The trend towards software that phones home
+to check for updates or, worse, which automatically updates itself is
+also viewed with some alarm: such software certainly won&#8217;t be using
+the native OpenBSD mechanisms to do this phoning home or updating,
+since that&#8217;s not how things are done in OpenBSD ports.</p>
+
+<p>Instead we would prefer to update our software by installing packages
+based on ports created by OpenBSD ports maintainers after they&#8217;ve
+properly vetted things, sorted out issues with dependencies,
+etc&#8230; Philosophically the idea is that the standard set of packaged
+3rd party software available is something that organically belongs
+with the operating system, and that the release cycle of the OS
+naturally drives forward subsequent releases of the packaged
+software. When there are critical bug fixes or security patches then,
+again, the mechanism native to the OS for dealing with them should be
+used. This is in line with the broader BSD philosophy that the
+operating system, C runtime library, compilers and toolchain used to
+produce them and third-party packages based on all of the above form
+an organic whole, not a pile of disconnected components. The core of
+any of the BSDs is not released or developed piece-meal.</p>
+
 <p>All of the BSDs have settled on a model where third-party packages can
 be posed as &#8220;ports&#8221;. Although the ports systems on the various BSDs
 differ substantially, they have a common ancestor (FreeBSD&#8217;s original
 ports system) and a common goal: create a sane, well-documented
 mechanism that (nearly) any user can use to produce a native port of a
-piece of open-source software. In what follows I&#8217;ll talk about
-OpenBSD&#8217;s ports system but everything here is true of all BSDs, albeit
-with different implementations.</p>
+piece of open-source software.</p>
 
-<h2 id="willthetorbrowserbeintheopenbsdportstreeandavailableasapackage">&#8220;Will the Tor Browser be in the OpenBSD ports tree and available as a package?&#8221;</h2>
+<h2 id="willthetorbrowserbundlebeintheopenbsdportstreeandavailableasapackage">&#8220;Will the Tor Browser Bundle be in the OpenBSD ports tree and available as a package?&#8221;</h2>
 
-<p>Yes. Definitely.</p>
+<p>Yes. Definitely. This is the end-goal of the TBB work.</p>
 
-<h2 id="beyondportingtorbrowsertoopenbsdandtherelayguideswhatotheractivitiesdoestdplooktoconduct">&#8220;Beyond porting Tor Browser to OpenBSD and the relay guides, what other activities does <strong>TDP</strong> look to conduct?&#8221;</h2>
+<h2 id="beyondportingthetorbrowserbundletoopenbsdandtherelayguideswhatotheractivitiesdoestdplooktoconduct">&#8220;Beyond porting the Tor Browser Bundle to OpenBSD and the relay guides, what other activities does <strong>TDP</strong> look to conduct?&#8221;</h2>
 
 <p>We have a long list of potential projects, some of which commenced years ago. This is a list in flux, and we only consider it a loose guide.</p>
 
@@ -256,7 +281,7 @@ with different implementations.</p>
 
 <p><strong>High-Bandwidth BSD Relays</strong> An immediate way to diversify available Tor relay bandwidth is to operate several high-bandwidth relays. At a certain moment in May 2015, only two of the top thirty relays, in terms of bandwidth, are <strong>not</strong> running GNU/Linux. Both are running FreeBSD. Building and maintaining at least two high-bandwidth &#8220;bare metal&#8221; relays, one running OpenBSD and the other FreeBSD, with a minimum bandwidth of 20Mbps, would change this situation in the short-term. But we don&#8217;t aim to individually act as a band-aid to the diversity problem. These relays would allow further testing and optimizing of high-bandwidth Tor relays running BSDs, and ideally become a model for others.</p>
 
-<p><strong>A FreeBSD Port of the Tor Browser</strong> After the OpenBSD Tor Browser port is completed, the next client software target would likely be be FreeBSD. Note that PC-BSD&#8217;s Kris Moore has <a href="http://blog.pcbsd.org/2015/03/a-look-at-the-upcoming-features-for-10-1-2/">created a &#8220;Tor-Mode&#8221;</a> for their desktop&#8217;s browser. </p>
+<p><strong>A FreeBSD Port of the Tor Browser Bundle</strong> After the OpenBSD Tor Browser port is completed, the next client software target would likely be be FreeBSD. Note that PC-BSD&#8217;s Kris Moore has <a href="http://blog.pcbsd.org/2015/03/a-look-at-the-upcoming-features-for-10-1-2/">created a &#8220;Tor-Mode&#8221;</a> for their desktop&#8217;s browser. </p>
 
 <p>We have additional ideas in consideration for <strong>TDP</strong>, and will regularly assess and reassess both old and new ones. Ultimately, <strong>TDP</strong> needs broader BSD community involvement of both users and developers to have the impact we are aiming for.</p>
 
