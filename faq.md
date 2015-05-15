@@ -1,7 +1,7 @@
 Title: TDP : FAQ
 CSS: torbsd.css
 Author: gman999
-Editors:
+Editors: attila
 Date: 20150505
 Note: These lines at the top are multimarkdown metadata; leave them.
 
@@ -32,16 +32,19 @@ __Tor BSD Relay Operators/Admins__
 
 ## "If __TDP__ is concerned about operating system diversity, why does it just focus on BSD Systems, and not other operating systems such as Illuminos?" ##
 
-__TDP__ focuses on the BSDs due to our backgrounds and experiences. It
+__TDP__ focuses on the BSDs due to our background and experience. It
 is critical to note that our code and materials respect established
-standards, and everything we produce has the 2-clause BSD
+standards, and everything original we produce is under the
+[ISC license](https://duckduckgo.com/l/?kh=-1&uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FISC_license), a simplified version of the BSD 2-clause
 license. __TDP__ is commited to portability and interoperability. We
 are building an open ecosystem.
 
 In other words, if someone wanted to take __TDP__ code and materials
 and spawn a similar project based on another operating system, say
 Plan 9, with the same eye on Tor diversity, __TDP's__ groundwork
-should make that task easier.
+should make that task easier.  We are also open to hosting ports
+work to other BSDs under cover of our GitHub account if e.g.
+some enterprising FreeBSD ports person wanted to work on it.
 
 It is important to note that unlike the GNU/Linux distributions, the
 BSD projects, [FreeBSD](http://www.freebsd.org),
