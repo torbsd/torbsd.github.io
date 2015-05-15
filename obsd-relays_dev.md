@@ -7,9 +7,9 @@ Note: These lines are at the top are multimarkdown metadata; leave them.
 
 {{header.md}}
 
-# Development Version: OpenBSD Guide to Configuring Tor Relays #
+## Development Version: OpenBSD Guide to Configuring Tor Relays ##
 
-## THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO PLEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. YOU HAVE BEEN WARNED. ##
+__THIS IS PRELIMINARY WORK AT AN EARLY STAGE. ANONYMITY IS NOT A GAME, SO PLEASE DO NOT JUST ASSUME THESE GUIDES ARE FINE AS-IS. YOU HAVE BEEN WARNED.__
 
 ## Introduction ##
 
