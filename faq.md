@@ -176,17 +176,17 @@ and configure your normal web browser to proxy traffic via tor -
 this is __incorrect__ and in fact can make it easy for an attacker to
 deanonymize your traffic (and, implicitly, you).
 
-__The Tor Bowser__
+__Tor Bowser__
 :    A fork of the [Firefox Extended Support Release (ESR)](https://www.mozilla.org/en-US/firefox/organizations/):  ESR is "... intended for groups who deploy and maintain the desktop environment in large organizations such as universities and other schools, county or city governments and businesses."  The Tor Project based their browser on ESR, but it is heavily modified, including over [500 patches](http://bits.haqistan.net/~attila/mozilla-esr31.4.0-torbrowser-4.5_patches/) to the ESR base.  These patches close holes and fix problems in Firefox ESR that can lead to anonymity leaks and privacy breaches, among other things.  Note that by itself the Tor Browser will also not necessarily protect your privacy or
 anonymity even if you build it and configure it to proxy all traffic over Tor.
 
-__The Tor Browser Bundle (TBB)__
+__Tor Browser Bundle (TBB)__
 :    An operating-system-specific "bundle" which packages up Tor, the Tor Browser, several Firefox add-ons crucial to the proper operation of the Tor Browser that are not included in it, other third-party Firefox add-ons that are also used outside of Tor which are bundled together because of the additional protections they provide and many external programs and configuration files used by both these add-ons and the Pluggable Transports components (which, itself, includes at least on additional Firefox add-on).  The bundle is intended to be installed under an individual user's directory and does not use or rely e.g. any other version of the Tor server software or Firefox installed on the computer.
 
-Users with no deep technical knowledge might refer to the TBB as "Tor", since
-from their point of view it is: if you install the TBB on a supported
-operating system and double click on the resulting icon you are
-_using Tor_ in some generic sense.
+Users with no deep technical knowledge might refer to the TBB as
+"Tor", since from their point of view it is: if you install the TBB on
+a supported operating system and double click on the resulting icon
+you are "using Tor" in some generic sense.
 
 Nonetheless this is not exactly accurate.  If you are using the TBB
 you are not only using their fork of Firefox ESR (as opposed to

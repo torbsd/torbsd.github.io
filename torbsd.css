@@ -1,19 +1,13 @@
-/*@import url(http://fonts.googleapis.com/css?family=Lobster);*/
-
 body {
   font: 14px/1.5em Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman";
-/*  font: medium "Andale Mono", "Courier", monospace;*/
   font-size: 1em;
-/*  position: relative;*/
   background-color: white;
   color: black;
   margin: auto;
   padding: 0;
   width: 60%;
 }
-
 h1, h2, h3, h4, h5, h6 {
-/*  font-family: 'Lobster', arial, serif;*/
   font-family: arial, serif;
   font-weight: normal;
   text-align: left; 
@@ -22,26 +16,6 @@ h1, h2, h3 {
   border-bottom: 1px solid black;
   padding-bottom: 0.2em;
 }
-/*
-h1 { font-size: 188%; margin-left: 0.2em; padding-top: 0; }
-h2 { font-size: 150%; margin-left: 0.3em; }
-h3 { font-size: 132%; margin-left: 0.5em; }
-h4 { font-size: 116%; margin-left: 0.6em; }
-h5 { font-size: 100%; margin-left: 1em; }
-h6 { font-size: 80%; margin-left: 1.2em; }
-pre { margin-left: 2em; margin-right: 2em; }
-pre.eg {
-  margin-left: 2em;
-  margin-top: 2ex;
-  margin-bottom: 2ex;
-  margin-right: 2em;
-  border: 1px dotted black;
-  padding: 5px;
-  background-color: #cacaca;
-  font-size: 102%;
-}
-*/
-
 img {
   padding: 0.5em;
   margin-left: 1em;
@@ -76,7 +50,6 @@ pre {
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
-
 a {
   text-decoration: none;
   color: blue;
@@ -85,58 +58,7 @@ a {
 a:visited { color: blue; }
 a:active { background-color: violet; }
 a:hover { background-color: #cacaca; }
-
-/*
-p {
-  margin-left: 1em;
-  margin-right: 0.5em;
-  margin-top: 0em;
-  margin-bottom: 0.6em;
-  line-height: 1.1;
-  text-indent: 0.5em;
-}
-
-p:first-line {
-  text-indent: 2em;
-}
-
-ul {
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 1ex;
-  margin-bottom: 1ex;
-}
-
-ul li {
-  margin-top: 0.2ex;
-  margin-bottom: 0.4ex;
-  line-height: 0.99;
-}
-
-dl {
-    margin: 1.5em;
-}
-dl dd {
-    display: inline;
-    font-style: italic;
-    margin: 0;
-}
-dl dd:after {
-    display: block;
-    content: '';
-}
-dl dt {
-    display: inline-block;
-    font-weight: bold;
-    min-width: 100px;
-    border-right: 1px dotted black;
-}
-
-tt {
-  font-size: 100%;
-}
-*/
-
+/* c.f. http://github.com/btoone/mmd-stylesheet/raw/master/mmd.css */
 table {
   border: solid black;
   border-width: 2px 0px;
