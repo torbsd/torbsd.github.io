@@ -30,18 +30,18 @@ Create a group in /etc/group entitled "builders" and add the non-privileged user
 
 A new login class entitled "builders" for the builders group is created, limits dropped in /etc/login.conf and the file is regenerated and the build user is added to the group.
 
-+builders:\
-+        :datasize-cur=infinity:\
-+        :datasize-max=infinity:\
-+        :filesize-max=infinity:\
-+        :stacksize-max=infinity:\
-+        :maxproc-max=infinity:\
-+        :maxproc-cur=256:\
-+        :memorylocked-max=infinity:\
-+	 :memoryuse-max=infinity:\
-+   	 :vmemoryuse-max=infinity:\
-+        :openfiles-max=infinity:\
-+        :tc=default:
++builders:\  
+>+        :datasize-cur=infinity:\  
+>+        :datasize-max=infinity:\  
+>+        :filesize-max=infinity:\  
+>+        :stacksize-max=infinity:\  
+>+        :maxproc-max=infinity:\  
+>+        :maxproc-cur=256:\  
+>+        :memorylocked-max=infinity:\  
+>+	 :memoryuse-max=infinity:\  
+>+   	 :vmemoryuse-max=infinity:\  
+>+        :openfiles-max=infinity:\  
+>+        :tc=default:  
 
 * Install Git, Tor and Torsocks packages, the latter two assuming GitHub' pulls
 are accessed over Tor. At this end of the install, there will be many, many more
