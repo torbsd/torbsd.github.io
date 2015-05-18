@@ -176,7 +176,7 @@ and configure your normal web browser to proxy traffic via tor -
 this is __incorrect__ and in fact can make it easy for an attacker to
 deanonymize your traffic (and, implicitly, you).
 
-__Tor Bowser__
+__Tor Browser__
 :    A fork of the [Firefox Extended Support Release (ESR)](https://www.mozilla.org/en-US/firefox/organizations/):  ESR is "... intended for groups who deploy and maintain the desktop environment in large organizations such as universities and other schools, county or city governments and businesses."  The Tor Project based their browser on ESR, but it is heavily modified, including over [500 patches](http://bits.haqistan.net/~attila/mozilla-esr31.4.0-torbrowser-4.5_patches/) to the ESR base.  These patches close holes and fix problems in Firefox ESR that can lead to anonymity leaks and privacy breaches, among other things.  Note that by itself the Tor Browser will also not necessarily protect your privacy or
 anonymity even if you build it and configure it to proxy all traffic over Tor.
 
