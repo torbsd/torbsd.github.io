@@ -3,7 +3,7 @@ CSS: torbsd.css
 Author: gman
 Editors: attila
 Date: 2015-05-14
-Note: These lines at the top are multimarkdown metadata; leave them.
+X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 {{header.md}}
 
@@ -45,22 +45,26 @@ that is operating system diversity.
 
 There are three aspects of the __TDP’s__ approach:
 
-* to increase the number of Tor relays running BSDs, focused on the
-  server/network layer
+* Increase the number of Tor relays running BSDs, focused on the
+  server/network layer.  We envision this happening by increasing the
+  total number of relays, not by convincing operators of relays using
+  non-BSD operating systems to convert;
 
-* to develop a solid, Tor-compatible browser easily portable to other
-  POSIX-based operating systems, focused on the client layer
+* To make the Tor Browser Bundle available under BSD operating systems
+  using native packaging mechanisms.  Our first target is OpenBSD;
 
-* to engage the broader BSD community about the Tor anonymity network
+* To engage the broader BSD community about the Tor anonymity network
+  and the place that BSD Unix should occupy in the privacy community
+  at large.
 
 Current __TDP__ work includes:
 
-* [guides for configuring FreeBSD and OpenBSD relays](relay-guides.html)
+* [guides for configuring and running FreeBSD and OpenBSD relays](relay-guides.html);
 
-* [the creation of an OpenBSD Tor Browser Bundle port](https://github.com/torbsd/openbsd-ports)
+* [the creation of OpenBSD Tor Browser Bundle ports](https://github.com/torbsd/openbsd-ports);
 
-* organizing various events for engaging BSD users about Tor,
-  including birds-of-a-feather sessions and informal meetings
+* Organizing various events for engaging BSD users about Tor,
+  including birds-of-a-feather sessions and informal meetings.
 
 We look forward to inquiries and involvement in __TDP__.  Please see
 our [contact page](contact.html) if you want to get in touch with us.
