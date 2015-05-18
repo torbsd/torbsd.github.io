@@ -59,9 +59,9 @@ There are three aspects of the __TDP’s__ approach:
 
 Current __TDP__ work includes:
 
-* [guides for configuring and running FreeBSD and OpenBSD relays](relay-guides.html);
+* [Guides for configuring and running FreeBSD and OpenBSD relays](relay-guides.html);
 
-* [the creation of OpenBSD Tor Browser Bundle ports](https://github.com/torbsd/openbsd-ports);
+* [The creation of OpenBSD Tor Browser Bundle ports](https://github.com/torbsd/openbsd-ports);
 
 * Organizing various events for engaging BSD users about Tor,
   including birds-of-a-feather sessions and informal meetings.
