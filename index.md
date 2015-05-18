@@ -45,10 +45,10 @@ that is operating system diversity.
 
 There are three aspects of the __TDP’s__ approach:
 
-* Increase the number of Tor relays running BSDs, focused on the
-  server/network layer.  We envision this happening by increasing the
-  total number of relays, not by convincing operators of relays using
-  non-BSD operating systems to convert;
+* Increase the number of Tor relays running BSDs.  We envision this
+  happening by increasing the total number of relays, not by
+  convincing operators of relays using non-BSD operating systems to
+  switch;
 
 * To make the Tor Browser Bundle available under BSD operating systems
   using native packaging mechanisms.  Our first target is OpenBSD;
