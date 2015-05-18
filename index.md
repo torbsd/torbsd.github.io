@@ -50,12 +50,12 @@ There are three aspects of the __TDP’s__ approach:
   convincing operators of relays using non-BSD operating systems to
   switch;
 
-* To make the Tor Browser Bundle available under BSD operating systems
+* Make the Tor Browser Bundle available under BSD operating systems
   using native packaging mechanisms.  Our first target is OpenBSD;
 
-* To engage the broader BSD community about the Tor anonymity network
-  and the place that BSD Unix should occupy in the privacy community
-  at large.
+* Engage the broader BSD community about the Tor anonymity network and
+  the place that BSD Unix should occupy in the privacy community at
+  large.
 
 Current __TDP__ work includes:
 
