@@ -260,6 +260,27 @@ piece of open-source software.
 
 Yes.  Definitely.  This is the end-goal of the TBB work.
 
+## "What is the status of the Tor Browser Bundle (TBB) Porting Effort?" ##
+
+__18 MAY 2015__: The only component of the TBB that is not finished
+is [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html), which comprises several subcomponents and presents a few
+packaging challenges.
+
+As for the rest our status is more or less still as described
+[in this blog post](https://trac.haqistan.net/blog/tor-browser-ports-progress):
+the OpenBSD ports are for version 4.0.8 of the TBB and include the Tor
+Browser itself, the torbutton and tor-launcher add-ons that are
+required for proper functioning of Tor Browser and the NoScript and
+HTTPS-Everywhere add-ons that are also used outside of Tor Browser but
+which are packaged with TBB.  The exact NoScript configuration tweaks
+present in the TBB release are still not reflected in our ports.
+
+We are working on moving to the latest release (4.5.1 as of this
+writing).  Beyond that, the Pluggable Transport components must be
+finished and then we'll have a complete set of TBB ports.  We are not
+committing to dates for any of these milestones just yet but most of
+the hard work for everything but PT has already been done.
+
 ## "Beyond porting the Tor Browser Bundle to OpenBSD and the relay guides, what other activities does __TDP__ look to conduct?" ##
 
 We have a long list of potential projects, some of which commenced years ago. This is a list in flux, and we only consider it a loose guide.
