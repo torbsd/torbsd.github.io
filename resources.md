@@ -35,7 +35,7 @@ apologize for any omissions and welcome ideas from others.
 
 * [Tor-BSD Mailing List](http://lists.nycbug.org/mailman/listinfo/tor-bsd) hosted by the [New York City *BSD User Group](http://www.nycbug.org)
 
-* [An Unofficial BSD Buildbot for the Tor Project](http://buildbot.pixelminers.net))
+* [An Unofficial BSD Buildbot for the Tor Project](http://buildbot.pixelminers.net)
   A distributed test build system for finding problems with BSD Tor builds.
 
 * Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twvihadsu5oznuux.onion/)
