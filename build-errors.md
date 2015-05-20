@@ -2,7 +2,7 @@ CSS: torbsd.css
 
 # Tor Browser Build Errors and Notes #
 
-20150509-stinkpad
+20150509-gman999
 
     INPUT("../../../gfx/skia/SkBitmapFilter_opts_SSE2.o")
     INPUT("../../../gfx/skia/SkBitmapProcState_opts_SSE2.o")
@@ -33,6 +33,8 @@ gmake: *** [all] Error 2
 *** Error 1 in . (/usr/ports/infrastructure/mk/bsd.port.mk:2485 'package')
 *** Error 1 in . (/usr/ports/infrastructure/mk/bsd.port.mk:1967 '/var/db/pkg/tor-browser-4.0.8/+CONTENTS')
 *** Error 1 in /usr/ports/mystuff/www/tbb/tor-browser (/usr/ports/infrastructure/mk/bsd.port.mk:2485 'install')
+
+SOLUTION: ulimit -a, /etc/login.conf to infinity
 
 *************************
 
@@ -128,4 +130,4 @@ $ sudo make -j 4 install clean
 Fatal: one category in www lang/python should match PKGPATH=openbsd-ports/www/tbb/tor-browser (in openbsd-ports/www/tbb/tor-browser)
 *** Error 1 in /usr/ports/mystuff/openbsd-ports/www/tbb/tor-browser (/usr/ports/infrastructure/mk/bsd.port.mk:3564 '.BEGIN': @exit 1)
 
-
+SOLUTION PATH PATH PATH

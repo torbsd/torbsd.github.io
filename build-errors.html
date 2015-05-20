@@ -8,7 +8,7 @@
 
 <h1 id="torbrowserbuilderrorsandnotes">Tor Browser Build Errors and Notes</h1>
 
-<p>20150509-stinkpad</p>
+<p>20150509-gman999</p>
 
 <pre><code>INPUT(&quot;../../../gfx/skia/SkBitmapFilter_opts_SSE2.o&quot;)
 INPUT(&quot;../../../gfx/skia/SkBitmapProcState_opts_SSE2.o&quot;)
@@ -40,6 +40,8 @@ gmake: *** [all] Error 2
 </strong>* Error 1 in . (/usr/ports/infrastructure/mk/bsd.port.mk:2485 &#8216;package&#8217;)
 <strong>* Error 1 in . (/usr/ports/infrastructure/mk/bsd.port.mk:1967 &#8216;/var/db/pkg/tor-browser&#8211;4.0.8/+CONTENTS&#8217;)
 </strong>* Error 1 in /usr/ports/mystuff/www/tbb/tor-browser (/usr/ports/infrastructure/mk/bsd.port.mk:2485 &#8216;install&#8217;)</p>
+
+<p>SOLUTION: ulimit -a, /etc/login.conf to infinity</p>
 
 <hr />
 
@@ -138,7 +140,8 @@ tmpfs 23.1G 4.0G 19.1G 18% /usr/ports/pobj</p>
 Fatal: one category in www lang/python should match PKGPATH=openbsd-ports/www/tbb/tor-browser (in openbsd-ports/www/tbb/tor-browser)
 *** Error 1 in /usr/ports/mystuff/openbsd-ports/www/tbb/tor-browser (/usr/ports/infrastructure/mk/bsd.port.mk:3564 &#8216;.BEGIN&#8217;: @exit 1)</p>
 
-<p><code>last updated: 20150515</code></p>
+<p>SOLUTION PATH PATH PATH
+<code>last updated: 20150520</code></p>
 
 </body>
 </html>

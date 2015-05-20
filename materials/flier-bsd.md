@@ -40,7 +40,7 @@ While recognizing that the Tor Project is dynamic open source project with a vib
 
 * Join NYC*BUG's Tor-BSD mailing list http://lists.nycbug.org/mailman/listinfo/tor-bsd
 
-* Clone github.com/torbsd/openbsd-ports and start testing and contributing
+* Clone https://github.com/torbsd/openbsd-ports and start testing and contributing
 
 * Alternately, set your OpenBSD PKG_PATH to http://mirrors.nycbug.org/pub/distfiles and install the package
 
