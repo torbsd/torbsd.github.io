@@ -48,7 +48,7 @@ fbsd-relays_dev.html: fbsd-relays_dev.md $(BOILERPLATE)
 obsd-relays_dev.html: obsd-relays_dev.md $(BOILERPLATE)
 resources.html: resources.md $(BOILERPLATE)
 licensing.html: licensing.md $(BOILERPLATE)
-materials/flier-bsd.html: materials/flier-bsd.html
+materials/flier-bsd.html: materials/flier-bsd.md $(BOILERPLATE)
 obsd-tb-build.html: obsd-tb-build.md $(BOILERPLATE)
 obsd-buildbox.html: obsd-buildbox.md $(BOILERPLATE)
 build-errors.html: build-errors.md $(BOILERPLATE)

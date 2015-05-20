@@ -42,7 +42,9 @@ While recognizing that the Tor Project is dynamic open source project with a vib
 
 * Clone github.com/torbsd/openbsd-ports and start testing and contributing
 
-* Run a *BSD Tor relay and join the BSD Buildbot at http://81.7.14.172
+* Alternately, set your OpenBSD PKG_PATH to http://mirrors.nycbug.org/pub/distfiles and install the package
+
+* Run a *BSD Tor relay and join the BSD Buildbot at http://buildbot.pixelminers.net
 
 * Spread the word about __TDP__
 
