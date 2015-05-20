@@ -258,7 +258,7 @@ piece of open-source software.
 
 ## "Will the Tor Browser Bundle be in the OpenBSD ports tree and available as a package?" ##
 
-Yes.  Definitely.  This is the end-goal of the TBB work.
+This is the end-goal of the TBB work.
 
 ## "What is the status of the Tor Browser Bundle (TBB) Porting Effort?" ##
 

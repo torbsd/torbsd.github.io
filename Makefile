@@ -28,11 +28,11 @@ PAGES=		index.html \
 		obsd-relays_dev.html \
 		resources.html \
 		licensing.html \
-		materials/flier-bsd.html \
 		obsd-tb-build.html \
 		obsd-buildbox.html \
 		build-errors.html \
-		doc-guide.html
+		doc-guide.html \
+		materials/flier-bsd.html
 
 BOILERPLATE=	header.md footer.md
 
@@ -64,11 +64,11 @@ doc-guide.html: doc-guide.md $(BOILERPLATE)
 .tex.pdf:
 	$(PDFLATEX) $<
 .md.html:
-	$(RM_F) tmp.$<
-	$(CP) $< tmp.$<
-	$(TSTAMP) $< >>tmp.$<
-	$(MMD) -t html -o $@ tmp.$<
-	$(RM_F) tmp.$<
+	$(RM_F) $<.tmp
+	$(CP) $< $<.tmp
+	$(TSTAMP) $< >>$<.tmp
+	$(MMD) -t html -o $@ $<.tmp
+	$(RM_F) $<.tmp
 
 # by default cleanup only pdf junk and leave html alone
 clean: clean-pdf
