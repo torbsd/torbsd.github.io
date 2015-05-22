@@ -9,7 +9,7 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## Resources ##
 
-This page collects links and information relevant to TDP.  We
+This page collects links and information relevant to __TDP__.  We
 apologize for any omissions and welcome ideas from others.
 
 ### The BSDs and Related Projects ###
