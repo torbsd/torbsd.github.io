@@ -30,7 +30,7 @@ PAGES=		index.html \
 		licensing.html \
 		obsd-tb-build.html \
 		obsd-buildbox.html \
-		build-errors.html \
+#		build-errors.html \
 		doc-guide.html \
 		materials/flier-bsd.html
 
@@ -51,7 +51,7 @@ licensing.html: licensing.md $(BOILERPLATE)
 materials/flier-bsd.html: materials/flier-bsd.md $(BOILERPLATE)
 obsd-tb-build.html: obsd-tb-build.md $(BOILERPLATE)
 obsd-buildbox.html: obsd-buildbox.md $(BOILERPLATE)
-build-errors.html: build-errors.md $(BOILERPLATE)
+#build-errors.html: build-errors.md $(BOILERPLATE)
 doc-guide.html: doc-guide.md $(BOILERPLATE)
 
 ## The rest of this file makes the above possible...
