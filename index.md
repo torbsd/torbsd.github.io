@@ -25,7 +25,7 @@ tangential projects including [pfSense](https://www.pfsense.org),
 for innumerable devices on the internet. BSD software is renowned for
 its Internet infrastructure role since its earliest days.
 
-The Tor Project continues to play a critical component in anonymity
+The Tor Project plays a critical component in anonymity
 and privacy solutions. With increasing surveillance and censorship,
 Tor is a vital tool, and the project has grown by leaps-and-bounds
 since originating with the US Naval Labs in the 1990’s. Hundreds of
