@@ -22,23 +22,23 @@ Build host preparation
 * /etc/login.conf
 
 builder:\
-	:datasize=infinity:\
-	:vmemoryuse=infinity:\
-	:memoryuse=infinity:\
-	:memorylocked=infinity:\
-	:maxproc=infinity:\
-	:stacksize=infinity:\
-	:openfiles=infinity:\
-	:cputime=infinity:\
-	:tc=staff:
+	:datasize=infinity:\  
+	:vmemoryuse=infinity:\  
+	:memoryuse=infinity:\  
+	:memorylocked=infinity:\  
+	:maxproc=infinity:\  
+	:stacksize=infinity:\  
+	:openfiles=infinity:\  
+	:cputime=infinity:\  
+	:tc=staff:  
 
 From home directory:
 
-git clone https://github.com/torbsd/openbsd-port
+git clone https://github.com/torbsd/openbsd-ports
 
 mkdir -p /usr/ports/mystuff/www
 
-cd openbsd ports; tar -cf - www | tar -C /usr/ports/mystuff -xf -
+cd openbsd-ports; tar -cf - www | tar -C /usr/ports/mystuff -xf -
 
 cd /usr/ports/mystuff/www/tbb
 
