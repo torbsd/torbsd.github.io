@@ -9,8 +9,6 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## Welcome ##
 
-_note: there will be a [BoF at BSDCan Saturday, June 13th](https://www.bsdcan.org/2015/schedule/events/624.en.html) "The BSDs and Privacy Technologies."_
-
 The __Tor BSD Diversity Project (TDP)__ is an initiative seeking to
 extend the use of the BSD Unix operating systems in the
 [Tor public anonymity network](https://www.torproject.org).
