@@ -80,9 +80,9 @@ response.
 
 The number and percentage of public Tor relays fluctuates, and this
 applies to BSD relays as well. In the fall of 2014, almost 6% of
-relays were running a BSD. As of May 2015, the percentage is about
-3.8%. Web sites such as [BlutMagie](http://torstatus.blutmagie.de)
-provide a full list of relays with a simple query form to determine
+relays were running a BSD. As of June 2015, the percentage is just over 
+4%. Web sites such as [BlutMagie](http://torstatus.blutmagie.de)
+provide a full list of public relays with a query function to determine
 the exact current number among other data.
 
 [Tor Metrics](https://metrics.torproject.org/platforms.html) provides
