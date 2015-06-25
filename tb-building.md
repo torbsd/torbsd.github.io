@@ -9,13 +9,13 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## Tor BSD Diversity Project Guide for Building Tor Browser i386/amd64 ##
 
-This document provides the current port build instructions for Tor Browser on OpenBSD. Neeless to say, the host should be relatively isolated from the internet or hostile networks due to the login.conf settings. These directions should not only build the port, but also create the respective packages.
+This document provides the current port build instructions for Tor Browser on OpenBSD. Neeless to say, the host should be relatively isolated from the internet or hostile networks due to the permissive login.conf settings. These directions should not only build the port, but also create the respective packages.
 
 Build host preparation
 
 * updated -current with updated ports tree
 
-* a sufficiently large (~15G?) /usr/ports/pobj partition, or at least enough space on /usr/ports
+* a sufficiently large (~10G?) /usr/ports/pobj partition, or at least enough space on /usr/ports
 
 * add a "builder" group to /etc/group
 
@@ -31,6 +31,12 @@ builder:\
 	:openfiles=infinity:\  
 	:cputime=infinity:\  
 	:tc=staff:  
+
+cap_mkdb /etc/login.conf
+
+Check user settings with ulimit -a or better yet with getcap(1),
+
+getcap -f /etc/login.conf builder
 
 From home directory:
 
@@ -48,4 +54,3 @@ Packages should be deposited in /usr/ports/packages.
 
 
 {{footer.md}}
-
