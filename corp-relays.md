@@ -48,7 +48,7 @@ More generally, the case for corporate use of anonymity and privacy technologies
 
 Please contact us with any questions on deploying Tor relays on BSDs. We hope our efforts not only increase the number of BSD-running Tor relays, but more generally strengthen the Tor network.
 
-Note that if __TDP__ maintains access to any of these relays, we make sure they are marked as being part of the same ["Family"](https://www.torproject.org/docs/tor-manual.html.en#NodeFamily).
+Note that if __TDP__ maintains access to any of these relays, we make sure they are marked as being part of the same ["Family"](https://www.torproject.org/docs/tor-manual.html.en#NodeFamily) of associated Tor relays.
 
 ### Current TDP Corporate Tor Relays ###
 
