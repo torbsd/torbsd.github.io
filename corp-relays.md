@@ -52,10 +52,10 @@ Note that if __TDP__ maintains access to any of these relays, we make sure they 
 
 ### Current TDP Corporate Tor Relays ###
 
-<hostname>: hosted by <firm>, running xBSD
+hostname: hosted by firm, running xBSD
 
 ### Other Tor Relays We Are Aware of ###
 
-<hostname>: hosted by <firm>, running xBSD
+hostname: hosted by firm, running xBSD
 
 
