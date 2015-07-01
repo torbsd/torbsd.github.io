@@ -1,0 +1,46 @@
+## TDP torrc for Corporate Relays
+
+# This line designates that the Tor node will relay traffic
+SocksPort 0
+
+# Where the logs will dwell. It's necessary touch(1) this file and make owner and group _tor
+Log notice file /var/log/tor.log
+
+# The TCP port listening for Tor traffic
+ORPort 9001
+
+# The relay nickname appearing in Tor server listing
+Nickname NYCBUG0
+
+# Set the rate and burst bandwidth limits in kilobytes
+RelayBandwidthRate 5000 KB  # Throttle traffic to 5000KB/s (40000Kbps)
+RelayBandwidthBurst 6000 KB # But allow bursts up to 200KB/s (4800Kbps)
+
+# Determine a contact email address, obscured
+ContactInfo Admin <your admin AT domain DOT tld>
+
+# To run a directory server
+DirPort 9030 # what port to advertise for directory connections
+
+# For entities or admins running multiple relays, especially on the same host
+MyFamily $keyid,$keyid,...
+
+# To NOT allow exit traffic, i.e., to not be the exit node
+ExitPolicy reject *:* # no exits allowed
+
+# Publicly announce the relay
+PublishServerDescriptor 1
+
+CellStatistics 1
+ExtraInfoStatistics 1
+ConnDirectionStatistics 1
+EntryStatistics 1
+AvoidDiskWrites 1
+
+LogMessageDomains 1
+WarnPlaintextPorts
+HeartbeatPeriod 1hours
+
+ServerTransportPlugin obfs2,obfs3 exec /usr/local/bin/obfsproxy managed
+
+ExtORPort auto
