@@ -22,7 +22,7 @@ __TDP__ could either administer the server or assist the relay administrator(s).
 
 None of the current __TDP__ relays are exit nodes, however, examples such as [the Bynum Law Office PLLC node](http://tor-exit.bynumlaw.net/) should remove some of the relevant legal black magic.
 
-A simplified torrc file is [here](corp-torrc.txt)
+A simplified torrc file is [here](torrc.txt)
 
 Our implementation recommendations include:
 
