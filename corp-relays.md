@@ -58,4 +58,4 @@ hostname: hosted by firm, running xBSD
 
 hostname: hosted by firm, running xBSD
 
-
+{{footer.md}}
