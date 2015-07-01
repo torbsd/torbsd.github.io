@@ -13,39 +13,45 @@
 
 <h1 id="thetorbsddiversityprojecttdp">The Tor BSD Diversity Project (TDP)</h1>
 
-<p><a href="index.html">Home</a> | <a href="faq.html">Frequently Asked Questions</a> | <a href="resources.html">Resources</a> | <a href="https://github.com/torbsd">GitHub Repositories</a> | <a href="contact.html">Contact</a> | <a href="http://bptfp7py2wclht26.onion/">TDP Hidden Service</a></p>
+<p><a href="index.html">Home</a> | <a href="faq.html">Frequently Asked Questions</a> | <a href="resources.html">Resources</a> | <a href="https://github.com/torbsd">GitHub Repositories</a> | <a href="corp-relays.html">BSD Firm Relays</a> | <a href="contact.html">Contact</a> | <a href="http://bptfp7py2wclht26.onion/">TDP Hidden Service</a></p>
 
 <h2 id="torbsddiversityprojectguideforbuildingtorbrowseri386amd64">Tor BSD Diversity Project Guide for Building Tor Browser i386/amd64</h2>
 
-<p>This document provides the current port build instructions for Tor Browser on OpenBSD. Neeless to say, the host should be relatively isolated from the internet or hostile networks due to the login.conf settings. These directions should not only build the port, but also create the respective packages.</p>
+<p>This document provides the current port build instructions for Tor Browser on OpenBSD. Neeless to say, the host should be relatively isolated from the internet or hostile networks due to the permissive login.conf settings. These directions should not only build the port, but also create the respective packages.</p>
 
 <p>Build host preparation</p>
 
 <ul>
 <li><p>updated -current with updated ports tree</p></li>
-<li><p>a sufficiently large (~15G?) /usr/ports/pobj partition, or at least enough space on /usr/ports</p></li>
+<li><p>a sufficiently large (~10G?) /usr/ports/pobj partition, or at least enough space on /usr/ports</p></li>
 <li><p>add a &#8220;builder&#8221; group to /etc/group</p></li>
 <li><p>/etc/login.conf</p></li>
 </ul>
 
 <p>builder:
- :datasize=infinity:
- :vmemoryuse=infinity:
- :memoryuse=infinity:
- :memorylocked=infinity:
- :maxproc=infinity:
- :stacksize=infinity:
- :openfiles=infinity:
- :cputime=infinity:
- :tc=staff:</p>
+ :datasize=infinity:\<br/>
+ :vmemoryuse=infinity:\<br/>
+ :memoryuse=infinity:\<br/>
+ :memorylocked=infinity:\<br/>
+ :maxproc=infinity:\<br/>
+ :stacksize=infinity:\<br/>
+ :openfiles=infinity:\<br/>
+ :cputime=infinity:\<br/>
+ :tc=staff: </p>
+
+<p>cap_mkdb /etc/login.conf</p>
+
+<p>Check user settings with ulimit -a or better yet with getcap(1),</p>
+
+<p>getcap -f /etc/login.conf builder</p>
 
 <p>From home directory:</p>
 
-<p>git clone https://github.com/torbsd/openbsd-port</p>
+<p>git clone https://github.com/torbsd/openbsd-ports</p>
 
 <p>mkdir -p /usr/ports/mystuff/www</p>
 
-<p>cd openbsd ports; tar -cf - www | tar -C /usr/ports/mystuff -xf -</p>
+<p>cd openbsd-ports; tar -cf - www | tar -C /usr/ports/mystuff -xf -</p>
 
 <p>cd /usr/ports/mystuff/www/tbb</p>
 
@@ -56,6 +62,8 @@
 <p><hr></p>
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
+
+<p><code>last updated: Thu Jun 25 10:02:08 2015 -0400</code></p>
 
 </body>
 </html>
