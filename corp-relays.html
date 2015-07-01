@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>The Tor-BSD Diversity Project</title>
+	<link type="text/css" rel="stylesheet" href="torbsd.css"/>
+	<meta name="author" content="gman"/>
+	<meta name="editors" content=""/>
+	<meta name="date" content="2015-06-29"/>
+	<meta name="x-note" content="These lines at the top are multimarkdown metadata; leave them."/>
+</head>
+<body>
+
+<h1 id="thetorbsddiversityprojecttdp">The Tor BSD Diversity Project (TDP)</h1>
+
+<p><a href="index.html">Home</a> | <a href="faq.html">Frequently Asked Questions</a> | <a href="resources.html">Resources</a> | <a href="https://github.com/torbsd">GitHub Repositories</a> | <a href="contact.html">Contact</a> | <a href="http://bptfp7py2wclht26.onion/">TDP Hidden Service</a></p>
+
+<p><em>Some Recent News</em></p>
+
+<p>20150625: Alpha Tor Browser 4.5.2 for OpenBSD source available.</p>
+
+<p>20150628: TDP receives a verbal agreement with a firm to host two high-bandwidth Tor relays. Details forthcoming.</p>
+
+<p>20150613: A successful BSDCan BoF includes dozens discussing the BSDs and privacy-enhancing software.</p>
+
+<h2 id="tdptorrelaysfrombsd-usingfirms">TDP Tor Relays from BSD-Using Firms</h2>
+
+<p><strong>The Tor BSD Diversity Project</strong> is encouraging and enabling BSD-using firms to operate Tor relays.</p>
+
+<p>In 2015, Mozilla <a href="https://blog.mozilla.org/it/2015/01/28/deploying-tor-relays/">deployed</a> <a href="https://globe.torproject.org/#/search/query=mozilla">twelve Tor relays</a>. This is a significant step in increasing the bandwidth of the Tor network, in addition to extending the legitimacy of anonymous communications.</p>
+
+<p>As of June 2015, BSD-running Tor relays account for under 5% of total network bandwidth. If firms that employed *BSD infrastructures contributed Tor relays, that number could change drastically.</p>
+
+<p><strong>TDP</strong> is directly querying *BSD firms with adequate infrastructure and skilled staffs to replicate Mozilla&#8217;s commendable efforts. Configuring and maintaining a Tor relay is a small cost for any entity seeking to strengthen the global anonymity network. <strong>TDP</strong> is looking to not only encourage this step, but is also looking to assist these firms on various levels.</p>
+
+<p><strong>TDP</strong> could either administer the server or assist the relay administrator(s). The <a href="http://lists.nycbug.org/mailman/listinfo/tor-bsd">Tor-BSD mailing list</a> could be of assistance, not to mention the <a href="https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays">Tor relays list</a>.</p>
+
+<p>None of the current <strong>TDP</strong> relays are exit nodes, however, examples such as <a href="http://tor-exit.bynumlaw.net/">the Bynum Law Office PLLC node</a> should remove some of the relevant legal black magic.</p>
+
+<p>A simplified torrc file is <a href="corp-torrc.txt">here</a></p>
+
+<p>Our implementation recommendations include:</p>
+
+<ul>
+<li><p>use an IP space separate from your production network</p></li>
+<li><p>previously used hardware can be employed, but consider well-supported network interface cards and drivers</p></li>
+<li><p>optimizing FreeBSD may not be necessary, while OpenBSD requires some /etc/login.conf changes</p></li>
+<li><p>ensure there is a regular routine of maintaining and updating the relays&#8217; ports/packages and base operating system.</p></li>
+<li><p>for high-bandwidth relays, please consult these links for every insight</p></li>
+</ul>
+
+<p>Specifically for firms that use BSDs, there are multiple benefits.</p>
+
+<p>First, Tor relays can be a useful platform for assessing the BSDs&#8217; networking stacks. It&#8217;s an opportunity to test portable BSD code such as LibreSSL and hardware encryption in a production scenario, as small changes in operations are not detrimental to the business.</p>
+
+<p>Second, providing a more prominent role for the BSDs encourages the overwhelmingly youthful crowd of Tor relay administrators to begin trying and using BSDs. Potentially, the pool of BSD-familiar administrators could grow, strengthening the BSD ecosystem.</p>
+
+<p>Finally, more Tor relays run by competent BSD sysadmins can mean more upstream patches and changes beneficial to everyone.</p>
+
+<p>More generally, the case for corporate use of anonymity and privacy technologies has grown. Most profoundly noticeable among journalists, these technologies will become fundamental aspects of corporate IT infrastructure. And the safest means of ensuring the integrity of firms employing the Tor network is to contribute Tor relays themselves.</p>
+
+<p>Please contact us with any questions on deploying Tor relays on BSDs. We hope our efforts not only increase the number of BSD-running Tor relays, but more generally strengthen the Tor network.</p>
+
+<p>Note that if <strong>TDP</strong> maintains access to any of these relays, we make sure they are marked as being part of the same <a href="https://www.torproject.org/docs/tor-manual.html.en#NodeFamily">&#8220;Family&#8221;</a>.</p>
+
+<h3 id="currenttdpcorporatetorrelays">Current TDP Corporate Tor Relays</h3>
+
+<p><hostname>: hosted by <firm>, running xBSD</p>
+
+<h3 id="othertorrelaysweareawareof">Other Tor Relays We Are Aware of</h3>
+
+<p><hostname>: hosted by <firm>, running xBSD</p>
+
+</body>
+</html>

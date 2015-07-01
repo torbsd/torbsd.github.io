@@ -33,7 +33,8 @@ PAGES=		index.html \
 #		build-errors.html \
 		doc-guide.html \
 		tb-building.html \
-		materials/flier-bsd.html
+		materials/flier-bsd.html \
+		corp-relays.html \
 
 BOILERPLATE=	header.md footer.md
 
@@ -55,6 +56,7 @@ obsd-buildbox.html: obsd-buildbox.md $(BOILERPLATE)
 #build-errors.html: build-errors.md $(BOILERPLATE)
 doc-guide.html: doc-guide.md $(BOILERPLATE)
 tb-building.html: tb-building.md $(BOILERPLATE)
+corp-relays.html: corp-relays.md $(BOILERPLATE)
 
 ## The rest of this file makes the above possible...
 ## ... but only YOU can make it necessary.
