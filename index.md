@@ -1,4 +1,4 @@
-Title: The Tor-BSD Diversity Project
+Title: The Tor BSD Diversity Project
 CSS: torbsd.css
 Author: gman
 Editors: attila
