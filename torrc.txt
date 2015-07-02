@@ -1,4 +1,5 @@
-## TDP torrc for Corporate Relays
+## Simplified TDP torrc for Corporate Relays
+## https://torbsd.github.io/torrc.txt
 
 # This line designates that the Tor node will relay traffic
 SocksPort 0
