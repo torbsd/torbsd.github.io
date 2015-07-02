@@ -32,7 +32,9 @@ Our implementation recommendations include:
 
 * previously used hardware can be employed, but consider well-supported network interface cards and drivers for high-bandwidth relays
 
-* optimizing FreeBSD may not be necessary, while OpenBSD requires some /etc/login.conf changes
+* optimizing FreeBSD may not be necessary
+
+* OpenBSD requires some /etc/login.conf changes, and the ports/packages only includes the stable version of Tor, and if time is no constraint, run and maintain Tor on a recent snapshot
 
 * ensure there is a regular routine of maintaining and updating the relays' ports/packages and base operating system, especially the SSL implementation
 
