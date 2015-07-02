@@ -1,48 +1,67 @@
 ## Simplified TDP torrc for Corporate Relays
 ## https://torbsd.github.io/torrc.txt
+## For more detailed explanations,
+## https://www.torproject.org/docs/tor-manual.html.en
+## or tor(1) man page on a Tor host.
+## REQUIRED indicates vital to an operational relay.
 
-# This line designates that the Tor node will relay traffic
+# REQUIRED: This line designates that the Tor node will relay traffic
 SocksPort 0
 
-# Where the logs will dwell. It's necessary touch(1) this file and make owner and group _tor
+# REQUIRED: Where the logs will dwell. It's necessary touch(1) the log file 
+# and make owner and group _tor
 Log notice file /var/log/tor.log
 
-# The TCP port listening for Tor traffic
+# REQUIRED: TCP port listening for Tor traffic
 ORPort 9001
 
 # The relay nickname appearing in Tor server listing
 Nickname a-Tor-relay
 
 # Set the rate and burst bandwidth limits in kilobytes
-RelayBandwidthRate 5000 KB  # Throttle traffic to 5000KB/s (40000Kbps)
-RelayBandwidthBurst 6000 KB # But allow bursts up to 200KB/s (4800Kbps)
+# Throttle traffic to 5000KB/s (40000Kbps),
+# but allow bursts up to 6000KB/s (48000Kbps)
+RelayBandwidthRate 5000 KB
+RelayBandwidthBurst 6000 KB
 
-# Determine a contact email address, obscured
+# Provide a contact email address, obscured
 ContactInfo Admin your admin AT domain DOT tld
 
-# To run a directory server
-DirPort 9030 # what TCP port to advertise for directory connections
+# To run a directory server, the TCP port that advertises for connections
+DirPort 9030
 
-# For entities or admins running multiple relays, especially on the same host
-# Use fingerprints, not Nicknames
+# For entities or admins running multiple relays, especially on the same host,
+# use fingerprints to identify them
 MyFamily $keyid,$keyid,...
 
-# To NOT allow exit traffic, i.e., to not be the exit node
+# To NOT allow exit traffic, i.e., to not be an exit node
+# Although we do strongly encourage exploring that option
 ExitPolicy reject *:* # no exits allowed
 
-# Publicly announce the relay
+# Publicly announce the relay to the Tor directory services
 PublishServerDescriptor 1
 
+# Accumulate some statistics
 CellStatistics 1
 ExtraInfoStatistics 1
 ConnDirectionStatistics 1
 EntryStatistics 1
+
+# Incude log domain in log file
+LogMessageDomains 1
+
+# Limit disk writes
 AvoidDiskWrites 1
 
-LogMessageDomains 1
+# Warn relay users when clear-text ports used, potentially compromising them
 WarnPlaintextPorts
+
+# On hourly basis, send a heartbeat indicating client usage, uptime, bandwidth
 HeartbeatPeriod 1hours
 
+# Enable obfsproxy
 ServerTransportPlugin obfs2,obfs3 exec /usr/local/bin/obfsproxy managed
 
+# TCP Port for obfsproxy and pluggable transports. Setting to 'auto' means 
+# the port will be dynamically assign on tor startup
 ExtORPort auto
