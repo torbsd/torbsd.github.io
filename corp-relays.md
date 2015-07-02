@@ -34,7 +34,11 @@ Our implementation recommendations include:
 
 * optimizing FreeBSD may not be necessary, while OpenBSD requires some /etc/login.conf changes
 
-* ensure there is a regular routine of maintaining and updating the relays' ports/packages and base operating system, especially its SSL implementation
+* ensure there is a regular routine of maintaining and updating the relays' ports/packages and base operating system, especially the SSL implementation
+
+* particular attention should be made to keeping the Tor port/package updated, as anonymity is an "arms race" that can require critical changes to the code
+
+* consider using the unstable version of Tor as opposed to the stable version, as the former version gets more attention
 
 * for high-bandwidth relays, please consult these links for every insight
 
