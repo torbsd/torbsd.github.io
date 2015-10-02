@@ -30,11 +30,10 @@ PAGES=		index.html \
 		licensing.html \
 		obsd-tb-build.html \
 		obsd-buildbox.html \
-#		build-errors.html \
 		doc-guide.html \
 		tb-building.html \
 		materials/flier-bsd.html \
-		corp-relays.html
+		corp-relays.html \
 
 BOILERPLATE=	header.md footer.md
 
