@@ -28,7 +28,7 @@ __Developers__
 :    Clone our repositories, build and break the software, submit tickets and patches.
 
 __Tor BSD Relay Operators/Admins__
-:    Run a BSD relay, use and review the relay guides, contribute input. Enlist your relay(s) the (unofficial) [BSD Buildbot](http://81.7.14.172).
+:    Run a BSD relay, use and review the relay guides, contribute input. Enlist your relay(s) the (unofficial) [BSD Buildbot](http://buildbox.pixelminers.net).
 
 ## "If __TDP__ is concerned about operating system diversity, why does it just focus on BSD Systems, and not other operating systems such as Illuminos?" ##
 
@@ -156,7 +156,8 @@ task.
 
 ## "Are you associated with the Tor Project?" ##
 
-__TDP__ is __not__ an official project of Tor. We are merely long-time Tor users and relay operators whose preferred platform is BSD Unix.
+__TDP__ is __not__ an official project of Tor. We are merely long-time Tor users and relay operators whose preferred platform is BSD Unix. We do maintain
+several contacts among to Tor Project's staff regularly.
 
 ## "What do you hope to accomplish with porting the Tor Browser Bundle to OpenBSD?" ##
 
