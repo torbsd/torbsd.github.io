@@ -79,9 +79,8 @@ response.
 ## "How many Tor relays are running a BSD?" ##
 
 The number and percentage of public Tor relays fluctuates, and this
-applies to BSD relays as well. In the fall of 2014, almost 6% of
-relays were running a BSD. As of June 2015, the percentage is just over 
-4%. Web sites such as [BlutMagie](http://torstatus.blutmagie.de)
+applies to BSD relays as well. As of October 2015, the percentage is
+just under 4.5%. Web sites such as [BlutMagie](http://torstatus.blutmagie.de)
 provide a full list of public relays with a query function to determine
 the exact current number among other data.
 
