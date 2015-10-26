@@ -1,0 +1,21 @@
+The Tor BSD Diversity Project (TDP) is proud to announce the release of Tor Browser (TB) version 5.0.3 for OpenBSD.
+
+TDP (https://torbsd.github.io) is an effort to extend the use of the BSD Unixes into the Tor ecosystem, from the desktop to the network.
+
+The 5.0.3 release is the sixth release of the Tor Browser from TDP.
+
+To install TB for OpenBSD, please see http://mirrors.nycbug.org/pub/snapshots/packages/amd64/README
+
+TDP is focused on diversifying the Tor network, with TB being the flagship project. Additional efforts are made to increase the number of *BSD relays on the Tor network.
+
+Since its launch in March 2015, TDP has made significant contributions. In addition to the TB releases, both BSDCan and BSDCon Brasil featured TDP-focused meetings.
+
+In early October, the TDP focused presentation (http://www.queair.net/br-pres) prompted a significant increase in Tor relays in Brazil. Before the presentation, there were around 22 Tor relays, all of which were Linux in addition to two Windows nodes.
+
+In the weeks after the presentation, several new *BSD Tor relays appeared, accounting for up to 35% of bandwidth provided by new Tor relays in Brazil.
+
+Finally, TDP is working to convince BSD-using businesses to follow Mozilla's December 2014 example to run Tor relays. At this point, New York Internet has committed to running two high-bandwidth relays, one FreeBSD and the other OpenBSD, at its facility in Bridgewater, New Jersey.
+
+TDP's source code repository resides at http://github.com/torbsd.
+
+TDP is seeking funding to continue and extend its efforts. Please contact us if interested in assisting TDP, allowing us to dedicate more time to the project.
