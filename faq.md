@@ -97,6 +97,8 @@ does not work on any of the BSDs for a variety of reasons.
 
 In reference to [this Reddit thread](https://www.reddit.com/r/linux/comments/356iyy/torbsd_diversity_project_help_move_tor_nodes_from/), anyone technical enough to run a robust and secure Tor relay should stick with the operating system they are most comfortable with. Nothing is more dangerous than someone running a public anonymity server on an unfamiliar operating system. __We are not interested in "moving Tor nodes from Linux to BSD."__ We want *more* nodes, preferably by increasing the number of BSD nodes faster, not by converting anyone to anything.
 
+The best recent example of what TDP achieved is in Brazil. Before [BSDCon Brasil] (http://2015.bsdcon.com.br), there were 20 or so Tor relays, all Linux except for two Windows relays. After our presentation and discussions, there are around 5-9 operational relays, accounting for up to a third of observed bandwidth provided on the Tor network. The new relay administrators were BSD users with access to the necessary infrastructure, and added to the Tor network.
+
 To a large extent, __TDP's__ target audience is those already familiar
 with the BSDs. Significant numbers in the BSD community have access to
 data center space for running relays, are developers who hack code,
@@ -153,6 +155,10 @@ the OpenBSD project.
 With a production-quality OpenBSD Tor Browser Bundle port, porting to other
 BSDs or any other POSIX-based systems should be relatively trivial
 task.
+
+## ["Can you please build Tor Browser not only for -current but also for stable versions like 5.7 and 5.8] (https://lists.torproject.org/pipermail/tor-dev/2015-October/009810.html) on OpenBSD? ##
+
+New OpenBSD ports are [developed against OpenBSD -current] (http://www.openbsd.org/faq/ports/testing.html). To maintain versions for anything outside of -current at this point is beyond our resources, unfortunately.
 
 ## "Are you associated with the Tor Project?" ##
 

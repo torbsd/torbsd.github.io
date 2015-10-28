@@ -107,6 +107,8 @@ does not work on any of the BSDs for a variety of reasons.</p>
 
 <p>In reference to <a href="https://www.reddit.com/r/linux/comments/356iyy/torbsd_diversity_project_help_move_tor_nodes_from/">this Reddit thread</a>, anyone technical enough to run a robust and secure Tor relay should stick with the operating system they are most comfortable with. Nothing is more dangerous than someone running a public anonymity server on an unfamiliar operating system. <strong>We are not interested in &#8220;moving Tor nodes from Linux to BSD.&#8221;</strong> We want <em>more</em> nodes, preferably by increasing the number of BSD nodes faster, not by converting anyone to anything.</p>
 
+<p>The best recent example of what TDP achieved is in Brazil. Before <a href="http://2015.bsdcon.com.br">BSDCon Brasil</a>, there were 20 or so Tor relays, all Linux except for two Windows relays. After our presentation and discussions, there are around 5&#8211;9 operational relays, accounting for up to a third of observed bandwidth provided on the Tor network. The new relay administrators were BSD users with access to the necessary infrastructure, and added to the Tor network.</p>
+
 <p>To a large extent, <strong>TDP&#8217;s</strong> target audience is those already familiar
 with the BSDs. Significant numbers in the BSD community have access to
 data center space for running relays, are developers who hack code,
@@ -163,6 +165,10 @@ the OpenBSD project.</p>
 <p>With a production-quality OpenBSD Tor Browser Bundle port, porting to other
 BSDs or any other POSIX-based systems should be relatively trivial
 task.</p>
+
+<h2 id="canyoupleasebuildtorbrowsernotonlyfor-currentbutalsoforstableversionslike5.7and5.8onopenbsd"><a href="https://lists.torproject.org/pipermail/tor-dev/2015-October/009810.html">&quot;Can you please build Tor Browser not only for -current but also for stable versions like 5.7 and 5.8</a> on OpenBSD?</h2>
+
+<p>New OpenBSD ports are <a href="http://www.openbsd.org/faq/ports/testing.html">developed against OpenBSD -current</a>. To maintain versions for anything outside of -current at this point is beyond our resources, unfortunately.</p>
 
 <h2 id="areyouassociatedwiththetorproject">&#8220;Are you associated with the Tor Project?&#8221;</h2>
 
@@ -315,7 +321,7 @@ the hard work for everything but PT has already been done.</p>
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Fri Oct 2 15:20:03 2015 -0400</code></p>
+<p><code>last updated: Fri Oct 2 15:25:36 2015 -0400</code></p>
 
 </body>
 </html>
