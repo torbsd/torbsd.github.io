@@ -76,6 +76,10 @@ locations, the list could continue endlessly. It's the right question
 to ask, but __TDP__ is only beginning to provide a small piece of a
 response.
 
+## What about other types of diversity, such as geographical? ##
+
+[Here is a list of country codes that do not have any public Tor relays](https://torbsd.github.io/tor-less-ccs.txt). Please feel free to enlist any technically capable friends or family to start running Tor relays there.
+
 ## "How many Tor relays are running a BSD?" ##
 
 The number and percentage of public Tor relays fluctuates, and this
