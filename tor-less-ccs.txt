@@ -3,13 +3,13 @@ AE
 AF
 AG
 AI
-AL
 AO
 AQ
 AS
 AW
 AX
 AZ
+BA
 BB
 BD
 BF
@@ -54,6 +54,7 @@ GD
 GF
 GH
 GI
+GL
 GM
 GN
 GP
@@ -120,7 +121,6 @@ PE
 PF
 PG
 PH
-PK
 PM
 PN
 PR
@@ -164,6 +164,7 @@ UY
 UZ
 VA
 VC
+VE
 VG
 VI
 VU
