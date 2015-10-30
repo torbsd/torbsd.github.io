@@ -10,7 +10,9 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 ## A Blog, or More Accurately, a Centralized Location for Announces and Notes ##
 
 20151029
+
 Our First Bells
+
 gman999
 
 It's almost six months since we launched TDP in its current form. In March, the [GitHub repository] (https://github.com/torbsd) was created and we put some meat on the general ideas we had been toying around with.
