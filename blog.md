@@ -21,7 +21,7 @@ We have had a lot of accomplishments since launching, but we should be clear tha
 
 We announced the sixth release of Tor Browser two days ago, version 5.0.3, which was a major milestone for us. We were excited by some of the [feeback](https://lists.torproject.org/pipermail/tor-talk/2015-October/039351.html).
 
-The [presentation](http://www.queair.net/br-pres) at [BSDCon Brasil](http://2015.bsdcon.br.com] was a success, with the first BSD relays launched in that country, and now account for up to a third of observed Tor bandwidth. More relays should be coming online in Brazil soon, and we were told of a few BSD bridges that were created.
+The [presentation](http://www.queair.net/br-pres) at [BSDCon Brasil](http://2015.bsdcon.com.br] was a success, with the first BSD relays launched in that country, and now account for up to a third of observed Tor bandwidth. More relays should be coming online in Brazil soon, and we were told of a few BSD bridges that were created.
 
 Interestingly, one of the relays, running on a residential connection, had to be migrated to a bridge. Apparently, the relay admin's online banking provider blocked the relay's IP, not because it was an exit relay, but just becuase it was a public Tor IP.
 
