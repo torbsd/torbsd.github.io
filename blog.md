@@ -22,7 +22,7 @@ Input is welcomed. Stay tuned.
 
 ###20151029###
 
-Our First Bells by gman999
+__Our First Bells__ by gman999
 
 
 It's over six months since we launched TDP in its current form. In March, the [GitHub repository] (https://github.com/torbsd) was created and we put some meat on the skeleton we had been toying around with.
@@ -41,7 +41,7 @@ Finally, we will be catching up with the publicity we should have previously don
 
 ###20151028###
 
-OS Diversity and Beyond by gman999
+__OS Diversity and Beyond__ by gman999
 
 
 TDP is focused on operating system diversification for Tor. But the need for diversity is more than just operating systems. A quick browse at [one of the Tor Status sites](https://torstatus.rueckgr.at), or more specifically the [Network Statistics Graphs](https://torstatus.rueckgr.at/network_detail.php), the lack of geographical diversity is disturbing.
@@ -67,7 +67,7 @@ We will output more data about geographical diversity in the future, but in the 
 
 ###20151026###
 
-Tor Browser version 5.0.3 for OpenBSD by gman999
+__Tor Browser version 5.0.3__ for OpenBSD by gman999
 
 
 The Tor BSD Diversity Project (TDP) is proud to announce the release of Tor Browser (TB) version 5.0.3 for OpenBSD.
