@@ -37,6 +37,18 @@ TDP is focused on operating system diversification for Tor. But the need for div
 
 Parsing the list of Tor relays, there are a number of ISO 8166-1 two-digit country codes [that have no relay](tor-less-ccs.txt). Spreading the Tor network out to those countries should become an obligation for everyone.
 
+* Antigua & Barbuda (AG), that hub of online gaming, has no relays?
+
+* Angola (AO), whose capital Luanda is one of the more hopping cities in southern Africa now?
+
+* Jordan (JO), which is apparently one of the better connected locations in the region?
+
+* Latin America and Africa are particularly represented. Brazil, with a population of over 200 million and significant infrastructure, having under 30 relays is shocking.
+
+* Pakistan (PK), also, has no public Tor relays, and India (IN) has under ten.
+
+We don't know the particulars of infrastructure, connectivity costs, etc., in a lot of those countries, but certainly efforts need to be dedicated to extend to the underrepresented regions.
+
 Also disturbing is the concentration in observed Tor bandwidth [by country code](relays-by-cc.txt). Germany and the US each contain more than a thousand relays accounting for around a third of the total number of Tor relays globally.
 
 We will output more data about geographical diversity in the future, but in the meantime, if you have contacts, friends or families in the underrepresented country codes, now is the time to explore the possibility of getting more Tor relays there.
