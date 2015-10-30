@@ -26,7 +26,7 @@ The [presentation](http://www.queair.net/br-pres) at [BSDCon Brasil](http://2015
 
 Interestingly, one of the relays, running on a residential connection, had to be migrated to a bridge. Apparently, the relay admin's online banking provider blocked the relay's IP, not because it was an exit relay, but just becuase it was a public Tor IP.
 
-Finally, we will be catching up with the publicity we should have previously done in the near future. We not really the WordPress types, if you hadn't guessed already.
+Finally, we will be catching up with the publicity we should have previously done in the near future. Bear with this blog's format, we are not really the WordPress types, if you hadn't guessed already.
 
 ###20151026###
 
