@@ -114,9 +114,7 @@ The sample [torrc file](torrc.txt) includes the necessary torrc configuration li
 
 ###Consider Using RAM-Based Filesystems###
 
-FreeBSD supports two RAM-based filesystems: [md(4)](https://www.freebsd.org/cgi/man.cgi?query=md&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html) and [tmpfs(5)](https://www.freebsd.org/cgi/man.cgi?query=tmpfs&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html)
-tmpfs(5)
-md(4)
+FreeBSD supports two RAM-based filesystems: [md(4)](https://www.freebsd.org/cgi/man.cgi?query=md&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html) and [tmpfs(5)](https://www.freebsd.org/cgi/man.cgi?query=tmpfs&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html).
 
 ## Encrypting the Swap File ##
 
