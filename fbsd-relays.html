@@ -24,19 +24,19 @@
 <p><a href="https://www.freebsd.org">FreeBSD</a> is a Unix-derived operating system
 focused on reliability and performance. FreeBSD maintains a large user
 base in the backend infrastructures of the world, not to mention in
-products and services such as Juniper, Netflix, NetApp and
+products and services such as WhatsApp, Juniper, Netflix, NetApp and
 Isilon. Widely used systems such as pfSense and FreeNAS are also based
 on FreeBSD.</p>
 
-<p>FreeBSD makes an ideal platform for running a Tor relay. This guide
+<p>FreeBSD is an ideal platform for running a Tor relay. This guide
 aims to provide insights for those interested in running a Tor relay
 on FreeBSD. It assumes a certain level of basic comfort with
 traditional Unix tools such as editors and starting and stopping
 daemons, not to mention navigating through the install process and
 general setup. This is not a full step-by-step instructional for
-those who are new to the Unix command-line.</p>
+those who are new to the Unix shell.</p>
 
-<p>For installing applications, the FreeBSD ports system is the best
+<p>For installing applications, the FreeBSD ports system is the preferred
 method, as it maintains the most current versions, as opposed to the
 new pkg system.</p>
 
@@ -63,18 +63,15 @@ system.</p>
 will create an operational relay. For more detailed instructions and
 for additional tips on securing and optimizing the relay</p>
 
-<ol>
-<li><p>Install FreeBSD 10 and update to most recent -STABLE version</p></li>
-<li><p>Update the ports tree under <em>/usr/ports</em></p></li>
-</ol>
+<p>Install FreeBSD 10 and update to most recent -STABLE version</p>
+
+<p>Populate and/or update the ports tree under <em>/usr/ports</em></p>
 
 <blockquote>
 <p>% svnlite update /usr/ports</p>
 </blockquote>
 
-<ol>
-<li>Install either the stable or development version of Tor from the ports tree.</li>
-</ol>
+<p>Install either the stable or development version of Tor from the ports tree. The -devel or alpha version of Tor is likely the better choice.</p>
 
 <blockquote>
 <p>% cd /usr/ports/security/tor &amp;&amp; make install clean</p>
@@ -86,18 +83,15 @@ for additional tips on securing and optimizing the relay</p>
 <p>% cd /usr/ports/security/tor-devel &amp;&amp; make install clean</p>
 </blockquote>
 
-<ol>
-<li>Copy the torrc.sample file to torrc</li>
-</ol>
+<p>Copy the torrc.sample file to torrc</p>
 
 <blockquote>
 <p>% cp /usr/local/etc/tor/torrc.sample /usr/local/etc/tor/torrc</p>
 </blockquote>
 
-<ol>
-<li><p>Edit <em>/usr/local/etc/tor/torrc</em> appropriately</p></li>
-<li><p>Create the appropriate log file with the correct permission:</p></li>
-</ol>
+<p>Edit <em>/usr/local/etc/tor/torrc</em> appropriately</p>
+
+<p>Create the appropriate log file with the correct permission:</p>
 
 <blockquote>
 <p>% touch /var/log tor &amp;&amp; chown _tor:_tor /var/log/tor &amp;&amp; chmod 600 /var/log/tor</p>
