@@ -28,7 +28,7 @@ Interestingly, one of the relays, running on a residential connection, had to be
 
 Finally, we will be catching up with the publicity we should have previously done in the near future. Bear with this blog's format, we are not really the WordPress types, if you hadn't guessed already.
 
-###20151026###
+###20151028###
 
 OS Diversity and Beyond by gman999
 
