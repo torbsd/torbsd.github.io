@@ -13,18 +13,14 @@ __THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO PL
 
 __TDP__ is creating two guides to building and configuring Tor relays for FreeBSD and OpenBSD.
 
-There are two versions of each. The first is considered 'production'
-quality ready for printing, translation and distribution. The second
-is considered 'development' where future ideas are noted, tested and
-confirmed. The development version will also contain more advanced
-changes on a BSD relay that are beyond the scope of the production
-version. Contributions are more than welcomed.
+There will be two parts to each.
 
-One issue to note is that we view various "optimization" attempts as a
-complex road, beyond just reading
-[Stevens' "TCP/IP Illustrated"](https://en.wikipedia.org/wiki/TCP/IP_Illustrated).
-It is not easy to understand the true effects of sysctl value changes
-and other kernel-level hacks, particularly with TCP traffic.
+The first part will be a "quick and dirty" guide to getting a Tor relay up quickly.
+
+The second will be some other ideas for configuration, covering more optional enhancements.
+
+One issue to note is that we view various optimization attempts as a
+complex road, beyond just reading [Stevens' "TCP/IP Illustrated"](https://en.wikipedia.org/wiki/TCP/IP_Illustrated). It is not easy to understand the true effects of sysctl value changes and other kernel-level hacks, particularly with TCP traffic.
 
 Tor is a (more or less) randomized routing network. That lack of
 consistency inhibits comparisons in performance beyond the
@@ -50,22 +46,14 @@ Netflix can serve
 with a default FreeBSD install, it's likely sufficient for the vast
 majority of Tor relays.
 
-Contributions for NetBSD and DragonFly BSD are welcomed.
+Contributions from other BSDs are welcomed.
 
 ## FreeBSD Tor Relay Guide
 
-Production
 :    [https://torbsd.github.io/fbsd-relays.html](fbsd-relays.html)
-
-Development
-:    [https://torbsd.github.io/fbsd-relays_dev.html](fbsd-relays_dev.html)
 
 ## OpenBSD Tor Relay Guide
 
-Production
 :    [https://torbsd.github.io/obsd-relays.html](obsd-relays.html)
-
-Development
-:    [https://torbsd.github.io/obsd-relays_dev.html](obsd-relays_dev.html) 
 
 {{footer.md}}

@@ -21,18 +21,14 @@
 
 <p><strong>TDP</strong> is creating two guides to building and configuring Tor relays for FreeBSD and OpenBSD.</p>
 
-<p>There are two versions of each. The first is considered &#8216;production&#8217;
-quality ready for printing, translation and distribution. The second
-is considered &#8216;development&#8217; where future ideas are noted, tested and
-confirmed. The development version will also contain more advanced
-changes on a BSD relay that are beyond the scope of the production
-version. Contributions are more than welcomed.</p>
+<p>There will be two parts to each.</p>
 
-<p>One issue to note is that we view various &#8220;optimization&#8221; attempts as a
-complex road, beyond just reading
-<a href="https://en.wikipedia.org/wiki/TCP/IP_Illustrated">Stevens&#8217; &#8220;TCP/IP Illustrated&#8221;</a>.
-It is not easy to understand the true effects of sysctl value changes
-and other kernel-level hacks, particularly with TCP traffic.</p>
+<p>The first part will be a &#8220;quick and dirty&#8221; guide to getting a Tor relay up quickly.</p>
+
+<p>The second will be some other ideas for configuration, covering more optional enhancements.</p>
+
+<p>One issue to note is that we view various optimization attempts as a
+complex road, beyond just reading <a href="https://en.wikipedia.org/wiki/TCP/IP_Illustrated">Stevens&#8217; &#8220;TCP/IP Illustrated&#8221;</a>. It is not easy to understand the true effects of sysctl value changes and other kernel-level hacks, particularly with TCP traffic.</p>
 
 <p>Tor is a (more or less) randomized routing network. That lack of
 consistency inhibits comparisons in performance beyond the
@@ -58,26 +54,14 @@ Netflix can serve
 with a default FreeBSD install, it&#8217;s likely sufficient for the vast
 majority of Tor relays.</p>
 
-<p>Contributions for NetBSD and DragonFly BSD are welcomed.</p>
-
-<h2 id="freebsdtorrelayguide">FreeBSD Tor Relay Guide</h2>
+<p>Contributions from other BSDs are welcomed.</p>
 
 <dl>
-<dt>Production</dt>
+<dt>## FreeBSD Tor Relay Guide</dt>
 <dd><a href="fbsd-relays.html">https://torbsd.github.io/fbsd-relays.html</a></dd>
 
-<dt>Development</dt>
-<dd><a href="fbsd-relays_dev.html">https://torbsd.github.io/fbsd-relays_dev.html</a></dd>
-</dl>
-
-<h2 id="openbsdtorrelayguide">OpenBSD Tor Relay Guide</h2>
-
-<dl>
-<dt>Production</dt>
+<dt>## OpenBSD Tor Relay Guide</dt>
 <dd><a href="obsd-relays.html">https://torbsd.github.io/obsd-relays.html</a></dd>
-
-<dt>Development</dt>
-<dd><a href="obsd-relays_dev.html">https://torbsd.github.io/obsd-relays_dev.html</a></dd>
 </dl>
 
 <p><hr></p>
