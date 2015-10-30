@@ -30,6 +30,20 @@ Finally, we will be catching up with the publicity we should have previously don
 
 ###20151026###
 
+OS Diversity and Beyond by gman999
+
+
+TDP is focused on operating system diversification for Tor. But the need for diversity is more than just operating systems. A quick browse at [one of the Tor Status sites](https://torstatus.rueckgr.at), or more specifically the [Network Statistics Graphs](https://torstatus.rueckgr.at/network_detail.php) the lack of geographical diversity is disturbing.
+
+Parsing the list of Tor relays, there are a number of ISO 8166-1 two-digit country codes [that have no relay](tor-less-ccs.txt). Spreading the Tor network out to those countries should become an obligation for everyone.
+
+Also disturbing is the concentration in observed Tor bandwidth [by country code](relays-by-cc.txt). Germany and the US each contain more than a thousand relays accounting for around a third of the total number of Tor relays globally.
+
+We will output more data about geographical diversity in the future, but in the meantime, if you have contacts, friends or families in the underrepresented country codes, now is the time to explore the possibility of getting more Tor relays there.
+
+
+###20151026###
+
 Tor Browser version 5.0.3 for OpenBSD by gman999
 
 
