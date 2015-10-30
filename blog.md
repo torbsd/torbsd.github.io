@@ -80,7 +80,7 @@ To install TB for OpenBSD, please see [http://mirrors.nycbug.org/pub/snapshots/p
 
 TDP is focused on diversifying the Tor network, with TB being the flagship project. Additional efforts are made to increase the number of *BSD relays on the Tor network.
 
-Since its launch in March 2015, TDP has made significant contributions. In addition to the TB releases, both BSDCan and BSDCon Brasil featured TDP-focused meetings.
+Since its launch in March 2015, TDP contributed significantly. In addition to the TB releases, both BSDCan and BSDCon Brasil featured TDP-focused meetings.
 
 In early October, a [TDP presentation](http://www.queair.net/br-pres) prompted a significant increase in Tor relays in Brazil. Before the presentation, there were around 22 Tor relays, all of which were Linux in addition to two Windows nodes.
 
