@@ -114,13 +114,20 @@ The sample [torrc file](torrc.txt) includes the necessary torrc configuration li
 
 ###Consider Using Memory-Based Filesystems###
 
-FreeBSD supports two memory-based filesystems: [md(4)](https://www.freebsd.org/cgi/man.cgi?query=md&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html) and [tmpfs(5)](https://www.freebsd.org/cgi/man.cgi?query=tmpfs&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html). tmpfs(5) was more recently developed. Both are useful for relays in which certain partitions, such as /tmp or /var/log, are moved to memory as opposed to the hard disks. For systems where disk writes need to be minimized, such as with flash memory, memory-based are a useful mechanism. There is an additional security benefit, in that upon reboots, all memory-based is cleared.
+FreeBSD supports two memory-based filesystems: [md(4)](https://www.freebsd.org/cgi/man.cgi?query=md&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=ascii) and [tmpfs(5)](https://www.freebsd.org/cgi/man.cgi?query=tmpfs&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=ascii). tmpfs(5) was more recently developed. Both are useful for relays in which certain partitions, such as /tmp or /var/log, are moved to memory as opposed to the hard disks. For systems where disk writes need to be minimized, such as with flash memory, memory-based are a useful mechanism. There is an additional security benefit, in that upon reboots, all memory-based is cleared.
+
+Changes to partitions are done in the [/etc/fstab(5) file](https://www.freebsd.org/cgi/man.cgi?query=fstab&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html).
+
+For example, to make the /tmp a tmpfs(5)-based partition, hash out the current /tmp line, and replace with:
+
+tmpfs	/tmp	tmpfs	rw,mod=0775	0	0
+
 
 ### Encrypting the Swap File ###
 
 By default, FreeBSD does not encrypt the swap file.  To implement swap file encryption:
 
-Identify the swap file partition with swapinfo(8)
+Identify the swap file partition with [swapinfo(8)](https://www.freebsd.org/cgi/man.cgi?query=swapinfo&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=ascii)
 
 >% /usr/sbin/swapinfo
 
@@ -130,11 +137,11 @@ __/dev/ada0p3	4194304		0	2194304		0%__
 
 In that example, our swap file is */dev/ada0p3*.
 
-2.  Now clear the current contents of the swap file with dd(1)
+Clear the current contents of the swap file with dd(1)
 
 >% dd if=/dev/random of=/dev/ada0p3 bs=1m
 
-3.  Either gdbe(8) or geli(8) can be used to encrypt the swap file.  In this case, geli(8) is used by adding the .eli suffix to the swap file entry in */etc/fstab* so that it reads similar to this:
+Either gdbe(8) or geli(8) can be used to encrypt the swap file.  In this case, geli(8) is used by adding the .eli suffix to the swap file entry in */etc/fstab* so that it reads similar to this:
 
 #Device		Mountpoint	FStype	Options	Dump	Pass#
 /dev/ada0p3.eli	none		swap	sw	0	0
@@ -148,31 +155,9 @@ __Device        1K-blocks       Used    Avail   Capacity__
 __/dev/ada0p3.eli   4194304         0       2194304         0%__
 
 
-
-
 >% dd if=/dev/
 
-## Some Initial sysctl(8) Changes ##
-
->security.bsd.see_other_uids=1
-
-By default, FreeBSD does not enable random IP identification numbers.  To enable for a running system add the following line to the /etc/sysctl.conf file:
-
->net.inet.ip.random_id=1
-
-For enabling that sysctl(8) setting, type the following:
-
->% sysctl net.inet.random.ip_id=1
-
-To confirm this setting, type:
-
->% sysctl net.inet.ip.random_id
-
-The output should display the following line:
-
->net.inet.ip.random_id: 1
-
-## Keeping the Ports Tree Updated ##
+###Keeping the Ports Tree Updated###
 
 svnlite(1) is a light-weight version of Subversion, the primary tool for updating the FreeBSD source code on a local machine.  It is integrated in the base of FreeBSD as-of the 10 branch. Subversion commands work with svnlite(1) as they would with the svn command.
 
@@ -184,7 +169,7 @@ Once the /usr/ports directory has been fully populated with svnlite(1), the port
 
 svnlite update /usr/ports
 
-## Keeping Accurate Time with ntpd(8) ##
+###Keeping Accurate Time with ntpd(8)###
 
 Accurate time is an important requirement of a Tor relay. On FreeBSD, ntpd(8) is in the base operating system. Note that ntpdate(8) is deprecated and its function is replaced with <i>ntpd_sync_on_start</i>. To enable and run:
 
@@ -202,7 +187,7 @@ ntpd(8) status can be checked by viewing the /var/db/ntpd.drift file, or with th
 
 >% ntpq -p
 
-Alternately, the ports collection contains OpenBSD's OpenNTPD.
+Alternately, the ports collection contains a portable version of [OpenBSD's](http://openntpd.org/) [OpenNTPD](https://freshports.org/net/openntpd/).
 
 ## Installing Tor ##
 

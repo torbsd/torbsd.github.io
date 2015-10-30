@@ -142,13 +142,19 @@ will create an operational relay.</p>
 
 <h3 id="considerusingmemory-basedfilesystems">Consider Using Memory-Based Filesystems</h3>
 
-<p>FreeBSD supports two memory-based filesystems: <a href="https://www.freebsd.org/cgi/man.cgi?query=md&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=html">md(4)</a> and <a href="https://www.freebsd.org/cgi/man.cgi?query=tmpfs&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=html">tmpfs(5)</a>. tmpfs(5) was more recently developed. Both are useful for relays in which certain partitions, such as /tmp or /var/log, are moved to memory as opposed to the hard disks. For systems where disk writes need to be minimized, such as with flash memory, memory-based are a useful mechanism. There is an additional security benefit, in that upon reboots, all memory-based is cleared.</p>
+<p>FreeBSD supports two memory-based filesystems: <a href="https://www.freebsd.org/cgi/man.cgi?query=md&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=ascii">md(4)</a> and <a href="https://www.freebsd.org/cgi/man.cgi?query=tmpfs&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=ascii">tmpfs(5)</a>. tmpfs(5) was more recently developed. Both are useful for relays in which certain partitions, such as /tmp or /var/log, are moved to memory as opposed to the hard disks. For systems where disk writes need to be minimized, such as with flash memory, memory-based are a useful mechanism. There is an additional security benefit, in that upon reboots, all memory-based is cleared.</p>
+
+<p>Changes to partitions are done in the <a href="https://www.freebsd.org/cgi/man.cgi?query=fstab&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=html">/etc/fstab(5) file</a>.</p>
+
+<p>For example, to make the /tmp a tmpfs(5)-based partition, hash out the current /tmp line, and replace with:</p>
+
+<p>tmpfs /tmp tmpfs rw,mod=0775 0 0</p>
 
 <h3 id="encryptingtheswapfile">Encrypting the Swap File</h3>
 
 <p>By default, FreeBSD does not encrypt the swap file. To implement swap file encryption:</p>
 
-<p>Identify the swap file partition with swapinfo(8)</p>
+<p>Identify the swap file partition with <a href="https://www.freebsd.org/cgi/man.cgi?query=swapinfo&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=ascii">swapinfo(8)</a></p>
 
 <blockquote>
 <p>% /usr/sbin/swapinfo</p>
@@ -160,17 +166,13 @@ will create an operational relay.</p>
 
 <p>In that example, our swap file is <em>/dev/ada0p3</em>.</p>
 
-<ol>
-<li>Now clear the current contents of the swap file with dd(1)</li>
-</ol>
+<p>Clear the current contents of the swap file with dd(1)</p>
 
 <blockquote>
 <p>% dd if=/dev/random of=/dev/ada0p3 bs=1m</p>
 </blockquote>
 
-<ol>
-<li>Either gdbe(8) or geli(8) can be used to encrypt the swap file. In this case, geli(8) is used by adding the .eli suffix to the swap file entry in <em>/etc/fstab</em> so that it reads similar to this:</li>
-</ol>
+<p>Either gdbe(8) or geli(8) can be used to encrypt the swap file. In this case, geli(8) is used by adding the .eli suffix to the swap file entry in <em>/etc/fstab</em> so that it reads similar to this:</p>
 
 <h1 id="devicemountpointfstypeoptionsdumppass">Device Mountpoint FStype Options Dump Pass</h1>
 
@@ -188,37 +190,7 @@ will create an operational relay.</p>
 <p>% dd if=/dev/</p>
 </blockquote>
 
-<h2 id="someinitialsysctl8changes">Some Initial sysctl(8) Changes</h2>
-
-<blockquote>
-<p>security.bsd.see_other_uids=1</p>
-</blockquote>
-
-<p>By default, FreeBSD does not enable random IP identification numbers. To enable for a running system add the following line to the /etc/sysctl.conf file:</p>
-
-<blockquote>
-<p>net.inet.ip.random_id=1</p>
-</blockquote>
-
-<p>For enabling that sysctl(8) setting, type the following:</p>
-
-<blockquote>
-<p>% sysctl net.inet.random.ip_id=1</p>
-</blockquote>
-
-<p>To confirm this setting, type:</p>
-
-<blockquote>
-<p>% sysctl net.inet.ip.random_id</p>
-</blockquote>
-
-<p>The output should display the following line:</p>
-
-<blockquote>
-<p>net.inet.ip.random_id: 1</p>
-</blockquote>
-
-<h2 id="keepingtheportstreeupdated">Keeping the Ports Tree Updated</h2>
+<h3 id="keepingtheportstreeupdated">Keeping the Ports Tree Updated</h3>
 
 <p>svnlite(1) is a light-weight version of Subversion, the primary tool for updating the FreeBSD source code on a local machine. It is integrated in the base of FreeBSD as-of the 10 branch. Subversion commands work with svnlite(1) as they would with the svn command.</p>
 
@@ -230,7 +202,7 @@ will create an operational relay.</p>
 
 <p>svnlite update /usr/ports</p>
 
-<h2 id="keepingaccuratetimewithntpd8">Keeping Accurate Time with ntpd(8)</h2>
+<h3 id="keepingaccuratetimewithntpd8">Keeping Accurate Time with ntpd(8)</h3>
 
 <p>Accurate time is an important requirement of a Tor relay. On FreeBSD, ntpd(8) is in the base operating system. Note that ntpdate(8) is deprecated and its function is replaced with <i>ntpd_sync_on_start</i>. To enable and run:</p>
 
@@ -254,7 +226,7 @@ will create an operational relay.</p>
 <p>% ntpq -p</p>
 </blockquote>
 
-<p>Alternately, the ports collection contains OpenBSD&#8217;s OpenNTPD.</p>
+<p>Alternately, the ports collection contains a portable version of <a href="http://openntpd.org/">OpenBSD&#8217;s</a> <a href="https://freshports.org/net/openntpd/">OpenNTPD</a>.</p>
 
 <h2 id="installingtor">Installing Tor</h2>
 
@@ -415,7 +387,7 @@ It is critical to remember that setting an incorrect variable can disable a work
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Fri Oct 30 11:15:59 2015 -0400</code></p>
+<p><code>last updated: Fri Oct 30 11:22:24 2015 -0400</code></p>
 
 </body>
 </html>
