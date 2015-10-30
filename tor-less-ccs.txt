@@ -3,6 +3,7 @@ AE
 AF
 AG
 AI
+AL
 AO
 AQ
 AS
@@ -51,10 +52,11 @@ FM
 FO
 GA
 GD
+GE
 GF
+GG
 GH
 GI
-GL
 GM
 GN
 GP
@@ -89,7 +91,6 @@ LK
 LR
 LS
 LY
-MA
 MC
 ME
 MF
@@ -121,6 +122,7 @@ PE
 PF
 PG
 PH
+PK
 PM
 PN
 PR
@@ -129,6 +131,7 @@ PW
 PY
 QA
 RW
+SA
 SB
 SC
 SD
@@ -153,7 +156,6 @@ TJ
 TK
 TL
 TM
-TN
 TO
 TT
 TV
@@ -164,7 +166,6 @@ UY
 UZ
 VA
 VC
-VE
 VG
 VI
 VU
