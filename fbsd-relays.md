@@ -100,7 +100,7 @@ Reboot to confirm that Tor starts after a reboot.
 
 ## Some Additional Configuration Considerations & Options ##
 
-#obfsproxy#
+###obfsproxy###
 
 As internet censorship and surveillance are a continual battle, the Tor Project implements regular counter-measures.
 
@@ -110,17 +110,11 @@ One such tool is obfsproxy, a pluggable transport proxy. To install obfsproxy:
 
 The sample [torrc file](torrc.txt) includes the necessary torrc configuration lines.
 
-## Installing FreeBSD ##
+## Configuring FreeBSD ##
 
-select ports tree
+###Consider Using RAM-Based Filesystems###
 
-Further Configuration After the First Boot
-
-Using RAM-Based Filesystems
-
-/var/log
-/tmp
-/var/tmp
+FreeBSD supports two RAM-based filesystems: [md(4)](https://www.freebsd.org/cgi/man.cgi?query=md&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html) and [tmpfs(5)](https://www.freebsd.org/cgi/man.cgi?query=tmpfs&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html)
 tmpfs(5)
 md(4)
 

@@ -126,7 +126,7 @@ will create an operational relay.</p>
 
 <h2 id="someadditionalconfigurationconsiderationsoptions">Some Additional Configuration Considerations &amp; Options</h2>
 
-<h1 id="obfsproxy">obfsproxy</h1>
+<h3 id="obfsproxy">obfsproxy</h3>
 
 <p>As internet censorship and surveillance are a continual battle, the Tor Project implements regular counter-measures.</p>
 
@@ -138,17 +138,11 @@ will create an operational relay.</p>
 
 <p>The sample <a href="torrc.txt">torrc file</a> includes the necessary torrc configuration lines.</p>
 
-<h2 id="installingfreebsd">Installing FreeBSD</h2>
+<h2 id="configuringfreebsd">Configuring FreeBSD</h2>
 
-<p>select ports tree</p>
+<h3 id="considerusingram-basedfilesystems">Consider Using RAM-Based Filesystems</h3>
 
-<p>Further Configuration After the First Boot</p>
-
-<p>Using RAM-Based Filesystems</p>
-
-<p>/var/log
-/tmp
-/var/tmp
+<p>FreeBSD supports two RAM-based filesystems: <a href="https://www.freebsd.org/cgi/man.cgi?query=md&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=html">md(4)</a> and <a href="https://www.freebsd.org/cgi/man.cgi?query=tmpfs&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=html">tmpfs(5)</a>
 tmpfs(5)
 md(4)</p>
 
@@ -427,7 +421,7 @@ It is critical to remember that setting an incorrect variable can disable a work
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Fri Oct 30 10:55:37 2015 -0400</code></p>
+<p><code>last updated: Fri Oct 30 11:08:17 2015 -0400</code></p>
 
 </body>
 </html>
