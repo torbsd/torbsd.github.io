@@ -112,17 +112,15 @@ The sample [torrc file](torrc.txt) includes the necessary torrc configuration li
 
 ## Configuring FreeBSD ##
 
-###Consider Using RAM-Based Filesystems###
+###Consider Using Memory-Based Filesystems###
 
-FreeBSD supports two RAM-based filesystems: [md(4)](https://www.freebsd.org/cgi/man.cgi?query=md&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html) and [tmpfs(5)](https://www.freebsd.org/cgi/man.cgi?query=tmpfs&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html).
+FreeBSD supports two memory-based filesystems: [md(4)](https://www.freebsd.org/cgi/man.cgi?query=md&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html) and [tmpfs(5)](https://www.freebsd.org/cgi/man.cgi?query=tmpfs&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html). tmpfs(5) was more recently developed. Both are useful for relays in which certain partitions, such as /tmp or /var/log, are moved to memory as opposed to the hard disks. For systems where disk writes need to be minimized, such as with flash memory, memory-based are a useful mechanism. There is an additional security benefit, in that upon reboots, all memory-based is cleared.
 
-## Encrypting the Swap File ##
+### Encrypting the Swap File ###
 
-By default, FreeBSD does not encrypt the swap file.  The steps to implement an encrypted swap file is simple:
+By default, FreeBSD does not encrypt the swap file.  To implement swap file encryption:
 
- steps to implement an encrypted swap file is simple:
-
-1.  Identify the swap file partition with swapinfo(8)
+Identify the swap file partition with swapinfo(8)
 
 >% /usr/sbin/swapinfo
 

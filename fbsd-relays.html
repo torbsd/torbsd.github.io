@@ -140,19 +140,15 @@ will create an operational relay.</p>
 
 <h2 id="configuringfreebsd">Configuring FreeBSD</h2>
 
-<h3 id="considerusingram-basedfilesystems">Consider Using RAM-Based Filesystems</h3>
+<h3 id="considerusingmemory-basedfilesystems">Consider Using Memory-Based Filesystems</h3>
 
-<p>FreeBSD supports two RAM-based filesystems: <a href="https://www.freebsd.org/cgi/man.cgi?query=md&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=html">md(4)</a> and <a href="https://www.freebsd.org/cgi/man.cgi?query=tmpfs&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=html">tmpfs(5)</a>.</p>
+<p>FreeBSD supports two memory-based filesystems: <a href="https://www.freebsd.org/cgi/man.cgi?query=md&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=html">md(4)</a> and <a href="https://www.freebsd.org/cgi/man.cgi?query=tmpfs&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=html">tmpfs(5)</a>. tmpfs(5) was more recently developed. Both are useful for relays in which certain partitions, such as /tmp or /var/log, are moved to memory as opposed to the hard disks. For systems where disk writes need to be minimized, such as with flash memory, memory-based are a useful mechanism. There is an additional security benefit, in that upon reboots, all memory-based is cleared.</p>
 
-<h2 id="encryptingtheswapfile">Encrypting the Swap File</h2>
+<h3 id="encryptingtheswapfile">Encrypting the Swap File</h3>
 
-<p>By default, FreeBSD does not encrypt the swap file. The steps to implement an encrypted swap file is simple:</p>
+<p>By default, FreeBSD does not encrypt the swap file. To implement swap file encryption:</p>
 
-<p>steps to implement an encrypted swap file is simple:</p>
-
-<ol>
-<li>Identify the swap file partition with swapinfo(8)</li>
-</ol>
+<p>Identify the swap file partition with swapinfo(8)</p>
 
 <blockquote>
 <p>% /usr/sbin/swapinfo</p>
@@ -419,7 +415,7 @@ It is critical to remember that setting an incorrect variable can disable a work
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Fri Oct 30 11:12:54 2015 -0400</code></p>
+<p><code>last updated: Fri Oct 30 11:15:59 2015 -0400</code></p>
 
 </body>
 </html>
