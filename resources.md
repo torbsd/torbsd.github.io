@@ -63,6 +63,8 @@ apologize for any omissions and welcome ideas from others.
 
 * Ted Unangst [slides on "LibreSSL: More than 30 Days Late"](http://www.openbsd.org/papers/eurobsdcon2014-libressl.html)
 
+* Ted Unangst [blog post on "Reproducible Builds are a Waste of Time](http://www.tedunangst.com/flak/post/reproducible-builds-are-a-waste-of-time)
+
 
 ### The Danger of Monocultures in Technology ###
 
