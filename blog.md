@@ -1,4 +1,13 @@
-A Blog, or More Accurately, a Centralized Location for Announces and Notes
+Title: The Tor BSD Diversity Project
+CSS: torbsd.css
+Author: gman
+Editors: attila
+Date: 2015-10-29
+X-Note: These lines at the top are multimarkdown metadata; leave them.
+
+{{header.md}}
+
+## A Blog, or More Accurately, a Centralized Location for Announces and Notes ##
 
 20151029
 gman999
@@ -12,3 +21,5 @@ We announced the sixth release of Tor Browser two days ago, version 5.0.3, which
 The presentation at BSDCon Brasil was a success, with the first BSD relays launched in that country, and now account for up to a third of observed Tor bandwidth. More relays should be coming online in Brazil soon, and we were told of a few BSD bridges that were created.
 
 Interestingly, one of the relays, running on a residential connection, had to be migrated to a bridge. Apparently, the relay admin's online banking provider blocked the relay's IP, not because it was an exit relay, but just becuase it was a public Tor IP.
+
+{{footer.md}}
