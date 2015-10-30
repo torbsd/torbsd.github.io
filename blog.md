@@ -9,7 +9,9 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## A Blog, or More Accurately, a Centralized Location for Announces and Notes ##
 
-#20151029# Our First Bells by gman999
+###20151029###
+
+Our First Bells by gman999
 
 
 It's almost six months since we launched TDP in its current form. In March, the [GitHub repository] (https://github.com/torbsd) was created and we put some meat on the general ideas we had been toying around with.
@@ -22,7 +24,9 @@ The [presentation](http://www.queair.net/br-pres) at [BSDCon Brasil](http://2015
 
 Interestingly, one of the relays, running on a residential connection, had to be migrated to a bridge. Apparently, the relay admin's online banking provider blocked the relay's IP, not because it was an exit relay, but just becuase it was a public Tor IP.
 
-#20151026# Tor Browser version 5.0.3 for OpenBSD Announced by gman999
+###20151026###
+
+Tor Browser version 5.0.3 for OpenBSD Announced by gman999
 
 
 The Tor BSD Diversity Project (TDP) is proud to announce the release of Tor Browser (TB) version 5.0.3 for OpenBSD.
