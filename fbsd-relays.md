@@ -54,13 +54,13 @@ system.
 These are the basic steps to configure a Tor relay with FreeBSD.  This
 will create an operational relay.
 
-* Install FreeBSD 10 and update to most recent -STABLE version
+Install FreeBSD 10 and update to most recent -STABLE version
 
 Populate and/or update the ports tree under */usr/ports*
 
 >% svnlite update /usr/ports
 
-* Install either the stable or development version of Tor from the ports tree. The -devel or alpha version of Tor is likely the better choice.
+Install either the stable or development version of Tor from the ports tree. The -devel or alpha version of Tor is likely the better choice.
 
 >% cd /usr/ports/security/tor && make install clean
 
@@ -74,7 +74,7 @@ Copy the torrc.sample file to torrc
 
 Edit */usr/local/etc/tor/torrc* appropriately. The torrc file is well-commented and instructive, but for a quicker implementation, [this torrc](torrc.txt) is a good starting point.
 
-Create the appropriate log file with the correct permission:
+Create the appropriate log file with the correct permissions:
 
 >%  touch /var/log tor && chown _tor:_tor /var/log/tor && chmod 600 /var/log/tor
 
@@ -82,7 +82,7 @@ Add "tor_enable=YES" in the /etc/rc.conf file
 
 >% echo "tor_enable=YES" >>/etc/rc.conf
 
-Enable random IP ID numbers, and make it permanent by adding to /etc/sysctl.conf:
+Enable random IP ID numbers, and make it permanent by adding to /etc/sysctl.conf as per the post-install message:
 
 >% sysctl net.inet.ip.random_id=1
 
@@ -92,14 +92,23 @@ Start Tor
 
 >% /usr/local/etc/rc.d/tor start
 
-10. Use tail(4) to confirm Tor starts correctly:
+Use tail(4) to confirm Tor starts correctly:
 
->% tail -f /var/log/tor
+>% tail -f /var/log/tor.log
 
-11. Reboot to confirm that Tor starts after a reboot.
+Reboot to confirm that Tor starts after a reboot.
 
 ## Some Additional Configuration Considerations & Options ##
 
+#obfsproxy#
+
+As internet censorship and surveillance are a continual battle, the Tor Project implements regular counter-measures.
+
+One such tool is obfsproxy, a pluggable transport proxy. To install obfsproxy:
+
+>% cd /usr/ports/security/obfsproxy && make install clean
+
+The sample [torrc file](torrc.txt) includes the necessary torrc configuration lines.
 
 ## Installing FreeBSD ##
 

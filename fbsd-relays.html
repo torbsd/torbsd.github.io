@@ -62,9 +62,7 @@ system.</p>
 <p>These are the basic steps to configure a Tor relay with FreeBSD. This
 will create an operational relay.</p>
 
-<ul>
-<li>Install FreeBSD 10 and update to most recent -STABLE version</li>
-</ul>
+<p>Install FreeBSD 10 and update to most recent -STABLE version</p>
 
 <p>Populate and/or update the ports tree under <em>/usr/ports</em></p>
 
@@ -72,9 +70,7 @@ will create an operational relay.</p>
 <p>% svnlite update /usr/ports</p>
 </blockquote>
 
-<ul>
-<li>Install either the stable or development version of Tor from the ports tree. The -devel or alpha version of Tor is likely the better choice.</li>
-</ul>
+<p>Install either the stable or development version of Tor from the ports tree. The -devel or alpha version of Tor is likely the better choice.</p>
 
 <blockquote>
 <p>% cd /usr/ports/security/tor &amp;&amp; make install clean</p>
@@ -94,7 +90,7 @@ will create an operational relay.</p>
 
 <p>Edit <em>/usr/local/etc/tor/torrc</em> appropriately. The torrc file is well-commented and instructive, but for a quicker implementation, <a href="torrc.txt">this torrc</a> is a good starting point.</p>
 
-<p>Create the appropriate log file with the correct permission:</p>
+<p>Create the appropriate log file with the correct permissions:</p>
 
 <blockquote>
 <p>% touch /var/log tor &amp;&amp; chown _tor:_tor /var/log/tor &amp;&amp; chmod 600 /var/log/tor</p>
@@ -106,7 +102,7 @@ will create an operational relay.</p>
 <p>% echo &#8220;tor_enable=YES&#8221; &gt;&gt;/etc/rc.conf</p>
 </blockquote>
 
-<p>Enable random IP ID numbers, and make it permanent by adding to /etc/sysctl.conf:</p>
+<p>Enable random IP ID numbers, and make it permanent by adding to /etc/sysctl.conf as per the post-install message:</p>
 
 <blockquote>
 <p>% sysctl net.inet.ip.random_id=1</p>
@@ -120,19 +116,27 @@ will create an operational relay.</p>
 <p>% /usr/local/etc/rc.d/tor start</p>
 </blockquote>
 
-<ol>
-<li>Use tail(4) to confirm Tor starts correctly:</li>
-</ol>
+<p>Use tail(4) to confirm Tor starts correctly:</p>
 
 <blockquote>
-<p>% tail -f /var/log/tor</p>
+<p>% tail -f /var/log/tor.log</p>
 </blockquote>
 
-<ol>
-<li>Reboot to confirm that Tor starts after a reboot.</li>
-</ol>
+<p>Reboot to confirm that Tor starts after a reboot.</p>
 
 <h2 id="someadditionalconfigurationconsiderationsoptions">Some Additional Configuration Considerations &amp; Options</h2>
+
+<h1 id="obfsproxy">obfsproxy</h1>
+
+<p>As internet censorship and surveillance are a continual battle, the Tor Project implements regular counter-measures.</p>
+
+<p>One such tool is obfsproxy, a pluggable transport proxy. To install obfsproxy:</p>
+
+<blockquote>
+<p>% cd /usr/ports/security/obfsproxy &amp;&amp; make install clean</p>
+</blockquote>
+
+<p>The sample <a href="torrc.txt">torrc file</a> includes the necessary torrc configuration lines.</p>
 
 <h2 id="installingfreebsd">Installing FreeBSD</h2>
 
@@ -423,7 +427,7 @@ It is critical to remember that setting an incorrect variable can disable a work
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Fri Oct 30 10:51:29 2015 -0400</code></p>
+<p><code>last updated: Fri Oct 30 10:55:37 2015 -0400</code></p>
 
 </body>
 </html>
