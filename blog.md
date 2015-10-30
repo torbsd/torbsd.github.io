@@ -18,7 +18,7 @@ In their current forms, the [BSD relay guides](relay-guides.html) are unclear an
 
 There is a lot of related topics to cover: to ZFS or not, slimming down a FreeBSD build, etc.
 
-Input is welcome. Stay tuned.
+Input is welcomed. Stay tuned.
 
 ###20151029###
 
