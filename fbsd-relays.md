@@ -52,16 +52,15 @@ system.
 ## The Quick and Short Version ##
 
 These are the basic steps to configure a Tor relay with FreeBSD.  This
-will create an operational relay.  For more detailed instructions and
-for additional tips on securing and optimizing the relay
+will create an operational relay.
 
-Install FreeBSD 10 and update to most recent -STABLE version
+* Install FreeBSD 10 and update to most recent -STABLE version
 
 Populate and/or update the ports tree under */usr/ports*
 
 >% svnlite update /usr/ports
 
-Install either the stable or development version of Tor from the ports tree. The -devel or alpha version of Tor is likely the better choice.
+* Install either the stable or development version of Tor from the ports tree. The -devel or alpha version of Tor is likely the better choice.
 
 >% cd /usr/ports/security/tor && make install clean
 
@@ -73,7 +72,7 @@ Copy the torrc.sample file to torrc
 
 >% cp /usr/local/etc/tor/torrc.sample /usr/local/etc/tor/torrc
 
-Edit */usr/local/etc/tor/torrc* appropriately
+Edit */usr/local/etc/tor/torrc* appropriately. The torrc file is well-commented and instructive, but for a quicker implementation, [this torrc](torrc.txt) is a good starting point.
 
 Create the appropriate log file with the correct permission:
 

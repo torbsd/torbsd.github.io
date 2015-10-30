@@ -60,10 +60,11 @@ system.</p>
 <h2 id="thequickandshortversion">The Quick and Short Version</h2>
 
 <p>These are the basic steps to configure a Tor relay with FreeBSD. This
-will create an operational relay. For more detailed instructions and
-for additional tips on securing and optimizing the relay</p>
+will create an operational relay.</p>
 
-<p>Install FreeBSD 10 and update to most recent -STABLE version</p>
+<ul>
+<li>Install FreeBSD 10 and update to most recent -STABLE version</li>
+</ul>
 
 <p>Populate and/or update the ports tree under <em>/usr/ports</em></p>
 
@@ -71,7 +72,9 @@ for additional tips on securing and optimizing the relay</p>
 <p>% svnlite update /usr/ports</p>
 </blockquote>
 
-<p>Install either the stable or development version of Tor from the ports tree. The -devel or alpha version of Tor is likely the better choice.</p>
+<ul>
+<li>Install either the stable or development version of Tor from the ports tree. The -devel or alpha version of Tor is likely the better choice.</li>
+</ul>
 
 <blockquote>
 <p>% cd /usr/ports/security/tor &amp;&amp; make install clean</p>
@@ -89,7 +92,7 @@ for additional tips on securing and optimizing the relay</p>
 <p>% cp /usr/local/etc/tor/torrc.sample /usr/local/etc/tor/torrc</p>
 </blockquote>
 
-<p>Edit <em>/usr/local/etc/tor/torrc</em> appropriately</p>
+<p>Edit <em>/usr/local/etc/tor/torrc</em> appropriately. The torrc file is well-commented and instructive, but for a quicker implementation, <a href="torrc.txt">this torrc</a> is a good starting point.</p>
 
 <p>Create the appropriate log file with the correct permission:</p>
 
@@ -420,7 +423,7 @@ It is critical to remember that setting an incorrect variable can disable a work
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Fri Oct 30 10:50:24 2015 -0400</code></p>
+<p><code>last updated: Fri Oct 30 10:51:29 2015 -0400</code></p>
 
 </body>
 </html>
