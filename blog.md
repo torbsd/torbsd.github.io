@@ -9,6 +9,17 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## A Blog, or More Accurately, a Centralized Location for Announces and Notes ##
 
+###20151030###
+
+FreeBSD Relay Guides by gman999
+
+
+In their current forms, the [BSD relay guides](relay-guides.html) are unclear and sloppy, and possibly inaccurate in some places. We are putting some work into the [FreeBSD Guide for Configuring Relays](fbsd-relays.html), and will probably divide it into two parts: the short version for the impatient, with other topics being migrated to another page.
+
+There is a lot of related topics to cover: to ZFS or not, slimming down a FreeBSD build, etc.
+
+Input is welcome. Stay tuned.
+
 ###20151029###
 
 Our First Bells by gman999

@@ -126,6 +126,14 @@ will create an operational relay.</p>
 
 <h2 id="someadditionalconfigurationconsiderationsoptions">Some Additional Configuration Considerations &amp; Options</h2>
 
+<h3 id="optimizingfreebsd">Optimizing FreeBSD</h3>
+
+<p>Much attention has been given to optimizing operating systems to operate as Tor
+relays. At this point, we don&#8217;t have experience in any bottlenecks in using Free
+BSD as a relay, although the relays we have administered have never exceeded 5mb
+ps. However, if Netflix could use a default install of FreeBSD 10 to push its tr
+affic, FreeBSD likely doesn&#8217;t need that much tweaking.</p>
+
 <h3 id="obfsproxy">obfsproxy</h3>
 
 <p>As internet censorship and surveillance are a continual battle, the Tor Project implements regular counter-measures.</p>
@@ -139,10 +147,6 @@ will create an operational relay.</p>
 <p>The sample <a href="torrc.txt">torrc file</a> includes the necessary torrc configuration lines.</p>
 
 <p>The one caveat to using obfsproxy with a firewall is that the TCP port is determined dynamically. In such a case, a static port can be assigned in the torrc file with ExtORPort option.</p>
-
-<h3 id="optimizingfreebsd">Optimizing FreeBSD</h3>
-
-<p>Much attention has been given to optimizing operating systems to operate as Tor relays. At this point, we don&#8217;t have experience in any bottlenecks in using FreeBSD as a relay, although the relays we have administered have never exceeded 5mbps. However, if Netflix could use a default install of FreeBSD 10 to push its traffic, FreeBSD likely doesn&#8217;t need that much tweaking.</p>
 
 <h3 id="considerusingmemory-basedfilesystems">Consider Using Memory-Based Filesystems</h3>
 
@@ -343,7 +347,7 @@ WITH_OPENSSL_PORTS=yes</p>
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Fri Oct 30 12:12:48 2015 -0400</code></p>
+<p><code>last updated: Fri Oct 30 12:19:26 2015 -0400</code></p>
 
 </body>
 </html>

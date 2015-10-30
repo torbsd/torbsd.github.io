@@ -100,6 +100,14 @@ Reboot to confirm that Tor starts after a reboot.
 
 ## Some Additional Configuration Considerations & Options ##
 
+###Optimizing FreeBSD###
+
+Much attention has been given to optimizing operating systems to operate as Tor
+relays. At this point, we don't have experience in any bottlenecks in using Free
+BSD as a relay, although the relays we have administered have never exceeded 5mb
+ps. However, if Netflix could use a default install of FreeBSD 10 to push its tr
+affic, FreeBSD likely doesn't need that much tweaking.
+
 ###obfsproxy###
 
 As internet censorship and surveillance are a continual battle, the Tor Project implements regular counter-measures.
@@ -111,10 +119,6 @@ One such tool is obfsproxy, a pluggable transport proxy. To install obfsproxy:
 The sample [torrc file](torrc.txt) includes the necessary torrc configuration lines.
 
 The one caveat to using obfsproxy with a firewall is that the TCP port is determined dynamically. In such a case, a static port can be assigned in the torrc file with ExtORPort option.
-
-###Optimizing FreeBSD###
-
-Much attention has been given to optimizing operating systems to operate as Tor relays. At this point, we don't have experience in any bottlenecks in using FreeBSD as a relay, although the relays we have administered have never exceeded 5mbps. However, if Netflix could use a default install of FreeBSD 10 to push its traffic, FreeBSD likely doesn't need that much tweaking.
 
 ###Consider Using Memory-Based Filesystems###
 
