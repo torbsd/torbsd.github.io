@@ -193,19 +193,6 @@ ntpd(8) status can be checked by viewing the /var/db/ntpd.drift file, or with th
 
 Alternately, the ports collection contains a portable version of [OpenBSD's](http://openntpd.org/) [OpenNTPD](https://freshports.org/net/openntpd/).
 
-###Installing Tor###
-
-Currently, the preferred method for installing FreeBSD applications is the ports system. The ports tree contains the most current versions of FreeBSD applications. In the future, the new FreeBSD package system, known as pkg, should be synchronized with the port versions. In the case of embedded hardware on i386 or amd64 architectures, pkg may be the preferred method.  For arm-based hardware such as the RaspberryPi or BeagleBone, there is no pkg repository yet available.  Therefore, for ARM-based systems, either install Tor from ports or create a custom repository.
-
-
->/etc/rc.conf: tor_enable="YES"
-
-/var/log/tor
-
-chown _tor:_tor
-
-chmod 600
-
 ###File Paths for Tor on FreeBSD###
 
 Tor configuration file: */usr/local/etc/tor/torrc*
@@ -314,16 +301,17 @@ hardware crypto with glxsb, aesni
 
 [FreeBSD Handbook 12.11 Tuning Kernel Limits](http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/configtuning-kernel-limits.html)
 
-<a href="https://wiki.freebsd.org/SystemTuning">SystemTuning FreeBSD Wiki</a>
+[SystemTuning FreeBSD Wiki](https://wiki.freebsd.org/SystemTuning)
 
-<a href="https://wiki.freebsd.org/NetworkPerformanceTuning">Network Performance Tuning on the FreeBSD Wiki</a>
+[Network Performance Tuning on the FreeBSD Wiki](https://wiki.freebsd.org/NetworkPerformanceTuning)
 
-<a href="https://wiki.freebsd.org/PerformanceTweaks">Performance Tweaks on the FreeBSD Wiki</a>
+[Performance Tweaks on the FreeBSD Wiki](https://wiki.freebsd.org/PerformanceTweaks)
 
-<a href="https://wiki.freebsd.org/Performance">Performance on the FreeBSD Wiki</a>
+[Performance on the FreeBSD Wiki](https://wiki.freebsd.org/Performance)
 
 [FreeBSD Handbook]: https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/index.html "FreeBSD Handbook"
 [manual pages]: https://www.freebsd.org/cgi/man.cgi "manual pages"
 [FreeBSD Sysctl]: http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/configtuning-sysctl.html "FreeBSD sysctl"
+
 
 {{footer.md}}
