@@ -82,7 +82,7 @@ TDP is focused on diversifying the Tor network, with TB being the flagship proje
 
 Since its launch in March 2015, TDP contributed significantly. In addition to the TB releases, both BSDCan and BSDCon Brasil featured TDP-focused meetings.
 
-In early October, a [TDP presentation](http://www.queair.net/br-pres) prompted a significant increase in Tor relays in Brazil. Before the presentation, there were around 22 Tor relays, all of which were Linux in addition to two Windows nodes.
+In early October, a [TDP presentation](http://www.queair.net/br-pres) prompted a significant increase in Brazilian Tor relays. Before the presentation, there were around 22 Tor relays, all of which were Linux in addition to two Windows nodes.
 
 In the weeks after the presentation, several new *BSD Tor relays appeared, accounting for up to 35% of observed Tor bandwidth in Brazil.
 
