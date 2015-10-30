@@ -97,17 +97,13 @@ for additional tips on securing and optimizing the relay</p>
 <p>% touch /var/log tor &amp;&amp; chown _tor:_tor /var/log/tor &amp;&amp; chmod 600 /var/log/tor</p>
 </blockquote>
 
-<ol>
-<li>Add &#8220;tor_enable=YES&#8221; in the /etc/rc.conf file</li>
-</ol>
+<p>Add &#8220;tor_enable=YES&#8221; in the /etc/rc.conf file</p>
 
 <blockquote>
 <p>% echo &#8220;tor_enable=YES&#8221; &gt;&gt;/etc/rc.conf</p>
 </blockquote>
 
-<ol>
-<li>Enable random IP ID numbers, and make it permanent by adding to /etc/sysctl.conf:</li>
-</ol>
+<p>Enable random IP ID numbers, and make it permanent by adding to /etc/sysctl.conf:</p>
 
 <blockquote>
 <p>% sysctl net.inet.ip.random_id=1</p>
@@ -115,9 +111,7 @@ for additional tips on securing and optimizing the relay</p>
 <p>% echo &#8220;net.inet.ip.random_id=1&#8221; &gt;&gt;/etc/sysctl.conf</p>
 </blockquote>
 
-<ol>
-<li>Start Tor</li>
-</ol>
+<p>Start Tor </p>
 
 <blockquote>
 <p>% /usr/local/etc/rc.d/tor start</p>
@@ -426,7 +420,7 @@ It is critical to remember that setting an incorrect variable can disable a work
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu May 14 19:21:15 2015 -0500</code></p>
+<p><code>last updated: Fri Oct 30 10:50:24 2015 -0400</code></p>
 
 </body>
 </html>

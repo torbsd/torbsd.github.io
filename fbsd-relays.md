@@ -79,17 +79,17 @@ Create the appropriate log file with the correct permission:
 
 >%  touch /var/log tor && chown _tor:_tor /var/log/tor && chmod 600 /var/log/tor
 
-7. Add "tor_enable=YES" in the /etc/rc.conf file
+Add "tor_enable=YES" in the /etc/rc.conf file
 
 >% echo "tor_enable=YES" >>/etc/rc.conf
 
-8. Enable random IP ID numbers, and make it permanent by adding to /etc/sysctl.conf:
+Enable random IP ID numbers, and make it permanent by adding to /etc/sysctl.conf:
 
 >% sysctl net.inet.ip.random_id=1
 
 >% echo "net.inet.ip.random_id=1" >>/etc/sysctl.conf
 
-9. Start Tor 
+Start Tor 
 
 >% /usr/local/etc/rc.d/tor start
 
