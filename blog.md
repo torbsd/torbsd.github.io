@@ -43,7 +43,7 @@ Parsing the list of Tor relays, there are a number of ISO 8166-1 two-digit count
 
 * Jordan (JO), which is apparently one of the better connected locations in the region?
 
-* Latin America and Africa are particularly represented. Brazil, with a population of over 200 million and significant infrastructure, having under 30 relays is shocking.
+* Latin America and Africa are particularly underrepresented. Brazil, with a population of over 200 million and significant infrastructure, having under 30 relays is shocking.
 
 * Pakistan (PK), also, has no public Tor relays, and India (IN) has under ten.
 
