@@ -112,8 +112,6 @@ The sample [torrc file](torrc.txt) includes the necessary torrc configuration li
 
 The one caveat to using obfsproxy with a firewall is that the TCP port is determined dynamically. In such a case, a static port can be assigned in the torrc file with ExtORPort option.
 
-## Configuring FreeBSD ##
-
 ###Optimizing FreeBSD###
 
 Much attention has been given to optimizing operating systems to operate as Tor relays. At this point, we don't have experience in any bottlenecks in using FreeBSD as a relay, although the relays we have administered have never exceeded 5mbps. However, if Netflix could use a default install of FreeBSD 10 to push its traffic, FreeBSD likely doesn't need that much tweaking.
@@ -224,12 +222,6 @@ Tor log file: */var/log/tor*
 
 Notes on the FreeBSD /usr/local/etc/tor/torrc
 
-## Firewalling with pf(4) ##
-
-obfsproxy and the problem
-
-security/obfsproxy
-
 ## Keeping FreeBSD Updated ##
 
 svnlite co svn://svn0.MIRROR.freebsd.org/stable/10
@@ -241,20 +233,16 @@ Rebuild kernel as per instructions in FreeBSD Handbook
 
 Tweaks
 
-sysctls and determining changes
-
 limits
 
 netstat -s
 
 
-## Utilizing Hardware Cryptographic Devices ##
+###Utilizing Hardware Cryptographic Devices###
 
 hardware crypto.. .glxsb
 
-## Other Optional Changes to Consider ##
-
-## Building a Leaner, Lighter FreeBSD ##
+###Building a Leaner, Lighter FreeBSD###
 
 Like most operating systems, FreeBSD has grown in size with increased hardware support and features.  The most obvious direction is to minimize the kernel size, but that is beyond the scope of this document.  However, there are many features than can be easily removed using the src.conf(5) file.  The src.conf file sets parameters for compiling the FreeBSD source code. By default, there is not /etc/src.conf file.  It can be manually created, with variables listed in the man page. Ultimately, a smaller operating system means a smaller attack surface for a adversary to attack.
 
@@ -263,46 +251,29 @@ For those building embedded systems on small disks, a comprehensive src.conf(5) 
 For a Tor relay running on server hardware, there are some obvious variables to set.
 
 Most modern hardware do not have a floppy disk.
-</p>
 
-<p>
-<i>
 WITHOUT_FLOPPY=yes
-</i>
-</p>
 
-<p>
 In our example, we used pf(4) for a firewall, which makes ipfw(4) and ipfilter(1) superfluous.
-</p>
 
-<p>
-<ul>
-<i>
-<li>WITHOUT_IPFW=yes</li>
-<li>WITHOUT_IPFILTER=yes</li>
-</li>
-</i>
-</ul>
-</p>
+WITHOUT_IPFW=yes
+WITHOUT_IPFILTER=yes
 
-<p>
+
 Other src.conf variables to consider include:
-</p>
 
-<ul>
-<i>
-<li>WITHOUT_IPX=yes</li>
-<li>WITHOUT_BLUETOOTH=yes</li>
-<li>WITHOUT_GAMES=yes</li>
-<li>WITHOUT_LPR=yes</li>
-<li>WITHOUT_WIRELESS=yes</li>
-<li>WITHOUT_WPA_SUPPLICANT_EAPOL=yes</li>
-</i>
-</ul>
 
-<p>
+WITHOUT_IPX=yes
+WITHOUT_BLUETOOTH=yes
+WITHOUT_GAMES=yes
+WITHOUT_LPR=yes
+WITHOUT_WIRELESS=yes
+WITHOUT_WPA_SUPPLICANT_EAPOL=yes
+
+
+
 security/OpenSSL as opposed to base version of OpenSSL: test it.  but you probably update ports more anyways /usr/bin/openssl v /usr/local/bin/openssl
-</p>
+
 
 /etc/make.conf
 either:
@@ -314,9 +285,7 @@ disabled ciphers for ssl... /etc/make.conf
 
 dailies: read them.
 
-<p>
-It is critical to remember that setting an incorrect variable can disable a working system.  Set variables in the src.conf(5) file carefully.  You have been warned. A proposed default copy of /etc/src.conf resides <a href="here"></a>.
-</p>
+It is critical to remember that setting an incorrect variable can disable a working system.  Set variables in the src.conf(5) file carefully.  You have been warned. A proposed default copy of /etc/src.conf resides here
 
 ## Possible Errors/Warnings ##
 
@@ -339,11 +308,11 @@ enabling IDEA with /etc/src.conf
 hardware crypto with glxsb, aesni
 
 
-## Resources ##
+##Resources##
 
-<a href="http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/configtuning-sysctl.html">FreeBSD Handbook 12.9 Tuning with sysctl(8)</a>
+[FreeBSD Handbook 12.9 Tuning with sysctl(8)](http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/configtuning-sysctl.html)
 
-<a href="http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/configtuning-kernel-limits.html">FreeBSD Handbook 12.11 Tuning Kernel Limits</a>
+[FreeBSD Handbook 12.11 Tuning Kernel Limits](http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/configtuning-kernel-limits.html)
 
 <a href="https://wiki.freebsd.org/SystemTuning">SystemTuning FreeBSD Wiki</a>
 
