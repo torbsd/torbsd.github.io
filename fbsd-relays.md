@@ -110,13 +110,15 @@ One such tool is obfsproxy, a pluggable transport proxy. To install obfsproxy:
 
 The sample [torrc file](torrc.txt) includes the necessary torrc configuration lines.
 
+The one caveat to using obfsproxy with a firewall is that the TCP port is determined dynamically. In such a case, a static port can be assigned in the torrc file with ExtORPort option.
+
 ## Configuring FreeBSD ##
 
 ###Consider Using Memory-Based Filesystems###
 
 FreeBSD supports two memory-based filesystems: [md(4)](https://www.freebsd.org/cgi/man.cgi?query=md&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=ascii) and [tmpfs(5)](https://www.freebsd.org/cgi/man.cgi?query=tmpfs&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=ascii). tmpfs(5) was more recently developed. Both are useful for relays in which certain partitions, such as /tmp or /var/log, are moved to memory as opposed to the hard disks. For systems where disk writes need to be minimized, such as with flash memory, memory-based are a useful mechanism. There is an additional security benefit, in that upon reboots, all memory-based is cleared.
 
-Changes to partitions are done in the [/etc/fstab(5) file](https://www.freebsd.org/cgi/man.cgi?query=fstab&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=html).
+Changes to partitions are done in the [/etc/fstab(5) file](https://www.freebsd.org/cgi/man.cgi?query=fstab&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=ascii).
 
 For example, to make the /tmp a tmpfs(5)-based partition, hash out the current /tmp line, and replace with:
 
@@ -189,7 +191,7 @@ ntpd(8) status can be checked by viewing the /var/db/ntpd.drift file, or with th
 
 Alternately, the ports collection contains a portable version of [OpenBSD's](http://openntpd.org/) [OpenNTPD](https://freshports.org/net/openntpd/).
 
-## Installing Tor ##
+###Installing Tor###
 
 Currently, the preferred method for installing FreeBSD applications is the ports system. The ports tree contains the most current versions of FreeBSD applications. In the future, the new FreeBSD package system, known as pkg, should be synchronized with the port versions. In the case of embedded hardware on i386 or amd64 architectures, pkg may be the preferred method.  For arm-based hardware such as the RaspberryPi or BeagleBone, there is no pkg repository yet available.  Therefore, for ARM-based systems, either install Tor from ports or create a custom repository.
 
@@ -202,7 +204,7 @@ chown _tor:_tor
 
 chmod 600
 
-## File Paths for Tor on FreeBSD ##
+###File Paths for Tor on FreeBSD###
 
 Tor configuration file: */usr/local/etc/tor/torrc*
 
@@ -212,14 +214,13 @@ Tor data, including private key, statistics and Hidden Services: */var/db/tor*
 
 Tor log file: */var/log/tor*
 
-## Starting, Restarting and Stopping Tor ##
+###Starting, Restarting and Stopping Tor###
 
 /usr/local/etc/rc.d/tor [start|stop|restart|
 
 Notes on the FreeBSD /usr/local/etc/tor/torrc
 
 ## Firewalling with pf(4) ##
-
 
 obfsproxy and the problem
 

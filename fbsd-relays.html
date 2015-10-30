@@ -138,13 +138,15 @@ will create an operational relay.</p>
 
 <p>The sample <a href="torrc.txt">torrc file</a> includes the necessary torrc configuration lines.</p>
 
+<p>The one caveat to using obfsproxy with a firewall is that the TCP port is determined dynamically. In such a case, a static port can be assigned in the torrc file with ExtORPort option.</p>
+
 <h2 id="configuringfreebsd">Configuring FreeBSD</h2>
 
 <h3 id="considerusingmemory-basedfilesystems">Consider Using Memory-Based Filesystems</h3>
 
 <p>FreeBSD supports two memory-based filesystems: <a href="https://www.freebsd.org/cgi/man.cgi?query=md&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=ascii">md(4)</a> and <a href="https://www.freebsd.org/cgi/man.cgi?query=tmpfs&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=ascii">tmpfs(5)</a>. tmpfs(5) was more recently developed. Both are useful for relays in which certain partitions, such as /tmp or /var/log, are moved to memory as opposed to the hard disks. For systems where disk writes need to be minimized, such as with flash memory, memory-based are a useful mechanism. There is an additional security benefit, in that upon reboots, all memory-based is cleared.</p>
 
-<p>Changes to partitions are done in the <a href="https://www.freebsd.org/cgi/man.cgi?query=fstab&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=html">/etc/fstab(5) file</a>.</p>
+<p>Changes to partitions are done in the <a href="https://www.freebsd.org/cgi/man.cgi?query=fstab&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.2-RELEASE&amp;arch=default&amp;format=ascii">/etc/fstab(5) file</a>.</p>
 
 <p>For example, to make the /tmp a tmpfs(5)-based partition, hash out the current /tmp line, and replace with:</p>
 
@@ -228,7 +230,7 @@ will create an operational relay.</p>
 
 <p>Alternately, the ports collection contains a portable version of <a href="http://openntpd.org/">OpenBSD&#8217;s</a> <a href="https://freshports.org/net/openntpd/">OpenNTPD</a>.</p>
 
-<h2 id="installingtor">Installing Tor</h2>
+<h3 id="installingtor">Installing Tor</h3>
 
 <p>Currently, the preferred method for installing FreeBSD applications is the ports system. The ports tree contains the most current versions of FreeBSD applications. In the future, the new FreeBSD package system, known as pkg, should be synchronized with the port versions. In the case of embedded hardware on i386 or amd64 architectures, pkg may be the preferred method. For arm-based hardware such as the RaspberryPi or BeagleBone, there is no pkg repository yet available. Therefore, for ARM-based systems, either install Tor from ports or create a custom repository.</p>
 
@@ -242,7 +244,7 @@ will create an operational relay.</p>
 
 <p>chmod 600</p>
 
-<h2 id="filepathsfortoronfreebsd">File Paths for Tor on FreeBSD</h2>
+<h3 id="filepathsfortoronfreebsd">File Paths for Tor on FreeBSD</h3>
 
 <p>Tor configuration file: <em>/usr/local/etc/tor/torrc</em></p>
 
@@ -252,7 +254,7 @@ will create an operational relay.</p>
 
 <p>Tor log file: <em>/var/log/tor</em></p>
 
-<h2 id="startingrestartingandstoppingtor">Starting, Restarting and Stopping Tor</h2>
+<h3 id="startingrestartingandstoppingtor">Starting, Restarting and Stopping Tor</h3>
 
 <p>/usr/local/etc/rc.d/tor [start|stop|restart|</p>
 
@@ -387,7 +389,7 @@ It is critical to remember that setting an incorrect variable can disable a work
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Fri Oct 30 11:22:24 2015 -0400</code></p>
+<p><code>last updated: Fri Oct 30 11:33:04 2015 -0400</code></p>
 
 </body>
 </html>
