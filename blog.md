@@ -67,7 +67,7 @@ We will output more data about geographical diversity in the future, but in the 
 
 ###20151026###
 
-__Tor Browser version 5.0.3__ for OpenBSD by gman999
+__Tor Browser version 5.0.3 for OpenBSD__ by gman999
 
 
 The Tor BSD Diversity Project (TDP) is proud to announce the release of Tor Browser (TB) version 5.0.3 for OpenBSD.
