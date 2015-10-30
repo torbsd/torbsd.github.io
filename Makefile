@@ -34,6 +34,7 @@ PAGES=		index.html \
 		tb-building.html \
 		materials/flier-bsd.html \
 		corp-relays.html \
+		blog.html \
 
 BOILERPLATE=	header.md footer.md
 
@@ -56,6 +57,7 @@ obsd-buildbox.html: obsd-buildbox.md $(BOILERPLATE)
 doc-guide.html: doc-guide.md $(BOILERPLATE)
 tb-building.html: tb-building.md $(BOILERPLATE)
 corp-relays.html: corp-relays.md $(BOILERPLATE)
+blog.html: blog.md $(BOILERPLATE)
 
 ## The rest of this file makes the above possible...
 ## ... but only YOU can make it necessary.
