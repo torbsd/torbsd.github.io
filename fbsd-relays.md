@@ -114,6 +114,10 @@ The one caveat to using obfsproxy with a firewall is that the TCP port is determ
 
 ## Configuring FreeBSD ##
 
+###Optimizing FreeBSD###
+
+Much attention has been given to optimizing operating systems to operate as Tor relays. At this point, we don't have experience in any bottlenecks in using FreeBSD as a relay, although the relays we have administered have never exceeded 5mbps. However, if Netflix could use a default install of FreeBSD 10 to push its traffic, FreeBSD likely doesn't need that much tweaking.
+
 ###Consider Using Memory-Based Filesystems###
 
 FreeBSD supports two memory-based filesystems: [md(4)](https://www.freebsd.org/cgi/man.cgi?query=md&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=ascii) and [tmpfs(5)](https://www.freebsd.org/cgi/man.cgi?query=tmpfs&apropos=0&sektion=0&manpath=FreeBSD+10.2-RELEASE&arch=default&format=ascii). tmpfs(5) was more recently developed. Both are useful for relays in which certain partitions, such as /tmp or /var/log, are moved to memory as opposed to the hard disks. For systems where disk writes need to be minimized, such as with flash memory, memory-based are a useful mechanism. There is an additional security benefit, in that upon reboots, all memory-based is cleared.
