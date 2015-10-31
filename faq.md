@@ -22,7 +22,7 @@ __General__
 :    Review our web site and documentation, and let us know if something is unclear or unstated. If you attend any BSD or open source events, print out some copies of the __TDP__ informational flier. Join the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd).
 
 __Users__
-:    As a BSD TBB is available, start using and testing it on OpenBSD. Submit comments and questions.
+:    As a BSD Tor Browser (TB) is available, start using and testing it on OpenBSD. Submit comments and questions.
 
 __Developers__
 :    Clone our repositories, build and break the software, submit tickets and patches.
@@ -43,7 +43,7 @@ In other words, if someone wanted to take __TDP__ code and materials
 and spawn a similar project based on another operating system, say
 Plan 9, with the same eye on Tor diversity, __TDP's__ groundwork
 should make that task easier.  We are also open to hosting ports
-work to other BSDs under cover of our GitHub account if e.g.
+work to other BSDs under cover of our GitHub account if e.g.,
 some enterprising FreeBSD ports person wanted to work on it.
 
 It is important to note that unlike the GNU/Linux distributions, the
@@ -101,7 +101,7 @@ does not work on any of the BSDs for a variety of reasons.
 
 In reference to [this Reddit thread](https://www.reddit.com/r/linux/comments/356iyy/torbsd_diversity_project_help_move_tor_nodes_from/), anyone technical enough to run a robust and secure Tor relay should stick with the operating system they are most comfortable with. Nothing is more dangerous than someone running a public anonymity server on an unfamiliar operating system. __We are not interested in "moving Tor nodes from Linux to BSD."__ We want *more* nodes, preferably by increasing the number of BSD nodes faster, not by converting anyone to anything.
 
-The best recent example of what TDP achieved is in Brazil. Before [BSDCon Brasil] (http://2015.bsdcon.com.br), there were 20 or so Tor relays, all Linux except for two Windows relays. After our presentation and discussions, there are around 5-9 operational relays, accounting for up to a third of observed bandwidth provided on the Tor network. The new relay administrators were BSD users with access to the necessary infrastructure, and added to the Tor network.
+The best recent example of what TDP achieved is in Brazil. Before [BSDCon Brasil] (http://2015.bsdcon.com.br), there were 20 or so Tor relays, all Linux except for two Windows relays. After our presentation and discussions, there are around 5-9 operational relays, accounting for up to a third of observed bandwidth provided on the Tor network. The new relay administrators were BSD users with access to the necessary infrastructure, and their relays enhanced the Tor network.
 
 To a large extent, __TDP's__ target audience is those already familiar
 with the BSDs. Significant numbers in the BSD community have access to
@@ -128,21 +128,22 @@ Installing a package isn't difficult either. To install the rsync
 package on FreeBSD, for instance, the user just has to type "pkg
 install rsync."  For OpenBSD, it's just "pkg_add rsync." NetBSD's
 [pkgsrc](http://www.netbsd.org/docs/pkgsrc/) also maintains simple
-syntax, and happens to run on a variety of other operating systems.
+syntax, and happens to to be portable to a variety of other operating systems.
 
 The important principle is to minimize the operating system footprint,
 including daemons listening, applications installed, etc. If it's a
 Tor relay, it should not be multi-user system, and not a file server,
 web server, etc. Use the default shell, use the base utilities as
 opposed to third-party applications, keep the attack surface
-minimized.
+minimized. On that final point, virtualization tends to __increase__ that attack
+surface, not decrease it.
 
 With a little time and patience, running a BSD relay shouldn't be an
 insurmoutable task for any Linux user beyond those brand-new to
 computing. For someone comfortable in the shell, editing files, and so
 on, it is simple enough.
 
-## "Why did Tor Browser Bundle work start with OpenBSD? On the desktop at least, isn't FreeBSD more popular?" ##
+##"Why did Tor Browser Bundle work start with OpenBSD? On the desktop at least, isn't FreeBSD more popular?"##
 
 FreeBSD may very well be more widely used, but operating system usage
 statistics are wildly untrustworthy.
@@ -150,13 +151,13 @@ statistics are wildly untrustworthy.
 While all the BSDs aim to be standards compliant, OpenBSD is the most
 orthodox in this respect. Therefore, if software runs on OpenBSD and
 is accepted into their base or ports trees, porting that software to
-another POSIX-compliant operating system is very possible. There are
+another POSIX-compliant operating system is easier. There are
 popular examples to mention, such as OpenSSH, arc4random, OpenNTPD and
 for those who only read Slashdot.org over the past year, LibreSSL is
 quickly gaining momentum as another piece of easily portable code from
 the OpenBSD project.
 
-With a production-quality OpenBSD Tor Browser Bundle port, porting to other
+With a production-quality OpenBSD Tor Browser, porting to other
 BSDs or any other POSIX-based systems should be relatively trivial
 task.
 
@@ -166,8 +167,7 @@ New OpenBSD ports are [developed against OpenBSD -current] (http://www.openbsd.o
 
 ## "Are you associated with the Tor Project?" ##
 
-__TDP__ is __not__ an official project of Tor. We are merely long-time Tor users and relay operators whose preferred platform is BSD Unix. We do maintain
-several contacts among to Tor Project's staff regularly.
+__TDP__ is __not__ an official project of Tor. We are merely long-time Tor users and relay operators whose preferred platform is BSD Unix. We do maintain regular contact with Tor Project staff.
 
 ## "What do you hope to accomplish with porting the Tor Browser Bundle to OpenBSD?" ##
 

@@ -9,8 +9,9 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## Resources ##
 
-This page collects links and information relevant to __TDP__.  We
-apologize for any omissions and welcome ideas from others.
+This page collects links and information relevant to __TDP__.
+We welcome relevant submissions from others.
+
 
 ### The BSDs and Related Projects ###
 
@@ -43,10 +44,10 @@ apologize for any omissions and welcome ideas from others.
 
 * Christian Bruffer at [MeetBSD 2007 presentation on FreeBSD, Protecting Privacy with Tor](https://www.youtube.com/watch?v=OwBh8ro7xHQ)
 
-* [Tor Network Status](http://torstatus.blutmagie.de)
+* [Tor Network Status](http://torstatus.rueckgr.at/)
   A useful overview of the current public Tor relays, with a filtering ability to check relay numbers by operating system, and other attributes.
 
-* [Tor Metrics](http://metrics.torproject.org)
+* [Tor Metrics](http://metrics.torproject.org/)
   More useful graphs about the Tor network, including [platform usage](https://metrics.torproject.org/platforms.html).
 
 * [attila's blog](http://trac.haqistan.net)
