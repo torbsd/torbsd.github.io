@@ -65,7 +65,7 @@ Current __TDP__ work includes:
 * [The creation of OpenBSD Tor Browser Bundle ports](https://github.com/torbsd/openbsd-ports);
 
 * Organizing various events for engaging BSD users about Tor,
-  including birds-of-a-feather sessions and informal meetings;
+  including presentations, birds-of-a-feather sessions and informal meetings;
 
 * A new addition to our work includes [enlisting BSD-using entities](corp-relays.html) to operate Tor relays.
 
