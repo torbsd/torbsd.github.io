@@ -20,18 +20,9 @@ The first part will be a "quick and dirty" guide to getting a Tor relay up quick
 The second will be some other ideas for configuration, covering more optional enhancements.
 
 One issue to note is that we view various optimization attempts as a
-complex road, beyond just reading [Stevens' "TCP/IP Illustrated"](https://en.wikipedia.org/wiki/TCP/IP_Illustrated). It is not easy to understand the true effects of sysctl value changes and other kernel-level hacks, particularly with TCP traffic.
+complex road, beyond just reading [Stevens' "TCP/IP Illustrated"](https://en.wikipedia.org/wiki/TCP/IP_Illustrated).
 
-Tor is a (more or less) randomized routing network. That lack of
-consistency inhibits comparisons in performance beyond the
-obvious. Tor traffic on a relay can vary wildly day-to-day and
-month-to-month, regardless of any system optimization. For a useful
-overview of the problems with testing, see Kode Vicious'
-[reply to "How Not Why"](https://queue.acm.org/detail.cfm?id=2732268)
-in ACM's Queue magazine from February 2015. His emphasis on
-repeatability tends to undercut many assumptions that are made about
-testing a host on an anonymity network. It can quickly degenerate into
-being a blind, counter-productive endeavor.
+It is not easy to understand the true effects of sysctl value changes and other kernel-level hacks, particularly with TCP traffic. Tor is a (more or less) randomized routing network. That lack of consistency inhibits comparisons in performance beyond the obvious. Tor traffic on a relay can vary wildly day-to-day and month-to-month, regardless of any system optimization. For a useful overview of the problems with testing, see Kode Vicious' [reply to "How Not Why"](https://queue.acm.org/detail.cfm?id=2732268) in ACM's Queue magazine from February 2015. His emphasis on repeatability tends to undercut many assumptions that are made about testing a host on an anonymity network. It can quickly degenerate into being a blind, counter-productive endeavor.
 
 Nonetheless, there are some system-level changes we do recommend. But
 do not expect long lists of sysctl values and graphs illustrating the
