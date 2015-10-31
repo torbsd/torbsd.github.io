@@ -1,4 +1,4 @@
-## Simplified TDP torrc for Corporate Relays
+## Simplified TDP torrc for Tor Relays
 ## https://torbsd.github.io/torrc.txt
 ## For more detailed explanations,
 ## https://www.torproject.org/docs/tor-manual.html.en
@@ -38,7 +38,7 @@ MyFamily $keyid,$keyid,...
 # Although we do strongly encourage exploring that option
 ExitPolicy reject *:* # no exits allowed
 
-# Publicly announce the relay to the Tor directory services
+# REQUIRED: Publicly announce the relay to the Tor directory services
 PublishServerDescriptor 1
 
 # Accumulate some statistics
@@ -63,5 +63,6 @@ HeartbeatPeriod 1hours
 ServerTransportPlugin obfs2,obfs3 exec /usr/local/bin/obfsproxy managed
 
 # TCP Port for obfsproxy and pluggable transports. Setting to 'auto' means 
-# the port will be dynamically assign on tor startup
+# the port will be dynamically assign on Tor startup
+# If employing a firewall, should set statically to assign pass rule for
 ExtORPort auto
