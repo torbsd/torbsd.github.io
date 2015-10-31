@@ -1,4 +1,5 @@
 26 October 2015
+UPDATED 20151030: Note new instructions in PKG_PATH's README.20151030 file
 
 The Tor BSD Diversity Project (TDP) is proud to announce the release of Tor Browser (TB) version 5.0.3 for OpenBSD.
 
