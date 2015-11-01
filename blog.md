@@ -13,8 +13,9 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __Updated Tor Browser Packages__ by gman999
 
+The upstream code from the Tor Project and above them Mozilla is a moving target we contend with each release. Then there is the ultimate moving target: the incesant war between surveillance and anonymity, censorship and circumvention. Finally there is the operating system as a moving target all Tor Browser porters face.
 
-As mentioned before, developing ports on OpenBSD means building on [snapshots](http://www.openbsd.org/faq/faq5.html#Flavors). As much as the upstream Tor and Mozilla software, and almost as much as the measure/counter-measure battle between surveillance and anonymity, is the moving target of OpenBSD snapshots. It was no surprise that our TB 5.0.3 release was broken on OpenBSD snapshot released just a few days after.
+Developing ports on OpenBSD means building on -current, a.k.a., [snapshots](http://www.openbsd.org/faq/faq5.html#Flavors). OpenBSD snapshots are often released several times a week, and as with any other development operating system branch, those changes are sometimes significant. What might work today is broken tomorrow. It was no surprise that our TB 5.0.3 release was broken on the OpenBSD snapshot released just a few days later.
 
 [Daniel Jakots](https://lists.torproject.org/pipermail/tor-talk/2015-October/039360.html) noticed this as we did, and we updated the Tor packages accordingly. We made an added change by removing the tbb meta-package, simplifying the 5.0.3 release a bit more.
 
