@@ -9,6 +9,15 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or More Accurately, a Central Location for Announces and Notes##
 
+###20151031###
+
+__Updated Tor Browser Packages__ by gman999
+
+
+As mentioned before, developing ports on OpenBSD means building on [snapshots](http://www.openbsd.org/faq/faq5.html#Flavors). As much as the upstream Tor and Mozilla software, and almost as much as the measure/counter-measure battle between surveillance and anonymity, is the moving target of OpenBSD snapshots. It was no surprise that our TB 5.0.3 release was broken on OpenBSD snapshot released just a few days after.
+
+[Daniel Jakots](https://lists.torproject.org/pipermail/tor-talk/2015-October/039360.html) noticed this as we did, and we updated the Tor packages accordingly. We made an added change by removing the tbb meta-package, simplifying the 5.0.3 release a bit more.
+
 ###20151030###
 
 __The BSD Relay Guides__ by gman999
@@ -18,7 +27,7 @@ In their current forms, the [BSD relay guides](relay-guides.html) are unclear an
 
 There is a lot of related topics to cover: to ZFS or not, slimming down a FreeBSD build, etc.
 
-Input is welcomed. Stay tuned.
+input is welcomed. Stay tuned.
 
 ###20151029###
 
