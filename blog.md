@@ -40,7 +40,7 @@ We count a lot of accomplishments since launching, but should be honest about __
 
 Quite frankly in BSD land, all fluff and no product doesn't get you much credibility. Talk is considered cheap, while good code and real contributions are priceless.
 
-We announced the sixth release of Tor Browser two days ago, version 5.0.3, which was a major milestone for us. We were excited by some of the [feeback](https://lists.torproject.org/pipermail/tor-talk/2015-October/039351.html) on the Tor-talk.
+We announced the sixth release of Tor Browser two days ago, version 5.0.3, which was a major milestone for us. We were excited by some of the [feedback](https://lists.torproject.org/pipermail/tor-talk/2015-October/039351.html) on the Tor-talk.
 
 The [presentation](http://www.queair.net/br-pres) at [BSDCon Brasil](http://2015.bsdcon.com.br) was a success, with the first BSD relays launched in that country, and which now account for up to a third of observed Tor bandwidth there. More relays should be coming online in Brazil soon, and we know of a few BSD bridges that came online.
 
@@ -70,6 +70,8 @@ Parsing the list of Tor relays, there are a number of ISO 8166-1 two-digit count
 We don't know the particulars of infrastructure, connectivity costs, etc., in a lot of those countries, but the underrepresented regions need a dedicated focus.
 
 Also disturbing is the concentration in observed Tor bandwidth [by country code](relays-by-cc.txt). Germany and the US contain more than a thousand relays each accounting for around a third of the total number of Tor relays globally.
+
+Of course, using Tor in some of those places may be dangerous, so running a relay is a moot point.
 
 We will continue to tinker with the data about geographical diversity in the future, but in the meantime, if you have contacts, friends or families in the underrepresented country codes, now is the time to explore the possibility of getting more Tor relays there.
 
