@@ -1,0 +1,15 @@
+
+Rubberhose encrypted FS discussion with Theo
+
+https://marc.info/?l=openbsd-misc&m=100635812629128&w=2
+
+"you personally are viewed as a
+disgrace and OpenBSD little more than some kind of NetBSD Milli
+Vanilli one should avoid at all costs."
+
+Julian Assange 20111121
+
+
+all credit to Michael W Lucas' blog from 20101210
+http://blather.michaelwlucas.com/archives/443
+

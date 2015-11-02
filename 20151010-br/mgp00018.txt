@@ -1,0 +1,17 @@
+
+TB onto OpenBSD
+
+
+Where standards decide all, therefore easiest OS to port *from*
+not going to find POSIX "extensions" and esoteric ports	
+
+They don't rely on bloated assumptions, even upstream
+GPG for signing and verifying? signify(1)
+a pretend-developer writes an RNG? arc4random(3)
+
+I don't know OpenBSD user-base versus other BSDs
+but neither do you
+
+If you can make it there, you can make it anywhere
+
+

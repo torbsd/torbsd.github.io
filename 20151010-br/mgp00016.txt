@@ -1,0 +1,16 @@
+
+Briefly on Diversity and TDP
+
+Dan Geer paper, USENIX 2004 about Microsoft on the desktop
+
+If majority of relays and bandwidth is moved by Linux
+One kernel-level vulnerability to rule them all?
+
+BSDs are the best OS for the obvious reasons
+impressive developer and user base
+
+Which are you?
+"I don't know how to write an RNG, but I do know that..."
+"I can probably write an RNG, I mean, dice roles
+are pretty random, right?"
+

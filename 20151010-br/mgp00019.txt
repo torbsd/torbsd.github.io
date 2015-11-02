@@ -1,0 +1,20 @@
+
+TB onto OpenBSD
+
+Anonymity is a moving target
+the arms race in surveillance and censorship
+adversaries:
+nation-states and their tentacles
+entities of all sizes
+
+Mozilla code is a moving target
+
+An OpenBSD snapshot is a moving target
+
+Fitting into the ports infrastructure is difficult
+is upstream listening?
+bash is a dependency or a cancerous tumor?
+Tor startup script
+Firefox addon: HTTPS Everywhere
+
+

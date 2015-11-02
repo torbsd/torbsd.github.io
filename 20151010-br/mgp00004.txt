@@ -1,0 +1,18 @@
+
+What Is TDP?
+
+Launched around Spring 2015, but a long time coming
+
+Diversify the Linux monoculture with Tor
+no BSD Tor Browser (TB)
+desktop: Tor Browser on OpenBSD
+over 90% of public relays are Linux
+relays/network: how-to's, BSD firm relays
+Engage the BSD community: meetings, events
+Debian/Linux the primary OS of development
+
+https://github.com/torbsd/
+TB releases
+comprehensive FAQ and Resource pages
+
+

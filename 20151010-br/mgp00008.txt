@@ -1,0 +1,22 @@
+
+Assange, Robert Watson and Toasters
+
+
+https://marc.info/?l=freebsd-security&m=91299675201059&w=2
+
+On 5 Dec 1998, Julian Assange wrote:
+
+> Use NetBSD
+
+Use a toaster oven.  Toaster ovens have excellent network security
+characteristics.  For example, they are not susceptible to any IMAP-based
+buffer overflow attacks; additionally, current toaster ovens are not known
+to have any bugs in their TCP/IP stacks, nor have been vulnerable to any
+in the recent past (according to CERT advisories, anyway).  Toaster ovens
+require console access to perform administrative functions (such as
+modification of temperature settings), but this will not impede deployment
+in a number of environment.
+
+Robert Watson 19981207
+
+

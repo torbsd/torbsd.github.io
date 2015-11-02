@@ -1,0 +1,9 @@
+
+Hard-Coded Variables
+
+
+$HOME sweet $HOME
+
+$vars scattered around the scripts
+
+

@@ -1,0 +1,15 @@
+
+Our Platforms
+
+Broadly the BSD Community with BoFs and more
+informal meetings back to 2011 or so
+"recruit BSD Tor relay admins"
+vBSDCon 2013, NYC*BSDCon 2014, BSDCan 2015, BSDCon Br 2015
+
+NYC*BUG: Invaluable
+Tor relays for years (2005 exit node shutdown?)
+Tor-BSD mailing list
+colleagues with common jargon, histories
+input, ideas
+
+

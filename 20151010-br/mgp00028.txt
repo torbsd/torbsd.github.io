@@ -1,0 +1,16 @@
+
+What You Can Do
+
+
+The obvious
+run BSD relays
+.br relays .5% of network, Linux and one Win
+encourage {university,firm,ngo}: NYI, check
+join Tor-BSD mailing list
+join BSD buildbot at http://buildbot.pixelminers.net
+
+Fork/contribute to https://github.com/torbsd/openbsd-ports
+porting effort to FreeBSD would be wonderful
+contributions to documentation
+sane optimization, understanding the realities
+

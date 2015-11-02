@@ -1,0 +1,10 @@
+
+WTF
+
+why?  what do these do?  jhb@ chuckling: i bet they cancel themselves out
+
+GNN: the difficulty of testing when you can't control the test or production environments
+
+how do you control and isolate a test environment in a dynamic, purposefully randomized anonymity network?
+
+

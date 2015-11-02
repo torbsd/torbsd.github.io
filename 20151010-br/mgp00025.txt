@@ -1,0 +1,14 @@
+
+Final Point: Is Tor the Perfect Solution? 
+
+
+No.  Tor could be compromised by an adversary with a full global network view, watching critical flows, sitting on backbone routers
+
+No.  What about Linux RNG and other vulnerabilities?
+
+We shouldn't be encouraging delusions about any bullet-proof solutions
+
+it's about mitigation, relative strength versus
+particular adversaries in particular contexts
+
+
