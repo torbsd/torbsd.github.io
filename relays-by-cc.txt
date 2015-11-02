@@ -1,74 +1,86 @@
-1399 DE
-1151 US
- 613 FR
- 599 N/A
- 457 RU
- 294 NL
- 293 GB
- 189 SE
- 155 AT
- 147 CH
- 101 RO
+Mon Nov  2 15:06:54 UTC 2015
+
+The Tor BSD Diversity Project
+https://torbsd.github.io/
+Quick-and-Dirty Static Reports
+Relay Count by Country Code
+
+1440 DE
+1173 US
+ 629 N/A
+ 623 FR
+ 479 RU
+ 301 NL
+ 287 GB
+ 190 SE
+ 153 AT
+ 149 CH
  100 CA
-  93 UA
-  87 CZ
-  65 IT
-  61 NO
-  58 JP
-  52 FI
-  49 ES
-  47 PL
-  45 DK
-  44 LV
-  41 HU
-  37 AU
-  30 LU
-  27 BR
-  27 BG
+  96 RO
+  94 UA
+  90 CZ
+  70 IT
+  64 NO
+  59 JP
+  56 FI
+  50 PL
+  50 ES
+  49 DK
+  47 LV
+  43 HU
+  40 AU
+  33 LU
+  26 BG
+  25 BR
   23 BE
-  20 SK
+  22 HK
+  22 GR
   20 IS
-  18 HK
-  18 GR
+  18 SK
+  15 SG
   15 ID
-  14 SG
-  14 IL
-  13 TW
+  13 NZ
   13 A1
-  12 VN
-  12 NZ
-  12 MD
-  10 KR
+  12 IL
+  11 VN
+  11 TW
+  11 MD
+  11 KR
   10 IE
    9 PT
-   9 MX
    9 EE
-   8 TR
-   8 IN
-   8 AR
-   7 ZA
-   7 LT
-   6 HR
+   7 TR
+   7 MX
+   7 IN
+   7 HR
+   7 AR
+   6 LT
+   5 ZA
    5 MY
-   4 SI
+   3 SI
+   3 SA
    3 CO
+   3 AM
+   2 VE
    2 TH
    2 RS
-   2 RE
-   2 PA
+   2 MT
    2 KZ
-   2 EU
-   2 CY
+   2 EG
    2 CR
    2 BY
-   2 AM
-   1 MT
+   1 YE
+   1 RE
+   1 PA
    1 MK
+   1 MA
    1 LI
+   1 KH
    1 IM
-   1 GL
+   1 GT
+   1 GG
    1 GE
-   1 EG
+   1 EU
+   1 CY
    1 CN
    1 CL
-   1 BO
