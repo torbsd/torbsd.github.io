@@ -1,4 +1,4 @@
-Sun Nov  1 16:27:05 UTC 2015
+Mon Nov  2 15:02:32 UTC 2015
 
 The Tor BSD Diversity Project
 https://torbsd.github.io/
@@ -37,6 +37,7 @@ BZ
 CC
 CD
 CF
+CG
 CI
 CK
 CM
@@ -132,6 +133,7 @@ PR
 PS
 PW
 PY
+QA
 RW
 SB
 SC
@@ -173,7 +175,6 @@ VI
 VU
 WF
 WS
-YE
 YT
 ZM
 ZW
