@@ -1,10 +1,12 @@
-Mon Nov  2 15:02:32 UTC 2015
+Mon Nov  2 15:15:29 UTC 2015
 
 The Tor BSD Diversity Project
 https://torbsd.github.io/
 Quick-and-Dirty Static Reports
 Tor-Less Country Codes
 
+Tor-Less Country Codes
+country-code
 AD
 AE
 AF
