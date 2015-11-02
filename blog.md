@@ -70,11 +70,11 @@ Parsing the list of Tor relays, there are a number of ISO 8166-1 two-digit count
 
 We don't know the particulars of infrastructure, connectivity costs, etc., in a lot of those countries, but the underrepresented regions need a dedicated focus.
 
-Also disturbing is the concentration in observed Tor bandwidth [by country code](relays-by-cc.txt). Germany and the US contain more than a thousand relays each accounting for around a third of the total number of Tor relays globally.
+Also disturbing is the concentration of public relays [by country code](relays-by-cc.txt). Germany and the US contain more than a thousand relays each, accounting for more than a third of the total number of Tor relays globally.
 
-Of course, using Tor in some of those places may be dangerous, so running a relay is a moot point.
+Of course, using Tor in some of those places may be dangerous or cost prohibitive.
 
-We will continue to tinker with the data about geographical diversity in the future, but in the meantime, if you have contacts, friends or families in the underrepresented country codes, now is the time to explore the possibility of getting more Tor relays there.
+We will continue to tinker with the data about geographical diversity in the future, but in the meantime, if you have contacts, friends or families in the underrepresented country codes, now is the time to explore the possibility of getting Tor relays into the Tor-less country codes.
 
 
 ###20151026###
