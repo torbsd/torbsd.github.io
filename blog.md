@@ -114,6 +114,8 @@ Attila blog post on [OpenBSD Tor Browser Port Progress and Status](http://trac.h
 
 Attila blog post on [Adventures in Ports: The Tor Browser](http://trac.haqistan.net/blog/adventures-ports-tor-browser)
 
+Early Ringing ["Porting Tor Browser to the BSDs" thread on Tor-BSD list](http://lists.nycbug.org/pipermail/tor-bsd/2015-February/000225.html)
+
 
 
 {{footer.md}}
