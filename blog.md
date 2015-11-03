@@ -9,13 +9,31 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or More Accurately, a Central Location for Announces and Notes##
 
+###20151103###
+
+__It's Up to You__ by gman999
+
+Since we launched __TDP__ there has been two of us spending a lot of time, energy and resources on getting the various projects designed and implemented.
+
+But there's is always room for one, two, three more.
+
+It's a perfect opportunity to start testing Tor Browser 5.0.3. [Fork the repository](https://github.com/torbsd/openbsd-ports), submit [issues](https://github.com/torbsd/openbsd-ports/issues) about the software.
+
+There's more to do beyond TB though. If you are around a technical user group, get a discussion going about Tor. Have how-to meeting on running a public relay, especially for those who have access to decent infrastructure or bandwidth, like those at universities or internet-facing firms.
+
+There is no excuse why any BSD user group or conference shouldn't have a discussion or session focused on recruiting BSD people to run Tor relays. Many people in the US, Europe and eastern Asia, in particular have excess bandwidth at home. Work at a firm that uses the BSDs in production? Get them to run a relay or two.
+
+For those who dwell in BSD land, join the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd). Running a BSD Tor relay?  Join the [unofficial BSD Buildbot for Tor](http://buildbot.pixelminers.net).
+
+There's a lot we'd like to accomplish with __TDP__, and we don't claim a monopoly on much of anything. We do encourage you to take some initiative and move things forward.
+
 ###20151031###
 
 __Updated Tor Browser Packages__ by gman999
 
 The upstream code from the Tor Project and above them Mozilla is a moving target we contend with each release. Then there is the ultimate moving target: the incessant war between surveillance and anonymity, censorship and circumvention. Finally there is the operating system as a moving target all Tor Browser porters face.
 
-Developing ports on OpenBSD means building on -current, a.k.a., [snapshots](http://www.openbsd.org/faq/faq5.html#Flavors). OpenBSD snapshots are often released several times a week, and as with any other development operating system branch, those changes are sometimes significant. What might work today is broken tomorrow. It was no surprise that our TB 5.0.3 release was broken on the OpenBSD snapshot released just a few days later.
+Developing ports on OpenBSD means building on snapshots, a.k.a., [-current](http://www.openbsd.org/faq/faq5.html#Flavors). OpenBSD snapshots are often released several times a week, and as with any other development operating system branch, those changes are sometimes significant. What might work today may be broken tomorrow. It was no surprise that our TB 5.0.3 release was broken on the OpenBSD snapshot released just a few days later.
 
 [Daniel Jakots](https://lists.torproject.org/pipermail/tor-talk/2015-October/039360.html) noticed this as we did, and we updated the Tor packages accordingly. We made an added change by removing the tbb meta-package, simplifying the 5.0.3 release a bit more.
 
@@ -23,8 +41,7 @@ Developing ports on OpenBSD means building on -current, a.k.a., [snapshots](http
 
 __The BSD Relay Guides__ by gman999
 
-
-In their current forms, the [BSD relay guides](relay-guides.html) are unclear and sloppy, and possibly inaccurate in some places. We are putting some work into the [FreeBSD Guide for Configuring Relays](fbsd-relays.html), and will probably divide it into two parts: the short version for the impatient, with other topics being migrated to another page.
+In their current forms, the [BSD relay guides](relay-guides.html) are unclear and sloppy, and possibly inaccurate in some places. We are putting some work into the [FreeBSD Guide for Configuring Relays](fbsd-relays.html), and will probably divide it into two parts: the short version for the impatient, with other topics being migrated to another page entiled "Advanced."
 
 There is a lot of related topics to cover: to ZFS or not, slimming down a FreeBSD build, etc.
 
@@ -33,7 +50,6 @@ Input is welcomed. Stay tuned.
 ###20151029###
 
 __Our First Bells__ by gman999
-
 
 Over six months ago we launched __TDP__ in its current form. In March, the [GitHub repository] (https://github.com/torbsd) was initialized and we put some meat on the skeleton we had been toying around with.
 
@@ -51,10 +67,9 @@ Finally, we will be catching up with the publicity we should have previously don
 
 ###20151028###
 
-__OS Diversity and Beyond__ by gman999
+__Beyond OS Diversity__ by gman999
 
-
-__TDP__ focuses on operating system diversification for Tor. But the need for diversity is more than just operating systems. A quick browse at [one of the Tor Status sites](https://torstatus.rueckgr.at), or more specifically the [Network Statistics Graphs](https://torstatus.rueckgr.at/network_detail.php), the lack of geographical diversity is disturbing.
+__TDP__ focuses on operating system diversification for Tor with BSD Unix. But the need for diversity is more than just operating systems. A quick browse at [one of the Tor Status sites](https://torstatus.rueckgr.at), or more specifically the [Network Statistics Graphs](https://torstatus.rueckgr.at/network_detail.php), the lack of geographical diversity is disturbing.
 
 Parsing the list of Tor relays, there are a number of ISO 8166-1 two-digit country codes [that have no relays](tor-less-ccs.txt). Spreading the Tor network out to those countries should be a primary concern, regardless of operating system.
 
@@ -66,7 +81,7 @@ Parsing the list of Tor relays, there are a number of ISO 8166-1 two-digit count
 
 * Latin America and Africa are particularly underrepresented. And for Brazil with over 200 million people and a developed infrastructure, possessing under 30 relays is shocking.
 
-* Pakistan (PK), also, has no public Tor relays, and India (IN) has under ten, although we're working on the latter case.
+* Pakistan (PK), has no public Tor relays, and India (IN) has under ten, although we're working on the latter case.
 
 We don't know the particulars of infrastructure, connectivity costs, etc., in a lot of those countries, but the underrepresented regions need a dedicated focus.
 
@@ -76,11 +91,9 @@ Of course, using Tor in some of those places may be dangerous or cost prohibitiv
 
 We will continue to tinker with the data about geographical diversity in the future, but in the meantime, if you have contacts, friends or families in the underrepresented country codes, now is the time to explore the possibility of getting Tor relays into the Tor-less country codes.
 
-
 ###20151026###
 
 __Tor Browser version 5.0.3 for OpenBSD__ by gman999
-
 
 __The Tor BSD Diversity Project (TDP)__ is proud to announce the release of Tor Browser (TB) version 5.0.3 for OpenBSD.
 
@@ -114,8 +127,6 @@ Attila blog post on [OpenBSD Tor Browser Port Progress and Status](http://trac.h
 
 Attila blog post on [Adventures in Ports: The Tor Browser](http://trac.haqistan.net/blog/adventures-ports-tor-browser)
 
-Early Ringing ["Porting Tor Browser to the BSDs" thread on Tor-BSD list](http://lists.nycbug.org/pipermail/tor-bsd/2015-February/000225.html)
-
-
+Early Rings ["Porting Tor Browser to the BSDs" thread on Tor-BSD list](http://lists.nycbug.org/pipermail/tor-bsd/2015-February/000225.html)
 
 {{footer.md}}

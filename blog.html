@@ -17,13 +17,31 @@
 
 <h2 id="ablogormoreaccuratelyacentrallocationforannouncesandnotes">A Blog, or More Accurately, a Central Location for Announces and Notes</h2>
 
+<h3 id="20151103">20151103</h3>
+
+<p><strong>It&#8217;s Up to You</strong> by gman999</p>
+
+<p>Since we launched <strong>TDP</strong> there has been two of us spending a lot of time, energy and resources on getting the various projects designed and implemented.</p>
+
+<p>But there&#8217;s is always room for one, two, three more.</p>
+
+<p>It&#8217;s a perfect opportunity to start testing Tor Browser 5.0.3. <a href="https://github.com/torbsd/openbsd-ports">Fork the repository</a>, submit <a href="https://github.com/torbsd/openbsd-ports/issues">issues</a> about the software.</p>
+
+<p>There&#8217;s more to do beyond TB though. If you are around a technical user group, get a discussion going about Tor. Have how-to meeting on running a public relay, especially for those who have access to decent infrastructure or bandwidth, like those at universities or internet-facing firms.</p>
+
+<p>There is no excuse why any BSD user group or conference shouldn&#8217;t have a discussion or session focused on recruiting BSD people to run Tor relays. Many people in the US, Europe and eastern Asia, in particular have excess bandwidth at home. Work at a firm that uses the BSDs in production? Get them to run a relay or two.</p>
+
+<p>For those who dwell in BSD land, join the <a href="http://lists.nycbug.org/mailman/listinfo/tor-bsd">Tor-BSD mailing list</a>. Running a BSD Tor relay? Join the <a href="http://buildbot.pixelminers.net">unofficial BSD Buildbot for Tor</a>.</p>
+
+<p>There&#8217;s a lot we&#8217;d like to accomplish with <strong>TDP</strong>, and we don&#8217;t claim a monopoly on much of anything. We do encourage you to take some initiative and move things forward.</p>
+
 <h3 id="20151031">20151031</h3>
 
 <p><strong>Updated Tor Browser Packages</strong> by gman999</p>
 
 <p>The upstream code from the Tor Project and above them Mozilla is a moving target we contend with each release. Then there is the ultimate moving target: the incessant war between surveillance and anonymity, censorship and circumvention. Finally there is the operating system as a moving target all Tor Browser porters face.</p>
 
-<p>Developing ports on OpenBSD means building on -current, a.k.a., <a href="http://www.openbsd.org/faq/faq5.html#Flavors">snapshots</a>. OpenBSD snapshots are often released several times a week, and as with any other development operating system branch, those changes are sometimes significant. What might work today is broken tomorrow. It was no surprise that our TB 5.0.3 release was broken on the OpenBSD snapshot released just a few days later.</p>
+<p>Developing ports on OpenBSD means building on snapshots, a.k.a., <a href="http://www.openbsd.org/faq/faq5.html#Flavors">-current</a>. OpenBSD snapshots are often released several times a week, and as with any other development operating system branch, those changes are sometimes significant. What might work today may be broken tomorrow. It was no surprise that our TB 5.0.3 release was broken on the OpenBSD snapshot released just a few days later.</p>
 
 <p><a href="https://lists.torproject.org/pipermail/tor-talk/2015-October/039360.html">Daniel Jakots</a> noticed this as we did, and we updated the Tor packages accordingly. We made an added change by removing the tbb meta-package, simplifying the 5.0.3 release a bit more.</p>
 
@@ -31,7 +49,7 @@
 
 <p><strong>The BSD Relay Guides</strong> by gman999</p>
 
-<p>In their current forms, the <a href="relay-guides.html">BSD relay guides</a> are unclear and sloppy, and possibly inaccurate in some places. We are putting some work into the <a href="fbsd-relays.html">FreeBSD Guide for Configuring Relays</a>, and will probably divide it into two parts: the short version for the impatient, with other topics being migrated to another page.</p>
+<p>In their current forms, the <a href="relay-guides.html">BSD relay guides</a> are unclear and sloppy, and possibly inaccurate in some places. We are putting some work into the <a href="fbsd-relays.html">FreeBSD Guide for Configuring Relays</a>, and will probably divide it into two parts: the short version for the impatient, with other topics being migrated to another page entiled &#8220;Advanced.&#8221;</p>
 
 <p>There is a lot of related topics to cover: to ZFS or not, slimming down a FreeBSD build, etc.</p>
 
@@ -57,9 +75,9 @@
 
 <h3 id="20151028">20151028</h3>
 
-<p><strong>OS Diversity and Beyond</strong> by gman999</p>
+<p><strong>Beyond OS Diversity</strong> by gman999</p>
 
-<p><strong>TDP</strong> focuses on operating system diversification for Tor. But the need for diversity is more than just operating systems. A quick browse at <a href="https://torstatus.rueckgr.at">one of the Tor Status sites</a>, or more specifically the <a href="https://torstatus.rueckgr.at/network_detail.php">Network Statistics Graphs</a>, the lack of geographical diversity is disturbing.</p>
+<p><strong>TDP</strong> focuses on operating system diversification for Tor with BSD Unix. But the need for diversity is more than just operating systems. A quick browse at <a href="https://torstatus.rueckgr.at">one of the Tor Status sites</a>, or more specifically the <a href="https://torstatus.rueckgr.at/network_detail.php">Network Statistics Graphs</a>, the lack of geographical diversity is disturbing.</p>
 
 <p>Parsing the list of Tor relays, there are a number of ISO 8166&#8211;1 two-digit country codes <a href="tor-less-ccs.txt">that have no relays</a>. Spreading the Tor network out to those countries should be a primary concern, regardless of operating system.</p>
 
@@ -68,7 +86,7 @@
 <li><p>Angola (AO), whose capital Luanda is one of the more hopping cities in southern Africa now?</p></li>
 <li><p>Jordan (JO), which is apparently one of the better connected locations in the region?</p></li>
 <li><p>Latin America and Africa are particularly underrepresented. And for Brazil with over 200 million people and a developed infrastructure, possessing under 30 relays is shocking.</p></li>
-<li><p>Pakistan (PK), also, has no public Tor relays, and India (IN) has under ten, although we&#8217;re working on the latter case.</p></li>
+<li><p>Pakistan (PK), has no public Tor relays, and India (IN) has under ten, although we&#8217;re working on the latter case.</p></li>
 </ul>
 
 <p>We don&#8217;t know the particulars of infrastructure, connectivity costs, etc., in a lot of those countries, but the underrepresented regions need a dedicated focus.</p>
@@ -115,13 +133,13 @@
 
 <p>Attila blog post on <a href="http://trac.haqistan.net/blog/adventures-ports-tor-browser">Adventures in Ports: The Tor Browser</a></p>
 
-<p>Early Ringing <a href="http://lists.nycbug.org/pipermail/tor-bsd/2015-February/000225.html">&#8220;Porting Tor Browser to the BSDs&#8221; thread on Tor-BSD list</a></p>
+<p>Early Rings <a href="http://lists.nycbug.org/pipermail/tor-bsd/2015-February/000225.html">&#8220;Porting Tor Browser to the BSDs&#8221; thread on Tor-BSD list</a></p>
 
 <p><hr></p>
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Mon Nov 2 20:32:52 2015 -0500</code></p>
+<p><code>last updated: Mon Nov 2 20:44:26 2015 -0500</code></p>
 
 </body>
 </html>

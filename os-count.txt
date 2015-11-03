@@ -1,0 +1,21 @@
+Tue Nov  3 16:46:25 UTC 2015
+
+The Tor BSD Diversity Project
+https://torbsd.github.io/
+Quick-and-Dirty Static Reports
+
+Operating System Count:
+-------
+quantity platform
+5937 Linux
+ 439 Windows
+ 245 FreeBSD
+  68 OpenBSD
+  25 Darwin
+  11 NetBSD
+   4 SunOS
+   4 Bitrig
+   3 ElectroBSD
+   2 DragonFly
+   1 GNU/kFreeBSD
+   1 GNU
