@@ -24,8 +24,8 @@ PAGES=		index.html \
 		faq.html \
 		fbsd-relays.html \
 		obsd-relays.html \
-		fbsd-relays_dev.html \
-		obsd-relays_dev.html \
+		fbsd-relays-adv.html \
+		obsd-relays-adv.html \
 		resources.html \
 		licensing.html \
 		obsd-tb-build.html \
@@ -46,8 +46,8 @@ relay-guides.html: relay-guides.md $(BOILERPLATE)
 faq.html: faq.md $(BOILERPLATE)
 fbsd-relays.html: fbsd-relays.md $(BOILERPLATE)
 obsd-relays.html: obsd-relays.md $(BOILERPLATE)
-fbsd-relays_dev.html: fbsd-relays_dev.md $(BOILERPLATE)
-obsd-relays_dev.html: obsd-relays_dev.md $(BOILERPLATE)
+fbsd-relays-adv.html: fbsd-relays-adv.md $(BOILERPLATE)
+obsd-relays-adv.html: obsd-relays-adv.md $(BOILERPLATE)
 resources.html: resources.md $(BOILERPLATE)
 licensing.html: licensing.md $(BOILERPLATE)
 materials/flier-bsd.html: materials/flier-bsd.md $(BOILERPLATE)
