@@ -106,7 +106,7 @@ __TDP__ is seeking funding to continue and extend its efforts. Please contact us
 
 ###From the Attic###
 
-Attila blog post on [OpenBSD Tor Browser Ports Status Update: July 2015, 4.5.3 (yes, I know it's August)](http://traq.haqistan.net/blog/tor-browser-ports-progress-3)
+Attila blog post on [OpenBSD Tor Browser Ports Status Update: July 2015, 4.5.3 (yes, I know it's August)](http://trac.haqistan.net/blog/tor-browser-ports-progress-3)
 
 Attila blog post on [OpenBSD Tor Browser Ports Status Update: June 2015, v4.5.2](http://trac.haqistan.net/blog/tor-browser-ports-progress-2)
 
