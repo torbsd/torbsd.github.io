@@ -9,8 +9,6 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or More Accurately, a Central Location for Announces and Notes##
 
-[Thoughts on Reproducible Builds][]
-
 ###20151104###
 
 __Thoughts on Reproducible Builds__ by gman999
