@@ -25,9 +25,11 @@ But there's is always room for one, two, three more.
 
 It's a perfect opportunity to start testing Tor Browser 5.0.3. [Fork the repository](https://github.com/torbsd/openbsd-ports), submit [issues](https://github.com/torbsd/openbsd-ports/issues) about the software.
 
-There's more to do beyond TB though. If you are around a technical user group, get a discussion going about Tor. Have how-to meeting on running a public relay, especially for those who have access to decent infrastructure or bandwidth, like those at universities or internet-facing firms.
+There's more to do beyond TB though. If you are around a technical user group, get a discussion going about Tor. Have a how-to meeting on running a public relay, especially for those who have access to decent infrastructure and bandwidth, like those at universities or internet-facing firms.
 
-There is no excuse why any BSD user group or conference shouldn't have a discussion or session focused on recruiting BSD people to run Tor relays. Many people in the US, Europe and eastern Asia, in particular have excess bandwidth at home. Work at a firm that uses the BSDs in production? Get them to run a relay or two.
+Setting up a high-bandwidth Tor bridge is painless and it will just be a safe gateway for Tor users.
+
+There is no excuse why every BSD user group or conference shouldn't have a discussion or session focused on "recruiting" BSD people to run Tor relays. Many people in the US, Europe and eastern Asia, in particular have excess bandwidth at home. Work at a firm that uses the BSDs in production? Get them to run a relay or two.
 
 For those who dwell in BSD land, join the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd). Running a BSD Tor relay?  Join the [unofficial BSD Buildbot for Tor](http://buildbot.pixelminers.net).
 
