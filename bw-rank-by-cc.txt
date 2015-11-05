@@ -1,0 +1,89 @@
+Wed Nov  4 17:55:01 UTC 2015
+
+The Tor BSD Diversity Project
+https://torbsd.github.io/
+Quick-and-Dirty Static Reports
+
+Bandwidth Ranking by Country Code:
+-------
+Total Bandwidth of Tor Network:
+19068505
+country-code bandwidth/Kbps
+DE   4067623
+FR   3173727
+US   2078980
+N/A  1423059
+RU   1222032
+NL   1066362
+GB   616699
+SE   607914
+CH   593326
+AT   573677
+RO   510326
+LU   373911
+UA   320313
+CZ   301588
+A1   273144
+IT   221649
+NO   220676
+ID   219059
+HU   173927
+CA   167372
+DK   122501
+PL   118906
+LV   60116
+ES   53568
+MD   52755
+FI   49323
+BG   46595
+GR   46570
+JP   40412
+SK   29948
+EE   24058
+IS   23411
+IE   22591
+LT   17169
+IL   15575
+KR   14201
+HR   12375
+TR   11366
+SG   11120
+HK   10632
+TW   10439
+BE   9575
+MX   6802
+IN   6118
+AU   4976
+BR   4907
+PT   4693
+GT   4488
+NZ   3521
+AM   3445
+IM   3356
+LI   2653
+MT   2617
+CR   2283
+EU   2091
+VN   1314
+KZ   1170
+MY   926
+SI   791
+AR   665
+PA   555
+SA   403
+BY   357
+ZA   273
+EG   257
+RE   198
+CO   175
+CY   136
+CN   120
+RS   113
+TH   105
+QA   89
+CL   71
+GG   68
+MA   58
+KH   56
+PH   43
+MK   42
