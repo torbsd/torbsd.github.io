@@ -9,7 +9,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or More Accurately, a Central Location for Announces and Notes##
 
-[Our First Bells](#Our First Bells)
+[Our First Bells](#first_bells)
 
 ###20151104###
 
@@ -59,7 +59,7 @@ Input is welcomed. Stay tuned.
 
 ###20151029###
 
-__Our First Bells__ by gman999
+<a id="first_bells">__Our First Bells__</a> by gman999
 
 Over six months ago we launched __TDP__ in its current form. In March, the [GitHub repository] (https://github.com/torbsd) was initialized and we put some meat on the skeleton we had been toying around with.
 
