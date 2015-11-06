@@ -9,11 +9,11 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or More Accurately, a Central Location for Announces and Notes##
 
-* November 2015
+November 2015
 
 [Thoughts on Reproducible Builds](#repro-builds) &#9741;  [It's Up to You](#up-to-you)
 
-* October 2015
+October 2015
 
 [Updated Tor Browser Packages](#tb-update) &#9741; [The BSD Relay Guides](#relay-guides) &#9741; [Our First Bells](#first-bells) &#9741; [Beyond OS Diversity](#beyond-os) &#9741; [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
@@ -68,7 +68,7 @@ Input is welcomed. Stay tuned.
 
 ###20151029###
 
-<a id="first_bells">__Our First Bells__</a> by gman999
+<a id="first-bells">__Our First Bells__</a> by gman999
 
 Over six months ago we launched __TDP__ in its current form. In March, the [GitHub repository] (https://github.com/torbsd) was initialized and we put some meat on the skeleton we had been toying around with.
 
