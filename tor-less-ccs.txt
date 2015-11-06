@@ -1,11 +1,11 @@
-Thu Nov  5 03:21:03 UTC 2015
+Fri Nov  6 03:16:33 UTC 2015
 
 The Tor BSD Diversity Project
 https://torbsd.github.io/
 Quick-and-Dirty Static Reports
 
 Tor-Less Country Codes:
-76
+79
 -------
 country-code
 AD
@@ -62,9 +62,7 @@ FM
 FO
 GA
 GD
-GE
 GF
-GG
 GH
 GI
 GL
@@ -130,8 +128,6 @@ OM
 PE
 PF
 PG
-PH
-PK
 PM
 PN
 PR
@@ -175,6 +171,7 @@ UY
 UZ
 VA
 VC
+VE
 VG
 VI
 VU
