@@ -11,7 +11,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 * November 2015
 
-[Thoughts on Reproducible Builds](#repro-builds) [It's Up to You](#up-to-you)
+[Thoughts on Reproducible Builds](#repro-builds) :smiling_imp: [It's Up to You](#up-to-you)
 
 * October 2015
 
