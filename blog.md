@@ -11,19 +11,11 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 * November 2015
 
-[Thoughts on Reproducible Builds](#repro-builds) :smiling_imp: [It's Up to You](#up-to-you)
+[Thoughts on Reproducible Builds](#repro-builds) &#9741;  [It's Up to You](#up-to-you)
 
 * October 2015
 
-[Updated Tor Browser Packages](#tb-update)
-
-[The BSD Relay Guides](#relay-guides)
-
-[Our First Bells](#first-bells)
-
-[Beyond OS Diversity](#beyond-os)
-
-[Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
+[Updated Tor Browser Packages](#tb-update) &#9741; [The BSD Relay Guides](#relay-guides) &#9741; [Our First Bells](#first-bells) &#9741; [Beyond OS Diversity](#beyond-os) &#9741; [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
 
@@ -56,7 +48,7 @@ There's a lot we'd like to accomplish with __TDP__, and we don't claim a monopol
 
 ###20151031###
 
-__Updated Tor Browser Packages__ by gman999
+<a id="tb-update">__Updated Tor Browser Packages__</a> by gman999
 
 The upstream code from the Tor Project and above them Mozilla is a moving target we contend with each release. Then there is the ultimate moving target: the incessant war between surveillance and anonymity, censorship and circumvention. Finally there is the operating system as a moving target all Tor Browser porters face.
 
@@ -66,7 +58,7 @@ Developing ports on OpenBSD means building on snapshots, a.k.a., [-current](http
 
 ###20151030###
 
-__The BSD Relay Guides__ by gman999
+<a id="relay-guides">__The BSD Relay Guides__</a> by gman999
 
 In their current forms, the [BSD relay guides](relay-guides.html) are unclear and sloppy, and possibly inaccurate in some places. We are putting some work into the [FreeBSD Guide for Configuring Relays](fbsd-relays.html), and will probably divide it into two parts: the short version for the impatient, with other topics being migrated to another page entiled "Advanced."
 
@@ -94,7 +86,7 @@ Finally, we will be catching up with the publicity we should have previously don
 
 ###20151028###
 
-__Beyond OS Diversity__ by gman999
+<a id="beyond-os">__Beyond OS Diversity__</a> by gman999
 
 __TDP__ focuses on operating system diversification for Tor with BSD Unix. But the need for diversity is more than just operating systems. A quick browse at [one of the Tor Status sites](https://torstatus.rueckgr.at), or more specifically the [Network Statistics Graphs](https://torstatus.rueckgr.at/network_detail.php), the lack of geographical diversity is disturbing.
 
@@ -120,7 +112,7 @@ We will continue to tinker with the data about geographical diversity in the fut
 
 ###20151026###
 
-__Tor Browser version 5.0.3 for OpenBSD__ by gman999
+<a id="tb-5.0.3">__Tor Browser version 5.0.3 for OpenBSD__</a> by gman999
 
 __The Tor BSD Diversity Project (TDP)__ is proud to announce the release of Tor Browser (TB) version 5.0.3 for OpenBSD.
 
@@ -144,7 +136,7 @@ __TDP's__ source code repository resides at [https://github.com/torbsd](https://
 
 __TDP__ is seeking funding to continue and extend its efforts. Please contact us if interested in assisting __TDP__, allowing us to dedicate more time to the project.
 
-###From the Attic###
+<a id="attic">###From the Attic###</a>
 
 Attila blog post on [OpenBSD Tor Browser Ports Status Update: July 2015, 4.5.3 (yes, I know it's August)](http://trac.haqistan.net/blog/tor-browser-ports-progress-3)
 
