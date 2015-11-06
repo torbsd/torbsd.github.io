@@ -9,17 +9,30 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or More Accurately, a Central Location for Announces and Notes##
 
-[Our First Bells](#first_bells)
+* November 2015
+
+[Thoughts on Reproducible Builds](#repro-builds)
+[It's Up to You](#up-to-you)
+
+* October 2015
+
+[Updated Tor Browser Packages](#tb-update)
+[The BSD Relay Guides](#relay-guides)
+[Our First Bells](#first-bells)
+[Beyond OS Diversity](#beyond-os)
+[Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
+[From the Attic](#attic)
+
 
 ###20151104###
 
-__Thoughts on Reproducible Builds__ by gman999
+<a id="repro-builds">__Thoughts on Reproducible Builds__</a> by gman999
 
 Just a quick link to a pleasantly polemical post from September 19th by [OpenBSD's](http://www.openbsd.org) tedu@ entitled [reproducible builds are a waste of time](http://www.tedunangst.com/flak/post/reproducible-builds-are-a-waste-of-time). There's a follow-up postscript at the end of the post, reacting to a [lobste.rs thread](https://lobste.rs/s/5bbdbo/reproducible_builds_are_a_waste_of_time/).
 
 ###20151103###
 
-__It's Up to You__ by gman999
+<a id="up-to-you">__It's Up to You__</a> by gman999
 
 Since we launched __TDP__ there has been two of us spending a lot of time, energy and resources on getting the various projects designed and implemented.
 
