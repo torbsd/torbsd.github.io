@@ -12,15 +12,21 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 * November 2015
 
 [Thoughts on Reproducible Builds](#repro-builds)
+
 [It's Up to You](#up-to-you)
 
 * October 2015
 
 [Updated Tor Browser Packages](#tb-update)
+
 [The BSD Relay Guides](#relay-guides)
+
 [Our First Bells](#first-bells)
+
 [Beyond OS Diversity](#beyond-os)
+
 [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
+
 [From the Attic](#attic)
 
 
