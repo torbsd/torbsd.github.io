@@ -7,7 +7,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 {{header.md}}
 
-##A Blog, or More Accurately, a Central Location for Announces and Notes##
+##A Blog, or a Central Location for Announces and Notes##
 
 __November 2015__
 
