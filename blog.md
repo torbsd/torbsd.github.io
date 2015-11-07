@@ -9,11 +9,11 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or More Accurately, a Central Location for Announces and Notes##
 
-&#8916; November 2015
+__November 2015__
 
 [Thoughts on Reproducible Builds](#repro-builds) &#8916;  [It's Up to You](#up-to-you)
 
-October 2015
+__October 2015__
 
 [Updated Tor Browser Packages](#tb-update) &#8916; [The BSD Relay Guides](#relay-guides) &#8916; [Our First Bells](#first-bells) &#8916; [Beyond OS Diversity](#beyond-os) &#8916; [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
