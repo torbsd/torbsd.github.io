@@ -136,7 +136,7 @@ __TDP's__ source code repository resides at [https://github.com/torbsd](https://
 
 __TDP__ is seeking funding to continue and extend its efforts. Please contact us if interested in assisting __TDP__, allowing us to dedicate more time to the project.
 
-<a id="attic">###From the Attic###</a>
+###<a id="attic">From the Attic</a>###
 
 Attila blog post on [OpenBSD Tor Browser Ports Status Update: July 2015, 4.5.3 (yes, I know it's August)](http://trac.haqistan.net/blog/tor-browser-ports-progress-3)
 
