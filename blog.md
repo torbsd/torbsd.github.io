@@ -11,7 +11,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __November 2015__
 
-[Thoughts on Reproducible Builds](#repro-builds) &#8916;  [It's Up to You](#up-to-you)
+[Coming Soon: Quick-and-Dirty Reports](#dirty-reports] &#8916; [Thoughts on Reproducible Builds](#repro-builds) &#8916;  [It's Up to You](#up-to-you)
 
 __October 2015__
 
@@ -19,6 +19,15 @@ __October 2015__
 
 [From the Attic](#attic)
 
+###20151108###
+
+<a id="dirty-reports">__Coming Soon: Quick-and-Dirty Reports__</a> by gman999
+
+This week we'll be posted "Quick-and-Dirty Reports" providing diversity-related snapshots of the public Tor network. Currently, the five reports are generated statically from Tor Status CSV files, but they are being migrated to Sqlite in the future.
+
+A quick sample of the current reports were posted in an [earlier blog entry](#beyond-os).
+
+Nothing ground-breaking or revolutionary about the reports, but we do hope others find them useful, and maybe event extend their use.
 
 ###20151104###
 

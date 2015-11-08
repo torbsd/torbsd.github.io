@@ -35,6 +35,7 @@ PAGES=		index.html \
 		materials/flier-bsd.html \
 		corp-relays.html \
 		blog.html \
+		dirty-stats.html \
 
 BOILERPLATE=	header.md footer.md
 
@@ -58,6 +59,7 @@ doc-guide.html: doc-guide.md $(BOILERPLATE)
 tb-building.html: tb-building.md $(BOILERPLATE)
 corp-relays.html: corp-relays.md $(BOILERPLATE)
 blog.html: blog.md $(BOILERPLATE)
+dirty-stats.html: dirty-stats.md $(BOILERPLATE)
 
 ## The rest of this file makes the above possible...
 ## ... but only YOU can make it necessary.

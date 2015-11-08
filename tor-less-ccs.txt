@@ -1,11 +1,11 @@
-Sun Nov  8 15:27:29 UTC 2015
+Sun Nov  8 16:44:07 UTC 2015
 
 The Tor BSD Diversity Project
 https://torbsd.github.io/
 Quick-and-Dirty Static Reports
 
 Country Codes without Public Tor Relays:
-76
+77
 -------
 country-code
 AD
@@ -64,7 +64,6 @@ GA
 GD
 GE
 GF
-GG
 GH
 GL
 GM
@@ -80,7 +79,6 @@ HN
 HT
 IO
 IQ
-IR
 JE
 JM
 JO
@@ -175,6 +173,7 @@ UY
 UZ
 VA
 VC
+VE
 VG
 VI
 VU
