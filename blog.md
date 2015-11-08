@@ -11,7 +11,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __November 2015__
 
-[Coming Soon: Quick-and-Dirty Reports](#dirty-reports] &#8916; [Thoughts on Reproducible Builds](#repro-builds) &#8916;  [It's Up to You](#up-to-you)
+[Coming Soon: Quick-and-Dirty Reports](#dirty-reports) &#8916; [Thoughts on Reproducible Builds](#repro-builds) &#8916;  [It's Up to You](#up-to-you)
 
 __October 2015__
 
