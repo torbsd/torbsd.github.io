@@ -30,7 +30,7 @@ Just a quick link to a pleasantly polemical post from September 19th by [OpenBSD
 
 <a id="up-to-you">__It's Up to You__</a> by gman999
 
-Since we launched __TDP__ there has been two of us spending a lot of time, energy and resources on getting the various projects designed and implemented.
+Since we launched __TDP__, two of us spend a lot of time, energy and resources getting the various projects designed and implemented.
 
 But there's is always room for one, two, three more.
 

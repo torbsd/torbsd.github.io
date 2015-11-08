@@ -1,4 +1,4 @@
-Fri Nov  6 03:15:07 UTC 2015
+Sun Nov  8 15:23:14 UTC 2015
 
 The Tor BSD Diversity Project
 https://torbsd.github.io/
@@ -7,86 +7,82 @@ Quick-and-Dirty Static Reports
 'Relay Count by Country Code'
 
 Total Relay Count:
-6719
-
+6762
 -------
 quantity country-code
-1404 DE
-1172 US
- 629 N/A
- 619 FR
- 471 RU
- 309 NL
- 289 GB
- 192 SE
- 154 AT
- 147 CH
-  98 RO
-  97 CA
-  92 UA
-  86 CZ
-  73 IT
+1438 DE
+1147 US
+ 622 FR
+ 621 N/A
+ 485 RU
+ 306 NL
+ 292 GB
+ 194 SE
+ 161 AT
+ 148 CH
+ 101 RO
+  97 UA
+  93 CA
+  91 CZ
+  69 IT
   65 NO
   64 JP
-  56 FI
-  52 PL
-  48 DK
-  46 LV
-  45 HU
-  44 ES
-  39 AU
-  30 LU
+  59 FI
+  54 PL
+  48 ES
+  47 DK
+  44 LV
+  43 HU
+  41 AU
+  33 LU
   27 BG
   25 BE
+  24 BR
+  23 HK
   23 GR
-  22 HK
-  21 BR
-  20 SK
   20 IS
+  19 SK
   15 SG
   15 ID
-  13 NZ
-  13 A1
-  12 KR
-  12 IL
-  11 VN
-  11 IN
-  10 TW
-  10 MD
+  13 VN
+  13 TW
+  13 MD
+  12 NZ
+  12 A1
+  11 KR
+  11 IL
+  10 PT
   10 IE
-   9 EE
-   9 AR
-   8 TR
-   7 PT
-   7 MX
+  10 EE
+   9 IN
+   8 AR
+   7 TR
    7 LT
-   7 HR
-   5 ZA
+   6 MX
+   6 HR
    5 MY
+   4 ZA
    4 SI
-   3 SA
+   3 KZ
    3 AM
    2 TH
+   2 SA
    2 RS
    2 RE
-   2 KZ
-   2 EU
-   2 EG
+   2 PA
+   2 LI
    2 CY
    2 CR
    2 CO
    2 BY
-   1 PK
-   1 PH
-   1 PA
+   1 VE
+   1 QA
    1 MT
-   1 MK
-   1 MA
-   1 LI
    1 KH
    1 IM
    1 GT
-   1 GG
-   1 GE
+   1 GI
+   1 EU
+   1 EG
    1 CN
    1 CL
