@@ -23,9 +23,11 @@ __October 2015__
 
 <a id="dirty-reports">__Coming Soon: Quick-and-Dirty Reports__</a> by gman999
 
-This week we'll be post "Quick-and-Dirty Reports," providing diversity-related snapshots of the public Tor network. Currently, the five reports are generated statically from the [ruckgr.at Tor Status](https://torstatus.rueckgr.at/) [CSV files](https://torstatus.rueckgr.at/query_export.php/Tor_query_EXPORT.csv), but they are being migrated to SQLite in the future.
+This week we'll post "Quick-and-Dirty Reports," providing diversity-related snapshots of the public Tor network. Currently, the five reports are generated manually from the [ruckgr.at Tor Status](https://torstatus.rueckgr.at/) [CSV files](https://torstatus.rueckgr.at/query_export.php/Tor_query_EXPORT.csv), but they are being migrated to SQLite in the future.
 
 A quick sample of the current reports were posted in an [earlier blog entry](#beyond-os).
+
+The only comparable service we know of is the [Tor Metrics site](https://metrics.torproject.org) which has the additional function of providing historical data in pretty graphs. Our goal is considerably more mundane, yet also functional.
 
 Nothing ground-breaking or revolutionary about the reports, but we do hope others find them useful, and maybe event extend their use.
 
