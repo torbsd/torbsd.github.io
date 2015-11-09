@@ -28,9 +28,9 @@ Since our beginnings, __TDP__ successfully surpassed a number of significant mil
 
 * commenced producing a series of [quick and simple reports](dirty-stats.html) highlighting diversity weaknesses in the Tor network
 
-But __TDP__ wants to do more. Each and every one of our accomplishments are only first steps in a longer set of goals.
+But __TDP__ wants to do more. Each and every one of our accomplishments is only a first step in a larger set of goals.
 
-* we want to release a maintained Tor Browser for OpenBSD for the stable branch, reliable in daily usage, easily forkable to other POSIX-compliant operating systems
+* we want to release a maintained Tor Browser for OpenBSD's stable branch, reliable in daily usage, easily forkable to other POSIX-compliant operating systems
 
 * we want to push some of our code changes upstream into the Tor Project and even Mozilla
 
@@ -47,6 +47,5 @@ But we aren't limiting __TDP__ to those goals. __TDP__ is a dynamic project aimi
 At this point, __TDP__ is self-funded with resources, time and labor. But those coffers are not limitless. __TDP__ is proud of the accomplishments so far, but the current pace is unsustainable.
 
 Please contact __TDP__ if interested in assisting our efforts to allow us to continue the current objectives, and to expand them.
-
 
 {{footer.md}}
