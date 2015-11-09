@@ -55,7 +55,7 @@ We welcome relevant submissions from others.
 
 * Kode Vicious' [Column from ACM's Queue Magazine](https://queue.acm.org/listing.cfm?typefilter=Kodevicious&sort=publication_date&order=desc&qc_type=Kodevicious&article_type=&item_topic=all&filter_type=topic&page_title=Kode%20Vicious&filter=all)
 
-* Poul-Henning Kamp [article on "A Generation Lost in the Bazaar](https://queue.acm.org/detail.cfm?id=2349257) from ACM's Queue Magazine's "The Bike Shed" column
+* Poul-Henning Kamp [article on "A Generation Lost in the Bazaar"](https://queue.acm.org/detail.cfm?id=2349257) from ACM's Queue Magazine's "The Bike Shed" column
 
 * Ted Unangst [post on OpenBSD-misc "Improving Browser Security"](https://marc.info/?l=openbsd-misc&m=142523501726732)
 
