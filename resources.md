@@ -93,7 +93,7 @@ We welcome relevant submissions from others.
 
 ### Chatter About __TDP__ ###
 
-* [__TDP__ (prematurely) announced on the Tor-talk mailing list](https://lists.torproject.org/pipermail/tor-talk/2015-April/037649.html)
+* [__TDP__ announced on the Tor-talk mailing list](https://lists.torproject.org/pipermail/tor-talk/2015-April/037649.html)
 
 * [Followed up by a headline on BSDNow.tv](http://www.bsdnow.tv/episodes/2015_05_06-below_the_clouds)
 
