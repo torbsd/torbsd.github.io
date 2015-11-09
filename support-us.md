@@ -24,7 +24,7 @@ Since our beginnings, __TDP__ successfully surpassed a number of significant mil
 
 * enlisted [New York Internet](https://www.nyi.net) in donating two high-bandwidth public relays at its facility in Bridgewater, New Jersey
 
-* started simple [how-to guides](relay-guides.html) for building Tor relays on FreeBSD and OpenBSD
+* started clear [how-to guides](relay-guides.html) for building Tor relays on FreeBSD and OpenBSD
 
 * commenced producing series of [quick and simple reports](dirty-stats.html) highlighting diversity weaknesses in the Tor network, beyond 
 
@@ -36,13 +36,13 @@ But __TDP__ wants to do more. Each and every one of our accomplishments are firs
 
 * we want to push some of our code changes upstream into the Tor Project and even Mozilla
 
-* want to conduct more presentations, birds-of-feather sessions and public meetings about __TDP__ including [BSDCan](https://www.bsdcan.org/) in 2016, plus a public presentation in NYC in late winter, and maybe a Tor Browser hackathon for BSD users also in NYC
+* we want to conduct more presentations, birds-of-feather sessions and public meetings about __TDP__ including [BSDCan](https://www.bsdcan.org/) in 2016, plus a public presentation in NYC in late winter, and maybe a Tor Browser hackathon for BSD users also in NYC
 
 * we want to target more potential Tor relay operators in countries with few or no relays through our contacts in the *BSD community, and [EuroBSDCon 2016](https://2016.eurobsdcon.org) is scheduled for Belgrade, Serbia (RS), a country and region (Croatia/HR, Slovenia/SI, Bosnia and Herzegovina/BA, Macedonia/MK, Montenegro/ME and others) where the sum total of public Tor relays is in the single-digits
 
 * we want to enlist more BSD-using firms to run high-bandwidth Tor relays
 
-* we want our relay guides to be production ready, and translated to languages beyond English, particularly into languages with low numbers of Tor relays
+* we want our relay guides to be production ready, and translated to languages beyond English, particularly into those common in countries with low relay counts
 
 But we aren't limiting __TDP__ to those goals. __TDP__ is a dynamic project aiming to adjust to any opportunity to strengthen the Tor network. __TDP__ has a track record and a trajectory of moving forward.
 
