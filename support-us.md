@@ -18,25 +18,23 @@ Since our beginnings, __TDP__ successfully surpassed a number of significant mil
 
 * designed and implemented five releases of Tor Browser for [OpenBSD](http://www.openbsd.org), with the repository residing [on GitHub](https://github.com/torbsd)
 
-* conducted a number of successful events at [BSDCan 2015](https://www.bsdcan.org/2015/) and [BSDCon Brazil](http://2015.bsdcon.com.br) engaging with scores of individuals about __TDP__ and the critical importance of involving BSD users and developers in Tor ecosystem
+* conducted a number of successful presentations at [BSDCan 2015](https://www.bsdcan.org/2015/) and [BSDCon Brazil](http://2015.bsdcon.com.br), engaging with scores of individuals about __TDP__ and the critical importance of involving BSD users and developers in Tor ecosystem
 
 *our advocacy efforts made Brazil a country of one periodic public Tor relay to about a fifth of the relays, accounting for up to a third of public Tor bandwidth there*
 
-* enlisted [New York Internet](https://www.nyi.net) in donating two high-bandwidth public relays at its facility in Bridgewater, New Jersey
+* enlisted [New York Internet](https://www.nyi.net) in donating two high-bandwidth public relays at its facility in Bridgewater, New Jersey, with the aim of replicating Mozilla's roll-out of Tor relays among firms that employ the *BSDs
 
-* started clear [how-to guides](relay-guides.html) for building Tor relays on FreeBSD and OpenBSD
+* started [how-to guides](relay-guides.html) for building Tor relays on FreeBSD and OpenBSD
 
-* commenced producing series of [quick and simple reports](dirty-stats.html) highlighting diversity weaknesses in the Tor network, beyond 
+* commenced producing a series of [quick and simple reports](dirty-stats.html) highlighting diversity weaknesses in the Tor network
 
-But __TDP__ wants to do more. Each and every one of our accomplishments are first steps in a longer set of goals.
+But __TDP__ wants to do more. Each and every one of our accomplishments are only first steps in a longer set of goals.
 
-* we want to release a maintained Tor Browser for OpenBSD for the stable branch
-
-* we want to get Tor Browser ported to FreeBSD
+* we want to release a maintained Tor Browser for OpenBSD for the stable branch, reliable in daily usage, easily forkable to other POSIX-compliant operating systems
 
 * we want to push some of our code changes upstream into the Tor Project and even Mozilla
 
-* we want to conduct more presentations, birds-of-feather sessions and public meetings about __TDP__ including [BSDCan](https://www.bsdcan.org/) in 2016, plus a public presentation in NYC in late winter, and maybe a Tor Browser hackathon for BSD users also in NYC
+* we want to conduct more presentations, birds-of-feather sessions and public meetings about __TDP__ including [BSDCan](https://www.bsdcan.org/) in 2016, plus a public presentation and maybe a Tor Browser hackathon in NYC in late winter
 
 * we want to target more potential Tor relay operators in countries with few or no relays through our contacts in the *BSD community, and [EuroBSDCon 2016](https://2016.eurobsdcon.org) is scheduled for Belgrade, Serbia (RS), a country and region (Croatia/HR, Slovenia/SI, Bosnia and Herzegovina/BA, Macedonia/MK, Montenegro/ME and others) where the sum total of public Tor relays is in the single-digits
 
