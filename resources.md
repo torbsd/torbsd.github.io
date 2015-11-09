@@ -102,6 +102,14 @@ We welcome relevant submissions from others.
 * [Reddit on __TDP__](https://www.reddit.com/r/linux/comments/356iyy/torbsd_diversity_project_help_move_tor_nodes_from/):
   Before we publicly announced, a __TDP__ Reddit thread. Very appreciated, but one important point of clarification: we are not interested in having Linux relays moved to BSD. If someone runs a relay, they should use the operating system they are most comfortable with. __TDP__ is about affecting the BSD community and not converting anyone __to__ the BSDs. Another quick comment is that we strongly agree in the larger monoculture problem. Ideal diversity would encompass a variety of applications and hardware, and that applies to Tor as much as anything. But there's a major issue to consider, and that's interoperability. There needs to be some agreement on protocols before there can be any routing or communications in general. If one mail server only talks SMTP and the other only UUCP, email routing does not happen.
 
+### From the Attic ###
+
+* "Findings Report on the Tor Browser Bundle User Experience"[via hidden web site](http://l7plhliaaob6puqw.onion) or [via Tor2Web](https://l7plhliaaob6puqw.tor2web.org). This report from 2012-2013, summed up research conducted on the user experience (UX) for the Tor Browser bundle.
+
+* "The LibTech Scene and the BSD Projects after Snowden"[via hidden web site](http://twvihadsu5oznuux.onion] and [via Tor2Web](https://twvihadsu5oznuux.tor2web.org) is the basis of a number of birds-of-feather and similar events taking place from 2012 through 2014.
+
+* An older, not completed how-to entitled "Simple Web Sites with Tor's Hidden Services: Unrestricted and Impossible to Block" [via a hidden web site](http://3vk2dyth3w4zxdba.onion) or [via Tor2Web](https://3vk2dyth3w4zxdba.tor2web.org).
+
 ### Materials ###
 
 * A one-page [informational flier](materials/flier-bsd.html) providing an overview of __TDP__ for a BSD audience.  It's a call for engagement without explaining the case for using the *BSDs. The flier should print out on a single page.
