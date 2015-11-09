@@ -39,9 +39,6 @@ We welcome relevant submissions from others.
 * [An Unofficial BSD Buildbot for the Tor Project](http://buildbot.pixelminers.net)
   A distributed test build system for finding problems with BSD Tor builds.
 
-* Slides for ["The LibTech Scene and the BSD Projects After Snowden"](http://twvihadsu5oznuux.onion/)
-  Birds-of-a-Feather sessions at vBSDCon in fall 2013 and NYCBSDCon 2014.
-
 * Christian Bruffer at [MeetBSD 2007 presentation on FreeBSD, Protecting Privacy with Tor](https://www.youtube.com/watch?v=OwBh8ro7xHQ)
 
 * [Tor Network Status](http://torstatus.rueckgr.at/)
@@ -58,6 +55,8 @@ We welcome relevant submissions from others.
 
 * Kode Vicious' [Column from ACM's Queue Magazine](https://queue.acm.org/listing.cfm?typefilter=Kodevicious&sort=publication_date&order=desc&qc_type=Kodevicious&article_type=&item_topic=all&filter_type=topic&page_title=Kode%20Vicious&filter=all)
 
+* Poul-Henning Kamp [article on "A Generation Lost in the Bazaar](https://queue.acm.org/detail.cfm?id=2349257) from ACM's Queue Magazine's "The Bike Shed" column
+
 * Ted Unangst [post on OpenBSD-misc "Improving Browser Security"](https://marc.info/?l=openbsd-misc&m=142523501726732)
 
 * Theo de Raadt [slides on "Exploit Mitigation Techniques: An Update After 10 Years"](http://www.openbsd.org/papers/ru13-deraadt/)
@@ -65,7 +64,6 @@ We welcome relevant submissions from others.
 * Ted Unangst [slides on "LibreSSL: More than 30 Days Late"](http://www.openbsd.org/papers/eurobsdcon2014-libressl.html)
 
 * Ted Unangst [blog post on "Reproducible Builds are a Waste of Time](http://www.tedunangst.com/flak/post/reproducible-builds-are-a-waste-of-time)
-
 
 ### The Danger of Monocultures in Technology ###
 
@@ -106,12 +104,12 @@ We welcome relevant submissions from others.
 
 * "Findings Report on the Tor Browser Bundle User Experience" [via hidden web site](http://l7plhliaaob6puqw.onion) or [via Tor2Web](https://l7plhliaaob6puqw.tor2web.org). This report from 2012-2013, summed up research conducted on the user experience (UX) for the Tor Browser bundle.
 
-* "The LibTech Scene and the BSD Projects after Snowden" [via hidden web site](http://twvihadsu5oznuux.onion) and [via Tor2Web](https://twvihadsu5oznuux.tor2web.org) is the basis of a number of birds-of-feather and similar events taking place from 2012 through 2014.
+* "The LibTech Scene and the BSD Projects after Snowden" [via hidden web site](http://twvihadsu5oznuux.onion) and [via Tor2Web](https://twvihadsu5oznuux.tor2web.org) is the basis of a number of birds-of-feather and similar events taking place from 2012 through 2014, including vBSDCon in 2013 and NYCBSDCon 2014.
 
 * An older, partially incomplete how-to entitled "Simple Web Sites with Tor's Hidden Services: Unrestricted and Impossible to Block" [via a hidden web site](http://3vk2dyth3w4zxdba.onion) or [via Tor2Web](https://3vk2dyth3w4zxdba.tor2web.org).
 
 ### Materials ###
 
-* A one-page [informational flier](materials/flier-bsd.html) providing an overview of __TDP__ for a BSD audience.  It's a call for engagement without explaining the case for using the *BSDs. The flier should print out on a single page.
+* A one-page [informational flier](materials/flier-bsd.html) providing an overview of __TDP__ for a BSD audience.  It's a call for engagement in which the case for using the *BSDs is assumed. The flier should print out on a single page.
 
 {{footer.md}}
