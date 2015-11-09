@@ -14,15 +14,15 @@ __The Tor BSD Diversity Project__ is looking for financial support through grant
 
 __TDP__ launched in March 2015, and works to strengthen the Tor public anonymity network by increasing operating system diversity with the BSD Unix operating systems.
 
-Since our beginnings, __TDP__ successfully surpassed a number of significant milestones:
+Since our beginnings, __TDP__ successfully achieved a number of significant milestones:
 
 * designed and implemented five releases of Tor Browser for [OpenBSD](http://www.openbsd.org), with the repository residing [on GitHub](https://github.com/torbsd)
 
 * conducted a number of successful presentations at [BSDCan 2015](https://www.bsdcan.org/2015/) and [BSDCon Brazil](http://2015.bsdcon.com.br), engaging with scores of individuals about __TDP__ and the critical importance of involving BSD users and developers in Tor ecosystem
 
-*our advocacy efforts made Brazil a country of one periodic public Tor relay to about a fifth of the relays, accounting for up to a third of public Tor bandwidth there*
+*our advocacy efforts made Brazil a country of one periodic public BSD Tor relay to about a fifth of the relays, accounting for up to a third of public Tor bandwidth in that country*
 
-* enlisted [New York Internet](https://www.nyi.net) in donating two high-bandwidth public relays at its facility in Bridgewater, New Jersey, with the aim of replicating Mozilla's roll-out of Tor relays among firms that employ the *BSDs
+* enlisted [New York Internet](https://www.nyi.net) to donate two high-bandwidth public relays at its facility in Bridgewater, New Jersey, with the aim of replicating Mozilla's roll-out of Tor relays among firms that employ the *BSDs
 
 * started [how-to guides](relay-guides.html) for building Tor relays on FreeBSD and OpenBSD
 
@@ -30,7 +30,7 @@ Since our beginnings, __TDP__ successfully surpassed a number of significant mil
 
 But __TDP__ wants to do more. Each and every one of our accomplishments is only a first step in a larger set of goals.
 
-* we want to release a maintained Tor Browser for OpenBSD's stable branch, reliable in daily usage, easily forkable to other POSIX-compliant operating systems
+* we want to release a maintained Tor Browser for OpenBSD's stable branch, easily portable to other POSIX-compliant operating systems
 
 * we want to push some of our code changes upstream into the Tor Project and even Mozilla
 
