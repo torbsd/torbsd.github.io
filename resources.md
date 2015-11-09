@@ -104,9 +104,9 @@ We welcome relevant submissions from others.
 
 ### From the Attic ###
 
-* "Findings Report on the Tor Browser Bundle User Experience"[via hidden web site](http://l7plhliaaob6puqw.onion) or [via Tor2Web](https://l7plhliaaob6puqw.tor2web.org). This report from 2012-2013, summed up research conducted on the user experience (UX) for the Tor Browser bundle.
+* "Findings Report on the Tor Browser Bundle User Experience" [via hidden web site](http://l7plhliaaob6puqw.onion) or [via Tor2Web](https://l7plhliaaob6puqw.tor2web.org). This report from 2012-2013, summed up research conducted on the user experience (UX) for the Tor Browser bundle.
 
-* "The LibTech Scene and the BSD Projects after Snowden"[via hidden web site](http://twvihadsu5oznuux.onion) and [via Tor2Web](https://twvihadsu5oznuux.tor2web.org) is the basis of a number of birds-of-feather and similar events taking place from 2012 through 2014.
+* "The LibTech Scene and the BSD Projects after Snowden" [via hidden web site](http://twvihadsu5oznuux.onion) and [via Tor2Web](https://twvihadsu5oznuux.tor2web.org) is the basis of a number of birds-of-feather and similar events taking place from 2012 through 2014.
 
 * An older, not completed how-to entitled "Simple Web Sites with Tor's Hidden Services: Unrestricted and Impossible to Block" [via a hidden web site](http://3vk2dyth3w4zxdba.onion) or [via Tor2Web](https://3vk2dyth3w4zxdba.tor2web.org).
 
