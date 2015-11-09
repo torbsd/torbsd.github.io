@@ -1,4 +1,4 @@
-Mon Nov  9 05:45:34 UTC 2015
+Mon Nov  9 20:01:20 UTC 2015
 
 The Tor BSD Diversity Project
 https://torbsd.github.io/
@@ -7,17 +7,17 @@ Quick-and-Dirty Static Reports
 'Total Relay Count'
 
 Total Relay Quantity:
-6624
+6775
 -------
 -quantity- -platform- -percent-
-5906  Linux         89.1606%
-358   Windows       5.40459%
-245   FreeBSD       3.69867%
-68    OpenBSD       1.02657%
-24    Darwin        0.362319%
-11    NetBSD        0.166063%
-4     SunOS         0.0603865%
-4     Bitrig        0.0603865%
-2     ElectroBSD    0.0301932%
-1     GNU/kFreeBSD  0.0150966%
-1     DragonFly     0.0150966%
+5937  Linux         87.631%
+474   Windows       6.99631%
+246   FreeBSD       3.631%
+67    OpenBSD       0.98893%
+25    Darwin        0.369004%
+12    NetBSD        0.177122%
+4     SunOS         0.0590406%
+4     Bitrig        0.0590406%
+3     ElectroBSD    0.0442804%
+2     DragonFly     0.0295203%
+1     GNU/kFreeBSD  0.0147601%
