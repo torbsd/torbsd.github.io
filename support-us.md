@@ -45,7 +45,7 @@ But __TDP__ wants to do more. Each and every one of our accomplishments is only 
 
 We aren't limiting __TDP__ to those goals. __TDP__ is a dynamic project aiming to adjust to any opportunity to strengthen the Tor network. __TDP__ has a track record and a trajectory of moving forward. 
 
-At this point, __TDP__ is self-funded with resources, time and labor. But those coffers are not limitless. __TDP__ is proud of the accomplishments so far, but the current pace is unsustainable.
+At this point, __TDP__ is self-funded with resources, time and labor. But those coffers are not limitless. __TDP__ is proud of the accomplishments so far, but the current pace is unsustainable without funding.
 
 Please contact __TDP__ if interested in assisting our efforts to allow us to continue the current objectives, and to expand them. 
 

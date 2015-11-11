@@ -1,11 +1,14 @@
-Mon Nov  9 20:02:15 UTC 2015
+Wed Nov 11 19:34:16 UTC 2015
+Data Source: blutmagie.de
 
 The Tor BSD Diversity Project
 https://torbsd.github.io/
 Quick-and-Dirty Static Reports
 
-Country Codes without Public Tor Relays:
-80
+'Country Codes without Public Tor Relays'
+
+Current Count of Country Codes without Public Tor Relays:
+81
 -------
 -country-code-
 AD
@@ -20,7 +23,6 @@ AS
 AW
 AX
 AZ
-BA
 BB
 BD
 BF
@@ -62,9 +64,10 @@ FM
 FO
 GA
 GD
-GE
 GF
+GG
 GH
+GI
 GL
 GM
 GN
@@ -94,15 +97,14 @@ LA
 LB
 LC
 LK
-LR
 LS
 LY
+MA
 MC
 ME
 MF
 MG
 MH
-MK
 ML
 MM
 MN
@@ -137,7 +139,6 @@ PW
 PY
 RW
 SB
-SC
 SD
 SH
 SJ
