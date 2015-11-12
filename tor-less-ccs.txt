@@ -1,4 +1,4 @@
-Thu Nov 12 05:28:59 UTC 2015
+Thu Nov 12 05:50:51 UTC 2015
 Data Source: blutmagie.de
 
 The Tor BSD Diversity Project
@@ -7,7 +7,7 @@ Quick-and-Dirty Static Reports
 
 'Country Codes without Public Tor Relays'
 
-Current Count of Country Codes without Public Tor Relays:
+Number of Country Codes without Public Tor Relays:
 77
 -------
 -country-code-
