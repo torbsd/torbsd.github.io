@@ -26,11 +26,13 @@ Ranking in Kbps of bandwidth provided by each country code, along with the perce
 
 __[Operating Systems Ranks by Bandwidth](bw-rank-os.txt)__
 
-Ranking in Kbps of bandwidth provided by each operating system, with the relevant percentages. The output of this script is what spawned __TDP__ in the first place: the overwhelming role of Linux in providing bandwidth to the Tor network.
+Ranking in Kbps of bandwidth provided by each operating system, with the relevant percentages. This script's results are what spawned __TDP__ in the first place: the overwhelming role of Linux in providing bandwidth to the Tor network.
 
 __[Operating Systems Count](os-count.txt)__
 
-Count of relays by operating system or platform, along with the percentage of each on the Tor network. Another report showing the lack of operating system diversity with Tor relay numbers by operating system or platform. On the point of __TDP's__ central purpose of raising the number of *BSD Tor relays: while there are significantly more Windows relays than FreeBSD or OpenBSD relays, both BSD operating systems provide more bandwidth, indicating a much higher bandwidth average for those two BSDs' relays.
+Count of relays by operating system or platform, along with the percentage of each on the Tor network. This is another report showing the lack of operating system diversity in Tor relay numbers by operating system or platform. On the point of __TDP's__ central purpose of raising the number of *BSD Tor relays: while there are significantly more Windows relays than FreeBSD or OpenBSD relays, both BSD operating systems provide more bandwidth, indicating a much higher bandwidth average for those two BSDs' relays.
+
+Note that many of the Window relays are likely TB users who are contributing bandwidth to the Tor network, accounting for the low percentage provided despite accounting for the second most popular relay operating system. Hats off to those users.
 
 __[Number of Relays per Country Code](relays-by-cc.txt)__
 
