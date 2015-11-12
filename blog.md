@@ -11,13 +11,21 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __November 2015__
 
-[Coming Soon: Quick-and-Dirty Reports](#dirty-reports) &#8916; [Thoughts on Reproducible Builds](#repro-builds) &#8916;  [It's Up to You](#up-to-you)
+[TB 5.0.3 Packages Updated, Again](#tb-update-again) &#8916; [Coming Soon: Quick-and-Dirty Reports](#dirty-reports) &#8916; [Thoughts on Reproducible Builds](#repro-builds) &#8916;  [It's Up to You](#up-to-you)
 
 __October 2015__
 
 [Updated Tor Browser Packages](#tb-update) &#8916; [The BSD Relay Guides](#relay-guides) &#8916; [Our First Bells](#first-bells) &#8916; [Beyond OS Diversity](#beyond-os) &#8916; [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20151111###
+
+<a id="tb-update-again">__TB 5.0.3 Packages Updated, Again__</a> by gman999
+
+The <a href="http://mirrors.nycbug.org/pub/snapshots/amd64/packages">Tor Browser 5.0.3 packages</a> were updated again, due to the need for icu4c version 56.1, although it's now been updated in ports also.
+
+This is all a true story of the constant attention necessary to develop sanely on any operating system: develop on the most current version, and look happy to a stable version release and an automated build process.
 
 ###20151108###
 

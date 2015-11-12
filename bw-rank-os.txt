@@ -1,5 +1,5 @@
-Wed Nov 11 19:02:02 UTC 2015
-Data Source: rueckgr.at
+Thu Nov 12 01:42:11 UTC 2015
+Data Source: blutmagie.de
 
 The Tor BSD Diversity Project
 https://torbsd.github.io/
@@ -8,17 +8,17 @@ Quick-and-Dirty Static Reports
 'Bandwidth Ranking by Operating System Platform'
 
 Total Tor Network Bandwidth:
-19304443 Kbps
+8368551 Kbps
 -----------
--platform-    -Kbps-    -percent-
-Linux         17930293  92.8817%
-FreeBSD       921777    4.77495%
-Windows       227506    1.17852%
-OpenBSD       114387    0.592542%
-Darwin        45156     0.233915%
-SunOS         33007     0.170981%
-NetBSD        12281     0.0636175%
-Bitrig        11972     0.0620168%
-ElectroBSD    4592      0.0237873%
-GNU/kFreeBSD  2074      0.0107436%
-DragonFly     1398      0.00724186%
+-platform-    -Kbps-   -percent-
+Linux         7846134  93.7574%
+FreeBSD       408212   4.87793%
+OpenBSD       38586    0.461083%
+Windows       36042    0.430684%
+SunOS         19821    0.236851%
+Darwin        10425    0.124574%
+Bitrig        3757     0.0448943%
+NetBSD        3005     0.0359082%
+ElectroBSD    2191     0.0261814%
+GNU/kFreeBSD  311      0.00371629%
+DragonFly     67       0.000800616%
