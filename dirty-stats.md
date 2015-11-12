@@ -34,7 +34,7 @@ Count of relays by operating system or platform, along with the percentage of ea
 
 __[Number of Relays per Country Code](relays-by-cc.txt)__
 
-Number of relays by country code. This report shows another ugly diversity picture: over a third of relays are in Germany or the US.
+Number of relays by country code. This report shows another ugly diversity picture: an overwhelming concentration of relays in Germany and the US. For those in countries with fewer relays, or among the country codes of the list below, consider running a relay.
 
 __[Country Codes without Public Tor Relays](tor-less-ccs.txt)__
 
