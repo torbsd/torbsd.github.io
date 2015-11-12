@@ -1,4 +1,4 @@
-Thu Nov 12 11:39:09 UTC 2015
+Thu Nov 12 13:59:53 UTC 2015
 Data Source: blutmagie.de
 
 The Tor BSD Diversity Project
@@ -43,6 +43,7 @@ BZ
 CC
 CD
 CF
+CG
 CI
 CK
 CM
@@ -99,7 +100,6 @@ LC
 LK
 LS
 LY
-MA
 MC
 ME
 MF
@@ -131,6 +131,7 @@ OM
 PE
 PF
 PG
+PH
 PK
 PM
 PN
@@ -174,7 +175,6 @@ UY
 UZ
 VA
 VC
-VE
 VI
 VU
 WF
