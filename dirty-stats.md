@@ -32,7 +32,7 @@ __[Operating Systems Count](os-count.txt)__
 
 Count of relays by operating system or platform, along with the percentage of each on the Tor network. This is another report showing the lack of operating system diversity in Tor relay numbers by operating system or platform. On the point of __TDP's__ central purpose of raising the number of *BSD Tor relays: while there are significantly more Windows relays than FreeBSD or OpenBSD relays, both BSD operating systems provide more bandwidth, indicating a much higher bandwidth average for those two BSDs' relays.
 
-Note that many of the Window relays are likely TB users who are contributing bandwidth to the Tor network, accounting for the low percentage provided despite accounting for the second most popular relay operating system. Hats off to those users.
+Note that many of the Windows relays are likely TB users who are contributing bandwidth to the Tor network, accounting for the low percentage of bandwidth provided despite accounting for the second most popular relay operating system. Hats off to those users.
 
 __[Number of Relays per Country Code](relays-by-cc.txt)__
 
