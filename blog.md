@@ -23,7 +23,7 @@ __October 2015__
 
 <a id="tb-update-again">__TB 5.0.3 Packages Updated, Again__</a> by gman999
 
-The <a href="http://mirrors.nycbug.org/pub/snapshots/packages/amd64">Tor Browser 5.0.3 packages</a> were updated again, due to the need for icu4c version 56.1, although it's now been updated in ports also. Be sure to read the README.20151111 file for install information.  devel/nspr still needs to be at version 4.10.10, while the OpenBSD ports tree version is still at 4.10.8, so install that from our repository first.
+The <a href="http://mirrors.nycbug.org/pub/snapshots/packages/amd64">Tor Browser 5.0.3 packages</a> were updated again, due to the need for icu4c version 56.1. Both devel/nspr and textproc/icu4c are updated in the OpenBSD ports tree, and the TB packages have been rebuilt for them. Be sure to make sure packages or ports are updated before installing. If the host is updated, there's no need to use our devel/nspr or textproc/icu4c packages.
 
 This is all a true story of the constant attention necessary to develop sanely on any operating system: develop on the most current version, and look forward to an automated build process for it, but ultimately a stable version is a beautiful thing.
 
