@@ -11,7 +11,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 There is a long list of applications spawned by the interest in privacy and anonymity solutions over the past several years.
 
-This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them.
+This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained. Is shells/bash a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them.
 
 The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use the [web site's "issues" page for any edits](https://github.com/torbsd/torbsd.github.io/issues/).
 
