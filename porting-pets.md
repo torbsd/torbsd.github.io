@@ -13,58 +13,36 @@ There is a long list of applications spawned by the interest in privacy and anon
 
 This is a list of some of those applications. Most have not been ported to any of the BSDs. Many probably shouldn't be ported to the BSDs or any other sane operating system. But this list is at least an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them.
 
-* tool-name
+tool-name
+: short-descr
+: www-site
+: license
+: download-url
+: version
 
-short-descr
+MAT
+: tool for removing metadata from various file types
+: https://mat.boum.org
+: GPL v2
+: https://gitweb.torproject.org/user/jvoisin/mat/
+: 0.5.4
 
-www-site
+ExifTool 
+: tool for editing, reading, writing metadata on a variety of file types 
+: http://owl.phy.queensu.ca/~phil/exiftool/
+: Perl: either GPL v1 or later or Artistic License
+: http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz
+: 10.05
 
-license
-
-download-url
-
-version
-
-
-* MAT
-
-tool for removing metadata from various file types
-
-https://mat.boum.org
-
-GPL v2
-
-https://gitweb.torproject.org/user/jvoisin/mat/
-
-0.5.4
-
-
-* ExifTool 
-
-tool for editing, reading, writing metadata on a variety of file types 
-
-http://owl.phy.queensu.ca/~phil/exiftool/
-
-Perl: either GPL v1 or later or Artistic License
-
-http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz
-
-10.05
-
-* Exiv2
-
-command-line utility to manage image metadata
-
-http://www.exiv2.org
-
-GPLv2 or commercial
-
-http://www.exiv2.org/exiv2-0.25.tar.gz
-
-0.25
+Exiv2
+: command-line utility to manage image metadata
+: http://www.exiv2.org
+: GPLv2 or commercial
+: http://www.exiv2.org/exiv2-0.25.tar.gz
+: 0.25
 
 jhead
-tool for manipulating JPEG EXIF files
+: tool for manipulating JPEG EXIF files
 http://www.sentex.net/~mwandel/jhead/
 public domain
 http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz
