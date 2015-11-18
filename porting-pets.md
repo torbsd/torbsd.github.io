@@ -163,44 +163,54 @@ RetroShare
 ChatSecure
 : https://www.chatsecure.org
 
-https://github.com/chatsecure
+: https://github.com/chatsecure
 
-Kontalk
+Kontalk client and server
 : https://github.com/kontalk
 
 SparkleShare
+: Git-based file synchronization tool
 : http://sparkleshare.org
-: GPL v3
+: GPLv3
 : https://github.com/hbons/SparkleShare
+: 1.4
 
 Ring
 : https://ring.cx
-: no source, only clients
+: no source, only clients?
 
 Tox
+: UDP-based communications platform
 : https://tox.chat
 : https://github.com/irungentoo/toxcore
 
 Syncany
+: open-source cloud storage and filesharing application
 : https://www.syncany.org
 : GPLv3
 : https://github.com/syncany/syncany
+: 0.4.7-alpha
 
 Syncthing
+: open-source cloud storage and synchronization
 : https://syncthing.net
-
+: MPLv2
 : https://github.com/syncthing/syncthing
+: 0.12.3
 
-Libretree
-: http://libretree.org
-
-: https://github.com/Libretree/libretree
+Libertree
+: open-source platform for creating private social networks
+: http://www.libertree.org
+: GPLv3
+: https://github.com/LiberTree/libertree
+: 
 
 sslyze
 : full-featured SSL scanner
 : 
 : GPLv2
 : https://github.com/nabla-c0d3/sslyze
+: 0.10
 
 ooni-probe
 : network measurement framework for detecting network interference
@@ -226,6 +236,12 @@ Martus Server
 : https://www.martus.org
 : was on code.google.com, now
 
+SecureDrop
+: open-source whistleblower submission system
+: https://securedrop.org/
+: AGPL
+: https://github.com/freedomofpress/securedrop/
+: 0.3.6
 
 to add:
 
@@ -235,6 +251,7 @@ github.com/SilentCircle
 
 github.com/TheTorProject
 
+github.com/freedomofpress
 
 
 
