@@ -13,22 +13,22 @@ There is a long list of applications spawned by the interest in privacy and anon
 
 This is a list of some of those applications. Most have not been ported to any of the BSDs. Many probably shouldn't be ported to the BSDs or any other sane operating system. But this list is at least an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them.
 
-tool-name
-short-descr
-www-site
-license
-download-url
-version
+tool-name 
+short-descr 
+www-site 
+license 
+download-url 
+version 
 
-MAT
-tool for removing metadata from various file types
-https://mat.boum.org
-GPL v2
-https://gitweb.torproject.org/user/jvoisin/mat/
-0.5.4
+MAT 
+tool for removing metadata from various file types 
+https://mat.boum.org 
+GPL v2 
+https://gitweb.torproject.org/user/jvoisin/mat/ 
+0.5.4 
 
-ExifTool
-tool for editing, reading, writing metadata on a variety of file types
+ExifTool 
+tool for editing, reading, writing metadata on a variety of file types 
 http://owl.phy.queensu.ca/~phil/exiftool/
 Perl: either GPL v1 or later or Artistic License
 http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz
@@ -49,9 +49,14 @@ http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz
 3.00
 
 pdf-redact-tools
-
+tools to redact and strip metadata from documents
+https://firstlook.org/code/project/pdf-redact-tools/
+GPL v3
+https://github.com/firstlook/pdf-redact-tools/
+0.1
 
 autocanary
+
 
 sigbin
 
