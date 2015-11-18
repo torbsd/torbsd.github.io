@@ -333,16 +333,20 @@ Libertree
 : http://www.libertree.org
 : GPLv3
 : https://github.com/LiberTree/libertree
-: FreeBSD
-: OpenBSD
-: pkgsrc
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
 : DPorts
+
 sslyze
 : full-featured SSL scanner
-: 
 : GPLv2
 : https://github.com/nabla-c0d3/sslyze
 : 0.10
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 
 ooni-probe
 : network measurement framework for detecting network interference
@@ -350,6 +354,10 @@ ooni-probe
 : BSD-like, see LICENSE
 : https://github.com/TheTorProject/ooni-probe/
 : 1.3.1
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 
 blockfinder
 : tool for enumerating network information by country
@@ -357,16 +365,28 @@ blockfinder
 : BSD-like, see LICENSE
 : https://github.com/ioerror/blockfinder/
 : 3.1?
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 
 Martus Desktop
 : platform for collecting, safeguarding, organizing and sharing info
 : https://www.martus.org
 : was on code.google.com, now?
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 
 Martus Server
 : platform for collecting, safeguarding, organizing and sharing info
 : https://www.martus.org
 : was on code.google.com, now
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 
 SecureDrop
 : open-source whistleblower submission system
@@ -374,6 +394,10 @@ SecureDrop
 : AGPL
 : https://github.com/freedomofpress/securedrop/
 : 0.3.6
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 
 to add:
 
