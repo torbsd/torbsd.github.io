@@ -11,7 +11,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 There is a long list of applications spawned by the interest in privacy and anonymity solutions over the past several years.
 
-This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. But this list is at least an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them.
+This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them.
 
 tool-name
 : short-descr
@@ -56,9 +56,18 @@ pdf-redact-tools
 : 0.1
 
 autocanary
-
+: desktop application for generating machine-readable, signed canary statements
+: https://firstlook.org/code/project/autocanary
+: GPL v3
+: https://github.com/firstlook/autocanary/
+: 0.1
 
 sigbin
+: web application for storing PGP-signed messages
+: none
+: GPL v3
+: https://github.com/firstlook/sigbin/
+: ?
 
 keepassx
 
