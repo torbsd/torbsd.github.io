@@ -37,6 +37,7 @@ PAGES=		index.html \
 		blog.html \
 		dirty-stats.html \
 		support-us.html \
+		porting-pets.html \
 
 BOILERPLATE=	header.md footer.md
 
@@ -62,6 +63,7 @@ corp-relays.html: corp-relays.md $(BOILERPLATE)
 blog.html: blog.md $(BOILERPLATE)
 dirty-stats.html: dirty-stats.md $(BOILERPLATE)
 support-us.html: support-us.md $(BOILERPLATE)
+porting-pets.html: porting-pets.md $(BOILERPLATE)
 
 ## The rest of this file makes the above possible...
 ## ... but only YOU can make it necessary.
