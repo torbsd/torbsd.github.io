@@ -13,6 +13,8 @@ There is a long list of applications spawned by the interest in privacy and anon
 
 This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them.
 
+The listed information should be considered a guide but should be confirmed due to our mistakes or changes. Please use the [web site's "issues" page for any edits](https://github.com/torbsd/torbsd.github.io/issues/)
+
 tool-name
 : short-descr
 : www-site
@@ -70,9 +72,23 @@ sigbin
 : ?
 
 keepassx
+: password management utility
+: http://www.keepassx.org/
+: GPL v 2 and various
+: https://github.com/keepassx/keepassx/
+: 2.0 Beta 2
 
 torbirdy
 : Firefox add-on
+: see LICENSE
+: https://github.com/ioerror/torbirdy
+:
+
+tlsdate
+: secure parasitic rdate replacement
+: 
+: BSD-like, see LICENSE
+: https://github.com/ioerror/tlsdate/
 
 HTTPS Everywhere
 : Firefox add-on
@@ -163,9 +179,32 @@ Libretree
 
 : https://github.com/Libretree/libretree
 
+sslyze
+: full-featured SSL scanner
+: 
+: GPLv2
+: https://github.com/nabla-c0d3/sslyze
+
+ooni-probe
+: network measurement framework for detecting network interference
+: https://ooni.torproject.org
+: BSD-like, see LICENSE
+: https://github.com/TheTorProject/ooni-probe/
+: 1.3.1
+
+blockfinder
+: tool for enumerating network information by country
+: 
+: BSD-like, see LICENSE
+: https://github.com/ioerror/blockfinder/
+: 3.1?
 
 
+to add:
 
+github.com/ioerror
+github.com/SilentCircle
+github.com/TheTorProject
 
 
 
@@ -174,3 +213,4 @@ Libretree
 
 
 {{footer.md}}
+
