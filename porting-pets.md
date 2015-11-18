@@ -11,9 +11,9 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 There is a long list of applications spawned by the interest in privacy and anonymity solutions over the past several years.
 
-This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them.
+This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them.
 
-The listed information should be considered a guide but should be confirmed due to our mistakes or changes. Please use the [web site's "issues" page for any edits](https://github.com/torbsd/torbsd.github.io/issues/).
+The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use the [web site's "issues" page for any edits](https://github.com/torbsd/torbsd.github.io/issues/).
 
 tool-name
 : short-descr
@@ -33,9 +33,9 @@ MAT
 : GPL v2
 : https://gitweb.torproject.org/user/jvoisin/mat.git
 : 0.5.4
-: FreeBSD 
-: OpenBSD
-: pkgsrc
+: FreeBSD: no 
+: OpenBSD: no
+: pkgsrc: no
 : DPorts
 : notes:
 
@@ -45,10 +45,10 @@ ExifTool
 : Perl: either GPL v1 or later or Artistic License
 : http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz
 : 10.05
-: FreeBSD: https://freshports.org/graphics/p5-Image-ExifTool-devel/
-: OpenBSD: 
-: pkgsrc: 
-: DPorts: https://github.com/DragonFlyBSD/DPorts/tree/master/graphics/p5-Image-ExifTool-devel/
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: yes
+: DPorts: yes
 : notes:
 
 
@@ -58,10 +58,10 @@ Exiv2
 : GPLv2 or commercial
 : http://www.exiv2.org/exiv2-0.25.tar.gz
 : 0.25
-: FreeBSD: https://freshports.org/graphics/exiv2/
-: OpenBSD
-: pkgsrc: http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/graphics/exiv2/README.html
-: DPorts: https://github.com/DragonFlyBSD/DPorts/tree/master/graphics/exiv2/
+: FreeBSD: yes
+: OpenBSD: yes
+: pkgsrc: yes
+: DPorts: yes
 : notes:
 
 jhead
@@ -70,9 +70,9 @@ jhead
 : public domain
 : http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz
 : 3.00
-: FreeBSD: https://freshports.org/graphics/jhead/
-: OpenBSD: 
-: pkgsrc: http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/graphics/jhead/README.html
+: FreeBSD: yes
+: OpenBSD: yes
+: pkgsrc: yes
 : DPorts:
 : notes:
 
@@ -82,9 +82,9 @@ pdf-redact-tools
 : GPL v3
 : https://github.com/firstlook/pdf-redact-tools/
 : 0.1
-: FreeBSD
-: OpenBSD
-: pkgsrc
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
 : DPorts
 : notes:
 
@@ -94,9 +94,9 @@ autocanary
 : GPL v3
 : https://github.com/firstlook/autocanary/
 : 0.1
-: FreeBSD
-: OpenBSD
-: pkgsrc
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
 : DPorts
 : notes:
 
@@ -106,9 +106,9 @@ sigbin
 : GPL v3
 : https://github.com/firstlook/sigbin/
 : ?
-: FreeBSD
-: OpenBSD
-: pkgsrc
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
 : DPorts
 : notes:
 
@@ -122,6 +122,7 @@ keepassx
 : OpenBSD: yes
 : pkgsrc: yes
 : DPorts: yes
+: notes:
 
 torbirdy
 : Thunderbird add-on for using accessing email over the Tor network
@@ -133,6 +134,7 @@ torbirdy
 : OpenBSD
 : pkgsrc
 : DPorts
+: notes: should Mozilla add-ons be their own ports? What about ugly /bin/bash installs which require shells/bash as dependencies?
 
 tlsdate
 : secure parasitic rdate replacement
@@ -144,14 +146,15 @@ tlsdate
 : OpenBSD: no
 : pkgsrc: no
 : DPorts
+: notes: 
 
 HTTPS Everywhere
 : Firefox add-on
-: FreeBSD
-: OpenBSD
-: pkgsrc
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
 : DPorts
-: notes: /bin/bash install script
+: notes: /bin/bash install script, and therefore a frivilous dependency
 
 Jitsi
 : XMPP/SIP client
@@ -163,6 +166,7 @@ Jitsi
 : OpenBSD: no
 : pkgsrc: no
 : DPorts
+: notes: Java-based as a shortcut to portability
 
 Ricochet
 : instant messaging client
@@ -170,7 +174,7 @@ Ricochet
 : BSD-like
 : https://github.com/ricochet-im/ricochet/
 : 1.1.1
-: FreeBSD
+: FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts
@@ -186,7 +190,7 @@ Etherpad
 : 1.5.7
 : FreeBSD: no
 : OpenBSD: no
-: pkgsrc
+: pkgsrc: no
 : DPorts
 
 EtherCalc
@@ -217,22 +221,22 @@ gpg4usb
 : 0.3.3-1
 : FreeBSD: no
 : OpenBSD: no
-: pkgsrc
+: pkgsrc: no
 : DPorts
 
 Whiteout Mail
 : https://whiteout.io/technology.html
-: FreeBSD
-: OpenBSD
-: pkgsrc
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
 : DPorts
 
 Mailpile
 : http://www.mailpile.is
 : https://github.com/mailpile/Mailpile
-: FreeBSD
-: OpenBSD
-: pkgsrc
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: no
 : DPorts
 
 Bitmessage
@@ -294,7 +298,7 @@ Ring
 : no source, only clients?
 : FreeBSD
 : OpenBSD: no
-: pkgsrc
+: pkgsrc: no
 : DPorts
 
 Tox

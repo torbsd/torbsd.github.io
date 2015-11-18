@@ -19,9 +19,9 @@
 
 <p>There is a long list of applications spawned by the interest in privacy and anonymity solutions over the past several years.</p>
 
-<p>This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably <em>shouldn&#8217;t</em> be ported to the BSDs or any other sane operating system. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them.</p>
+<p>This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably <em>shouldn&#8217;t</em> be ported to the BSDs or any other sane operating system. Some are unmaintained. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them.</p>
 
-<p>The listed information should be considered a guide but should be confirmed due to our mistakes or changes. Please use the <a href="https://github.com/torbsd/torbsd.github.io/issues/">web site&#8217;s &#8220;issues&#8221; page for any edits</a>.</p>
+<p>The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use the <a href="https://github.com/torbsd/torbsd.github.io/issues/">web site&#8217;s &#8220;issues&#8221; page for any edits</a>.</p>
 
 <dl>
 <dt>tool-name</dt>
@@ -56,11 +56,11 @@
 
 <dd>0.5.4</dd>
 
-<dd>FreeBSD</dd>
+<dd>FreeBSD: no</dd>
 
-<dd>OpenBSD</dd>
+<dd>OpenBSD: no</dd>
 
-<dd>pkgsrc</dd>
+<dd>pkgsrc: no</dd>
 
 <dd>DPorts</dd>
 
@@ -77,13 +77,13 @@
 
 <dd>10.05</dd>
 
-<dd>FreeBSD: https://freshports.org/graphics/p5-Image-ExifTool-devel/</dd>
+<dd>FreeBSD: yes</dd>
 
-<dd>OpenBSD:</dd>
+<dd>OpenBSD: no</dd>
 
-<dd>pkgsrc:</dd>
+<dd>pkgsrc: yes</dd>
 
-<dd>DPorts: https://github.com/DragonFlyBSD/DPorts/tree/master/graphics/p5-Image-ExifTool-devel/</dd>
+<dd>DPorts: yes</dd>
 
 <dd>notes:</dd>
 
@@ -98,13 +98,13 @@
 
 <dd>0.25</dd>
 
-<dd>FreeBSD: https://freshports.org/graphics/exiv2/</dd>
+<dd>FreeBSD: yes</dd>
 
-<dd>OpenBSD</dd>
+<dd>OpenBSD: yes</dd>
 
-<dd>pkgsrc: http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/graphics/exiv2/README.html</dd>
+<dd>pkgsrc: yes</dd>
 
-<dd>DPorts: https://github.com/DragonFlyBSD/DPorts/tree/master/graphics/exiv2/</dd>
+<dd>DPorts: yes</dd>
 
 <dd>notes:</dd>
 
@@ -119,11 +119,11 @@
 
 <dd>3.00</dd>
 
-<dd>FreeBSD: https://freshports.org/graphics/jhead/</dd>
+<dd>FreeBSD: yes</dd>
 
-<dd>OpenBSD:</dd>
+<dd>OpenBSD: yes</dd>
 
-<dd>pkgsrc: http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/graphics/jhead/README.html</dd>
+<dd>pkgsrc: yes</dd>
 
 <dd>DPorts:</dd>
 
@@ -140,11 +140,11 @@
 
 <dd>0.1</dd>
 
-<dd>FreeBSD</dd>
+<dd>FreeBSD: no</dd>
 
-<dd>OpenBSD</dd>
+<dd>OpenBSD: no</dd>
 
-<dd>pkgsrc</dd>
+<dd>pkgsrc: no</dd>
 
 <dd>DPorts</dd>
 
@@ -161,11 +161,11 @@
 
 <dd>0.1</dd>
 
-<dd>FreeBSD</dd>
+<dd>FreeBSD: no</dd>
 
-<dd>OpenBSD</dd>
+<dd>OpenBSD: no</dd>
 
-<dd>pkgsrc</dd>
+<dd>pkgsrc: no</dd>
 
 <dd>DPorts</dd>
 
@@ -182,11 +182,11 @@
 
 <dd>?</dd>
 
-<dd>FreeBSD</dd>
+<dd>FreeBSD: no</dd>
 
-<dd>OpenBSD</dd>
+<dd>OpenBSD: no</dd>
 
-<dd>pkgsrc</dd>
+<dd>pkgsrc: no</dd>
 
 <dd>DPorts</dd>
 
@@ -211,6 +211,8 @@
 
 <dd>DPorts: yes</dd>
 
+<dd>notes:</dd>
+
 <dt>torbirdy</dt>
 <dd>Thunderbird add-on for using accessing email over the Tor network</dd>
 
@@ -229,6 +231,8 @@
 <dd>pkgsrc</dd>
 
 <dd>DPorts</dd>
+
+<dd>notes: should Mozilla add-ons be their own ports? What about ugly /bin/bash installs which require shells/bash as dependencies?</dd>
 
 <dt>tlsdate</dt>
 <dd>secure parasitic rdate replacement</dd>
@@ -249,18 +253,20 @@
 
 <dd>DPorts</dd>
 
+<dd>notes:</dd>
+
 <dt>HTTPS Everywhere</dt>
 <dd>Firefox add-on</dd>
 
-<dd>FreeBSD</dd>
+<dd>FreeBSD: no</dd>
 
-<dd>OpenBSD</dd>
+<dd>OpenBSD: no</dd>
 
-<dd>pkgsrc</dd>
+<dd>pkgsrc: no</dd>
 
 <dd>DPorts</dd>
 
-<dd>notes: /bin/bash install script</dd>
+<dd>notes: /bin/bash install script, and therefore a frivilous dependency</dd>
 
 <dt>Jitsi</dt>
 <dd>XMPP/SIP client</dd>
@@ -281,6 +287,8 @@
 
 <dd>DPorts</dd>
 
+<dd>notes: Java-based as a shortcut to portability</dd>
+
 <dt>Ricochet</dt>
 <dd>instant messaging client</dd>
 
@@ -292,7 +300,7 @@
 
 <dd>1.1.1</dd>
 
-<dd>FreeBSD</dd>
+<dd>FreeBSD: no</dd>
 
 <dd>OpenBSD: no</dd>
 
@@ -318,7 +326,7 @@
 
 <dd>OpenBSD: no</dd>
 
-<dd>pkgsrc</dd>
+<dd>pkgsrc: no</dd>
 
 <dd>DPorts</dd>
 
@@ -371,18 +379,18 @@
 
 <dd>OpenBSD: no</dd>
 
-<dd>pkgsrc</dd>
+<dd>pkgsrc: no</dd>
 
 <dd>DPorts</dd>
 
 <dt>Whiteout Mail</dt>
 <dd>https://whiteout.io/technology.html</dd>
 
-<dd>FreeBSD</dd>
+<dd>FreeBSD: no</dd>
 
-<dd>OpenBSD</dd>
+<dd>OpenBSD: no</dd>
 
-<dd>pkgsrc</dd>
+<dd>pkgsrc: no</dd>
 
 <dd>DPorts</dd>
 
@@ -391,11 +399,11 @@
 
 <dd>https://github.com/mailpile/Mailpile</dd>
 
-<dd>FreeBSD</dd>
+<dd>FreeBSD: yes</dd>
 
-<dd>OpenBSD</dd>
+<dd>OpenBSD: no</dd>
 
-<dd>pkgsrc</dd>
+<dd>pkgsrc: no</dd>
 
 <dd>DPorts</dd>
 
@@ -496,7 +504,7 @@
 
 <dd>OpenBSD: no</dd>
 
-<dd>pkgsrc</dd>
+<dd>pkgsrc: no</dd>
 
 <dd>DPorts</dd>
 
@@ -689,7 +697,7 @@
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Wed Nov 18 17:08:55 2015 -0500</code></p>
+<p><code>last updated: Wed Nov 18 17:20:10 2015 -0500</code></p>
 
 </body>
 </html>
