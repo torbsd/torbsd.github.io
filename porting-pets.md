@@ -25,6 +25,7 @@ tool-name
 : OpenBSD
 : pkgsrc
 : DPorts
+: notes
 
 MAT
 : tool for removing metadata from various file types
@@ -58,7 +59,7 @@ Exiv2
 : FreeBSD: https://freshports.org/graphics/exiv2/
 : OpenBSD
 : pkgsrc: http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/graphics/exiv2/README.html
-: DPorts
+: DPorts: https://github.com/DragonFlyBSD/DPorts/tree/master/graphics/exiv2/
 
 jhead
 : tool for manipulating JPEG EXIF files
