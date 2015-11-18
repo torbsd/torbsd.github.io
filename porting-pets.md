@@ -63,18 +63,20 @@ sigbin
 keepassx
 
 torbirdy
+: Firefox add-on
 
-httpse
+HTTPS Everywhere
+: Firefox add-on
 
 jitsi
 
 Ricochet
 : https://ricochet.im
-
 : https://github.com/ricochet-im/ricochet/
 
 
 noscript
+: Firefox add-on
 
 Etherpad
 : http://etherpad.org
