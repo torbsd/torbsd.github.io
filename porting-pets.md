@@ -55,6 +55,10 @@ Exiv2
 : GPLv2 or commercial
 : http://www.exiv2.org/exiv2-0.25.tar.gz
 : 0.25
+: FreeBSD: https://freshports.org/graphics/exiv2/
+: OpenBSD
+: pkgsrc: http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/graphics/exiv2/README.html
+: DPorts
 
 jhead
 : tool for manipulating JPEG EXIF files
@@ -62,6 +66,10 @@ jhead
 : public domain
 : http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz
 : 3.00
+: FreeBSD: https://freshports.org/graphics/jhead/
+: OpenBSD: 
+: pkgsrc: http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/graphics/jhead/README.html
+: DPorts:
 
 pdf-redact-tools
 : tools to redact and strip metadata from documents
@@ -69,6 +77,10 @@ pdf-redact-tools
 : GPL v3
 : https://github.com/firstlook/pdf-redact-tools/
 : 0.1
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
 
 autocanary
 : desktop application for generating machine-readable, signed canary statements
@@ -76,6 +88,10 @@ autocanary
 : GPL v3
 : https://github.com/firstlook/autocanary/
 : 0.1
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
 
 sigbin
 : web application for storing PGP-signed messages
@@ -83,6 +99,10 @@ sigbin
 : GPL v3
 : https://github.com/firstlook/sigbin/
 : ?
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
 
 keepassx
 : password management utility
@@ -90,6 +110,10 @@ keepassx
 : GPL v 2 and various
 : https://github.com/keepassx/keepassx/
 : 2.0 Beta 2
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
 
 torbirdy
 : Thunderbird add-on for using accessing email over the Tor network
@@ -97,6 +121,10 @@ torbirdy
 : see LICENSE
 : https://gitweb.torproject.org/torbirdy.git
 : 0.1.4
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
 
 tlsdate
 : secure parasitic rdate replacement
@@ -104,9 +132,18 @@ tlsdate
 : BSD-like, see LICENSE
 : https://github.com/ioerror/tlsdate/
 : 0.0.13
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
 
 HTTPS Everywhere
 : Firefox add-on
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
+: notes: /bin/bash install script
 
 Jitsi
 : XMPP/SIP client
@@ -114,6 +151,10 @@ Jitsi
 : Apache
 : https://download.jitsi.org/jitsi/src/
 : 2.8.5426
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
 
 Ricochet
 : instant messaging client
@@ -121,6 +162,10 @@ Ricochet
 : BSD-like
 : https://github.com/ricochet-im/ricochet/
 : 1.1.1
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
 
 noscript
 : Firefox add-on
@@ -131,6 +176,10 @@ Etherpad
 : Apache 2.0
 : https://github.com/ether/etherpad-lite
 : 1.5.7
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
 
 EtherCalc
 : collaborative spreadsheet application
