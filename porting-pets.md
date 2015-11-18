@@ -26,7 +26,7 @@ download-url
 version
 
 
-MAT
+* MAT
 
 tool for removing metadata from various file types
 
@@ -39,18 +39,28 @@ https://gitweb.torproject.org/user/jvoisin/mat/
 0.5.4
 
 
-ExifTool 
+* ExifTool 
+
 tool for editing, reading, writing metadata on a variety of file types 
+
 http://owl.phy.queensu.ca/~phil/exiftool/
+
 Perl: either GPL v1 or later or Artistic License
+
 http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz
+
 10.05
 
-Exiv2
+* Exiv2
+
 command-line utility to manage image metadata
+
 http://www.exiv2.org
+
 GPLv2 or commercial
+
 http://www.exiv2.org/exiv2-0.25.tar.gz
+
 0.25
 
 jhead
