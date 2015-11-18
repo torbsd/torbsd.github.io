@@ -79,16 +79,18 @@ keepassx
 : 2.0 Beta 2
 
 torbirdy
-: Firefox add-on
+: Thunderbird add-on for using accessing email over the Tor network
+: https://trac.torproject.org/projects/tor/wiki/torbirdy/
 : see LICENSE
-: https://github.com/ioerror/torbirdy
-:
+: https://gitweb.torproject.org/torbirdy.git
+: 0.1.4
 
 tlsdate
 : secure parasitic rdate replacement
-: 
+: https://trac.torproject.org/projects/tor/wiki/torbirdy/
 : BSD-like, see LICENSE
 : https://github.com/ioerror/tlsdate/
+: 0.0.13
 
 HTTPS Everywhere
 : Firefox add-on
@@ -199,11 +201,23 @@ blockfinder
 : https://github.com/ioerror/blockfinder/
 : 3.1?
 
+Martus Desktop
+: platform for collecting, safeguarding, organizing and sharing info
+: https://www.martus.org
+: was on code.google.com, now?
+
+Martus Server
+: platform for collecting, safeguarding, organizing and sharing info
+: https://www.martus.org
+: was on code.google.com, now
+
 
 to add:
 
 github.com/ioerror
+
 github.com/SilentCircle
+
 github.com/TheTorProject
 
 
