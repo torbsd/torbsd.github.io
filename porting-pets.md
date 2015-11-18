@@ -95,33 +95,48 @@ tlsdate
 HTTPS Everywhere
 : Firefox add-on
 
-jitsi
+Jitsi
+: XMPP/SIP client
+: https://jitsi.org
+: Apache
+: https://download.jitsi.org/jitsi/src/
+: 2.8.5426
 
 Ricochet
+: instant messaging client
 : https://ricochet.im
+: BSD-like
 : https://github.com/ricochet-im/ricochet/
-
+: 1.1.1
 
 noscript
 : Firefox add-on
 
 Etherpad
+: collaborative editing application
 : http://etherpad.org
 : Apache 2.0
 : https://github.com/ether/etherpad-lite
+: 1.5.7
 
 EtherCalc
+: collaborative spreadsheet application
 : https://ethercalc.net
 : CPAL 1.0 Artistic License 2.0
 : https://github.com/audreyt/ethercalc
 
-Turtl
-: turtl.it
+Turtl: server, client
+: personal database and note-taking application
+: GPLv3?
+: https://turtl.it
+: 0.5.2.2
 
 gpg4usb
+: portable editor for encrypting and decrypting files
 : http://www.gpg4usb.org
-: GPL
+: GPLv3
 : https://github.com/gpg4usb/gpg4usb
+: 0.3.3-1
 
 Whiteout Mail
 : https://whiteout.io/technology.html
