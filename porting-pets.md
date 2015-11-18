@@ -19,15 +19,23 @@ tool-name
 : short-descr
 : www-site
 : license
-: download-url
+: source-path
 : version
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
 
 MAT
 : tool for removing metadata from various file types
 : https://mat.boum.org
 : GPL v2
-: https://gitweb.torproject.org/user/jvoisin/mat/
+: https://gitweb.torproject.org/user/jvoisin/mat.git
 : 0.5.4
+: FreeBSD 
+: OpenBSD
+: pkgsrc
+: DPorts
 
 ExifTool 
 : tool for editing, reading, writing metadata on a variety of file types 
@@ -35,6 +43,11 @@ ExifTool
 : Perl: either GPL v1 or later or Artistic License
 : http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz
 : 10.05
+: FreeBSD: https://freshports.org/graphics/p5-Image-ExifTool-devel/
+: OpenBSD: 
+: pkgsrc: 
+: DPorts: https://github.com/DragonFlyBSD/DPorts/tree/master/graphics/p5-Image-ExifTool-devel/
+
 
 Exiv2
 : command-line utility to manage image metadata
