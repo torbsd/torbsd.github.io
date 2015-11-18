@@ -37,6 +37,7 @@ MAT
 : OpenBSD
 : pkgsrc
 : DPorts
+: notes:
 
 ExifTool 
 : tool for editing, reading, writing metadata on a variety of file types 
@@ -48,6 +49,7 @@ ExifTool
 : OpenBSD: 
 : pkgsrc: 
 : DPorts: https://github.com/DragonFlyBSD/DPorts/tree/master/graphics/p5-Image-ExifTool-devel/
+: notes:
 
 
 Exiv2
@@ -60,6 +62,7 @@ Exiv2
 : OpenBSD
 : pkgsrc: http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/graphics/exiv2/README.html
 : DPorts: https://github.com/DragonFlyBSD/DPorts/tree/master/graphics/exiv2/
+: notes:
 
 jhead
 : tool for manipulating JPEG EXIF files
@@ -71,6 +74,7 @@ jhead
 : OpenBSD: 
 : pkgsrc: http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/graphics/jhead/README.html
 : DPorts:
+: notes:
 
 pdf-redact-tools
 : tools to redact and strip metadata from documents
@@ -82,6 +86,7 @@ pdf-redact-tools
 : OpenBSD
 : pkgsrc
 : DPorts
+: notes:
 
 autocanary
 : desktop application for generating machine-readable, signed canary statements
@@ -93,6 +98,7 @@ autocanary
 : OpenBSD
 : pkgsrc
 : DPorts
+: notes:
 
 sigbin
 : web application for storing PGP-signed messages
@@ -104,6 +110,7 @@ sigbin
 : OpenBSD
 : pkgsrc
 : DPorts
+: notes:
 
 keepassx
 : password management utility
@@ -111,10 +118,10 @@ keepassx
 : GPL v 2 and various
 : https://github.com/keepassx/keepassx/
 : 2.0 Beta 2
-: FreeBSD
-: OpenBSD
-: pkgsrc
-: DPorts
+: FreeBSD: yes
+: OpenBSD: yes
+: pkgsrc: yes
+: DPorts: yes
 
 torbirdy
 : Thunderbird add-on for using accessing email over the Tor network
@@ -133,9 +140,9 @@ tlsdate
 : BSD-like, see LICENSE
 : https://github.com/ioerror/tlsdate/
 : 0.0.13
-: FreeBSD
-: OpenBSD
-: pkgsrc
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: no
 : DPorts
 
 HTTPS Everywhere
@@ -152,9 +159,9 @@ Jitsi
 : Apache
 : https://download.jitsi.org/jitsi/src/
 : 2.8.5426
-: FreeBSD
-: OpenBSD
-: pkgsrc
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: no
 : DPorts
 
 Ricochet
@@ -164,8 +171,8 @@ Ricochet
 : https://github.com/ricochet-im/ricochet/
 : 1.1.1
 : FreeBSD
-: OpenBSD
-: pkgsrc
+: OpenBSD: no
+: pkgsrc: no
 : DPorts
 
 noscript
@@ -177,8 +184,8 @@ Etherpad
 : Apache 2.0
 : https://github.com/ether/etherpad-lite
 : 1.5.7
-: FreeBSD
-: OpenBSD
+: FreeBSD: no
+: OpenBSD: no
 : pkgsrc
 : DPorts
 
@@ -187,12 +194,20 @@ EtherCalc
 : https://ethercalc.net
 : CPAL 1.0 Artistic License 2.0
 : https://github.com/audreyt/ethercalc
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 
 Turtl: server, client
 : personal database and note-taking application
 : GPLv3?
 : https://turtl.it
 : 0.5.2.2
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 
 gpg4usb
 : portable editor for encrypting and decrypting files
@@ -200,36 +215,68 @@ gpg4usb
 : GPLv3
 : https://github.com/gpg4usb/gpg4usb
 : 0.3.3-1
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc
+: DPorts
 
 Whiteout Mail
 : https://whiteout.io/technology.html
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
 
 Mailpile
 : http://www.mailpile.is
 : https://github.com/mailpile/Mailpile
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
 
 Bitmessage
 : https://bitmessage.org/wiki/Main_Page
 : MIT
 : https://github.com/Bitmessage/PyBitMessage
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 
 Pond
 : https://pond.imperialviolet.org
 : see LICENSE
 : https://github.com/agl/pond/
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 
 RetroShare
 : http://retroshare.sourceforge.net
 : various
 : https://github.com/RetroShare/RetroShare/
+: FreeBSD: yes
+: OpenBSD: yes
+: pkgsrc: no
+: DPorts
 
 ChatSecure
 : https://www.chatsecure.org
-
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 : https://github.com/chatsecure
 
 Kontalk client and server
 : https://github.com/kontalk
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
+
 
 SparkleShare
 : Git-based file synchronization tool
@@ -237,15 +284,27 @@ SparkleShare
 : GPLv3
 : https://github.com/hbons/SparkleShare
 : 1.4
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 
 Ring
 : https://ring.cx
 : no source, only clients?
+: FreeBSD
+: OpenBSD: no
+: pkgsrc
+: DPorts
 
 Tox
 : UDP-based communications platform
 : https://tox.chat
 : https://github.com/irungentoo/toxcore
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 
 Syncany
 : open-source cloud storage and filesharing application
@@ -253,6 +312,10 @@ Syncany
 : GPLv3
 : https://github.com/syncany/syncany
 : 0.4.7-alpha
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 
 Syncthing
 : open-source cloud storage and synchronization
@@ -260,14 +323,20 @@ Syncthing
 : MPLv2
 : https://github.com/syncthing/syncthing
 : 0.12.3
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: yes
+: DPorts
 
 Libertree
 : open-source platform for creating private social networks
 : http://www.libertree.org
 : GPLv3
 : https://github.com/LiberTree/libertree
-: 
-
+: FreeBSD
+: OpenBSD
+: pkgsrc
+: DPorts
 sslyze
 : full-featured SSL scanner
 : 
