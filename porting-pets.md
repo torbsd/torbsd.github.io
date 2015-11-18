@@ -87,7 +87,6 @@ torbirdy
 
 tlsdate
 : secure parasitic rdate replacement
-: https://trac.torproject.org/projects/tor/wiki/torbirdy/
 : BSD-like, see LICENSE
 : https://github.com/ioerror/tlsdate/
 : 0.0.13
