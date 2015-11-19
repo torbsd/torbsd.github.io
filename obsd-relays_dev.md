@@ -140,8 +140,6 @@ By default, OpenBSD enables encrypted swap in /etc/sysctl.conf:
 
 `#vm.swapencrypt.enable=0        # 0=Do not encrypt pages that go to swap`
 
-Removing the # disables the encrypting of swap.
-
 ## Future ##
 
 ### Why To Use Ports as Opposed to Packages ###

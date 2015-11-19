@@ -115,11 +115,9 @@ By default, OpenBSD maintains limits for kernel functions with an eye on securit
 
 ### Encrypting Swap ###
 
-By default, OpenBSD enables encrypted swap in /etc/sysctl.conf:
+By default, OpenBSD enables encrypted swap in /etc/sysctl.conf, so no changes are necessary:
 
 `#vm.swapencrypt.enable=0        # 0=Do not encrypt pages that go to swap`
-
-Removing the # __disables__ the encrypting of swap.
 
 ## Future ##
 
