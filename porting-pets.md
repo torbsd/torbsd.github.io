@@ -9,11 +9,11 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 {{header.md}}
 ##Porting Targets for PETs##
 
-There is a long list of applications spawned by the interest in privacy and anonymity solutions over the past several years.
+There is a long list of applications spawned by the interest in privacy and anonymity solutions over the past several years. Most originated as an attempt to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.
 
-This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained. Is shells/bash a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them.
+This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/bash a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. __No endorsements should be assumed from this list.__
 
-The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use the [web site's "issues" page for any edits](https://github.com/torbsd/torbsd.github.io/issues/).
+The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use our [GitHub account's torbsd.github.io "issues" page for any edits](https://github.com/torbsd/torbsd.github.io/issues/).
 
 tool-name
 : short-descr
@@ -73,7 +73,7 @@ jhead
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: yes
-: DPorts:
+: DPorts: yes
 : notes:
 
 pdf-redact-tools
@@ -85,7 +85,7 @@ pdf-redact-tools
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
 : notes:
 
 autocanary
@@ -130,10 +130,10 @@ torbirdy
 : see LICENSE
 : https://gitweb.torproject.org/torbirdy.git
 : 0.1.4
-: FreeBSD
-: OpenBSD
-: pkgsrc
-: DPorts
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
 : notes: should Mozilla add-ons be their own ports? What about ugly /bin/bash installs which require shells/bash as dependencies?
 
 tlsdate
@@ -165,7 +165,7 @@ Jitsi
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: yes
 : notes: Java-based as a shortcut to portability
 
 Ricochet
@@ -178,9 +178,11 @@ Ricochet
 : OpenBSD: no
 : pkgsrc: no
 : DPorts
+: notes:
 
 noscript
 : Firefox add-on
+: notes:
 
 Etherpad
 : collaborative editing application
@@ -192,6 +194,7 @@ Etherpad
 : OpenBSD: no
 : pkgsrc: no
 : DPorts
+: notes:
 
 EtherCalc
 : collaborative spreadsheet application
@@ -202,6 +205,7 @@ EtherCalc
 : OpenBSD: no
 : pkgsrc: no
 : DPorts
+: notes:
 
 Turtl: server, client
 : personal database and note-taking application
@@ -212,6 +216,7 @@ Turtl: server, client
 : OpenBSD: no
 : pkgsrc: no
 : DPorts
+: notes:
 
 gpg4usb
 : portable editor for encrypting and decrypting files
@@ -222,7 +227,8 @@ gpg4usb
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts 
+: notes:
 
 Whiteout Mail
 : https://whiteout.io/technology.html
@@ -230,6 +236,7 @@ Whiteout Mail
 : OpenBSD: no
 : pkgsrc: no
 : DPorts
+: notes:
 
 Mailpile
 : http://www.mailpile.is
@@ -237,7 +244,8 @@ Mailpile
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: yes
+: notes:
 
 Bitmessage
 : https://bitmessage.org/wiki/Main_Page
@@ -246,7 +254,8 @@ Bitmessage
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: yes
+: notes:
 
 Pond
 : https://pond.imperialviolet.org
@@ -255,7 +264,8 @@ Pond
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
+: notes: why not in DPorts if it's in FreeBSD ports?
 
 RetroShare
 : http://retroshare.sourceforge.net
@@ -264,22 +274,19 @@ RetroShare
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: no
-: DPorts
+: DPorts: no
+: notes: why not in DPorts if it's in FreeBSD ports?
 
-ChatSecure
-: https://www.chatsecure.org
+Kontalk server
+: http://www.kontalk.org
+: ?
+: https://github.com/kontalk/tigase-kontalk/
+: n/a
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
-: https://github.com/chatsecure
-
-Kontalk client and server
-: https://github.com/kontalk
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts
+: DPorts: no
+: notes: server component of Kontalk XMPP client
 
 
 SparkleShare
@@ -291,24 +298,28 @@ SparkleShare
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
+: notes: essentially a GUI for git with server and client components
 
 Ring
 : https://ring.cx
 : no source, only clients?
-: FreeBSD
+: FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
+: notes:
 
-Tox
+Tox/uTox
 : UDP-based communications platform
 : https://tox.chat
 : https://github.com/irungentoo/toxcore
+: n/a
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: yes
+: notes: FreeBSD builds available on www
 
 Syncany
 : open-source cloud storage and filesharing application
@@ -319,7 +330,8 @@ Syncany
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
+: notes:
 
 Syncthing
 : open-source cloud storage and synchronization
@@ -330,7 +342,8 @@ Syncthing
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: yes
-: DPorts
+: DPorts: no
+: notes: in FBSD ports but not DFly?
 
 Libertree
 : open-source platform for creating private social networks
@@ -340,7 +353,8 @@ Libertree
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
+: notes:
 
 sslyze
 : full-featured SSL scanner
@@ -350,7 +364,8 @@ sslyze
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
+: notes:
 
 ooni-probe
 : network measurement framework for detecting network interference
