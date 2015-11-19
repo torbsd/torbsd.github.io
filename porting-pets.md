@@ -11,7 +11,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 There is a long list of applications spawned by the interest in privacy and anonymity solutions over the past several years. Most originated as an attempt to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.
 
-This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/bash a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. __No endorsements should be assumed from this list.__
+This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. __No endorsements should be assumed from this list.__
 
 The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use our [GitHub account's torbsd.github.io "issues" page for any edits](https://github.com/torbsd/torbsd.github.io/issues/).
 
@@ -196,7 +196,7 @@ Torbirdy
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: should Mozilla add-ons be their own ports? What about ugly /bin/bash installs which require shells/bash as dependencies?
+: notes: should Mozilla add-ons be their own ports? What about ugly /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) installs which require shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) as dependencies?
 
 tlsdate
 : secure parasitic rdate replacement
@@ -216,7 +216,7 @@ HTTPS Everywhere
 : OpenBSD: no
 : pkgsrc: no
 : DPorts
-: notes: /bin/bash install script, and therefore a frivilous dependency
+: notes: /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) install script, and therefore a frivilous dependency
 
 Jitsi
 : XMPP/SIP client

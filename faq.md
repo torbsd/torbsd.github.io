@@ -111,7 +111,7 @@ not so much vice-versa.
 
 For those interested in running a BSD relay, command-line interactions
 are similar enough to the Linux distros. While not the default shell
-on any BSD, [bash](https://cvs.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves. As a matter of fact, migrating from bash might [decrease security patching time](https://web.nvd.nist.gov/view/vuln/search-results?query=bash&search_type=all&cves=on) compared to [tcsh](https://web.nvd.nist.gov/view/vuln/search-results?query=tcsh&search_type=all&cves=on) or even
+on any BSD, [bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves. As a matter of fact, migrating from bash might [decrease security patching time](https://web.nvd.nist.gov/view/vuln/search-results?query=bash&search_type=all&cves=on) compared to [tcsh](https://web.nvd.nist.gov/view/vuln/search-results?query=tcsh&search_type=all&cves=on) or even
 [ancient, non-OpenBSD versions of ksh](https://web.nvd.nist.gov/view/vuln/search-results?query=ksh&search_type=all&cves=on).
 
 The BSD install processes vary, but after a few tries, it's hardly a
