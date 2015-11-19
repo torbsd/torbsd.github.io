@@ -11,7 +11,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __November 2015__
 
-[PETs Porting Targets}(#pets-ports) &#8916; [The Case of the Brazil Relays](#br-case) &#8916; [TB 5.0.3 Packages Updated, Again](#tb-update-again) &#8916; [Coming Soon: Quick-and-Dirty Reports](#dirty-reports) &#8916; [Thoughts on Reproducible Builds](#repro-builds) &#8916;  [It's Up to You](#up-to-you)
+[PETs Porting Targets](#pets-ports) &#8916; [The Case of the Brazil Relays](#br-case) &#8916; [TB 5.0.3 Packages Updated, Again](#tb-update-again) &#8916; [Coming Soon: Quick-and-Dirty Reports](#dirty-reports) &#8916; [Thoughts on Reproducible Builds](#repro-builds) &#8916; [It's Up to You](#up-to-you)
 
 __October 2015__
 
@@ -23,7 +23,7 @@ __October 2015__
 
 <a id="pets-ports">__PETs Porting Targets__</a> by gman999
 
-After the June 2013 Snowden disclosures, there has been a rush towards developing applications to counter mainstream, closed-source services. Many focuse on Debian Linux as a development platform, but most focus on more widely used Windows, OSX, iOS and Android systems. Beyond client applications, there are also network-based servers and services seeking to provide privacy and anonymity.
+After the June 2013 Snowden disclosures, there has been a rush towards developing applications to counter mainstream, closed-source services commenced. Many focuse on Debian Linux as a development platform, but aim at more widely used Windows, OSX, iOS and Android user-base. Beyond client applications, there are also network-based servers and services seeking to provide privacy and anonymity.
 
 The term "PETs" refers to privacy-enhancing technologies, and in this case, we use it as a catch-all for these server and client solutions.
 
