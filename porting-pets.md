@@ -15,7 +15,7 @@ This is a list of some of those applications. Most have not been ported to any o
 
 The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use our [GitHub account's torbsd.github.io "issues" page for any edits](https://github.com/torbsd/torbsd.github.io/issues/).
 
-*Just because it says "yes" next to a BSD ports system doesn't mean it's current*
+*Just because it says "yes" next to a BSD ports system doesn't mean it's current or works like it should*
 
 tool-name
 : short-descr
@@ -23,10 +23,10 @@ tool-name
 : license
 : source-path
 : version
-: FreeBSD
-: OpenBSD
-: pkgsrc
-: DPorts
+: FreeBSD: the FreeBSD ports system
+: OpenBSD: the OpenBSD ports system
+: pkgsrc: NetBSD's package system available for numerous OSs
+: DPorts: DragonFly BSD's ports, similar to FreeBSD
 : notes
 
 MAT
@@ -124,7 +124,7 @@ Mixmaster
 : OpenBSD: yes
 : pkgsrc: no
 : DPorts: no
-: notes: 
+: notes: not under active development.
 
 Mixminion
 : type III anonymous remailer
@@ -150,7 +150,7 @@ TorChat2
 : DPorts: no
 : notes:
 
-autocanary
+AutoCanary
 : desktop application for generating machine-readable, signed canary statements
 : https://firstlook.org/code/project/autocanary
 : GPL v3
@@ -167,14 +167,14 @@ sigbin
 : none
 : GPL v3
 : https://github.com/firstlook/sigbin/
-: ?
+: n/a
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts
-: notes:
+: notes: very early stages of development
 
-keepassx
+KeePassX
 : password management utility
 : http://www.keepassx.org/
 : GPL v 2 and various
@@ -186,7 +186,7 @@ keepassx
 : DPorts: yes
 : notes:
 
-torbirdy
+Torbirdy
 : Thunderbird add-on for using accessing email over the Tor network
 : https://trac.torproject.org/projects/tor/wiki/torbirdy/
 : see LICENSE
@@ -438,7 +438,8 @@ ooni-probe
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
+: notes:
 
 blockfinder
 : tool for enumerating network information by country
@@ -449,7 +450,8 @@ blockfinder
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
+: notes:
 
 Martus Desktop
 : platform for collecting, safeguarding, organizing and sharing info
@@ -458,7 +460,8 @@ Martus Desktop
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
+: notes:
 
 Martus Server
 : platform for collecting, safeguarding, organizing and sharing info
@@ -467,7 +470,8 @@ Martus Server
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
+: notes: 
 
 SecureDrop
 : open-source whistleblower submission system
@@ -478,7 +482,8 @@ SecureDrop
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
+: notes: topology review is probably first step.
 
 to add:
 
@@ -490,7 +495,7 @@ github.com/TheTorProject
 
 github.com/freedomofpress
 
-
+gajim: Jabber/XMPP client
 
 
 
