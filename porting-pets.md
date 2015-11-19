@@ -15,6 +15,8 @@ This is a list of some of those applications. Most have not been ported to any o
 
 The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use our [GitHub account's torbsd.github.io "issues" page for any edits](https://github.com/torbsd/torbsd.github.io/issues/).
 
+*Just because it says "yes" next to a BSD ports system doesn't mean it's current*
+
 tool-name
 : short-descr
 : www-site
@@ -37,7 +39,7 @@ MAT
 : OpenBSD: no
 : pkgsrc: no
 : DPorts
-: notes:
+: notes: command-line and GUI, with a library.
 
 ExifTool 
 : tool for editing, reading, writing metadata on a variety of file types 
@@ -82,6 +84,66 @@ pdf-redact-tools
 : GPL v3
 : https://github.com/firstlook/pdf-redact-tools/
 : 0.1
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes:
+
+Tor Messenger
+: instant messenger for anonymity utilizing existing protocols
+: n/a
+: ?
+: https://gitweb.torproject.org/tor-messenger-build.git
+: 0.1.0b4
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: requires Docker and a bunch of Perl modules. Early stages of dev.
+
+Cryptocat
+: accessible chat client
+: https://crypto.cat/
+: GNU Affero v3
+: https://github.com/cryptocat/cryptocat/
+: 2.2.2
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: little activity since 201412
+
+Mixmaster
+: type II remailer for anonymous email
+: http://mixmaster.sourceforge.net/
+: MIT
+: http://sourceforge.net/projects/mixmaster/files/latest/download?source=files
+: 3.0
+: FreeBSD: yes
+: OpenBSD: yes
+: pkgsrc: no
+: DPorts: no
+: notes: 
+
+Mixminion
+: type III anonymous remailer
+: http://mixminion.net
+: MIT
+: https://github.com/nmathewson/mixminion/
+: 0.0.8alpha3
+: FreeBSD: no*
+: OpenBSD: no 
+: pkgsrc: yes
+: DPorts: no
+: notes: not under active development.
+
+TorChat2
+: peer-to-peer instant messenger running on Tor hidden services
+: https://github.com/prof7bit/TorChat/wiki/
+: ?
+: https://github.com/prof7bit/TorChat/
+: 15
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
