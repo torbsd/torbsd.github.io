@@ -29,7 +29,7 @@ The term "PETs" refers to privacy-enhancing technologies, and in this case, we u
 
 Some of these projects have been ported to one or more BSD.  Others have not. On that note, we began a [list of applications and their status as BSD ports in the main BSD operating systems](porting-pets.html). We encourage feedback on this list, and also investigations into porting these applications. Some of well-worth reviewing and considering; others have ceased development or are broken beyond resurrection. Others just need some reworking towards sanity, as one will notice that ubiquitous build dependency [bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash).
 
-It's a call for engagement to the *BSD community.  Bring your sane, portable development approaches, your intrasigent working and reworking of Makefiles, your austere mentality. This is an opportunity to improve applications whose user base might be someone whose stakes are high.
+It's a call for engagement to the *BSD community.  Bring your sane, portable development approaches, your intransigent working and reworking of Makefiles, your austere mentality. This is an opportunity to improve applications whose user base might be someone whose life depends on it.
 
 ###20151112###
 
