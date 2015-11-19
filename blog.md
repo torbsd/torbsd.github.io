@@ -11,13 +11,25 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __November 2015__
 
-[The Case of the Brazil Relays](#br-case) &#8916; [TB 5.0.3 Packages Updated, Again](#tb-update-again) &#8916; [Coming Soon: Quick-and-Dirty Reports](#dirty-reports) &#8916; [Thoughts on Reproducible Builds](#repro-builds) &#8916;  [It's Up to You](#up-to-you)
+[PETs Porting Targets}(#pets-ports) &#8916; [The Case of the Brazil Relays](#br-case) &#8916; [TB 5.0.3 Packages Updated, Again](#tb-update-again) &#8916; [Coming Soon: Quick-and-Dirty Reports](#dirty-reports) &#8916; [Thoughts on Reproducible Builds](#repro-builds) &#8916;  [It's Up to You](#up-to-you)
 
 __October 2015__
 
 [Updated Tor Browser Packages](#tb-update) &#8916; [The BSD Relay Guides](#relay-guides) &#8916; [Our First Bells](#first-bells) &#8916; [Beyond OS Diversity](#beyond-os) &#8916; [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20151119####
+
+<a id="pets-ports">__PETs Porting Targets__</a> by gman999
+
+After the June 2013 Snowden disclosures, there has been a rush towards developing applications to counter mainstream, closed-source services. Many focuse on Debian Linux as a development platform, but most focus on more widely used Windows, OSX, iOS and Android systems. Beyond client applications, there are also network-based servers and services seeking to provide privacy and anonymity.
+
+The term "PETs" refers to privacy-enhancing technologies, and in this case, we use it as a catch-all for these server and client solutions.
+
+Some of these projects have been ported to one or more BSD.  Others have not. On that note, we began a [list of applications and their status as BSD ports in the main BSD operating systems](porting-pets.html). We encourage feedback on this list, and also investigations into porting these applications. Some of well-worth reviewing and considering; others have ceased development or are broken beyond resurrection. Others just need some reworking towards sanity, as one will notice that ubiquitous build dependency bash.
+
+It's a call for engagement to the *BSD community.  Bring your sane, portable development approaches, your intrasigent working and reworking of Makefiles, your austere mentality. This is an opportunity to improve applications whose user base might be someone whose stakes are high.
 
 ###20151112###
 
