@@ -44,7 +44,7 @@ AutoCanary
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
 : notes:
 
 EtherCalc
@@ -55,7 +55,7 @@ EtherCalc
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
 : notes:
 
 Etherpad
@@ -67,7 +67,7 @@ Etherpad
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
 : notes:
 
 <a id="graphics">__graphics__</a>
@@ -117,7 +117,7 @@ MAT
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
 : notes: command-line and GUI, with a library.
 
 pdf-redact-tools
@@ -251,7 +251,7 @@ Ricochet
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
 : notes:
 
 TorChat2
