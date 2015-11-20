@@ -19,19 +19,7 @@ The listed information should be considered a guide but should be confirmed due 
 
 Categories
 
-[editors](#editors)
-
-mail
-
-misc
-
-net
-
-net-im
-
-security
-
-sysutils
+[editors](#editors)  &#8916; [mail](#mail) &#8916; [misc](#misc) &#8916; [net](#net) &#8916; [net-im](#net-im) &#8916; [security](#security) &#8916; [sysutils](#sysutils)
 
 tool-name
 : short-descr
@@ -46,6 +34,18 @@ tool-name
 : notes
 
 <a id="editors">__editors__</a>
+
+<a id="mail">__mail__</a>
+
+<a id="misc">__misc__</a>
+
+<a id="net">__net__</a>
+
+<a id="net-im">__net-im__</a>
+
+<a id="security">__security__</a>
+
+<a id="sysutils">__sysutils__</a>
 
 MAT
 : tool for removing metadata from various file types
