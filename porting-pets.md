@@ -28,7 +28,7 @@ tool-name
 : source-path
 : version
 : FreeBSD: [FreeBSD ports system](https://svnweb.freebsd.org/ports/head/)
-: OpenBSD: [OpenBSD packages](http://mirrors.nycbug.org/pub/OpenBSD/snapshots/packages)
+: OpenBSD: [OpenBSD packages](http://mirrors.nycbug.org/pub/OpenBSD/snapshots/packages), which generally also apply to BitRig
 : pkgsrc: [NetBSD's pkgsrc](http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/README.html) for multiple operating systems
 : DPorts: [DragonFly BSD's ports](http://mirrors.nycbug.org/pub/DragonFlyBSD/dports/dragonfly:4.4:x86:64/LATEST//All/), similar to FreeBSD
 : notes
