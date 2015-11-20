@@ -70,7 +70,7 @@ Etherpad
 : DPorts: no
 : notes:
 
-###<a id="graphics">__graphics__</a>###
+###<a id="graphics">graphics</a>###
 
 ExifTool
 : tool for editing, reading, writing metadata on a variety of file types
@@ -132,7 +132,7 @@ pdf-redact-tools
 : DPorts: no
 : notes:
 
-###<a id="mail">__mail__</a>###
+###<a id="mail">mail</a>###
 
 Mixmaster
 : type II remailer for anonymous email
@@ -173,9 +173,9 @@ https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) installs which require sh
 ells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) as dependenci
 es?
 
-###<a id="misc">__misc__</a>###
+###<a id="misc">misc</a>###
 
-###<a id="net">__net__</a>###
+###<a id="net">net</a>###
 
 Tor
 : stable version of the onion-routing daemon for anonymous networking
@@ -213,7 +213,7 @@ Torsocks
 : DPorts: yes
 : notes: relies on torrc SOCKS port matching torsocks configuration.
 
-###<a id="net-im">__net-im__</a>###
+###<a id="net-im">net-im</a>###
 
 Cryptocat
 : accessible chat client
@@ -286,7 +286,7 @@ Tox/uTox
 : DPorts: yes
 : notes: FreeBSD builds available on www
 
-###<a id="security">__security__</a>###
+###<a id="security">security</a>###
 
 gpg4usb
 : portable editor for encrypting and decrypting files
@@ -323,9 +323,9 @@ sslyze
 : DPorts: no
 : notes:
 
-###<a id="sysutils">__sysutils__</a>###
+###<a id="sysutils">sysutils</a>###
 
-###<a id="www">__www__</a>###
+###<a id="www">www</a>###
 
 HTTPS Everywhere
 : Firefox add-on
