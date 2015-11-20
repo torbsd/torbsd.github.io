@@ -391,7 +391,7 @@ sslyze
 
 tlsdate
 : secure parasitic rdate replacement
-: https://trac.torproject.org/projects/tor/wiki/torbirdy/
+: n/a
 : BSD-like, see LICENSE
 : https://github.com/ioerror/tlsdate/
 : 0.0.13
