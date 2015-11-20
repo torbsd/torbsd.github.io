@@ -207,6 +207,17 @@ blockfinder
 : DPorts: no
 : notes:
 
+OnionShare
+: secure and anonymous file-sharing tool
+: https://onionshare.org
+: GPLv3: https://github.com/michahflee/onionshare/blob/master/LICENSE
+: 0.7.1
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes:
+
 ooni-probe
 : network measurement framework for detecting network interference
 : https://ooni.torproject.org
