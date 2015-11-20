@@ -17,9 +17,7 @@ The listed information should be considered a guide but should be confirmed due 
 
 *Just because it says "yes" next to a BSD ports system doesn't mean it's current or works like it should*
 
-Categories
-
-[editors](#editors)  &#8916; [mail](#mail) &#8916; [misc](#misc) &#8916; [net](#net) &#8916; [net-im](#net-im) &#8916; [security](#security) &#8916; [sysutils](#sysutils)
+[editors](#editors)  &#8916; [graphics](#graphics) &#8916;  [mail](#mail) &#8916; [misc](#misc) &#8916; [net](#net) &#8916; [net-im](#net-im) &#8916; [security](#security) &#8916; [sysutils](#sysutils) &#8916; [www](#www)
 
 tool-name
 : short-descr
@@ -35,32 +33,22 @@ tool-name
 
 <a id="editors">__editors__</a>
 
-<a id="mail">__mail__</a>
-
-<a id="misc">__misc__</a>
-
-<a id="net">__net__</a>
-
-<a id="net-im">__net-im__</a>
-
-<a id="security">__security__</a>
-
-<a id="sysutils">__sysutils__</a>
-
-MAT
-: tool for removing metadata from various file types
-: https://mat.boum.org
-: GPL v2
-: https://gitweb.torproject.org/user/jvoisin/mat.git
-: 0.5.4
-: FreeBSD: no 
+AutoCanary
+: desktop application for generating machine-readable, signed canary statements
+: https://firstlook.org/code/project/autocanary
+: GPL v3
+: https://github.com/firstlook/autocanary/
+: 0.1
+: FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts
-: notes: command-line and GUI, with a library.
+: notes:
 
-ExifTool 
-: tool for editing, reading, writing metadata on a variety of file types 
+<a id="graphics">__graphics__</a>
+
+ExifTool
+: tool for editing, reading, writing metadata on a variety of file types
 : http://owl.phy.queensu.ca/~phil/exiftool/
 : Perl: either GPL v1 or later or Artistic License
 : http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz
@@ -70,7 +58,6 @@ ExifTool
 : pkgsrc: yes
 : DPorts: yes
 : notes:
-
 
 Exiv2
 : command-line utility to manage image metadata
@@ -96,6 +83,18 @@ jhead
 : DPorts: yes
 : notes:
 
+MAT
+: tool for removing metadata from various file types
+: https://mat.boum.org
+: GPL v2
+: https://gitweb.torproject.org/user/jvoisin/mat.git
+: 0.5.4
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
+: notes: command-line and GUI, with a library.
+
 pdf-redact-tools
 : tools to redact and strip metadata from documents
 : https://firstlook.org/code/project/pdf-redact-tools/
@@ -108,29 +107,7 @@ pdf-redact-tools
 : DPorts: no
 : notes:
 
-Tor Messenger
-: instant messenger for anonymity utilizing existing protocols
-: n/a
-: ?
-: https://gitweb.torproject.org/tor-messenger-build.git
-: 0.1.0b4
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes: requires Docker and a bunch of Perl modules. Early stages of dev.
-
-Cryptocat
-: accessible chat client
-: https://crypto.cat/
-: GNU Affero v3
-: https://github.com/cryptocat/cryptocat/
-: 2.2.2
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes: little activity since 201412
+<a id="mail">__mail__</a>
 
 Mixmaster
 : type II remailer for anonymous email
@@ -151,10 +128,28 @@ Mixminion
 : https://github.com/nmathewson/mixminion/
 : 0.0.8alpha3
 : FreeBSD: no*
-: OpenBSD: no 
+: OpenBSD: no
 : pkgsrc: yes
 : DPorts: no
 : notes: not under active development.
+
+<a id="misc">__misc__</a>
+
+<a id="net">__net__</a>
+
+<a id="net-im">__net-im__</a>
+
+Cryptocat
+: accessible chat client
+: https://crypto.cat/
+: GNU Affero v3
+: https://github.com/cryptocat/cryptocat/
+: 2.2.2
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: little activity since 201412
 
 TorChat2
 : peer-to-peer instant messenger running on Tor hidden services
@@ -168,29 +163,19 @@ TorChat2
 : DPorts: no
 : notes:
 
-AutoCanary
-: desktop application for generating machine-readable, signed canary statements
-: https://firstlook.org/code/project/autocanary
-: GPL v3
-: https://github.com/firstlook/autocanary/
-: 0.1
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts
-: notes:
-
-sigbin
-: web application for storing PGP-signed messages
-: none
-: GPL v3
-: https://github.com/firstlook/sigbin/
+Tor Messenger
+: instant messenger for anonymity utilizing existing protocols
 : n/a
+: ?
+: https://gitweb.torproject.org/tor-messenger-build.git
+: 0.1.0b4
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
-: notes: very early stages of development
+: DPorts: no
+: notes: requires Docker and a bunch of Perl modules. Early stages of dev
+
+<a id="security">__security__</a>
 
 KeePassX
 : password management utility
@@ -203,6 +188,22 @@ KeePassX
 : pkgsrc: yes
 : DPorts: yes
 : notes:
+
+<a id="sysutils">__sysutils__</a>
+
+<a id="www">__www__</a>
+
+sigbin
+: web application for storing PGP-signed messages
+: none
+: GPL v3
+: https://github.com/firstlook/sigbin/
+: n/a
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
+: notes: very early stages of development
 
 Torbirdy
 : Thunderbird add-on for using accessing email over the Tor network
