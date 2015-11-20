@@ -355,6 +355,16 @@ KeePassX
 : DPorts: yes
 : notes:
 
+Pond
+: https://pond.imperialviolet.org
+: see LICENSE
+: https://github.com/agl/pond/
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: yes
+: notes: why not in DPorts if it's in FreeBSD ports?
+
 sslyze
 : full-featured SSL scanner
 : GPLv2
@@ -396,6 +406,18 @@ noscript
 : notes:
 : DPorts: yes
 
+sigbin
+: web application for storing PGP-signed messages
+: none
+: GPL v3
+: https://github.com/firstlook/sigbin/
+: n/a
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: very early stages of development
+
 Tor Browser
 : Firefox-based browser for using the Tor anonymity network
 : 
@@ -409,18 +431,6 @@ Tor Browser
 : notes: A lot of effort is going into __TDP's__ Tor Browser builds for OpenBSD, and we are in conversations about looking at ports for other BSDs.
 
 ###Uncategorized, Yet###
-
-sigbin
-: web application for storing PGP-signed messages
-: none
-: GPL v3
-: https://github.com/firstlook/sigbin/
-: n/a
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes: very early stages of development
 
 Turtl: server, client
 : personal database and note-taking application
@@ -443,16 +453,6 @@ Bitmessage
 : DPorts: yes
 : notes:
 
-Pond
-: https://pond.imperialviolet.org
-: see LICENSE
-: https://github.com/agl/pond/
-: FreeBSD: yes
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: yes
-: notes: why not in DPorts if it's in FreeBSD ports?
-
 RetroShare
 : http://retroshare.sourceforge.net
 : various
@@ -473,7 +473,6 @@ Kontalk server
 : pkgsrc: no
 : DPorts: no
 : notes: server component of Kontalk XMPP client
-
 
 SparkleShare
 : Git-based file synchronization tool
