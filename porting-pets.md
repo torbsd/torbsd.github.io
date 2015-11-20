@@ -300,7 +300,7 @@ gpg4usb
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
 : notes:
 
 KeePassX
@@ -335,13 +335,14 @@ HTTPS Everywhere
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
 : notes: /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) inst
 all script, and therefore a frivilous dependency
 
 noscript
 : Firefox add-on
 : notes:
+: DPorts: yes
 
 Tor Browser
 : Firefox-based browser for using the Tor anonymity network
@@ -365,7 +366,7 @@ sigbin
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
 : notes: very early stages of development
 
 tlsdate
@@ -377,7 +378,7 @@ tlsdate
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: yes
 : notes: 
 
 Turtl: server, client
@@ -388,7 +389,7 @@ Turtl: server, client
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
 : notes:
 
 Whiteout Mail
@@ -396,7 +397,7 @@ Whiteout Mail
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
 : notes:
 
 Mailpile
@@ -425,7 +426,7 @@ Pond
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
-: DPorts: no
+: DPorts: yes
 : notes: why not in DPorts if it's in FreeBSD ports?
 
 RetroShare
