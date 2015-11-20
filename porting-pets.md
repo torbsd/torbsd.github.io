@@ -15,7 +15,7 @@ This is a list of some of those applications. Most have not been ported to any o
 
 The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use our [GitHub account's torbsd.github.io "issues" page for any input](https://github.com/torbsd/torbsd.github.io/issues/).
 
-*Just because it says "yes" next to a BSD ports system doesn't mean it's current or works like it should*
+*Just because it says "yes" next to a BSD ports system doesn't mean it's current or works correctly*
 
 These are loose categorizations of the ports:
 
@@ -24,7 +24,7 @@ These are loose categorizations of the ports:
 tool-name
 : short-descr
 : www-site
-: license
+: license: explicit license stated, along with URL to the actual
 : source-path
 : version
 : FreeBSD: [FreeBSD ports system](https://svnweb.freebsd.org/ports/head/)
@@ -38,7 +38,7 @@ tool-name
 AutoCanary
 : desktop application for generating machine-readable, signed canary statements
 : https://firstlook.org/code/project/autocanary
-: GPL v3
+: GPLv3: https://github.com/firstlook/autocanary/blob/master/LICENSE.md
 : https://github.com/firstlook/autocanary/
 : 0.1
 : FreeBSD: no
@@ -52,7 +52,7 @@ AutoCanary
 ExifTool
 : tool for editing, reading, writing metadata on a variety of file types
 : http://owl.phy.queensu.ca/~phil/exiftool/
-: Perl: either GPL v1 or later or Artistic License
+: Perl: http://owl.phy.queensu.ca/~phil/exiftool/#license
 : http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz
 : 10.05
 : FreeBSD: yes
@@ -64,7 +64,7 @@ ExifTool
 Exiv2
 : command-line utility to manage image metadata
 : http://www.exiv2.org
-: GPLv2 or commercial
+: GPLv2 or commercial: http://www.exiv2.org/download.html#license
 : http://www.exiv2.org/exiv2-0.25.tar.gz
 : 0.25
 : FreeBSD: yes
@@ -76,7 +76,7 @@ Exiv2
 jhead
 : tool for manipulating JPEG EXIF files
 : http://www.sentex.net/~mwandel/jhead/
-: public domain
+: public domain: http://www.sentex.net/~mwandel/jhead/
 : http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz
 : 3.00
 : FreeBSD: yes
@@ -86,9 +86,9 @@ jhead
 : notes:
 
 MAT
-: tool for removing metadata from various file types
-: https://mat.boum.org
-: GPL v2
+: tool for removing metadata
+: http://mat.boum.org
+: GPLv2: https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE
 : https://gitweb.torproject.org/user/jvoisin/mat.git
 : 0.5.4
 : FreeBSD: no
@@ -100,7 +100,7 @@ MAT
 pdf-redact-tools
 : tools to redact and strip metadata from documents
 : https://firstlook.org/code/project/pdf-redact-tools/
-: GPL v3
+: GPLv3: https://github.com/firstlook/pdf-redact-tools/blob/master/LICENSE
 : https://github.com/firstlook/pdf-redact-tools/
 : 0.1
 : FreeBSD: no
@@ -114,7 +114,7 @@ pdf-redact-tools
 Mixmaster
 : type II remailer for anonymous email
 : http://mixmaster.sourceforge.net/
-: MIT
+: MIT: https://anonscm.debian.org/viewvc/pkg-mixmaster/trunk/Mix/COPYRIGHT?view=markup
 : http://sourceforge.net/projects/mixmaster/files/latest/download?source=files
 : 3.0
 : FreeBSD: yes
@@ -126,7 +126,7 @@ Mixmaster
 Mixminion
 : type III anonymous remailer
 : http://mixminion.net
-: MIT
+: MIT: https://github.com/nmathewson/mixminion/blob/master/LICENSE 
 : https://github.com/nmathewson/mixminion/
 : 0.0.8alpha3
 : FreeBSD: no*
@@ -144,7 +144,7 @@ Mixminion
 Cryptocat
 : accessible chat client
 : https://crypto.cat/
-: GNU Affero v3
+: GNU Affero v3: https://github.com/cryptocat/cryptocat/blob/master/LICENSE.txt
 : https://github.com/cryptocat/cryptocat/
 : 2.2.2
 : FreeBSD: no
