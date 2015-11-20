@@ -9,13 +9,29 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 {{header.md}}
 ##Porting Targets for PETs##
 
-There is a long list of applications spawned by the interest in privacy and anonymity solutions over the past several years. Most originated as an attempt to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.
+Over the past few years, a long list of applications spawn from the interest in privacy and anonymity solutions. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.
 
 This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. __No endorsements should be assumed from this list.__
 
-The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use our [GitHub account's torbsd.github.io "issues" page for any edits](https://github.com/torbsd/torbsd.github.io/issues/).
+The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use our [GitHub account's torbsd.github.io "issues" page for any input](https://github.com/torbsd/torbsd.github.io/issues/).
 
 *Just because it says "yes" next to a BSD ports system doesn't mean it's current or works like it should*
+
+Categories
+
+[editors](#editors)
+
+mail
+
+misc
+
+net
+
+net-im
+
+security
+
+sysutils
 
 tool-name
 : short-descr
@@ -28,6 +44,8 @@ tool-name
 : pkgsrc: NetBSD's package system available for numerous OSs
 : DPorts: DragonFly BSD's ports, similar to FreeBSD
 : notes
+
+<a id="editors">__editors__</a>
 
 MAT
 : tool for removing metadata from various file types
