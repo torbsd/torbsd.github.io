@@ -47,6 +47,29 @@ AutoCanary
 : DPorts
 : notes:
 
+EtherCalc
+: collaborative spreadsheet application
+: https://ethercalc.net
+: CPAL 1.0 Artistic License 2.0
+: https://github.com/audreyt/ethercalc
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
+: notes:
+
+Etherpad
+: collaborative editing application
+: http://etherpad.org
+: Apache 2.0
+: https://github.com/ether/etherpad-lite
+: 1.5.7
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
+: notes:
+
 <a id="graphics">__graphics__</a>
 
 ExifTool
@@ -135,6 +158,23 @@ Mixminion
 : DPorts: no
 : notes: not under active development.
 
+Torbirdy
+: Thunderbird add-on for using accessing email over the Tor network
+: https://trac.torproject.org/projects/tor/wiki/torbirdy/
+: see LICENSE
+: https://gitweb.torproject.org/torbirdy.git
+: 0.1.4
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: should Mozilla add-ons be their own ports? What about ugly /bin/[bash](
+https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) installs which require sh
+ells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) as dependenci
+es?
+
+
+
 <a id="misc">__misc__</a>
 
 <a id="net">__net__</a>
@@ -190,92 +230,6 @@ Cryptocat
 : DPorts: no
 : notes: little activity since 201412
 
-TorChat2
-: peer-to-peer instant messenger running on Tor hidden services
-: https://github.com/prof7bit/TorChat/wiki/
-: ?
-: https://github.com/prof7bit/TorChat/
-: 15
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
-
-Tor Messenger
-: instant messenger for anonymity utilizing existing protocols
-: n/a
-: ?
-: https://gitweb.torproject.org/tor-messenger-build.git
-: 0.1.0b4
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes: requires Docker and a bunch of Perl modules. Early stages of dev
-
-<a id="security">__security__</a>
-
-KeePassX
-: password management utility
-: http://www.keepassx.org/
-: GPL v 2 and various
-: https://github.com/keepassx/keepassx/
-: 2.0 Beta 2
-: FreeBSD: yes
-: OpenBSD: yes
-: pkgsrc: yes
-: DPorts: yes
-: notes:
-
-<a id="sysutils">__sysutils__</a>
-
-<a id="www">__www__</a>
-
-sigbin
-: web application for storing PGP-signed messages
-: none
-: GPL v3
-: https://github.com/firstlook/sigbin/
-: n/a
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts
-: notes: very early stages of development
-
-Torbirdy
-: Thunderbird add-on for using accessing email over the Tor network
-: https://trac.torproject.org/projects/tor/wiki/torbirdy/
-: see LICENSE
-: https://gitweb.torproject.org/torbirdy.git
-: 0.1.4
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes: should Mozilla add-ons be their own ports? What about ugly /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) installs which require shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) as dependencies?
-
-tlsdate
-: secure parasitic rdate replacement
-: https://trac.torproject.org/projects/tor/wiki/torbirdy/
-: BSD-like, see LICENSE
-: https://github.com/ioerror/tlsdate/
-: 0.0.13
-: FreeBSD: yes
-: OpenBSD: no
-: pkgsrc: no
-: DPorts
-: notes: 
-
-HTTPS Everywhere
-: Firefox add-on
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts
-: notes: /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) install script, and therefore a frivilous dependency
-
 Jitsi
 : XMPP/SIP client
 : https://jitsi.org
@@ -300,43 +254,42 @@ Ricochet
 : DPorts
 : notes:
 
-noscript
-: Firefox add-on
-: notes:
-
-Etherpad
-: collaborative editing application
-: http://etherpad.org
-: Apache 2.0
-: https://github.com/ether/etherpad-lite
-: 1.5.7
+TorChat2
+: peer-to-peer instant messenger running on Tor hidden services
+: https://github.com/prof7bit/TorChat/wiki/
+: ?
+: https://github.com/prof7bit/TorChat/
+: 15
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
+: DPorts: no
 : notes:
 
-EtherCalc
-: collaborative spreadsheet application
-: https://ethercalc.net
-: CPAL 1.0 Artistic License 2.0
-: https://github.com/audreyt/ethercalc
+Tor Messenger
+: instant messenger for anonymity utilizing existing protocols
+: n/a
+: ?
+: https://gitweb.torproject.org/tor-messenger-build.git
+: 0.1.0b4
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
-: notes:
+: DPorts: no
+: notes: requires Docker and a bunch of Perl modules. Early stages of dev
 
-Turtl: server, client
-: personal database and note-taking application
-: GPLv3?
-: https://turtl.it
-: 0.5.2.2
-: FreeBSD: no
+Tox/uTox
+: UDP-based communications platform
+: https://tox.chat
+: https://github.com/irungentoo/toxcore
+: n/a
+: FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
-: DPorts
-: notes:
+: DPorts: yes
+: notes: FreeBSD builds available on www
+
+<a id="security">__security__</a>
 
 gpg4usb
 : portable editor for encrypting and decrypting files
@@ -347,7 +300,95 @@ gpg4usb
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
-: DPorts 
+: DPorts
+: notes:
+
+KeePassX
+: password management utility
+: http://www.keepassx.org/
+: GPL v 2 and various
+: https://github.com/keepassx/keepassx/
+: 2.0 Beta 2
+: FreeBSD: yes
+: OpenBSD: yes
+: pkgsrc: yes
+: DPorts: yes
+: notes:
+
+sslyze
+: full-featured SSL scanner
+: GPLv2
+: https://github.com/nabla-c0d3/sslyze
+: 0.10
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes:
+
+<a id="sysutils">__sysutils__</a>
+
+<a id="www">__www__</a>
+
+HTTPS Everywhere
+: Firefox add-on
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
+: notes: /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) inst
+all script, and therefore a frivilous dependency
+
+noscript
+: Firefox add-on
+: notes:
+
+Tor Browser
+: Firefox-based browser for using the Tor anonymity network
+: 
+: various: https://gitweb.torproject.org/tor-browser.git/tree/toolkit/content/license.html?h=esr24
+: https://gitweb.torproject.org/tor-browser.git/
+: 5.0.4
+: FreeBSD: no
+: OpenBSD: no, [well...](https://github.com/torbsd/openbsd-ports)
+: pkgsrc: no
+: DPorts: no
+: notes: A lot of effort is going into __TDP's__ Tor Browser builds for OpenBSD, and we are in conversations about looking at ports for other BSDs.
+
+
+sigbin
+: web application for storing PGP-signed messages
+: none
+: GPL v3
+: https://github.com/firstlook/sigbin/
+: n/a
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
+: notes: very early stages of development
+
+tlsdate
+: secure parasitic rdate replacement
+: https://trac.torproject.org/projects/tor/wiki/torbirdy/
+: BSD-like, see LICENSE
+: https://github.com/ioerror/tlsdate/
+: 0.0.13
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
+: notes: 
+
+Turtl: server, client
+: personal database and note-taking application
+: GPLv3?
+: https://turtl.it
+: 0.5.2.2
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts
 : notes:
 
 Whiteout Mail
@@ -430,17 +471,6 @@ Ring
 : DPorts: no
 : notes:
 
-Tox/uTox
-: UDP-based communications platform
-: https://tox.chat
-: https://github.com/irungentoo/toxcore
-: n/a
-: FreeBSD: yes
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: yes
-: notes: FreeBSD builds available on www
-
 Syncany
 : open-source cloud storage and filesharing application
 : https://www.syncany.org
@@ -470,17 +500,6 @@ Libertree
 : http://www.libertree.org
 : GPLv3
 : https://github.com/LiberTree/libertree
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
-
-sslyze
-: full-featured SSL scanner
-: GPLv2
-: https://github.com/nabla-c0d3/sslyze
-: 0.10
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
