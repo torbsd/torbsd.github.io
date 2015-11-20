@@ -31,7 +31,7 @@ tool-name
 : OpenBSD: [OpenBSD packages](http://mirrors.nycbug.org/pub/OpenBSD/snapshots/packages), which generally also apply to BitRig
 : pkgsrc: [NetBSD's pkgsrc](http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/README.html) for multiple operating systems
 : DPorts: [DragonFly BSD's ports](http://mirrors.nycbug.org/pub/DragonFlyBSD/dports/dragonfly:4.4:x86:64/LATEST//All/), similar to FreeBSD
-: notes
+: notes:
 
 ###<a id="editors">editors</a>###
 
@@ -134,6 +134,16 @@ pdf-redact-tools
 
 ###<a id="mail">mail</a>###
 
+
+Mailpile
+: http://www.mailpile.is
+: https://github.com/mailpile/Mailpile
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: yes
+: notes:
+
 Mixmaster
 : type II remailer for anonymous email
 : http://mixmaster.sourceforge.net/
@@ -173,9 +183,42 @@ https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) installs which require sh
 ells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) as dependenci
 es?
 
+Whiteout Mail
+: https://whiteout.io/technology.html
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes:
+
 ###<a id="misc">misc</a>###
 
 ###<a id="net">net</a>###
+
+blockfinder
+: tool for enumerating network information by country
+:
+: BSD-like, see LICENSE
+: https://github.com/ioerror/blockfinder/
+: 3.1?
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes:
+
+ooni-probe
+: network measurement framework for detecting network interference
+: https://ooni.torproject.org
+: BSD-like, see LICENSE
+: https://github.com/TheTorProject/ooni-probe/
+: 1.3.1
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes:
+
 
 Tor
 : stable version of the onion-routing daemon for anonymous networking
@@ -325,6 +368,18 @@ sslyze
 
 ###<a id="sysutils">sysutils</a>###
 
+tlsdate
+: secure parasitic rdate replacement
+: https://trac.torproject.org/projects/tor/wiki/torbirdy/
+: BSD-like, see LICENSE
+: https://github.com/ioerror/tlsdate/
+: 0.0.13
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: yes
+: notes:
+
 ###<a id="www">www</a>###
 
 HTTPS Everywhere
@@ -353,6 +408,7 @@ Tor Browser
 : DPorts: no
 : notes: A lot of effort is going into __TDP's__ Tor Browser builds for OpenBSD, and we are in conversations about looking at ports for other BSDs.
 
+###Uncategorized, Yet###
 
 sigbin
 : web application for storing PGP-signed messages
@@ -366,18 +422,6 @@ sigbin
 : DPorts: no
 : notes: very early stages of development
 
-tlsdate
-: secure parasitic rdate replacement
-: https://trac.torproject.org/projects/tor/wiki/torbirdy/
-: BSD-like, see LICENSE
-: https://github.com/ioerror/tlsdate/
-: 0.0.13
-: FreeBSD: yes
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: yes
-: notes: 
-
 Turtl: server, client
 : personal database and note-taking application
 : GPLv3?
@@ -387,23 +431,6 @@ Turtl: server, client
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes:
-
-Whiteout Mail
-: https://whiteout.io/technology.html
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
-
-Mailpile
-: http://www.mailpile.is
-: https://github.com/mailpile/Mailpile
-: FreeBSD: yes
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: yes
 : notes:
 
 Bitmessage
@@ -498,30 +525,6 @@ Libertree
 : http://www.libertree.org
 : GPLv3
 : https://github.com/LiberTree/libertree
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
-
-ooni-probe
-: network measurement framework for detecting network interference
-: https://ooni.torproject.org
-: BSD-like, see LICENSE
-: https://github.com/TheTorProject/ooni-probe/
-: 1.3.1
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
-
-blockfinder
-: tool for enumerating network information by country
-: 
-: BSD-like, see LICENSE
-: https://github.com/ioerror/blockfinder/
-: 3.1?
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
