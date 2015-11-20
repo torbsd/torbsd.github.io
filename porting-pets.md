@@ -139,6 +139,43 @@ Mixminion
 
 <a id="net">__net__</a>
 
+Tor
+: stable version of the onion-routing daemon for anonymous networking
+: https://www.torproject.org
+: BSD
+: https://gitweb.torproject.org//////
+: 0.6.10
+: FreeBSD: yes
+: OpenBSD: yes
+: pkgsrc: yes
+: DPorts: yes
+: notes:
+
+Tor alpha
+: development version of the onion-routing daemon for anonymous networking
+: https://www.torproject.org
+: BSD
+: https://gitweb.torproject.org/////
+: 0.2.7.4r
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: yes
+: DPorts: yes
+: notes: OpenBSD does not include alpha or development versions of software in their ports
+
+Torsocks
+: SOCKS proxy for routing applications through the Tor network
+: https://www.torproject.org
+: BSD
+: https://gitweb.torproject.org////
+: 2.0.1
+: FreeBSD: yes
+: OpenBSD: yes
+: pkgsrc: yes
+: DPorts: yes
+: notes: relies on torrc SOCKS port matching torsocks configuration.
+
+
 <a id="net-im">__net-im__</a>
 
 Cryptocat
