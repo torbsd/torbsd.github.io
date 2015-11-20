@@ -221,7 +221,7 @@ OnionShare
 ooni-probe
 : network measurement framework for detecting network interference
 : https://ooni.torproject.org
-: BSD-like, see LICENSE
+: BSD: https://gitweb.torproject.org/onionoo.git/tree/LICENSE
 : https://github.com/TheTorProject/ooni-probe/
 : 1.3.1
 : FreeBSD: no
@@ -234,8 +234,8 @@ ooni-probe
 Tor
 : stable version of the onion-routing daemon for anonymous networking
 : https://www.torproject.org
-: BSD
-: https://gitweb.torproject.org//////
+: BSD: https://gitweb.torproject.org/tor.git/tree/LICENSE
+: https://gitweb.torproject.org/tor.git/
 : 0.6.10
 : FreeBSD: yes
 : OpenBSD: yes
@@ -246,26 +246,38 @@ Tor
 Tor alpha
 : development version of the onion-routing daemon for anonymous networking
 : https://www.torproject.org
-: BSD
-: https://gitweb.torproject.org/////
-: 0.2.7.4r
+: BSD: https://gitweb.torproject.org/tor.git/tree/LICENSE
+: https://gitweb.torproject.org/tor.git/
+: 0.2.7.4rc
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: yes
 : DPorts: yes
-: notes: OpenBSD does not include alpha or development versions of software in their ports
+: notes: The alpha version is worth considering for production since it's stable and often the most effective in terms of circumvention counter-measures. OpenBSD does not include alpha or development versions of software in their ports
 
 Torsocks
 : SOCKS proxy for routing applications through the Tor network
 : https://www.torproject.org
-: BSD
-: https://gitweb.torproject.org////
-: 2.0.1
+: GPLv2: https://gitweb.torproject.org/torsocks.git/tree/LICENSE
+: https://gitweb.torproject.org/torsocks.git/
+: 2.1.0
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: yes
 : DPorts: yes
 : notes: relies on torrc SOCKS port matching torsocks configuration.
+
+Torstatus
+: tool for aggregating and presenting public information about the Tor network
+: n/a
+: BSD: https://gitweb.torproject.org/torstatus.git/tree/doc/LICENSE
+: https://gitweb.torproject.org/torstatus.git/
+: n/a
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: outputs to www with Django for easy presentation and queries on the network.
 
 ###<a id="net-im">net-im</a>###
 
@@ -333,7 +345,7 @@ Tox/uTox
 : UDP-based communications platform
 : https://tox.chat
 : https://github.com/irungentoo/toxcore
-: n/a
+: GPLv3: https://github.com/irungentoo/toxcore/blob/master/COPYING
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
@@ -345,7 +357,7 @@ Tox/uTox
 gpg4usb
 : portable editor for encrypting and decrypting files
 : http://www.gpg4usb.org
-: GPLv3
+: GPLv3: https://github.com/gpg4usb/gpg4usb/blob/master/COPYING
 : https://github.com/gpg4usb/gpg4usb
 : 0.3.3-1
 : FreeBSD: no
@@ -357,7 +369,7 @@ gpg4usb
 KeePassX
 : password management utility
 : http://www.keepassx.org/
-: GPL v 2 and various
+: various: https://github.com/keepassx/keepassx/
 : https://github.com/keepassx/keepassx/
 : 2.0 Beta 2
 : FreeBSD: yes
@@ -366,9 +378,20 @@ KeePassX
 : DPorts: yes
 : notes:
 
+obfsproxy
+: pluggable transport for Tor
+: n/a
+: BSD: https://gitweb.torproject.org/pluggable-transports/obfsproxy.git/tree/LICENSE
+: 0.2.13
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: 
+: DPort:
+: notes: 
+
 Pond
 : https://pond.imperialviolet.org
-: see LICENSE
+: BSD: https://github.com/agl/pond/blob/master/LICENSE
 : https://github.com/agl/pond/
 : FreeBSD: yes
 : OpenBSD: no
@@ -378,7 +401,7 @@ Pond
 
 sslyze
 : full-featured SSL scanner
-: GPLv2
+: GPLv2: https://github.com/nabla-c0d3/sslyze/blob/master/LICENSE.txt
 : https://github.com/nabla-c0d3/sslyze
 : 0.10
 : FreeBSD: no
@@ -392,7 +415,7 @@ sslyze
 tlsdate
 : secure parasitic rdate replacement
 : n/a
-: BSD-like, see LICENSE
+: BSD: https://github.com/ioerror/tlsdate/blob/master/LICENSE
 : https://github.com/ioerror/tlsdate/
 : 0.0.13
 : FreeBSD: yes
