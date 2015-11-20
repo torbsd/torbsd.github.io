@@ -33,7 +33,7 @@ tool-name
 : DPorts: [DragonFly BSD's ports](http://mirrors.nycbug.org/pub/DragonFlyBSD/dports/dragonfly:4.4:x86:64/LATEST//All/), similar to FreeBSD
 : notes
 
-<a id="editors">__editors__</a>
+<a id="editors">##editors##</a>
 
 AutoCanary
 : desktop application for generating machine-readable, signed canary statements
