@@ -50,7 +50,7 @@ AutoCanary
 EtherCalc
 : collaborative spreadsheet application
 : https://ethercalc.net
-: CPAL 1.0 Artistic License 2.0
+: CPAL 1.0 Artistic License 2.0: https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt
 : https://github.com/audreyt/ethercalc
 : FreeBSD: no
 : OpenBSD: no
@@ -61,7 +61,7 @@ EtherCalc
 Etherpad
 : collaborative editing application
 : http://etherpad.org
-: Apache 2.0
+: Apache 2.0: https://github.com/ether/etherpad-lite/blob/develop/LICENSE
 : https://github.com/ether/etherpad-lite
 : 1.5.7
 : FreeBSD: no
@@ -99,7 +99,7 @@ Exiv2
 jhead
 : tool for manipulating JPEG EXIF files
 : http://www.sentex.net/~mwandel/jhead/
-: public domain: http://www.sentex.net/~mwandel/jhead/
+: Public Domain: http://www.sentex.net/~mwandel/jhead/
 : http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz
 : 3.00
 : FreeBSD: yes
@@ -136,8 +136,11 @@ pdf-redact-tools
 
 
 Mailpile
+: fast webmail client with built-in security features
 : http://www.mailpile.is
+: AGPLv3: https://github.com/mailpile/Mailpile
 : https://github.com/mailpile/Mailpile
+: beta III
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
@@ -171,7 +174,7 @@ Mixminion
 Torbirdy
 : Thunderbird add-on for using accessing email over the Tor network
 : https://trac.torproject.org/projects/tor/wiki/torbirdy/
-: see LICENSE
+: BSD: https://gitweb.torproject.org/torbirdy.git/tree/LICENSE
 : https://gitweb.torproject.org/torbirdy.git
 : 0.1.4
 : FreeBSD: no
@@ -182,14 +185,6 @@ Torbirdy
 https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) installs which require sh
 ells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) as dependenci
 es?
-
-Whiteout Mail
-: https://whiteout.io/technology.html
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
 
 ###<a id="misc">misc</a>###
 
