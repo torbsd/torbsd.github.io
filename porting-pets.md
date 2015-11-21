@@ -17,7 +17,7 @@ The listed information should be considered a guide but should be confirmed due 
 
 *Just because it says "yes" next to a BSD ports system doesn't mean it's current or works correctly*
 
-These are loose categorizations of the ports, where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more general category, for example __net__ over __net-p2p__.
+These are loose categorizations of the ports, where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more general category, for example __net__ over __net-p2p__. For the ports we are unsure how to categorize or haven't approached yet, we have put them under [misc](#misc).
 
 [editors](#editors)  &#8916; [graphics](#graphics) &#8916;  [mail](#mail) &#8916; [misc](#misc) &#8916; [net](#net) &#8916; [net-im](#net-im) &#8916; [net-p2p](net-p2p) &#8916; [security](#security) &#8916; [sysutils](#sysutils) &#8916; [www](#www)
 
@@ -187,6 +187,123 @@ ells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) as dependenci
 es?
 
 ###<a id="misc">misc</a>###
+
+Kontalk server
+: http://www.kontalk.org
+: ?
+: https://github.com/kontalk/tigase-kontalk/
+: n/a
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: server component of Kontalk XMPP client
+
+Libertree
+: open-source platform for creating private social networks
+: http://www.libertree.org
+: GPLv3
+: https://github.com/LiberTree/libertree
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes:
+
+Martus Desktop
+: platform for collecting, safeguarding, organizing and sharing info
+: https://www.martus.org
+: was on code.google.com, now?
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes:
+
+Martus Server
+: platform for collecting, safeguarding, organizing and sharing info
+: https://www.martus.org
+: was on code.google.com, now
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes:
+
+RetroShare
+: http://retroshare.sourceforge.net
+: various
+: https://github.com/RetroShare/RetroShare
+: notes: why not in DPorts if it's in FreeBSD ports?
+
+Ring
+: https://ring.cx
+: no source, only clients?
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes:
+
+SecureDrop
+: open-source whistleblower submission system
+: https://securedrop.org/
+: AGPL
+: https://github.com/freedomofpress/securedrop/
+: 0.3.6
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: topology review is probably first step.
+
+SparkleShare
+: Git-based file synchronization tool
+: http://sparkleshare.org
+: GPLv3
+: https://github.com/hbons/SparkleShare
+: 1.4
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: essentially a GUI for git with server and client components
+
+Syncany
+: open-source cloud storage and filesharing application
+: https://www.syncany.org
+: GPLv3
+: https://github.com/syncany/syncany
+: 0.4.7-alpha
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes:
+
+Syncthing
+: open-source cloud storage and synchronization
+: https://syncthing.net
+: MPLv2
+: https://github.com/syncthing/syncthing
+: 0.12.3
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: yes
+: DPorts: no
+: notes: in FBSD ports but not DFly?
+
+Turtl: server, client
+: encrypted personal database and note-taking application
+: https://turtl.it
+: GPLv3: https://github.com/turtl/api/blob/master/LICENSE
+: https://github.com/turtl
+: 0.5.2.2
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: various components for the platform in GitHub.
 
 ###<a id="net">net</a>###
 
@@ -476,124 +593,6 @@ Tor Browser
 : DPorts: no
 : notes: A lot of effort is going into __TDP's__ Tor Browser builds for OpenBSD, and we are in conversations about looking at ports for other BSDs.
 
-###Uncategorized, Yet###
-
-Turtl: server, client
-: encrypted personal database and note-taking application
-: https://turtl.it
-: GPLv3: https://github.com/turtl/api/blob/master/LICENSE
-: https://github.com/turtl
-: 0.5.2.2
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes: various components for the platform in GitHub.
-
-RetroShare
-: http://retroshare.sourceforge.net
-: various
-: https://github.com/RetroShare/RetroShare
-: notes: why not in DPorts if it's in FreeBSD ports?
-
-Kontalk server
-: http://www.kontalk.org
-: ?
-: https://github.com/kontalk/tigase-kontalk/
-: n/a
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes: server component of Kontalk XMPP client
-
-SparkleShare
-: Git-based file synchronization tool
-: http://sparkleshare.org
-: GPLv3
-: https://github.com/hbons/SparkleShare
-: 1.4
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes: essentially a GUI for git with server and client components
-
-Ring
-: https://ring.cx
-: no source, only clients?
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
-
-Syncany
-: open-source cloud storage and filesharing application
-: https://www.syncany.org
-: GPLv3
-: https://github.com/syncany/syncany
-: 0.4.7-alpha
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
-
-Syncthing
-: open-source cloud storage and synchronization
-: https://syncthing.net
-: MPLv2
-: https://github.com/syncthing/syncthing
-: 0.12.3
-: FreeBSD: yes
-: OpenBSD: no
-: pkgsrc: yes
-: DPorts: no
-: notes: in FBSD ports but not DFly?
-
-Libertree
-: open-source platform for creating private social networks
-: http://www.libertree.org
-: GPLv3
-: https://github.com/LiberTree/libertree
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
-
-Martus Desktop
-: platform for collecting, safeguarding, organizing and sharing info
-: https://www.martus.org
-: was on code.google.com, now?
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
-
-Martus Server
-: platform for collecting, safeguarding, organizing and sharing info
-: https://www.martus.org
-: was on code.google.com, now
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes: 
-
-SecureDrop
-: open-source whistleblower submission system
-: https://securedrop.org/
-: AGPL
-: https://github.com/freedomofpress/securedrop/
-: 0.3.6
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes: topology review is probably first step.
 
 to add:
 
@@ -606,8 +605,6 @@ github.com/TheTorProject
 github.com/freedomofpress
 
 gajim: Jabber/XMPP client
-
-
 
 
 {{footer.md}}
