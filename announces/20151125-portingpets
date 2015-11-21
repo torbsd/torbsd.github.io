@@ -1,0 +1,13 @@
+Greetings.
+
+The Tor BSD Diversity Project (TPD) seeks to diversify the Tor public anonymity network on a variety of levels. TPD's (https://torbsd.github.io) focuses range from the netwwork to the desktop, with development and advocacy-related projects.
+
+We are proud to announce another effort to encourage the porting of various privacy-enhancing applications to the BSDs, "Porting PETs." The page dedicated to the project, https://torbsd.github.io/porting-pets.html) lists a number of applications, with the basic information needed for *BSD porters to explore adding these applications to the respective BSD port systems.
+
+An array of applications arose as alternatives to closed-source, mainstream functions. For instance, Jitsi and Ricochet seek to replace the usage of Skype. These applications proliferated over the past several years with an eye on privacy and anonymity, and many operate over the Tor network.
+
+In no way does TDP endorse all of the listed applications. Some are already ported, and others are worth considering, but some may be too fundamentally broken in their code base and design to deserve porting efforts. TDP merely sees its role as providing the list of relevant applications.
+
+A number of the applications are today a vital part of private and anonymous storage and communications, and we strongly recommend attention being brought to them. SecureDrop, for instance, is increasingly provisioned as a method for anonymous whistleblowers to submit information to media outlets.
+
+TDP views "Porting PETs" as an opportunity to extend the contributions of the *BSD community to the larger trends in the privacy and anonymity arena, and looks forward to input from the community at-large.
