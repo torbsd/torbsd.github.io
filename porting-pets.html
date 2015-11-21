@@ -25,9 +25,9 @@
 
 <p><em>Just because it says &#8220;yes&#8221; next to a BSD ports system doesn&#8217;t mean it&#8217;s current or works correctly</em></p>
 
-<p>These are loose categorizations of the ports:</p>
+<p>These are loose categorizations of the ports, where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more general category, for example <strong>net</strong> over <strong>net-p2p</strong>.</p>
 
-<p><a href="#editors">editors</a> &#8916; <a href="#graphics">graphics</a> &#8916; <a href="#mail">mail</a> &#8916; <a href="#misc">misc</a> &#8916; <a href="#net">net</a> &#8916; <a href="#net-im">net-im</a> &#8916; <a href="#security">security</a> &#8916; <a href="#sysutils">sysutils</a> &#8916; <a href="#www">www</a></p>
+<p><a href="#editors">editors</a> &#8916; <a href="#graphics">graphics</a> &#8916; <a href="#mail">mail</a> &#8916; <a href="#misc">misc</a> &#8916; <a href="#net">net</a> &#8916; <a href="#net-im">net-im</a> &#8916; <a href="net-p2p">net-p2p</a> &#8916; <a href="#security">security</a> &#8916; <a href="#sysutils">sysutils</a> &#8916; <a href="#www">www</a></p>
 
 <dl>
 <dt>tool-name</dt>
@@ -327,7 +327,7 @@ es?</dd>
 
 <dd></dd>
 
-<dd>BSD-like, see LICENSE</dd>
+<dd>BSD: https://github.com/ioerror/blockfinder/blob/master/LICENSE</dd>
 
 <dd>https://github.com/ioerror/blockfinder/</dd>
 
@@ -497,9 +497,9 @@ es?</dd>
 
 <dd>https://jitsi.org</dd>
 
-<dd>Apache</dd>
+<dd>Apache 2.0: https://github.com/jitsi/jitsi/blob/master/LICENSE</dd>
 
-<dd>https://download.jitsi.org/jitsi/src/</dd>
+<dd>https://github.com/jitsi/jitsi</dd>
 
 <dd>2.8.5426</dd>
 
@@ -518,7 +518,7 @@ es?</dd>
 
 <dd>https://ricochet.im</dd>
 
-<dd>BSD-like</dd>
+<dd>BSD: https://github.com/ricochet-im/ricochet/blob/master/LICENSE</dd>
 
 <dd>https://github.com/ricochet-im/ricochet/</dd>
 
@@ -539,7 +539,7 @@ es?</dd>
 
 <dd>https://github.com/prof7bit/TorChat/wiki/</dd>
 
-<dd>?</dd>
+<dd>GPLv3: https://en.wikipedia.org/wiki/TorChat</dd>
 
 <dd>https://github.com/prof7bit/TorChat/</dd>
 
@@ -553,14 +553,14 @@ es?</dd>
 
 <dd>DPorts: no</dd>
 
-<dd>notes:</dd>
+<dd>notes: license file?</dd>
 
 <dt>Tor Messenger</dt>
 <dd>instant messenger for anonymity utilizing existing protocols</dd>
 
-<dd>n/a</dd>
+<dd>n/</dd>
 
-<dd>?</dd>
+<dd>GPLv2: https://github.com/rovemonteux/tormessenger/blob/master/LICENSE</dd>
 
 <dd>https://gitweb.torproject.org/tor-messenger-build.git</dd>
 
@@ -574,7 +574,7 @@ es?</dd>
 
 <dd>DPorts: no</dd>
 
-<dd>notes: requires Docker and a bunch of Perl modules. Early stages of dev</dd>
+<dd>notes: requires Docker and a bunch of Perl modules. Early stages of dev. License reference is from old GitHub account, so may be inaccurate.</dd>
 
 <dt>Tox/uTox</dt>
 <dd>UDP-based communications platform</dd>
@@ -594,6 +594,29 @@ es?</dd>
 <dd>DPorts: yes</dd>
 
 <dd>notes: FreeBSD builds available on www</dd>
+</dl>
+
+<h3 id="aidnet-p2pnet-p2pa"><a id="net-p2p">net-p2p</a></h3>
+
+<dl>
+<dt>Bitmessage</dt>
+<dd>https://bitmessage.org/wiki/Main_Page</dd>
+
+<dd>MIT: https://github.com/Bitmessage/PyBitmessage/blob/master/LICENSE</dd>
+
+<dd>https://github.com/Bitmessage/PyBitMessage</dd>
+
+<dd>0.4.4</dd>
+
+<dd>FreeBSD: yes</dd>
+
+<dd>OpenBSD: no</dd>
+
+<dd>pkgsrc: no</dd>
+
+<dd>DPorts: yes</dd>
+
+<dd>notes:</dd>
 </dl>
 
 <h3 id="aidsecuritysecuritya"><a id="security">security</a></h3>
@@ -661,9 +684,13 @@ es?</dd>
 <dd>notes:</dd>
 
 <dt>Pond</dt>
+<dd>forward secure, asynchronous messaging</dd>
+
 <dd>https://pond.imperialviolet.org</dd>
 
 <dd>BSD: https://github.com/agl/pond/blob/master/LICENSE</dd>
+
+<dd>0.1.1</dd>
 
 <dd>https://github.com/agl/pond/</dd>
 
@@ -739,19 +766,23 @@ es?</dd>
 <dd>notes: /bin/<a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash">bash</a> inst
 all script, and therefore a frivilous dependency</dd>
 
-<dt>noscript</dt>
-<dd>Firefox add-on</dd>
+<dt>NoScript</dt>
+<dd>Firefox add-on for blocking scripts</dd>
 
-<dd>notes:</dd>
+<dd>https://noscript.net/</dd>
 
-<dd>DPorts: yes</dd>
+<dd>GPLv3: https://noscript.net/faq#qa1_14</dd>
+
+<dd>2.6.9.39</dd>
+
+<dd>notes: Mozilla add-ons as ports?</dd>
 
 <dt>sigbin</dt>
 <dd>web application for storing PGP-signed messages</dd>
 
 <dd>none</dd>
 
-<dd>GPL v3</dd>
+<dd>GPLv3: https://github.com/firstlook/sigbin/blob/master/LICENSE.md</dd>
 
 <dd>https://github.com/firstlook/sigbin/</dd>
 
@@ -770,7 +801,7 @@ all script, and therefore a frivilous dependency</dd>
 <dt>Tor Browser</dt>
 <dd>Firefox-based browser for using the Tor anonymity network</dd>
 
-<dd></dd>
+<dd>https://www.torproject.org/projects/torbrowser.html.en</dd>
 
 <dd>various: https://gitweb.torproject.org/tor-browser.git/tree/toolkit/content/license.html?h=esr24</dd>
 
@@ -793,11 +824,13 @@ all script, and therefore a frivilous dependency</dd>
 
 <dl>
 <dt>Turtl: server, client</dt>
-<dd>personal database and note-taking application</dd>
-
-<dd>GPLv3?</dd>
+<dd>encrypted personal database and note-taking application</dd>
 
 <dd>https://turtl.it</dd>
+
+<dd>GPLv3: https://github.com/turtl/api/blob/master/LICENSE</dd>
+
+<dd>https://github.com/turtl</dd>
 
 <dd>0.5.2.2</dd>
 
@@ -809,39 +842,14 @@ all script, and therefore a frivilous dependency</dd>
 
 <dd>DPorts: no</dd>
 
-<dd>notes:</dd>
-
-<dt>Bitmessage</dt>
-<dd>https://bitmessage.org/wiki/Main_Page</dd>
-
-<dd>MIT</dd>
-
-<dd>https://github.com/Bitmessage/PyBitMessage</dd>
-
-<dd>FreeBSD: yes</dd>
-
-<dd>OpenBSD: no</dd>
-
-<dd>pkgsrc: no</dd>
-
-<dd>DPorts: yes</dd>
-
-<dd>notes:</dd>
+<dd>notes: various components for the platform in GitHub.</dd>
 
 <dt>RetroShare</dt>
 <dd>http://retroshare.sourceforge.net</dd>
 
 <dd>various</dd>
 
-<dd>https://github.com/RetroShare/RetroShare/</dd>
-
-<dd>FreeBSD: yes</dd>
-
-<dd>OpenBSD: yes</dd>
-
-<dd>pkgsrc: no</dd>
-
-<dd>DPorts: no</dd>
+<dd>https://github.com/RetroShare/RetroShare</dd>
 
 <dd>notes: why not in DPorts if it&#8217;s in FreeBSD ports?</dd>
 
@@ -1033,7 +1041,7 @@ all script, and therefore a frivilous dependency</dd>
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Fri Nov 20 17:19:34 2015 -0500</code></p>
+<p><code>last updated: Sat Nov 21 13:21:47 2015 -0500</code></p>
 
 </body>
 </html>

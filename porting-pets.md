@@ -17,9 +17,9 @@ The listed information should be considered a guide but should be confirmed due 
 
 *Just because it says "yes" next to a BSD ports system doesn't mean it's current or works correctly*
 
-These are loose categorizations of the ports:
+These are loose categorizations of the ports, where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more general category, for example __net__ over __net-p2p__.
 
-[editors](#editors)  &#8916; [graphics](#graphics) &#8916;  [mail](#mail) &#8916; [misc](#misc) &#8916; [net](#net) &#8916; [net-im](#net-im) &#8916; [security](#security) &#8916; [sysutils](#sysutils) &#8916; [www](#www)
+[editors](#editors)  &#8916; [graphics](#graphics) &#8916;  [mail](#mail) &#8916; [misc](#misc) &#8916; [net](#net) &#8916; [net-im](#net-im) &#8916; [net-p2p](net-p2p) &#8916; [security](#security) &#8916; [sysutils](#sysutils) &#8916; [www](#www)
 
 tool-name
 : short-descr
@@ -193,7 +193,7 @@ es?
 blockfinder
 : tool for enumerating network information by country
 :
-: BSD-like, see LICENSE
+: BSD: https://github.com/ioerror/blockfinder/blob/master/LICENSE
 : https://github.com/ioerror/blockfinder/
 : 3.1?
 : FreeBSD: no
@@ -291,8 +291,8 @@ Cryptocat
 Jitsi
 : XMPP/SIP client
 : https://jitsi.org
-: Apache
-: https://download.jitsi.org/jitsi/src/
+: Apache 2.0: https://github.com/jitsi/jitsi/blob/master/LICENSE
+: https://github.com/jitsi/jitsi
 : 2.8.5426
 : FreeBSD: yes
 : OpenBSD: no
@@ -303,7 +303,7 @@ Jitsi
 Ricochet
 : instant messaging client
 : https://ricochet.im
-: BSD-like
+: BSD: https://github.com/ricochet-im/ricochet/blob/master/LICENSE
 : https://github.com/ricochet-im/ricochet/
 : 1.1.1
 : FreeBSD: no
@@ -315,26 +315,26 @@ Ricochet
 TorChat2
 : peer-to-peer instant messenger running on Tor hidden services
 : https://github.com/prof7bit/TorChat/wiki/
-: ?
+: GPLv3: https://en.wikipedia.org/wiki/TorChat
 : https://github.com/prof7bit/TorChat/
 : 15
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes:
+: notes: license file?
 
 Tor Messenger
 : instant messenger for anonymity utilizing existing protocols
-: n/a
-: ?
+: n/
+: GPLv2: https://github.com/rovemonteux/tormessenger/blob/master/LICENSE
 : https://gitweb.torproject.org/tor-messenger-build.git
 : 0.1.0b4
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: requires Docker and a bunch of Perl modules. Early stages of dev
+: notes: requires Docker and a bunch of Perl modules. Early stages of dev. License reference is from old GitHub account, so may be inaccurate.
 
 Tox/uTox
 : UDP-based communications platform
@@ -346,6 +346,19 @@ Tox/uTox
 : pkgsrc: no
 : DPorts: yes
 : notes: FreeBSD builds available on www
+
+###<a id="net-p2p">net-p2p</a>###
+
+Bitmessage
+: https://bitmessage.org/wiki/Main_Page
+: MIT: https://github.com/Bitmessage/PyBitmessage/blob/master/LICENSE
+: https://github.com/Bitmessage/PyBitMessage
+: 0.4.4
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: yes
+: notes:
 
 ###<a id="security">security</a>###
 
@@ -385,8 +398,10 @@ obfsproxy
 : notes: 
 
 Pond
+: forward secure, asynchronous messaging
 : https://pond.imperialviolet.org
 : BSD: https://github.com/agl/pond/blob/master/LICENSE
+: 0.1.1
 : https://github.com/agl/pond/
 : FreeBSD: yes
 : OpenBSD: no
@@ -430,15 +445,17 @@ HTTPS Everywhere
 : notes: /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) inst
 all script, and therefore a frivilous dependency
 
-noscript
-: Firefox add-on
-: notes:
-: DPorts: yes
+NoScript
+: Firefox add-on for blocking scripts
+: https://noscript.net/
+: GPLv3: https://noscript.net/faq#qa1_14
+: 2.6.9.39
+: notes: Mozilla add-ons as ports?
 
 sigbin
 : web application for storing PGP-signed messages
 : none
-: GPL v3
+: GPLv3: https://github.com/firstlook/sigbin/blob/master/LICENSE.md
 : https://github.com/firstlook/sigbin/
 : n/a
 : FreeBSD: no
@@ -449,7 +466,7 @@ sigbin
 
 Tor Browser
 : Firefox-based browser for using the Tor anonymity network
-: 
+: https://www.torproject.org/projects/torbrowser.html.en
 : various: https://gitweb.torproject.org/tor-browser.git/tree/toolkit/content/license.html?h=esr24
 : https://gitweb.torproject.org/tor-browser.git/
 : 5.0.4
@@ -462,34 +479,21 @@ Tor Browser
 ###Uncategorized, Yet###
 
 Turtl: server, client
-: personal database and note-taking application
-: GPLv3?
+: encrypted personal database and note-taking application
 : https://turtl.it
+: GPLv3: https://github.com/turtl/api/blob/master/LICENSE
+: https://github.com/turtl
 : 0.5.2.2
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes:
-
-Bitmessage
-: https://bitmessage.org/wiki/Main_Page
-: MIT
-: https://github.com/Bitmessage/PyBitMessage
-: FreeBSD: yes
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: yes
-: notes:
+: notes: various components for the platform in GitHub.
 
 RetroShare
 : http://retroshare.sourceforge.net
 : various
-: https://github.com/RetroShare/RetroShare/
-: FreeBSD: yes
-: OpenBSD: yes
-: pkgsrc: no
-: DPorts: no
+: https://github.com/RetroShare/RetroShare
 : notes: why not in DPorts if it's in FreeBSD ports?
 
 Kontalk server
