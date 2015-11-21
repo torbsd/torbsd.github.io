@@ -28,7 +28,7 @@ __Developers__
 :    Clone our repositories, build and break the software, submit tickets and patches.
 
 __Tor BSD Relay Operators/Admins__
-:    Run a BSD relay, use and review the relay guides, contribute input. Enlist your relay(s) the (unofficial) [BSD Buildbot](http://buildbox.pixelminers.net).
+:    Run a BSD relay, use and review the relay guides, contribute input. Enlist your relay(s) the (unofficial) [BSD Buildbot](http://buildbot.pixelminers.net).
 
 ## "If __TDP__ is concerned about operating system diversity, why does it just focus on BSD Systems, and not other operating systems such as Illuminos?" ##
 
