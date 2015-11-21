@@ -17,7 +17,7 @@
 
 <h2 id="portingtargetsforpets">Porting Targets for PETs</h2>
 
-<p>Over the past few years, a long list of applications spawn from the interest in privacy and anonymity solutions. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.</p>
+<p>Over the past few years, a long list of applications spawned from attention to privacy and anonymity solutions. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.</p>
 
 <p>This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably <em>shouldn&#8217;t</em> be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/<a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash">bash</a> a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. <strong>No endorsements should be assumed from this list.</strong></p>
 
@@ -25,7 +25,7 @@
 
 <p><em>Just because it says &#8220;yes&#8221; next to a BSD ports system doesn&#8217;t mean it&#8217;s current or works correctly</em></p>
 
-<p>These are loose categorizations of the ports, where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more general category, for example <strong>net</strong> over <strong>net-p2p</strong>. For the ports we are unsure how to categorize or haven&#8217;t approached yet, we have put them under <a href="#misc">misc</a>.</p>
+<p>These are loose categorizations of the ports. Where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more specific category, for example <strong>net-p2p</strong> over <strong>net</strong>. For the ports we are unsure how to categorize or haven&#8217;t approached yet, we have put them under <a href="#misc">misc</a>.</p>
 
 <p><a href="#editors">editors</a> &#8916; <a href="#graphics">graphics</a> &#8916; <a href="#mail">mail</a> &#8916; <a href="#misc">misc</a> &#8916; <a href="#net">net</a> &#8916; <a href="#net-im">net-im</a> &#8916; <a href="net-p2p">net-p2p</a> &#8916; <a href="#security">security</a> &#8916; <a href="#sysutils">sysutils</a> &#8916; <a href="#www">www</a></p>
 
@@ -394,21 +394,6 @@ es?</dd>
 
 <dd>notes:</dd>
 
-<dt>Ring</dt>
-<dd>https://ring.cx</dd>
-
-<dd>no source, only clients?</dd>
-
-<dd>FreeBSD: no</dd>
-
-<dd>OpenBSD: no</dd>
-
-<dd>pkgsrc: no</dd>
-
-<dd>DPorts: no</dd>
-
-<dd>notes:</dd>
-
 <dt>SecureDrop</dt>
 <dd>open-source whistleblower submission system</dd>
 
@@ -435,7 +420,7 @@ es?</dd>
 
 <dd>http://sparkleshare.org</dd>
 
-<dd>GPLv3</dd>
+<dd>GPLv3: https://github.com/hbons/SparkleShare/blob/master/legal/License_for_SparkleShare.txt</dd>
 
 <dd>https://github.com/hbons/SparkleShare</dd>
 
@@ -471,27 +456,6 @@ es?</dd>
 <dd>DPorts: no</dd>
 
 <dd>notes:</dd>
-
-<dt>Syncthing</dt>
-<dd>open-source cloud storage and synchronization</dd>
-
-<dd>https://syncthing.net</dd>
-
-<dd>MPLv2</dd>
-
-<dd>https://github.com/syncthing/syncthing</dd>
-
-<dd>0.12.3</dd>
-
-<dd>FreeBSD: yes</dd>
-
-<dd>OpenBSD: no</dd>
-
-<dd>pkgsrc: yes</dd>
-
-<dd>DPorts: no</dd>
-
-<dd>notes: in FBSD ports but not DFly?</dd>
 
 <dt>Turtl: server, client</dt>
 <dd>encrypted personal database and note-taking application</dd>
@@ -578,6 +542,48 @@ es?</dd>
 <dd>DPorts: no</dd>
 
 <dd>notes:</dd>
+
+<dt>Ring client and server</dt>
+<dd>open source communications platform</dd>
+
+<dd>https://ring.cx</dd>
+
+<dd>git https://gerrit-ring.savoirfairelinux.com/ projects</dd>
+
+<dd>GPLv3: https://ring.cx/en/documentation/about-ring</dd>
+
+<dd>n/a</dd>
+
+<dd>FreeBSD: no</dd>
+
+<dd>OpenBSD: no</dd>
+
+<dd>pkgsrc: no</dd>
+
+<dd>DPorts: no</dd>
+
+<dd>notes: various components for the platform</dd>
+
+<dt>Syncthing</dt>
+<dd>open-source cloud storage and synchronization</dd>
+
+<dd>https://syncthing.net</dd>
+
+<dd>MPLv2</dd>
+
+<dd>https://github.com/syncthing/syncthing</dd>
+
+<dd>0.12.3</dd>
+
+<dd>FreeBSD: yes</dd>
+
+<dd>OpenBSD: no</dd>
+
+<dd>pkgsrc: yes</dd>
+
+<dd>DPorts: no</dd>
+
+<dd>notes: in FBSD ports but not DFly?</dd>
 
 <dt>Tor</dt>
 <dd>stable version of the onion-routing daemon for anonymous networking</dd>
@@ -1053,7 +1059,7 @@ all script, and therefore a frivilous dependency</dd>
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Sat Nov 21 13:55:13 2015 -0500</code></p>
+<p><code>last updated: Sat Nov 21 14:17:29 2015 -0500</code></p>
 
 </body>
 </html>

@@ -9,7 +9,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 {{header.md}}
 ##Porting Targets for PETs##
 
-Over the past few years, a long list of applications spawn from the interest in privacy and anonymity solutions. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.
+Over the past few years, a long list of applications spawned from attention to privacy and anonymity solutions. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.
 
 This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. __No endorsements should be assumed from this list.__
 
@@ -17,7 +17,7 @@ The listed information should be considered a guide but should be confirmed due 
 
 *Just because it says "yes" next to a BSD ports system doesn't mean it's current or works correctly*
 
-These are loose categorizations of the ports, where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more general category, for example __net__ over __net-p2p__. For the ports we are unsure how to categorize or haven't approached yet, we have put them under [misc](#misc).
+These are loose categorizations of the ports. Where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more specific category, for example __net-p2p__ over __net__. For the ports we are unsure how to categorize or haven't approached yet, we have put them under [misc](#misc).
 
 [editors](#editors)  &#8916; [graphics](#graphics) &#8916;  [mail](#mail) &#8916; [misc](#misc) &#8916; [net](#net) &#8916; [net-im](#net-im) &#8916; [net-p2p](net-p2p) &#8916; [security](#security) &#8916; [sysutils](#sysutils) &#8916; [www](#www)
 
@@ -231,15 +231,6 @@ Martus Server
 : DPorts: no
 : notes:
 
-Ring
-: https://ring.cx
-: no source, only clients?
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
-
 SecureDrop
 : open-source whistleblower submission system
 : https://securedrop.org/
@@ -255,7 +246,7 @@ SecureDrop
 SparkleShare
 : Git-based file synchronization tool
 : http://sparkleshare.org
-: GPLv3
+: GPLv3: https://github.com/hbons/SparkleShare/blob/master/legal/License_for_SparkleShare.txt
 : https://github.com/hbons/SparkleShare
 : 1.4
 : FreeBSD: no
@@ -275,18 +266,6 @@ Syncany
 : pkgsrc: no
 : DPorts: no
 : notes:
-
-Syncthing
-: open-source cloud storage and synchronization
-: https://syncthing.net
-: MPLv2
-: https://github.com/syncthing/syncthing
-: 0.12.3
-: FreeBSD: yes
-: OpenBSD: no
-: pkgsrc: yes
-: DPorts: no
-: notes: in FBSD ports but not DFly?
 
 Turtl: server, client
 : encrypted personal database and note-taking application
@@ -337,6 +316,29 @@ ooni-probe
 : DPorts: no
 : notes:
 
+Ring client and server
+: open source communications platform
+: https://ring.cx
+: git https://gerrit-ring.savoirfairelinux.com/ projects
+: GPLv3: https://ring.cx/en/documentation/about-ring
+: n/a
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: various components for the platform
+
+Syncthing
+: open-source cloud storage and synchronization
+: https://syncthing.net
+: MPLv2
+: https://github.com/syncthing/syncthing
+: 0.12.3
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: yes
+: DPorts: no
+: notes: in FBSD ports but not DFly?
 
 Tor
 : stable version of the onion-routing daemon for anonymous networking
