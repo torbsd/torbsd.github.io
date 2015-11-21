@@ -189,21 +189,22 @@ es?
 ###<a id="misc">misc</a>###
 
 Kontalk server
+: encrypted communications platform
 : http://www.kontalk.org
-: ?
 : https://github.com/kontalk/tigase-kontalk/
-: n/a
+: GPLv3: check each component under GitHub account
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: server component of Kontalk XMPP client
+: notes: only for smartphones? client and server component of Kontalk XMPP client
 
 Libertree
 : open-source platform for creating private social networks
 : http://www.libertree.org
-: GPLv3
+: GNU Affero: https://github.com/Libertree/libertree/blob/master/LICENCE
 : https://github.com/LiberTree/libertree
+: ?
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -229,12 +230,6 @@ Martus Server
 : pkgsrc: no
 : DPorts: no
 : notes:
-
-RetroShare
-: http://retroshare.sourceforge.net
-: various
-: https://github.com/RetroShare/RetroShare
-: notes: why not in DPorts if it's in FreeBSD ports?
 
 Ring
 : https://ring.cx
@@ -396,7 +391,7 @@ Torstatus
 Cryptocat
 : accessible chat client
 : https://crypto.cat/
-: GNU Affero v3: https://github.com/cryptocat/cryptocat/blob/master/LICENSE.txt
+: GNU Affero: https://github.com/cryptocat/cryptocat/blob/master/LICENSE.txt
 : https://github.com/cryptocat/cryptocat/
 : 2.2.2
 : FreeBSD: no
@@ -476,6 +471,18 @@ Bitmessage
 : pkgsrc: no
 : DPorts: yes
 : notes:
+
+RetroShare
+: secure, decentralized P2P platform
+: http://retroshare.sourceforge.net
+: GPLv3: http://retroshare.sourceforge.net/wiki/index.php/Main_Page
+: https://github.com/RetroShare/RetroShare
+: 0.6.0 RC2.8551
+: FreeBSD: yes
+: OpenBSD: yes
+: pkgsrc: no
+: DPorts: no
+: notes: why not in DPorts if it's in FreeBSD ports?
 
 ###<a id="security">security</a>###
 
