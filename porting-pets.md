@@ -181,10 +181,7 @@ Torbirdy
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: should Mozilla add-ons be their own ports? What about ugly /bin/[bash](
-https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) installs which require sh
-ells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) as dependenci
-es?
+: notes: should Mozilla add-ons be their own ports? What about ugly /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) installs which require shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) as dependencies?
 
 ###<a id="misc">misc</a>###
 
@@ -224,7 +221,7 @@ Martus Desktop
 Martus Server
 : platform for collecting, safeguarding, organizing and sharing info
 : https://www.martus.org
-: was on code.google.com, now
+: was on code.google.com, now?
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -600,7 +597,7 @@ Tor Browser
 : OpenBSD: no, [well...](https://github.com/torbsd/openbsd-ports)
 : pkgsrc: no
 : DPorts: no
-: notes: A lot of effort is going into __TDP's__ Tor Browser builds for OpenBSD, and we are in conversations about looking at ports for other BSDs.
+: notes: A lot of effort is going into __TDP's__ Tor Browser builds for OpenBSD, and we are in conversations about porting to other BSDs.
 
 
 {{footer.md}}
