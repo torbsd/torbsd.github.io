@@ -603,12 +603,5 @@ Tor Browser
 : notes: A lot of effort is going into __TDP's__ Tor Browser builds for OpenBSD, and we are in conversations about looking at ports for other BSDs.
 
 
-github.com/TheTorProject
-
-github.com/freedomofpress
-
-gajim: Jabber/XMPP client
-
-
 {{footer.md}}
 
