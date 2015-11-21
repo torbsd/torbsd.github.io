@@ -67,7 +67,7 @@ We welcome relevant submissions from others.
 
 ### The Danger of Monocultures in Technology ###
 
-[CyberInsecurity: The Cost of Monopoly. How the Dominance of Microsoft's Products Pose a Risk to Security](http://www.ccianet.org/papers/cybersecurity.pdf)
+[CyberInsecurity: The Cost of Monopoly. How the Dominance of Microsoft's Products Pose a Risk to Security](https://cryptome.org/cyberinsecurity.htm). Note: the original PDF on the Computer and Communications Industry Association (CCIA) web site is no where to be found. Originally at http://www.ccianet.org/papers/cybersecurity.pdf.
 :    An explosive paper arguing Microsoft's desktop monopoly is a critical weakness in global infrastructure. The paper prompted the firing of one of the authors [Dan Geer](https://en.wikipedia.org/wiki/Dan_Geer) from @Stake (later acquired by Symantec) in 2003.
 
 [Monoculture on the Back of the Envelope](https://www.usenix.org/legacy/publiccations/login/2005-12/openpds/geer.pdf)
