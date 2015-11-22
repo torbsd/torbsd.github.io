@@ -29,7 +29,7 @@ Since our beginnings, __TDP__ successfully achieved a number of significant mile
 
 * [documented an array of common PETs](porting-pets.html)--privacy-enhancing technologies--and their status in the various BSD ports systems, encouraging BSD port developers to approach and investigate their adoption
 
-__TDP__ now has a proven track record as a project. But __TDP__ wants to do more. Each and every one of our accomplishments is only a first step in a larger set of goals.
+__TDP__ already has a proven track record as a project. But __TDP__ wants to do more. Each and every one of our accomplishments is only a first step in a larger set of goals.
 
 * we want to release a maintained Tor Browser for OpenBSD's stable branch
 

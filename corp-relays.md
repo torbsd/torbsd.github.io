@@ -32,7 +32,7 @@ Our implementation recommendations include:
 
 * previously used hardware can be employed, but consider well-supported network interface cards and drivers for high-bandwidth relays
 
-* optimizing FreeBSD may not be necessary
+* optimizing FreeBSD may not be necessary, while changes for other BSDs are quite simple
 
 * OpenBSD requires some /etc/login.conf changes, and the ports/packages only includes the stable version of Tor, and if time is no constraint, run and maintain Tor on a recent snapshot
 
@@ -46,13 +46,15 @@ Our implementation recommendations include:
 
 For firms that use BSDs, there are multiple benefits in running Tor relays.
 
-First, Tor relays can be a useful platform for assessing the BSDs' networking stacks. It's an opportunity to test portable BSD code such as LibreSSL and hardware encryption in a production scenario, as small changes in operations are not detrimental to the business.
+First, Tor relays can be a useful platform for assessing the BSDs' networking stacks. It's an opportunity to test portable BSD code such as LibreSSL and hardware encryption in a production scenario, as system changes are not detrimental to the business.
 
 Second, providing a more prominent role to the BSDs encourages the overwhelmingly youthful crowd of Tor relay users and administrators to begin trying and using BSDs. Potentially, the pool of BSD-familiar administrators could grow, strengthening the entire BSD ecosystem.
 
 Finally, more Tor relays run by competent BSD sysadmins can mean more upstream patches and changes beneficial to everyone.
 
 More generally, the case for corporate use of anonymity and privacy technologies has grown. Most profoundly noticeable among journalists, these technologies will become fundamental aspects of corporate IT infrastructure. The safest means of ensuring the integrity of firms employing the Tor network is to contribute Tor relays themselves.
+
+Every firm has an interest in anonymity and privacy technologies, particularly in the competitive global economy. Industrial espionage is the norm, not the execption. Firms activities cross borders as a norm, and the globe is saturated by surveillance and censorship by a variety of hostile parties. Tor is a critical tool in mitigating such threats.
 
 Please contact us with any questions on deploying Tor relays on BSDs. We hope our efforts not only increase the number of BSD-running Tor relays, but more generally strengthen the Tor network.
 
