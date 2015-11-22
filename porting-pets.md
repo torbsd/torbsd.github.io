@@ -188,13 +188,26 @@ Torbirdy
 Kontalk server
 : encrypted communications platform
 : http://www.kontalk.org
-: https://github.com/kontalk/tigase-kontalk/
 : GPLv3: check each component under GitHub account
+: https://github.com/kontalk/tigase-kontalk/
+: n/a
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
 : notes: only for smartphones? client and server component of Kontalk XMPP client
+
+LEAP
+: secure server client platform
+: https://leap.se
+: GPLv3 https://leap.se/git/{bitmask_client.git,leap_platform,git,etc}/blob/HEAD:/LICENSE
+: https://leap.se/git
+: n/a 
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: various components would needed for full porting, but starting point is likely the server.
 
 Libertree
 : open-source platform for creating private social networks
