@@ -29,11 +29,11 @@ Since our beginnings, __TDP__ successfully achieved a number of significant mile
 
 * [documented an array of common PETs](porting-pets.html)--privacy-enhancing technologies--and their status in the various BSD ports systems, encouraging BSD port developers to approach and investigate their adoption
 
-But __TDP__ wants to do more. Each and every one of our accomplishments is only a first step in a larger set of goals.
+__TDP__ now has a proven track record as a project. But __TDP__ wants to do more. Each and every one of our accomplishments is only a first step in a larger set of goals.
 
 * we want to release a maintained Tor Browser for OpenBSD's stable branch
 
-* we want to port Tor Browser to at least one more BSD Unix (FreeBSD would be a good choice), even if just by fomenting and supporting others to do this
+* we want to enhance efforts to port Tor Browser to other BSDs
 
 * we want to push some of our code changes upstream into the Tor Project and even Mozilla
 
@@ -41,9 +41,13 @@ But __TDP__ wants to do more. Each and every one of our accomplishments is only 
 
 * we want to target more potential Tor relay operators in countries with few or no relays through our contacts in the *BSD community, and [EuroBSDCon 2016](https://2016.eurobsdcon.org) is scheduled for Belgrade, Serbia (RS), a country and region (Croatia/HR, Slovenia/SI, Bosnia and Herzegovina/BA, Macedonia/MK, Montenegro/ME and others) where the sum total of public Tor relays is in the single-digits
 
-* we want to enlist more BSD-using firms to run high-bandwidth Tor relays
+* we want to enlist more BSD-using firms to run high-bandwidth Tor relays, employing our networks of contacts through the community
 
 * we want our relay guides to be production ready, and translated to languages beyond English, particularly into those common in countries with low relay counts
+
+* we want to port more PETs applications to the BSDs, and to facilitate others to join the efforts
+
+* most vitally, we want to enlist more BSD developers into __TDP's__ efforts, which has already begun
 
 We aren't limiting __TDP__ to those goals. __TDP__ is a dynamic project aiming to adjust to any opportunity to strengthen the Tor network. __TDP__ has a track record and a trajectory of moving forward. 
 
