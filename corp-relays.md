@@ -42,6 +42,8 @@ Our implementation recommendations include:
 
 * consider using the unstable version of Tor as opposed to the stable version, as the former version gets more attention
 
+* in the case the entity is operating more than one relay, make sure the [MyFamily knob](https://www.torproject.org/docs/tor-manual.html.en#MyFamily) is designated in the torrc file
+
 * for high-bandwidth relays, please consult these links for every insight
 
 For firms that use BSDs, there are multiple benefits in running Tor relays.
@@ -57,8 +59,6 @@ More generally, the case for corporate use of anonymity and privacy technologies
 Every firm has an interest in anonymity and privacy technologies, particularly in a competitive global economy. Industrial espionage is the norm, not the exception. Firms' activities cross borders as a norm, and the globe is saturated by surveillance and censorship by a variety of hostile parties. Tor is a critical tool in mitigating such threats.
 
 Please contact us with any questions on deploying Tor relays on BSDs. We hope our efforts increase the number of BSD-running Tor relays, simultaneously strengthening the Tor network.
-
-Note that if __TDP__ maintains access to any of these relays, we make sure they are designated as the same ["Family"](https://www.torproject.org/docs/tor-manual.html.en#NodeFamily) of associated Tor relays.
 
 ### Current TDP Corporate Tor Relays ###
 
