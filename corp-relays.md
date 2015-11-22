@@ -54,9 +54,9 @@ Finally, more Tor relays run by competent BSD sysadmins can mean more upstream p
 
 More generally, the case for corporate use of anonymity and privacy technologies has grown. Most profoundly noticeable among journalists, these technologies will become fundamental aspects of corporate IT infrastructure. The safest means of ensuring the integrity of firms employing the Tor network is to contribute Tor relays themselves.
 
-Every firm has an interest in anonymity and privacy technologies, particularly in the competitive global economy. Industrial espionage is the norm, not the execption. Firms activities cross borders as a norm, and the globe is saturated by surveillance and censorship by a variety of hostile parties. Tor is a critical tool in mitigating such threats.
+Every firm has an interest in anonymity and privacy technologies, particularly in a competitive global economy. Industrial espionage is the norm, not the exception. Firms' activities cross borders as a norm, and the globe is saturated by surveillance and censorship by a variety of hostile parties. Tor is a critical tool in mitigating such threats.
 
-Please contact us with any questions on deploying Tor relays on BSDs. We hope our efforts not only increase the number of BSD-running Tor relays, but more generally strengthen the Tor network.
+Please contact us with any questions on deploying Tor relays on BSDs. We hope our efforts increase the number of BSD-running Tor relays, simultaneously strengthening the Tor network.
 
 Note that if __TDP__ maintains access to any of these relays, we make sure they are designated as the same ["Family"](https://www.torproject.org/docs/tor-manual.html.en#NodeFamily) of associated Tor relays.
 
