@@ -1,8 +1,8 @@
-Sun Nov 22 18:50:06 UTC 2015
-Data Source: blutmagie.de
+Sun Nov 22 19:10:59 UTC 2015
+Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
-https://torbsd.github.io/
+https://torbsd.github.io/dirty-stats.html
 Quick-and-Dirty Static Reports
 
 'Total Relay Count'
