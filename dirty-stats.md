@@ -44,6 +44,8 @@ Number of relays by country code. This report shows another ugly diversity pictu
 
 Only nine country codes provide triple-digit (>=100) numbers of relays, yet many of the country codes with double-digit relay numbers could easily extend to the triple-digit range with some attention.
 
+Intersecting certain country codes and operating system reveals some other interesting observations. Japan has some 65 public Tor relays, only two of which are BSDs, which demands some attention due to Japan maintaining a large BSD user-base not to mention hosting events such as [AsiaBSDCon](https://2015.asiabsdcon.org). Turkey is another country with a significant BSD user-base, yet there are under ten relays in total, none of which run BSDs.
+
 __[Country Codes without Public Tor Relays](tor-less-ccs.txt)__
 
 This was was the first report created, based on the dearth of relays in a number of countries such as Pakistan, and the low number of relays in Brazil, India and Mexico. These statistics indicate where further attention to Tor relay growth should be directed.
