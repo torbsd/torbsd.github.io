@@ -29,11 +29,13 @@
 
 <p><strong><a href="bw-rank-cc.txt">Country Codes Ranked by Bandwidth</a></strong></p>
 
-<p>Ranking in Kbps of bandwidth provided by each country code, along with the percentage of bandwidth provided by each country code. The output shows a clear over-concentation of Tor bandwidth in France, Germany, the Netherlands and the US.</p>
+<p>Ranking in Kbps of bandwidth provided by each country code, along with the percentage of bandwidth provided by each country code. The output shows a clear over-concentation of Tor bandwidth in France, Germany, the Netherlands and the US. Only some 14 country codes contribute more than 1% of the Tor network bandwidth. Well-wired countries such as Poland, Denmark, Italy, Spain, Estonia, and so on should have no problem breaking the 1% threshold.</p>
 
 <p><strong><a href="bw-rank-os.txt">Operating Systems Ranks by Bandwidth</a></strong></p>
 
 <p>Ranking in Kbps of bandwidth provided by each operating system, with the relevant percentage share. This script&#8217;s results are essentially what spawned <strong>TDP</strong> in the first place: the overwhelming role of Linux in providing bandwidth to the Tor network.</p>
+
+<p>FreeBSD Tor relays place second in contributed bandwidth, and contribute almost 5% of the total. Increased OS diversity from the other BSDs could drastically increase this diversity measure, particularly OpenBSD. As BSDs such as DragonFly and BitRig mature, we look forward to their contributions.</p>
 
 <p><strong><a href="os-count.txt">Operating Systems Count</a></strong></p>
 
@@ -41,19 +43,25 @@
 
 <p>Note that many of the Windows relays are likely TB users who are contributing bandwidth to the Tor network, accounting for the low percentage of bandwidth provided despite accounting for the second most popular relay operating system. Hats off to those users.</p>
 
+<p>FreeBSD, OpenBSD and NetBSD relays provide an average bandwith per host exceeding that of Windows and Darwin (OSX), implying that those hosts are colocated on commercial infrastructure.</p>
+
 <p><strong><a href="relays-by-cc.txt">Number of Relays per Country Code</a></strong></p>
 
 <p>Number of relays by country code. This report shows another ugly diversity picture: an overwhelming concentration of relays in Germany and the US. For those in countries with fewer relays, or among the country codes of the list below, consider running a relay.</p>
+
+<p>Only nine country codes provide triple-digit (&gt;=100) numbers of relays, yet many of the country codes with double-digit numbers of relays could easily extend to the triple-digit range with some attention.</p>
 
 <p><strong><a href="tor-less-ccs.txt">Country Codes without Public Tor Relays</a></strong></p>
 
 <p>This was was the first report created, based on the dearth of relays in a number of countries such as Pakistan, and the low number of relays in Brazil, India and Mexico. These statistics indicate where further attention to Tor relay growth should be directed.</p>
 
+<p>It is understood that in some of those country codes, it is dangerous to even use Tor as a client, much less run a relay, and significant censorship means that relays are ineffective. Yet in others, some advocacy and training could have a positive impact.</p>
+
 <p><hr></p>
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Nov 12 00:27:22 2015 -0500</code></p>
+<p><code>last updated: Thu Nov 12 13:53:02 2015 -0500</code></p>
 
 </body>
 </html>
