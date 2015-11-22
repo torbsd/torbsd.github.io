@@ -42,12 +42,12 @@ __[Number of Relays per Country Code](relays-by-cc.txt)__
 
 Number of relays by country code. This report shows another ugly diversity picture: an overwhelming concentration of relays in Germany and the US. For those in countries with fewer relays, or among the country codes of the list below, consider running a relay.
 
-Only nine country codes provide triple-digit (>=100) numbers of relays, yet many of the country codes with double-digit numbers of relays could easily extend to the triple-digit range with some attention.
+Only nine country codes provide triple-digit (>=100) numbers of relays, yet many of the country codes with double-digit relay numbers could easily extend to the triple-digit range with some attention.
 
 __[Country Codes without Public Tor Relays](tor-less-ccs.txt)__
 
 This was was the first report created, based on the dearth of relays in a number of countries such as Pakistan, and the low number of relays in Brazil, India and Mexico. These statistics indicate where further attention to Tor relay growth should be directed.
 
-It is understood that in some of those country codes, it is dangerous to even use Tor as a client, much less run a relay, and significant censorship means that relays are ineffective. Yet in others, some advocacy and training could have a positive impact.
+It is understood that in some of those country codes, it is dangerous to even use Tor as a client, much less run a relay, and significant censorship means that relays are ineffective. Yet in others, some advocacy and training could significantly impact the geographical diversity of the Tor network as a whole.
 
 {{footer.md}}
