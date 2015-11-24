@@ -17,7 +17,7 @@ The listed information should be considered a guide but should be confirmed due 
 
 *Just because it says "yes" next to a BSD ports system doesn't mean it's current or works correctly*
 
-These are loose categorizations of the ports. Where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more specific category, for example __net-p2p__ over __net__. For the ports we are unsure how to categorize or haven't approached yet, we have put them under [misc](#misc).
+These are loose categorizations of the ports. Where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more specific category, for example __net-p2p__ over __net__. For the ports we are unsure how to categorize or haven't approached yet, we have put them under [misc](#misc). But overall, the categories are just a basic guide.
 
 [editors](#editors)  &#8916; [graphics](#graphics) &#8916;  [mail](#mail) &#8916; [misc](#misc) &#8916; [net](#net) &#8916; [net-im](#net-im) &#8916; [net-p2p](#net-p2p) &#8916; [security](#security) &#8916; [sysutils](#sysutils) &#8916; [www](#www)
 
@@ -290,6 +290,18 @@ Turtl: server, client
 : notes: various components for the platform in GitHub.
 
 ###<a id="net">net</a>###
+
+arm/nyx
+: terminal status monitor for Tor
+: https://www.atagar.com/arm/
+: https://gitweb.torproject.org/nyx.git/tree/LICENSE
+: https://gitweb.torproject.org/nyx.git
+: 1.4.5.0
+: FreeBSD: yes
+: OpenBSD: yes
+: pkgsrc: no
+: DPorts: no
+: notes:
 
 blockfinder
 : tool for enumerating network information by country

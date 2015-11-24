@@ -66,7 +66,11 @@ Current __TDP__ work includes:
 * Organizing various events for engaging BSD users about Tor,
   including presentations, birds-of-a-feather sessions and informal meetings;
 
-* A new addition to our work includes [enlisting BSD-using entities](corp-relays.html) to operate Tor relays.
+* [Enlisting BSD-using entities](corp-relays.html) to operate Tor relays
+
+* Maintaining a set of reports entitled ["Quick-and-Dirty Statistics"](dirty-stats.html) which provide snapshots of public Tor relay diversity
+
+* Parsing the dozens of privacy-enhancing technology applications which have proliferated over the past several years, and providing the
 
 We look forward to inquiries and involvement in __TDP__.  Fork our [code]
 (https://github.com/torbsd), submit patches, run a relay and let us know if __TDP__
