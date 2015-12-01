@@ -38,7 +38,7 @@ Some of the events include:
 
 When Mozilla [announced](https://blog.mozilla.org/it/2015/01/28/deploying-tor-relays/) at the end of 2014 that it would begin running "official" relays, the notion of encouraging BSD-using firms to replicate this effort became obvious. There are many well-known and even more lesser-known firms that relay on the BSDs for their businesses. From Netflix to Juniper, Yahoo to Verisign, the BSDs are a vital element in countless firms. Through the BSD community, __TDP__ believes it can play a role in facilitating these BSD-employing firms to run their own Tor relays, bootstrapping off of their production infrastructures and staffs.
 
-###[Porting Targets for PETs](portings-pets.html)###
+###[Porting Targets for PETs](porting-pets.html)###
 
 Over the past several years, a proliferation of open source applications seek to replace mainstream, proprietary services, with an eye on privacy and/or anonymity. __TDP__ maintains a list of dozens of PETs (privacy enhancing technologies) and their status on each of the BSD porting systems. Some have already been ported to one or more BSDs, others should be considered, while others might require a complete reworking.
 
