@@ -73,7 +73,7 @@ Current __TDP__ work includes:
 * Maintaining a set of reports entitled ["Quick-and-Dirty Statistics"](dirty-stats.html) which provide snapshots of public Tor relay diversity
 
 We look forward to inquiries and involvement in __TDP__.  Fork our [code]
-(https://github.com/torbsd), submit patches, run a relay and let us know if __TDP__
+(https://github.com/torbsd), submit patches, run a BSD relay and let us know if __TDP__
 documentation was useful.
 
 Please see our [contact page](contact.html) if you want to get in touch with us.
