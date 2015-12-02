@@ -32,7 +32,7 @@ Some of the events include:
 
 * June 2015: [BSDCan 2015 Birds-of-a-Feather session](http://www.bsdcan.org/2015/schedule/track/BOF/624.en.html)
 
-* February 2014: [NYCBSDCon Lightning session](http://www.nycbsdcon.org) on "The BSDs and the LibTech Scene"
+* February 2014: [NYCBSDCon "Exposes" session](http://www.nycbsdcon.org) on "The BSDs and the LibTech Scene"
 
 ###[BSD Firm Relays](corp-relays.html)###
 
