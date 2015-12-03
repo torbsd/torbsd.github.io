@@ -28,7 +28,7 @@ __October 2015__
 
 <a id="2016-events">__Thinking About 2016 __</a> by gman999
 
-The BSDCan 2016 [call for papers](https://www.bsdcan.org/2016/papers.php) was issued yesterday, and a __TDP__-related submission was made. BSDCan is likely the largest *BSD gathering globally, and an excellent opportunity to speak to *BSD developers and users.
+The BSDCan 2016 [call for papers](https://www.bsdcan.org/2016/papers.php) was issued yesterday, and a __TDP__-related submission was made. BSDCan is likely the largest BSD gathering globally, and an excellent opportunity to speak to *BSD developers and users.
 
 EuroBSDCon 2016 [is tentatively slated for September 2016](https://2016.eurobsdcon.org) in Belgrade, Serbia. It is another significant BSD event, attracting users and developers from Europe and beyond. At a glance, there are only two Tor relays in Serbia, and both are Linux. Beyond Serbia, there are few Tor relays in the Balkan states overall, making EuroBSDCon 2016 a great opportunity to extend not just *BSD Tor relays, but *any* Tor relays.
 
