@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __TDP__ focuses on an array of projects which culminate in an effort to diversify the Tor anonymity network with more *BSD Unix engagement. Each item relates to that goal on some level.
 
-Some projects are simple, one-off efforts which require some maintenance, while others are more labor-intensive and driven by upstream development.
+Some projects are simple, one-off efforts which require some maintenance, while others are more labor-intensive and subordinate to upstream development.
 
 ###[Tor Browser Porting to OpenBSD](tb-obsd.html)###
 
@@ -20,13 +20,13 @@ Porting [Tor Browser (TB) to OpenBSD](https://github.com/torbsd/openbsd-ports) i
 
 ###[BSD Tor Relay Guides](relay-guides.html)###
 
-It's not rocket science to run a Tor relay on any of the BSDs. But there is some useful utility in providing simple, step-by-step instructions on building a relay. Our initial targets are FreeBSD and OpenBSD, and some interest has been expressed from others to do the same for other BSDs.
+It's not rocket science to run a Tor relay on any of the BSDs. But there is some utility in providing simple, step-by-step instructions on building a relay. Our initial targets are FreeBSD and OpenBSD, and some interest has been expressed from others to do the same for other BSDs.
 
 ###Advocacy and Events###
 
 Predating the birth of __TDP__ by years, advocacy work through events is a central method of engaging the broader *BSD community. Numerous birds-of-a-feather sessions were done, presentations at conferences and more informal meetings with focuses such as "recruiting BSD Tor admins." In 2016, __TDP__ is looking to continue this effort.
 
-Some of the events include:
+Some of the past events include:
 
 * October 2015: [BSDCon Brasil presentation](http://2015.bsdcon.com.br/agenda/)
 
@@ -34,9 +34,17 @@ Some of the events include:
 
 * February 2014: [NYCBSDCon "Exposes" session](http://www.nycbsdcon.org) on "The BSDs and the LibTech Scene"
 
+Possible upcoming events for __TDP__ in 2016 include:
+
+* June 10-11 2016: [BSDCan 2016 presentation](http://www.bsdcan.org/2016/) in Ottawa, Canada
+
+* September 2016: [EuroBSDCon 2016](https://2016.eurobsdcon.org/) 
+
+* TBA in 2016: BSDCon Brasil
+
 ###[BSD Firm Relays](corp-relays.html)###
 
-When Mozilla [announced](https://blog.mozilla.org/it/2015/01/28/deploying-tor-relays/) at the end of 2014 that it would begin running "official" relays, the notion of encouraging BSD-using firms to replicate this effort became obvious. There are many well-known and even more lesser-known firms that relay on the BSDs for their businesses. From Netflix to Juniper, Yahoo to Verisign, the BSDs are a vital element in countless firms. Through the BSD community, __TDP__ believes it can play a role in facilitating these BSD-employing firms to run their own Tor relays, bootstrapping off of their production infrastructures and staffs.
+When Mozilla [announced](https://blog.mozilla.org/it/2015/01/28/deploying-tor-relays/) at the end of 2014 that it would begin running official relays, the notion of encouraging BSD-using firms to replicate this effort became obvious. There are many well-known and even more lesser-known firms that relay on the BSDs for their businesses. From Netflix to Juniper, Yahoo to Verisign, the BSDs are a vital element in countless firms. Through the BSD community, __TDP__ believes it can play a role in facilitating these BSD-employing firms to run their own Tor relays, bootstrapping off of their production infrastructures and staffs.
 
 ###[Porting Targets for PETs](porting-pets.html)###
 
@@ -45,7 +53,6 @@ Over the past several years, a proliferation of open source applications seek to
 ###[Quick-and-Dirty Static Reports](dirty-stats.html)###
 
 __TDP's__ focus is Tor diversity, and this project provides the evidence for our case. These statistics, generated from simple shell scripts, illustrate an array of monocultures: in operating systems and the geographical placement of relays and bandwidth. Generated statically from [https://torstatus.blutmagie.de](https://torstatus.blutmagie.de), the reports give a revealing snapshot of weaknesses in the public Tor network.
-
 
 
 {{footer.md}}
