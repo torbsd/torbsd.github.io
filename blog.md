@@ -9,6 +9,11 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or a Central Location for Announces and Notes##
 
+__December 2015__
+
+[Thinking About 2016](#2016-events)
+
+
 __November 2015__
 
 [PETs Porting Targets](#pets-ports) &#8916; [The Case of the Brazil Relays](#br-case) &#8916; [TB 5.0.3 Packages Updated, Again](#tb-update-again) &#8916; [Coming Soon: Quick-and-Dirty Reports](#dirty-reports) &#8916; [Thoughts on Reproducible Builds](#repro-builds) &#8916; [It's Up to You](#up-to-you)
@@ -19,11 +24,23 @@ __October 2015__
 
 [From the Attic](#attic)
 
+###20151202###
+
+<a id="2016-events">__Thinking About 2016 __</a> by gman999
+
+The BSDCan 2016 [call for papers](https://www.bsdcan.org/2016/papers.php) was issued yesterday, and a __TDP__-related submission was made. BSDCan is likely the largest *BSD gathering globally, and an excellent opportunity to speak to *BSD developers and users.
+
+EuroBSDCon 2016 [is tentatively slated for September 2016](https://2016.eurobsdcon.org) in Belgrade, Serbia. It is another significant BSD event, attracting users and developers from Europe and beyond. At a glance, there are only two Tor relays in Serbia, and both are Linux. Beyond Serbia, there are few Tor relays in the Balkan states overall, making EuroBSDCon 2016 a great opportunity to extend not just *BSD Tor relays, but *any* Tor relays.
+
+No dates have been set for [AsiaBSDCon](https://2016.asiabsdcon.org), but it's usually in March. Japan is well-wired with inexpensive residential broadband, yet there are only around 50-60 relays in the country. Considering it's a BSD-heavy nation, it's shocking that there are only a handful of *BSD relays. Yet another green field of opportunity.
+
+Stay tuned. Whether we can speak at any of these events will also depend on financial support for __TDP__.
+
 ###20151119####
 
 <a id="pets-ports">__PETs Porting Targets__</a> by gman999
 
-After the June 2013 Snowden disclosures, there has been a rush towards developing applications to counter mainstream, closed-source services commenced. Many focuse on Debian Linux as a development platform, but aim at more widely used Windows, OSX, iOS and Android user-base. Beyond client applications, there are also network-based servers and services seeking to provide privacy and anonymity.
+After the June 2013 Snowden disclosures, a rush towards developing applications to counter mainstream, closed-source services commenced. Many focuse on Debian Linux as a development platform, but aim at more widely used Windows, OSX, iOS and Android user-base. Beyond client applications, there are also network-based servers and services seeking to provide privacy and anonymity.
 
 The term "PETs" refers to privacy-enhancing technologies, and in this case, we use it as a catch-all for these server and client solutions.
 

@@ -48,7 +48,7 @@ When Mozilla [announced](https://blog.mozilla.org/it/2015/01/28/deploying-tor-re
 
 ###[Porting Targets for PETs](porting-pets.html)###
 
-Over the past several years, a proliferation of open source applications seek to replace mainstream, proprietary services, with an eye on privacy and/or anonymity. __TDP__ maintains a list of dozens of PETs (privacy enhancing technologies) and their status on each of the BSD porting systems. Some have already been ported to one or more BSDs, others should be considered, while others might require a complete reworking.
+Over the past several years, a proliferation of open source applications seek to replace mainstream, proprietary services, with an eye on privacy and/or anonymity. __TDP__ maintains a list of dozens of PETs (privacy enhancing technologies) and their status on each of the BSD porting systems. Some have already been ported to one or more BSDs, others should be considered, while others might require a complete reworking if not avoided completely.
 
 ###[Quick-and-Dirty Static Reports](dirty-stats.html)###
 
