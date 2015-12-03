@@ -1,4 +1,4 @@
-Wed Dec  2 01:45:40 UTC 2015
+Thu Dec  3 01:24:17 UTC 2015
 Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
@@ -8,81 +8,81 @@ Quick-and-Dirty Static Reports
 'Relay Count by Country Code'
 
 Total Number of Public Tor Relays:
-6839
+6822
 -------
 -count- -country-code-
-1448  US
-1443  DE
-789   FR
-492   NL
-328   RU
-297   GB
-251   CA
-223   SE
+1442  DE
+1424  US
+795   FR
+491   NL
+329   RU
+295   GB
+255   CA
+224   SE
 163   CH
-86    AT
-82    RO
+88    AT
+85    UA
 81    CZ
-80    UA
-77    SG
-74    JP
-63    NO
-58    PL
-57    IT
-57    ES
-49    AU
-47    DK
-46    FI
+79    RO
+76    SG
+72    JP
+62    NO
+56    IT
+54    PL
+53    ES
+48    DK
+47    FI
+46    AU
+42    HU
 42    BG
-40    HU
-38    BR
-27    LV
+35    BR
+26    LV
 26    LU
-26    BE
-23    IS
+25    BE
+24    GR
 22    SK
-21    LT
-21    IE
-20    GR
+22    IS
+20    LT
 19    MD
 19    HK
-15    A1
-14    TW
+18    KR
+18    IE
+16    TW
+16    A1
 13    VN
 13    NZ
-12    IN
-12    IL
-10    EE
+13    IL
+11    EE
+10    PT
+10    IN
 9     ZA
 9     TR
-9     PT
 9     AR
-8     KR
 6     N/A
-6     MY
+6     ID
 6     HR
 5     SI
-5     ID
+5     MY
+5     MX
 4     PA
-4     MX
-3     SA
 3     CO
-3     AM
+2     RS
 2     KZ
 2     EG
 2     CR
 2     BY
+2     AM
 1     VG
 1     VE
-1     TN
 1     TH
-1     RS
+1     SA
 1     RE
+1     QA
 1     MT
 1     MK
-1     MA
 1     LR
 1     LI
+1     KW
 1     KH
 1     IR
 1     IM
