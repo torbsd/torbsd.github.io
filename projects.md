@@ -14,7 +14,7 @@ __TDP__ focuses on an array of projects which culminate in an effort to diversif
 
 Some projects are simple, one-off efforts which require some maintenance, while others are more labor-intensive and subordinate to upstream development.
 
-###[Tor Browser Porting to OpenBSD](tb-obsd.html)###
+###Tor Browser Porting to OpenBSD###
 
 Porting [Tor Browser (TB) to OpenBSD](https://github.com/torbsd/openbsd-ports) is our flagship project and demands the most attention. Porting TB requires tracking the upstream Tor Browser, in addition to working the port into a strict OpenBSD ecosystem. The list of dependencies is long plus Firefox add-ons such as TorButton and HTTPS-everywhere. There have been seven releases so far. We are in some initial discussions to get TB ported to other BSDs.
 
