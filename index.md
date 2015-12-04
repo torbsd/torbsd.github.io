@@ -57,7 +57,7 @@ There are three aspects of the __TDP’s__ approach:
   the place that BSD Unix should occupy in the privacy community at
   large.
 
-Current __TDP__ work includes:
+Current __TDP__ [work](projects.html) includes:
 
 * [Guides for configuring and running FreeBSD and OpenBSD relays](relay-guides.html);
 
@@ -66,15 +66,14 @@ Current __TDP__ work includes:
 * Organizing various events for engaging BSD users about Tor,
   including presentations, birds-of-a-feather sessions and informal meetings;
 
-* [Enlisting BSD-using entities](corp-relays.html) to operate Tor relays
+* [Enlisting BSD-using entities](corp-relays.html) to operate Tor relays;
 
-* Accumulating and maintaining a list of privacy-enhancing related ports and their statuses on the BSDs, in a project entitled [Porting Targets for PETs](porting-pets.html)
+* Accumulating and maintaining a list of privacy-enhancing related ports and their statuses on the BSDs, in a project entitled [Porting Targets for PETs](porting-pets.html);
 
-* Maintaining a set of reports entitled ["Quick-and-Dirty Statistics"](dirty-stats.html) which provide snapshots of public Tor relay diversity
+* Maintaining a set of reports entitled ["Quick-and-Dirty Statistics"](dirty-stats.html) which provide snapshots of public Tor relay diversity;
 
 We look forward to inquiries and involvement in __TDP__.  Fork our [code]
-(https://github.com/torbsd), submit patches, run a BSD relay and let us know if __TDP__
-documentation was useful.
+(https://github.com/torbsd), submit patches, run a BSD relay and let us know if __TDP__ documentation was useful.
 
 Please see our [contact page](contact.html) if you want to get in touch with us.
 
