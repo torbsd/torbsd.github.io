@@ -28,10 +28,7 @@ PAGES=		index.html \
 		obsd-relays-adv.html \
 		resources.html \
 		licensing.html \
-		obsd-tb-build.html \
-		obsd-buildbox.html \
 		doc-guide.html \
-		tb-building.html \
 		materials/flier-bsd.html \
 		corp-relays.html \
 		blog.html \
@@ -39,7 +36,6 @@ PAGES=		index.html \
 		support-us.html \
 		porting-pets.html \
 		projects.html \
-		tb-obsd.html \
 
 BOILERPLATE=	header.md footer.md
 
@@ -56,18 +52,13 @@ obsd-relays-adv.html: obsd-relays-adv.md $(BOILERPLATE)
 resources.html: resources.md $(BOILERPLATE)
 licensing.html: licensing.md $(BOILERPLATE)
 materials/flier-bsd.html: materials/flier-bsd.md $(BOILERPLATE)
-obsd-tb-build.html: obsd-tb-build.md $(BOILERPLATE)
-obsd-buildbox.html: obsd-buildbox.md $(BOILERPLATE)
-#build-errors.html: build-errors.md $(BOILERPLATE)
 doc-guide.html: doc-guide.md $(BOILERPLATE)
-tb-building.html: tb-building.md $(BOILERPLATE)
 corp-relays.html: corp-relays.md $(BOILERPLATE)
 blog.html: blog.md $(BOILERPLATE)
 dirty-stats.html: dirty-stats.md $(BOILERPLATE)
 support-us.html: support-us.md $(BOILERPLATE)
 porting-pets.html: porting-pets.md $(BOILERPLATE)
 projects.html: projects.md $(BOILERPLATE)
-tb-obsd.html: tb-obsd.md $(BOILERPLATE)
 
 ## The rest of this file makes the above possible...
 ## ... but only YOU can make it necessary.
