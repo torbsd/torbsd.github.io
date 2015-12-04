@@ -33,16 +33,7 @@ since its creation at the US Naval Labs in the 1990’s. Millions
 rely on Tor’s operation in a world filled with threats to
 anonymity and privacy.
 
-While recognizing the Tor Project is a dynamic open source project
-with a vibrant community, we are also concerned with the overwhelming
-GNU/Linux monoculture that is an Achilles’ Heel. Monocultures in
-nature are dangerous, as vulnerabilities are held in common across a
-broad spectrum. In contrast, diversity means single vulnerabilities are less likely
-to harm the entire ecosystem. In a global anonymity network,
-monocultures are potentially disastrous. A single kernel vulnerability
-in GNU/Linux impacting Tor relays could be devastating. We want to see
-a stronger Tor network, and we believe one critical ingredient for
-that is operating system diversity.
+__While recognizing the Tor Project is a dynamic open source project with a vibrant community, we are also concerned with the overwhelming GNU/Linux monoculture that is an Achilles’ Heel. Monocultures in nature are dangerous, as vulnerabilities are held in common across a broad spectrum. In contrast, diversity means single vulnerabilities are less likely to harm the entire ecosystem. In a global anonymity network, monocultures are potentially disastrous. A single kernel vulnerability in GNU/Linux impacting Tor relays could be devastating. We want to see a stronger Tor network, and we believe one critical ingredient for that is operating system diversity.__
 
 There are three aspects of the __TDP’s__ approach:
 
