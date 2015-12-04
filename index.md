@@ -22,7 +22,7 @@ tangential projects including [pfSense](https://www.pfsense.org),
 [FreeNAS](https://www.freenas.org) and
 [PC-BSD](https://www.pcbsd.org). BSD software such as
 [OpenSSH](http://www.openssh.com) is the default communication tool
-for innumerable devices on the internet. Firms such as Netflix, WhatsApp and Juniper rely on BSD systems and code to build and maintain resilient services and devices.
+for innumerable devices on the Internet. Firms such as Netflix, WhatsApp and Juniper rely on BSD systems and code to build and maintain resilient services and devices.
 
 Originating at the University of California in the 1970's, BSD software is renowned for its Internet infrastructure role since its earliest days.
 
