@@ -52,4 +52,15 @@ This was was the first report created, based on the dearth of relays in a number
 
 It is understood that in some of those country codes, it is dangerous to even use Tor as a client, much less run a relay, and significant censorship means that relays are ineffective. Yet in others, some advocacy and training could significantly impact the geographical diversity of the Tor network as a whole.
 
+__[Exit Relays by Country Code](exits-by-cc.txt)__
+
+Significant attention approaches the issue of user access *to* the Tor network with tools such as bridges and the various pluggable transports. This is logical as Tor is as much a tool for circumventing filters for censored users today as a tool for anonymity and masking the Tor user's location.
+
+However, user traffic exiting the Tor network deserves increased focus.
+
+Only three or four countries host around 100 or more exit relays, meaning the US, Germany, the Netherlands and France are main conduits for Tor exit traffic. A number of scenarios could reveal a weakness in this lack of exit node location diversity, such as an outright banning of Tor relays in one of those countries.
+
+Many Tor relays operators are concerned about running exit relays, since administering an exit relay leaves one exposed to complaints from the Tor traffics' destinations, regardless of intent. Such problems need to be addressed to increase exit relay diversity.
+
 {{footer.md}}
+

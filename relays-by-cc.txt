@@ -1,4 +1,4 @@
-Fri Dec  4 00:26:45 UTC 2015
+Sat Dec  5 16:16:10 UTC 2015
 Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
@@ -8,6 +8,87 @@ Quick-and-Dirty Static Reports
 'Relay Count by Country Code'
 
 Total Number of Public Tor Relays:
-
+6958
 -------
--count- -country-code-
+-count-  -country-code-
+1462       DE        
+1439       US        
+807        FR        
+508        NL        
+355        RU        
+284        GB        
+255        CA        
+217        SE        
+170        CH        
+90         UA        
+87         CZ        
+86         AT        
+79         RO        
+77         JP        
+76         SG        
+67         NO        
+59         PL        
+59         IT        
+57         ES        
+51         AU        
+50         FI        
+47         DK        
+43         BG        
+42         HU        
+39         BR        
+30         LV        
+28         BE        
+25         LU        
+25         IS        
+22         GR        
+20         SK        
+20         LT        
+19         KR        
+19         HK        
+18         MD        
+16         TW        
+16         A1        
+15         IL        
+13         VN        
+13         NZ        
+13         IE        
+11         PT        
+10         ZA        
+10         IN        
+10         EE        
+9          AR        
+8          TR        
+8          MX        
+7          N/A       
+7          MY        
+6          ID        
+6          HR        
+5          SI        
+4          PA        
+4          AM        
+3          SA        
+3          CR        
+3          CO        
+2          VE        
+2          KZ        
+2          BY        
+1          VG        
+1          TH        
+1          RS        
+1          RE        
+1          QA        
+1          MT        
+1          MK        
+1          LR        
+1          LI        
+1          KW        
+1          KH        
+1          KE        
+1          IR        
+1          IM        
+1          GT        
+1          GG        
+1          GE        
+1          EG        
+1          CL        
+1          AE        
