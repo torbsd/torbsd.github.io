@@ -37,16 +37,11 @@ I hope to have a first cut at a rework of the ports, still based on 5.0.3, somet
 
 <a id="pp-announce">__Announcing Porting PETs__</a> by gman999
 
-One of the recent small projects we have spent some time on recently is <a href=
-"porting-pets.html">Porting PETs</a>. This is an attempt to list the various pri
-vacy-enhancing applications and their statuses in the BSD ports.     
+One of the small projects we have spent some time on recently is <a href="porting-pets.html">Porting PETs</a>. This is an attempt to list the various privacy-enhancing applications and their statuses in the BSD ports.
 
-Most of these ports arose as non-commercial, open source reactions to mainstream
- applications and services. Some are ported to one BSD or another, others are no
-t.
+Most of these ports arose as non-commercial, open source reactions to mainstream applications and services. Some are ported to one BSD or another, others are not.
 
-The list is not exhaustive, but it was certainly exhaustive to create. Updates w
-ill happen manually, although <a href="https://github.com/torbsd/torbsd.github.io/issues">diffs</a> are appreciated.
+The list is not exhaustive, but it was certainly exhaustive to create. Updates will happen manually, although <a href="https://github.com/torbsd/torbsd.github.io/issues">diffs</a> are appreciated.
 
 
 
