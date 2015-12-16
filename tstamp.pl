@@ -5,22 +5,11 @@
 use strict;
 use POSIX;
 sub ts {
-    my $fmt = $ENV{'TSTAMP_FMT'} || "%c";
+    my $fmt = $ENV{'TSTAMP_FMT'} || "%c UTC";
     my $t = shift(@_) || time;
-    return POSIX::strftime($fmt, localtime($t));
+    return POSIX::strftime($fmt, gmtime($t));
 }
-my($f) = @ARGV or die "no filename given";
-open(GIT,"git log $f|") or die("git log $f: $?");
-my $ts = undef;
-while (defined(my $line = <GIT>)) {
-    if ($line =~ /^Date:\s*(\S.*)$/) {
-	$ts = $1;
-	last;
-    }
-}
-close(GIT);
-if (!defined($ts)) {
-    my @s = stat($f) or die "$f: cannot stat: $!";
-    $ts = ts($s[9]);
-}
+my($f) = @ARGV or die "$0: no filename given";
+my @s = stat($f) or die "%0: cannot stat $f: $!";
+my $ts = ts($s[9]);
 printf "`last updated: $ts`\n";

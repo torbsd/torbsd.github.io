@@ -4,6 +4,7 @@ Author: gman
 Editors: attila
 Date: 2015-10-29
 X-Note: These lines at the top are multimarkdown metadata; leave them.
+{{meta.md}}
 
 {{header.md}}
 
@@ -11,18 +12,28 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __December 2015__
 
-[Thinking About 2016](#2016-events)
+[Notes From The Front](#notes-from-the-front) [%sep] [Thinking About 2016](#2016-events)
 
 
 __November 2015__
 
-[PETs Porting Targets](#pets-ports) &#8916; [The Case of the Brazil Relays](#br-case) &#8916; [TB 5.0.3 Packages Updated, Again](#tb-update-again) &#8916; [Coming Soon: Quick-and-Dirty Reports](#dirty-reports) &#8916; [Thoughts on Reproducible Builds](#repro-builds) &#8916; [It's Up to You](#up-to-you)
+[PETs Porting Targets](#pets-ports) [%sep] [The Case of the Brazil Relays](#br-case) [%sep] [TB 5.0.3 Packages Updated, Again](#tb-update-again) [%sep] [Coming Soon: Quick-and-Dirty Reports](#dirty-reports) [%sep] [Thoughts on Reproducible Builds](#repro-builds) [%sep] [It's Up to You](#up-to-you)
 
 __October 2015__
 
-[Updated Tor Browser Packages](#tb-update) &#8916; [The BSD Relay Guides](#relay-guides) &#8916; [Our First Bells](#first-bells) &#8916; [Beyond OS Diversity](#beyond-os) &#8916; [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
+[Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20151216###
+
+<a id="notes-from-the-front">__Notes From The Front__</a> by attila
+
+First: hats off to gman999 for his incessant efforts in getting the content of this site in better shape. I especially applaud this low-tech/no-tech blog layout in MultiMarkdown.
+
+I have been noticeably lacking, but not totally idle.  I've had to take some paying work, which has slowed me down on open source, but my path forward is fairly clear.  My main task is to rework the makefiles (mainly the stuff in Makefile.inc) that comprise the [OpenBSD ports](https://github.com/torbsd/openbsd-ports) for TBB so that they dovetail with and use as much as possible of the Mozillan infrastructure already in the OpenBSD ports tree, much of it due to `landry@`, who has already helped me a couple of times.  I should've done this from the beginning but my head wasn't really on straight when I first started this.  I've been reticent about touching anything that I didn't write, chosing instead to adapt what others have done to get something working. Although this was perhaps effective in the short term if we want this in the tree it has to be consonant with it... in short: if you're serious about contributing to OpenBSD then pick up a shovel and start digging, but politely. I'm sure I can do that so I just have to get to it.
+
+I hope to have a first cut at a rework of the ports, still based on 5.0.3, sometime next week... I don't really celebrate any holidays so I'm hoping to get a lot done while the rest of the world sleeps it off.  Once the makefiles are closer to right I'll work on an update to 5.0.4.  I'm afraid I might miss the next ports lock window because I've taken too long, but oh, well... _que sera sera_.
 
 ###20151202###
 

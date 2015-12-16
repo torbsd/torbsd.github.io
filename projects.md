@@ -20,7 +20,7 @@ Porting [Tor Browser (TB) to OpenBSD](https://github.com/torbsd/openbsd-ports) i
 
 ###[BSD Tor Relay Guides](relay-guides.html)###
 
-It's not rocket science to run a Tor relay on any of the BSDs. But there is some utility in providing simple, step-by-step instructions on building a relay. Our initial targets are FreeBSD and OpenBSD, and some interest has been expressed from others to do the same for other BSDs.
+It's not rocket science to run a Tor relay on any of the BSDs, but there is some utility in providing simple, step-by-step instructions on building a relay. Our initial targets are FreeBSD and OpenBSD, and some interest has been expressed from others to do the same for other BSDs.
 
 ###Advocacy and Events###
 
