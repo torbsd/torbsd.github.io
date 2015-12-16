@@ -43,6 +43,7 @@ Most of these ports arose as non-commercial, open source reactions to mainstream
 
 The list is not exhaustive, but it was certainly exhaustive to create. Updates will happen manually, although <a href="https://github.com/torbsd/torbsd.github.io/issues">diffs</a> are appreciated.
 
+As porting third-party applications is a frequent gateway for BSD users to become developers, this list will be circulated in the relevant BSD channels.
 
 
 ###20151202###
