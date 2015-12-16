@@ -41,9 +41,9 @@ One of the small projects we have spent some time on recently is <a href="portin
 
 Most of these ports arose as non-commercial, open source reactions to mainstream applications and services. Some are ported to one BSD or another, others are not.
 
-The list is not exhaustive, but it was certainly exhaustive to create. Updates will happen manually, although <a href="https://github.com/torbsd/torbsd.github.io/issues">diffs</a> are appreciated.
+The list is not exhaustive, but it was certainly exhaustive to create. Updates will happen manually, so <a href="https://github.com/torbsd/torbsd.github.io/issues">diffs</a> are appreciated.
 
-As porting third-party applications is a frequent gateway for BSD users to become developers, this list will be circulated in the relevant BSD channels.
+Porting third-party applications is a frequent gateway for BSD users to become developers, this list will be circulated in the relevant BSD channels.
 
 
 ###20151202###
