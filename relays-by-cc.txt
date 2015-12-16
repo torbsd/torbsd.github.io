@@ -1,4 +1,4 @@
-Sat Dec 12 15:49:24 UTC 2015
+Wed Dec 16 15:53:21 UTC 2015
 Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
@@ -9,8 +9,8 @@ Quick-and-Dirty Static Reports
 
 Total Number of Public Tor Relays:
 7054
--------
--count-  -country-code-   -percent-
+-----
+-count- -country_code-    -percent-
 1487       DE              21.0802%  
 1453       US              20.5982%  
 819        FR              11.6104%  
