@@ -4,9 +4,10 @@ Author: gman
 Editors: attila
 Data: 2015-11-17
 X-Note: These lines at the top are multimarkdown metadata; leave them.
-
+{{meta.md}}
 
 {{header.md}}
+
 ##Porting Targets for PETs##
 
 Over the past few years, a long list of applications spawned from attention to privacy and anonymity solutions. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.
@@ -19,7 +20,7 @@ The listed information should be considered a guide but should be confirmed due 
 
 These are loose categorizations of the ports. Where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more specific category, for example __net-p2p__ over __net__. For the ports we are unsure how to categorize or haven't approached yet, we have put them under [misc](#misc). But overall, the categories are just a basic guide.
 
-[editors](#editors)  &#8916; [graphics](#graphics) &#8916;  [mail](#mail) &#8916; [misc](#misc) &#8916; [net](#net) &#8916; [net-im](#net-im) &#8916; [net-p2p](#net-p2p) &#8916; [security](#security) &#8916; [sysutils](#sysutils) &#8916; [www](#www)
+[editors](#editors)  [%sep] [graphics](#graphics) [%sep]  [mail](#mail) [%sep] [misc](#misc) [%sep] [net](#net) [%sep] [net-im](#net-im) [%sep] [net-p2p](#net-p2p) [%sep] [security](#security) [%sep] [sysutils](#sysutils) [%sep] [www](#www)
 
 tool-name
 : short-descr

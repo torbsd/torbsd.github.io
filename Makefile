@@ -37,7 +37,7 @@ PAGES=		index.html \
 		porting-pets.html \
 		projects.html \
 
-BOILERPLATE=	header.md footer.md #meta.md
+BOILERPLATE=	header.md footer.md meta.md
 
 all: $(PAGES)
 
@@ -54,7 +54,7 @@ licensing.html: licensing.md $(BOILERPLATE)
 materials/flier-bsd.html: materials/flier-bsd.md $(BOILERPLATE)
 doc-guide.html: doc-guide.md $(BOILERPLATE)
 corp-relays.html: corp-relays.md $(BOILERPLATE)
-blog.html: blog.md $(BOILERPLATE) meta.md # remove when added to BOILERPLATE
+blog.html: blog.md $(BOILERPLATE)
 dirty-stats.html: dirty-stats.md $(BOILERPLATE)
 support-us.html: support-us.md $(BOILERPLATE)
 porting-pets.html: porting-pets.md $(BOILERPLATE)

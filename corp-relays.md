@@ -4,6 +4,7 @@ Author: gman
 Editors:
 Date: 2015-06-29
 X-Note: These lines at the top are multimarkdown metadata; leave them.
+{{meta.md}}
 
 {{header.md}}
 
