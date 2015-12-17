@@ -67,8 +67,10 @@ projects.html: projects.md $(BOILERPLATE)
 
 .md.tex:
 	$(MMD) -t latex -o $@ $<
+
 .tex.pdf:
 	$(PDFLATEX) $<
+
 .md.html:
 	$(RM_F) $<.tmp
 	$(CP) $< $<.tmp
@@ -85,4 +87,4 @@ clean-pdf:
 	-$(RM) -f *.{aux,glo,idx,ist,log,toc,out,tex}
 
 clean-html:
-	-$(RM) -f *.html tmp.*.md
+	-$(RM) -f *.html *.tmp
