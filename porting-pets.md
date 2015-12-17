@@ -26,7 +26,7 @@ We have also added a __Relevance__ field in many cases, when it might not be cle
 | ------------ | ------- |
 | <a id="relevance-google">Google</a> | Enables the avoidance of e.g. Google and other privacy-hostile centralized services; for instance, [EtherCalc](#pkg-ethercalc) provides Google Apps-like functionality, allowing anyone to collaborate in this way without sacrificing privacy |
 | <a id="relevance-legal">Legal</a> | Deals with some aspect of the legality of privacy or mitigates corruption in the legal system with regard to protecting privacy |
-| <a id="relevance-metadata">Metadata</a> | Helps users avoid leaking private information via metadata, to see what metadata they have leaked, etc. |
+| <a id="relevance-metadata">Metadata</a> | Helps users avoid leaking private information via metadata, to see what metadata they (could) have leaked, etc. |
 | <a id="relevance-exif">Exif</a> | Like [Metadata](#relevance-metadata) but specifically about image metadata stored in [Exif tags](https://en.wikipedia.org/wiki/EXIF), like photos taken with cell phones, etc. |
 [Abbreviations used for relevance to PETs][relevance_abbr_table]
 
@@ -94,7 +94,7 @@ __tool-name__
 : __Relevance__: [Exif](#relevance-exif)
 : __Site__: [http://owl.phy.queensu.ca/~phil/exiftool/](http://owl.phy.queensu.ca/~phil/exiftool/)
 : __License__: [Perl](http://owl.phy.queensu.ca/~phil/exiftool/#license)
-: __Source__: [http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz](http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz)
+: __Source__: [Tarball](http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz)
 : __Version__: 10.05
 : __FreeBSD__: yes
 : __OpenBSD__: no
@@ -106,36 +106,37 @@ __tool-name__
 : __Relevance__: [Exif](#relevance-exif)
 : __Site__: [http://www.exiv2.org](http://www.exiv2.org)
 : __License__: [GPLv2 or commercial](http://www.exiv2.org/download.html#license)
-: __Source__: [http://www.exiv2.org/exiv2-0.25.tar.gz](http://www.exiv2.org/exiv2-0.25.tar.gz)
+: __Source__: [Tarball](http://www.exiv2.org/exiv2-0.25.tar.gz)
 : __Version__: 0.25
 : __FreeBSD__: yes
 : __OpenBSD__: yes
 : __NetBSD__: yes
 : __DragonFly__: yes
 
-jhead
-: tool for manipulating JPEG EXIF files
-: http://www.sentex.net/~mwandel/jhead/
-: Public Domain: http://www.sentex.net/~mwandel/jhead/
-: http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz
-: 3.00
-: FreeBSD: yes
-: OpenBSD: yes
-: pkgsrc: yes
-: DPorts: yes
-: notes:
+<a id="pkg-jhead">jhead</a>
+: __Description__: tool for manipulating JPEG EXIF files
+: __Relevance__: [Exif](#relevance-exif)
+: __Site__: [http://www.sentex.net/~mwandel/jhead/](http://www.sentex.net/~mwandel/jhead/)
+: __License__: [Public Domain](http://www.sentex.net/~mwandel/jhead/)
+: __Source__: [Tarball](http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz)
+: __Version__: 3.00
+: __FreeBSD__: yes
+: __OpenBSD__: yes
+: __NetBSD__: yes
+: __DragonFly__: yes
 
-MAT
-: tool for removing metadata
-: http://mat.boum.org
-: GPLv2: https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE
-: https://gitweb.torproject.org/user/jvoisin/mat.git
-: 0.5.4
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes: command-line and GUI, with a library.
+<a id="pkg-mat">MAT</a>
+: __Description__: tool for removing metadata
+: __Relevance__: [Metadata](#relevance-metadata)
+: __Site__: [http://mat.boum.org](http://mat.boum.org)
+: __License__: [GPLv2](https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE)
+: __Source__: [TorProject](https://gitweb.torproject.org/user/jvoisin/mat.git)
+: __Version__: [0.5.4](https://gitweb.torproject.org/user/jvoisin/mat.git/tag/?id=0.5.4)
+: __FreeBSD__: no
+: __OpenBSD__: no
+: __NetBSD__: no
+: __DragonFly__: no
+: __Notes__: command-line and GUI, with a library.
 
 pdf-redact-tools
 : tools to redact and strip metadata from documents
