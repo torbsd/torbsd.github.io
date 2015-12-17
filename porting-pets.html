@@ -29,119 +29,165 @@
 
 <p>These are loose categorizations of the ports. Where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more specific category, for example <strong>net-p2p</strong> over <strong>net</strong>. For the ports we are unsure how to categorize or haven&#8217;t approached yet, we have put them under <a href="#misc">misc</a>. But overall, the categories are just a basic guide.</p>
 
+<p>We have also added a <strong>Relevance</strong> field in many cases, when it might not be clear how the project relates to privacy; this field uses the following abbreviations:</p>
+
+<table>
+<caption id="relevance_abbr_table">Abbreviations used for relevance to PETs</caption>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Abbreviation</th>
+	<th style="text-align:left;">Meaning</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;"><a id="relevance-google">Google</a></td>
+	<td style="text-align:left;">Enables the avoidance of e.g. Google and other privacy-hostile centralized services; for instance, <a href="#pkg-ethercalc">EtherCalc</a> provides Google Apps-like functionality, allowing anyone to collaborate in this way without sacrificing privacy</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><a id="relevance-legal">Legal</a></td>
+	<td style="text-align:left;">Deals with some aspect of the legality of privacy or mitigates corruption in the legal system with regard to protecting privacy</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><a id="relevance-metadata">Metadata</a></td>
+	<td style="text-align:left;">Helps users avoid leaking private information via metadata, to see what metadata they have leaked, etc.</td>
+</tr>
+<tr>
+	<td style="text-align:left;"><a id="relevance-exif">Exif</a></td>
+	<td style="text-align:left;">Like <a href="#relevance-metadata">Metadata</a> but specifically about image metadata stored in <a href="https://en.wikipedia.org/wiki/EXIF">Exif tags</a>, like photos taken with cell phones, etc.</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="opensourcesoftwarepackagesrelevanttopets">Open Source Software Packages Relevant to PETs</h2>
+
 <p><a href="#editors">editors</a> &#8916; <a href="#graphics">graphics</a> &#8916; <a href="#mail">mail</a> &#8916; <a href="#misc">misc</a> &#8916; <a href="#net">net</a> &#8916; <a href="#net-im">net-im</a> &#8916; <a href="#net-p2p">net-p2p</a> &#8916; <a href="#security">security</a> &#8916; <a href="#sysutils">sysutils</a> &#8916; <a href="#www">www</a></p>
 
 <dl>
-<dt>tool-name</dt>
-<dd>short-descr</dd>
+<dt><strong>tool-name</strong></dt>
+<dd><strong>Description</strong>: <em>short-descr</em></dd>
 
-<dd>www-site</dd>
+<dd><strong>Relevance</strong>: <em>if necessary state the relevance of the project to PETs</em></dd>
 
-<dd>license: explicit license stated, along with URL to the actual</dd>
+<dd><strong>License</strong>: <em>name of license and link to actual text for project</em></dd>
 
-<dd>source-path</dd>
+<dd><strong>Site</strong>: <em>www-site</em></dd>
 
-<dd>version</dd>
+<dd><strong>License</strong>: <em>explicit license stated, along with URL to the actual</em></dd>
 
-<dd>FreeBSD: <a href="https://svnweb.freebsd.org/ports/head/">FreeBSD ports system</a></dd>
+<dd><strong>Source</strong>: <em>url to distfile</em></dd>
 
-<dd>OpenBSD: <a href="http://mirrors.nycbug.org/pub/OpenBSD/snapshots/packages">OpenBSD packages</a>, which generally also apply to BitRig</dd>
+<dd><strong>Version</strong>: <em>version information, e.g. current stable, development release, &#8230;</em></dd>
 
-<dd>pkgsrc: <a href="http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/README.html">NetBSD&#8217;s pkgsrc</a> for multiple operating systems</dd>
+<dd><strong>FreeBSD</strong>: <a href="https://svnweb.freebsd.org/ports/head/">FreeBSD ports system</a></dd>
 
-<dd>DPorts: <a href="http://mirrors.nycbug.org/pub/DragonflyBSD/dports/dragonfly:4.4:x86:64/LATEST//All/">DragonFly BSD&#8217;s ports</a>, similar to FreeBSD</dd>
+<dd><strong>OpenBSD</strong>: <a href="http://mirrors.nycbug.org/pub/OpenBSD/snapshots/packages">OpenBSD packages</a>, which generally also apply to BitRig</dd>
 
-<dd>notes:</dd>
+<dd><strong>NetBSD</strong>: <a href="http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/README.html">NetBSD&#8217;s pkgsrc</a> for multiple operating systems</dd>
+
+<dd><strong>DragonFly</strong>: <a href="http://mirrors.nycbug.org/pub/DragonflyBSD/dports/dragonfly:4.4:x86:64/LATEST//All/">DragonFly BSD&#8217;s ports</a>, similar to FreeBSD</dd>
+
+<dd><strong>Notes</strong>: <em>etc&#8230;</em></dd>
 </dl>
 
 <h3 id="aideditorseditorsa"><a id="editors">editors</a></h3>
 
 <dl>
-<dt>AutoCanary</dt>
-<dd>desktop application for generating machine-readable, signed canary statements</dd>
+<dt><a id="pkg-autocanary"><strong>AutoCanary</strong></a></dt>
+<dd><strong>Description</strong>: desktop application for generating machine-readable, signed canary statements</dd>
 
-<dd>https://firstlook.org/code/project/autocanary</dd>
+<dd><strong>Relevance</strong>: <a href="#relevance-legal">Legal</a></dd>
 
-<dd>GPLv3: https://github.com/firstlook/autocanary/blob/master/LICENSE.md</dd>
+<dd><strong>Site</strong>: <a href="https://firstlook.org/code/project/autocanary">https://firstlook.org/code/project/autocanary</a></dd>
 
-<dd>https://github.com/firstlook/autocanary/</dd>
+<dd><strong>License</strong>: <a href="https://github.com/firstlook/autocanary/blob/master/LICENSE.md">GPLv3</a></dd>
 
-<dd>0.1</dd>
+<dd><strong>Source</strong>: <a href="https://github.com/firstlook/autocanary/">GitHub</a></dd>
 
-<dd>FreeBSD: no</dd>
+<dd><strong>Version</strong>: <a href="https://github.com/firstlook/autocanary/releases/tag/0.1">0.1</a></dd>
 
-<dd>OpenBSD: no</dd>
+<dd><strong>FreeBSD</strong>: no</dd>
 
-<dd>pkgsrc: no</dd>
+<dd><strong>OpenBSD</strong>: no</dd>
 
-<dd>DPorts: no</dd>
+<dd><strong>NetBSD</strong>: no</dd>
 
-<dd>notes:</dd>
+<dd><strong>DragonFly</strong>: no</dd>
 
-<dt>EtherCalc</dt>
-<dd>collaborative spreadsheet application</dd>
+<dd><strong>Notes</strong>: <a href="https://en.wikipedia.org/wiki/Warrant_canary">Wikipedia on Warrant Canaries</a></dd>
 
-<dd>https://ethercalc.net</dd>
+<dt><a id="pkg-ethercalc"><strong>EtherCalc</strong></a></dt>
+<dd><strong>Description</strong>: collaborative spreadsheet application</dd>
 
-<dd>CPAL 1.0 Artistic License 2.0: https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt</dd>
+<dd><strong>Relevance</strong>: <a href="#relevance-google">Google</a></dd>
 
-<dd>https://github.com/audreyt/ethercalc</dd>
+<dd><strong>Site</strong>: <a href="https://ethercalc.net">https://ethercalc.net</a></dd>
 
-<dd>FreeBSD: no</dd>
+<dd><strong>License</strong>: <a href="https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt">CPAL 1.0 Artistic License 2.0</a></dd>
 
-<dd>OpenBSD: no</dd>
+<dd><strong>Source</strong>: <a href="https://github.com/audreyt/ethercalc">GitHub</a></dd>
 
-<dd>pkgsrc: no</dd>
+<dd><strong>Version</strong>: <a href="https://github.com/audreyt/ethercalc/releases/tag/0.20151108.1">0.20151108.1</a></dd>
 
-<dd>DPorts: no</dd>
+<dd><strong>FreeBSD</strong>: no</dd>
 
-<dd>notes:</dd>
+<dd><strong>OpenBSD</strong>: no</dd>
 
-<dt>Etherpad</dt>
-<dd>collaborative editing application</dd>
+<dd><strong>NetBSD</strong>: no</dd>
 
-<dd>http://etherpad.org</dd>
+<dd><strong>DragonFly</strong>: no</dd>
 
-<dd>Apache 2.0: https://github.com/ether/etherpad-lite/blob/develop/LICENSE</dd>
+<dt><a id="pkg-etherpad"><strong>Etherpad</strong></a></dt>
+<dd><strong>Description</strong>: collaborative editing application</dd>
 
-<dd>https://github.com/ether/etherpad-lite</dd>
+<dd><strong>Relevance</strong>: <a href="#relevance-google">Google</a></dd>
 
-<dd>1.5.7</dd>
+<dd><strong>Site</strong>: <a href="http://etherpad.org">http://etherpad.org</a></dd>
 
-<dd>FreeBSD: no</dd>
+<dd><strong>License</strong>: <a href="https://github.com/ether/etherpad-lite/blob/develop/LICENSE">Apache 2.0</a></dd>
 
-<dd>OpenBSD: no</dd>
+<dd><strong>Source</strong>: <a href="https://github.com/ether/etherpad-lite">GitHub</a></dd>
 
-<dd>pkgsrc: no</dd>
+<dd><strong>Version</strong>: <a href="https://github.com/ether/etherpad-lite/releases/tag/1.5.7">1.5.7</a></dd>
 
-<dd>DPorts: no</dd>
+<dd><strong>FreeBSD</strong>: no</dd>
 
-<dd>notes:</dd>
+<dd><strong>OpenBSD</strong>: no</dd>
+
+<dd><strong>NetBSD</strong>: no</dd>
+
+<dd><strong>DragonFly</strong>: no</dd>
 </dl>
 
 <h3 id="aidgraphicsgraphicsa"><a id="graphics">graphics</a></h3>
 
 <dl>
-<dt>ExifTool</dt>
-<dd>tool for editing, reading, writing metadata on a variety of file types</dd>
+<dt><a id="pkg-exiftool">ExifTool</a></dt>
+<dd><strong>Description</strong>: tool for editing, reading, writing metadata on a variety of file types</dd>
 
-<dd>http://owl.phy.queensu.ca/~phil/exiftool/</dd>
+<dd><strong>Relevance</strong>: <a href="#relevance-meta">Metadata</a>, <a href="#relevance-exif">Exif</a></dd>
 
-<dd>Perl: http://owl.phy.queensu.ca/~phil/exiftool/#license</dd>
+<dd><strong>Site</strong>: <a href="http://owl.phy.queensu.ca/~phil/exiftool/">http://owl.phy.queensu.ca/~phil/exiftool/</a></dd>
 
-<dd>http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool&#8211;10.05.tar.gz</dd>
+<dd><strong>License</strong>: <a href="http://owl.phy.queensu.ca/~phil/exiftool/#license">Perl</a></dd>
 
-<dd>10.05</dd>
+<dd><strong>Source</strong>: http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool&#8211;10.05.tar.gz</dd>
 
-<dd>FreeBSD: yes</dd>
+<dd><strong>Version</strong>: 10.05</dd>
 
-<dd>OpenBSD: no</dd>
+<dd><strong>FreeBSD</strong>: yes</dd>
 
-<dd>pkgsrc: yes</dd>
+<dd><strong>OpenBSD</strong>: no</dd>
 
-<dd>DPorts: yes</dd>
+<dd><strong>NetBSD</strong>: yes</dd>
 
-<dd>notes:</dd>
+<dd><strong>DragonFly</strong>: yes</dd>
 
 <dt>Exiv2</dt>
 <dd>command-line utility to manage image metadata</dd>
@@ -1090,7 +1136,7 @@ all script, and therefore a frivilous dependency</dd>
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Dec 17 00:13:55 2015 UTC</code></p>
+<p><code>last updated: Thu Dec 17 17:38:30 2015 UTC</code></p>
 
 </body>
 </html>

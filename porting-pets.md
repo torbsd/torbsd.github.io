@@ -8,7 +8,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 {{header.md}}
 
-##Porting Targets for PETs##
+## Porting Targets for PETs ##
 
 Over the past few years, a long list of applications spawned from attention to privacy and anonymity solutions. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.
 
@@ -20,70 +20,86 @@ The listed information should be considered a guide but should be confirmed due 
 
 These are loose categorizations of the ports. Where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more specific category, for example __net-p2p__ over __net__. For the ports we are unsure how to categorize or haven't approached yet, we have put them under [misc](#misc). But overall, the categories are just a basic guide.
 
+We have also added a __Relevance__ field in many cases, when it might not be clear how the project relates to privacy; this field uses the following abbreviations:
+
+| Abbreviation | Meaning |
+| ------------ | ------- |
+| <a id="relevance-google">Google</a> | Enables the avoidance of e.g. Google and other privacy-hostile centralized services; for instance, [EtherCalc](#pkg-ethercalc) provides Google Apps-like functionality, allowing anyone to collaborate in this way without sacrificing privacy |
+| <a id="relevance-legal">Legal</a> | Deals with some aspect of the legality of privacy or mitigates corruption in the legal system with regard to protecting privacy |
+| <a id="relevance-metadata">Metadata</a> | Helps users avoid leaking private information via metadata, to see what metadata they have leaked, etc. |
+| <a id="relevance-exif">Exif</a> | Like [Metadata](#relevance-metadata) but specifically about image metadata stored in [Exif tags](https://en.wikipedia.org/wiki/EXIF), like photos taken with cell phones, etc. |
+[Abbreviations used for relevance to PETs][relevance_abbr_table]
+
+## Open Source Software Packages Relevant to PETs ##
+
 [editors](#editors)  [%sep] [graphics](#graphics) [%sep]  [mail](#mail) [%sep] [misc](#misc) [%sep] [net](#net) [%sep] [net-im](#net-im) [%sep] [net-p2p](#net-p2p) [%sep] [security](#security) [%sep] [sysutils](#sysutils) [%sep] [www](#www)
 
-tool-name
-: short-descr
-: www-site
-: license: explicit license stated, along with URL to the actual
-: source-path
-: version
-: FreeBSD: [FreeBSD ports system](https://svnweb.freebsd.org/ports/head/)
-: OpenBSD: [OpenBSD packages](http://mirrors.nycbug.org/pub/OpenBSD/snapshots/packages), which generally also apply to BitRig
-: pkgsrc: [NetBSD's pkgsrc](http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/README.html) for multiple operating systems
-: DPorts: [DragonFly BSD's ports](http://mirrors.nycbug.org/pub/DragonflyBSD/dports/dragonfly:4.4:x86:64/LATEST//All/), similar to FreeBSD
-: notes:
+__tool-name__
+: __Description__: _short-descr_
+: __Relevance__: _if necessary state the relevance of the project to PETs_
+: __License__: _name of license and link to actual text for project_
+: __Site__: _www-site_
+: __License__: _explicit license stated, along with URL to the actual_
+: __Source__: _url to distfile_
+: __Version__: _version information, e.g. current stable, development release, ..._
+: __FreeBSD__: [FreeBSD ports system](https://svnweb.freebsd.org/ports/head/)
+: __OpenBSD__: [OpenBSD packages](http://mirrors.nycbug.org/pub/OpenBSD/snapshots/packages), which generally also apply to BitRig
+: __NetBSD__: [NetBSD's pkgsrc](http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/README.html) for multiple operating systems
+: __DragonFly__: [DragonFly BSD's ports](http://mirrors.nycbug.org/pub/DragonflyBSD/dports/dragonfly:4.4:x86:64/LATEST//All/), similar to FreeBSD
+: __Notes__: _etc..._
 
 ###<a id="editors">editors</a>###
 
-AutoCanary
-: desktop application for generating machine-readable, signed canary statements
-: https://firstlook.org/code/project/autocanary
-: GPLv3: https://github.com/firstlook/autocanary/blob/master/LICENSE.md
-: https://github.com/firstlook/autocanary/
-: 0.1
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
+<a id="pkg-autocanary">__AutoCanary__</a>
+: __Description__: desktop application for generating machine-readable, signed canary statements
+: __Relevance__: [Legal](#relevance-legal)
+: __Site__: [https://firstlook.org/code/project/autocanary](https://firstlook.org/code/project/autocanary)
+: __License__: [GPLv3](https://github.com/firstlook/autocanary/blob/master/LICENSE.md)
+: __Source__: [GitHub](https://github.com/firstlook/autocanary/)
+: __Version__: [0.1](https://github.com/firstlook/autocanary/releases/tag/0.1)
+: __FreeBSD__: no
+: __OpenBSD__: no
+: __NetBSD__: no
+: __DragonFly__: no
+: __Notes__: [Wikipedia on Warrant Canaries](https://en.wikipedia.org/wiki/Warrant_canary)
 
-EtherCalc
-: collaborative spreadsheet application
-: https://ethercalc.net
-: CPAL 1.0 Artistic License 2.0: https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt
-: https://github.com/audreyt/ethercalc
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
+<a id="pkg-ethercalc">__EtherCalc__</a>
+: __Description__: collaborative spreadsheet application
+: __Relevance__: [Google](#relevance-google)
+: __Site__: [https://ethercalc.net](https://ethercalc.net)
+: __License__: [CPAL 1.0 Artistic License 2.0](https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt)
+: __Source__: [GitHub](https://github.com/audreyt/ethercalc)
+: __Version__: [0.20151108.1](https://github.com/audreyt/ethercalc/releases/tag/0.20151108.1)
+: __FreeBSD__: no
+: __OpenBSD__: no
+: __NetBSD__: no
+: __DragonFly__: no
 
-Etherpad
-: collaborative editing application
-: http://etherpad.org
-: Apache 2.0: https://github.com/ether/etherpad-lite/blob/develop/LICENSE
-: https://github.com/ether/etherpad-lite
-: 1.5.7
-: FreeBSD: no
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: no
-: notes:
+<a id="pkg-etherpad">__Etherpad__</a>
+: __Description__: collaborative editing application
+: __Relevance__: [Google](#relevance-google)
+: __Site__: [http://etherpad.org](http://etherpad.org)
+: __License__: [Apache 2.0](https://github.com/ether/etherpad-lite/blob/develop/LICENSE)
+: __Source__: [GitHub](https://github.com/ether/etherpad-lite)
+: __Version__: [1.5.7](https://github.com/ether/etherpad-lite/releases/tag/1.5.7)
+: __FreeBSD__: no
+: __OpenBSD__: no
+: __NetBSD__: no
+: __DragonFly__: no
 
 ###<a id="graphics">graphics</a>###
 
-ExifTool
-: tool for editing, reading, writing metadata on a variety of file types
-: http://owl.phy.queensu.ca/~phil/exiftool/
-: Perl: http://owl.phy.queensu.ca/~phil/exiftool/#license
-: http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz
-: 10.05
-: FreeBSD: yes
-: OpenBSD: no
-: pkgsrc: yes
-: DPorts: yes
-: notes:
+<a id="pkg-exiftool">ExifTool</a>
+: __Description__: tool for editing, reading, writing metadata on a variety of file types
+: __Relevance__: [Metadata](#relevance-meta), [Exif](#relevance-exif)
+: __Site__: [http://owl.phy.queensu.ca/~phil/exiftool/](http://owl.phy.queensu.ca/~phil/exiftool/)
+: __License__: [Perl](http://owl.phy.queensu.ca/~phil/exiftool/#license)
+: __Source__: http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz
+: __Version__: 10.05
+: __FreeBSD__: yes
+: __OpenBSD__: no
+: __NetBSD__: yes
+: __DragonFly__: yes
 
 Exiv2
 : command-line utility to manage image metadata
