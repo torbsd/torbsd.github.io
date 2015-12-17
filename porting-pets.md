@@ -91,27 +91,27 @@ __tool-name__
 
 <a id="pkg-exiftool">ExifTool</a>
 : __Description__: tool for editing, reading, writing metadata on a variety of file types
-: __Relevance__: [Metadata](#relevance-meta), [Exif](#relevance-exif)
+: __Relevance__: [Exif](#relevance-exif)
 : __Site__: [http://owl.phy.queensu.ca/~phil/exiftool/](http://owl.phy.queensu.ca/~phil/exiftool/)
 : __License__: [Perl](http://owl.phy.queensu.ca/~phil/exiftool/#license)
-: __Source__: http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz
+: __Source__: [http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz](http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz)
 : __Version__: 10.05
 : __FreeBSD__: yes
 : __OpenBSD__: no
 : __NetBSD__: yes
 : __DragonFly__: yes
 
-Exiv2
-: command-line utility to manage image metadata
-: http://www.exiv2.org
-: GPLv2 or commercial: http://www.exiv2.org/download.html#license
-: http://www.exiv2.org/exiv2-0.25.tar.gz
-: 0.25
-: FreeBSD: yes
-: OpenBSD: yes
-: pkgsrc: yes
-: DPorts: yes
-: notes:
+<a id="pkg-exiv2">Exiv2</a>
+: __Description__: command-line utility to manage image metadata
+: __Relevance__: [Exif](#relevance-exif)
+: __Site__: [http://www.exiv2.org](http://www.exiv2.org)
+: __License__: [GPLv2 or commercial](http://www.exiv2.org/download.html#license)
+: __Source__: [http://www.exiv2.org/exiv2-0.25.tar.gz](http://www.exiv2.org/exiv2-0.25.tar.gz)
+: __Version__: 0.25
+: __FreeBSD__: yes
+: __OpenBSD__: yes
+: __NetBSD__: yes
+: __DragonFly__: yes
 
 jhead
 : tool for manipulating JPEG EXIF files
