@@ -29,42 +29,6 @@
 
 <p>These are loose categorizations of the ports. Where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more specific category, for example <strong>net-p2p</strong> over <strong>net</strong>. For the ports we are unsure how to categorize or haven&#8217;t approached yet, we have put them under <a href="#misc">misc</a>. But overall, the categories are just a basic guide.</p>
 
-<p>We have also added a <strong>Relevance</strong> field in many cases, when it might not be clear how the project relates to privacy; this field uses the following abbreviations:</p>
-
-<table>
-<caption id="relevance_abbr_table">Abbreviations used for relevance to PETs</caption>
-<colgroup>
-<col style="text-align:left;"/>
-<col style="text-align:left;"/>
-</colgroup>
-
-<thead>
-<tr>
-	<th style="text-align:left;">Abbreviation</th>
-	<th style="text-align:left;">Meaning</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-	<td style="text-align:left;"><a id="relevance-google">Google</a></td>
-	<td style="text-align:left;">Enables the avoidance of e.g. Google and other privacy-hostile centralized services; for instance, <a href="#pkg-ethercalc">EtherCalc</a> provides Google Apps-like functionality, allowing anyone to collaborate in this way without sacrificing privacy</td>
-</tr>
-<tr>
-	<td style="text-align:left;"><a id="relevance-legal">Legal</a></td>
-	<td style="text-align:left;">Deals with some aspect of the legality of privacy or mitigates corruption in the legal system with regard to protecting privacy</td>
-</tr>
-<tr>
-	<td style="text-align:left;"><a id="relevance-metadata">Metadata</a></td>
-	<td style="text-align:left;">Helps users avoid leaking private information via metadata, to see what metadata they have leaked, etc.</td>
-</tr>
-<tr>
-	<td style="text-align:left;"><a id="relevance-exif">Exif</a></td>
-	<td style="text-align:left;">Like <a href="#relevance-metadata">Metadata</a> but specifically about image metadata stored in <a href="https://en.wikipedia.org/wiki/EXIF">Exif tags</a>, like photos taken with cell phones, etc.</td>
-</tr>
-</tbody>
-</table>
-
 <h2 id="opensourcesoftwarepackagesrelevanttopets">Open Source Software Packages Relevant to PETs</h2>
 
 <p><a href="#editors">editors</a> &#8916; <a href="#graphics">graphics</a> &#8916; <a href="#mail">mail</a> &#8916; <a href="#misc">misc</a> &#8916; <a href="#net">net</a> &#8916; <a href="#net-im">net-im</a> &#8916; <a href="#net-p2p">net-p2p</a> &#8916; <a href="#security">security</a> &#8916; <a href="#sysutils">sysutils</a> &#8916; <a href="#www">www</a></p>
@@ -72,8 +36,6 @@
 <dl>
 <dt><strong>tool-name</strong></dt>
 <dd><strong>Description</strong>: <em>short-descr</em></dd>
-
-<dd><strong>Relevance</strong>: <em>if necessary state the relevance of the project to PETs</em></dd>
 
 <dd><strong>License</strong>: <em>name of license and link to actual text for project</em></dd>
 
@@ -102,8 +64,6 @@
 <dt><a id="pkg-autocanary"><strong>AutoCanary</strong></a></dt>
 <dd><strong>Description</strong>: desktop application for generating machine-readable, signed canary statements</dd>
 
-<dd><strong>Relevance</strong>: <a href="#relevance-legal">Legal</a></dd>
-
 <dd><strong>Site</strong>: <a href="https://firstlook.org/code/project/autocanary">https://firstlook.org/code/project/autocanary</a></dd>
 
 <dd><strong>License</strong>: <a href="https://github.com/firstlook/autocanary/blob/master/LICENSE.md">GPLv3</a></dd>
@@ -125,8 +85,6 @@
 <dt><a id="pkg-ethercalc"><strong>EtherCalc</strong></a></dt>
 <dd><strong>Description</strong>: collaborative spreadsheet application</dd>
 
-<dd><strong>Relevance</strong>: <a href="#relevance-google">Google</a></dd>
-
 <dd><strong>Site</strong>: <a href="https://ethercalc.net">https://ethercalc.net</a></dd>
 
 <dd><strong>License</strong>: <a href="https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt">CPAL 1.0 Artistic License 2.0</a></dd>
@@ -145,8 +103,6 @@
 
 <dt><a id="pkg-etherpad"><strong>Etherpad</strong></a></dt>
 <dd><strong>Description</strong>: collaborative editing application</dd>
-
-<dd><strong>Relevance</strong>: <a href="#relevance-google">Google</a></dd>
 
 <dd><strong>Site</strong>: <a href="http://etherpad.org">http://etherpad.org</a></dd>
 
@@ -171,8 +127,6 @@
 <dt><a id="pkg-exiftool">ExifTool</a></dt>
 <dd><strong>Description</strong>: tool for editing, reading, writing metadata on a variety of file types</dd>
 
-<dd><strong>Relevance</strong>: <a href="#relevance-exif">Exif</a></dd>
-
 <dd><strong>Site</strong>: <a href="http://owl.phy.queensu.ca/~phil/exiftool/">http://owl.phy.queensu.ca/~phil/exiftool/</a></dd>
 
 <dd><strong>License</strong>: <a href="http://owl.phy.queensu.ca/~phil/exiftool/#license">Perl</a></dd>
@@ -192,8 +146,6 @@
 <dt><a id="pkg-exiv2">Exiv2</a></dt>
 <dd><strong>Description</strong>: command-line utility to manage image metadata</dd>
 
-<dd><strong>Relevance</strong>: <a href="#relevance-exif">Exif</a></dd>
-
 <dd><strong>Site</strong>: <a href="http://www.exiv2.org">http://www.exiv2.org</a></dd>
 
 <dd><strong>License</strong>: <a href="http://www.exiv2.org/download.html#license">GPLv2 or commercial</a></dd>
@@ -211,7 +163,7 @@
 <dd><strong>DragonFly</strong>: yes</dd>
 
 <dt>jhead</dt>
-<dd>tool for manipulating JPEG EXIF files</dd>
+<dd><strong>Description</strong>: tool for manipulating JPEG EXIF files</dd>
 
 <dd>http://www.sentex.net/~mwandel/jhead/</dd>
 
@@ -232,7 +184,7 @@
 <dd>notes:</dd>
 
 <dt>MAT</dt>
-<dd>tool for removing metadata</dd>
+<dd><strong>Description</strong>: tool for removing metadata</dd>
 
 <dd>http://mat.boum.org</dd>
 
@@ -253,7 +205,7 @@
 <dd>notes: command-line and GUI, with a library.</dd>
 
 <dt>pdf-redact-tools</dt>
-<dd>tools to redact and strip metadata from documents</dd>
+<dd><strong>Description</strong>: tools to redact and strip metadata from documents</dd>
 
 <dd>https://firstlook.org/code/project/pdf-redact-tools/</dd>
 
@@ -278,7 +230,7 @@
 
 <dl>
 <dt>Mailpile</dt>
-<dd>fast webmail client with built-in security features</dd>
+<dd><strong>Description</strong>: fast webmail client with built-in security features</dd>
 
 <dd>http://www.mailpile.is</dd>
 
@@ -299,7 +251,7 @@
 <dd>notes:</dd>
 
 <dt>Mixmaster</dt>
-<dd>type II remailer for anonymous email</dd>
+<dd><strong>Description</strong>: type II remailer for anonymous email</dd>
 
 <dd>http://mixmaster.sourceforge.net/</dd>
 
@@ -320,7 +272,7 @@
 <dd>notes: not under active development.</dd>
 
 <dt>Mixminion</dt>
-<dd>type III anonymous remailer</dd>
+<dd><strong>Description</strong>: type III anonymous remailer</dd>
 
 <dd>http://mixminion.net</dd>
 
@@ -341,7 +293,7 @@
 <dd>notes: not under active development.</dd>
 
 <dt>Torbirdy</dt>
-<dd>Thunderbird add-on for using accessing email over the Tor network</dd>
+<dd><strong>Description</strong>: Thunderbird add-on for using accessing email over the Tor network</dd>
 
 <dd>https://trac.torproject.org/projects/tor/wiki/torbirdy/</dd>
 
@@ -1136,7 +1088,7 @@ all script, and therefore a frivilous dependency</dd>
 
 <p><em>Copyright &copy; 2015 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Dec 17 17:43:55 2015 UTC</code></p>
+<p><code>last updated: Thu Dec 17 22:09:58 2015 UTC</code></p>
 
 </body>
 </html>

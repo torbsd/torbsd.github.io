@@ -20,23 +20,12 @@ The listed information should be considered a guide but should be confirmed due 
 
 These are loose categorizations of the ports. Where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more specific category, for example __net-p2p__ over __net__. For the ports we are unsure how to categorize or haven't approached yet, we have put them under [misc](#misc). But overall, the categories are just a basic guide.
 
-We have also added a __Relevance__ field in many cases, when it might not be clear how the project relates to privacy; this field uses the following abbreviations:
-
-| Abbreviation | Meaning |
-| ------------ | ------- |
-| <a id="relevance-google">Google</a> | Enables the avoidance of e.g. Google and other privacy-hostile centralized services; for instance, [EtherCalc](#pkg-ethercalc) provides Google Apps-like functionality, allowing anyone to collaborate in this way without sacrificing privacy |
-| <a id="relevance-legal">Legal</a> | Deals with some aspect of the legality of privacy or mitigates corruption in the legal system with regard to protecting privacy |
-| <a id="relevance-metadata">Metadata</a> | Helps users avoid leaking private information via metadata, to see what metadata they have leaked, etc. |
-| <a id="relevance-exif">Exif</a> | Like [Metadata](#relevance-metadata) but specifically about image metadata stored in [Exif tags](https://en.wikipedia.org/wiki/EXIF), like photos taken with cell phones, etc. |
-[Abbreviations used for relevance to PETs][relevance_abbr_table]
-
 ## Open Source Software Packages Relevant to PETs ##
 
 [editors](#editors)  [%sep] [graphics](#graphics) [%sep]  [mail](#mail) [%sep] [misc](#misc) [%sep] [net](#net) [%sep] [net-im](#net-im) [%sep] [net-p2p](#net-p2p) [%sep] [security](#security) [%sep] [sysutils](#sysutils) [%sep] [www](#www)
 
 __tool-name__
 : __Description__: _short-descr_
-: __Relevance__: _if necessary state the relevance of the project to PETs_
 : __License__: _name of license and link to actual text for project_
 : __Site__: _www-site_
 : __License__: _explicit license stated, along with URL to the actual_
@@ -52,7 +41,6 @@ __tool-name__
 
 <a id="pkg-autocanary">__AutoCanary__</a>
 : __Description__: desktop application for generating machine-readable, signed canary statements
-: __Relevance__: [Legal](#relevance-legal)
 : __Site__: [https://firstlook.org/code/project/autocanary](https://firstlook.org/code/project/autocanary)
 : __License__: [GPLv3](https://github.com/firstlook/autocanary/blob/master/LICENSE.md)
 : __Source__: [GitHub](https://github.com/firstlook/autocanary/)
@@ -65,7 +53,6 @@ __tool-name__
 
 <a id="pkg-ethercalc">__EtherCalc__</a>
 : __Description__: collaborative spreadsheet application
-: __Relevance__: [Google](#relevance-google)
 : __Site__: [https://ethercalc.net](https://ethercalc.net)
 : __License__: [CPAL 1.0 Artistic License 2.0](https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt)
 : __Source__: [GitHub](https://github.com/audreyt/ethercalc)
@@ -77,7 +64,6 @@ __tool-name__
 
 <a id="pkg-etherpad">__Etherpad__</a>
 : __Description__: collaborative editing application
-: __Relevance__: [Google](#relevance-google)
 : __Site__: [http://etherpad.org](http://etherpad.org)
 : __License__: [Apache 2.0](https://github.com/ether/etherpad-lite/blob/develop/LICENSE)
 : __Source__: [GitHub](https://github.com/ether/etherpad-lite)
@@ -91,7 +77,6 @@ __tool-name__
 
 <a id="pkg-exiftool">ExifTool</a>
 : __Description__: tool for editing, reading, writing metadata on a variety of file types
-: __Relevance__: [Exif](#relevance-exif)
 : __Site__: [http://owl.phy.queensu.ca/~phil/exiftool/](http://owl.phy.queensu.ca/~phil/exiftool/)
 : __License__: [Perl](http://owl.phy.queensu.ca/~phil/exiftool/#license)
 : __Source__: [http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz](http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz)
@@ -103,7 +88,6 @@ __tool-name__
 
 <a id="pkg-exiv2">Exiv2</a>
 : __Description__: command-line utility to manage image metadata
-: __Relevance__: [Exif](#relevance-exif)
 : __Site__: [http://www.exiv2.org](http://www.exiv2.org)
 : __License__: [GPLv2 or commercial](http://www.exiv2.org/download.html#license)
 : __Source__: [http://www.exiv2.org/exiv2-0.25.tar.gz](http://www.exiv2.org/exiv2-0.25.tar.gz)
@@ -114,7 +98,7 @@ __tool-name__
 : __DragonFly__: yes
 
 jhead
-: tool for manipulating JPEG EXIF files
+: __Description__: tool for manipulating JPEG EXIF files
 : http://www.sentex.net/~mwandel/jhead/
 : Public Domain: http://www.sentex.net/~mwandel/jhead/
 : http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz
@@ -126,7 +110,7 @@ jhead
 : notes:
 
 MAT
-: tool for removing metadata
+: __Description__: tool for removing metadata
 : http://mat.boum.org
 : GPLv2: https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE
 : https://gitweb.torproject.org/user/jvoisin/mat.git
@@ -138,7 +122,7 @@ MAT
 : notes: command-line and GUI, with a library.
 
 pdf-redact-tools
-: tools to redact and strip metadata from documents
+: __Description__: tools to redact and strip metadata from documents
 : https://firstlook.org/code/project/pdf-redact-tools/
 : GPLv3: https://github.com/firstlook/pdf-redact-tools/blob/master/LICENSE
 : https://github.com/firstlook/pdf-redact-tools/
@@ -153,7 +137,7 @@ pdf-redact-tools
 
 
 Mailpile
-: fast webmail client with built-in security features
+: __Description__: fast webmail client with built-in security features
 : http://www.mailpile.is
 : AGPLv3: https://github.com/mailpile/Mailpile
 : https://github.com/mailpile/Mailpile
@@ -165,7 +149,7 @@ Mailpile
 : notes:
 
 Mixmaster
-: type II remailer for anonymous email
+: __Description__: type II remailer for anonymous email
 : http://mixmaster.sourceforge.net/
 : MIT: https://anonscm.debian.org/viewvc/pkg-mixmaster/trunk/Mix/COPYRIGHT?view=markup
 : http://sourceforge.net/projects/mixmaster/files/latest/download?source=files
@@ -177,7 +161,7 @@ Mixmaster
 : notes: not under active development.
 
 Mixminion
-: type III anonymous remailer
+: __Description__: type III anonymous remailer
 : http://mixminion.net
 : MIT: https://github.com/nmathewson/mixminion/blob/master/LICENSE 
 : https://github.com/nmathewson/mixminion/
@@ -189,7 +173,7 @@ Mixminion
 : notes: not under active development.
 
 Torbirdy
-: Thunderbird add-on for using accessing email over the Tor network
+: __Description__: Thunderbird add-on for using accessing email over the Tor network
 : https://trac.torproject.org/projects/tor/wiki/torbirdy/
 : BSD: https://gitweb.torproject.org/torbirdy.git/tree/LICENSE
 : https://gitweb.torproject.org/torbirdy.git
