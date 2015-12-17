@@ -361,7 +361,7 @@ Syncthing
 : OpenBSD: no
 : pkgsrc: yes
 : DPorts: no
-: notes: in FBSD ports but not DFly?
+: notes: in FreeBSD ports but not DragonFly BSD?
 
 Tor
 : stable version of the onion-routing daemon for anonymous networking
@@ -435,7 +435,7 @@ Jitsi
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: yes
-: notes: Java-based as a shortcut to portability
+: notes: Java-based
 
 Ricochet
 : instant messaging client

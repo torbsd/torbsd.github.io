@@ -1,4 +1,4 @@
-Sun Dec 13 17:54:50 UTC 2015
+Wed Dec 16 15:53:27 UTC 2015
 Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
@@ -8,7 +8,7 @@ Quick-and-Dirty Static Reports
 'Countries without Public Tor Relays'
 
 Number of Country Codes without Public Tor Relays:
-82
+79
 -------
 -country-
 AFGHANISTAN
@@ -142,6 +142,7 @@ PITCAIRN
 PUERTO RICO
 QATAR
 RWANDA
+RÉUNION
 SAINT BARTHÉLEMY
 SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA
 SAINT KITTS AND NEVIS
