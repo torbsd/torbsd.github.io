@@ -187,7 +187,7 @@ Torbirdy
 ###<a id="misc">misc</a>###
 
 Kontalk server
-: encrypted communications platform
+: __Description__: encrypted communications platform
 : http://www.kontalk.org
 : GPLv3: check each component under GitHub account
 : https://github.com/kontalk/tigase-kontalk/
@@ -199,7 +199,7 @@ Kontalk server
 : notes: only for smartphones? client and server component of Kontalk XMPP client
 
 LEAP
-: secure server client platform
+: __Description__: secure server client platform
 : https://leap.se
 : GPLv3 https://leap.se/git/{bitmask_client.git,leap_platform,git,etc}/blob/HEAD:/LICENSE
 : https://leap.se/git
@@ -211,7 +211,7 @@ LEAP
 : notes: various components would needed for full porting, but starting point is likely the server.
 
 Libertree
-: open-source platform for creating private social networks
+: __Description__: open-source platform for creating private social networks
 : http://www.libertree.org
 : GNU Affero: https://github.com/Libertree/libertree/blob/master/LICENCE
 : https://github.com/LiberTree/libertree
@@ -223,7 +223,7 @@ Libertree
 : notes:
 
 Martus Desktop
-: platform for collecting, safeguarding, organizing and sharing info
+: __Description__: platform for collecting, safeguarding, organizing and sharing info
 : https://www.martus.org
 : was on code.google.com, now?
 : FreeBSD: no
@@ -233,7 +233,7 @@ Martus Desktop
 : notes:
 
 Martus Server
-: platform for collecting, safeguarding, organizing and sharing info
+: __Description__: platform for collecting, safeguarding, organizing and sharing info
 : https://www.martus.org
 : was on code.google.com, now?
 : FreeBSD: no
@@ -243,7 +243,7 @@ Martus Server
 : notes:
 
 SecureDrop
-: open-source whistleblower submission system
+: __Description__: open-source whistleblower submission system
 : https://securedrop.org/
 : AGPL
 : https://github.com/freedomofpress/securedrop/
@@ -255,7 +255,7 @@ SecureDrop
 : notes: topology review is probably first step.
 
 SparkleShare
-: Git-based file synchronization tool
+: __Description__: Git-based file synchronization tool
 : http://sparkleshare.org
 : GPLv3: https://github.com/hbons/SparkleShare/blob/master/legal/License_for_SparkleShare.txt
 : https://github.com/hbons/SparkleShare
@@ -267,7 +267,7 @@ SparkleShare
 : notes: essentially a GUI for git with server and client components
 
 Syncany
-: open-source cloud storage and filesharing application
+: __Description__: open-source cloud storage and filesharing application
 : https://www.syncany.org
 : GPLv3
 : https://github.com/syncany/syncany
@@ -279,7 +279,7 @@ Syncany
 : notes:
 
 Turtl: server, client
-: encrypted personal database and note-taking application
+: __Description__: encrypted personal database and note-taking application
 : https://turtl.it
 : GPLv3: https://github.com/turtl/api/blob/master/LICENSE
 : https://github.com/turtl
