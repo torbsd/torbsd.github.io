@@ -293,7 +293,7 @@ Turtl: server, client
 ###<a id="net">net</a>###
 
 arm/nyx
-: terminal status monitor for Tor
+: __Description__: terminal status monitor for Tor
 : https://www.atagar.com/arm/
 : https://gitweb.torproject.org/nyx.git/tree/LICENSE
 : https://gitweb.torproject.org/nyx.git
@@ -305,7 +305,7 @@ arm/nyx
 : notes:
 
 blockfinder
-: tool for enumerating network information by country
+: __Description__: tool for enumerating network information by country
 :
 : BSD: https://github.com/ioerror/blockfinder/blob/master/LICENSE
 : https://github.com/ioerror/blockfinder/
@@ -317,7 +317,7 @@ blockfinder
 : notes:
 
 OnionShare
-: secure and anonymous file-sharing tool
+: __Description__: secure and anonymous file-sharing tool
 : https://onionshare.org
 : GPLv3: https://github.com/michahflee/onionshare/blob/master/LICENSE
 : 0.7.1
@@ -328,7 +328,7 @@ OnionShare
 : notes:
 
 ooni-probe
-: network measurement framework for detecting network interference
+: __Description__: network measurement framework for detecting network interference
 : https://ooni.torproject.org
 : BSD: https://gitweb.torproject.org/onionoo.git/tree/LICENSE
 : https://github.com/TheTorProject/ooni-probe/
@@ -340,7 +340,7 @@ ooni-probe
 : notes:
 
 Ring client and server
-: open source communications platform
+: __Description__: open source communications platform
 : https://ring.cx
 : git https://gerrit-ring.savoirfairelinux.com/ projects
 : GPLv3: https://ring.cx/en/documentation/about-ring
@@ -352,7 +352,7 @@ Ring client and server
 : notes: various components for the platform
 
 Syncthing
-: open-source cloud storage and synchronization
+: __Description__: open-source cloud storage and synchronization
 : https://syncthing.net
 : MPLv2
 : https://github.com/syncthing/syncthing
@@ -364,7 +364,7 @@ Syncthing
 : notes: in FreeBSD ports but not DragonFly BSD?
 
 Tor
-: stable version of the onion-routing daemon for anonymous networking
+: __Description__: stable version of the onion-routing daemon for anonymous networking
 : https://www.torproject.org
 : BSD: https://gitweb.torproject.org/tor.git/tree/LICENSE
 : https://gitweb.torproject.org/tor.git/
@@ -376,7 +376,7 @@ Tor
 : notes:
 
 Tor alpha
-: development version of the onion-routing daemon for anonymous networking
+: __Description__: development version of the onion-routing daemon for anonymous networking
 : https://www.torproject.org
 : BSD: https://gitweb.torproject.org/tor.git/tree/LICENSE
 : https://gitweb.torproject.org/tor.git/
@@ -388,7 +388,7 @@ Tor alpha
 : notes: The alpha version is worth considering for production since it's stable and often the most effective in terms of circumvention counter-measures. OpenBSD does not include alpha or development versions of software in their ports
 
 Torsocks
-: SOCKS proxy for routing applications through the Tor network
+: __Description__: SOCKS proxy for routing TCP applications through the Tor network
 : https://www.torproject.org
 : GPLv2: https://gitweb.torproject.org/torsocks.git/tree/LICENSE
 : https://gitweb.torproject.org/torsocks.git/
@@ -400,7 +400,7 @@ Torsocks
 : notes: relies on torrc SOCKS port matching torsocks configuration.
 
 Torstatus
-: tool for aggregating and presenting public information about the Tor network
+: __Description__: tool for aggregating and presenting public information about the Tor network
 : n/a
 : BSD: https://gitweb.torproject.org/torstatus.git/tree/doc/LICENSE
 : https://gitweb.torproject.org/torstatus.git/
@@ -414,7 +414,7 @@ Torstatus
 ###<a id="net-im">net-im</a>###
 
 Cryptocat
-: accessible chat client
+: __Description__: accessible chat client
 : https://crypto.cat/
 : GNU Affero: https://github.com/cryptocat/cryptocat/blob/master/LICENSE.txt
 : https://github.com/cryptocat/cryptocat/
@@ -426,7 +426,7 @@ Cryptocat
 : notes: little activity since 201412
 
 Jitsi
-: XMPP/SIP client
+: __Description__: XMPP/SIP client
 : https://jitsi.org
 : Apache 2.0: https://github.com/jitsi/jitsi/blob/master/LICENSE
 : https://github.com/jitsi/jitsi
@@ -438,7 +438,7 @@ Jitsi
 : notes: Java-based
 
 Ricochet
-: instant messaging client
+: __Description__: instant messaging client
 : https://ricochet.im
 : BSD: https://github.com/ricochet-im/ricochet/blob/master/LICENSE
 : https://github.com/ricochet-im/ricochet/
@@ -450,7 +450,7 @@ Ricochet
 : notes:
 
 TorChat2
-: peer-to-peer instant messenger running on Tor hidden services
+: __Description__: peer-to-peer instant messenger running on Tor hidden services
 : https://github.com/prof7bit/TorChat/wiki/
 : GPLv3: https://en.wikipedia.org/wiki/TorChat
 : https://github.com/prof7bit/TorChat/
@@ -462,8 +462,8 @@ TorChat2
 : notes: license file?
 
 Tor Messenger
-: instant messenger for anonymity utilizing existing protocols
-: n/
+:  __Description__: instant messenger for anonymity utilizing existing protocols
+: n/a
 : GPLv2: https://github.com/rovemonteux/tormessenger/blob/master/LICENSE
 : https://gitweb.torproject.org/tor-messenger-build.git
 : 0.1.0b4
@@ -474,7 +474,7 @@ Tor Messenger
 : notes: requires Docker and a bunch of Perl modules. Early stages of dev. License reference is from old GitHub account, so may be inaccurate.
 
 Tox/uTox
-: UDP-based communications platform
+: __Description__: UDP-based communications platform
 : https://tox.chat
 : https://github.com/irungentoo/toxcore
 : GPLv3: https://github.com/irungentoo/toxcore/blob/master/COPYING
@@ -487,7 +487,7 @@ Tox/uTox
 ###<a id="net-p2p">net-p2p</a>###
 
 Bitmessage
-: https://bitmessage.org/wiki/Main_Page
+: __Description__: https://bitmessage.org/wiki/Main_Page
 : MIT: https://github.com/Bitmessage/PyBitmessage/blob/master/LICENSE
 : https://github.com/Bitmessage/PyBitMessage
 : 0.4.4
@@ -498,7 +498,7 @@ Bitmessage
 : notes:
 
 RetroShare
-: secure, decentralized P2P platform
+: __Description__: secure, decentralized P2P platform
 : http://retroshare.sourceforge.net
 : GPLv3: http://retroshare.sourceforge.net/wiki/index.php/Main_Page
 : https://github.com/RetroShare/RetroShare
@@ -512,7 +512,7 @@ RetroShare
 ###<a id="security">security</a>###
 
 gpg4usb
-: portable editor for encrypting and decrypting files
+: __Description__: portable editor for encrypting and decrypting files
 : http://www.gpg4usb.org
 : GPLv3: https://github.com/gpg4usb/gpg4usb/blob/master/COPYING
 : https://github.com/gpg4usb/gpg4usb
@@ -524,7 +524,7 @@ gpg4usb
 : notes:
 
 KeePassX
-: password management utility
+: __Description__: password management utility
 : http://www.keepassx.org/
 : various: https://github.com/keepassx/keepassx/
 : https://github.com/keepassx/keepassx/
@@ -536,7 +536,7 @@ KeePassX
 : notes:
 
 obfsproxy
-: pluggable transport for Tor
+: __Description__: pluggable transport for Tor
 : n/a
 : BSD: https://gitweb.torproject.org/pluggable-transports/obfsproxy.git/tree/LICENSE
 : 0.2.13
@@ -547,7 +547,7 @@ obfsproxy
 : notes: 
 
 Pond
-: forward secure, asynchronous messaging
+: __Description__: forward secure, asynchronous messaging
 : https://pond.imperialviolet.org
 : BSD: https://github.com/agl/pond/blob/master/LICENSE
 : 0.1.1
@@ -559,7 +559,7 @@ Pond
 : notes: why not in DPorts if it's in FreeBSD ports?
 
 sslyze
-: full-featured SSL scanner
+: __Description__: full-featured SSL scanner
 : GPLv2: https://github.com/nabla-c0d3/sslyze/blob/master/LICENSE.txt
 : https://github.com/nabla-c0d3/sslyze
 : 0.10
@@ -572,7 +572,7 @@ sslyze
 ###<a id="sysutils">sysutils</a>###
 
 tlsdate
-: secure parasitic rdate replacement
+: __Description__: secure parasitic rdate replacement
 : n/a
 : BSD: https://github.com/ioerror/tlsdate/blob/master/LICENSE
 : https://github.com/ioerror/tlsdate/
@@ -586,7 +586,7 @@ tlsdate
 ###<a id="www">www</a>###
 
 HTTPS Everywhere
-: Firefox add-on
+: __Description__: Firefox add-on
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -595,14 +595,14 @@ HTTPS Everywhere
 all script, and therefore a frivilous dependency
 
 NoScript
-: Firefox add-on for blocking scripts
+: __Description__: Firefox add-on for blocking scripts
 : https://noscript.net/
 : GPLv3: https://noscript.net/faq#qa1_14
 : 2.6.9.39
 : notes: Mozilla add-ons as ports?
 
 sigbin
-: web application for storing PGP-signed messages
+: __Description__: web application for storing PGP-signed messages
 : none
 : GPLv3: https://github.com/firstlook/sigbin/blob/master/LICENSE.md
 : https://github.com/firstlook/sigbin/
@@ -614,7 +614,7 @@ sigbin
 : notes: very early stages of development
 
 Tor Browser
-: Firefox-based browser for using the Tor anonymity network
+: __Description__: Firefox-based browser for using the Tor anonymity network
 : https://www.torproject.org/projects/torbrowser.html.en
 : various: https://gitweb.torproject.org/tor-browser.git/tree/toolkit/content/license.html?h=esr24
 : https://gitweb.torproject.org/tor-browser.git/
