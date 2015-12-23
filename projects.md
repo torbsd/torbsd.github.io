@@ -36,11 +36,11 @@ Some of the past events include:
 
 Possible upcoming events for __TDP__ in 2016 include:
 
-* June 10-11 2016: [BSDCan 2016 presentation](http://www.bsdcan.org/2016/) in Ottawa, Canada
+* June 10-11: [BSDCan 2016 proposed presentation](http://www.bsdcan.org/2016/) in Ottawa, Canada
 
-* September 2016: [EuroBSDCon 2016](https://2016.eurobsdcon.org/) in Belgrade, Serbia
+* September: [EuroBSDCon 2016](https://2016.eurobsdcon.org/) in Belgrade, Serbia
 
-* TBA in 2016: BSDCon Brasil
+* Dates TBA: BSDCon Brasil
 
 ###[BSD Firm Relays](corp-relays.html)###
 
