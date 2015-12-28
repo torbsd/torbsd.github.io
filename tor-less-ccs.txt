@@ -1,4 +1,4 @@
-Wed Dec 23 16:28:06 UTC 2015
+Mon Dec 28 18:23:53 UTC 2015
 Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
@@ -8,7 +8,7 @@ Quick-and-Dirty Static Reports
 'Countries without Public Tor Relays'
 
 Number of Country Codes without Public Tor Relays:
-80
+79
 -------
 -country-
 AFGHANISTAN
@@ -102,6 +102,7 @@ LEBANON
 LESOTHO
 LIBERIA
 LIBYA
+LIECHTENSTEIN
 MACAO
 MADAGASCAR
 MALAWI
@@ -186,6 +187,7 @@ URUGUAY
 UZBEKISTAN
 VANUATU
 VENEZUELA, BOLIVARIAN REPUBLIC OF
+VIRGIN ISLANDS, BRITISH
 VIRGIN ISLANDS, U.S.
 WALLIS AND FUTUNA
 WESTERN SAHARA
