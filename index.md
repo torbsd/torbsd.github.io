@@ -27,7 +27,7 @@ for innumerable devices on the Internet. Firms such as Netflix, WhatsApp and Jun
 
 Originating at the University of California in the 1970's, BSD software is renowned for its Internet infrastructure role since its earliest days.
 
-The Tor Project plays a critical component in anonymity
+The Tor Project plays a critical component for internet anonymity
 and privacy solutions. With increasing surveillance and censorship,
 Tor is a vital tool, and the project has grown by leaps-and-bounds
 since its creation at the US Naval Labs in the 1990’s. Millions 
@@ -38,11 +38,11 @@ __While recognizing the Tor Project is a dynamic open source project with a vibr
 There are three aspects of the __TDP’s__ approach:
 
 * Increase the number of Tor relays running BSDs.  We envision this
-  happening by increasing the total number of relays, with the addition
-  of more BSD users running relays;
+  happening by increasing the total number of relays, with more BSD
+  users running relays;
 
 * Make the Tor Browser available under BSD operating systems
-  using native packaging mechanisms.  Our first target is OpenBSD;
+  using native packaging mechanisms with OpenBSD as the initial target;
 
 * Engage the broader BSD community about the Tor anonymity network and
   the place that BSD Unix should occupy in the privacy community at
@@ -63,7 +63,7 @@ Current __TDP__ [work](projects.html) includes:
 
 * Maintaining a set of reports entitled ["Quick-and-Dirty Statistics"](dirty-stats.html) which provide snapshots of public Tor relay diversity;
 
-We look forward to inquiries and involvement in __TDP__.  Fork our [code]
+We look forward to inquiries about and involvement in __TDP__.  Fork our [code]
 (https://github.com/torbsd), submit patches, run a BSD relay and let us know if __TDP__ documentation was useful.
 
 Please see our [contact page](contact.html) if you want to get in touch with us.
