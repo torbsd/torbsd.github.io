@@ -10,7 +10,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## Quick-and-Dirty Static Reports ##
 
-This project aims at producing simple, relevant reports for making broad conclusions about the network diversity of the public Tor relays network. While primarily about providing a glance at the Tor network's current state, some may find it useful for presentations or static, broad snapshots of Tor.
+This project aims at producing simple, relevant reports for making broad conclusions about the network diversity of the public Tor relays network. While primarily providing a glance at the Tor network's current state, some may find it useful for presentations or static, broad snapshots of Tor.
 
 __TDP__ focuses primarily on operating system diversity, specifically as related to BSD Unix, but such diversity applies to more than just number of relays by operating system. Other considerations are important, such as average bandwidth per relay by operating system, geographical diversity, and so on.
 
@@ -28,7 +28,7 @@ __[Operating Systems Ranks by Bandwidth](bw-rank-os.txt)__
 
 Ranking in Kbps of bandwidth provided by each operating system, with the relevant percentage share. This script's results are essentially what spawned __TDP__ in the first place: the overwhelming role of Linux in providing bandwidth to the Tor network.
 
-FreeBSD Tor relays place second in contributed bandwidth, and contribute almost 5% of the total. Increased OS diversity from the other BSDs could drastically incrase this diversity measure, particularly OpenBSD. As BSDs such as DragonFly and BitRig mature, we look forward to their contributions.
+FreeBSD Tor relays place second in contributed bandwidth, contributing over 5% of the total. Increased OS diversity from the other BSDs could drastically increase this diversity measure, particularly OpenBSD. As BSDs such as DragonFly and BitRig mature, we look forward to their contributions.
 
 __[Operating Systems Count](os-count.txt)__
 
@@ -36,7 +36,7 @@ Count of relays by operating system or platform, along with the percentage of ea
 
 Note that many of the Windows relays are likely Tor Browser users who are contributing bandwidth to the Tor network, implied by the low percentage of bandwidth provided despite accounting for the second most popular relay operating system. Hats off to those users. Users that don't just want to use Tor but also contribute are vital to the network's health.
 
-FreeBSD, OpenBSD and NetBSD relays provide an average bandwith per host exceeding that of Windows and Darwin (OSX), implying that those hosts are dedicated relays colocated on commercial infrastructure. In such cases, increasing "RelayBandwidthRate" in the torrc file may be a simple step to take.
+FreeBSD, OpenBSD and NetBSD relays provide an average bandwidth per host exceeding that of Windows and Darwin (OSX), implying that those hosts are dedicated relays colocated on commercial infrastructure. In such cases, increasing "RelayBandwidthRate" in the torrc file may be a simple step to take.
 
 __[Number of Relays per Country Code](relays-by-cc.txt)__
 
