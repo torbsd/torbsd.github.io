@@ -39,7 +39,7 @@ Attila began working on the next Tor Browser release yesterday.
 
 [Dirty Statistics](dirty-stats.html) are still being updated and tweaked. More reports are in the pipeline.
 
-Some quite inferences from the Dirty Statistics reports:
+Some inferences from the Dirty Statistics reports:
 
 * 'Bandwidth Ranking by Country Code' shows a disturbing concentration of public Tor bandwidth. The recent chatter in France about banning Tor would have a disastrous effect on available bandwidth, with a quarter of Tor bandwidth being from there. Two other countries, Germany and the Netherlands, also provide double-digits of Tor bandwidth. Lack of diversity is a critical Achilles' Heel.
 
