@@ -35,11 +35,28 @@ __October 2015__
 
 We are still moving along.
 
-[Dirty Stats](dirty-stats.html) are still being updated and tweaked. More reports are in the pipeline.
+[Dirty Statistics](dirty-stats.html) are still being updated and tweaked. More reports are in the pipeline.
+
+Some quite inferences from the Dirty Statistics reports:
+
+* 'Bandwidth Ranking by Country Code' shows a disturbing concentration of public Tor bandwidth. The recent chatter in France about banning Tor would have a disastrous effect on available bandwidth, with a quarter of Tor bandwidth being from there. Two other countries, Germany and the Netherlands, also provide double-digits of Tor bandwidth. Lack of diversity is a critical Achilles' Heel.
+
+* 'Bandwidth Ranking by Operating System Platform' continues to illustrate our main motivation, over 93% of Tor bandwidth is running on one Linux distro or another. Interestingly, FreeBSD is a strong second at over 5.6% of public bandwidth, with the next contender being OpenBSD at under .5%. Those BSD numbers are fascinating since in terms of quantity of relays, Windows far exceed the BSDs.
+
+* 'Exit Relays by Country Code' shows that even though the US provides under 10% of public Tor bandwidth, it accounts for almost 18% of exit relays with Germany being distantly in second place with under 12% of exit relays. France, despite dominating in public bandwidth, only accounts for less than 9% of exit relays.
+
+* 'Total Relay Count by Operating System' illustrates the hard numbers of public Tor relays by operating system. Windows maintains second place, with FreeBSD and OpenBSD occupying third and fourth places. Besides displaying the Linux monoculture, it also illustrates that a lot of Windows users, most likely running relays with the Tor Browser client software, are contributing relays.
+
+* 'Relay Count by Country Code' shows the disturbing concentration of public relays with three countries, Germany, the US and France, having double-digits in relays. In terms of distribution, having as many countries as possible get up to having 1% of relays would be ideal, but not by decreasing the number of public relays in the top entries.
+
+* 'Countries without Public Tor Relays' generally hovers between the high-70's to the mid-80's in numbers. Of course, in a lot of those countries it's dangerous or just cost-prohibitive to run relays, yet it is likely that Tor isn't well-known enough in some of them. If you are in one of those countries, drop us a note on why running a public Tor relay is difficult. If you know someone in one of those countries, ask them yourself and let us know.
+
 
 Attila is starting the next release of Tor Browser.
 
 Remarkably, Tor Browser 5.03 is still functional on OpenBSD/amd64 with the #1783 snapshot from December 27th. Snapshots frequently take hard twists and turns, as is to be expected with the development branch of any operating system, so this is something of a surprise. The early releases of __TDP's__ 5.03 faced some hiccups with various changes, but we are trouble-free since.
+
+One thing to note is that the number of public *BSD Tor relays, not including BitRig, remains consistently above 5% of total relays. While we can't necessarily attribute to __TDP__, we like to thing the noise we make helped a little bit.
 
 Stay tuned. We are still very active, even when we are publicly quiet.
 
