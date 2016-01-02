@@ -55,7 +55,7 @@ Some quite inferences from the Dirty Statistics reports:
 
 Remarkably, Tor Browser 5.03 is still functional on OpenBSD/amd64 with the #1783 snapshot from December 27th. Snapshots frequently take hard twists and turns, as is to be expected with the development branch of any operating system, so this is something of a surprise. The early releases of __TDP's__ 5.03 faced some hiccups with various changes, but we are trouble-free since.
 
-One thing to note is that the number of public *BSD Tor relays, not including BitRig, remains consistently above 5% of total relays. While we can't necessarily attribute to __TDP__, we like to thing the noise we make helped a little bit.
+One thing to note is that the number of public *BSD Tor relays, not including BitRig, remains consistently above 5% of total relays. While we can't necessarily attribute to __TDP__, we like to think the noise we make helped a little bit.
 
 Stay tuned. We are still very active, even when we are publicly quiet.
 
