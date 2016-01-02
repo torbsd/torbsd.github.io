@@ -35,6 +35,8 @@ __October 2015__
 
 We are still moving along.
 
+Attila began working on the next Tor Browser release yesterday.
+
 [Dirty Statistics](dirty-stats.html) are still being updated and tweaked. More reports are in the pipeline.
 
 Some quite inferences from the Dirty Statistics reports:
@@ -50,9 +52,6 @@ Some quite inferences from the Dirty Statistics reports:
 * 'Relay Count by Country Code' shows the disturbing concentration of public relays with three countries, Germany, the US and France, having double-digits in relays. In terms of distribution, having as many countries as possible get up to having 1% of relays would be ideal, but not by decreasing the number of public relays in the top entries.
 
 * 'Countries without Public Tor Relays' generally hovers between the high-70's to the mid-80's in numbers. Of course, in a lot of those countries it's dangerous or just cost-prohibitive to run relays, yet it is likely that Tor isn't well-known enough in some of them. If you are in one of those countries, drop us a note on why running a public Tor relay is difficult. If you know someone in one of those countries, ask them yourself and let us know.
-
-
-Attila is starting the next release of Tor Browser.
 
 Remarkably, Tor Browser 5.03 is still functional on OpenBSD/amd64 with the #1783 snapshot from December 27th. Snapshots frequently take hard twists and turns, as is to be expected with the development branch of any operating system, so this is something of a surprise. The early releases of __TDP's__ 5.03 faced some hiccups with various changes, but we are trouble-free since.
 
