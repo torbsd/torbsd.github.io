@@ -10,6 +10,10 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or a Central Location for Announces and Notes##
 
+__January 2016__
+
+[Still Plugging Away](#still-here)
+
 __December 2015__
 
 [Notes From The Front](#notes-from-the-front) [%sep] [Announcing Porting PETs](#pp-announce) [%sep] [Thinking About 2016](#2016-events)
@@ -24,6 +28,20 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20160102###
+
+<a id="still-here">__Still Plugging Away__</a> by gman999
+
+We are still moving along.
+
+[Dirty Stats](dirty-stats.html) are still being updated and tweaked. More on in the pipeline.
+
+Attila is starting the next release of Tor Browser.
+
+Remarkably, Tor Browser 5.03 is still functional on OpenBSD/amd64 with #1783 snapshot from December 27th. Snapshots frequently take hard twists and turns, as is to be expected with the development branch of any operating system, so this is something of a surprise. The early releases of __TDP's__ 5.03 faced some hiccups with various changes, but we are trouble-free since.
+
+Stay tuned. We are still very active, even when we are publicly quiet.
 
 ###20151216###
 
