@@ -35,11 +35,11 @@ __October 2015__
 
 We are still moving along.
 
-[Dirty Stats](dirty-stats.html) are still being updated and tweaked. More on in the pipeline.
+[Dirty Stats](dirty-stats.html) are still being updated and tweaked. More reports are in the pipeline.
 
 Attila is starting the next release of Tor Browser.
 
-Remarkably, Tor Browser 5.03 is still functional on OpenBSD/amd64 with #1783 snapshot from December 27th. Snapshots frequently take hard twists and turns, as is to be expected with the development branch of any operating system, so this is something of a surprise. The early releases of __TDP's__ 5.03 faced some hiccups with various changes, but we are trouble-free since.
+Remarkably, Tor Browser 5.03 is still functional on OpenBSD/amd64 with the #1783 snapshot from December 27th. Snapshots frequently take hard twists and turns, as is to be expected with the development branch of any operating system, so this is something of a surprise. The early releases of __TDP's__ 5.03 faced some hiccups with various changes, but we are trouble-free since.
 
 Stay tuned. We are still very active, even when we are publicly quiet.
 
