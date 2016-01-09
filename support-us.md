@@ -16,7 +16,7 @@ __TDP__ launched in March 2015, and works to strengthen the Tor public anonymity
 
 Since our beginnings, __TDP__ successfully achieved a number of significant milestones:
 
-* produced five releases of Tor Browser for [OpenBSD](http://www.openbsd.org), with the repository residing [on GitHub](https://github.com/torbsd)
+* produced seven releases of Tor Browser for [OpenBSD](http://www.openbsd.org), with the repository residing [on GitHub](https://github.com/torbsd)
 
 * conducted a number of successful presentations at [BSDCan 2015](https://www.bsdcan.org/2015/) and [BSDCon Brazil](http://2015.bsdcon.com.br), engaging with scores of individuals about __TDP__ and the critical importance of involving BSD users and developers in Tor ecosystem
 
@@ -38,7 +38,7 @@ __TDP__ already has a proven track record as a project. But __TDP__ wants to do 
 
 * we want to push some of our code changes upstream into the Tor Project and even Mozilla
 
-* we want to conduct more presentations, birds-of-feather sessions and public meetings about __TDP__ including [BSDCan](https://www.bsdcan.org/) in 2016, plus a public presentation and maybe a Tor Browser hackathon in NYC in late winter
+* we want to conduct more presentations, birds-of-feather sessions and public meetings about __TDP__ including [BSDCan](https://www.bsdcan.org/) in 2016, plus a public presentation and maybe a Tor Browser hackathon in NYC in 2016
 
 * we want to target more potential Tor relay operators in countries with few or no relays through our contacts in the *BSD community, and [EuroBSDCon 2016](https://2016.eurobsdcon.org) is scheduled for Belgrade, Serbia (RS), a country and region (Croatia/HR, Slovenia/SI, Bosnia and Herzegovina/BA, Macedonia/MK, Montenegro/ME and others) where the sum total of public Tor relays is in the single-digits
 
