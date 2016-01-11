@@ -10,7 +10,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## Quick-and-Dirty Static Reports ##
 
-This project aims at producing simple, relevant reports for making broad conclusions about the network diversity of the public Tor relays network. While primarily providing a glance at the Tor network's current state, some may find it useful for presentations or static, broad snapshots of Tor.
+This project aims at producing simple, relevant reports for making broad conclusions about the network diversity of the public Tor relay network. While primarily providing a glance at the Tor network's current state, some may find it useful for presentations or static, broad snapshots of Tor.
 
 __TDP__ focuses primarily on operating system diversity, specifically as related to BSD Unix, but such diversity applies to more than just number of relays by operating system. Other considerations are important, such as average bandwidth per relay by operating system, geographical diversity, and so on.
 
