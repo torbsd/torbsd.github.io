@@ -443,7 +443,7 @@ Ricochet
 : BSD: https://github.com/ricochet-im/ricochet/blob/master/LICENSE
 : https://github.com/ricochet-im/ricochet/
 : 1.1.1
-: FreeBSD: no
+: FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
