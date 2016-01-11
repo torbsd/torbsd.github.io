@@ -30,6 +30,8 @@ Since our beginnings, __TDP__ successfully achieved a number of significant mile
 
 * [documented an array of common PETs](porting-pets.html)--privacy-enhancing technologies--and their status in the various BSD ports systems, encouraging BSD port developers to approach and investigate their adoption
 
+* In January 2013, under 4% of public Tor relays were running a BSD Unix, while today the number hovers around the 5.25% range. While we can't directly attribute it to __TDP__, we believe our development and advocacy work impacted this change.
+
 __TDP__ already has a proven track record as a project. But __TDP__ wants to do more. Each and every one of our accomplishments is only a first step in a larger set of goals.
 
 * we want to release a maintained Tor Browser for OpenBSD's stable branch
@@ -42,7 +44,7 @@ __TDP__ already has a proven track record as a project. But __TDP__ wants to do 
 
 * we want to target more potential Tor relay operators in countries with few or no relays through our contacts in the *BSD community, and [EuroBSDCon 2016](https://2016.eurobsdcon.org) is scheduled for Belgrade, Serbia (RS), a country and region (Croatia/HR, Slovenia/SI, Bosnia and Herzegovina/BA, Macedonia/MK, Montenegro/ME and others) where the sum total of public Tor relays is in the single-digits
 
-* we want to enlist more BSD-using firms to run high-bandwidth Tor relays, employing our networks of contacts through the community
+* we want to enlist more BSD-using firms to run high-bandwidth Tor relays, employing our networks of contacts around the community
 
 * we want our relay guides to be production ready, and translated to languages beyond English, particularly into those common in countries with low relay counts
 
