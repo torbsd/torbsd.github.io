@@ -58,8 +58,4 @@ At this point, __TDP__ is self-funded with resources, time and labor. But those 
 
 Please contact __TDP__ if interested in assisting our efforts to allow us to continue the current objectives, and to expand them. 
 
-Finally, an image for your enjoyment:
-
-![Ah, what a life](http://bits.haqistan.net/~attila/beardpillow2.jpg)
-
 {{footer.md}}
