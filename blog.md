@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __January 2016__
 
-[Still Plugging Away](#still-here)
+[Still Plugging Away](#still-here) [%sep] [Tor-in-a-Box?](#torbox)
 
 __December 2015__
 
@@ -28,6 +28,27 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20160118###
+
+<a id="torinabox">__Tor-in-a-Box__</a> by gman999
+
+If someone reasonably technical bumps into Tor for the first time, eight or nine seconds later, they arrive at the concept of some type of Tor device that automagically routes all local network traffic through the Tor network.
+
+Great idea. The fact that so many imagine such a concept certainly means something.
+
+All too often, unfortunately, the implementation is wrong. Dead wrong.
+
+In the early 1990's, a desktop's traffic to the public internet was simple. There might be some HTTP from a web browser, a dash of UDP for DNS lookups and maybe some POPing to a remote email server. All was relatively quiet.
+
+Over the past two decades, the wall between the internet and the desktops evaporated. Why is Windows 10 a free upgrade? Likely because a "free" operating system is well-compensated by full control of the desktop environment. And that means a tcpdump(8) from 1994 bears no resemblance to the ugly spew of 2015.
+
+After those initial eight or nine seconds, going back to the basics of design should be the next reaction. Stop trying to make tools that do everything half-way. Too often an all-in-one device that tries to solve multiple problems displays contradictions between those functions. Thus, the core Unix principle that is considered dated by many, yet justifies itself with each new "wonder box" incarnation: one tool for one function.
+
+That is not an argument against innovation, products or progress on any level. The point is the moment an attempt is made to cast a wide net into a complex sea, the net is shredded. The net's target is not a school of sardines, but sardines, sharks, with rusted earth-moving equipment, yellow school buses and maybe a piece of space hardware or two.
+
+More on this theme later, but the resilience of the classic Unix themes rises from the grave daily in an age of all-in-one products or services that tries to do everything, but succeeds at doing some things poorly and others dead-wrong.
+
 
 ###20160102###
 
