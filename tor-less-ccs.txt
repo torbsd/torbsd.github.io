@@ -1,4 +1,4 @@
-Mon Jan 18 17:11:45 UTC 2016
+Thu Jan 21 20:31:43 UTC 2016
 Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
@@ -8,7 +8,7 @@ Quick-and-Dirty Static Reports
 'Countries without Public Tor Relays'
 
 Number of Country Codes without Public Tor Relays:
-82
+79
 -------
 -country-
 AFGHANISTAN
@@ -88,6 +88,7 @@ HAITI
 HEARD ISLAND AND MCDONALD ISLANDS
 HOLY SEE (VATICAN CITY STATE)
 HONDURAS
+IRAN, ISLAMIC REPUBLIC OF
 IRAQ
 ISLE OF MAN
 JAMAICA
