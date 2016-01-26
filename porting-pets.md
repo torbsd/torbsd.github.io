@@ -41,7 +41,7 @@ __tool-name__
 
 <a id="pkg-autocanary">__AutoCanary__</a>
 : __Description__: desktop application for generating machine-readable, signed canary statements
-: __Site__: [https://firstlook.org/code/project/autocanary](https://firstlook.org/code/project/autocanary)
+: Site: [https://firstlook.org/code/project/autocanary](https://firstlook.org/code/project/autocanary)
 : __License__: [GPLv3](https://github.com/firstlook/autocanary/blob/master/LICENSE.md)
 : __Source__: [GitHub](https://github.com/firstlook/autocanary/)
 : __Version__: [0.1](https://github.com/firstlook/autocanary/releases/tag/0.1)
@@ -77,32 +77,31 @@ __tool-name__
 
 <a id="pkg-exiftool">ExifTool</a>
 : __Description__: tool for editing, reading, writing metadata on a variety of file types
-: __Site__: [http://owl.phy.queensu.ca/~phil/exiftool/](http://owl.phy.queensu.ca/~phil/exiftool/)
-: __License__: [Perl](http://owl.phy.queensu.ca/~phil/exiftool/#license)
-: __Source__: [http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz](http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz)
-: __Version__: 10.05
-: __FreeBSD__: yes
-: __OpenBSD__: no
-: __NetBSD__: yes
-: __DragonFly__: yes
+: Site: http://owl.phy.queensu.ca/~phil/exiftool/
+: License: [Perl](http://owl.phy.queensu.ca/~phil/exiftool/#license)
+: Source: http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz)
+: Version: 10.05
+: FreeBSD: yes
+: OpenBSD: no
+: NetBSD: yes
+: DragonFly: yes
 
 <a id="pkg-exiv2">Exiv2</a>
-: __Description__: command-line utility to manage image metadata
-: __Site__: [http://www.exiv2.org](http://www.exiv2.org)
-: __License__: [GPLv2 or commercial](http://www.exiv2.org/download.html#license)
-: __Source__: [http://www.exiv2.org/exiv2-0.25.tar.gz](http://www.exiv2.org/exiv2-0.25.tar.gz)
-: __Version__: 0.25
-: __FreeBSD__: yes
-: __OpenBSD__: yes
-: __NetBSD__: yes
-: __DragonFly__: yes
+: Description: command-line utility to manage image metadata
+: Site: [http://www.exiv2.org](http://www.exiv2.org)
+: License: GPLv2 or commercial http://www.exiv2.org/download.html#license
+: Version: 0.25
+: FreeBSD: yes
+: OpenBSD: yes
+: NetBSD: yes
+: DragonFly: yes
 
 jhead
 : __Description__: tool for manipulating JPEG EXIF files
 : http://www.sentex.net/~mwandel/jhead/
-: Public Domain: http://www.sentex.net/~mwandel/jhead/
+: License: Public Domain http://www.sentex.net/~mwandel/jhead/
 : http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz
-: 3.00
+: Version: 3.00
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: yes
@@ -556,7 +555,19 @@ Pond
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: yes
-: notes: why not in DPorts if it's in FreeBSD ports?
+: notes: in DPorts yet it's in FreeBSD ports
+
+Scallion
+: __Description__: GPU-basd Onion hash generator
+: n/a
+: BSD: https://github.com/lachesis/scallion/blob/gpg/LICENCE.txt
+: 1.2
+: https://github.com/lachesis/scallion/
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: useful for creating custom or "vanity" GPG keys or .onion addresses
 
 sslyze
 : __Description__: full-featured SSL scanner
