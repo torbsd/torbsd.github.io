@@ -58,7 +58,7 @@ These are the basic steps to configure a Tor relay with OpenBSD, based on the de
 
 5. Install Tor:
 
->$ pkg_add -r tor
+>$ pkg_add tor
 
 6. Copy the torrc.sample file to torrc:
 
@@ -124,7 +124,7 @@ By default, OpenBSD enables encrypted swap in /etc/sysctl.conf, so no changes ar
 
 ### Why To Use Ports as Opposed to Packages ###
 
-OpenBSD's pkg_add system is easy to use and smooth in operation. However, the pkg_add restricts the install to the current Tor package with 
+OpenBSD's pkg_add system is easy to use and smooth in operation.
 
 [OpenBSD]: http://www.openbsd.org "OpenBSD Project"
 [FAQ]: http://www.openbsd.org/faq/index.html "OpenBSD FAQ"
