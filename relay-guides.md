@@ -35,8 +35,8 @@ operating system installs (outside of some recommended changes) should
 be sufficient for most relay operators' hardware and bandwidth. If
 Netflix can serve
 [one-third of peak internet traffic in North America](https://www.youtube.com/watch?v=FL5U4wr86L4)
-with a default FreeBSD install, it's likely sufficient for the vast
-majority of Tor relays.
+with a default FreeBSD install, it is likely sufficient for the vast
+majority of Tor relays without any changes to the operating system.
 
 Contributions from other BSDs are welcomed.
 
