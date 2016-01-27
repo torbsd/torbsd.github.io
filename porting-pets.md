@@ -483,13 +483,25 @@ Tox/uTox
 : DPorts: yes
 : notes: FreeBSD builds available on www
 
+vuvuzela
+: __Description__: private messaging system that hides metadata
+: License: GPLv3 https://github.com/davidlazar/vuvuzela/blob/master/LICENSE 
+: https://github.com/davidlazar/vuvuzela
+: Version: 0.1
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
+: notes: in early stages of development. [SOSP 2015 Paper](https://davidlazar.org/papers/vuvuzela.pdf) and [SOSP 2015 Slides](https://davidlazar.org/slides/vuvuzela-sosp2015.pdf)
+
+
 ###<a id="net-p2p">net-p2p</a>###
 
 Bitmessage
 : __Description__: https://bitmessage.org/wiki/Main_Page
 : MIT: https://github.com/Bitmessage/PyBitmessage/blob/master/LICENSE
 : https://github.com/Bitmessage/PyBitMessage
-: 0.4.4
+: Version: 0.4.4
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
