@@ -14,16 +14,16 @@ __THESE ARE PRELIMINARY WORKS AT THE EARLY STAGE. ANONYMITY IS NOT A GAME, SO PL
 
 __TDP__ is creating two guides to building and configuring Tor relays for FreeBSD and OpenBSD.
 
-There will be two parts to each.
+There will be two versions of each.
 
-The first part will be a "quick and dirty" guide to getting a Tor relay up quickly.
+The first one will be guides to getting a Tor relay up quickly.
 
 The second will be some other ideas for configuration, covering more optional enhancements.
 
 One issue to note is that we view various optimization attempts as a
-complex road, beyond just reading [Stevens' "TCP/IP Illustrated"](https://en.wikipedia.org/wiki/TCP/IP_Illustrated).
+complex road.
 
-It is not easy to understand the true effects of sysctl value changes and other kernel-level hacks, particularly with TCP traffic. Tor is a (more or less) randomized routing network. That lack of consistency inhibits comparisons in performance beyond the obvious. Tor traffic on a relay can vary wildly day-to-day and month-to-month, regardless of any system optimization. For a useful overview of the problems with testing, see Kode Vicious' [reply to "How Not Why"](https://queue.acm.org/detail.cfm?id=2732268) in ACM's Queue magazine from February 2015. His emphasis on repeatability tends to undercut many assumptions that are made about testing a host on an anonymity network. It can quickly degenerate into being a blind, counter-productive endeavor.
+It is not easy to measure the true effects of sysctl value changes and other kernel-level hacks, particularly with TCP traffic. Tor is a (more or less) randomized routing network. That lack of consistency inhibits comparisons in performance beyond the obvious. Tor relay traffic can vary wildly day-to-day and month-to-month, regardless of any system optimization. For a useful overview of the problems with testing, see Kode Vicious' [reply to "How Not Why"](https://queue.acm.org/detail.cfm?id=2732268) in ACM's Queue magazine from February 2015. His emphasis on repeatability tends to undercut many assumptions that are made about testing a host on an anonymity network. It can quickly degenerate into being a blind, counter-productive endeavor.
 
 Nonetheless, there are some system-level changes we do recommend. But
 do not expect long lists of sysctl values and graphs illustrating the
@@ -40,11 +40,11 @@ majority of Tor relays.
 
 Contributions from other BSDs are welcomed.
 
-## FreeBSD Tor Relay Guide
+FreeBSD Tor Relay Guide
 
 :    [https://torbsd.github.io/fbsd-relays.html](fbsd-relays.html)
 
-## OpenBSD Tor Relay Guide
+OpenBSD Tor Relay Guide
 
 :    [https://torbsd.github.io/obsd-relays.html](obsd-relays.html)
 
