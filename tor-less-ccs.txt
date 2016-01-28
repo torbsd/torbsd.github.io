@@ -1,4 +1,4 @@
-Wed Jan 27 20:47:48 UTC 2016
+Thu Jan 28 21:34:17 UTC 2016
 Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
@@ -8,7 +8,7 @@ Quick-and-Dirty Static Reports
 'Countries without Public Tor Relays'
 
 Number of Country Codes without Public Tor Relays:
-81
+82
 -------
 -country-
 AFGHANISTAN
@@ -44,6 +44,7 @@ CAPE VERDE
 CAYMAN ISLANDS
 CENTRAL AFRICAN REPUBLIC
 CHAD
+CHILE
 CHINA
 CHRISTMAS ISLAND
 COCOS (KEELING) ISLANDS
