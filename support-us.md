@@ -16,7 +16,7 @@ __TDP__ launched in March 2015, and works to strengthen the Tor public anonymity
 
 Since our beginnings, __TDP__ successfully achieved a number of significant milestones:
 
-* produced seven releases of Tor Browser for [OpenBSD](http://www.openbsd.org), with the repository residing [on GitHub](https://github.com/torbsd)
+* produced eight releases of Tor Browser for [OpenBSD](http://www.openbsd.org), with the repository residing [on GitHub](https://github.com/torbsd)
 
 * conducted a number of successful presentations at [BSDCan 2015](https://www.bsdcan.org/2015/) and [BSDCon Brazil](http://2015.bsdcon.com.br), engaging with scores of individuals about __TDP__ and the critical importance of involving BSD users and developers in Tor ecosystem
 
