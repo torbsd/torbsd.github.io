@@ -1,0 +1,18 @@
+TDP Announce for Tor Browser 5.5 for OpenBSD
+20160205
+The Tor BSD Diversity Project
+https://torbsd.github.io/
+
+The Tor BSD Diversity Project (TDP) is proud to announce the release of Tor Browser (TB) version 5.5 for OpenBSD. Please note that this version of TB remains in development mode, and is not meant to ensure strong privacy, anonymity or security.
+
+TDP (https://torbsd.github.io) is an effort to extend the use of the BSD Unixes into the Tor ecosystem, from the desktop to the network.
+
+The 5.5 version is the eighth Tor Browser release from TDP.
+
+To install TB for OpenBSD, please see http://mirrors.nycbug.org/pub/snapshots/packages/amd64/README-55.txt
+
+TDP is focused on diversifying the Tor network, with TB being the flagship project. Additional efforts are made to increase the number of *BSD relays on the Tor network among other sub-projects.
+
+TDP's source code repository resides at http://github.com/torbsd/
+
+TDP is seeking funding to continue and extend its efforts. Please contact us if interested in assisting TDP, allowing us to dedicate more time to the project.
