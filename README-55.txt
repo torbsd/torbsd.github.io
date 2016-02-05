@@ -44,7 +44,7 @@ Install the latest packages:
         env PKG_PATH=http://mirrors.nycbug.org/pub/snapshots/packages/amd64/ \
         pkg_add tor-browser
 
-N.B. These packages are not signed.  You will see a prompt like:
+These packages are not signed.  You will see a prompt like:
 
     $ doas \
         env PKG_PATH=http://mirrors.nycbug.org/pub/snapshots/packages/amd64/ \
@@ -72,10 +72,10 @@ A complete transcript might look like:
 To start it up run the following command as a normal, unprivileged user
 in an xterm (or at least running X windows):
 
-	$ start-tor-browser
+    $ start-tor-browser
 
 Follow the dialog boxes to configure Tor Browser. Note any relevant
-output in the xterm window. We enourage feedback and patches.
+output in the xterm window. We encourage feedback and patches.
 
 Current builds of the Tor browser packages have verbose debugging
 output turned on to help us diagnose problems.  If you encounter an
