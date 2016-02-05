@@ -37,7 +37,7 @@ __October 2015__
 
 <a id="tb-releases">__Tor Browser Releases__</a> by gman999
 
-It's been a while since our last Tor Browser releases, but it's not because we haven't been busy. Smaller projects like [Quick and Dirty Statistics](dirty-stats.html) and [Porting PETs](porting-pets.html)
+It's been a while since our last Tor Browser releases, but it's not because we haven't been busy. Smaller projects like [Quick and Dirty Statistics](dirty-stats.html) and [Porting PETs](porting-pets.html) have continued to progress, and other stuff that attila can elaborate on in a future blog post.
 
 While worked dragged on with the 5.0.6 Tor Browser release, we managed to not only finish that [release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/archive/tb-5.0.6.tgz), but also finish up the [5.5 release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/README-55.txt). That puts us parallel with the current Tor Project release.
 
