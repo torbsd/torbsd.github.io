@@ -36,51 +36,81 @@ the Tor-dependent ports, use pkg_delete(1):
 
 Delete the previous version's $HOME/.tor-browser, if necessary:
 
-	$ doas rm -rf .tor-browser/                                                    
-Download these files to a temporary directory:
+	$ rm -rf ~/.tor-browser/
 
-	tor-browser-5.5.tgz
-	tor-launcher-0.2.7.8.tgz
-	torbutton-1.9.4.3.tgz
-	https-everywhere-5.1.2.tgz
-	noscript-2.9.0.2.tgz
+Install the latest packages:
 
-From that temporary directory, use pkg_add(1) to install the Tor Browser
-package and the dependencies, which are unsigned:
+    $ doas \
+        env PKG_PATH=http://mirrors.nycbug.org/pub/snapshots/packages/amd64/ \
+        pkg_add tor-browser
 
-    $ doas pkg_add tor-browser-5.5.tgz  
-    UNSIGNED PACKAGE file:./https-everywhere-5.1.2.tgz: install anyway ? [y/N/a] a
-    tor-browser-5.5:https-everywhere-5.1.2: ok
+N.B. These packages are not signed.  You will see a prompt like:
+
+    $ doas \
+        env PKG_PATH=http://mirrors.nycbug.org/pub/snapshots/packages/amd64/ \
+        pkg_add tor-browser
+    UNSIGNED PACKAGE http://mirrors.nycbug.org/pub/snapshots/packages/amd64/noscript-2.9.0.2.tgz: install anyway ? [y/N/a]
+
+Answer `y` for each individual package (there will be 5 such warnings) or
+answer `a` the first time to make `pkg_add` assume `y` for the rest.
+A complete transcript might look like:
+
+    $ doas \
+        env PKG_PATH=http://mirrors.nycbug.org/pub/snapshots/packages/amd64/ \
+        pkg_add tor-browser
+    UNSIGNED PACKAGE http://mirrors.nycbug.org/pub/snapshots/packages/amd64/noscript-2.9.0.2.tgz: install anyway ? [y/N/a] a
+    tor-browser-5.5:noscript-2.9.0.2: ok
     tor-browser-5.5:torbutton-1.9.4.3: ok
     tor-browser-5.5:tor-launcher-0.2.7.8: ok
-    tor-browser-5.5:gxmessage-3.4.3: ok
-    tor-browser-5.5:noscript-2.9.0.2: ok
+    tor-browser-5.5:https-everywhere-5.1.2: ok
     tor-browser-5.5: ok
     --- +tor-browser-5.5 -------------------
     Please use the /usr/local/bin/start-tor-browser command to invoke Tor browser.
-    UNSIGNED PACKAGES: tor-launcher-0.2.7.8, torbutton-1.9.4.3, noscript-2.9.0.2, tor-browser-5.5, https-everywhere-5.1.2
+    UNSIGNED PACKAGES: https-everywhere-5.1.2, tor-launcher-0.2.7.8, torbutton-1.9.4.3, noscript-2.9.0.2, tor-browser-5.5
+    Extracted 644668743 from 644670364
 
-From an X Windows manager's xterm(1) window, run the following
-command as a normal, unprivileged user:
+To start it up run the following command as a normal, unprivileged user
+in an xterm (or at least running X windows):
 
-	$ /usr/local/bin/start-tor-browser
+	$ start-tor-browser
 
-Follow the dialog boxes to configure Tor Browser. Note any
-relevant output in the xterm window. We enourage feedback
-and patches.
+Follow the dialog boxes to configure Tor Browser. Note any relevant
+output in the xterm window. We enourage feedback and patches.
 
-To save verbose spew, dump the Tor Browser output to a file:
+Current builds of the Tor browser packages have verbose debugging
+output turned on to help us diagnose problems.  If you encounter an
+issue please save the spew to a file and send it to us, e.g.:
 
-        $ /usr/local/bin/start-tor-browser >~/spew-file
+    $ start-tor-browser >~/spew-file 2>&1
 
-The spew file is vital when reporting any problems.
+Will write all of the messages that come out of tor-browser to `spew-file`
+in your home directory.
 
-The following message may appear if a Tor instance is already
-running with non-default SocksPort, i.e., other than 9050.
+Tor browser's defaults are to start its tor instance listening on
+`localhost:9150` for SOCKS and `localhost:9151` for control messages
+so as not to conflict with the default settings for the `net/tor` port
+(which are 9050 and no control socket).  If there are other programs
+listening on either port 9150 or 9151 before Tor browser starts then
+it will fail.  The following message may appear if such a conflict
+occurs:
 
     Unable to save Tor settings.
     Unable to set option: Failed to bind one of the listener ports.
 
-In that case, either change the /etc/tor/torrc SocksPort back to
-the default, or stop the previous instance of Tor to not conflict
-with Tor Browser.
+In that case, either change the /etc/tor/torrc SocksPort back to the
+default (and likewise for ControlPort if apropos), or stop the
+previous instance of Tor to not conflict with Tor Browser, e.g.:
+
+    $ doas rcctl stop tor
+
+If you cannot do either of these things for some reason then you can
+also change Tor browser's port numbers by editing your
+`~/.tor-browser/torrc` file.  The first time you run the
+`start-tor-browser` command it will populate this directory.  Change
+the lines that look like:
+
+    SocksPort 9150
+    ControlPort 9151
+
+to have other, unused port numbers as per your situation and then
+re-run `start-tor-browser`.
