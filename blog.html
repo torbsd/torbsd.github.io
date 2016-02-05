@@ -47,19 +47,19 @@
 
 <p><a id="tb-releases"><strong>Tor Browser Releases</strong></a> by gman999</p>
 
-<p>Without question, <strong>TDP</strong> was pretty silent over the past couple of months, despite hacking on <a href="dirty-stats.html">Quick and Dirty Statistics</a> and other related work.</p>
+<p>It&#8217;s been a while since our last Tor Browser releases, but it&#8217;s not because we haven&#8217;t been busy. Smaller projects like <a href="dirty-stats.html">Quick and Dirty Statistics</a> and <a href="porting-pets.html">Porting PETs</a></p>
 
-<p>However, while worked dragged on with the 5.0.6 Tor Browser release, we managed to not out finish that <a href="http://mirrors.nycbug.org/pub/snapshots/packages/amd64/archive/tb-5.0.6.tgz">release</a>, but also finish up the <a href="http://mirrors.nycbug.org/pub/snapshots/packages/amd64/README-55.txt">5.5 release</a>.</p>
+<p>While worked dragged on with the 5.0.6 Tor Browser release, we managed to not only finish that <a href="http://mirrors.nycbug.org/pub/snapshots/packages/amd64/archive/tb-5.0.6.tgz">release</a>, but also finish up the <a href="http://mirrors.nycbug.org/pub/snapshots/packages/amd64/README-55.txt">5.5 release</a>. That puts us parallel with the current Tor Project release.</p>
 
-<p>We are going to start archiving previous versions of TB as tgz file in an <a href="http://mirrors.nycbug.org/pub/snapshots/packages/archive">an archive directory</a>.</p>
+<p>We are now archiving previous versions of TB as tgz file in an <a href="http://mirrors.nycbug.org/pub/snapshots/packages/archive">an archive directory</a>. Version 5.0.6, which barely saw the light of day, is there.</p>
 
 <p>We are excited by the releases, and look forward to feedback from the testers out there.</p>
 
 <p>One quick note about Tor Browser 5.5 on OpenBSD 5.8 stable. We have repeated ad nauseum, but it&#8217;s worth reiterating again: OpenBSD development happens on -current, a.k.a., snapshots, which ultimately turn into the next stable release every six months.</p>
 
-<p>Developing Tor Browser for OpenBSD stable means dealing with multiple levels of differences between stable and current, from the package versions to LibreSSL libraries.</p>
+<p>Developing Tor Browser for OpenBSD stable means dealing with multiple levels of differences between stable and current, from the package versions to libraries in the base operating system. In *BSD land, userland applications and the base OS are meant to play nice together by default.</p>
 
-<p>In the case of trying to run TB 5.5 on OpenBSD 5.8 stable, there are two package incongruities. First, 5.8-stable&#8217;s Tor version is 0.2.6.10p1, while the current version is 0.2.7.6. Second, the nspr stable version is 4.10.8, while the current version is 4.11. Both current versions of the packages rely on operating system changes not present in stable. There is a ports freeze approaching for the May 1 OpenBSD 5.9 stable release, and we may use that as an opportunity to produce a stable version of the Tor Browser.</p>
+<p>In the case of trying to run TB 5.5 on OpenBSD 5.8 stable, there are two package incongruities. First, 5.8-stable&#8217;s Tor version is 0.2.6.10p1, while the current version is 0.2.7.6. Second, the nspr stable version is 4.10.8, while the current version is 4.11. Both current versions of the packages rely on operating system changes not present in stable. There is a ports freeze approaching for the May 1 OpenBSD 5.9 stable release, and we may use that as an opportunity to produce a stable version of the Tor Browser. Stay tuned.</p>
 
 <h3 id="20160118">20160118</h3>
 
@@ -316,7 +316,7 @@
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Fri Feb  5 14:40:13 2016 UTC</code></p>
+<p><code>last updated: Fri Feb  5 15:13:56 2016 UTC</code></p>
 
 </body>
 </html>

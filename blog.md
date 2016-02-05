@@ -37,19 +37,19 @@ __October 2015__
 
 <a id="tb-releases">__Tor Browser Releases__</a> by gman999
 
-Without question, __TDP__ was pretty silent over the past couple of months, despite hacking on [Quick and Dirty Statistics](dirty-stats.html) and other related work.
+It's been a while since our last Tor Browser releases, but it's not because we haven't been busy. Smaller projects like [Quick and Dirty Statistics](dirty-stats.html) and [Porting PETs](porting-pets.html)
 
-However, while worked dragged on with the 5.0.6 Tor Browser release, we managed to not out finish that [release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/archive/tb-5.0.6.tgz), but also finish up the [5.5 release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/README-55.txt).
+While worked dragged on with the 5.0.6 Tor Browser release, we managed to not only finish that [release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/archive/tb-5.0.6.tgz), but also finish up the [5.5 release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/README-55.txt). That puts us parallel with the current Tor Project release.
 
-We are going to start archiving previous versions of TB as tgz file in an [an archive directory](http://mirrors.nycbug.org/pub/snapshots/packages/archive).
+We are now archiving previous versions of TB as tgz file in an [an archive directory](http://mirrors.nycbug.org/pub/snapshots/packages/archive). Version 5.0.6, which barely saw the light of day, is there.
 
 We are excited by the releases, and look forward to feedback from the testers out there.
 
 One quick note about Tor Browser 5.5 on OpenBSD 5.8 stable. We have repeated ad nauseum, but it's worth reiterating again: OpenBSD development happens on -current, a.k.a., snapshots, which ultimately turn into the next stable release every six months.
 
-Developing Tor Browser for OpenBSD stable means dealing with multiple levels of differences between stable and current, from the package versions to LibreSSL libraries.
+Developing Tor Browser for OpenBSD stable means dealing with multiple levels of differences between stable and current, from the package versions to libraries in the base operating system. In *BSD land, userland applications and the base OS are meant to play nice together by default.
 
-In the case of trying to run TB 5.5 on OpenBSD 5.8 stable, there are two package incongruities. First, 5.8-stable's Tor version is 0.2.6.10p1, while the current version is 0.2.7.6. Second, the nspr stable version is 4.10.8, while the current version is 4.11. Both current versions of the packages rely on operating system changes not present in stable. There is a ports freeze approaching for the May 1 OpenBSD 5.9 stable release, and we may use that as an opportunity to produce a stable version of the Tor Browser.
+In the case of trying to run TB 5.5 on OpenBSD 5.8 stable, there are two package incongruities. First, 5.8-stable's Tor version is 0.2.6.10p1, while the current version is 0.2.7.6. Second, the nspr stable version is 4.10.8, while the current version is 4.11. Both current versions of the packages rely on operating system changes not present in stable. There is a ports freeze approaching for the May 1 OpenBSD 5.9 stable release, and we may use that as an opportunity to produce a stable version of the Tor Browser. Stay tuned.
 
 ###20160118###
 
