@@ -40,6 +40,8 @@ Without question, __TDP__ was pretty silent over the past couple of months, desp
 
 However, while worked dragged on with the 5.0.6 Tor Browser release, we managed to not out finish that [release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/archive/tb-5.0.6.tgz), but also finish up the [5.5 release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/README-55.txt).
 
+We are going to start archiving previous versions of TB as tgz file in an [an archive directory](http://mirrors.nycbug.org/pub/snapshots/packages/archive).
+
 We are excited by the releases, and look forward to feedback from the testers out there.
 
 One quick note about Tor Browser 5.5 on OpenBSD 5.8 stable. We have repeated ad nauseum, but it's worth reiterating again: OpenBSD development happens on -current, a.k.a., snapshots, which ultimately turn into the next stable release every six months.
