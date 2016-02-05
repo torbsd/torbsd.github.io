@@ -10,6 +10,9 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or a Central Location for Announces and Notes##
 
+__February 2016__
+[Tor Browser Releases](#tb-releases)
+
 __January 2016__
 
 [Still Plugging Away](#still-here) [%sep] [Tor-in-a-Box?](#torbox)
@@ -28,6 +31,22 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20160205###
+
+<a id="tb-releases">__Tor Browser Releases__</a> by gman999
+
+Without question, __TDP__ was pretty silent over the past couple of months, despite hacking on [Quick and Dirty Statistics](dirty-stats.html) and other related work.
+
+However, while worked dragged on with the 5.0.6 Tor Browser release, we managed to not out finish that [release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/archive/tb-5.0.6.tgz), but also finish up the [5.5 release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/README-55.txt).
+
+We are excited by the releases, and look forward to feedback from the testers out there.
+
+One quick note about Tor Browser 5.5 on OpenBSD 5.8 stable. We have repeated ad nauseum, but it's worth reiterating again: OpenBSD development happens on -current, a.k.a., snapshots, which ultimately turn into the next stable release every six months.
+
+Developing Tor Browser for OpenBSD stable means dealing with multiple levels of differences between stable and current, from the package versions to LibreSSL libraries.
+
+In the case of trying to run TB 5.5 on OpenBSD 5.8 stable, there are two package incongruities. First, 5.8-stable's Tor version is 0.2.6.10p1, while the current version is 0.2.7.6. Second, the nspr stable version is 4.10.8, while the current version is 4.11. Both current versions of the packages rely on operating system changes not present in stable. There is a ports freeze approaching for the May 1 OpenBSD 5.9 stable release, and we may use that as an opportunity to produce a stable version of the Tor Browser.
 
 ###20160118###
 
