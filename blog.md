@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __February 2016__
 
-[Tor Browser Releases](#tb-releases)
+[Tor Browser Releases](#tb-releases) [%sep] [Tor browser 5.5 ports tagged](#tb-55-tagged)
 
 __January 2016__
 
@@ -34,6 +34,10 @@ __October 2015__
 [From the Attic](#attic)
 
 ###20160205###
+
+<a id="tb-55-tagged">__Tor browser ports for 5.5 tagged__</a> by attila
+
+I just merged 5.5 onto master and [tagged it](https://github.com/torbsd/openbsd-ports/releases/tag/tbb-5.5-sans-pt), in case anyone cares.  This release was much easier after the work on 5.0.6, which has us using [mozilla.port.mk](http://cvsweb.openbsd.org/cgi-bin/cvsweb/~checkout~/ports/www/mozilla/mozilla.port.mk?rev=1.84&content-type=text/plain) instead of a bunch of cut-and-paste adapted from same.  This makes things a lot easier moving forward.  So far 5.5 on amd64 is looking good.
 
 <a id="tb-releases">__Tor Browser Releases__</a> by gman999
 
