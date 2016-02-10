@@ -36,6 +36,7 @@ PAGES=		index.html \
 		support-us.html \
 		porting-pets.html \
 		projects.html \
+		testing-tb.html \
 
 BOILERPLATE=	header.md footer.md meta.md
 
@@ -59,6 +60,7 @@ dirty-stats.html: dirty-stats.md $(BOILERPLATE)
 support-us.html: support-us.md $(BOILERPLATE)
 porting-pets.html: porting-pets.md $(BOILERPLATE)
 projects.html: projects.md $(BOILERPLATE)
+testing-tb.html: testing-tb.md $(BOILERPLATE)
 
 ## The rest of this file makes the above possible...
 ## ... but only YOU can make it necessary.

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>The Tor BSD Diversity Project</title>
+	<link type="text/css" rel="stylesheet" href="torbsd.css"/>
+	<meta name="author" content="gman"/>
+	<meta name="editors" content="attila"/>
+	<meta name="data" content="2016-02-10"/>
+	<meta name="x-note" content="These lines at the top are multimarkdown metadata; leave them."/>
+	<meta name="sep" content="&amp;#8916;"/>
+</head>
+<body>
+
+<h1 id="thetorbsddiversityprojecttdp"><a href="index.html">The Tor BSD Diversity Project (TDP)</a></h1>
+
+<p>&#8916; <a href="blog.html">Blog</a> &#8916; <a href="faq.html">Frequently Asked Questions</a> &#8916; <a href="resources.html">Resources</a> &#8916; <a href="https://github.com/torbsd">GitHub Repositories</a> &#8916; <a href="contact.html">Contact</a> &#8916; <a href="http://bptfp7py2wclht26.onion/">TDP Hidden Service</a> &#8916;</p>
+
+<p><strong><a href="projects.html">The TDP Projects</a>:</strong><br/>
+&#8916; <a href="https://github.com/torbsd/openbsd-ports">Tor Browser for OpenBSD</a> &#8916; <a href="relay-guides.html">BSD Tor Relay Guides</a> &#8916; <a href="corp-relays.html">BSD Firm Relays</a> &#8916; <a href="porting-pets.html">Porting Targets for PETs</a> &#8916; <a href="dirty-stats.html">Quick-and-Dirty Static Reports</a> &#8916;</p>
+
+<h2 id="testingtorbrowseronopenbsd">Testing Tor Browser on OpenBSD</h2>
+
+<p>This is a list of general testing to perform for each Tor Browser (TB) release on OpenBSD. The obvious starting point is an up-to-date OpenBSD/amd64 snapshot with synchronized ports/packages.</p>
+
+<p>Spew output from TB is useful to investigating problems, or for finding problems that are not necessarily apparent.</p>
+
+<p>To save spew to a file in the home directory, run start-tor-browser from an xterm window:</p>
+
+<pre><code>$ /usr/local/bin/start-tor-browser &gt;~/20160101-spew0
+</code></pre>
+
+<ul>
+<li><p>does /usr/local/bin/start-tor-browser perform correct setup, such as a populated $HOME/.tor-browser?</p></li>
+<li><p>does /usr/local/bin/tor-browser work on subsequent uses?</p></li>
+<li><p>general web-perusing</p></li>
+<li><p>specific &#8220;check&#8221; sites, such as <a href="https://check.torproject.org/">https://check.torproject.org/</a> and <a href="https://ip-check.info/">https://ip-check.info/</a> </p></li>
+<li><p>do all the Firefox add-ons appear in Tools, Add-ons, Extensions with the correct versions and settings?</p></li>
+<li><p>are settings being saved with both &#8220;Privacy and Security Settings&#8221; and &#8220;Tor Network Settings&#8221; including bridges, slider, etc?</p></li>
+<li><p>GeoIP data appearing in circuit status?</p></li>
+<li><p>&#8220;New Tor Circuit for this Site&#8221; works? Should reload page and change the 3-hop circuit</p></li>
+<li><p>can TB act as a relay?</p></li>
+<li><p>are pluggable transports operational?</p></li>
+</ul>
+
+<p><hr></p>
+
+<p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
+
+<p><code>last updated: Wed Feb 10 15:15:53 2016 UTC</code></p>
+
+</body>
+</html>
