@@ -101,6 +101,12 @@ We welcome relevant submissions from others.
 * [Reddit on __TDP__](https://www.reddit.com/r/linux/comments/356iyy/torbsd_diversity_project_help_move_tor_nodes_from/):
   Before we publicly announced, a __TDP__ Reddit thread. Very appreciated, but one important point of clarification: we are not interested in having Linux relays moved to BSD. If someone runs a relay, they should use the operating system they are most comfortable with. __TDP__ is about affecting the BSD community and not converting anyone __to__ the BSDs. Another quick comment is that we strongly agree in the larger monoculture problem. Ideal diversity would encompass a variety of applications and hardware, and that applies to Tor as much as anything. But there's a major issue to consider, and that's interoperability. There needs to be some agreement on protocols before there can be any routing or communications in general. If one mail server only talks SMTP and the other only UUCP, email routing does not happen.
 
+### Complementary Tor Links ###
+
+* [The Tor Project's Git Repository](https://gitweb.torproject.org/). The home of of most of the Tor Project's code base and most of __TDP's__ upstream.
+
+* [Ten Things to Look for in a Circumvention Tool](https://svn.torproject.org/svn/projects/articles/circumvention-features.html). An old but timeless piece from 2010 for those who doubt the integrity of an open source anonymity network versus the array of VPN and proxy services.
+
 ### From the Attic ###
 
 * "Findings Report on the Tor Browser Bundle User Experience" [via hidden web site](http://l7plhliaaob6puqw.onion) or [via Tor2Web](https://l7plhliaaob6puqw.tor2web.org). This report from 2012-2013, summed up research conducted on the user experience (UX) for the Tor Browser bundle.
