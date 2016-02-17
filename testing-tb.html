@@ -25,20 +25,19 @@
 
 <p>Spew output from TB is useful for investigating problems, or for finding problems that are not necessarily apparent to an end-user running TB.</p>
 
-<p>To save spew to a file in the home directory, run start-tor-browser from an xterm(1) window:</p>
+<p>To save spew to a file in the home directory, run tor-browser from an xterm(1) window:</p>
 
 <pre><code>$ /usr/local/bin/start-tor-browser &gt;~/20160101-spew0
 </code></pre>
 
 <ul>
-<li><p>does /usr/local/bin/start-tor-browser perform correct setup, such as a populated $HOME/.tor-browser?</p></li>
-<li><p>does /usr/local/bin/tor-browser work on subsequent uses?</p></li>
-<li><p>general web-perusing</p></li>
+<li><p>is a $HOME/.tor-browser created and correctly populated?</p></li>
 <li><p>visit specific &#8220;check&#8221; sites, such as <a href="https://check.torproject.org/">https://check.torproject.org/</a> and <a href="https://ip-check.info/">https://ip-check.info/</a> </p></li>
 <li><p>do all the Firefox add-ons appear in Tools, Add-ons, Extensions with the correct versions and settings?</p></li>
 <li><p>are settings being saved with both &#8220;Privacy and Security Settings&#8221; and &#8220;Tor Network Settings&#8221; including bridges, slider, etc?</p></li>
-<li><p>GeoIP data appearing in circuit status, i.e., right-clicking on the green onion icon?</p></li>
-<li><p>does &#8220;New Tor Circuit for this Site&#8221; works? Should reload page and change the 3-hop circuit</p></li>
+<li><p>GeoIP country data appearing in circuit status, i.e., right-clicking on the green onion icon?</p></li>
+<li><p>does &#8220;New Tor Circuit for this Site&#8221; works? Should reload page and change the circuit</p></li>
+<li><p>do all the knobs from /usr/local/lib/tor-browser&#8211;5.5/browser/defaults/preferences/all-openbsd.js get turned in about:config?</p></li>
 <li><p>can TB act as a relay?</p></li>
 <li><p>are pluggable transports operational?</p></li>
 <li><p>are a desktop icon and menu item created for Tor Browser?
@@ -49,7 +48,7 @@
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Wed Feb 17 00:43:35 2016 UTC</code></p>
+<p><code>last updated: Wed Feb 17 04:15:59 2016 UTC</code></p>
 
 </body>
 </html>

@@ -15,15 +15,11 @@ This is a list of general testing to perform for each Tor Browser (TB) release o
 
 Spew output from TB is useful for investigating problems, or for finding problems that are not necessarily apparent to an end-user running TB.
 
-To save spew to a file in the home directory, run start-tor-browser from an xterm(1) window:
+To save spew to a file in the home directory, run tor-browser from an xterm(1) window:
 
     $ /usr/local/bin/start-tor-browser >~/20160101-spew0
 
-* does /usr/local/bin/start-tor-browser perform correct setup, such as a populated $HOME/.tor-browser?
-
-* does /usr/local/bin/tor-browser work on subsequent uses?
-
-* general web-perusing
+* is a $HOME/.tor-browser created and correctly populated?
 
 * visit specific "check" sites, such as [https://check.torproject.org/](https://check.torproject.org/) and [https://ip-check.info/](https://ip-check.info/) 
 
@@ -31,9 +27,11 @@ To save spew to a file in the home directory, run start-tor-browser from an xter
 
 * are settings being saved with both "Privacy and Security Settings" and "Tor Network Settings" including bridges, slider, etc?
 
-* GeoIP data appearing in circuit status, i.e., right-clicking on the green onion icon?
+* GeoIP country data appearing in circuit status, i.e., right-clicking on the green onion icon?
 
-* does "New Tor Circuit for this Site" works? Should reload page and change the 3-hop circuit
+* does "New Tor Circuit for this Site" works? Should reload page and change the circuit
+
+* do all the knobs from /usr/local/lib/tor-browser-5.5/browser/defaults/preferences/all-openbsd.js get turned in about:config?
 
 * can TB act as a relay?
 
@@ -41,7 +39,6 @@ To save spew to a file in the home directory, run start-tor-browser from an xter
 
 * are a desktop icon and menu item created for Tor Browser?
 (doesn't on XFCE, but should on KDE and Gnome)
-
 
 
 {{footer.md}}
