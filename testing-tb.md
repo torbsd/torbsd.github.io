@@ -13,7 +13,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 This is a list of general testing to perform for each Tor Browser (TB) release on OpenBSD. The obvious starting point is an up-to-date OpenBSD/amd64 snapshot with synchronized ports/packages.
 
-Spew output from TB is useful for investigating problems, or for finding problems that are not necessarily apparent.
+Spew output from TB is useful for investigating problems, or for finding problems that are not necessarily apparent to an end-user running TB.
 
 To save spew to a file in the home directory, run start-tor-browser from an xterm(1) window:
 
@@ -31,13 +31,16 @@ To save spew to a file in the home directory, run start-tor-browser from an xter
 
 * are settings being saved with both "Privacy and Security Settings" and "Tor Network Settings" including bridges, slider, etc?
 
-* GeoIP data appearing in circuit status?
+* GeoIP data appearing in circuit status, i.e., right-clicking on the green onion icon?
 
 * does "New Tor Circuit for this Site" works? Should reload page and change the 3-hop circuit
 
 * can TB act as a relay?
 
 * are pluggable transports operational?
+
+* are a desktop icon and menu item created for Tor Browser?
+(doesn't on XFCE, but should on KDE and Gnome)
 
 
 
