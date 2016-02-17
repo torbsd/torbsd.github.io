@@ -11,7 +11,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##Testing Tor Browser on OpenBSD##
 
-This is a list of general testing to perform for each Tor Browser (TB) release on OpenBSD. The obvious starting point is an up-to-date OpenBSD/amd64 snapshot with synchronized ports/packages.
+This is a list of general testing to perform for each Tor Browser (TB) release on OpenBSD. The obvious starting point is an up-to-date OpenBSD amd64 or i386 snapshot with synchronized ports/packages.
 
 Spew output from TB is useful for investigating problems, or for finding problems that are not necessarily apparent to an end-user running TB.
 
