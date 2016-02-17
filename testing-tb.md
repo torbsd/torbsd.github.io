@@ -17,7 +17,7 @@ Spew output from TB is useful for investigating problems, or for finding problem
 
 To save spew to a file in the home directory, run tor-browser from an xterm(1) window:
 
-    $ /usr/local/bin/start-tor-browser >~/20160101-spew0
+    $ /usr/local/bin/tor-browser >~/20160101-spew0
 
 * is a $HOME/.tor-browser created and correctly populated?
 
