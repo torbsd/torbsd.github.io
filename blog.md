@@ -59,7 +59,7 @@ It's been a while since our last Tor Browser releases, but it's not because we h
 
 While worked dragged on with the 5.0.6 Tor Browser release, we managed to not only finish that [release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/archive/tb-5.0.6.tgz), but also finish up the [5.5 release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/README-55.txt). That puts us parallel with the current Tor Project release.
 
-We are now archiving previous versions of TB as tgz file in an [an archive directory](http://mirrors.nycbug.org/pub/snapshots/packages/archive). Version 5.0.6, which barely saw the light of day, is there.
+We are now archiving previous versions of TB as tgz file in an [an archive directory](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/archive). Version 5.0.6, which barely saw the light of day, is there.
 
 We are excited by the releases, and look forward to feedback from the testers out there.
 
