@@ -10,13 +10,13 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##__TDP__ Projects##
 
-__TDP__ focuses on an array of projects which culminate in an effort to diversify the Tor anonymity network with more *BSD Unix engagement. Each item relates to that goal on some level.
+__TDP__ maintains an array of projects which culminate in an effort to diversify the Tor anonymity network with more *BSD Unix engagement. Each item relates to that goal on some level.
 
-Some projects are simple, one-off efforts which require some maintenance, while others are more labor-intensive and subordinate to upstream development.
+Some projects are simple efforts which don't require much attention, while others are more labor-intensive and are subordinate to upstream development.
 
 ###Tor Browser Porting to OpenBSD###
 
-Porting [Tor Browser (TB) to OpenBSD](https://github.com/torbsd/openbsd-ports) is our flagship project and demands the most attention. Porting TB requires tracking the upstream Tor Browser, in addition to working the port into a strict OpenBSD ecosystem. The list of dependencies is long plus Firefox add-ons such as TorButton and HTTPS-everywhere. There have been seven releases so far. We are in some initial discussions to get TB ported to other BSDs.
+Porting [Tor Browser (TB) to OpenBSD](https://github.com/torbsd/openbsd-ports) is our flagship project and demands the most attention. Porting TB requires tracking the upstream Tor Browser, in addition to working the port into a strict OpenBSD ecosystem. The list of dependencies is long plus Firefox add-ons such as TorButton and HTTPS-everywhere. There have been nine releases so far. We are in some initial discussions to get TB ported to other BSDs.
 
 ###[BSD Tor Relay Guides](relay-guides.html)###
 
