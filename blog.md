@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __February 2016__
 
-[Onto the Next Phases](#next-phase) [%sep] [Tor Browser Releases](#tb-releases) [%sep] [Tor browser 5.5 ports tagged](#tb-55-tagged)
+[Onto the Next Phase](#next-phase) [%sep] [Tor Browser Releases](#tb-releases) [%sep] [Tor browser 5.5 ports tagged](#tb-55-tagged)
 
 __January 2016__
 
