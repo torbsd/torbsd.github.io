@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __February 2016__
 
-[Tor Browser Releases](#tb-releases) [%sep] [Tor browser 5.5 ports tagged](#tb-55-tagged)
+[Onto the Next Phases](#next-phase) [%sep] [Tor Browser Releases](#tb-releases) [%sep] [Tor browser 5.5 ports tagged](#tb-55-tagged)
 
 __January 2016__
 
@@ -32,6 +32,20 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20160216###
+
+<a id="next-phase">__Onto the Next Phase__</a> by gman999
+
+The progress we've made over the past five days was exhausting, yet exciting.
+
+Some very significant steps were made with Tor Browser.  A revised 5.5 release does not contain the start-tor-browser script any longer; all the necessary setup steps are now done with Javascript, including the profile setup. The Firefox add-ons are now dumped into the profile as files, such as https-everywhere@eff.org.xpi, instead of being extracted into directories. Additionally, we are now building an i386 version of TB.
+
+We are aware that TB 5.5.2 was released by the Tor Project this past Friday, a mere hour after we announced our 5.5 release. TB 5.5.2 includes some important security changes coming from the Mozilla upstream, although much can be mitigated by moving the security slider to high. Nevertheless, the last five days of constant hacking and testing on TB makes future releases less painful and more smooth.
+
+Finally, for those doing TB testing, we have a brief guide to what to test in a [Testing Tor Browser](testing-tb.html) piece. The past week has already changed some of the steps, and we look to expand and formalize this document so it becomes a useful tool.
+
+It's almost a year since our first commits to GitHub, and it's been a long and sometimes painful learning experience, but we think we're now in a great spot.
 
 ###20160205###
 
