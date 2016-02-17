@@ -94,6 +94,8 @@ We welcome relevant submissions from others.
 
 ### Chatter About __TDP__ ###
 
+* [BSDNow.tv News Item on TB 5.5 Release](http://www.bsdnow.tv/episodes/2016_02_10-the_state_of_bsd)
+
 * [__TDP__ announced on the Tor-talk mailing list](https://lists.torproject.org/pipermail/tor-talk/2015-April/037649.html)
 
 * [Followed up by a headline on BSDNow.tv](http://www.bsdnow.tv/episodes/2015_05_06-below_the_clouds)
