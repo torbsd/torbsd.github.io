@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __February 2016__
 
-[Onto the Next Phase](#next-phase) [%sep] [Tor Browser Releases](#tb-releases) [%sep] [Tor browser 5.5 ports tagged](#tb-55-tagged)
+[TB 5.5 and New Snapshots](#tb55snaps) [%sep] [Onto the Next Phase](#next-phase) [%sep] [Tor Browser Releases](#tb-releases) [%sep] [Tor browser 5.5 ports tagged](#tb-55-tagged)
 
 __January 2016__
 
@@ -32,6 +32,16 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20160221###
+
+<a id="tb55snaps">__TB 5.5 and New Snapshots__</a> by gman999
+
+Just a short note: Tor Browser for OpenBSD 5.5 is still working with the most recent OpenBSD snapshots (#1880 on amd64 and #1608 on i386).
+
+We always use the most recent snapshots on our boxes, and usually update the TB packages when TB needs updating due to relevant snapshot changes. Since our build process significantly simplified with TB 5.5, primarily due to [landry@'s input](https://marc.info/?l=openbsd-ports&m=145581927415588&w=2), updates to both amd64 and i386 builds became relatively painless.
+
+And it should only get better in the near-future releases.
 
 ###20160216###
 
