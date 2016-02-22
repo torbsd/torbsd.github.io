@@ -107,6 +107,8 @@ We welcome relevant submissions from others.
 
 * [The Tor Project's Git Repository](https://gitweb.torproject.org/). The home of of most of the Tor Project's code base and most of __TDP's__ upstream.
 
+* [Tor GitWeb Tuning Document](https://gitweb.torproject.org/tor.git/tree/doc/TUNING), including sections on FreeBSD and OpenBSD.
+
 * [Ten Things to Look for in a Circumvention Tool](https://svn.torproject.org/svn/projects/articles/circumvention-features.html). A dated but timeless piece from 2010 for those who doubt the integrity of an open source anonymity network versus the array of VPN and proxy services.
 
 ### From the Attic ###
