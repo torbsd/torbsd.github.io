@@ -23,7 +23,7 @@
 
 <p><strong>February 2016</strong></p>
 
-<p><a href="#tb55snaps">TB 5.5 and New Snapshots</a> &#8916; <a href="#next-phase">Onto the Next Phase</a> &#8916; <a href="#tb-releases">Tor Browser Releases</a> &#8916; <a href="#tb-55-tagged">Tor browser 5.5 ports tagged</a></p>
+<p><a href="#tb55snaps1">TB 5.5 and More New Snapshots</a> &#8916; <a href="#tb55snaps">TB 5.5 and New Snapshots</a> &#8916; <a href="#next-phase">Onto the Next Phase</a> &#8916; <a href="#tb-releases">Tor Browser Releases</a> &#8916; <a href="#tb-55-tagged">Tor browser 5.5 ports tagged</a></p>
 
 <p><strong>January 2016</strong></p>
 
@@ -42,6 +42,26 @@
 <p><a href="#tb-update">Updated Tor Browser Packages</a> &#8916; <a href="#relay-guides">The BSD Relay Guides</a> &#8916; <a href="#first-bells">Our First Bells</a> &#8916; <a href="#beyond-os">Beyond OS Diversity</a> &#8916; <a href="#tb-5.0.3">Tor Browser version 5.0.3 for OpenBSD</a></p>
 
 <p><a href="#attic">From the Attic</a></p>
+
+<h3 id="20160223">20160223</h3>
+
+<p><a id="tb55snaps1"><strong>TB 5.5 and More New Snapshots</strong></a> by gman999</p>
+
+<p>Yesterday the OpenBSD snapshots updated to #1881 for amd64 and #1609 for i386. TB is working fine on both.</p>
+
+<p>Meanwhile, the TB packages were updated. First we implemented a meta TB package, as per landry@&#8217;s comments. And note that the start-tor-browser script was also deprecated recently. All the sloppy setup gook was replaced by neater Firefox hacks.</p>
+
+<p>Installing TB from the mirror is simple:</p>
+
+<pre><code>$ env PKG_PATH=http://mirrors.nycbug.org/pub/snapshots/packages/amd64/
+$ doas pkg_add tbb
+</code></pre>
+
+<p><strong>Note that that we are still tinkering with TB 5.5 which has some significant vulnerabilities that could disclose a user&#8217;s identity. TB 5.5.2 is in the pipeline.</strong></p>
+
+<p>A last question for TB testers out there: does a Tor Browser icon appear on the desktop after TB installs?</p>
+
+<p>According to the general standards on window manager desktops, it should as the installer places /usr/local/share/applications/tor-browser.desktop into ~/.local/share/applications. However, on XFCE it doesn&#8217;t appear. How about KDE and Gnome users out there? Let us know.</p>
 
 <h3 id="20160221">20160221</h3>
 
@@ -344,7 +364,7 @@
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Sun Feb 21 23:37:37 2016 UTC</code></p>
+<p><code>last updated: Tue Feb 23 18:33:23 2016 UTC</code></p>
 
 </body>
 </html>

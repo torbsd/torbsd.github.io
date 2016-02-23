@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __February 2016__
 
-[TB 5.5 and New Snapshots](#tb55snaps) [%sep] [Onto the Next Phase](#next-phase) [%sep] [Tor Browser Releases](#tb-releases) [%sep] [Tor browser 5.5 ports tagged](#tb-55-tagged)
+[TB 5.5 and More New Snapshots](#tb55snaps1) [%sep] [TB 5.5 and New Snapshots](#tb55snaps) [%sep] [Onto the Next Phase](#next-phase) [%sep] [Tor Browser Releases](#tb-releases) [%sep] [Tor browser 5.5 ports tagged](#tb-55-tagged)
 
 __January 2016__
 
@@ -32,6 +32,25 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20160223###
+
+<a id="tb55snaps1">__TB 5.5 and More New Snapshots__</a> by gman999
+
+Yesterday the OpenBSD snapshots updated to #1881 for amd64 and #1609 for i386. TB is working fine on both.
+
+Meanwhile, the TB packages were updated. First we implemented a meta TB package, as per landry@'s comments. And note that the start-tor-browser script was also deprecated recently. All the sloppy setup gook was replaced by neater Firefox hacks.
+
+Installing TB from the mirror is simple:
+
+    $ env PKG_PATH=http://mirrors.nycbug.org/pub/snapshots/packages/amd64/
+    $ doas pkg_add tbb
+
+__Note that that we are still tinkering with TB 5.5 which has some significant vulnerabilities that could disclose a user's identity. TB 5.5.2 is in the pipeline.__
+
+A last question for TB testers out there: does a Tor Browser icon appear on the desktop after TB installs?
+
+According to the general standards on window manager desktops, it should as the installer places /usr/local/share/applications/tor-browser.desktop into ~/.local/share/applications. However, on XFCE it doesn't appear. How about KDE and Gnome users out there? Let us know.
 
 ###20160221###
 
