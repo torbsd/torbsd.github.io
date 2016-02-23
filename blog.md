@@ -46,11 +46,11 @@ Installing TB from the mirror is simple:
     $ env PKG_PATH=http://mirrors.nycbug.org/pub/snapshots/packages/amd64/
     $ doas pkg_add tbb
 
-__Note that that we are still tinkering with TB 5.5 which has some significant vulnerabilities that could disclose a user's identity. TB 5.5.2 is in the pipeline.__
+__Be aware that that we are still tinkering with TB 5.5 which has some significant vulnerabilities that could disclose a user's identity. TB 5.5.2 is in the pipeline.__
 
-A last question for TB testers out there: does a Tor Browser icon appear on the desktop after TB installs?
+A question for TB testers out there: does a Tor Browser icon appear on the desktop after TB installs?
 
-According to the general standards on window manager desktops, it should as the installer places /usr/local/share/applications/tor-browser.desktop into ~/.local/share/applications. However, on XFCE it doesn't appear. How about KDE and Gnome users out there? Let us know.
+According to the general standards on window manager desktops, it should as the installer places /usr/local/share/applications/tor-browser.desktop into ~/.local/share/applications. However, on XFCE it doesn't appear and the file needs to be place in ~/Desktop. How about KDE and GNOME users out there? Let us know.
 
 ###20160221###
 
