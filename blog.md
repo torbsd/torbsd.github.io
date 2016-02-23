@@ -43,8 +43,7 @@ Meanwhile, the TB packages were updated. First we implemented a meta TB package,
 
 Installing TB from the mirror is simple:
 
-    $ env PKG_PATH=http://mirrors.nycbug.org/pub/snapshots/packages/amd64/
-    $ doas pkg_add tbb
+    $ doas env PKG_PATH=http://mirrors.nycbug.org/pub/snapshots/packages/amd64/ pkg_add tbb
 
 __Be aware that that we are still tinkering with TB 5.5 which has some significant vulnerabilities that could disclose a user's identity. TB 5.5.2 is in the pipeline.__
 
