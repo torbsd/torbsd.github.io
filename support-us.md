@@ -10,15 +10,15 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## TDP Seeks Funding Support ##
 
-__The Tor BSD Diversity Project__ is looking for financial support through grants or other mediums.
+__The Tor BSD Diversity Project__ is looking for financial support through grants, hardware donations or other mediums.
 
 __TDP__ launched in March 2015, and works to strengthen the Tor public anonymity network by increasing operating system diversity with the BSD Unix operating systems.
 
 Since our beginnings, __TDP__ successfully achieved a number of significant milestones:
 
-* produced eight releases of Tor Browser for [OpenBSD](http://www.openbsd.org), with the repository residing [on GitHub](https://github.com/torbsd)
+* produced 20 releases of Tor Browser for [OpenBSD](http://www.openbsd.org), with the repository residing [on GitHub](https://github.com/torbsd/openbsd-ports/)
 
-* conducted a number of successful presentations at [BSDCan 2015](https://www.bsdcan.org/2015/) and [BSDCon Brazil](http://2015.bsdcon.com.br), engaging with scores of individuals about __TDP__ and the critical importance of involving BSD users and developers in Tor ecosystem
+* conducted successful presentations at [BSDCan 2015](https://www.bsdcan.org/2015/) and [BSDCon Brazil](http://2015.bsdcon.com.br), engaging with scores of individuals about __TDP__ and the critical importance of involving *BSD users and developers in Tor ecosystem
 
 *Our advocacy efforts made Brazil a country of one periodic public BSD Tor relay to about a fifth of the relays, accounting for up to a third of public Tor bandwidth in that country*
 
@@ -36,13 +36,13 @@ __TDP__ already has a proven track record as a project. But __TDP__ wants to do 
 
 * we want to release a maintained Tor Browser for OpenBSD's stable branch
 
-* we want to enhance efforts to port Tor Browser to other BSDs
+* we want to coordinate efforts to port Tor Browser to other BSDs
 
 * we want to push some of our code changes upstream into the Tor Project and even Mozilla
 
 * we want to conduct more presentations, birds-of-feather sessions and public meetings about __TDP__ including [BSDCan](https://www.bsdcan.org/) in 2016, plus a public presentation and maybe a Tor Browser hackathon in NYC in 2016
 
-* we want to target more potential Tor relay operators in countries with few or no relays through our contacts in the *BSD community, and [EuroBSDCon 2016](https://2016.eurobsdcon.org) is scheduled for Belgrade, Serbia (RS), a country and region (Croatia/HR, Slovenia/SI, Bosnia and Herzegovina/BA, Macedonia/MK, Montenegro/ME and others) where the sum total of public Tor relays is in the single-digits
+* we want to target more potential Tor relay operators in countries with few or no relays through our contacts in the *BSD community. As one potential target, [EuroBSDCon 2016](https://2016.eurobsdcon.org) is scheduled for Belgrade, Serbia (RS), a country and region (Croatia/HR, Slovenia/SI, Bosnia and Herzegovina/BA, Macedonia/MK, Montenegro/ME and others) where the sum total of public Tor relays is in the single-digits
 
 * we want to enlist more BSD-using firms to run high-bandwidth Tor relays, employing our networks of contacts around the community
 
