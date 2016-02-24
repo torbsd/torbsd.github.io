@@ -223,7 +223,7 @@ This week we'll post "Quick-and-Dirty Reports," providing diversity-related snap
 
 A quick sample of the current reports were posted in an [earlier blog entry](#beyond-os).
 
-The only comparable service we know of is the [Tor Metrics site](https://metrics.torproject.org) which has the additional function of providing historical data. Our goal is considerably more mundane, yet also functional.
+The only comparable service we know of is the [Tor Metrics site](https://metrics.torproject.org/) which has the additional function of providing historical data. Our goal is considerably more mundane, yet also functional.
 
 Nothing ground-breaking or revolutionary about the reports, but we do hope others find them useful, and maybe event extend their use.
 

@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 Over the past few years, a long list of applications spawned from attention to privacy and anonymity solutions. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.
 
-This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. __No endorsements should be assumed from this list.__
+This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash/) a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. __No endorsements should be assumed from this list.__
 
 The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use our [GitHub account's torbsd.github.io "issues" page for any input](https://github.com/torbsd/torbsd.github.io/issues/).
 
@@ -32,7 +32,7 @@ __tool-name__
 : __Source__: _url to distfile_
 : __Version__: _version information, e.g. current stable, development release, ..._
 : __FreeBSD__: [FreeBSD ports system](https://svnweb.freebsd.org/ports/head/)
-: __OpenBSD__: [OpenBSD packages](http://mirrors.nycbug.org/pub/OpenBSD/snapshots/packages), which generally also apply to BitRig
+: __OpenBSD__: [OpenBSD packages](http://mirrors.nycbug.org/pub/OpenBSD/snapshots/packages/), which generally also apply to BitRig
 : __NetBSD__: [NetBSD's pkgsrc](http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/README.html) for multiple operating systems
 : __DragonFly__: [DragonFly BSD's ports](http://mirrors.nycbug.org/pub/DragonflyBSD/dports/dragonfly:4.4:x86:64/LATEST//All/), similar to FreeBSD
 : __Notes__: _etc..._
@@ -41,21 +41,21 @@ __tool-name__
 
 <a id="pkg-autocanary">__AutoCanary__</a>
 : __Description__: desktop application for generating machine-readable, signed canary statements
-: Site: [https://firstlook.org/code/project/autocanary](https://firstlook.org/code/project/autocanary)
+: Site: [https://firstlook.org/code/project/autocanary/](https://firstlook.org/code/project/autocanary/)
 : __License__: [GPLv3](https://github.com/firstlook/autocanary/blob/master/LICENSE.md)
 : __Source__: [GitHub](https://github.com/firstlook/autocanary/)
-: __Version__: [0.1](https://github.com/firstlook/autocanary/releases/tag/0.1)
+: __Version__: [0.1](https://github.com/firstlook/autocanary/releases/tag/0.1/)
 : __FreeBSD__: no
 : __OpenBSD__: no
 : __NetBSD__: no
 : __DragonFly__: no
-: __Notes__: [Wikipedia on Warrant Canaries](https://en.wikipedia.org/wiki/Warrant_canary)
+: __Notes__: [Wikipedia on Warrant Canaries](https://en.wikipedia.org/wiki/Warrant_canary/)
 
 <a id="pkg-ethercalc">__EtherCalc__</a>
 : __Description__: collaborative spreadsheet application
-: __Site__: [https://ethercalc.net](https://ethercalc.net)
+: __Site__: [https://ethercalc.net/](https://ethercalc.net/)
 : __License__: [CPAL 1.0 Artistic License 2.0](https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt)
-: __Source__: [GitHub](https://github.com/audreyt/ethercalc)
+: __Source__: [GitHub](https://github.com/audreyt/ethercalc/)
 : __Version__: [0.20151108.1](https://github.com/audreyt/ethercalc/releases/tag/0.20151108.1)
 : __FreeBSD__: no
 : __OpenBSD__: no
@@ -64,10 +64,10 @@ __tool-name__
 
 <a id="pkg-etherpad">__Etherpad__</a>
 : __Description__: collaborative editing application
-: __Site__: [http://etherpad.org](http://etherpad.org)
-: __License__: [Apache 2.0](https://github.com/ether/etherpad-lite/blob/develop/LICENSE)
-: __Source__: [GitHub](https://github.com/ether/etherpad-lite)
-: __Version__: [1.5.7](https://github.com/ether/etherpad-lite/releases/tag/1.5.7)
+: __Site__: [http://etherpad.org/](http://etherpad.org/)
+: __License__: [Apache 2.0](https://github.com/ether/etherpad-lite/blob/develop/LICENSE/)
+: __Source__: [GitHub](https://github.com/ether/etherpad-lite/)
+: __Version__: [1.5.7](https://github.com/ether/etherpad-lite/releases/tag/1.5.7/)
 : __FreeBSD__: no
 : __OpenBSD__: no
 : __NetBSD__: no
@@ -88,7 +88,7 @@ __tool-name__
 
 <a id="pkg-exiv2">Exiv2</a>
 : Description: command-line utility to manage image metadata
-: Site: [http://www.exiv2.org](http://www.exiv2.org)
+: Site: [http://www.exiv2.org/](http://www.exiv2.org/)
 : License: GPLv2 or commercial http://www.exiv2.org/download.html#license
 : Version: 0.25
 : FreeBSD: yes
@@ -110,8 +110,8 @@ jhead
 
 MAT
 : __Description__: tool for removing metadata
-: http://mat.boum.org
-: GPLv2: https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE
+: http://mat.boum.org/
+: GPLv2: https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE/
 : https://gitweb.torproject.org/user/jvoisin/mat.git
 : 0.5.4
 : FreeBSD: no
@@ -137,9 +137,9 @@ pdf-redact-tools
 
 Mailpile
 : __Description__: fast webmail client with built-in security features
-: http://www.mailpile.is
-: AGPLv3: https://github.com/mailpile/Mailpile
-: https://github.com/mailpile/Mailpile
+: http://www.mailpile.is/
+: AGPLv3: https://github.com/mailpile/Mailpile/
+: https://github.com/mailpile/Mailpile/
 : beta III
 : FreeBSD: yes
 : OpenBSD: no
@@ -161,8 +161,8 @@ Mixmaster
 
 Mixminion
 : __Description__: type III anonymous remailer
-: http://mixminion.net
-: MIT: https://github.com/nmathewson/mixminion/blob/master/LICENSE 
+: http://mixminion.net/
+: MIT: https://github.com/nmathewson/mixminion/blob/master/LICENSE/
 : https://github.com/nmathewson/mixminion/
 : 0.0.8alpha3
 : FreeBSD: no*
@@ -187,7 +187,7 @@ Torbirdy
 
 Kontalk server
 : __Description__: encrypted communications platform
-: http://www.kontalk.org
+: http://www.kontalk.org/
 : GPLv3: check each component under GitHub account
 : https://github.com/kontalk/tigase-kontalk/
 : n/a
@@ -199,7 +199,7 @@ Kontalk server
 
 LEAP
 : __Description__: secure server client platform
-: https://leap.se
+: https://leap.se/
 : GPLv3 https://leap.se/git/{bitmask_client.git,leap_platform,git,etc}/blob/HEAD:/LICENSE
 : https://leap.se/git
 : n/a 
@@ -211,9 +211,9 @@ LEAP
 
 Libertree
 : __Description__: open-source platform for creating private social networks
-: http://www.libertree.org
+: http://www.libertree.org/
 : GNU Affero: https://github.com/Libertree/libertree/blob/master/LICENCE
-: https://github.com/LiberTree/libertree
+: https://github.com/LiberTree/libertree/
 : ?
 : FreeBSD: no
 : OpenBSD: no
@@ -223,7 +223,7 @@ Libertree
 
 Martus Desktop
 : __Description__: platform for collecting, safeguarding, organizing and sharing info
-: https://www.martus.org
+: https://www.martus.org/
 : was on code.google.com, now?
 : FreeBSD: no
 : OpenBSD: no
@@ -233,7 +233,7 @@ Martus Desktop
 
 Martus Server
 : __Description__: platform for collecting, safeguarding, organizing and sharing info
-: https://www.martus.org
+: https://www.martus.org/
 : was on code.google.com, now?
 : FreeBSD: no
 : OpenBSD: no
@@ -255,9 +255,9 @@ SecureDrop
 
 SparkleShare
 : __Description__: Git-based file synchronization tool
-: http://sparkleshare.org
+: http://sparkleshare.org/
 : GPLv3: https://github.com/hbons/SparkleShare/blob/master/legal/License_for_SparkleShare.txt
-: https://github.com/hbons/SparkleShare
+: https://github.com/hbons/SparkleShare/
 : 1.4
 : FreeBSD: no
 : OpenBSD: no
@@ -267,9 +267,9 @@ SparkleShare
 
 Syncany
 : __Description__: open-source cloud storage and filesharing application
-: https://www.syncany.org
+: https://www.syncany.org/
 : GPLv3
-: https://github.com/syncany/syncany
+: https://github.com/syncany/syncany/
 : 0.4.7-alpha
 : FreeBSD: no
 : OpenBSD: no
@@ -279,9 +279,9 @@ Syncany
 
 Turtl: server, client
 : __Description__: encrypted personal database and note-taking application
-: https://turtl.it
-: GPLv3: https://github.com/turtl/api/blob/master/LICENSE
-: https://github.com/turtl
+: https://turtl.it/
+: GPLv3: https://github.com/turtl/api/blob/master/LICENSE/
+: https://github.com/turtl/
 : 0.5.2.2
 : FreeBSD: no
 : OpenBSD: no
@@ -306,7 +306,7 @@ arm/nyx
 blockfinder
 : __Description__: tool for enumerating network information by country
 :
-: BSD: https://github.com/ioerror/blockfinder/blob/master/LICENSE
+: BSD: https://github.com/ioerror/blockfinder/blob/master/LICENSE/
 : https://github.com/ioerror/blockfinder/
 : 3.1?
 : FreeBSD: no
@@ -317,7 +317,7 @@ blockfinder
 
 OnionShare
 : __Description__: secure and anonymous file-sharing tool
-: https://onionshare.org
+: https://onionshare.org/
 : GPLv3: https://github.com/michahflee/onionshare/blob/master/LICENSE
 : 0.7.1
 : FreeBSD: no
@@ -328,7 +328,7 @@ OnionShare
 
 ooni-probe
 : __Description__: network measurement framework for detecting network interference
-: https://ooni.torproject.org
+: https://ooni.torproject.org/
 : BSD: https://gitweb.torproject.org/onionoo.git/tree/LICENSE
 : https://github.com/TheTorProject/ooni-probe/
 : 1.3.1
@@ -340,9 +340,9 @@ ooni-probe
 
 Ring client and server
 : __Description__: open source communications platform
-: https://ring.cx
+: https://ring.cx/
 : git https://gerrit-ring.savoirfairelinux.com/ projects
-: GPLv3: https://ring.cx/en/documentation/about-ring
+: GPLv3: https://ring.cx/en/documentation/about-ring/
 : n/a
 : FreeBSD: no
 : OpenBSD: no
@@ -352,9 +352,9 @@ Ring client and server
 
 Syncthing
 : __Description__: open-source cloud storage and synchronization
-: https://syncthing.net
+: https://syncthing.net/
 : MPLv2
-: https://github.com/syncthing/syncthing
+: https://github.com/syncthing/syncthing/
 : 0.12.3
 : FreeBSD: yes
 : OpenBSD: no
@@ -364,7 +364,7 @@ Syncthing
 
 Tor
 : __Description__: stable version of the onion-routing daemon for anonymous networking
-: https://www.torproject.org
+: https://www.torproject.org/
 : BSD: https://gitweb.torproject.org/tor.git/tree/LICENSE
 : https://gitweb.torproject.org/tor.git/
 : 0.6.10
@@ -376,8 +376,8 @@ Tor
 
 Tor alpha
 : __Description__: development version of the onion-routing daemon for anonymous networking
-: https://www.torproject.org
-: BSD: https://gitweb.torproject.org/tor.git/tree/LICENSE
+: https://www.torproject.org/
+: BSD: https://gitweb.torproject.org/tor.git/tree/LICENSE/
 : https://gitweb.torproject.org/tor.git/
 : 0.2.7.4rc
 : FreeBSD: yes
@@ -388,8 +388,8 @@ Tor alpha
 
 Torsocks
 : __Description__: SOCKS proxy for routing TCP applications through the Tor network
-: https://www.torproject.org
-: GPLv2: https://gitweb.torproject.org/torsocks.git/tree/LICENSE
+: https://www.torproject.org/
+: GPLv2: https://gitweb.torproject.org/torsocks.git/tree/LICENSE/
 : https://gitweb.torproject.org/torsocks.git/
 : 2.1.0
 : FreeBSD: yes
@@ -426,9 +426,9 @@ Cryptocat
 
 Jitsi
 : __Description__: XMPP/SIP client
-: https://jitsi.org
+: https://jitsi.org/
 : Apache 2.0: https://github.com/jitsi/jitsi/blob/master/LICENSE
-: https://github.com/jitsi/jitsi
+: https://github.com/jitsi/jitsi/
 : 2.8.5426
 : FreeBSD: yes
 : OpenBSD: no
