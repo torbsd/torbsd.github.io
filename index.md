@@ -12,17 +12,17 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 The __Tor BSD Diversity Project (TDP)__ is an initiative seeking to
 extend the use of the BSD Unix operating systems in the
-[Tor public anonymity network](https://www.torproject.org).
+[Tor public anonymity network](https://www.torproject.org/).
 
 BSD Unix is an open source operating system family noted for its
 security and stability. The primary BSD projects include
-[FreeBSD](https://www.freebsd.org), [NetBSD](https://www.netbsd.org),
-[OpenBSD](http://www.openbsd.org) and
-[DragonFly BSD](http://www.dragonflybsd.org), with a number of
-tangential projects including [pfSense](https://www.pfsense.org),
-[FreeNAS](https://www.freenas.org) and
-[PC-BSD](https://www.pcbsd.org). BSD software such as
-[OpenSSH](http://www.openssh.com) is the default communication tool
+[FreeBSD](https://www.freebsd.org/), [NetBSD](https://www.netbsd.org/),
+[OpenBSD](http://www.openbsd.org/) and
+[DragonFly BSD](http://www.dragonflybsd.org/), with a number of
+tangential projects including [pfSense](https://www.pfsense.org/),
+[FreeNAS](https://www.freenas.org/) and
+[PC-BSD](https://www.pcbsd.org/). BSD software such as
+[OpenSSH](http://www.openssh.com/) is the default communication tool
 for innumerable devices on the Internet. Firms such as Netflix, WhatsApp and Juniper rely on BSD systems and code to build and maintain resilient services and devices.
 
 Originating at the University of California in the 1970's, BSD software is renowned for its Internet infrastructure role since its earliest days.
@@ -52,7 +52,7 @@ Current __TDP__ [work](projects.html) includes:
 
 * [Guides for configuring and running FreeBSD and OpenBSD relays](relay-guides.html);
 
-* [The creation of OpenBSD Tor Browser ports](https://github.com/torbsd/openbsd-ports);
+* [The creation of OpenBSD Tor Browser ports](https://github.com/torbsd/openbsd-ports/);
 
 * Organizing various events for engaging BSD users about Tor,
   including presentations, birds-of-a-feather sessions and informal meetings;
@@ -64,7 +64,7 @@ Current __TDP__ [work](projects.html) includes:
 * Maintaining a set of reports entitled ["Quick-and-Dirty Statistics"](dirty-stats.html) which provide snapshots of public Tor relay diversity;
 
 We look forward to inquiries about and involvement in __TDP__.  Fork our [code]
-(https://github.com/torbsd), submit patches, run a BSD relay and let us know if __TDP__ documentation was useful.
+(https://github.com/torbsd/), submit patches, run a BSD relay and let us know if __TDP__ documentation was useful.
 
 Please see our [contact page](contact.html) if you want to get in touch with us.
 

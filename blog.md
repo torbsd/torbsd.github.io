@@ -57,7 +57,7 @@ According to the general standards on window manager desktops, it should as the 
 
 Just a short note: Tor Browser for OpenBSD 5.5 is still working with the most recent OpenBSD snapshots (#1880 on amd64 and #1608 on i386).
 
-We always use the most recent snapshots on our boxes, and usually update the TB packages when TB needs updating due to relevant snapshot changes. Since our build process significantly simplified with TB 5.5, primarily due to [landry@'s input](https://marc.info/?l=openbsd-ports&m=145581927415588&w=2), updates to both amd64 and i386 builds became relatively painless.
+We always use the most recent snapshots on our boxes, and usually update the TB packages when TB needs updating due to relevant snapshot changes. Since our build process significantly simplified with TB 5.5, primarily due to [landry@'s input](https://marc.info/?l=openbsd-ports&m=145581927415588&w=2/), updates to both amd64 and i386 builds became relatively painless.
 
 And it should only get better in the near-future releases.
 
@@ -69,7 +69,7 @@ The progress we've made over the past five days was exhausting, yet exciting.
 
 Some very significant steps were made with Tor Browser.  A revised 5.5 release does not contain the start-tor-browser script any longer; all the necessary setup steps are now done with Javascript, including the profile setup. The Firefox add-ons are now dumped into the profile as files, such as https-everywhere@eff.org.xpi, instead of being extracted into directories. Additionally, we are now building an i386 version of TB.
 
-We are aware that [TB 5.5.2](https://blog.torproject.org/blog/tor-browser-552-released) was released by the Tor Project this past Friday, a mere hour after we announced our 5.5 release. TB 5.5.2 includes some important security changes coming from the Mozilla upstream, although much can be mitigated by moving the security slider to high. And [TB 5.5.1](https://blog.torproject.org/blog/tor-browser-551-released) was also released before our TB 5.5, but the changes were significant. Nevertheless, the last five days of constant hacking and testing on TB makes future releases less painful and more smooth.
+We are aware that [TB 5.5.2](https://blog.torproject.org/blog/tor-browser-552-released/) was released by the Tor Project this past Friday, a mere hour after we announced our 5.5 release. TB 5.5.2 includes some important security changes coming from the Mozilla upstream, although much can be mitigated by moving the security slider to high. And [TB 5.5.1](https://blog.torproject.org/blog/tor-browser-551-released/) was also released before our TB 5.5, but the changes were significant. Nevertheless, the last five days of constant hacking and testing on TB makes future releases less painful and more smooth.
 
 Finally, for those doing TB testing, we have a brief guide to what to test in a [Testing Tor Browser](testing-tb.html) piece. The past week has already changed some of the steps, and we look to expand and formalize this document so it becomes a useful tool.
 
@@ -79,7 +79,7 @@ It's almost a year since our first commits to GitHub, and it's been a long and s
 
 <a id="tb-55-tagged">__Tor browser ports for 5.5 tagged__</a> by attila
 
-I just merged 5.5 onto master and [tagged it](https://github.com/torbsd/openbsd-ports/releases/tag/tbb-5.5-sans-pt), in case anyone cares.  This release was much easier after the work on 5.0.6, which has us using [mozilla.port.mk](http://cvsweb.openbsd.org/cgi-bin/cvsweb/~checkout~/ports/www/mozilla/mozilla.port.mk?rev=1.84&content-type=text/plain) instead of a bunch of cut-and-paste adapted from same.  This makes things a lot easier moving forward.  So far 5.5 on amd64 is looking good.
+I just merged 5.5 onto master and [tagged it](https://github.com/torbsd/openbsd-ports/releases/tag/tbb-5.5-sans-pt/), in case anyone cares.  This release was much easier after the work on 5.0.6, which has us using [mozilla.port.mk](http://cvsweb.openbsd.org/cgi-bin/cvsweb/~checkout~/ports/www/mozilla/mozilla.port.mk?rev=1.84&content-type=text/plain) instead of a bunch of cut-and-paste adapted from same.  This makes things a lot easier moving forward.  So far 5.5 on amd64 is looking good.
 
 <a id="tb-releases">__Tor Browser Releases__</a> by gman999
 
@@ -87,7 +87,7 @@ It's been a while since our last Tor Browser releases, but it's not because we h
 
 While worked dragged on with the 5.0.6 Tor Browser release, we managed to not only finish that [release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/archive/tb-5.0.6.tgz), but also finish up the [5.5 release](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/README-55.txt). That puts us parallel with the current Tor Project release.
 
-We are now archiving previous versions of TB as tgz file in an [an archive directory](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/archive). Version 5.0.6, which barely saw the light of day, is there.
+We are now archiving previous versions of TB as tgz file in an [an archive directory](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/archive/). Version 5.0.6, which barely saw the light of day, is there.
 
 We are excited by the releases, and look forward to feedback from the testers out there.
 
@@ -154,7 +154,7 @@ Stay tuned. We are still very active, even when we are publicly quiet.
 
 First: hats off to gman999 for his incessant efforts in getting the content of this site in better shape. I especially applaud this low-tech/no-tech blog layout in MultiMarkdown.
 
-I have been noticeably lacking, but not totally idle.  I've had to take some paying work, which has slowed me down on open source, but my path forward is fairly clear.  My main task is to rework the makefiles (mainly the stuff in Makefile.inc) that comprise the [OpenBSD ports](https://github.com/torbsd/openbsd-ports) for TBB so that they dovetail with and use as much as possible of the Mozillan infrastructure already in the OpenBSD ports tree, much of it due to `landry@`, who has already helped me a couple of times.  I should've done this from the beginning but my head wasn't really on straight when I first started this.  I've been reticent about touching anything that I didn't write, choosing instead to adapt what others have done to get something working. Although this was perhaps effective in the short term if we want this in the tree it has to be consonant with it... in short: if you're serious about contributing to OpenBSD then pick up a shovel and start digging, but politely. I'm sure I can do that so I just have to get to it.
+I have been noticeably lacking, but not totally idle.  I've had to take some paying work, which has slowed me down on open source, but my path forward is fairly clear.  My main task is to rework the makefiles (mainly the stuff in Makefile.inc) that comprise the [OpenBSD ports](https://github.com/torbsd/openbsd-ports/) for TBB so that they dovetail with and use as much as possible of the Mozillan infrastructure already in the OpenBSD ports tree, much of it due to `landry@`, who has already helped me a couple of times.  I should've done this from the beginning but my head wasn't really on straight when I first started this.  I've been reticent about touching anything that I didn't write, choosing instead to adapt what others have done to get something working. Although this was perhaps effective in the short term if we want this in the tree it has to be consonant with it... in short: if you're serious about contributing to OpenBSD then pick up a shovel and start digging, but politely. I'm sure I can do that so I just have to get to it.
 
 I hope to have a first cut at a rework of the ports, still based on 5.0.3, sometime next week... I don't really celebrate any holidays so I'm hoping to get a lot done while the rest of the world sleeps it off.  Once the makefiles are closer to right I'll work on an update to 5.0.5 (or whatever is current on the 5.0.x branch).  I'm afraid I might miss the next ports lock window because I've taken too long, but oh, well... _que sera sera_.
 
@@ -164,7 +164,7 @@ One of the small projects we have spent some time on recently is <a href="portin
 
 Most of these ports arose as non-commercial, open source reactions to mainstream applications and services. Some are ported to one BSD or another, others are not.
 
-The list is not exhaustive, but it was certainly exhaustive to create. Updates will happen manually, so <a href="https://github.com/torbsd/torbsd.github.io/issues">diffs</a> are appreciated.
+The list is not exhaustive, but it was certainly exhaustive to create. Updates will happen manually, so <a href="https://github.com/torbsd/torbsd.github.io/issues/">diffs</a> are appreciated.
 
 Porting third-party applications is a frequent gateway for BSD users to become developers, this list will be circulated in the relevant BSD channels.
 
@@ -175,9 +175,9 @@ Porting third-party applications is a frequent gateway for BSD users to become d
 
 The BSDCan 2016 [call for papers](https://www.bsdcan.org/2016/papers.php) was issued yesterday, and a __TDP__-related submission was made. BSDCan is likely the largest BSD gathering globally, and an excellent opportunity to speak to *BSD developers and users.
 
-EuroBSDCon 2016 [is tentatively slated for September 2016](https://2016.eurobsdcon.org) in Belgrade, Serbia. It is another significant BSD event, attracting users and developers from Europe and beyond. At a glance, there are only two Tor relays in Serbia, and both are Linux. Beyond Serbia, there are few Tor relays in the Balkan states overall, making EuroBSDCon 2016 a great opportunity to extend not just BSD Tor relays, but *any* Tor relays.
+EuroBSDCon 2016 [is tentatively slated for September 2016](https://2016.eurobsdcon.org/) in Belgrade, Serbia. It is another significant BSD event, attracting users and developers from Europe and beyond. At a glance, there are only two Tor relays in Serbia, and both are Linux. Beyond Serbia, there are few Tor relays in the Balkan states overall, making EuroBSDCon 2016 a great opportunity to extend not just BSD Tor relays, but *any* Tor relays.
 
-No dates have been set for [AsiaBSDCon](https://2016.asiabsdcon.org), but it's usually in March. Japan is well-wired with inexpensive residential broadband, yet there are only around 50-60 relays in the country. Considering it's a BSD-heavy nation, it's shocking that there are only a handful of *BSD relays. Yet another green field of opportunity.
+No dates have been set for [AsiaBSDCon](https://2016.asiabsdcon.org/), but it's usually in March. Japan is well-wired with inexpensive residential broadband, yet there are only around 50-60 relays in the country. Considering it's a BSD-heavy nation, it's shocking that there are only a handful of *BSD relays. Yet another green field of opportunity.
 
 Stay tuned. Whether we can speak at any of these events will also depend on financial support for __TDP__.
 
@@ -197,11 +197,11 @@ It's a call for engagement to the *BSD community.  Bring your sane, portable dev
 
 <a id="br-case">__The Case of Brazil Relays__</a> by gman999
 
-Just a short note about the Brazil relays implemented after [BSDCon Brasil](http://2015.bsdcon.com.br). Before the early October conference, it seems there was only one public Tor relay. After the event, there are up to five or six relays maintained by two separate individuals. It's understood that some bridges also joined the Tor network also, but we don't have any direct evidence.
+Just a short note about the Brazil relays implemented after [BSDCon Brasil](http://2015.bsdcon.com.br/). Before the early October conference, it seems there was only one public Tor relay. After the event, there are up to five or six relays maintained by two separate individuals. It's understood that some bridges also joined the Tor network also, but we don't have any direct evidence.
 
 It's not an enormous leap in relay numbers for Brazil, but adding a handful of relays to a country that only had around 20 is significant. More importantly, it seems that the new BSD relays contribute a decent amount of bandwidth.
 
-However, there is a discrepancy between the "Tor Status" data provided by [https://torstatus.blutmagie.de](https://torstatus.blutmagie.de) and [https://torstatus.rueckgr.at](https://torstatus.rueckgr.at). Part of this might be answered by the fact that both are statically updating at different intervals. Olaf Selke of BlutMagie.de, also notes that the "observed bandwidth" numbers are diffferent since only BlutMagie.de [shows the average bandwidth based on the "extra-info" descriptor](https://lists.torproject.org/pipermail/tor-talk/2015-November/039414.html) while other sites, including Rueckgr.at, display the peak bandwidth.
+However, there is a discrepancy between the "Tor Status" data provided by [https://torstatus.blutmagie.de/](https://torstatus.blutmagie.de/) and [https://torstatus.rueckgr.at](https://torstatus.rueckgr.at/). Part of this might be answered by the fact that both are statically updating at different intervals. Olaf Selke of BlutMagie.de, also notes that the "observed bandwidth" numbers are diffferent since only BlutMagie.de [shows the average bandwidth based on the "extra-info" descriptor](https://lists.torproject.org/pipermail/tor-talk/2015-November/039414.html) while other sites, including Rueckgr.at, display the peak bandwidth.
 
 However, there still seems to be discrepancies beyond the "observed bandwidth" field, which we will look at further in the future. For instance, a bunch of AWS Tor relays appeared on BlutMagie.de the other day and remained for a few days, but never showed up on Rueckgr.at. And more oddly, all the relays quickly remained highest bandwidth providers for a few days, in contrast to the normal trajectory of a relay.
 
@@ -211,7 +211,7 @@ For now, either site is useful for giving a broad picture of the public Tor netw
 
 <a id="tb-update-again">__TB 5.0.3 Packages Updated, Again__</a> by gman999
 
-The <a href="http://mirrors.nycbug.org/pub/snapshots/packages/amd64">Tor Browser 5.0.3 packages</a> were updated again, due to the need for icu4c version 56.1. Both devel/nspr and textproc/icu4c are updated in the OpenBSD ports tree, and the TB packages have been rebuilt for them. Be sure to make sure packages or ports are updated before installing. If the host is updated, there's no need to use our devel/nspr or textproc/icu4c packages.
+The <a href="http://mirrors.nycbug.org/pub/snapshots/packages/amd64/">Tor Browser 5.0.3 packages</a> were updated again, due to the need for icu4c version 56.1. Both devel/nspr and textproc/icu4c are updated in the OpenBSD ports tree, and the TB packages have been rebuilt for them. Be sure to make sure packages or ports are updated before installing. If the host is updated, there's no need to use our devel/nspr or textproc/icu4c packages.
 
 This is all a true story of the constant attention necessary to develop sanely on any operating system: develop on the most current version, and look forward to an automated build process for it, but ultimately a stable version is a beautiful thing.
 
