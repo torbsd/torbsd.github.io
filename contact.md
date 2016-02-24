@@ -12,7 +12,7 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 The simplest way to get in touch with us is to open an
 issue in
-[our web site issue tracker](https://github.com/torbsd/torbsd.github.io/issues)
+[our web site issue tracker](https://github.com/torbsd/torbsd.github.io/issues/)
 on GitHub.  All TDP project members receive notifications
 when issues are posted here and one of us will respond promptly.
 

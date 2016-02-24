@@ -19,7 +19,7 @@ As of June 2015, BSD-running Tor relays account for under 5% of total network ba
 
 __TDP__ is directly querying *BSD firms with adequate infrastructure and staff to replicate Mozilla's commendable efforts. Configuring and maintaining a Tor relay is a small cost for any entity seeking to strengthen the global anonymity network. __TDP__ is looking to not only encourage this step, but also to assist these firms on various levels.
 
-__TDP__ could either administer the server or assist the relay administrator(s). The [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd) could be of assistance, not to mention the [Tor relays list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays).
+__TDP__ could either administer the server or assist the relay administrator(s). The [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd/) could be of assistance, not to mention the [Tor relays list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays/).
 
 None of the current __TDP__ relays are exit nodes, however, examples such as [the Bynum Law Office PLLC node](http://tor-exit.bynumlaw.net/) should remove some of the relevant legal black magic.
 
