@@ -10,7 +10,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## Welcome ##
 
-The __Tor BSD Diversity Project (TDP)__ is an initiative seeking to
+__The Tor BSD Diversity Project (TDP)__ is an initiative seeking to
 extend the use of the BSD Unix operating systems in the
 [Tor public anonymity network](https://www.torproject.org/).
 
@@ -23,7 +23,8 @@ tangential projects including [pfSense](https://www.pfsense.org/),
 [FreeNAS](https://www.freenas.org/) and
 [PC-BSD](https://www.pcbsd.org/). BSD software such as
 [OpenSSH](http://www.openssh.com/) is the default communication tool
-for innumerable devices on the Internet. Firms such as Netflix, WhatsApp and Juniper rely on BSD systems and code to build and maintain resilient services and devices.
+for innumerable devices on the Internet. Firms such as Netflix, WhatsApp and Juniper rely on BSD systems and code to build and maintain resilient services and  
+devices.
 
 Originating at the University of California in the 1970's, BSD software is renowned for its Internet infrastructure role since its earliest days.
 
