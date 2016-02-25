@@ -39,17 +39,21 @@ __October 2015__
 
 Yesterday the OpenBSD snapshots updated to #1881 for amd64 and #1609 for i386. TB is working fine on both.
 
-Meanwhile, the TB packages were updated. First we implemented a meta TB package, as per landry@'s comments. And note that the start-tor-browser script was also deprecated recently. All the sloppy setup gook was replaced by neater Firefox hacks.
+Meanwhile, the TB packages were updated. First we implemented a meta TB package, as per landry@'s comments. Note that the start-tor-browser script was also deprecated recently. All the sloppy setup gook was replaced by neater Firefox hacks.
 
 Installing TB from the mirror is simple:
 
     $ doas env PKG_PATH=http://mirrors.nycbug.org/pub/snapshots/packages/amd64/ pkg_add tbb
 
+For i386 installs, replace /amd64/ with /i386/.
+
 __Be aware that that we are still tinkering with TB 5.5 which has some significant vulnerabilities that could disclose a user's identity. TB 5.5.2 is in the pipeline.__
 
 A question for TB testers out there: does a Tor Browser icon appear on the desktop after TB installs?
 
-According to the general standards on window manager desktops, it should as the installer places /usr/local/share/applications/tor-browser.desktop into ~/.local/share/applications. However, on XFCE it doesn't appear and the file needs to be place in ~/Desktop. How about KDE and GNOME users out there? Let us know.
+According to the general standards on window manager desktops, it should as the installer places /usr/local/share/applications/tor-browser.desktop into ~/.local/share/applications. However, on XFCE it doesn't appear, and the file needs to be placed in ~/Desktop. How about KDE and GNOME users out there? Let us know.
+
+We imagine that most users following -current are probably running cwm.
 
 ###20160221###
 
