@@ -10,6 +10,10 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or a Central Location for Announces and Notes##
 
+__March 2016__
+
+[TDP at BSDCan 2016] (#bsdcan0)
+
 __February 2016__
 
 [TB 5.5 and More New Snapshots](#tb55snaps1) [%sep] [TB 5.5 and New Snapshots](#tb55snaps) [%sep] [Onto the Next Phase](#next-phase) [%sep] [Tor Browser Releases](#tb-releases) [%sep] [Tor browser 5.5 ports tagged](#tb-55-tagged)
@@ -32,6 +36,24 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20160301###
+
+<a id="tdpbsdcan0">__TDP at BSDCan 2016__</a> by gman999
+
+Our presentation entited ["Beyond Monocultures"](https://www.bsdcan.org/2016/list-of-talks.txt) was accepted for [BSDCan 2016](https://www.bsdcan.org/2016/) on June 10-11 in Ottawa, Canada.
+
+We feel very fortunate, since there were a lot of submissions for what is the premier BSD event in the western hemisphere. BSDCan has grown substantially since 2004, with hundreds of attendees participating.
+
+Last year we conducted a [birds-of-a-feather session](https://www.bsdcan.org/2015/schedule/track/BOF/624.en.html) which attracted around 50 people.
+
+This year, we should hopefully have some good news to publicize about TDP. In the meantime, the actual presentation should start coming together in the next month or so. In all honesty, it's hard to determine what the focus of the presentation should be. We only have a general idea of where we'll be by mid-June.
+
+At this point, the introductory part should start with "Why Tor Sucks" plagiarizing Henning Brauer's [OpenBSD Sucks](http://quigon.bsws.de/papers/2015/asiabsdcon/index.html) concept. This is a backhand approach to arguing why Tor matters. The reality is that a lot of people in the BSD community continue to see Tor as ineffective or insecure, so the case for Tor being full of problems yet the very best thing available needs to be made.
+
+It's not that BSD people overwhelmingly aren't concerned with security and privacy. At the bar last at BSDCan last year, surrounded by some of the best known BSD veterans from the 1970's, I listened how they dealt with surveillance. One file system hacker with decades of experience mentioned how he always changed his MAC address when using public wireless.
+
+But there's also a sense that Tor is too easily broken, such as with timing attacks from a global passive adversary. Or that if enough Tor relays are run by an adversary to anonymity, the network is useless. All are valid points and certainly need further attention. The heavy brains at the bar that night could infuse some assistance.
 
 ###20160223###
 
