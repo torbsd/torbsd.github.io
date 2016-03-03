@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __March 2016__
 
-[TDP at BSDCan 2016] (#bsdcan0) [%sep] [TB 5.5 and Newest Snapshots](#tb-snaps-status0]
+[TDP at BSDCan 2016] (#bsdcan0) [%sep] [TB 5.5 and Newest Snapshots] (#tb-snaps-status0]
 
 __February 2016__
 
