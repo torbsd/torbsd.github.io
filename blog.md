@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __March 2016__
 
-[TDP at BSDCan 2016] (#bsdcan0)
+[TDP at BSDCan 2016] (#bsdcan0) [%sep] [TB 5.5 and Newest Snapshots](#tb-snaps-status0]
 
 __February 2016__
 
@@ -36,6 +36,18 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20160303###
+
+<a id="tb-snaps-status0">__STATUS: TB 5.5 and i386/amd64 Snapshots__</a> by gman999
+
+TB 5.5 is working fine with the newest OpenBSD snapshots:
+
+* amd64 is #1890
+
+* i386 is #1618
+
+Once OpenBSD hits the new stable at 5.9, we may start buiding TB packages for OpenBSD stable.
 
 ###20160301###
 
