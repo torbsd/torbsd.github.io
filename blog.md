@@ -16,7 +16,7 @@ __March 2016__
 
 __February 2016__
 
-[TB 5.5 and More New Snapshots](#tb55snaps1) [%sep] [TB 5.5 and New Snapshots](#tb55snaps) [%sep] [Onto the Next Phase](#next-phase) [%sep] [Tor Browser Releases](#tb-releases) [%sep] [Tor browser 5.5 ports tagged](#tb-55-tagged)
+[TB 5.5 and More New Snapshots](#tb55snaps1) [%sep] [TB 5.5 and New Snapshots](#tb55snaps) [%sep] [Onto the Next Phase](#next-phase) [%sep] [Tor Browser Releases](#tb-releases) [%sep] [Tor Browser 5.5 Ports Tagged](#tb-55-tagged)
 
 __January 2016__
 
@@ -115,9 +115,9 @@ It's almost a year since our first commits to GitHub, and it's been a long and s
 
 ###20160205###
 
-<a id="tb-55-tagged">__Tor browser ports for 5.5 tagged__</a> by attila
+<a id="tb-55-tagged">__Tor Browser Ports for 5.5 Tagged__</a> by attila
 
-I just merged 5.5 onto master and [tagged it](https://github.com/torbsd/openbsd-ports/releases/tag/tbb-5.5-sans-pt/), in case anyone cares.  This release was much easier after the work on 5.0.6, which has us using [mozilla.port.mk](http://cvsweb.openbsd.org/cgi-bin/cvsweb/~checkout~/ports/www/mozilla/mozilla.port.mk?rev=1.84&content-type=text/plain) instead of a bunch of cut-and-paste adapted from same.  This makes things a lot easier moving forward.  So far 5.5 on amd64 is looking good.
+I just merged 5.5 onto master and [tagged it](https://github.com/torbsd/openbsd-ports/releases/tag/tbb-5.5-sans-pt/).  This release was much easier after the work on 5.0.6, which has us using [mozilla.port.mk](http://cvsweb.openbsd.org/cgi-bin/cvsweb/~checkout~/ports/www/mozilla/mozilla.port.mk?rev=1.84&content-type=text/plain) instead of a bunch of cut-and-paste adapted from same.  This makes things a lot easier moving forward.  So far 5.5 on amd64 is looking good.
 
 <a id="tb-releases">__Tor Browser Releases__</a> by gman999
 
