@@ -1,4 +1,4 @@
-Sun Mar  6 02:27:13 UTC 2016
+Tue Mar  8 12:37:31 UTC 2016
 Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
