@@ -1,0 +1,142 @@
+Wed Mar  9 18:39:15 UTC 2016
+Data Source: torstatus.blutmagie.de
+
+The Tor BSD Diversity Project
+https://torbsd.github.io/dirty-stats.html
+Quick-and-Dirty Static Reports
+
+'Total Relay Count by Operating System and Tor Version'
+
+Total Number of Public Tor Relays:
+7232
+-------
+-count- -Tor_version- -platform-  -percent-
+2975 Tor 0.2.7.6 on Linux	41.1366%
+1025 Tor 0.2.5.12 on Linux	14.1731%
+1010 Tor 0.2.4.27 on Linux	13.9657%
+ 762 Tor 0.2.6.10 on Linux	10.5365%
+ 129 Tor 0.2.7.6 on FreeBSD	1.78374%
+ 108 Tor 0.2.4.23 on Windows 7	1.49336%
+ 105 Tor 0.2.7.5 on Linux	1.45188%
+  99 Tor 0.2.4.23 on Linux	1.36892%
+  95 Tor 0.2.6.9 on Linux	1.31361%
+  93 Tor 0.2.5.10 on Linux	1.28595%
+  82 Tor 0.2.6.10 on FreeBSD	1.13385%
+  81 Tor 0.2.4.23 on Windows 8	1.12002%
+  34 Tor 0.2.6.9 on FreeBSD	0.470133%
+  32 Tor 0.2.6.10 on OpenBSD	0.442478%
+  30 Tor 0.2.4.24 on Linux	0.414823%
+  30 Tor 0.2.4.22 on Linux	0.414823%
+  28 Tor 0.2.4.23 on Windows 7 [server]	0.387168%
+  27 Tor 0.2.8.1-alpha on Linux	0.373341%
+  27 Tor 0.2.4.20 on Linux	0.373341%
+  22 Tor 0.2.7.6 on Windows 7	0.304204%
+  22 Tor 0.2.6.8 on Linux	0.304204%
+  21 Tor 0.2.7.6 on OpenBSD	0.290376%
+  19 Tor 0.2.7.6 on Windows 8	0.262721%
+  18 Tor 0.2.7.6 on Darwin	0.248894%
+  16 Tor 0.2.4.21 on Linux	0.221239%
+  15 Tor 0.2.7.6-dev on Linux	0.207412%
+  14 Tor 0.2.5.11 on Linux	0.193584%
+  14 Tor 0.2.4.23 on Windows XP	0.193584%
+  13 Tor 0.2.6.7 on Linux	0.179757%
+  12 Tor 0.2.7.6 on Windows 8 [server]	0.165929%
+  11 Tor 0.2.7.6 on Windows XP	0.152102%
+  11 Tor 0.2.6.10 on Windows 7	0.152102%
+  10 Tor 0.2.5.8-rc on Linux	0.138274%
+  10 Tor 0.2.5.5-alpha on Linux	0.138274%
+   9 Tor 0.2.8.1-alpha-dev on Linux	0.124447%
+   9 Tor 0.2.8.0-alpha-dev on Linux	0.124447%
+   9 Tor 0.2.7.2-alpha on Linux	0.124447%
+   9 Tor 0.2.6.7 on FreeBSD	0.124447%
+   9 Tor 0.2.5.10 on OpenBSD	0.124447%
+   8 Tor 0.2.7.4-rc on Linux	0.110619%
+   8 Tor 0.2.5.10 on FreeBSD	0.110619%
+   7 Tor 0.2.4.23 on Windows Server 2003 [server]	0.096792%
+   6 Tor 0.2.4.23 on Windows 8 [server]	0.0829646%
+   5 Tor 0.2.8.1-alpha on FreeBSD	0.0691372%
+   5 Tor 0.2.6.10 on Windows 8	0.0691372%
+   5 Tor 0.2.4.26 on Linux	0.0691372%
+   5 Tor 0.2.4.24 on FreeBSD	0.0691372%
+   4 Tor 0.2.7.6 on Windows 7 [server]	0.0553097%
+   4 Tor 0.2.7.6 on NetBSD	0.0553097%
+   4 Tor 0.2.7.6 on ElectroBSD	0.0553097%
+   4 Tor 0.2.6.6 on FreeBSD	0.0553097%
+   4 Tor 0.2.5.6-alpha on Linux	0.0553097%
+   4 Tor 0.2.4.22 on Windows 7	0.0553097%
+   3 Tor 0.2.6.9 on Windows 7	0.0414823%
+   3 Tor 0.2.6.9 on Darwin	0.0414823%
+   3 Tor 0.2.6.10-dev on Linux	0.0414823%
+   3 Tor 0.2.6.10 on Windows 8 [server]	0.0414823%
+   3 Tor 0.2.6.10 on Windows 7 [server]	0.0414823%
+   3 Tor 0.2.4.23 on Windows Vista [server]	0.0414823%
+   3 Tor 0.2.4.23 on Windows Vista	0.0414823%
+   3 Tor 0.2.4.23 on FreeBSD	0.0414823%
+   3 Tor 0.2.4.22 on Windows 8	0.0414823%
+   3 Tor 0.2.4.21 on FreeBSD	0.0414823%
+   2 node-Tor 0.1.0 on Linux x86_64	0.0276549%
+   2 Tor 0.2.7.6 on Windows Vista [server]	0.0276549%
+   2 Tor 0.2.7.6 on Windows Server 2003 [server]	0.0276549%
+   2 Tor 0.2.7.6 on SunOS	0.0276549%
+   2 Tor 0.2.7.3-rc on Linux	0.0276549%
+   2 Tor 0.2.7.1-alpha on Linux	0.0276549%
+   2 Tor 0.2.6.6 on Linux	0.0276549%
+   2 Tor 0.2.6.2-alpha on Linux	0.0276549%
+   2 Tor 0.2.6.0-alpha-dev on Linux	0.0276549%
+   2 Tor 0.2.5.9-rc on Linux	0.0276549%
+   2 Tor 0.2.5.11 on Windows 7	0.0276549%
+   2 Tor 0.2.4.25 on Linux	0.0276549%
+   2 Tor 0.2.4.21 on Windows XP	0.0276549%
+   2 Tor 0.2.4.21 on Windows Vista	0.0276549%
+   2 Tor 0.2.4.21 on Windows 8	0.0276549%
+   2 Tor 0.2.4.21 on Windows 7	0.0276549%
+   2 Tor 0.2.4.20 on OpenBSD	0.0276549%
+   2 Tor 0.2.4.20 on Darwin	0.0276549%
+   1 Tor 0.2.8.1-alpha-dev on FreeBSD	0.0138274%
+   1 Tor 0.2.8.1-alpha on Windows 7	0.0138274%
+   1 Tor 0.2.7.6 on a glowing tinfoil hat	0.0138274%
+   1 Tor 0.2.7.6 on Windows Vista	0.0138274%
+   1 Tor 0.2.7.6 on GNU/kFreeBSD	0.0138274%
+   1 Tor 0.2.7.6 on GNU	0.0138274%
+   1 Tor 0.2.7.6 on DragonFly	0.0138274%
+   1 Tor 0.2.7.5 on OpenBSD	0.0138274%
+   1 Tor 0.2.7.5 on FreeBSD	0.0138274%
+   1 Tor 0.2.7.4-rc on Windows 8	0.0138274%
+   1 Tor 0.2.7.2-alpha-dev on Darwin	0.0138274%
+   1 Tor 0.2.7.1-alpha-dev on NetBSD MOS Technology 6510	0.0138274%
+   1 Tor 0.2.7.0-alpha-dev on Linux	0.0138274%
+   1 Tor 0.2.6.9 on Windows Server 2003 [server]	0.0138274%
+   1 Tor 0.2.6.9 on Windows 8	0.0138274%
+   1 Tor 0.2.6.9 on Windows 7 [server]	0.0138274%
+   1 Tor 0.2.6.8 on OpenBSD	0.0138274%
+   1 Tor 0.2.6.7 on Windows 8 [server]	0.0138274%
+   1 Tor 0.2.6.7 on Windows 7	0.0138274%
+   1 Tor 0.2.6.3-alpha on Linux	0.0138274%
+   1 Tor 0.2.6.10 on Windows XP	0.0138274%
+   1 Tor 0.2.6.10 on Windows Server 2003 [server]	0.0138274%
+   1 Tor 0.2.6.10 on SunOS	0.0138274%
+   1 Tor 0.2.6.10 on DragonFly	0.0138274%
+   1 Tor 0.2.6.1-alpha-dev on Linux	0.0138274%
+   1 Tor 0.2.5.8-rc on FreeBSD	0.0138274%
+   1 Tor 0.2.5.7-rc on Linux	0.0138274%
+   1 Tor 0.2.5.2-alpha on Linux	0.0138274%
+   1 Tor 0.2.5.11 on Windows 7 [server]	0.0138274%
+   1 Tor 0.2.5.10 on Windows XP	0.0138274%
+   1 Tor 0.2.5.10 on NetBSD	0.0138274%
+   1 Tor 0.2.5.10 on Darwin	0.0138274%
+   1 Tor 0.2.5.1-alpha-dev on Linux	0.0138274%
+   1 Tor 0.2.4.27 on OpenBSD	0.0138274%
+   1 Tor 0.2.4.24 on OpenBSD	0.0138274%
+   1 Tor 0.2.4.23 on OpenBSD	0.0138274%
+   1 Tor 0.2.4.23 on NetBSD	0.0138274%
+   1 Tor 0.2.4.22 on Windows Vista	0.0138274%
+   1 Tor 0.2.4.22 on Windows 7 [server]	0.0138274%
+   1 Tor 0.2.4.22 on FreeBSD	0.0138274%
+   1 Tor 0.2.4.20 on Windows Vista	0.0138274%
+   1 Tor 0.2.4.20 on Windows 8	0.0138274%
+   1 Tor 0.2.4.20 on FreeBSD	0.0138274%
+   1 Tor 0.2.4.19 on Windows XP	0.0138274%
+   1 Tor 0.2.4.19 on Windows Vista	0.0138274%
+   1 Tor 0.2.4.19 on Windows 8	0.0138274%
+   1 Tor 0.2.4.19 on Windows 7	0.0138274%
+   1 Tor 0.2.4.19 on Linux	0.0138274%
