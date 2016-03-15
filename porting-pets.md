@@ -64,22 +64,22 @@ __tool-name__
 
 <a id="pkg-etherpad">__Etherpad__</a>
 : __Description__: collaborative editing application
-: __Site__: [http://etherpad.org/](http://etherpad.org/)
-: __License__: [Apache 2.0](https://github.com/ether/etherpad-lite/blob/develop/LICENSE/)
-: __Source__: [GitHub](https://github.com/ether/etherpad-lite/)
-: __Version__: [1.5.7](https://github.com/ether/etherpad-lite/releases/tag/1.5.7/)
-: __FreeBSD__: no
-: __OpenBSD__: no
-: __NetBSD__: no
-: __DragonFly__: no
+: Site: [http://etherpad.org/](http://etherpad.org/)
+: License: Apache 2.0 https://github.com/ether/etherpad-lite/blob/develop/LICENSE/
+: Source: https://github.com/ether/etherpad-lite/
+: Version: 1.5.7
+: FreeBSD: no
+: OpenBSD: no
+: NetBSD: no
+: DragonFly: no
 
 ###<a id="graphics">graphics</a>###
 
 <a id="pkg-exiftool">ExifTool</a>
 : __Description__: tool for editing, reading, writing metadata on a variety of file types
-: Site: http://owl.phy.queensu.ca/~phil/exiftool/
-: License: [Perl](http://owl.phy.queensu.ca/~phil/exiftool/#license)
-: Source: http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz)
+: Site: [http://owl.phy.queensu.ca/~phil/exiftool/](http://owl.phy.queensu.ca/~phil/exiftool/)
+: License: Perl http://owl.phy.queensu.ca/~phil/exiftool/#license
+: Source: http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz
 : Version: 10.05
 : FreeBSD: yes
 : OpenBSD: no
@@ -112,8 +112,8 @@ MAT
 : __Description__: tool for removing metadata
 : http://mat.boum.org/
 : GPLv2: https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE/
-: https://gitweb.torproject.org/user/jvoisin/mat.git
-: 0.5.4
+: Source: https://gitweb.torproject.org/user/jvoisin/mat.git
+: Version: 0.5.4
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
