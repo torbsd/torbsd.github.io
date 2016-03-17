@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 Over the past few years, a long list of applications spawned from attention to privacy and anonymity solutions. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.
 
-This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash/) a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. __No endorsements should be assumed from this list.__
+This is a list of some of those alternate tools. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash/) a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. __No endorsements should be assumed from this list.__
 
 The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use our [GitHub account's torbsd.github.io "issues" page for any input](https://github.com/torbsd/torbsd.github.io/issues/).
 
@@ -148,7 +148,7 @@ Mailpile
 : notes:
 
 Mixmaster
-: __Description__: type II remailer for anonymous email
+: __Description__: type II anonymous remailer
 : http://mixmaster.sourceforge.net/
 : MIT: https://anonscm.debian.org/viewvc/pkg-mixmaster/trunk/Mix/COPYRIGHT?view=markup
 : http://sourceforge.net/projects/mixmaster/files/latest/download?source=files
@@ -165,7 +165,7 @@ Mixminion
 : MIT: https://github.com/nmathewson/mixminion/blob/master/LICENSE/
 : https://github.com/nmathewson/mixminion/
 : 0.0.8alpha3
-: FreeBSD: no*
+: FreeBSD: no
 : OpenBSD: no
 : pkgsrc: yes
 : DPorts: no
@@ -251,7 +251,7 @@ SecureDrop
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: topology review is probably first step.
+: notes: Topology review is probably first step. Very Debian-centric.
 
 SparkleShare
 : __Description__: Git-based file synchronization tool
@@ -319,7 +319,8 @@ OnionShare
 : __Description__: secure and anonymous file-sharing tool
 : https://onionshare.org/
 : GPLv3: https://github.com/michahflee/onionshare/blob/master/LICENSE
-: 0.7.1
+: https://github.com/micahflee/onionshare/
+: 0.8.1
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -341,7 +342,7 @@ ooni-probe
 Ring client and server
 : __Description__: open source communications platform
 : https://ring.cx/
-: git https://gerrit-ring.savoirfairelinux.com/ projects
+: git https://gerrit-ring.savoirfairelinux.com/projects
 : GPLv3: https://ring.cx/en/documentation/about-ring/
 : n/a
 : FreeBSD: no
@@ -374,7 +375,7 @@ Tor
 : DPorts: yes
 : notes:
 
-Tor alpha
+Tor Alpha/Development
 : __Description__: development version of the onion-routing daemon for anonymous networking
 : https://www.torproject.org/
 : BSD: https://gitweb.torproject.org/tor.git/tree/LICENSE/
@@ -470,7 +471,7 @@ Tor Messenger
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: requires Docker and a bunch of Perl modules. Early stages of dev. License reference is from old GitHub account, so may be inaccurate.
+: notes: requires Docker as a build dependency and a bunch of Perl modules. Early stages of development. License reference is from old GitHub account, so may be inaccurate.
 
 Tox/uTox
 : __Description__: UDP-based communications platform
@@ -569,6 +570,17 @@ Pond
 : DPorts: yes
 : notes: in DPorts yet it's in FreeBSD ports
 
+py-stem
+: Description: Python controller library for Tor
+: https://stem.torproject.org/
+: LGPL
+: 1.4.1b
+: Python www
+: FreeBSD: yes
+: OpenBSD: WIP
+: pkgsrc:
+: DPorts:
+: notes:
 Scallion
 : __Description__: GPU-basd Onion hash generator
 : n/a
@@ -609,7 +621,7 @@ tlsdate
 ###<a id="www">www</a>###
 
 HTTPS Everywhere
-: __Description__: Firefox add-on
+: __Description__: Firefox add-on enabling TLS/SSL when available
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no

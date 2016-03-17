@@ -23,7 +23,7 @@
 
 <p>Over the past few years, a long list of applications spawned from attention to privacy and anonymity solutions. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.</p>
 
-<p>This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably <em>shouldn&#8217;t</em> be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/<a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash/">bash</a> a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. <strong>No endorsements should be assumed from this list.</strong></p>
+<p>This is a list of some of those alternate tools. Most have not been ported to any of the BSDs. Some probably <em>shouldn&#8217;t</em> be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/<a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash/">bash</a> a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. <strong>No endorsements should be assumed from this list.</strong></p>
 
 <p>The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use our <a href="https://github.com/torbsd/torbsd.github.io/issues/">GitHub account&#8217;s torbsd.github.io &#8220;issues&#8221; page for any input</a>.</p>
 
@@ -251,7 +251,7 @@
 <dd>notes:</dd>
 
 <dt>Mixmaster</dt>
-<dd><strong>Description</strong>: type II remailer for anonymous email</dd>
+<dd><strong>Description</strong>: type II anonymous remailer</dd>
 
 <dd>http://mixmaster.sourceforge.net/</dd>
 
@@ -282,7 +282,7 @@
 
 <dd>0.0.8alpha3</dd>
 
-<dd>FreeBSD: no*</dd>
+<dd>FreeBSD: no</dd>
 
 <dd>OpenBSD: no</dd>
 
@@ -433,7 +433,7 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: topology review is probably first step.</dd>
+<dd>notes: Topology review is probably first step. Very Debian-centric.</dd>
 
 <dt>SparkleShare</dt>
 <dd><strong>Description</strong>: Git-based file synchronization tool</dd>
@@ -551,7 +551,9 @@
 
 <dd>GPLv3: https://github.com/michahflee/onionshare/blob/master/LICENSE</dd>
 
-<dd>0.7.1</dd>
+<dd>https://github.com/micahflee/onionshare/</dd>
+
+<dd>0.8.1</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -589,7 +591,7 @@
 
 <dd>https://ring.cx/</dd>
 
-<dd>git https://gerrit-ring.savoirfairelinux.com/ projects</dd>
+<dd>git https://gerrit-ring.savoirfairelinux.com/projects</dd>
 
 <dd>GPLv3: https://ring.cx/en/documentation/about-ring/</dd>
 
@@ -647,7 +649,7 @@
 
 <dd>notes:</dd>
 
-<dt>Tor alpha</dt>
+<dt>Tor Alpha/Development</dt>
 <dd><strong>Description</strong>: development version of the onion-routing daemon for anonymous networking</dd>
 
 <dd>https://www.torproject.org/</dd>
@@ -817,7 +819,7 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: requires Docker and a bunch of Perl modules. Early stages of dev. License reference is from old GitHub account, so may be inaccurate.</dd>
+<dd>notes: requires Docker as a build dependency and a bunch of Perl modules. Early stages of development. License reference is from old GitHub account, so may be inaccurate.</dd>
 
 <dt>Tox/uTox</dt>
 <dd><strong>Description</strong>: UDP-based communications platform</dd>
@@ -987,7 +989,28 @@
 
 <dd>notes: in DPorts yet it&#8217;s in FreeBSD ports</dd>
 
-<dt>Scallion</dt>
+<dt>py-stem</dt>
+<dd>Description: Python controller library for Tor</dd>
+
+<dd>https://stem.torproject.org/</dd>
+
+<dd>LGPL</dd>
+
+<dd>1.4.1b</dd>
+
+<dd>Python www</dd>
+
+<dd>FreeBSD: yes</dd>
+
+<dd>OpenBSD: WIP</dd>
+
+<dd>pkgsrc:</dd>
+
+<dd>DPorts:</dd>
+
+<dd>notes:
+Scallion</dd>
+
 <dd><strong>Description</strong>: GPU-basd Onion hash generator</dd>
 
 <dd>n/a</dd>
@@ -1057,7 +1080,7 @@
 
 <dl>
 <dt>HTTPS Everywhere</dt>
-<dd><strong>Description</strong>: Firefox add-on</dd>
+<dd><strong>Description</strong>: Firefox add-on enabling TLS/SSL when available</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -1128,7 +1151,7 @@ all script, and therefore a frivilous dependency</dd>
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Mon Mar 14 23:41:52 2016 UTC</code></p>
+<p><code>last updated: Thu Mar 17 19:03:53 2016 UTC</code></p>
 
 </body>
 </html>
