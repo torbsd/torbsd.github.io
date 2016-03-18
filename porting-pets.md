@@ -99,7 +99,7 @@ __tool-name__
 : NetBSD: yes
 : DragonFly: yes
 
-jhead
+<a id="pkg-jhead">jhead</a>
 : Description: tool for manipulating JPEG EXIF files
 : Site: [http://www.sentex.net/~mwandel/jhead/](http://www.sentex.net/~mwandel/jhead/)
 : License: [Public Domain](http://www.sentex.net/~mwandel/jhead/)
@@ -111,11 +111,11 @@ jhead
 : DPorts: yes
 : notes:
 
-MAT
-: __Description__: tool for removing metadata
-: http://mat.boum.org/
-: GPLv2: https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE/
-: Source: https://gitweb.torproject.org/user/jvoisin/mat.git
+<a id="pkg-MAT">MAT</a>
+: Description: tool for removing metadata
+: Site: [http://mat.boum.org/](http://mat.boum.org/)
+: License: [GPLv2](https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE/)
+: Source: [http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz](https://gitweb.torproject.org/user/jvoisin/mat.git)
 : Version: 0.5.4
 : FreeBSD: no
 : OpenBSD: no
@@ -123,12 +123,12 @@ MAT
 : DPorts: no
 : notes: command-line and GUI, with a library.
 
-pdf-redact-tools
-: __Description__: tools to redact and strip metadata from documents
-: https://firstlook.org/code/project/pdf-redact-tools/
-: GPLv3: https://github.com/firstlook/pdf-redact-tools/blob/master/LICENSE
-: https://github.com/firstlook/pdf-redact-tools/
-: 0.1
+<a id="pkg-pdf-redact-tools">pdf-redact-tools</a>
+: Description: tools to redact and strip metadata from documents
+: Site: [https://firstlook.org/code/project/pdf-redact-tools/](https://firstlook.org/code/project/pdf-redact-tools/)
+: License: [GPLv3](https://github.com/firstlook/pdf-redact-tools/blob/master/LICENSE)
+: Source: [https://github.com/firstlook/pdf-redact-tools/](https://github.com/firstlook/pdf-redact-tools/)
+: Version: 0.1
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
