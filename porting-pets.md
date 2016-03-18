@@ -162,24 +162,24 @@ __tool-name__
 : DPorts: no
 : notes: not under active development.
 
-Mixminion
-: __Description__: type III anonymous remailer
-: http://mixminion.net/
-: MIT: https://github.com/nmathewson/mixminion/blob/master/LICENSE/
-: https://github.com/nmathewson/mixminion/
-: 0.0.8alpha3
+<a id="pkg-Mixminion">__Mixminion__</a>
+: Description: type III anonymous remailer
+: Site: [http://mixminion.net](http://mixminion.net)
+: License: [MIT](https://github.com/nmathewson/mixminion/blob/master/LICENSE/)
+: Source: [https://github.com/nmathewson/mixminion/](https://github.com/nmathewson/mixminion/)
+: Version: 0.0.8alpha3
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: yes
 : DPorts: no
 : notes: not under active development.
 
-Torbirdy
-: __Description__: Thunderbird add-on for using accessing email over the Tor network
-: https://trac.torproject.org/projects/tor/wiki/torbirdy/
-: BSD: https://gitweb.torproject.org/torbirdy.git/tree/LICENSE
-: https://gitweb.torproject.org/torbirdy.git
-: 0.1.4
+<a id="pkg-Torbirdy>__Torbirdy__</a>
+: Description: Thunderbird add-on for using accessing email over the Tor network
+: Site: [https://trac.torproject.org/projects/tor/wiki/torbirdy/](https://trac.torproject.org/projects/tor/wiki/torbirdy/)
+: License: [BSD](https://gitweb.torproject.org/torbirdy.git/tree/LICENSE)
+: Source [https://gitweb.torproject.org/torbirdy.git](https://gitweb.torproject.org/torbirdy.git)
+: Version: 0.1.4
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
