@@ -174,7 +174,7 @@ __tool-name__
 : DPorts: no
 : notes: not under active development.
 
-<a id="pkg-Torbirdy>__Torbirdy__</a>
+<a id="pkg-Torbirdy">__Torbirdy__</a>
 : Description: Thunderbird add-on for using accessing email over the Tor network
 : Site: [https://trac.torproject.org/projects/tor/wiki/torbirdy/](https://trac.torproject.org/projects/tor/wiki/torbirdy/)
 : License: [BSD](https://gitweb.torproject.org/torbirdy.git/tree/LICENSE)
