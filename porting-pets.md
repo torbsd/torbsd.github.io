@@ -40,16 +40,16 @@ __tool-name__
 ###<a id="editors">editors</a>###
 
 <a id="pkg-autocanary">__AutoCanary__</a>
-: __Description__: desktop application for generating machine-readable, signed canary statements
+: Description: desktop application for generating machine-readable, signed canary statements
 : Site: [https://firstlook.org/code/project/autocanary/](https://firstlook.org/code/project/autocanary/)
-: __License__: [GPLv3](https://github.com/firstlook/autocanary/blob/master/LICENSE.md)
-: __Source__: [GitHub](https://github.com/firstlook/autocanary/)
-: __Version__: [0.1](https://github.com/firstlook/autocanary/releases/tag/0.1/)
-: __FreeBSD__: no
-: __OpenBSD__: no
-: __NetBSD__: no
-: __DragonFly__: no
-: __Notes__: [Wikipedia on Warrant Canaries](https://en.wikipedia.org/wiki/Warrant_canary/)
+: License: [GPLv3](https://github.com/firstlook/autocanary/blob/master/LICENSE.md)
+: Source: [GitHub](https://github.com/firstlook/autocanary/)
+: Version: 0.1
+: FreeBSD: no
+: OpenBSD: no
+: NetBSD: no
+: DragonFly: no
+: Notes: [Wikipedia on Warrant Canaries](https://en.wikipedia.org/wiki/Warrant_canary/)
 
 <a id="pkg-ethercalc">__EtherCalc__</a>
 : __Description__: collaborative spreadsheet application
