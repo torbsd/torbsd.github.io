@@ -322,72 +322,72 @@ __tool-name__
 : DPorts: no
 : notes:
 
-OnionShare
-: __Description__: secure and anonymous file-sharing tool
-: https://onionshare.org/
-: GPLv3: https://github.com/michahflee/onionshare/blob/master/LICENSE
-: https://github.com/micahflee/onionshare/
-: 0.8.1
+<a id="pkg-OnionShare">__OnionShare__</a>
+: Description: secure and anonymous file-sharing tool
+: Site: [https://onionshare.org/](https://onionshare.org/)
+: License: [GPLv3](https://github.com/michahflee/onionshare/blob/master/LICENSE)
+: Source: [https://github.com/micahflee/onionshare/](https://github.com/micahflee/onionshare/)
+: Version: 0.8.1
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
 : notes:
 
-ooni-probe
-: __Description__: network measurement framework for detecting network interference
-: https://ooni.torproject.org/
-: BSD: https://gitweb.torproject.org/onionoo.git/tree/LICENSE
-: https://github.com/TheTorProject/ooni-probe/
-: 1.3.1
+<a id="pkg-ooni-probe">__ooni-probe__</a>
+: Description: network measurement framework for detecting network interference
+: Site: [https://ooni.torproject.org/](https://ooni.torproject.org/)
+: License: [BSD](https://gitweb.torproject.org/onionoo.git/tree/LICENSE)
+: Source: [https://github.com/TheTorProject/ooni-probe/](https://github.com/TheTorProject/ooni-probe/)
+: Version: 1.3.1
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
 : notes:
 
-Ring client and server
-: __Description__: open source communications platform
-: https://ring.cx/
-: git https://gerrit-ring.savoirfairelinux.com/projects
-: GPLv3: https://ring.cx/en/documentation/about-ring/
-: n/a
+<a id="pkg-ring">__Ring__</a>
+: Description: open source communications platform
+: Site: [https://ring.cx/](https://ring.cx/)
+: License: [GPLv3](https://ring.cx/en/documentation/about-ring/)
+: Source: [https://github.com/savoirfairelinux/ring-project](https://github.com/savoirfairelinux/ring-project)
+: Version: various
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: various components for the platform
+: notes: various components for the platform, including daemon and GNOME client
 
-Syncthing
-: __Description__: open-source cloud storage and synchronization
-: https://syncthing.net/
-: MPLv2
-: https://github.com/syncthing/syncthing/
-: 0.12.3
+<a id="pkg-Syncthing">__Syncthing__</a>
+: Description: open-source cloud storage and synchronization
+: Site: [https://syncthing.net/](https://syncthing.net/)
+: License: [MPLv2](https://github.com/syncthing/syncthing/blob/master/LICENSE)
+: Source: [https://github.com/syncthing/syncthing/](https://github.com/syncthing/syncthing/)
+: Version: 0.12.20
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: yes
 : DPorts: no
 : notes: in FreeBSD ports but not DragonFly BSD?
 
-Tor
-: __Description__: stable version of the onion-routing daemon for anonymous networking
-: https://www.torproject.org/
-: BSD: https://gitweb.torproject.org/tor.git/tree/LICENSE
-: https://gitweb.torproject.org/tor.git/
-: 0.6.10
+<a id="pkg-Tor">__Tor__</a>
+: Description: stable version of the onion-routing daemon for anonymous networking
+: Site: [https://www.torproject.org/](https://www.torproject.org/)
+: License: [BSD](https://gitweb.torproject.org/tor.git/tree/LICENSE)
+: Source: [https://gitweb.torproject.org/tor.git/](https://gitweb.torproject.org/tor.git/)
+: Version: 0.2.7.6
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: yes
 : DPorts: yes
 : notes:
 
-Tor Alpha/Development
-: __Description__: development version of the onion-routing daemon for anonymous networking
-: https://www.torproject.org/
-: BSD: https://gitweb.torproject.org/tor.git/tree/LICENSE/
-: https://gitweb.torproject.org/tor.git/
-: 0.2.7.4rc
+<a id="pkg-Tor-Alpha">__Tor Alpha/Development__</a>
+: Description: development version of the onion-routing daemon for anonymous networking
+: Site: [https://www.torproject.org/](https://www.torproject.org/)
+: License: [BSD](https://gitweb.torproject.org/tor.git/tree/LICENSE/)
+: Source: [https://gitweb.torproject.org/tor.git/](https://gitweb.torproject.org/tor.git/)
+: Source: 0.2.8.1-alpha
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: yes
