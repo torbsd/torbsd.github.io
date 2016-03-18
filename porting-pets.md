@@ -26,7 +26,6 @@ These are loose categorizations of the ports. Where there is no consensus among 
 
 __tool-name__
 : __Description__: _short-descr_
-: __License__: _name of license and link to actual text for project_
 : __Site__: _www-site_
 : __License__: _explicit license stated, along with URL to the actual_
 : __Source__: _url to distfile_
@@ -111,7 +110,7 @@ __tool-name__
 : DPorts: yes
 : notes:
 
-<a id="pkg-MAT">__MAT__</a>
+<a id="pkg-mat">__MAT__</a>
 : Description: tool for removing metadata
 : Site: [http://mat.boum.org/](http://mat.boum.org/)
 : License: [GPLv2](https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE/)
@@ -138,7 +137,7 @@ __tool-name__
 ###<a id="mail">mail</a>###
 
 
-<a id="pkg-Mailpile">__Mailpile__</a>
+<a id="pkg-mailpile">__Mailpile__</a>
 : Description: fast webmail client with built-in security features
 : Site: [http://www.mailpile.is](http://www.mailpile.is/)
 : License: [AGPLv3](https://github.com/mailpile/Mailpile/)
@@ -150,7 +149,7 @@ __tool-name__
 : DPorts: yes
 : notes:
 
-<a id="pkg-Mixmaster">__Mixmaster__</a>
+<a id="pkg-mixmaster">__Mixmaster__</a>
 : Description: type II anonymous remailer
 : Site: [http://mixmaster.sourceforge.net/](http://mixmaster.sourceforge.net/)
 : License: [MIT](https://anonscm.debian.org/viewvc/pkg-mixmaster/trunk/Mix/COPYRIGHT?view=markup)
@@ -162,7 +161,7 @@ __tool-name__
 : DPorts: no
 : notes: not under active development.
 
-<a id="pkg-Mixminion">__Mixminion__</a>
+<a id="pkg-mixminion">__Mixminion__</a>
 : Description: type III anonymous remailer
 : Site: [http://mixminion.net](http://mixminion.net)
 : License: [MIT](https://github.com/nmathewson/mixminion/blob/master/LICENSE/)
@@ -174,7 +173,7 @@ __tool-name__
 : DPorts: no
 : notes: not under active development.
 
-<a id="pkg-Torbirdy">__Torbirdy__</a>
+<a id="pkg-torbirdy">__Torbirdy__</a>
 : Description: Thunderbird add-on for using accessing email over the Tor network
 : Site: [https://trac.torproject.org/projects/tor/wiki/torbirdy/](https://trac.torproject.org/projects/tor/wiki/torbirdy/)
 : License: [BSD](https://gitweb.torproject.org/torbirdy.git/tree/LICENSE)
@@ -188,7 +187,7 @@ __tool-name__
 
 ###<a id="misc">misc</a>###
 
-<a id="pkg-Kontalk">__Kontalk server__</a>
+<a id="pkg-kontalk">__Kontalk server__</a>
 : Description: encrypted communications platform
 : Site: [http://www.kontalk.org/](http://www.kontalk.org/)
 : License: GPLv3 check each component under GitHub account
@@ -200,7 +199,7 @@ __tool-name__
 : DPorts: no
 : notes: client and server component of Kontalk XMPP client
 
-<a id="pkg-LEAP">__LEAP__</a>
+<a id="pkg-leap">__LEAP__</a>
 : Description: secure server client platform
 : Site: [https://leap.se/](https://leap.se/)
 : License: GPLv3 https://leap.se/git/{bitmask_client.git,leap_platform,git,etc}/blob/HEAD:/LICENSE
@@ -212,7 +211,7 @@ __tool-name__
 : DPorts: no
 : notes: various components would needed for full porting, but starting point is likely the platform.
 
-<a id="pkg-Libertree">__Libertree__</a>
+<a id="pkg-libertree">__Libertree__</a>
 : Description: open-source platform for creating private social networks
 : Site: [http://www.libertree.org/](http://www.libertree.org/)
 : License: [GNU Affero](https://github.com/Libertree/libertree/blob/master/LICENCE)
@@ -224,7 +223,7 @@ __tool-name__
 : DPorts: no
 : notes:
 
-<a id="pkg-Martus-Desktop">__Martus Desktop__</a>
+<a id="pkg-martus-desktop">__Martus Desktop__</a>
 : Description: platform for collecting, safeguarding, organizing and sharing info
 : Site: [https://www.martus.org/](https://www.martus.org/)
 : License: ???
@@ -236,7 +235,7 @@ __tool-name__
 : DPorts: no
 : notes:
 
-<a id="pkg-Martus-Server">__Martus Server__</a>
+<a id="pkg-martus-server">__Martus Server__</a>
 : Description: platform for collecting, safeguarding, organizing and sharing info
 : Site: [https://www.martus.org/](https://www.martus.org/)
 : License: ??
@@ -248,7 +247,7 @@ __tool-name__
 : DPorts: no
 : notes:
 
-<a id="pkg-SecureDrop">__SecureDrop__</a>
+<a id="pkg-securedrop">__SecureDrop__</a>
 : Description: open-source whistleblower submission system
 : Site: [https://securedrop.org/](https://securedrop.org)
 : License: [AGPL](https://github.com/freedomofpress/securedrop/blob/develop/LICENSE)
@@ -260,7 +259,7 @@ __tool-name__
 : DPorts: no
 : notes: Topology review is probably first step. Very Debian-centric.
 
-<a id="pkg-SparkleShare">__SparkleShare__</a>
+<a id="pkg-sparkleshare">__SparkleShare__</a>
 : Description: Git-based file synchronization tool
 : Site: [http://sparkleshare.org/](http://sparkleshare.org)
 : License: [GPLv3](https://github.com/hbons/SparkleShare/blob/master/legal/License_for_SparkleShare.txt)
@@ -272,7 +271,7 @@ __tool-name__
 : DPorts: no
 : notes: essentially a GUI for git with server and client components
 
-<a id="pkg-Syncany">__Syncany__</a>
+<a id="pkg-syncany">__Syncany__</a>
 : Description: open-source cloud storage and filesharing application
 : Site: [https://www.syncany.org/](https://www.syncany.org/)
 : License: [GPLv3](https://github.com/syncany/syncany/blob/develop/LICENSE.md)
@@ -284,7 +283,7 @@ __tool-name__
 : DPorts: no
 : notes:
 
-<a id="pkg-Turtl">__Turtl__</a>
+<a id="pkg-turtl">__Turtl__</a>
 : Description: encrypted personal database and note-taking application
 : Site: [https://turtl.it/](https://turtl.it)
 : License: [GPLv3](https://github.com/turtl/api/blob/master/LICENSE/)
@@ -322,7 +321,7 @@ __tool-name__
 : DPorts: no
 : notes:
 
-<a id="pkg-OnionShare">__OnionShare__</a>
+<a id="pkg-onionshare">__OnionShare__</a>
 : Description: secure and anonymous file-sharing tool
 : Site: [https://onionshare.org/](https://onionshare.org/)
 : License: [GPLv3](https://github.com/michahflee/onionshare/blob/master/LICENSE)
@@ -358,7 +357,7 @@ __tool-name__
 : DPorts: no
 : notes: various components for the platform, including daemon and GNOME client
 
-<a id="pkg-Syncthing">__Syncthing__</a>
+<a id="pkg-syncthing">__Syncthing__</a>
 : Description: open-source cloud storage and synchronization
 : Site: [https://syncthing.net/](https://syncthing.net/)
 : License: [MPLv2](https://github.com/syncthing/syncthing/blob/master/LICENSE)
@@ -370,7 +369,7 @@ __tool-name__
 : DPorts: no
 : notes: in FreeBSD ports but not DragonFly BSD?
 
-<a id="pkg-Tor">__Tor__</a>
+<a id="pkg-tor">__Tor__</a>
 : Description: stable version of the onion-routing daemon for anonymous networking
 : Site: [https://www.torproject.org/](https://www.torproject.org/)
 : License: [BSD](https://gitweb.torproject.org/tor.git/tree/LICENSE)
@@ -382,7 +381,7 @@ __tool-name__
 : DPorts: yes
 : notes:
 
-<a id="pkg-Tor-Alpha">__Tor Alpha/Development__</a>
+<a id="pkg-tor-alpha">__Tor Alpha/Development__</a>
 : Description: development version of the onion-routing daemon for anonymous networking
 : Site: [https://www.torproject.org/](https://www.torproject.org/)
 : License: [BSD](https://gitweb.torproject.org/tor.git/tree/LICENSE/)
@@ -394,7 +393,7 @@ __tool-name__
 : DPorts: yes
 : notes: The alpha version is worth considering for production since it's stable and often the most effective in terms of circumvention counter-measures. OpenBSD does not include alpha or development versions of software in their ports
 
-<a id="pkg-Torsocks">__Torsocks__</a>
+<a id="pkg-torsocks">__Torsocks__</a>
 : Description: SOCKS proxy for routing TCP applications through the Tor network
 : Site: [https://www.torproject.org/](https://www.torproject.org/)
 : License: [GPLv2](https://gitweb.torproject.org/torsocks.git/tree/LICENSE/)
@@ -406,7 +405,7 @@ __tool-name__
 : DPorts: yes
 : notes: relies on torrc SOCKS port matching torsocks configuration.
 
-<a id="pkg-Torstatus">__Torstatus__</a>
+<a id="pkg-torstatus">__Torstatus__</a>
 : Description: tool for aggregating and presenting public information about the Tor network
 : Site: n/a
 : License: [BSD](https://gitweb.torproject.org/torstatus.git/tree/doc/LICENSE)
@@ -420,7 +419,7 @@ __tool-name__
 
 ###<a id="net-im">net-im</a>###
 
-<a id="pkg-Cryptocat">__Cryptocat__</a>
+<a id="pkg-cryptocat">__Cryptocat__</a>
 : Description: accessible chat client
 : Site: [https://crypto.cat/](https://crypto.cat/)
 : License: [GNU Affero](https://github.com/cryptocat/cryptocat/blob/master/LICENSE.txt)
@@ -432,7 +431,7 @@ __tool-name__
 : DPorts: no
 : notes: activity since 201412?
 
-<a id="pkg-Jitsi">__Jitsi__</a>
+<a id="pkg-jitsi">__Jitsi__</a>
 : Description: XMPP/SIP client
 : Site: [https://jitsi.org/](https://jitsi.org/)
 : License: [Apache 2.0](https://github.com/jitsi/jitsi/blob/master/LICENSE)
@@ -444,7 +443,7 @@ __tool-name__
 : DPorts: yes
 : notes: Java-based
 
-<a id="pkg-Ricochet">__Ricochet__</a>
+<a id="pkg-ricochet">__Ricochet__</a>
 : Description: instant messaging client
 : Site: [https://ricochet.im/](https://ricochet.im/)
 : License: [BSD](https://github.com/ricochet-im/ricochet/blob/master/LICENSE)
@@ -456,7 +455,7 @@ __tool-name__
 : DPorts: no
 : notes:
 
-<a id="pkg-TorChat2">__TorChat2__</a>
+<a id="pkg-torchat2">__TorChat2__</a>
 : Description: peer-to-peer instant messenger running on Tor hidden services
 : Site: [https://github.com/prof7bit/TorChat/wiki/](https://github.com/prof7bit/TorChat/wiki/)
 : License: [GPLv3](https://en.wikipedia.org/wiki/TorChat)
@@ -468,7 +467,7 @@ __tool-name__
 : DPorts: no
 : notes: license? Last activity 2014. 202 forks. . .
 
-<a id="pkg-Tor-Messenger">__Tor Messenger__</a>
+<a id="pkg-tor-messenger">__Tor Messenger__</a>
 : Description: instant messenger for anonymity utilizing existing protocols
 : Site: n/a
 : License: [GPLv2](https://github.com/rovemonteux/tormessenger/blob/master/LICENSE)
@@ -480,11 +479,12 @@ __tool-name__
 : DPorts: no
 : notes: requires Docker as a build dependency and a bunch of Perl modules. Early stages of development. License reference is from old GitHub account, so may be inaccurate.
 
-<a id="pkg-Tox">__Tox/uTox__</a>
+<a id="pkg-tox">__Tox/uTox__</a>
 : Description: UDP-based communications platform
 : Site: [https://tox.chat/](https://tox.chat/)
 : License: [GPLv3])(https://github.com/irungentoo/toxcore/blob/master/COPYING)
 : Source: [https://github.com/irungentoo/toxcore/](https://github.com/irungentoo/toxcore/)
+: Version:
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
@@ -495,7 +495,7 @@ __tool-name__
 : Description: private messaging system that hides metadata
 : Site: n/a
 : License: [AGPLv3](https://github.com/davidlazar/vuvuzela/blob/master/LICENSE) 
-: https://github.com/davidlazar/vuvuzela
+: Source: [https://github.com/davidlazar/vuvuzela](https://github.com/davidlazar/vuvuzela)
 : Version: 0.1
 : FreeBSD: no
 : OpenBSD: no
@@ -506,10 +506,11 @@ __tool-name__
 
 ###<a id="net-p2p">net-p2p</a>###
 
-Bitmessage
-: __Description__: https://bitmessage.org/wiki/Main_Page
-: MIT: https://github.com/Bitmessage/PyBitmessage/blob/master/LICENSE
-: https://github.com/Bitmessage/PyBitMessage
+<a id="pkg-bitmessage">__Bitmessage__</a>
+: Description: messaging platform to Bitcoin
+: Site: [https://bitmessage.org/wiki/Main_Page](https://bitmessage.org/wiki/Main_Page)
+: License: [MIT](https://github.com/Bitmessage/PyBitmessage/blob/master/LICENSE)
+: Source: [https://github.com/Bitmessage/PyBitMessage](https://github.com/Bitmessage/PyBitMessage)
 : Version: 0.4.4
 : FreeBSD: yes
 : OpenBSD: no
@@ -517,12 +518,12 @@ Bitmessage
 : DPorts: yes
 : notes:
 
-RetroShare
-: __Description__: secure, decentralized P2P platform
-: http://retroshare.sourceforge.net
-: GPLv3: http://retroshare.sourceforge.net/wiki/index.php/Main_Page
-: https://github.com/RetroShare/RetroShare
-: 0.6.0 RC2.8551
+<a id="pkg-retroshare">__RetroShare__</a>
+: Description: secure, decentralized P2P platform
+: Site: [http://retroshare.sourceforge.net](http://retroshare.sourceforge.net)
+: License: [GPLv3](http://retroshare.sourceforge.net/wiki/index.php/Main_Page)
+: Source: [https://github.com/RetroShare/RetroShare](https://github.com/RetroShare/RetroShare)
+: Version: 0.6.0 RC2.8551
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: no
@@ -531,81 +532,85 @@ RetroShare
 
 ###<a id="security">security</a>###
 
-gpg4usb
-: __Description__: portable editor for encrypting and decrypting files
-: http://www.gpg4usb.org
-: GPLv3: https://github.com/gpg4usb/gpg4usb/blob/master/COPYING
-: https://github.com/gpg4usb/gpg4usb
-: 0.3.3-1
+<a id="pkg-gpg4usb">__gpg4usb__</a>
+: Description: portable editor for encrypting and decrypting files
+: Site: [http://www.gpg4usb.org](http://www.gpg4usb.org)
+: License: [GPLv3](https://github.com/gpg4usb/gpg4usb/blob/master/COPYING)
+: Source: [https://github.com/gpg4usb/gpg4usb](https://github.com/gpg4usb/gpg4usb)
+: Version: 0.3.3-1
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
 : notes:
 
-KeePassX
-: __Description__: password management utility
-: http://www.keepassx.org/
-: various: https://github.com/keepassx/keepassx/
-: https://github.com/keepassx/keepassx/
-: 2.0 Beta 2
+<a id="pkg-keepassx">__KeePassX__</a>
+: Description: password management utility
+: Site: [http://www.keepassx.org/](http://www.keepassx.org/)
+: License: [Various](https://github.com/keepassx/keepassx/)
+: Source: [https://github.com/keepassx/keepassx/](https://github.com/keepassx/keepassx/)
+: Version: 2.0 Beta 2
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: yes
 : DPorts: yes
 : notes:
 
-obfsproxy
-: __Description__: pluggable transport for Tor
-: n/a
-: BSD: https://gitweb.torproject.org/pluggable-transports/obfsproxy.git/tree/LICENSE
-: 0.2.13
+<a id="pkg-obfsproxy">__obfsproxy__</a>
+: Description: pluggable transport for Tor
+: Site: n/a
+: License: [BSD](https://gitweb.torproject.org/pluggable-transports/obfsproxy.git/tree/LICENSE)
+: Source: [https://gitweb.torproject.org/pluggable-transports/obfsproxy.git](https://gitweb.torproject.org/pluggable-transports/obfsproxy.git)
+: Version: 0.2.13
 : FreeBSD: yes
-: OpenBSD: no
-: pkgsrc: 
+: OpenBSD: no (as WIP)
+: pkgsrc: no
 : DPort:
 : notes: 
 
-Pond
-: __Description__: forward secure, asynchronous messaging
-: https://pond.imperialviolet.org
-: BSD: https://github.com/agl/pond/blob/master/LICENSE
-: 0.1.1
-: https://github.com/agl/pond/
+<a id="pkg-pond">__Pond__</a>
+: Description: forward secure, asynchronous messaging
+: Site: [https://pond.imperialviolet.org](https://pond.imperialviolet.org)
+: License: [BSD](https://github.com/agl/pond/blob/master/LICENSE)
+: Source: [https://github.com/agl/pond/](https://github.com/agl/pond/)
+: Version: 0.1.1
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: yes
-: notes: in DPorts yet it's in FreeBSD ports
+: notes:
 
-py-stem
+<a id="pkg-py-stem">__py-stem__</a>
 : Description: Python controller library for Tor
-: https://stem.torproject.org/
-: LGPL
-: 1.4.1b
+: Site: [https://stem.torproject.org/](https://stem.torproject.org/)
+: License: LGPL
+: Source:
+: Version: 1.4.1b
 : Python www
 : FreeBSD: yes
-: OpenBSD: WIP
-: pkgsrc:
+: OpenBSD: yes
+: pkgsrc: no
 : DPorts:
 : notes:
-Scallion
-: __Description__: GPU-basd Onion hash generator
-: n/a
-: BSD: https://github.com/lachesis/scallion/blob/gpg/LICENCE.txt
-: 1.2
-: https://github.com/lachesis/scallion/
+
+<a id="pkg-scallion">__Scallion__</a>
+: Description: GPU-basd Onion hash generator
+: Site: n/a
+: License: [BSD](https://github.com/lachesis/scallion/blob/gpg/LICENCE.txt)
+: Source: [https://github.com/lachesis/scallion/](https://github.com/lachesis/scallion/)
+: Version: 1.2
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
 : notes: useful for creating custom or "vanity" GPG keys or .onion addresses
 
-sslyze
-: __Description__: full-featured SSL scanner
-: GPLv2: https://github.com/nabla-c0d3/sslyze/blob/master/LICENSE.txt
-: https://github.com/nabla-c0d3/sslyze
-: 0.10
+<a id="pkg-sslyze">__sslyze__</a>
+: Description: full-featured SSL scanner
+: Site: n/a
+: License: [GPLv2](https://github.com/nabla-c0d3/sslyze/blob/master/LICENSE.txt)
+: Source: [https://github.com/nabla-c0d3/sslyze](https://github.com/nabla-c0d3/sslyze)
+: Version: 0.10
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -614,12 +619,12 @@ sslyze
 
 ###<a id="sysutils">sysutils</a>###
 
-tlsdate
-: __Description__: secure parasitic rdate replacement
-: n/a
-: BSD: https://github.com/ioerror/tlsdate/blob/master/LICENSE
-: https://github.com/ioerror/tlsdate/
-: 0.0.13
+<a id="pkg-tlsdate">__tlsdate__</a>
+: Description: secure parasitic rdate replacement
+: Site: n/a
+: License: [BSD](https://github.com/ioerror/tlsdate/blob/master/LICENSE)
+: Source: [https://github.com/ioerror/tlsdate/](https://github.com/ioerror/tlsdate/)
+: Version: 0.0.13
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
@@ -628,46 +633,54 @@ tlsdate
 
 ###<a id="www">www</a>###
 
-HTTPS Everywhere
-: __Description__: Firefox add-on enabling TLS/SSL when available
+<a id="pkg-httpseverywhere">__HTTPS Everywhere__</a>
+: Description: Firefox add-on enabling TLS/SSL when available
+: Site: n/a
+: License:
+: Source:
+: Version:
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: nO
 : DPorts: no
 : notes: /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) inst
-all script, and therefore a frivilous dependency
+all script
 
-NoScript
-: __Description__: Firefox add-on for blocking scripts
-: https://noscript.net/
-: GPLv3: https://noscript.net/faq#qa1_14
-: 2.6.9.39
+<a id="pkg-noscript">__NoScript__</a>
+: Description: Firefox add-on for blocking scripts
+: Site: [https://noscript.net/](https://noscript.net/)
+: License: [GPLv3](https://noscript.net/faq#qa1_14)
+: Source:
+: Version: 2.6.9.39
+: FreeBSD:
+: OpenBSD:
+: pkgsrc:
+: DPorts:
 : notes: Mozilla add-ons as ports?
 
-sigbin
-: __Description__: web application for storing PGP-signed messages
-: none
-: GPLv3: https://github.com/firstlook/sigbin/blob/master/LICENSE.md
-: https://github.com/firstlook/sigbin/
-: n/a
+<a id="pkg-sigbin">__sigbin__</a>
+: Description: web application for storing PGP-signed messages
+: Site: n/a 
+: License: [GPLv3](https://github.com/firstlook/sigbin/blob/master/LICENSE.md)
+: Source: [https://github.com/firstlook/sigbin/](https://github.com/firstlook/sigbin/)
+: Version:
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
 : notes: very early stages of development
 
-Tor Browser
-: __Description__: Firefox-based browser for using the Tor anonymity network
-: https://www.torproject.org/projects/torbrowser.html.en
-: various: https://gitweb.torproject.org/tor-browser.git/tree/toolkit/content/license.html?h=esr24
-: https://gitweb.torproject.org/tor-browser.git/
-: 5.0.4
+<a id="pkg-torbrowser">__Tor Browser__</a>
+: Description: Firefox-based browser for using the Tor anonymity network
+: Site: [https://www.torproject.org/projects/torbrowser.html.en](https://www.torproject.org/projects/torbrowser.html.en)
+: License: [Various](https://gitweb.torproject.org/tor-browser.git/tree/toolkit/content/license.html?h=esr24)
+: Source: [https://gitweb.torproject.org/tor-browser.git/](https://gitweb.torproject.org/tor-browser.git/)
+: Version: 5.5.4
 : FreeBSD: no
 : OpenBSD: no, [well...](https://github.com/torbsd/openbsd-ports)
-: pkgsrc: no
+: pkgsrc: yes
 : DPorts: no
-: notes: A lot of effort is going into __TDP's__ Tor Browser builds for OpenBSD, and we are in conversations about porting to other BSDs.
+: notes: A lot of effort is going into __TDP's__ Tor Browser builds for OpenBSD, and we are in conversations about porting to other BSDs. pkgsrc version is not a fork and takes a different route completely than __TDP__.
 
 
 {{footer.md}}
-
