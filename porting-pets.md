@@ -34,7 +34,7 @@ __tool-name__
 : __FreeBSD__: [FreeBSD ports system](https://svnweb.freebsd.org/ports/head/)
 : __OpenBSD__: [OpenBSD packages](http://ftp.openbsd.org/pub/OpenBSD/snapshots/packages/), which generally also apply to BitRig
 : __NetBSD__: [NetBSD's pkgsrc](http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/README.html) for multiple operating systems
-: __DragonFly__: [DragonFly BSD's ports](http://mirrors.nycbug.org/pub/DragonflyBSD/dports/dragonfly:4.4:x86:64/LATEST//All/), similar to FreeBSD
+: __DragonFly__: [DragonFly BSD's ports](http://avalon.dragonflybsd.org/dports/dragonfly:4.6:x86:64/LATEST/All/), similar to FreeBSD
 : __Notes__: _etc..._
 
 ###<a id="editors">editors</a>###
