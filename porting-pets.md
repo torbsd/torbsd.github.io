@@ -115,8 +115,8 @@ __tool-name__
 : Description: tool for removing metadata
 : Site: [http://mat.boum.org/](http://mat.boum.org/)
 : License: [GPLv2](https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE/)
-: Source: [http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz](https://gitweb.torproject.org/user/jvoisin/mat.git)
-: Version: 0.5.4
+: Source: [https://gitweb.torproject.org/user/jvoisin/mat.git](https://gitweb.torproject.org/user/jvoisin/mat.git)
+: Version: 0.6.1
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -143,7 +143,7 @@ __tool-name__
 : Site: [http://www.mailpile.is](http://www.mailpile.is/)
 : License: [AGPLv3](https://github.com/mailpile/Mailpile/)
 : Source: [https://github.com/mailpile/Mailpile/](https://github.com/mailpile/Mailpile/)
-: Version: beta III
+: Version: 0.5.2
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
