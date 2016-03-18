@@ -52,26 +52,28 @@ __tool-name__
 : Notes: [Wikipedia on Warrant Canaries](https://en.wikipedia.org/wiki/Warrant_canary/)
 
 <a id="pkg-ethercalc">__EtherCalc__</a>
-: __Description__: collaborative spreadsheet application
-: __Site__: [https://ethercalc.net/](https://ethercalc.net/)
-: __License__: [CPAL 1.0 Artistic License 2.0](https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt)
-: __Source__: [GitHub](https://github.com/audreyt/ethercalc/)
-: __Version__: [0.20151108.1](https://github.com/audreyt/ethercalc/releases/tag/0.20151108.1)
-: __FreeBSD__: no
-: __OpenBSD__: no
-: __NetBSD__: no
-: __DragonFly__: no
+: Description: collaborative spreadsheet application
+: Site: [https://ethercalc.net/](https://ethercalc.net/)
+: License: [CPAL 1.0 Artistic License 2.0](https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt)
+: Source: [GitHub](https://github.com/audreyt/ethercalc/)
+: Version: 0.20151108.1
+: FreeBSD__: no
+: OpenBSD__: no
+: NetBSD__: no
+: DragonFly__: no
+: Notes:
 
 <a id="pkg-etherpad">__Etherpad__</a>
-: __Description__: collaborative editing application
+: Description: collaborative editing application
 : Site: [http://etherpad.org/](http://etherpad.org/)
-: License: Apache 2.0 https://github.com/ether/etherpad-lite/blob/develop/LICENSE/
+: License: [Apache 2.0] (https://github.com/ether/etherpad-lite/blob/develop/LICENSE/)
 : Source: https://github.com/ether/etherpad-lite/
 : Version: 1.5.7
 : FreeBSD: no
 : OpenBSD: no
 : NetBSD: no
 : DragonFly: no
+: Notes:
 
 ###<a id="graphics">graphics</a>###
 
