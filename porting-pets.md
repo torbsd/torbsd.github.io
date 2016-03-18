@@ -394,106 +394,107 @@ __tool-name__
 : DPorts: yes
 : notes: The alpha version is worth considering for production since it's stable and often the most effective in terms of circumvention counter-measures. OpenBSD does not include alpha or development versions of software in their ports
 
-Torsocks
-: __Description__: SOCKS proxy for routing TCP applications through the Tor network
-: https://www.torproject.org/
-: GPLv2: https://gitweb.torproject.org/torsocks.git/tree/LICENSE/
-: https://gitweb.torproject.org/torsocks.git/
-: 2.1.0
+<a id="pkg-Torsocks">__Torsocks__</a>
+: Description: SOCKS proxy for routing TCP applications through the Tor network
+: Site: [https://www.torproject.org/](https://www.torproject.org/)
+: License: [GPLv2](https://gitweb.torproject.org/torsocks.git/tree/LICENSE/)
+: Source: [https://gitweb.torproject.org/torsocks.git/](https://gitweb.torproject.org/torsocks.git/)
+: Version: 2.1.0
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: yes
 : DPorts: yes
 : notes: relies on torrc SOCKS port matching torsocks configuration.
 
-Torstatus
-: __Description__: tool for aggregating and presenting public information about the Tor network
-: n/a
-: BSD: https://gitweb.torproject.org/torstatus.git/tree/doc/LICENSE
-: https://gitweb.torproject.org/torstatus.git/
-: n/a
+<a id="pkg-Torstatus">__Torstatus__</a>
+: Description: tool for aggregating and presenting public information about the Tor network
+: Site: n/a
+: License: [BSD](https://gitweb.torproject.org/torstatus.git/tree/doc/LICENSE)
+: Source: [https://gitweb.torproject.org/torstatus.git/](https://gitweb.torproject.org/torstatus.git/)
+: Version: n/a
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: outputs to www with Django for easy presentation and queries on the network.
+: notes: outputs to www with Django for easy presentation and queries on the network with main site at https://torstatus.blutmagie.de/
 
 ###<a id="net-im">net-im</a>###
 
-Cryptocat
-: __Description__: accessible chat client
-: https://crypto.cat/
-: GNU Affero: https://github.com/cryptocat/cryptocat/blob/master/LICENSE.txt
-: https://github.com/cryptocat/cryptocat/
-: 2.2.2
+<a id="pkg-Cryptocat">__Cryptocat__</a>
+: Description: accessible chat client
+: Site: [https://crypto.cat/](https://crypto.cat/)
+: License: [GNU Affero](https://github.com/cryptocat/cryptocat/blob/master/LICENSE.txt)
+: Source: [https://github.com/cryptocat/cryptocat/](https://github.com/cryptocat/cryptocat/)
+: Version: 2.2.2
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: little activity since 201412
+: notes: activity since 201412?
 
-Jitsi
-: __Description__: XMPP/SIP client
-: https://jitsi.org/
-: Apache 2.0: https://github.com/jitsi/jitsi/blob/master/LICENSE
-: https://github.com/jitsi/jitsi/
-: 2.8.5426
+<a id="pkg-Jitsi">__Jitsi__</a>
+: Description: XMPP/SIP client
+: Site: [https://jitsi.org/](https://jitsi.org/)
+: License: [Apache 2.0](https://github.com/jitsi/jitsi/blob/master/LICENSE)
+: Source: [https://github.com/jitsi/jitsi/](https://github.com/jitsi/jitsi/)
+: Version: 5500
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: yes
 : notes: Java-based
 
-Ricochet
-: __Description__: instant messaging client
-: https://ricochet.im
-: BSD: https://github.com/ricochet-im/ricochet/blob/master/LICENSE
-: https://github.com/ricochet-im/ricochet/
-: 1.1.1
+<a id="pkg-Ricochet">__Ricochet__</a>
+: Description: instant messaging client
+: Site: [https://ricochet.im/](https://ricochet.im/)
+: License: [BSD](https://github.com/ricochet-im/ricochet/blob/master/LICENSE)
+: Source: [https://github.com/ricochet-im/ricochet/](https://github.com/ricochet-im/ricochet/)
+: Version: 1.1.2
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
 : notes:
 
-TorChat2
-: __Description__: peer-to-peer instant messenger running on Tor hidden services
-: https://github.com/prof7bit/TorChat/wiki/
-: GPLv3: https://en.wikipedia.org/wiki/TorChat
-: https://github.com/prof7bit/TorChat/
-: 15
+<a id="pkg-TorChat2">__TorChat2__</a>
+: Description: peer-to-peer instant messenger running on Tor hidden services
+: Site: [https://github.com/prof7bit/TorChat/wiki/](https://github.com/prof7bit/TorChat/wiki/)
+: License: [GPLv3](https://en.wikipedia.org/wiki/TorChat)
+: Source: [https://github.com/prof7bit/TorChat/](https://github.com/prof7bit/TorChat/)
+: Version: 15
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: license file?
+: notes: license? Last activity 2014. 202 forks. . .
 
-Tor Messenger
-:  __Description__: instant messenger for anonymity utilizing existing protocols
-: n/a
-: GPLv2: https://github.com/rovemonteux/tormessenger/blob/master/LICENSE
-: https://gitweb.torproject.org/tor-messenger-build.git
-: 0.1.0b4
+<a id="pkg-Tor-Messenger">__Tor Messenger__</a>
+: Description: instant messenger for anonymity utilizing existing protocols
+: Site: n/a
+: License: [GPLv2](https://github.com/rovemonteux/tormessenger/blob/master/LICENSE)
+: Source: [https://gitweb.torproject.org/tor-messenger-build.git](https://gitweb.torproject.org/tor-messenger-build.git)
+: Version: 0.1.0b5
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
 : notes: requires Docker as a build dependency and a bunch of Perl modules. Early stages of development. License reference is from old GitHub account, so may be inaccurate.
 
-Tox/uTox
-: __Description__: UDP-based communications platform
-: https://tox.chat
-: https://github.com/irungentoo/toxcore
-: GPLv3: https://github.com/irungentoo/toxcore/blob/master/COPYING
+<a id="pkg-Tox">__Tox/uTox__</a>
+: Description: UDP-based communications platform
+: Site: [https://tox.chat/](https://tox.chat/)
+: License: [GPLv3])(https://github.com/irungentoo/toxcore/blob/master/COPYING)
+: Source: [https://github.com/irungentoo/toxcore/](https://github.com/irungentoo/toxcore/)
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: yes
 : notes: FreeBSD builds available on www
 
-vuvuzela
-: __Description__: private messaging system that hides metadata
-: License: GPLv3 https://github.com/davidlazar/vuvuzela/blob/master/LICENSE 
+<a id="pkg-vuvuzela">__vuvuzela__</a>
+: Description: private messaging system that hides metadata
+: Site: n/a
+: License: [AGPLv3](https://github.com/davidlazar/vuvuzela/blob/master/LICENSE) 
 : https://github.com/davidlazar/vuvuzela
 : Version: 0.1
 : FreeBSD: no
