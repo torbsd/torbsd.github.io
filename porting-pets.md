@@ -43,7 +43,7 @@ __tool-name__
 : Description: desktop application for generating machine-readable, signed canary statements
 : Site: [https://firstlook.org/code/project/autocanary/](https://firstlook.org/code/project/autocanary/)
 : License: [GPLv3](https://github.com/firstlook/autocanary/blob/master/LICENSE.md)
-: Source: [GitHub](https://github.com/firstlook/autocanary/)
+: Source: [https://github.com/firstlook/autocanary/](https://github.com/firstlook/autocanary/)
 : Version: 0.1
 : FreeBSD: no
 : OpenBSD: no
@@ -55,19 +55,19 @@ __tool-name__
 : Description: collaborative spreadsheet application
 : Site: [https://ethercalc.net/](https://ethercalc.net/)
 : License: [CPAL 1.0 Artistic License 2.0](https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt)
-: Source: [GitHub](https://github.com/audreyt/ethercalc/)
+: Source: [https://github.com/audreyt/ethercalc/](https://github.com/audreyt/ethercalc/)
 : Version: 0.20151108.1
-: FreeBSD__: no
-: OpenBSD__: no
-: NetBSD__: no
-: DragonFly__: no
+: FreeBSD: no
+: OpenBSD: no
+: NetBSD: no
+: DragonFly: no
 : Notes:
 
 <a id="pkg-etherpad">__Etherpad__</a>
 : Description: collaborative editing application
 : Site: [http://etherpad.org/](http://etherpad.org/)
-: License: [Apache 2.0] (https://github.com/ether/etherpad-lite/blob/develop/LICENSE/)
-: Source: https://github.com/ether/etherpad-lite/
+: License: [Apache 2.0](https://github.com/ether/etherpad-lite/blob/develop/LICENSE/)
+: Source: [https://github.com/ether/etherpad-lite/](https://github.com/ether/etherpad-lite/)
 : Version: 1.5.7
 : FreeBSD: no
 : OpenBSD: no
