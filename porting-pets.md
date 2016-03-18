@@ -192,19 +192,19 @@ __tool-name__
 : Description: encrypted communications platform
 : Site: [http://www.kontalk.org/](http://www.kontalk.org/)
 : License: GPLv3 check each component under GitHub account
-: Source: [https://github.com/kontalk/tigase-kontalk/](https://github.com/kontalk/tigase-kontalk/)
+: Source: [https://github.com/kontalk/](https://github.com/kontalk/)
 : Version: n/a
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: only for smartphones? client and server component of Kontalk XMPP client
+: notes: client and server component of Kontalk XMPP client
 
-LEAP
-: __Description__: secure server client platform
-: https://leap.se/
-: GPLv3 https://leap.se/git/{bitmask_client.git,leap_platform,git,etc}/blob/HEAD:/LICENSE
-: https://leap.se/git
+<a id="pkg-LEAP">__LEAP__</a>
+: Description: secure server client platform
+: Site: [https://leap.se/](https://leap.se/)
+: License: GPLv3 https://leap.se/git/{bitmask_client.git,leap_platform,git,etc}/blob/HEAD:/LICENSE
+: Source: [https://leap.se/git/](https://leap.se/git/)
 : n/a 
 : FreeBSD: no
 : OpenBSD: no
@@ -627,7 +627,7 @@ HTTPS Everywhere
 : __Description__: Firefox add-on enabling TLS/SSL when available
 : FreeBSD: no
 : OpenBSD: no
-: pkgsrc: no
+: pkgsrc: nO
 : DPorts: no
 : notes: /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) inst
 all script, and therefore a frivilous dependency
