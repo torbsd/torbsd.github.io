@@ -150,12 +150,12 @@ __tool-name__
 : DPorts: yes
 : notes:
 
-Mixmaster
-: __Description__: type II anonymous remailer
-: http://mixmaster.sourceforge.net/
-: MIT: https://anonscm.debian.org/viewvc/pkg-mixmaster/trunk/Mix/COPYRIGHT?view=markup
-: http://sourceforge.net/projects/mixmaster/files/latest/download?source=files
-: 3.0
+<a id="pkg-Mixmaster">__Mixmaster__</a>
+: Description: type II anonymous remailer
+: Site: [http://mixmaster.sourceforge.net/](http://mixmaster.sourceforge.net/)
+: License: [MIT](https://anonscm.debian.org/viewvc/pkg-mixmaster/trunk/Mix/COPYRIGHT?view=markup)
+: Source: [http://sourceforge.net/projects/mixmaster/files/latest/download?source=files](http://sourceforge.net/projects/mixmaster/files/latest/download?source=files)
+: Version: 3.0
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: no
