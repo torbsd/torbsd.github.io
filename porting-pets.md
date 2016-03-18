@@ -80,9 +80,9 @@ __tool-name__
 <a id="pkg-exiftool">ExifTool</a>
 : __Description__: tool for editing, reading, writing metadata on a variety of file types
 : Site: [http://owl.phy.queensu.ca/~phil/exiftool/](http://owl.phy.queensu.ca/~phil/exiftool/)
-: License: Perl http://owl.phy.queensu.ca/~phil/exiftool/#license
-: Source: http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.05.tar.gz
-: Version: 10.05
+: License: [Perl](http://owl.phy.queensu.ca/~phil/exiftool/#license)
+: Source: [http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.13.tar.gz](http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.13.tar.gz)
+: Version: 10.13
 : FreeBSD: yes
 : OpenBSD: no
 : NetBSD: yes
@@ -91,7 +91,8 @@ __tool-name__
 <a id="pkg-exiv2">Exiv2</a>
 : Description: command-line utility to manage image metadata
 : Site: [http://www.exiv2.org/](http://www.exiv2.org/)
-: License: GPLv2 or commercial http://www.exiv2.org/download.html#license
+: License: [GPLv2 or commercial](http://www.exiv2.org/download.html#license)
+: Source: [http://www.exiv2.org/exiv2-0.25.tar.gz](http://www.exiv2.org/exiv2-0.25.tar.gz)
 : Version: 0.25
 : FreeBSD: yes
 : OpenBSD: yes
@@ -99,10 +100,10 @@ __tool-name__
 : DragonFly: yes
 
 jhead
-: __Description__: tool for manipulating JPEG EXIF files
-: http://www.sentex.net/~mwandel/jhead/
-: License: Public Domain http://www.sentex.net/~mwandel/jhead/
-: http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz
+: Description: tool for manipulating JPEG EXIF files
+: Site: [http://www.sentex.net/~mwandel/jhead/](http://www.sentex.net/~mwandel/jhead/)
+: License: [Public Domain](http://www.sentex.net/~mwandel/jhead/)
+: Source: [http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz](http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz)
 : Version: 3.00
 : FreeBSD: yes
 : OpenBSD: yes
