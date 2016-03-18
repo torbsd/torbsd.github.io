@@ -77,7 +77,7 @@ __tool-name__
 
 ###<a id="graphics">graphics</a>###
 
-<a id="pkg-exiftool">ExifTool</a>
+<a id="pkg-exiftool">__ExifTool__</a>
 : __Description__: tool for editing, reading, writing metadata on a variety of file types
 : Site: [http://owl.phy.queensu.ca/~phil/exiftool/](http://owl.phy.queensu.ca/~phil/exiftool/)
 : License: [Perl](http://owl.phy.queensu.ca/~phil/exiftool/#license)
@@ -88,7 +88,7 @@ __tool-name__
 : NetBSD: yes
 : DragonFly: yes
 
-<a id="pkg-exiv2">Exiv2</a>
+<a id="pkg-exiv2">__Exiv2__</a>
 : Description: command-line utility to manage image metadata
 : Site: [http://www.exiv2.org/](http://www.exiv2.org/)
 : License: [GPLv2 or commercial](http://www.exiv2.org/download.html#license)
@@ -99,7 +99,7 @@ __tool-name__
 : NetBSD: yes
 : DragonFly: yes
 
-<a id="pkg-jhead">jhead</a>
+<a id="pkg-jhead">__jhead__</a>
 : Description: tool for manipulating JPEG EXIF files
 : Site: [http://www.sentex.net/~mwandel/jhead/](http://www.sentex.net/~mwandel/jhead/)
 : License: [Public Domain](http://www.sentex.net/~mwandel/jhead/)
@@ -111,7 +111,7 @@ __tool-name__
 : DPorts: yes
 : notes:
 
-<a id="pkg-MAT">MAT</a>
+<a id="pkg-MAT">__MAT__</a>
 : Description: tool for removing metadata
 : Site: [http://mat.boum.org/](http://mat.boum.org/)
 : License: [GPLv2](https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE/)
@@ -123,7 +123,7 @@ __tool-name__
 : DPorts: no
 : notes: command-line and GUI, with a library.
 
-<a id="pkg-pdf-redact-tools">pdf-redact-tools</a>
+<a id="pkg-pdf-redact-tools">__pdf-redact-tools__</a>
 : Description: tools to redact and strip metadata from documents
 : Site: [https://firstlook.org/code/project/pdf-redact-tools/](https://firstlook.org/code/project/pdf-redact-tools/)
 : License: [GPLv3](https://github.com/firstlook/pdf-redact-tools/blob/master/LICENSE)
@@ -138,12 +138,12 @@ __tool-name__
 ###<a id="mail">mail</a>###
 
 
-Mailpile
-: __Description__: fast webmail client with built-in security features
-: http://www.mailpile.is/
-: AGPLv3: https://github.com/mailpile/Mailpile/
-: https://github.com/mailpile/Mailpile/
-: beta III
+<a id="pkg-Mailpile">__Mailpile__</a>
+: Description: fast webmail client with built-in security features
+: Site: [http://www.mailpile.is](http://www.mailpile.is/)
+: License: [AGPLv3](https://github.com/mailpile/Mailpile/)
+: Source: [https://github.com/mailpile/Mailpile/](https://github.com/mailpile/Mailpile/)
+: Version: beta III
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
