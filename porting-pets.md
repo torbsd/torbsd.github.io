@@ -184,16 +184,16 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: should Mozilla add-ons be their own ports? What about /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) installs which require shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) as dependencies?
+: notes: should Mozilla add-ons be their own ports? What about installs which require shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) as dependencies?
 
 ###<a id="misc">misc</a>###
 
-Kontalk server
-: __Description__: encrypted communications platform
-: http://www.kontalk.org/
-: GPLv3: check each component under GitHub account
-: https://github.com/kontalk/tigase-kontalk/
-: n/a
+<a id="pkg-Kontalk">__Kontalk server__</a>
+: Description: encrypted communications platform
+: Site: [http://www.kontalk.org/](http://www.kontalk.org/)
+: License: GPLv3 check each component under GitHub account
+: Source: [https://github.com/kontalk/tigase-kontalk/](https://github.com/kontalk/tigase-kontalk/)
+: Version: n/a
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
