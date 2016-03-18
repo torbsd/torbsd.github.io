@@ -224,94 +224,98 @@ __tool-name__
 : DPorts: no
 : notes:
 
-Martus Desktop
-: __Description__: platform for collecting, safeguarding, organizing and sharing info
-: https://www.martus.org/
-: was on code.google.com, now?
+<a id="pkg-Martus-Desktop">__Martus Desktop__</a>
+: Description: platform for collecting, safeguarding, organizing and sharing info
+: Site: [https://www.martus.org/](https://www.martus.org/)
+: License: ???
+: Source: [https://martus.org/installers/Martus-Source-5.1.1.zip](https://martus.org/installers/Martus-Source-5.1.1.zip)
+: Version: 5.1.1
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
 : notes:
 
-Martus Server
-: __Description__: platform for collecting, safeguarding, organizing and sharing info
-: https://www.martus.org/
-: was on code.google.com, now?
+<a id="pkg-Martus-Server">__Martus Server__</a>
+: Description: platform for collecting, safeguarding, organizing and sharing info
+: Site: [https://www.martus.org/](https://www.martus.org/)
+: License: ??
+: Source: [https://code.google.com/archive/p/martus/source#hg/source/org/martus/server](https://code.google.com/archive/p/martus/source#hg/source/org/martus/server)
+: Version: ??
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
 : notes:
 
-SecureDrop
-: __Description__: open-source whistleblower submission system
-: https://securedrop.org/
-: AGPL
-: https://github.com/freedomofpress/securedrop/
-: 0.3.6
+<a id="pkg-SecureDrop">__SecureDrop__</a>
+: Description: open-source whistleblower submission system
+: Site: [https://securedrop.org/](https://securedrop.org)
+: License: [AGPL](https://github.com/freedomofpress/securedrop/blob/develop/LICENSE)
+: Source: [https://github.com/freedomofpress/securedrop/](https://github.com/freedomofpress/securedrop/)
+: Version: 0.3.6
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
 : notes: Topology review is probably first step. Very Debian-centric.
 
-SparkleShare
-: __Description__: Git-based file synchronization tool
-: http://sparkleshare.org/
-: GPLv3: https://github.com/hbons/SparkleShare/blob/master/legal/License_for_SparkleShare.txt
-: https://github.com/hbons/SparkleShare/
-: 1.4
+<a id="pkg-SparkleShare">__SparkleShare__</a>
+: Description: Git-based file synchronization tool
+: Site: [http://sparkleshare.org/](http://sparkleshare.org)
+: License: [GPLv3](https://github.com/hbons/SparkleShare/blob/master/legal/License_for_SparkleShare.txt)
+: Source: [https://github.com/hbons/SparkleShare/](https://github.com/hbons/SparkleShare/)
+: Version: 1.5
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
 : notes: essentially a GUI for git with server and client components
 
-Syncany
-: __Description__: open-source cloud storage and filesharing application
-: https://www.syncany.org/
-: GPLv3
-: https://github.com/syncany/syncany/
-: 0.4.7-alpha
+<a id="pkg-Syncany">__Syncany__</a>
+: Description: open-source cloud storage and filesharing application
+: Site: [https://www.syncany.org/](https://www.syncany.org/)
+: License: [GPLv3](https://github.com/syncany/syncany/blob/develop/LICENSE.md)
+: Source: [https://github.com/syncany/syncany/](https://github.com/syncany/syncany/)
+: Version: 0.4.7-alpha
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
 : notes:
 
-Turtl: server, client
-: __Description__: encrypted personal database and note-taking application
-: https://turtl.it/
-: GPLv3: https://github.com/turtl/api/blob/master/LICENSE/
-: https://github.com/turtl/
-: 0.5.2.2
+<a id="pkg-Turtl">__Turtl__</a>
+: Description: encrypted personal database and note-taking application
+: Site: [https://turtl.it/](https://turtl.it)
+: License: [GPLv3](https://github.com/turtl/api/blob/master/LICENSE/)
+: Source: [https://github.com/turtl/](https://github.com/turtl/)
+: Version: various
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: various components for the platform in GitHub.
+: notes: various components for the platform in GitHub, including API and desktop.
 
 ###<a id="net">net</a>###
 
-arm/nyx
-: __Description__: terminal status monitor for Tor
-: https://www.atagar.com/arm/
-: https://gitweb.torproject.org/nyx.git/tree/LICENSE
-: https://gitweb.torproject.org/nyx.git
-: 1.4.5.0
+<a id="pkg-arm">__arm/nyx__</a>
+: Description: terminal status monitor for Tor
+: Site: [https://www.atagar.com/arm/](https://www.atagar.com/arm/)
+: License: [GPLv3](https://gitweb.torproject.org/nyx.git/tree/LICENSE)
+: Source: [https://gitweb.torproject.org/nyx.git](https://gitweb.torproject.org/nyx.git)
+: Version: 1.4.5.0
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: no
 : DPorts: no
 : notes:
 
-blockfinder
-: __Description__: tool for enumerating network information by country
-:
-: BSD: https://github.com/ioerror/blockfinder/blob/master/LICENSE/
-: https://github.com/ioerror/blockfinder/
-: 3.1?
+<a id="pkg-blockfinder">__blockfinder__</a>
+: Description: tool for enumerating network information by country
+: Site: n/a
+: License: [BSD](https://github.com/ioerror/blockfinder/blob/master/LICENSE/)
+: Source: [https://github.com/ioerror/blockfinder/](https://github.com/ioerror/blockfinder/)
+: Version: 4.0.0
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
