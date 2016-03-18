@@ -77,7 +77,7 @@ __tool-name__
 ###<a id="graphics">graphics</a>###
 
 <a id="pkg-exiftool">__ExifTool__</a>
-: __Description__: tool for editing, reading, writing metadata on a variety of file types
+: Description: tool for editing, reading, writing metadata on a variety of file types
 : Site: [http://owl.phy.queensu.ca/~phil/exiftool/](http://owl.phy.queensu.ca/~phil/exiftool/)
 : License: [Perl](http://owl.phy.queensu.ca/~phil/exiftool/#license)
 : Source: [http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.13.tar.gz](http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.13.tar.gz)
