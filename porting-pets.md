@@ -193,7 +193,7 @@ __tool-name__
 : Site: [http://www.kontalk.org/](http://www.kontalk.org/)
 : License: GPLv3 check each component under GitHub account
 : Source: [https://github.com/kontalk/](https://github.com/kontalk/)
-: Version: n/a
+: Version: various
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -205,19 +205,19 @@ __tool-name__
 : Site: [https://leap.se/](https://leap.se/)
 : License: GPLv3 https://leap.se/git/{bitmask_client.git,leap_platform,git,etc}/blob/HEAD:/LICENSE
 : Source: [https://leap.se/git/](https://leap.se/git/)
-: n/a 
+: Version: various
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: various components would needed for full porting, but starting point is likely the server.
+: notes: various components would needed for full porting, but starting point is likely the platform.
 
-Libertree
-: __Description__: open-source platform for creating private social networks
-: http://www.libertree.org/
-: GNU Affero: https://github.com/Libertree/libertree/blob/master/LICENCE
-: https://github.com/LiberTree/libertree/
-: ?
+<a id="pkg-Libertree">__Libertree__</a>
+: Description: open-source platform for creating private social networks
+: Site: [http://www.libertree.org/](http://www.libertree.org/)
+: License: [GNU Affero](https://github.com/Libertree/libertree/blob/master/LICENCE)
+: Source: [https://github.com/LiberTree/libertree/](https://github.com/LiberTree/libertree/)
+: Version: n/a
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
