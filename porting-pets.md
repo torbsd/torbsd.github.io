@@ -83,7 +83,7 @@ __tool-name__
 : Source: [http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.13.tar.gz](http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.13.tar.gz)
 : Version: 10.13
 : FreeBSD: yes
-: OpenBSD: no
+: OpenBSD: yes
 : NetBSD: yes
 : DragonFly: yes
 
@@ -130,7 +130,7 @@ __tool-name__
 : Version: 0.1
 : FreeBSD: no
 : OpenBSD: no
-: pkgsrc: no
+: pkgsrc: yes
 : DPorts: no
 : notes:
 
@@ -319,7 +319,19 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes:
+: Notes:
+
+<a id="pkg-onioncat">__onioncat__</a>
+: Description: IP transparent Tor hidden service connector
+: Site: [https://www.cypherpunk.at/onioncat_trac/](https://www.cypherpunk.at/onioncat_trac/)
+: License: [GPLv3](https://www.cypherpunk.at/onioncat_trac/wiki/COPYING)
+: Source: [https://www.cypherpunk.at/ocat/download/Source/](https://www.cypherpunk.at/ocat/download/Source/)
+: Version: 0.2.2
+: FreeBSD: yes
+: OpenBSD: yes
+: pkgsrc:  no
+: DPorts: yes
+: Notes:
 
 <a id="pkg-onionshare">__OnionShare__</a>
 : Description: secure and anonymous file-sharing tool
@@ -366,8 +378,8 @@ __tool-name__
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: yes
-: DPorts: no
-: notes: in FreeBSD ports but not DragonFly BSD?
+: DPorts: yes
+: notes:
 
 <a id="pkg-tor">__Tor__</a>
 : Description: stable version of the onion-routing daemon for anonymous networking
@@ -401,7 +413,7 @@ __tool-name__
 : Version: 2.1.0
 : FreeBSD: yes
 : OpenBSD: yes
-: pkgsrc: yes
+: pkgsrc: no
 : DPorts: yes
 : notes: relies on torrc SOCKS port matching torsocks configuration.
 
