@@ -464,7 +464,7 @@ __tool-name__
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
-: DPorts: no
+: DPorts: yes
 : notes:
 
 <a id="pkg-torchat2">__TorChat2__</a>
@@ -526,7 +526,7 @@ __tool-name__
 : Version: 0.4.4
 : FreeBSD: yes
 : OpenBSD: no
-: pkgsrc: no
+: pkgsrc: yes
 : DPorts: yes
 : notes:
 
@@ -540,7 +540,7 @@ __tool-name__
 : OpenBSD: yes
 : pkgsrc: no
 : DPorts: no
-: notes: why not in DPorts if it's in FreeBSD ports?
+: notes:
 
 ###<a id="security">security</a>###
 
@@ -577,7 +577,7 @@ __tool-name__
 : FreeBSD: yes
 : OpenBSD: no (as WIP)
 : pkgsrc: no
-: DPort:
+: DPort: yes
 : notes: 
 
 <a id="pkg-pond">__Pond__</a>
@@ -589,7 +589,7 @@ __tool-name__
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
-: DPorts: yes
+: DPorts: no
 : notes:
 
 <a id="pkg-py-stem">__py-stem__</a>
@@ -602,7 +602,7 @@ __tool-name__
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: no
-: DPorts:
+: DPorts: yes
 : notes:
 
 <a id="pkg-scallion">__Scallion__</a>
@@ -653,7 +653,7 @@ __tool-name__
 : Version:
 : FreeBSD: no
 : OpenBSD: no
-: pkgsrc: nO
+: pkgsrc: no
 : DPorts: no
 : notes: /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) inst
 all script
@@ -664,10 +664,10 @@ all script
 : License: [GPLv3](https://noscript.net/faq#qa1_14)
 : Source:
 : Version: 2.6.9.39
-: FreeBSD:
-: OpenBSD:
-: pkgsrc:
-: DPorts:
+: FreeBSD: no
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: no
 : notes: Mozilla add-ons as ports?
 
 <a id="pkg-sigbin">__sigbin__</a>

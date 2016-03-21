@@ -23,7 +23,7 @@
 
 <p><strong>March 2016</strong></p>
 
-<p><a href="#tb-snaps-status1">March 10 OpenBSD Snapshots</a> &#8916; <a href="#bsdcan0">TDP at BSDCan 2016</a> &#8916; <a href="#tb-snaps-status0">TB 5.5 and i386/amd64 Snapshots</a></p>
+<p><a href="#portpets-up">Porting PETs Updates</a> &#8916; <a href="#tb-snaps-status1">March 10 OpenBSD Snapshots</a> &#8916; <a href="#bsdcan0">TDP at BSDCan 2016</a> &#8916; <a href="#tb-snaps-status0">TB 5.5 and i386/amd64 Snapshots</a></p>
 
 <p><strong>February 2016</strong></p>
 
@@ -46,6 +46,28 @@
 <p><a href="#tb-update">Updated Tor Browser Packages</a> &#8916; <a href="#relay-guides">The BSD Relay Guides</a> &#8916; <a href="#first-bells">Our First Bells</a> &#8916; <a href="#beyond-os">Beyond OS Diversity</a> &#8916; <a href="#tb-5.0.3">Tor Browser version 5.0.3 for OpenBSD</a></p>
 
 <p><a href="#attic">From the Attic</a></p>
+
+<h3 id="20160320">20160320</h3>
+
+<p><a id="portpets-up"><strong>Porting PETs Updates</strong></a> by gman999</p>
+
+<p><a href="porting-pets.html">Porting Targets for PETs</a> is meant as a hit list of privacy enhanncing related ports that may or may not be in the main BSD port/package systems. As we make clear on the page, some should be considered for entry into BSD ports systems, while others may not be good candidates for a variety of reasons.</p>
+
+<p>As we (manually) update the project page, a few points come to our attention:</p>
+
+<ul>
+<li><p><a href="https://firstlook.org/code/project/pdf-redact-tools/">pdf-redact-tools</a> is now in NetBSD&#8217;s cross-platform ports system, pkgsrc.</p></li>
+<li><p><a href="https://gitweb.torproject.org/torsocks.git/">torsocks</a> isn&#8217;t in the pkgsrc tree, which comes as a surprise (and correction).</p></li>
+<li><p><a href="https://www.cypherpunk.at/onioncat_trac/">onioncat</a> was added to the list, and it&#8217;s also not in the pkgsrc tree. The OpenBSD version is outdated.</p></li>
+<li><p>Since our last update, we&#8217;re happy to see that <a href="https://ricochet.im/">ricochet</a> is now in DragonFly BSD&#8217;s DPorts system.</p></li>
+<li><p><a href="https://gitweb.torproject.org/pluggable-transports/obfsproxy.git">obfsproxy</a> is not in the OpenBSD ports tree, but it is in the GitHub <a href="https://github.com/jasperla/openbsd-wip">work-in-progress ports</a>. [obfsproxy] also isn&#8217;t in the pkgsrc tree. Pluggable transports are worthwhile ports to consider, since the censorers are fond of blocking Tor traffic.</p></li>
+<li><p>We are excited there&#8217;s a pkgsrc <a href="http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/security/tor-browser/README.html">attempt to port Tor Browser</a>. We have reached out to the developer directly and indirectly several times, but have not heard back unfortunately. Our <strong>TDP</strong> fellow-travellers tried to reach out to the developer, ryoon AT netbsd.org, at [AsiaBSDCon](https://2016.asiabsdcon.org/] last week, but were unable to find him. We do hope to hear back from him at some point to synchronize our efforts. We are sure there&#8217;s a lot to learn from each others&#8217; experiences.</p></li>
+<li><p>Besides torsocks, pkgsrc doesn&#8217;t contain a <a href="https://stem.torproject.org/">stem</a> port which is vital for tools like <a href="#pkg-arm">arm</a> and for any tool that talks to the Tor control port.</p></li>
+</ul>
+
+<p>Don&#8217;t hesitate to ping us if you&#8217;re interested in addressing anyone of the above ports. We can direct you to the appropriate mailing list or developers, or dump any Makefiles we may have already created.</p>
+
+<p>At this point, <strong>TDP</strong> isn&#8217;t focusing on porting these applications, but unofficially we have begun to toy with some of them.</p>
 
 <h3 id="20160310">20160310</h3>
 
@@ -406,7 +428,7 @@
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Fri Mar 18 02:46:49 2016 UTC</code></p>
+<p><code>last updated: Mon Mar 21 00:51:32 2016 UTC</code></p>
 
 </body>
 </html>
