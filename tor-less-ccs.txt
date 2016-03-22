@@ -1,4 +1,4 @@
-Sun Mar 20 23:44:27 UTC 2016
+Tue Mar 22 20:24:21 UTC 2016
 Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
@@ -8,7 +8,7 @@ Quick-and-Dirty Static Reports
 'Countries without Public Tor Relays'
 
 Number of Country Codes without Public Tor Relays:
-85
+86
 -------
 -country-
 AFGHANISTAN
