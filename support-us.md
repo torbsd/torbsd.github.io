@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __The Tor BSD Diversity Project__ is looking for financial support through grants, hardware donations or other mediums.
 
-__TDP__ launched in March 2015, and works to strengthen the Tor public anonymity network by increasing operating system diversity with the BSD Unix operating systems.
+__TDP__ launched in March 2015, and works to strengthen the Tor public anonymity network by increasing operating system diversity with the BSD Unix.
 
 Since our beginnings, __TDP__ successfully achieved a number of significant milestones:
 
@@ -20,7 +20,7 @@ Since our beginnings, __TDP__ successfully achieved a number of significant mile
 
 * conducted successful presentations at [BSDCan 2015](https://www.bsdcan.org/2015/) and [BSDCon Brazil](http://2015.bsdcon.com.br/), engaging with scores of individuals about __TDP__ and the critical importance of involving *BSD users and developers in Tor ecosystem
 
-*Our advocacy efforts made Brazil a country of one periodic public BSD Tor relay to about a fifth of the relays, accounting for up to a third of public Tor bandwidth in that country*
+* our advocacy efforts made Brazil a country of one periodic public BSD Tor relay to about a fifth of the relays, accounting for up to a third of public Tor bandwidth in that country*
 
 * enlisted [New York Internet](https://www.nyi.net/) to donate two high-bandwidth public relays at its facility in Bridgewater, New Jersey, with the aim of replicating Mozilla's roll-out of Tor relays among firms that employ the *BSDs
 
@@ -48,7 +48,7 @@ __TDP__ already has a proven track record as a project. But __TDP__ wants to do 
 
 * we want our relay guides to be production ready, and translated to languages beyond English, particularly into those common in countries with low relay counts
 
-* we want to port more PETs applications to the BSDs, and to facilitate others to join the efforts
+* we want to port more PETs applications to the BSDs, and to facilitate others to join the efforts, particularly with significant ports like obfsproxy missing from OpenBSD
 
 * most vitally, we want to enlist more BSD developers into __TDP's__ efforts, which has already begun
 
