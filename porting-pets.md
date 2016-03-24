@@ -173,18 +173,6 @@ __tool-name__
 : DPorts: no
 : notes: not under active development.
 
-<a id="pkg-pyelliptic">__py-elliptic__</a>
-: Description: Python OpenSSL wrapper
-: Site: n/a
-: License: [BSD](https://github.com/yann2192/pyelliptic/blob/master/LICENSE)
-: Source: [https://github.com/yann2192/pyelliptic/](https://github.com/yann2192/pyelliptic/)
-: Version: 1.5.7
-: FreeBSD: yes
-: OpenBSD: no
-: pkgsrc: no
-: DPorts: yes
-: notes: run dependency for Bitmessage.
-
 <a id="pkg-torbirdy">__Torbirdy__</a>
 : Description: Thunderbird add-on for using accessing email over the Tor network
 : Site: [https://trac.torproject.org/projects/tor/wiki/torbirdy/](https://trac.torproject.org/projects/tor/wiki/torbirdy/)
@@ -540,7 +528,7 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: yes
 : DPorts: yes
-: notes:
+: notes: call for a [code review](http://blog.anonymousbitcoinbook.com/2015/01/seeking-bitmessage-code-reviewer/)
 
 <a id="pkg-retroshare">__RetroShare__</a>
 : Description: secure, decentralized P2P platform
@@ -603,6 +591,19 @@ __tool-name__
 : pkgsrc: no
 : DPorts: no
 : notes:
+
+<a id="pkg-pyelliptic">__py-elliptic__</a>
+: Description: Python OpenSSL wrapper
+: Site: n/a
+: License: [BSD](https://github.com/yann2192/pyelliptic/blob/master/LICENSE)
+: Source: [https://github.com/yann2192/pyelliptic/](https://github.com/yann2192/
+pyelliptic/)
+: Version: 1.5.7
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: yes
+: notes: run dependency for Bitmessage.
 
 <a id="pkg-py-stem">__py-stem__</a>
 : Description: Python controller library for Tor
