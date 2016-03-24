@@ -173,6 +173,18 @@ __tool-name__
 : DPorts: no
 : notes: not under active development.
 
+<a id="pkg-pyelliptic">__py-elliptic__</a>
+: Description: Python OpenSSL wrapper
+: Site: n/a
+: License: [BSD](https://github.com/yann2192/pyelliptic/blob/master/LICENSE)
+: Source: [https://github.com/yann2192/pyelliptic/](https://github.com/yann2192/pyelliptic/)
+: Version: 1.5.7
+: FreeBSD: yes
+: OpenBSD: no
+: pkgsrc: no
+: DPorts: yes
+: notes: run dependency for Bitmessage.
+
 <a id="pkg-torbirdy">__Torbirdy__</a>
 : Description: Thunderbird add-on for using accessing email over the Tor network
 : Site: [https://trac.torproject.org/projects/tor/wiki/torbirdy/](https://trac.torproject.org/projects/tor/wiki/torbirdy/)
