@@ -594,7 +594,7 @@ __tool-name__
 
 <a id="pkg-pyelliptic">__py-elliptic__</a>
 : Description: Python OpenSSL wrapper
-: Site: n/a
+: Site: [https://pypyi.python.org/pypi/pyelliptic/](https://pypyi.python.org/pypi/pyelliptic/)
 : License: [BSD](https://github.com/yann2192/pyelliptic/blob/master/LICENSE)
 : Source: [https://github.com/yann2192/pyelliptic/](https://github.com/yann2192/
 pyelliptic/)
@@ -635,12 +635,12 @@ pyelliptic/)
 : Site: n/a
 : License: [GPLv2](https://github.com/nabla-c0d3/sslyze/blob/master/LICENSE.txt)
 : Source: [https://github.com/nabla-c0d3/sslyze](https://github.com/nabla-c0d3/sslyze)
-: Version: 0.10
+: Version: 0.13.5
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes:
+: notes: seems to really require https://github.com/nabla-c0d3/nassl/ which requires more work.
 
 ###<a id="sysutils">sysutils</a>###
 
