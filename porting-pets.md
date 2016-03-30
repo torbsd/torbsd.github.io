@@ -596,8 +596,7 @@ __tool-name__
 : Description: Python OpenSSL wrapper
 : Site: [https://pypyi.python.org/pypi/pyelliptic/](https://pypyi.python.org/pypi/pyelliptic/)
 : License: [BSD](https://github.com/yann2192/pyelliptic/blob/master/LICENSE)
-: Source: [https://github.com/yann2192/pyelliptic/](https://github.com/yann2192/
-pyelliptic/)
+: Source: [https://github.com/yann2192/pyelliptic/](https://github.com/yann2192/pyelliptic/)
 : Version: 1.5.7
 : FreeBSD: yes
 : OpenBSD: no
