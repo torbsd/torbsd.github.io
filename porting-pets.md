@@ -139,7 +139,7 @@ __tool-name__
 
 <a id="pkg-mailpile">__Mailpile__</a>
 : Description: fast webmail client with built-in security features
-: Site: [http://www.mailpile.is](http://www.mailpile.is/)
+: Site: [https://www.mailpile.is](https://www.mailpile.is/)
 : License: [AGPLv3](https://github.com/mailpile/Mailpile/)
 : Source: [https://github.com/mailpile/Mailpile/](https://github.com/mailpile/Mailpile/)
 : Version: 0.5.2
@@ -367,7 +367,7 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: various components for the platform, including daemon and GNOME client
+: notes: various components for the platform, including daemon and GNOME client. ring-project initial target? no release yet. python3
 
 <a id="pkg-syncthing">__Syncthing__</a>
 : Description: open-source cloud storage and synchronization
@@ -379,7 +379,7 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: yes
 : DPorts: yes
-: notes:
+: notes: github builds available for OpenBSD i386 and amd64
 
 <a id="pkg-tor">__Tor__</a>
 : Description: stable version of the onion-routing daemon for anonymous networking
@@ -501,7 +501,7 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: yes
-: notes: FreeBSD builds available on www
+: notes: FreeBSD builds available on www. Sole GitHub release entitled "api_old_version." Autconf
 
 <a id="pkg-vuvuzela">__vuvuzela__</a>
 : Description: private messaging system that hides metadata
@@ -513,7 +513,7 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: in early stages of development. [SOSP 2015 Paper](https://davidlazar.org/papers/vuvuzela.pdf) and [SOSP 2015 Slides](https://davidlazar.org/slides/vuvuzela-sosp2015.pdf)
+: notes: in early stages of development and no GitHub releases. [SOSP 2015 Paper](https://davidlazar.org/papers/vuvuzela.pdf) and [SOSP 2015 Slides](https://davidlazar.org/slides/vuvuzela-sosp2015.pdf)
 
 
 ###<a id="net-p2p">net-p2p</a>###
@@ -528,7 +528,7 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: yes
 : DPorts: yes
-: notes: call for a [code review](http://blog.anonymousbitcoinbook.com/2015/01/seeking-bitmessage-code-reviewer/)
+: notes: call for a [code review](http://blog.anonymousbitcoinbook.com/2015/01/seeking-bitmessage-code-reviewer/). Requires py-elliptic
 
 <a id="pkg-retroshare">__RetroShare__</a>
 : Description: secure, decentralized P2P platform
@@ -619,16 +619,16 @@ pyelliptic/)
 : notes:
 
 <a id="pkg-scallion">__Scallion__</a>
-: Description: GPU-basd Onion hash generator
+: Description: GPU-based gpg and onion hash generator
 : Site: n/a
 : License: [BSD](https://github.com/lachesis/scallion/blob/gpg/LICENCE.txt)
 : Source: [https://github.com/lachesis/scallion/](https://github.com/lachesis/scallion/)
-: Version: 1.2
+: Version: 2.0
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: useful for creating custom or "vanity" GPG keys or .onion addresses
+: notes: useful for creating custom or "vanity" GPG keys or .onion addresses. Requires shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) and lang/mono.
 
 <a id="pkg-sslyze">__sslyze__</a>
 : Description: full-featured SSL scanner
@@ -654,7 +654,7 @@ pyelliptic/)
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: yes
-: notes:
+: notes: BDEP autogen
 
 ###<a id="www">www</a>###
 
