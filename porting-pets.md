@@ -477,7 +477,7 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: license? Last activity 2014. 202 forks. . .
+: notes: license? Last activity 2014. 202 forks. jtorchat is Java-based. py_torchat is the original.
 
 <a id="pkg-tor-messenger">__Tor Messenger__</a>
 : Description: instant messenger for anonymity utilizing existing protocols
