@@ -20,7 +20,7 @@ The listed information should be considered a guide but should be confirmed due 
 
 These are loose categorizations of the ports. Where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more specific category, for example __net-p2p__ over __net__. For the ports we are unsure how to categorize or haven't approached yet, we have put them under [misc](#misc). But overall, the categories are just a basic guide.
 
-## Open Source Software Packages Relevant to PETs ##
+## PETs Related Open Source Software Packages ##
 
 [editors](#editors)  [%sep] [graphics](#graphics) [%sep]  [mail](#mail) [%sep] [misc](#misc) [%sep] [net](#net) [%sep] [net-im](#net-im) [%sep] [net-p2p](#net-p2p) [%sep] [security](#security) [%sep] [sysutils](#sysutils) [%sep] [www](#www)
 
@@ -48,7 +48,7 @@ __tool-name__
 : OpenBSD: no
 : NetBSD: no
 : DragonFly: no
-: Notes: [Wikipedia on Warrant Canaries](https://en.wikipedia.org/wiki/Warrant_canary/)
+: Notes: [Wikipedia on Warrant Canaries](https://en.wikipedia.org/wiki/Warrant_canary/). Not portable as-is, with builds only for Windows, OSX and Debian.
 
 <a id="pkg-ethercalc">__EtherCalc__</a>
 : Description: collaborative spreadsheet application
