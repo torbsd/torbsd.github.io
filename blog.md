@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __March 2016__
 
-[Porting PETs Updates](#portpets-up) [%sep] [March 10 OpenBSD Snapshots](#tb-snaps-status1) [%sep] [TDP at BSDCan 2016](#bsdcan0) [%sep] [TB 5.5 and i386/amd64 Snapshots](#tb-snaps-status0)
+[TB 5.5 on the Current Snapshots](#tb-snaps-status2) [%sep] [Porting PETs Updates](#portpets-up) [%sep] [March 10 OpenBSD Snapshots](#tb-snaps-status1) [%sep] [TDP at BSDCan 2016](#bsdcan0) [%sep] [TB 5.5 and i386/amd64 Snapshots](#tb-snaps-status0)
 
 __February 2016__
 
@@ -36,6 +36,24 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20160331###
+
+<a id="tb-snaps-status2">__TB 5.5 on the Current Snapshots__</a> by gman999
+
+As of last week's OpenBSD's i386 and amd64 snapshots, TB 5.5 is no longer working.
+
+We are looking to start building the Tor Project's most recent TB soon. Spending time on TB 5.5 is fruitless when 5.5.4 is the current TP release.
+
+The OpenBSD project just announced the release 5.9 a month early, which I personally don't remember ever happening. The project usually follows a strict six-month release cycle. We are going to focus on getting TB into the next stable release of OpenBSD, which would be 6.0, planned for November 1. Of course we hope to have TB in the snapshots ports way before that date.
+
+Meanwhile, the [Quick-and-Dirty Static Reports](dirty-stats.html) are still updated regularly, albeit manually still.
+
+Additionally, a lot of time has been recently committed to [Porting Targets for PETs](porting-pets.hmtl). It's a tough battle. You spend time getting the basic aspects of the Makefile operational, you figure the peculiarities of how a port is compiled, the array of licenses, and so on, but then you realized a host of unported Python libraries build or run dependencies. Jump out of vi(1) and into the rabbit hole.
+
+A final note on porting PETs-related software, mostly directed at developers. Write your software to be portable, please. Creating a Python module port or package may be a simplistic example of portability, but a negative example is doing builds specific by each OS and Linux distribution. Don't give me setup_debian.py, or a setup file that relies on a handful of operating system choices. Give me an install script that can recognize the global variables and avoid hard-coded paths, that doesn't need one [shell](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) or another. What does [bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) provide that the install script requires? I mean, really? For the vast majority, a 1995 Bourne shell would be more than sufficient.
+
+If you only want, say, Debian users, for your PETs application, you are definitely not looking at the basic diversity arguments so apparent to most people. You are also cutting off more potential downstream developers that could be making your life easier. Treated nicely, downstream developers can make you look significantly smarter than you might be. There are arguments whether the "many eyeballs" make open source software more secure when most people don't read code, but there's no question that more downstream developers hacking on your code really does. 
 
 ###20160320###
 

@@ -23,7 +23,7 @@
 
 <p><strong>March 2016</strong></p>
 
-<p><a href="#portpets-up">Porting PETs Updates</a> &#8916; <a href="#tb-snaps-status1">March 10 OpenBSD Snapshots</a> &#8916; <a href="#bsdcan0">TDP at BSDCan 2016</a> &#8916; <a href="#tb-snaps-status0">TB 5.5 and i386/amd64 Snapshots</a></p>
+<p><a href="#tb-snaps-status2">TB 5.5 on the Current Snapshots</a> &#8916; <a href="#portpets-up">Porting PETs Updates</a> &#8916; <a href="#tb-snaps-status1">March 10 OpenBSD Snapshots</a> &#8916; <a href="#bsdcan0">TDP at BSDCan 2016</a> &#8916; <a href="#tb-snaps-status0">TB 5.5 and i386/amd64 Snapshots</a></p>
 
 <p><strong>February 2016</strong></p>
 
@@ -46,6 +46,24 @@
 <p><a href="#tb-update">Updated Tor Browser Packages</a> &#8916; <a href="#relay-guides">The BSD Relay Guides</a> &#8916; <a href="#first-bells">Our First Bells</a> &#8916; <a href="#beyond-os">Beyond OS Diversity</a> &#8916; <a href="#tb-5.0.3">Tor Browser version 5.0.3 for OpenBSD</a></p>
 
 <p><a href="#attic">From the Attic</a></p>
+
+<h3 id="20160331">20160331</h3>
+
+<p><a id="tb-snaps-status2"><strong>TB 5.5 on the Current Snapshots</strong></a> by gman999</p>
+
+<p>As of last week&#8217;s OpenBSD&#8217;s i386 and amd64 snapshots, TB 5.5 is no longer working.</p>
+
+<p>We are looking to start building the Tor Project&#8217;s most recent TB soon. Spending time on TB 5.5 is fruitless when 5.5.4 is the current TP release.</p>
+
+<p>The OpenBSD project just announced the release 5.9 a month early, which I personally don&#8217;t remember ever happening. The project usually follows a strict six-month release cycle. We are going to focus on getting TB into the next stable release of OpenBSD, which would be 6.0, planned for November 1. Of course we hope to have TB in the snapshots ports way before that date.</p>
+
+<p>Meanwhile, the <a href="dirty-stats.html">Quick-and-Dirty Static Reports</a> are still updated regularly, albeit manually still.</p>
+
+<p>Additionally, a lot of time has been recently committed to <a href="porting-pets.hmtl">Porting Targets for PETs</a>. It&#8217;s a tough battle. You spend time getting the basic aspects of the Makefile operational, you figure the peculiarities of how a port is compiled, the array of licenses, and so on, but then you realized a host of unported Python libraries build or run dependencies. Jump out of vi(1) and into the rabbit hole.</p>
+
+<p>A final note on porting PETs-related software, mostly directed at developers. Write your software to be portable, please. Creating a Python module port or package may be a simplistic example of portability, but a negative example is doing builds specific by each OS and Linux distribution. Don&#8217;t give me setup_debian.py, or a setup file that relies on a handful of operating system choices. Give me an install script that can recognize the global variables and avoid hard-coded paths, that doesn&#8217;t need one <a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash">shell</a> or another. What does <a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash">bash</a> provide that the install script requires? I mean, really? For the vast majority, a 1995 Bourne shell would be more than sufficient.</p>
+
+<p>If you only want, say, Debian users, for your PETs application, you are definitely not looking at the basic diversity arguments so apparent to most people. You are also cutting off more potential downstream developers that could be making your life easier. Treated nicely, downstream developers can make you look significantly smarter than you might be. There are arguments whether the &#8220;many eyeballs&#8221; make open source software more secure when most people don&#8217;t read code, but there&#8217;s no question that more downstream developers hacking on your code really does. </p>
 
 <h3 id="20160320">20160320</h3>
 
@@ -428,7 +446,7 @@
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Mon Mar 21 00:51:32 2016 UTC</code></p>
+<p><code>last updated: Thu Mar 31 19:45:40 2016 UTC</code></p>
 
 </body>
 </html>
