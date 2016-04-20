@@ -376,7 +376,7 @@ __tool-name__
 : Source: [https://github.com/syncthing/syncthing/](https://github.com/syncthing/syncthing/)
 : Version: 0.12.20
 : FreeBSD: yes
-: OpenBSD: no
+: OpenBSD: yes
 : pkgsrc: yes
 : DPorts: yes
 : notes: github builds available for OpenBSD i386 and amd64
