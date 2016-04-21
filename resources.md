@@ -66,7 +66,7 @@ We welcome relevant submissions from others.
 
 * Ted Unangst [blog post on "Reproducible Builds are a Waste of Time"](http://www.tedunangst.com/flak/post/reproducible-builds-are-a-waste-of-time)
 
-### The Danger of Monocultures in Technology ###
+### The Danger of Technology Monocultures ###
 
 * [CyberInsecurity: The Cost of Monopoly. How the Dominance of Microsoft's Products Pose a Risk to Security](https://cryptome.org/cyberinsecurity.htm). Note: the original PDF on the Computer and Communications Industry Association (CCIA) web site is no where to be found. Originally at http://www.ccianet.org/papers/cybersecurity.pdf.
 :    An explosive paper arguing Microsoft's desktop monopoly is a critical weakness in global infrastructure. The paper prompted the firing of one of the authors [Dan Geer](https://en.wikipedia.org/wiki/Dan_Geer/) from @Stake (later acquired by Symantec) in 2003.
@@ -82,6 +82,11 @@ We welcome relevant submissions from others.
 
 * [Risks of Monoculture Revisited](https://blogs.microsoft.com/cybertrust/2010/12/03/risks-of-monoculture-revisited/)
 :    After the followup debate, the Microsoft Principal Cybersecurity Strategist concludes that monocultures aren't really that bad after all. Desktop diversity seems to have established with the advent of Android and Ubuntu, and the expansion of Apple products, so the relevance of the Windows desktop monoculture may have decreased.
+
+### About Bananas ###
+
+* [Bananas: We have no bananas today](https://www.economist.com/blogs/feastandfamine/)
+: The lack of diversity in cultivated bananas remains the best non-technical example of precarious monocultures
 
 ### Related and Useful Projects ###
 
