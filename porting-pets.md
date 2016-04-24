@@ -703,7 +703,8 @@ __tool-name__
 : OpenBSD: no, [well...](https://github.com/torbsd/openbsd-ports)
 : pkgsrc: yes
 : DPorts: no
-: notes: A lot of effort is going into __TDP's__ Tor Browser builds for OpenBSD, and we are in conversations about porting to other BSDs. pkgsrc version is not a fork and takes a different route completely than __TDP__.
+: notes: A lot of effort is going into __TDP's__ Tor Browser builds for OpenBSD, and we are in conversations about porting to other BSDs. [pkgsrc version](http://pkgsrc.se/security/tor-browser) is not a fork and takes a different route completely than __TDP__.
+
 
 
 {{footer.md}}
