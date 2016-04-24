@@ -350,7 +350,7 @@ __tool-name__
 : Site: [https://ooni.torproject.org/](https://ooni.torproject.org/)
 : License: [BSD](https://gitweb.torproject.org/onionoo.git/tree/LICENSE)
 : Source: [https://github.com/TheTorProject/ooni-probe/](https://github.com/TheTorProject/ooni-probe/)
-: Version: 1.3.1
+: Version: 1.3.2
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -374,12 +374,12 @@ __tool-name__
 : Site: [https://syncthing.net/](https://syncthing.net/)
 : License: [MPLv2](https://github.com/syncthing/syncthing/blob/master/LICENSE)
 : Source: [https://github.com/syncthing/syncthing/](https://github.com/syncthing/syncthing/)
-: Version: 0.12.20
+: Version: 0.13-beta
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: yes
 : DPorts: yes
-: notes: github builds available for OpenBSD i386 and amd64
+: notes: GitHub builds available for OpenBSD i386 and amd64
 
 <a id="pkg-tor">__Tor__</a>
 : Description: stable version of the onion-routing daemon for anonymous networking
@@ -398,7 +398,7 @@ __tool-name__
 : Site: [https://www.torproject.org/](https://www.torproject.org/)
 : License: [BSD](https://gitweb.torproject.org/tor.git/tree/LICENSE/)
 : Source: [https://gitweb.torproject.org/tor.git/](https://gitweb.torproject.org/tor.git/)
-: Source: 0.2.8.1-alpha
+: Source: 0.2.8.2-alpha
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: yes
@@ -436,19 +436,19 @@ __tool-name__
 : Site: [https://crypto.cat/](https://crypto.cat/)
 : License: [GNU Affero](https://github.com/cryptocat/cryptocat/blob/master/LICENSE.txt)
 : Source: [https://github.com/cryptocat/cryptocat/](https://github.com/cryptocat/cryptocat/)
-: Version: 2.2.2
+: Version: 3.1.08
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: activity since 201412?
+: notes: no releases
 
 <a id="pkg-jitsi">__Jitsi__</a>
 : Description: XMPP/SIP client
 : Site: [https://jitsi.org/](https://jitsi.org/)
 : License: [Apache 2.0](https://github.com/jitsi/jitsi/blob/master/LICENSE)
 : Source: [https://github.com/jitsi/jitsi/](https://github.com/jitsi/jitsi/)
-: Version: 5500
+: Version: 5509
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
@@ -484,7 +484,7 @@ __tool-name__
 : Site: n/a
 : License: [GPLv2](https://github.com/rovemonteux/tormessenger/blob/master/LICENSE)
 : Source: [https://gitweb.torproject.org/tor-messenger-build.git](https://gitweb.torproject.org/tor-messenger-build.git)
-: Version: 0.1.0b5
+: Version: 0.1.0b6
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -535,7 +535,7 @@ __tool-name__
 : Site: [http://retroshare.sourceforge.net](http://retroshare.sourceforge.net)
 : License: [GPLv3](http://retroshare.sourceforge.net/wiki/index.php/Main_Page)
 : Source: [https://github.com/RetroShare/RetroShare](https://github.com/RetroShare/RetroShare)
-: Version: 0.6.0 RC2.8551
+: Version: 0.6.0
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: no
@@ -549,7 +549,7 @@ __tool-name__
 : Site: [http://www.gpg4usb.org](http://www.gpg4usb.org)
 : License: [GPLv3](https://github.com/gpg4usb/gpg4usb/blob/master/COPYING)
 : Source: [https://github.com/gpg4usb/gpg4usb](https://github.com/gpg4usb/gpg4usb)
-: Version: 0.3.3-1
+: Version: 0.3.3-2
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -561,7 +561,7 @@ __tool-name__
 : Site: [http://www.keepassx.org/](http://www.keepassx.org/)
 : License: [Various](https://github.com/keepassx/keepassx/)
 : Source: [https://github.com/keepassx/keepassx/](https://github.com/keepassx/keepassx/)
-: Version: 2.0 Beta 2
+: Version: 2.0.2
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: yes
@@ -667,8 +667,7 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) inst
-all script
+: notes: /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) install script
 
 <a id="pkg-noscript">__NoScript__</a>
 : Description: Firefox add-on for blocking scripts
