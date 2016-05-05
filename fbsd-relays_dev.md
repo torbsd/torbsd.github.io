@@ -74,7 +74,7 @@ or
 
 6. Create the appropriate log file with the correct permission:
 
->%  touch /var/log tor && chown _tor:_tor /var/log/tor && chmod 600 /var/log/tor
+>%  touch /var/log/tor.log && chown _tor:_tor /var/log/tor.log && chmod 600 /var/log/tor.log
 
 7. Add "tor_enable=YES" in the /etc/rc.conf file
 
@@ -92,7 +92,7 @@ or
 
 10. Watch the log to make sure Tor starts correctly:
 
->% tail -f /var/log/tor
+>% tail -f /var/log/tor.log
 
 11. Reboot to confirm that Tor starts correctly.
 
@@ -210,7 +210,7 @@ Currently, the preferred method for installing FreeBSD applications is the ports
 
 >/etc/rc.conf: tor_enable="YES"
 
-/var/log/tor
+/var/log/tor.log
 
 chown _tor:_tor
 
@@ -224,7 +224,7 @@ Tor executible: */usr/local/etc/rc.d/tor*
 
 Tor data, including private key, statistics and Hidden Services: */var/db/tor*
 
-Tor log file: */var/log/tor*
+Tor log file: */var/log/tor.log*
 
 ## Starting, Restarting and Stopping Tor ##
 

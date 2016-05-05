@@ -77,7 +77,7 @@ Edit */usr/local/etc/tor/torrc* appropriately. The torrc file is well-commented 
 
 Create the appropriate log file with the correct permissions:
 
->%  touch /var/log tor && chown _tor:_tor /var/log/tor && chmod 600 /var/log/tor
+>%  touch /var/log/tor.log && chown _tor:_tor /var/log/tor.log && chmod 600 /var/log/tor.log
 
 Add "tor_enable=YES" in the /etc/rc.conf file
 

@@ -102,7 +102,7 @@
 </ol>
 
 <blockquote>
-<p>% touch /var/log tor &amp;&amp; chown _tor:_tor /var/log/tor &amp;&amp; chmod 600 /var/log/tor</p>
+<p>% touch /var/log/tor.log &amp;&amp; chown _tor:_tor /var/log/tor.log &amp;&amp; chmod 600 /var/log/tor.log</p>
 </blockquote>
 
 <ol>
@@ -136,7 +136,7 @@
 </ol>
 
 <blockquote>
-<p>% tail -f /var/log/tor</p>
+<p>% tail -f /var/log/tor.log</p>
 </blockquote>
 
 <ol>
@@ -283,7 +283,7 @@ md(4)</p>
 <p>/etc/rc.conf: tor_enable=&#8220;YES&#8221;</p>
 </blockquote>
 
-<p>/var/log/tor</p>
+<p>/var/log/tor.log</p>
 
 <p>chown _tor:_tor</p>
 
@@ -297,7 +297,7 @@ md(4)</p>
 
 <p>Tor data, including private key, statistics and Hidden Services: <em>/var/db/tor</em></p>
 
-<p>Tor log file: <em>/var/log/tor</em></p>
+<p>Tor log file: <em>/var/log/tor.log</em></p>
 
 <h2 id="startingrestartingandstoppingtor">Starting, Restarting and Stopping Tor</h2>
 

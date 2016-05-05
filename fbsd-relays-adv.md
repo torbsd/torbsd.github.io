@@ -122,7 +122,7 @@ Tor executible: */usr/local/etc/rc.d/tor*
 
 Tor data, including private key, statistics and Hidden Services: */var/db/tor*
 
-Tor log file: */var/log/tor*
+Tor log file: */var/log/tor.log*
 
 ###Starting, Restarting and Stopping Tor###
 
