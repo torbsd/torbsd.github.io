@@ -45,13 +45,13 @@ __October 2015__
 
 <a id="quiet-progress">__So Much Quiet Progress__</a> by gman999
 
-This blog remained silent over the past several months despite a flurry of very significant TDP activity.
+This blog remained silent over the past several months despite a flurry of very significant TDP activities.
 
 The accomplishments are not reducible to a single blog entry, but here are summaries of the more interesting:
 
 * There was continued development and the release of several Tor Browser versions.  Packages for 6.0 and 6.0.2 (the current version) were produced. The OpenBSD packages for both amd64 and i386 are available at http://mirror.nycbug.org/pub/snapshots/packages/{amd64,i386}. With feedback from the OpenBSD ports@ mailing list, another version of TB 6.0.2 is in the works.
 
-* We held a presentation at BSDCan 2016 in Ottawa, Canada in June. The presentation, entited [Beyond Monocultures](http://www.bsdcan.org/2016/schedule/events/712.en.html) is hosted on [YouTube](https://www.youtube.com/watch?v=KeQWET79t_Y). The meeting was engaging and filled with discussion, and there were some exciting possibilities produced by the meeting, including a code audit offered by a well-respected information security firm, plus the initial steps in porting our TB code to [HardenedBSD](https://hardendedbsd.org).
+* We held a presentation at BSDCan 2016 in Ottawa, Canada in June. The presentation, entited [Beyond Monocultures](http://www.bsdcan.org/2016/schedule/events/712.en.html) is hosted on [YouTube](https://www.youtube.com/watch?v=KeQWET79t_Y). The meeting was engaging and filled with discussion, and there were some exciting possibilities produced by the meeting, including a code audit offered by a well-respected information security firm, plus some preliminary plans to port our TB code to [HardenedBSD](https://hardendedbsd.org).
 
 * Also as a consequence of BSDCan, Brian Conway of [resflash](https://stable.rcesoftware.com/resflash/), a flash-based OpenBSD build system began producing [images with a Tor relay pre-configured](https://stable.rcesoftware.com/pub/resflash/tor/). We have been exploring such a system for Tor bridges, with either resflash or [flashrd](http://www.nmedia.org/flashrd), but are glad to see Brian took the initiative.
 
