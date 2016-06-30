@@ -49,7 +49,7 @@ This blog remained silent over the past several months despite a flurry of very 
 
 The accomplishments are not reducible to a single blog entry, but here are summaries of the more interesting:
 
-* There was continued development and the release of several Tor Browser versions, including 6.0 and 6.0.2, the latter of which is current with the Tor Project. The OpenBSD packages for both amd64 and i386 are available at http://mirror.nycbug.org/pub/snapshots/packages/{amd64,i386}. With feedback from the OpenBSD ports@ mailing list, another version of TB 6.0.2 may be in the works.
+* There was continued development and the release of several Tor Browser versions.  Packages for 6.0 and 6.0.2 (the current version) were produced. The OpenBSD packages for both amd64 and i386 are available at http://mirror.nycbug.org/pub/snapshots/packages/{amd64,i386}. With feedback from the OpenBSD ports@ mailing list, another version of TB 6.0.2 is in the works.
 
 * We held a presentation at BSDCan 2016 in Ottawa, Canada in June. The presentation, entited [Beyond Monocultures](http://www.bsdcan.org/2016/schedule/events/712.en.html) is hosted on [YouTube](https://www.youtube.com/watch?v=KeQWET79t_Y). The meeting was engaging and filled with discussion, and there were some exciting possibilities produced by the meeting, including a code audit offered by a well-respected information security firm, plus the initial steps in porting our TB code to [HardenedBSD](https://hardendedbsd.org).
 
