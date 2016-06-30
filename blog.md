@@ -55,7 +55,7 @@ The accomplishments are not reducible to a single blog entry, but here are summa
 
 * Also as a consequence of BSDCan, Brian Conway of [resflash](https://stable.rcesoftware.com/resflash/), a flash-based OpenBSD build system began producing [images with a Tor relay pre-configured](https://stable.rcesoftware.com/pub/resflash/tor/). We have been exploring such a system for Tor bridges, with either resflash or [flashrd](http://www.nmedia.org/flashrd), but are glad to see Brian took the initiative.
 
-We have loved to reply to the RFP for [EuroBSDCon 2016 in Belgrade, Serbia](https://2016.eurobsdcon.org/) but the TDP schedule doesn't permit.
+We would have replied to the RFP for [EuroBSDCon 2016 in Belgrade, Serbia](https://2016.eurobsdcon.org/) but the TDP schedule doesn't permit.
 
 
 ###20160331###
