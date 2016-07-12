@@ -10,7 +10,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## Porting Targets for PETs ##
 
-Over the past few years, a long list of applications spawned from attention to privacy and anonymity solutions. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.
+Over the past few years, concerns about privacy spawned a long list of applications. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.
 
 This is a list of some of those alternate tools. Most have not been ported to any of the BSDs. Some probably *shouldn't* be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash/) a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. __No endorsements should be assumed from this list.__
 
@@ -338,7 +338,7 @@ __tool-name__
 : Site: [https://onionshare.org/](https://onionshare.org/)
 : License: [GPLv3](https://github.com/michahflee/onionshare/blob/master/LICENSE)
 : Source: [https://github.com/micahflee/onionshare/](https://github.com/micahflee/onionshare/)
-: Version: 0.8.1
+: Version: 0.9
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -523,12 +523,12 @@ __tool-name__
 : Site: [https://bitmessage.org/wiki/Main_Page](https://bitmessage.org/wiki/Main_Page)
 : License: [MIT](https://github.com/Bitmessage/PyBitmessage/blob/master/LICENSE)
 : Source: [https://github.com/Bitmessage/PyBitMessage](https://github.com/Bitmessage/PyBitMessage)
-: Version: 0.4.4
+: Version: 0.6.0
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: yes
 : DPorts: yes
-: notes: call for a [code review](http://blog.anonymousbitcoinbook.com/2015/01/seeking-bitmessage-code-reviewer/). Requires py-elliptic
+: notes: as of January 2015, call for a [code review](http://blog.anonymousbitcoinbook.com/2015/01/seeking-bitmessage-code-reviewer/). Requires py-elliptic.
 
 <a id="pkg-retroshare">__RetroShare__</a>
 : Description: secure, decentralized P2P platform
