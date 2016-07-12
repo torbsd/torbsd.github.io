@@ -252,7 +252,7 @@ __tool-name__
 : Site: [https://securedrop.org/](https://securedrop.org)
 : License: [AGPL](https://github.com/freedomofpress/securedrop/blob/develop/LICENSE)
 : Source: [https://github.com/freedomofpress/securedrop/](https://github.com/freedomofpress/securedrop/)
-: Version: 0.3.6
+: Version: 0.3.8
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -607,9 +607,9 @@ __tool-name__
 <a id="pkg-py-stem">__py-stem__</a>
 : Description: Python controller library for Tor
 : Site: [https://stem.torproject.org/](https://stem.torproject.org/)
-: License: LGPL
+: License: [LGPLv3](https://stem.torproject.org/faq.html#what-license-is-stem-under)
 : Source:
-: Version: 1.4.1b
+: Version: 1.4.1
 : Python www
 : FreeBSD: yes
 : OpenBSD: yes
