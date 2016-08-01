@@ -120,7 +120,7 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: command-line and GUI, with a library.
+: notes: command-line and GUI, with a library. Uses Linux shred(1)
 
 <a id="pkg-pdf-redact-tools">__pdf-redact-tools__</a>
 : Description: tools to redact and strip metadata from documents
@@ -398,7 +398,7 @@ __tool-name__
 : Site: [https://www.torproject.org/](https://www.torproject.org/)
 : License: [BSD](https://gitweb.torproject.org/tor.git/tree/LICENSE/)
 : Source: [https://gitweb.torproject.org/tor.git/](https://gitweb.torproject.org/tor.git/)
-: Source: 0.2.8.2-alpha
+: Source: 0.2.8.5-alpha
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: yes
