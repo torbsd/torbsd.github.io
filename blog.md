@@ -63,7 +63,7 @@ Enlisting your BSD relay is the buildbot is simple:
 
 4. As the non-privileged user, run this command:
 
-$ buildslave create-slave slave buildbot.pixelminers.net:9989 <buildername> <password>
+    $ buildslave create-slave slave buildbot.pixelminers.net:9989 <buildername> <password>
 
 .. where <buildername> is something you choose, and <password> is your key for the particular slave.
 
@@ -71,7 +71,7 @@ $ buildslave create-slave slave buildbot.pixelminers.net:9989 <buildername> <pas
 
 6. Finally, run this command to join the buildbot, from the new user's directory:
 
-$ buildslave start slave/
+    $ buildslave start slave/
 
 Assuming everything is configured correctly, the buildbot slave should appear on [https://buildbot.pixelminers.net](https://buildbot.pixelminers.net), and the log in slave/twistd.log should provide results.
 

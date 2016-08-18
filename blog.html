@@ -69,19 +69,19 @@
 <li><p>Make sure that git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.</p></li>
 <li><p>Create a non-privileged user for the buildbot, without any particular group outside of its own.</p></li>
 <li><p>On FreeBSD, install devel/build-bot. On NetBSD, install devel/py27-buildbot-slave. On OpenBSD (and Bitrig) install devel/py-buildslave.</p></li>
-<li><p>As the non-privileged user, run this command:</p></li>
-</ol>
+<li><p>As the non-privileged user, run this command:</p>
 
-<p>$ buildslave create-slave slave buildbot.pixelminers.net:9989 <buildername> <password></p>
+<p>$ buildslave create-slave slave buildbot.pixelminers.net:9989 <buildername> <password></p></li>
+</ol>
 
 <p>.. where <buildername> is something you choose, and <password> is your key for the particular slave.</p>
 
 <ol>
 <li><p>In the new user&#8217;s directory, a slave/ directory will be created. Edit slave/info to provide a description, like the particular BSD, the architecture and maybe release version, plus edit slave/admin to provide an (obscured) contact for the buildbot slave.</p></li>
-<li><p>Finally, run this command to join the buildbot, from the new user&#8217;s directory:</p></li>
-</ol>
+<li><p>Finally, run this command to join the buildbot, from the new user&#8217;s directory:</p>
 
-<p>$ buildslave start slave/</p>
+<p>$ buildslave start slave/</p></li>
+</ol>
 
 <p>Assuming everything is configured correctly, the buildbot slave should appear on <a href="https://buildbot.pixelminers.net">https://buildbot.pixelminers.net</a>, and the log in slave/twistd.log should provide results.</p>
 
@@ -500,7 +500,7 @@
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Aug 18 17:21:11 2016 UTC</code></p>
+<p><code>last updated: Thu Aug 18 17:22:34 2016 UTC</code></p>
 
 </body>
 </html>
