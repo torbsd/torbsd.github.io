@@ -59,7 +59,7 @@ To enlist an BSD relay in the buildbot:
 
 2. Create a non-privileged user for the buildbot, without any particular group outside of its own.
 
-3. On FreeBSD, install devel/build-bot.  On NetBSD, install devel/py27-buildbot-slave. On OpenBSD (and Bitrig) install devel/py-buildslave.
+3. On FreeBSD and DragonFly BSD, install devel/buildbot-slave.  On NetBSD, install devel/py27-buildbot-slave. On OpenBSD (and Bitrig) install devel/py-buildslave.
 
 4. As the non-privileged user, run this command:
 
