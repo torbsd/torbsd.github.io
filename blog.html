@@ -63,7 +63,7 @@
 
 <p>Recently its relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency for the Tor port.</p>
 
-<p>Enlisting your BSD relay is the buildbot is simple:</p>
+<p>To enlist an BSD relay in the buildbot:</p>
 
 <ol>
 <li><p>Make sure that git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.</p></li>
@@ -132,7 +132,7 @@
 <li><p><a href="https://gitweb.torproject.org/torsocks.git/">torsocks</a> isn&#8217;t in the pkgsrc tree, which comes as a surprise (and correction).</p></li>
 <li><p><a href="https://www.cypherpunk.at/onioncat_trac/">onioncat</a> was added to the list, and it&#8217;s also not in the pkgsrc tree. The OpenBSD version is outdated.</p></li>
 <li><p>Since our last update, we&#8217;re happy to see that <a href="https://ricochet.im/">ricochet</a> is now in DragonFly BSD&#8217;s DPorts system.</p></li>
-<li><p><a href="https://gitweb.torproject.org/pluggable-transports/obfsproxy.git">obfsproxy</a> is not in the OpenBSD ports tree, but it is in the GitHub <a href="https://github.com/jasperla/openbsd-wip">work-in-progress ports</a>. [obfsproxy] also isn&#8217;t in the pkgsrc tree. Pluggable transports are worthwhile ports to consider, since the censorers are fond of blocking Tor traffic.</p></li>
+<li><p><a href="https://gitweb.torproject.org/pluggable-transports/obfsproxy.git">obfsproxy</a> is not in the OpenBSD ports tree, but it is in the GitHub <a href="https://github.com/jasperla/openbsd-wip">work-in-progress ports</a>. obfsproxy also isn&#8217;t in the pkgsrc tree. Pluggable transports are worthwhile ports to consider, since the censorers are fond of blocking Tor traffic.</p></li>
 <li><p>We are excited there&#8217;s a pkgsrc <a href="http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/security/tor-browser/README.html">attempt to port Tor Browser</a>. We have reached out to the developer directly and indirectly several times, but have not heard back unfortunately. Our <strong>TDP</strong> fellow-travellers tried to reach out to the developer, ryoon AT netbsd.org, at [AsiaBSDCon](https://2016.asiabsdcon.org/] last week, but were unable to find him. We do hope to hear back from him at some point to synchronize our efforts. We are sure there&#8217;s a lot to learn from each others&#8217; experiences.</p></li>
 <li><p>Besides torsocks, pkgsrc doesn&#8217;t contain a <a href="https://stem.torproject.org/">stem</a> port which is vital for tools like <a href="#pkg-arm">arm</a> and for any tool that talks to the Tor control port.</p></li>
 </ul>
@@ -500,7 +500,7 @@
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Aug 18 17:22:34 2016 UTC</code></p>
+<p><code>last updated: Thu Aug 18 17:27:02 2016 UTC</code></p>
 
 </body>
 </html>

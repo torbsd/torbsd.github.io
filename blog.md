@@ -53,7 +53,7 @@ One of the small yet important projects spawning from this Tor-BSD meme has been
 
 Recently its relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency for the Tor port.
 
-Enlisting your BSD relay is the buildbot is simple:
+To enlist an BSD relay in the buildbot:
 
 1. Make sure that git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.
 
@@ -128,7 +128,7 @@ As we (manually) update the project page, a few points come to our attention:
 
 * Since our last update, we're happy to see that [ricochet](https://ricochet.im/) is now in DragonFly BSD's DPorts system.
 
-* [obfsproxy](https://gitweb.torproject.org/pluggable-transports/obfsproxy.git) is not in the OpenBSD ports tree, but it is in the GitHub [work-in-progress ports](https://github.com/jasperla/openbsd-wip). [obfsproxy] also isn't in the pkgsrc tree. Pluggable transports are worthwhile ports to consider, since the censorers are fond of blocking Tor traffic.
+* [obfsproxy](https://gitweb.torproject.org/pluggable-transports/obfsproxy.git) is not in the OpenBSD ports tree, but it is in the GitHub [work-in-progress ports](https://github.com/jasperla/openbsd-wip). obfsproxy also isn't in the pkgsrc tree. Pluggable transports are worthwhile ports to consider, since the censorers are fond of blocking Tor traffic.
 
 * We are excited there's a pkgsrc [attempt to port Tor Browser](http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/security/tor-browser/README.html). We have reached out to the developer directly and indirectly several times, but have not heard back unfortunately. Our __TDP__ fellow-travellers tried to reach out to the developer, ryoon AT netbsd.org, at [AsiaBSDCon](https://2016.asiabsdcon.org/] last week, but were unable to find him. We do hope to hear back from him at some point to synchronize our efforts. We are sure there's a lot to learn from each others' experiences.
 
