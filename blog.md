@@ -10,6 +10,10 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or a Central Location for Announces and Notes##
 
+__August 2016__
+
+[The Buildbot Needs BSD Relays](#buildbot)
+
 __June 2016__
 
 [So Much Quiet Progress](#quiet-progress)
@@ -40,6 +44,14 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20160818###
+
+<a id="buildbot">__The Buildbot Needs BSD Relays__</a> by gman999
+
+One of the small yet important projects spawning from this Tor-BSD meme has been Christian S.'s [BSD Buildbot](https://buildbot.pixelminers.net). Essentially it's a tool for development builds of Tor for the Tor Project, with enlisted BSD relays of all sorts engaged.
+
+
 
 ###20160629###
 
