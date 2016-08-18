@@ -83,6 +83,12 @@
 <p>$ buildslave start slave/</p></li>
 </ol>
 
+<p>Note that for OpenBSD buildbot relays, /etc/profile needs to contain the installed versions of autoconf and automake, as per <a href="http://lists.nycbug.org/pipermail/tor-bsd/2015-March/000270.html">this email</a> to the <a href="http://lists.nycbug.org/mailman/listinfo/tor-bsd">Tor-BSD mailing list</a>.</p>
+
+<pre><code>export AUTOCONF_VERSION=&quot;2.69&quot;
+export AUTOMAKE_VERSION=&quot;1.14&quot;
+</code></pre>
+
 <p>Assuming everything is configured correctly, the buildbot slave should appear on <a href="https://buildbot.pixelminers.net">https://buildbot.pixelminers.net</a>, and the log in slave/twistd.log should provide results.</p>
 
 <h3 id="20160629">20160629</h3>
@@ -500,7 +506,7 @@
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Aug 18 17:34:50 2016 UTC</code></p>
+<p><code>last updated: Thu Aug 18 20:47:18 2016 UTC</code></p>
 
 </body>
 </html>

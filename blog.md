@@ -73,6 +73,11 @@ To enlist an BSD relay in the buildbot:
 
     $ buildslave start slave/
 
+Note that for OpenBSD buildbot relays, /etc/profile needs to contain the installed versions of autoconf and automake, as per [this email](http://lists.nycbug.org/pipermail/tor-bsd/2015-March/000270.html) to the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd).
+
+	export AUTOCONF_VERSION="2.69"
+	export AUTOMAKE_VERSION="1.14"
+
 Assuming everything is configured correctly, the buildbot slave should appear on [https://buildbot.pixelminers.net](https://buildbot.pixelminers.net), and the log in slave/twistd.log should provide results.
 
 
