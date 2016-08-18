@@ -63,20 +63,26 @@ To enlist an BSD relay in the buildbot:
 
 4. As the non-privileged user, run this command:
 
-    $ buildslave create-slave slave buildbot.pixelminers.net:9989 <buildername> <password>
+```
+$ buildslave create-slave slave buildbot.pixelminers.net:9989 <buildername> <password>
+```
 
-.. where <buildername> is something you choose, and <password> is your key for the particular slave.
+where <buildername> is something you choose, and <password> is your key for the particular slave.
 
 5. In the new user's directory, a slave/ directory will be created. Edit slave/info to provide a description, like the particular BSD, the architecture and maybe release version, plus edit slave/admin to provide an (obscured) contact for the buildbot slave.
 
 6. Finally, run this command to join the buildbot, from the new user's directory:
 
-    $ buildslave start slave/
+```
+$ buildslave start slave/
+```
 
 Note that for OpenBSD buildbot relays, /etc/profile needs to contain the installed versions of autoconf and automake, as per [this email](http://lists.nycbug.org/pipermail/tor-bsd/2015-March/000270.html) to the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd).
 
-	export AUTOCONF_VERSION="2.69"
-	export AUTOMAKE_VERSION="1.14"
+```
+export AUTOCONF_VERSION="2.69"
+export AUTOMAKE_VERSION="1.14"
+```
 
 Assuming everything is configured correctly, the buildbot slave should appear on [https://buildbot.pixelminers.net](https://buildbot.pixelminers.net), and the log in slave/twistd.log should provide results.
 
