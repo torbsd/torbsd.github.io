@@ -63,7 +63,7 @@ To enlist an BSD relay in the buildbot:
 
 4. As the non-privileged user, run this command:
 
-    $ buildslave create-slave slave buildbot.pixelminers.net:9989 <buildername> <password>
+	$ buildslave create-slave slave buildbot.pixelminers.net:9989 <buildername> <password>
 
 .. where <buildername> is something you choose, and <password> is your key for the particular slave.
 
