@@ -71,7 +71,7 @@ To enlist an BSD relay in the buildbot:
 
 6. Finally, run this command to join the buildbot, from the new user's directory:
 
-    $ buildslave start slave/
+	$ buildslave start slave/
 
 Note that for OpenBSD buildbot relays, /etc/profile needs to contain the installed versions of autoconf and automake, as per [this email](http://lists.nycbug.org/pipermail/tor-bsd/2015-March/000270.html) to the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd).
 
