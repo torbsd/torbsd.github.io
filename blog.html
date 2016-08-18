@@ -59,16 +59,16 @@
 
 <p><a id="buildbot"><strong>The Buildbot Needs BSD Relays</strong></a> by gman999</p>
 
-<p>One of the small yet important projects spawning from this Tor-BSD meme has been Christian S.&#8217;s <a href="https://buildbot.pixelminers.net">BSD Buildbot</a>. Essentially it&#8217;s a tool for development builds of Tor for the Tor Project, with enlisted BSD relays of all sorts engaged.</p>
+<p>One of the small yet important projects spawning from this Tor-BSD meme has been Christian S.&#8217;s <a href="https://buildbot.pixelminers.net">BSD Buildbot</a>. Essentially it&#8217;s a tool for development builds of Tor for the Tor Project, with volunteers enlisting their BSD relays.</p>
 
-<p>Recently it&#8217;s relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency for the Tor port.</p>
+<p>Recently its relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency for the Tor port.</p>
 
 <p>Enlisting your BSD relay is the buildbot is simple:</p>
 
 <ol>
-<li><p>make sure that git is installed, and your system should already have an SSL and autotools.</p></li>
-<li><p>create a non-privileged user for the buildbot, without any particular group outside of its own.</p></li>
-<li><p>On FreeBSD, install devel/build-bot. On NetBSD, install py-buildbot-slave. On OpenBSD (and Bitrig) install devel/py-buildslave.</p></li>
+<li><p>Make sure that git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.</p></li>
+<li><p>Create a non-privileged user for the buildbot, without any particular group outside of its own.</p></li>
+<li><p>On FreeBSD, install devel/build-bot. On NetBSD, install devel/py27-buildbot-slave. On OpenBSD (and Bitrig) install devel/py-buildslave.</p></li>
 <li><p>As the non-privileged user, run this command:</p></li>
 </ol>
 
@@ -500,7 +500,7 @@
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Aug 18 16:53:57 2016 UTC</code></p>
+<p><code>last updated: Thu Aug 18 17:21:11 2016 UTC</code></p>
 
 </body>
 </html>

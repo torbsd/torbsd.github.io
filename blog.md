@@ -49,17 +49,17 @@ __October 2015__
 
 <a id="buildbot">__The Buildbot Needs BSD Relays__</a> by gman999
 
-One of the small yet important projects spawning from this Tor-BSD meme has been Christian S.'s [BSD Buildbot](https://buildbot.pixelminers.net). Essentially it's a tool for development builds of Tor for the Tor Project, with enlisted BSD relays of all sorts engaged.
+One of the small yet important projects spawning from this Tor-BSD meme has been Christian S.'s [BSD Buildbot](https://buildbot.pixelminers.net). Essentially it's a tool for development builds of Tor for the Tor Project, with volunteers enlisting their BSD relays.
 
-Recently it's relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency for the Tor port.
+Recently its relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency for the Tor port.
 
 Enlisting your BSD relay is the buildbot is simple:
 
-1. make sure that git is installed, and your system should already have an SSL and autotools.
+1. Make sure that git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.
 
-2. create a non-privileged user for the buildbot, without any particular group outside of its own.
+2. Create a non-privileged user for the buildbot, without any particular group outside of its own.
 
-3. On FreeBSD, install devel/build-bot.  On NetBSD, install py-buildbot-slave. On OpenBSD (and Bitrig) install devel/py-buildslave.
+3. On FreeBSD, install devel/build-bot.  On NetBSD, install devel/py27-buildbot-slave. On OpenBSD (and Bitrig) install devel/py-buildslave.
 
 4. As the non-privileged user, run this command:
 
@@ -74,7 +74,6 @@ $ buildslave create-slave slave buildbot.pixelminers.net:9989 <buildername> <pas
 $ buildslave start slave/
 
 Assuming everything is configured correctly, the buildbot slave should appear on [https://buildbot.pixelminers.net](https://buildbot.pixelminers.net), and the log in slave/twistd.log should provide results.
-
 
 
 ###20160629###
