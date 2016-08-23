@@ -66,6 +66,8 @@ We welcome relevant submissions from others.
 
 * Ted Unangst [blog post on "Reproducible Builds are a Waste of Time"](http://www.tedunangst.com/flak/post/reproducible-builds-are-a-waste-of-time)
 
+* Ted Unanst [blog post on "random in the wild"](http://www.tedunangst.com/flak/post/random-in-the-wild) pointing to scary uses of [rand3](http://man.openbsd.org/OpenBSD-current/man3/rand.3) which is disturbingly common.
+
 ### The Danger of Technology Monocultures ###
 
 * [CyberInsecurity: The Cost of Monopoly. How the Dominance of Microsoft's Products Pose a Risk to Security](https://cryptome.org/cyberinsecurity.htm). Note: the original PDF on the Computer and Communications Industry Association (CCIA) web site is no where to be found. Originally at http://www.ccianet.org/papers/cybersecurity.pdf.
@@ -122,7 +124,7 @@ We welcome relevant submissions from others.
 
 * "The LibTech Scene and the BSD Projects after Snowden" [via hidden web site](http://twvihadsu5oznuux.onion/) and [via Tor2Web](https://twvihadsu5oznuux.tor2web.org/) is the basis of a number of birds-of-feather and similar events taking place from 2012 through 2014, including vBSDCon in 2013 and NYCBSDCon 2014.
 
-* An older, partially incomplete how-to entitled "Simple Web Sites with Tor's Hidden Services: Unrestricted and Impossible to Block" [via a hidden web site](http://3vk2dyth3w4zxdba.onion/) or [via Tor2Web](https://3vk2dyth3w4zxdba.tor2web.org/).
+* An older, incomplete how-to entitled "Simple Web Sites with Tor's Hidden Services: Unrestricted and Impossible to Block" [via a hidden web site](http://3vk2dyth3w4zxdba.onion/) or [via Tor2Web](https://3vk2dyth3w4zxdba.tor2web.org/).
 
 ### Materials ###
 
