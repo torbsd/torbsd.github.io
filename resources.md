@@ -66,7 +66,7 @@ We welcome relevant submissions from others.
 
 * Ted Unangst [blog post on "Reproducible Builds are a Waste of Time"](http://www.tedunangst.com/flak/post/reproducible-builds-are-a-waste-of-time)
 
-* Ted Unanst [blog post on "random in the wild"](http://www.tedunangst.com/flak/post/random-in-the-wild) pointing to scary uses of [rand3](http://man.openbsd.org/OpenBSD-current/man3/rand.3) which is disturbingly common.
+* Ted Unangst [blog post on "random in the wild"](http://www.tedunangst.com/flak/post/random-in-the-wild) pointing to scary uses of [rand3](http://man.openbsd.org/OpenBSD-current/man3/rand.3) which are disturbingly common.
 
 ### The Danger of Technology Monocultures ###
 
