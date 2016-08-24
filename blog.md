@@ -51,7 +51,7 @@ __October 2015__
 
 One of the small yet important projects spawning from this Tor-BSD meme is Christian S.'s [BSD Buildbot](https://buildbot.pixelminers.net). Essentially it's a tool for development builds of Tor for the Tor Project, with volunteers enlisting their BSD relays.
 
-Recently its relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency port (LIB_DEPENDS) for the Tor port.
+Recently its relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency port (LIB_DEPENDS) for the Tor port. Tor Project Trac tickets include [19902](https://trac.torproject.org/projects/tor/ticket/19902) and [19904](https://trac.torproject.org/projects/tor/ticket/19904).
 
 To enlist an BSD relay in the buildbot:
 
