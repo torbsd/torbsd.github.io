@@ -63,7 +63,7 @@
 
 <p>Recently its relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency port (LIB_DEPENDS) for the Tor port. Tor Project Trac tickets include <a href="https://trac.torproject.org/projects/tor/ticket/19902">19902</a> and <a href="https://trac.torproject.org/projects/tor/ticket/19904">19904</a>.</p>
 
-<p>To enlist an BSD relay in the buildbot:</p>
+<p>To enlist a BSD relay in the buildbot:</p>
 
 <ul>
 <li><p>Make sure that devel/git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.</p></li>
@@ -91,7 +91,7 @@
 export AUTOMAKE_VERSION=&quot;1.14&quot;
 </code></pre>
 
-<p>Assuming everything is configured correctly, the buildbot slave should appear on <a href="https://buildbot.pixelminers.net">https://buildbot.pixelminers.net</a>, and the log in slave/twistd.log should provide results.</p>
+<p>Assuming everything is configured correctly, the buildbot slave should appear on <a href="https://buildbot.pixelminers.net/buildslaves">https://buildbot.pixelminers.net/buildslaves</a>, and the log in slave/twistd.log should provide results.</p>
 
 <p>Also: yes, we think the terminology of buildbot &#8220;slave&#8221; and &#8220;master&#8221; are inappropriate, and we only use them since they are the actually commands and lingo. The terms are not even descriptively useful to someone new to the concept of a continuous integration system.</p>
 
@@ -106,7 +106,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 <ul>
 <li><p>There was continued development and the release of several Tor Browser versions. Packages for 6.0 and 6.0.2 (the current version) were produced. The OpenBSD packages for both amd64 and i386 are available at http://mirror.nycbug.org/pub/snapshots/packages/{amd64,i386}. With feedback from the OpenBSD ports@ mailing list, another version of TB 6.0.2 is in the works.</p></li>
 <li><p>We held a presentation at BSDCan 2016 in Ottawa, Canada in June. The presentation, entited <a href="http://www.bsdcan.org/2016/schedule/events/712.en.html">Beyond Monocultures</a> is hosted on <a href="https://www.youtube.com/watch?v=KeQWET79t_Y">YouTube</a>. The meeting was engaging and filled with discussion, and there were some exciting possibilities produced by the meeting, including a code audit offered by a well-respected information security firm, plus some preliminary plans to port our TB code to <a href="https://hardendedbsd.org">HardenedBSD</a>.</p></li>
-<li><p>Also as a consequence of BSDCan, Brian Conway of <a href="https://stable.rcesoftware.com/resflash/">resflash</a>, a flash-based OpenBSD build system began producing <a href="https://stable.rcesoftware.com/pub/resflash/tor/">images with a Tor relay pre-configured</a>. We have been exploring such a system for Tor bridges, with either resflash or <a href="http://www.nmedia.org/flashrd">flashrd</a>, but are glad to see Brian took the initiative.</p></li>
+<li><p>Also as a consequence of BSDCan, Brian Conway of <a href="https://stable.rcesoftware.com/resflash/">resflash</a>, a flash-based OpenBSD build system began producing <a href="https://stable.rcesoftware.com/pub/resflash/tor/">images with a Tor relay pre-configured</a>. We have been exploring such a system for Tor bridges, with either resflash or <a href="http://www.nmedia.net/flashrd/">flashrd</a>, but are glad to see Brian took the initiative.</p></li>
 </ul>
 
 <p>We would have replied to the RFP for <a href="https://2016.eurobsdcon.org/">EuroBSDCon 2016 in Belgrade, Serbia</a> but the TDP schedule doesn&#8217;t permit.</p>
@@ -510,7 +510,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Wed Aug 24 15:27:15 2016 UTC</code></p>
+<p><code>last updated: Wed Aug 24 15:44:01 2016 UTC</code></p>
 
 </body>
 </html>

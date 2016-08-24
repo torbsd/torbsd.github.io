@@ -53,7 +53,7 @@ One of the small yet important projects spawning from this Tor-BSD meme is Chris
 
 Recently its relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency port (LIB_DEPENDS) for the Tor port. Tor Project Trac tickets include [19902](https://trac.torproject.org/projects/tor/ticket/19902) and [19904](https://trac.torproject.org/projects/tor/ticket/19904).
 
-To enlist an BSD relay in the buildbot:
+To enlist a BSD relay in the buildbot:
 
 * Make sure that devel/git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.
 
@@ -84,7 +84,7 @@ export AUTOCONF_VERSION="2.69"
 export AUTOMAKE_VERSION="1.14"
 ```
 
-Assuming everything is configured correctly, the buildbot slave should appear on [https://buildbot.pixelminers.net](https://buildbot.pixelminers.net), and the log in slave/twistd.log should provide results.
+Assuming everything is configured correctly, the buildbot slave should appear on [https://buildbot.pixelminers.net/buildslaves](https://buildbot.pixelminers.net/buildslaves), and the log in slave/twistd.log should provide results.
 
 Also: yes, we think the terminology of buildbot "slave" and "master" are inappropriate, and we only use them since they are the actually commands and lingo. The terms are not even descriptively useful to someone new to the concept of a continuous integration system.
 
@@ -101,7 +101,7 @@ The accomplishments are not reducible to a single blog entry, but here are summa
 
 * We held a presentation at BSDCan 2016 in Ottawa, Canada in June. The presentation, entited [Beyond Monocultures](http://www.bsdcan.org/2016/schedule/events/712.en.html) is hosted on [YouTube](https://www.youtube.com/watch?v=KeQWET79t_Y). The meeting was engaging and filled with discussion, and there were some exciting possibilities produced by the meeting, including a code audit offered by a well-respected information security firm, plus some preliminary plans to port our TB code to [HardenedBSD](https://hardendedbsd.org).
 
-* Also as a consequence of BSDCan, Brian Conway of [resflash](https://stable.rcesoftware.com/resflash/), a flash-based OpenBSD build system began producing [images with a Tor relay pre-configured](https://stable.rcesoftware.com/pub/resflash/tor/). We have been exploring such a system for Tor bridges, with either resflash or [flashrd](http://www.nmedia.org/flashrd), but are glad to see Brian took the initiative.
+* Also as a consequence of BSDCan, Brian Conway of [resflash](https://stable.rcesoftware.com/resflash/), a flash-based OpenBSD build system began producing [images with a Tor relay pre-configured](https://stable.rcesoftware.com/pub/resflash/tor/). We have been exploring such a system for Tor bridges, with either resflash or [flashrd](http://www.nmedia.net/flashrd/), but are glad to see Brian took the initiative.
 
 We would have replied to the RFP for [EuroBSDCon 2016 in Belgrade, Serbia](https://2016.eurobsdcon.org/) but the TDP schedule doesn't permit.
 
