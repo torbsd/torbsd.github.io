@@ -55,7 +55,7 @@ Recently its relevance was reinforced due to some libevent issues with OpenBSD a
 
 To enlist a BSD relay in the buildbot:
 
-* Make sure that devel/git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.
+* Make sure that devel/git and devel/autotools is installed on the functioning Tor relay, the latter of which includes devel/autoconf and devel/automake as dependencies.
 
 * Create a non-privileged user for the buildbot, without any particular group outside of its own.
 
