@@ -65,22 +65,22 @@
 
 <p>To enlist an BSD relay in the buildbot:</p>
 
-<ol>
+<ul>
 <li><p>Make sure that devel/git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.</p></li>
 <li><p>Create a non-privileged user for the buildbot, without any particular group outside of its own.</p></li>
 <li><p>On FreeBSD and DragonFly BSD, install devel/buildbot-slave. On NetBSD, install devel/py27-buildbot-slave. On OpenBSD (and Bitrig) install devel/py-buildslave.</p></li>
 <li><p>As the non-privileged user, run this command:</p></li>
-</ol>
+</ul>
 
 <pre><code>$ buildslave create-slave slave buildbot.pixelminers.net:9989 &lt;buildername&gt; &lt;password&gt;
 </code></pre>
 
 <p>where <buildername> is something you choose, and <password> is your key for the particular slave.</p>
 
-<ol>
+<ul>
 <li><p>In the new user&#8217;s directory, a slave/ directory will be created. Edit slave/info to provide a description, like the particular BSD, the architecture and maybe BSD release version, plus edit slave/admin to provide an (obscured) contact email for the buildbot slave.</p></li>
 <li><p>Finally, run this command to join the buildbot, from the new user&#8217;s directory:</p></li>
-</ol>
+</ul>
 
 <pre><code>$ buildslave start slave/
 </code></pre>
@@ -510,7 +510,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Wed Aug 24 15:10:26 2016 UTC</code></p>
+<p><code>last updated: Wed Aug 24 15:17:49 2016 UTC</code></p>
 
 </body>
 </html>

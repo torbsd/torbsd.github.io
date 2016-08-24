@@ -55,13 +55,13 @@ Recently its relevance was reinforced due to some libevent issues with OpenBSD a
 
 To enlist an BSD relay in the buildbot:
 
-1. Make sure that devel/git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.
+* Make sure that devel/git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.
 
-2. Create a non-privileged user for the buildbot, without any particular group outside of its own.
+* Create a non-privileged user for the buildbot, without any particular group outside of its own.
 
-3. On FreeBSD and DragonFly BSD, install devel/buildbot-slave.  On NetBSD, install devel/py27-buildbot-slave. On OpenBSD (and Bitrig) install devel/py-buildslave.
+* On FreeBSD and DragonFly BSD, install devel/buildbot-slave.  On NetBSD, install devel/py27-buildbot-slave. On OpenBSD (and Bitrig) install devel/py-buildslave.
 
-4. As the non-privileged user, run this command:
+* As the non-privileged user, run this command:
 
 ```
 $ buildslave create-slave slave buildbot.pixelminers.net:9989 <buildername> <password>
@@ -69,9 +69,9 @@ $ buildslave create-slave slave buildbot.pixelminers.net:9989 <buildername> <pas
 
 where <buildername> is something you choose, and <password> is your key for the particular slave.
 
-5. In the new user's directory, a slave/ directory will be created. Edit slave/info to provide a description, like the particular BSD, the architecture and maybe BSD release version, plus edit slave/admin to provide an (obscured) contact email for the buildbot slave.
+* In the new user's directory, a slave/ directory will be created. Edit slave/info to provide a description, like the particular BSD, the architecture and maybe BSD release version, plus edit slave/admin to provide an (obscured) contact email for the buildbot slave.
 
-6. Finally, run this command to join the buildbot, from the new user's directory:
+* Finally, run this command to join the buildbot, from the new user's directory:
 
 ```
 $ buildslave start slave/
