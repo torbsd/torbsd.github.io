@@ -59,14 +59,14 @@
 
 <p><a id="buildbot"><strong>The Buildbot Needs BSD Relays</strong></a> by gman999</p>
 
-<p>One of the small yet important projects spawning from this Tor-BSD meme has been Christian S.&#8217;s <a href="https://buildbot.pixelminers.net">BSD Buildbot</a>. Essentially it&#8217;s a tool for development builds of Tor for the Tor Project, with volunteers enlisting their BSD relays.</p>
+<p>One of the small yet important projects spawning from this Tor-BSD meme is Christian S.&#8217;s <a href="https://buildbot.pixelminers.net">BSD Buildbot</a>. Essentially it&#8217;s a tool for development builds of Tor for the Tor Project, with volunteers enlisting their BSD relays.</p>
 
-<p>Recently its relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency for the Tor port.</p>
+<p>Recently its relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency port (LIB_DEPENDS) for the Tor port.</p>
 
 <p>To enlist an BSD relay in the buildbot:</p>
 
 <ol>
-<li><p>Make sure that git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.</p></li>
+<li><p>Make sure that devel/git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.</p></li>
 <li><p>Create a non-privileged user for the buildbot, without any particular group outside of its own.</p></li>
 <li><p>On FreeBSD and DragonFly BSD, install devel/buildbot-slave. On NetBSD, install devel/py27-buildbot-slave. On OpenBSD (and Bitrig) install devel/py-buildslave.</p></li>
 <li><p>As the non-privileged user, run this command:</p></li>
@@ -78,20 +78,22 @@
 <p>where <buildername> is something you choose, and <password> is your key for the particular slave.</p>
 
 <ol>
-<li><p>In the new user&#8217;s directory, a slave/ directory will be created. Edit slave/info to provide a description, like the particular BSD, the architecture and maybe release version, plus edit slave/admin to provide an (obscured) contact for the buildbot slave.</p></li>
+<li><p>In the new user&#8217;s directory, a slave/ directory will be created. Edit slave/info to provide a description, like the particular BSD, the architecture and maybe BSD release version, plus edit slave/admin to provide an (obscured) contact email for the buildbot slave.</p></li>
 <li><p>Finally, run this command to join the buildbot, from the new user&#8217;s directory:</p></li>
 </ol>
 
 <pre><code>$ buildslave start slave/
 </code></pre>
 
-<p>Note that for OpenBSD buildbot relays, /etc/profile needs to contain the installed versions of autoconf and automake, as per <a href="http://lists.nycbug.org/pipermail/tor-bsd/2015-March/000270.html">this email</a> to the <a href="http://lists.nycbug.org/mailman/listinfo/tor-bsd">Tor-BSD mailing list</a>.</p>
+<p>For OpenBSD buildbot relays, /etc/profile needs to list the installed versions of autoconf and automake, as per <a href="http://lists.nycbug.org/pipermail/tor-bsd/2015-March/000270.html">this email</a> to the <a href="http://lists.nycbug.org/mailman/listinfo/tor-bsd">Tor-BSD mailing list</a>.</p>
 
 <pre><code>export AUTOCONF_VERSION=&quot;2.69&quot;
 export AUTOMAKE_VERSION=&quot;1.14&quot;
 </code></pre>
 
 <p>Assuming everything is configured correctly, the buildbot slave should appear on <a href="https://buildbot.pixelminers.net">https://buildbot.pixelminers.net</a>, and the log in slave/twistd.log should provide results.</p>
+
+<p>Also: yes, we think the terminology of buildbot &#8220;slave&#8221; and &#8220;master&#8221; are inapppropriate, and we only use them since they are the actually commands. The terms are not even descriptively useful to someone new to the concept of a continuous integration system.</p>
 
 <h3 id="20160629">20160629</h3>
 
@@ -508,7 +510,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Aug 18 22:09:05 2016 UTC</code></p>
+<p><code>last updated: Wed Aug 24 15:10:26 2016 UTC</code></p>
 
 </body>
 </html>

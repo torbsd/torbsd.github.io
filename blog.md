@@ -49,13 +49,13 @@ __October 2015__
 
 <a id="buildbot">__The Buildbot Needs BSD Relays__</a> by gman999
 
-One of the small yet important projects spawning from this Tor-BSD meme has been Christian S.'s [BSD Buildbot](https://buildbot.pixelminers.net). Essentially it's a tool for development builds of Tor for the Tor Project, with volunteers enlisting their BSD relays.
+One of the small yet important projects spawning from this Tor-BSD meme is Christian S.'s [BSD Buildbot](https://buildbot.pixelminers.net). Essentially it's a tool for development builds of Tor for the Tor Project, with volunteers enlisting their BSD relays.
 
-Recently its relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency for the Tor port.
+Recently its relevance was reinforced due to some libevent issues with OpenBSD and Tor. The OpenBSD base includes libevent, and libevent2 is a dependency port (LIB_DEPENDS) for the Tor port.
 
 To enlist an BSD relay in the buildbot:
 
-1. Make sure that git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.
+1. Make sure that devel/git is installed on the functioning Tor relay, and your system should already have an SSL and probably autotools.
 
 2. Create a non-privileged user for the buildbot, without any particular group outside of its own.
 
@@ -69,7 +69,7 @@ $ buildslave create-slave slave buildbot.pixelminers.net:9989 <buildername> <pas
 
 where <buildername> is something you choose, and <password> is your key for the particular slave.
 
-5. In the new user's directory, a slave/ directory will be created. Edit slave/info to provide a description, like the particular BSD, the architecture and maybe release version, plus edit slave/admin to provide an (obscured) contact for the buildbot slave.
+5. In the new user's directory, a slave/ directory will be created. Edit slave/info to provide a description, like the particular BSD, the architecture and maybe BSD release version, plus edit slave/admin to provide an (obscured) contact email for the buildbot slave.
 
 6. Finally, run this command to join the buildbot, from the new user's directory:
 
@@ -77,7 +77,7 @@ where <buildername> is something you choose, and <password> is your key for the 
 $ buildslave start slave/
 ```
 
-Note that for OpenBSD buildbot relays, /etc/profile needs to contain the installed versions of autoconf and automake, as per [this email](http://lists.nycbug.org/pipermail/tor-bsd/2015-March/000270.html) to the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd).
+For OpenBSD buildbot relays, /etc/profile needs to list the installed versions of autoconf and automake, as per [this email](http://lists.nycbug.org/pipermail/tor-bsd/2015-March/000270.html) to the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd).
 
 ```
 export AUTOCONF_VERSION="2.69"
@@ -85,6 +85,8 @@ export AUTOMAKE_VERSION="1.14"
 ```
 
 Assuming everything is configured correctly, the buildbot slave should appear on [https://buildbot.pixelminers.net](https://buildbot.pixelminers.net), and the log in slave/twistd.log should provide results.
+
+Also: yes, we think the terminology of buildbot "slave" and "master" are inapppropriate, and we only use them since they are the actually commands. The terms are not even descriptively useful to someone new to the concept of a continuous integration system.
 
 
 ###20160629###
