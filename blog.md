@@ -59,7 +59,7 @@ To enlist an BSD relay in the buildbot:
 
 * Create a non-privileged user for the buildbot, without any particular group outside of its own.
 
-* On FreeBSD and DragonFly BSD, install devel/buildbot-slave.  On NetBSD, install devel/py27-buildbot-slave. On OpenBSD (and Bitrig) install devel/py-buildslave.
+* On FreeBSD and DragonFly BSD, install devel/buildbot-slave.  On NetBSD, install devel/py27-buildbot-slave. On OpenBSD and Bitrig install devel/py-buildslave.
 
 * As the non-privileged user, run this command:
 
@@ -86,7 +86,7 @@ export AUTOMAKE_VERSION="1.14"
 
 Assuming everything is configured correctly, the buildbot slave should appear on [https://buildbot.pixelminers.net](https://buildbot.pixelminers.net), and the log in slave/twistd.log should provide results.
 
-Also: yes, we think the terminology of buildbot "slave" and "master" are inapppropriate, and we only use them since they are the actually commands. The terms are not even descriptively useful to someone new to the concept of a continuous integration system.
+Also: yes, we think the terminology of buildbot "slave" and "master" are inappropriate, and we only use them since they are the actually commands and lingo. The terms are not even descriptively useful to someone new to the concept of a continuous integration system.
 
 
 ###20160629###
