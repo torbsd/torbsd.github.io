@@ -61,7 +61,7 @@ A brief list of where things stand with __TDP__:
 
 * The [BSD Buildbot](https://buildbot.pixelminers.net) is more populated since our last call-to-enlist, but operators need to make sure the buildslave software is up and running.
 
-* [Quick-and-Dirty Static Reports](dirtystats.html) is being updated reguarly, but still manually and not consistently. Note that there has been a small but noticeable dip in the *BSD relays, and the number of countries without relays hovers over 85 recently.
+* [Quick-and-Dirty Static Reports](dirty-stats.html) is being updated reguarly, but still manually and not consistently. Note that there has been a small but noticeable dip in the *BSD relays, and the number of countries without relays hovers over 85 recently.
 
 That's the status right now. Updates should be happening in the near future.
 
