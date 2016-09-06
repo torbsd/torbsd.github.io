@@ -10,6 +10,10 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or a Central Location for Announces and Notes##
 
+__September 2016__
+
+[Where Things Stand](#current0)
+
 __August 2016__
 
 [The Buildbot Needs BSD Relays](#buildbot)
@@ -44,6 +48,23 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20160906###
+
+<a id="current0">__Where Things Stand__</a> by gman999
+
+A brief list of where things stand with __TDP__:
+
+* Tor Browser 6.0.4 is in the testing phase, but looking good. Builds for i386 should start today.
+
+* One of us will be attending the [Tor Summit](https://trac.torproject.org/projects/tor/wiki/org/meetings/2016SummerMeeting). Many invites, but it's usually at a bad time for us.
+
+* The [BSD Buildbot](https://buildbot.pixelminers.net) is more populated since our last call-to-enlist, but operators need to make sure the buildslave software is up and running.
+
+* [Quick-and-Dirty Static Reports](dirtystats.html) is being updated reguarly, but still manually and not consistently. Note that there has been a small but noticeable dip in the *BSD relays, and the number of countries without relays hovers over 85 recently.
+
+That's the status right now. Updates should be happening in the near future.
+
 
 ###20160818###
 
