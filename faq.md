@@ -31,6 +31,9 @@ __Developers__
 __Tor BSD Relay Operators/Admins__
 :    Run a BSD relay, use and review the relay guides, contribute input. Enlist your relay(s) the (unofficial) [BSD Buildbot](http://buildbot.pixelminers.net/).
 
+__Potential Funders__
+:    __TDP__ needs funding. Please contact __TDP__ if interested in assisting us with funding, hardware donations, etc.
+
 ## "If __TDP__ is concerned about operating system diversity, why does it just focus on BSD Systems, and not other operating systems such as Illuminos?" ##
 
 __TDP__ focuses on the BSDs due to our background and experience. It
@@ -73,7 +76,7 @@ interoperability.
 
 Ultimately diversity *does* mean asking much broader questions. More
 diversity in operating systems, hardware, SSL versions, geographical
-locations, the list could continue endlessly. It's the right question
+locations, etc., the list could continue endlessly. It's the right question
 to ask, but __TDP__ is only beginning to provide a small piece of a
 response.
 
@@ -84,19 +87,14 @@ response.
 ## "How many Tor relays are running a BSD?" ##
 
 The number and percentage of public Tor relays fluctuates, and this
-applies to BSD relays as well. As of October 2015, the percentage is
-just under 4.5%. Web sites such as [BlutMagie](http://torstatus.blutmagie.de/)
+applies to BSD relays as well. As of September 2016, the percentage is
+just under 5%. Web sites such as [BlutMagie](http://torstatus.blutmagie.de/)
 provide a full list of public relays with a query function to determine
 the exact current number among other data.
 
 [Tor Metrics](https://metrics.torproject.org/platforms.html) provides
 a clear graph that strikingly, and disturbingly in our opinions,
 illustrates the monoculture in relay platforms.
-
-## "Doesn't the [Tor web site download page](https://www.torproject.org/download/download-easy.html.en) list a Tor Browser Bundle for GNU/Linux, that also supports 'Unix, BSD'?" ##
-
-That is true, but unfortunately inaccurate. The current Tor download
-does not work on any of the BSDs for a variety of reasons.
 
 ## "I run a Tor relay on such and such Linux distribution. How hard would it be to run a BSD relay for me?" ##
 
@@ -123,7 +121,7 @@ Installing a package isn't difficult either. To install the rsync
 package on FreeBSD, for instance, the user just has to type "pkg
 install rsync."  For OpenBSD, it's just "pkg_add rsync." NetBSD's
 [pkgsrc](http://www.netbsd.org/docs/pkgsrc/) also maintains simple
-syntax, and happens to to be portable to a variety of other operating systems.
+syntax and is portable to a variety of other operating systems.
 
 The important principle is to minimize the operating system footprint,
 including daemons listening, applications installed, etc. If it's a
