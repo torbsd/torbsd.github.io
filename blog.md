@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __October 2016__
 
-[Replying to Tor Blog Comments](#torblog0)
+[Test Tor Browser 6.0.5 for OpenBSD](#test605)  [%sep]  [Replying to Tor Blog Comments](#torblog0)
 
 __September 2016__
 
@@ -52,6 +52,18 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20161005###
+
+<a id="test605">__Test Tor Browser 6.0.5 for OpenBSD__</a> by gman999
+
+The release of TB 6.0.5 has been worked and reworked, and submitted to the [OpenBSD ports@ list](https://marc.info/?l=openbsd-ports&m=147552847908620&w=2).
+
+If you're an OpenBSD user running amd64 snapshots, and you want more operating system on the Tor network, you should be testing it. As always, consider this release without warranties and a serious infraction to your online anonymity!
+
+The amd64 packages are on the [NYC*BUG mirror](http://mirrors.nycbug.org/pub/snapshots/packages/amd64/). The i386 packages should be up in the next day or so.
+
+Feedback, comments, gripes not just welcomed, but demanded.
 
 ###20161004###
 
