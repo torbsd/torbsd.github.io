@@ -77,13 +77,13 @@ This comment follows up from noting the lack of source tarballs from the TP, whi
 
 Nick M, Roger D, and others actively use the [BSD Buildbot](https://buildbot.pixelminers.net/) initiated by Christian S., and we have corresponded about it. Roger has made multiple references to TDP in his postings on various Tor mailing lists. We hardly feel there is some conspiracy against the BSDs from Tor core developers. Rather, there is a genuine recognition of our endeavor.
 
-More generally: yes, the recent vulnerability from RFC5961 TCP implementations on Linux makes yet another strong case for operating system diversity, and it is neither the beginning nor the end of screams for diversity.
+More generally: yes, the recent vulnerability from [RFC5961](https://tools.ietf.org/html/rfc5961) TCP implementations on Linux makes yet another strong case for operating system diversity, and it is neither the beginning nor the end of screams for diversity.
 
-And it's not just operating system diversity. More relays need to be running on architectures other than x86. PPC and ARMv7 are certainly worthwhile platforms, and the near-future should see production-quality support of 64-bit ARM hardware (aarch64) on FreeBSD.
+And it's not just operating system diversity. More relays need to be running on architectures other than x86. PPC and ARMv7 are certainly worthwhile platforms, and the near-future should see production-quality support of 64-bit ARM hardware (aarch64) on [FreeBSD](https://www.freebsd.org/platforms/arm.html).
 
--Moroever OpenBSD users prefer to download Tor Browser Bundle directly from The Tor Project as the latter is the official software publisher of Tor._
+_Moroever OpenBSD users prefer to download Tor Browser Bundle directly from The Tor Project as the latter is the official software publisher of Tor._
 
-Actually, I doubt any open source operating system user would prefer to directly download any third party for their packages, as opposed to using software packaged specifically built for their operating system.
+Actually, I doubt any open source operating system user would prefer to directly download any third party for their packages, as opposed to using software packaged specifically built for their operating system in their respective ports or package system.
 
 In the case of OpenBSD, this is doubly true. If software gets into OpenBSD's ports tree, a small but real amount of review is conducted at minimum. Third-party ports in the tree aren't fully audited, but as one can see from the [ports@ mailing list](https://marc.info/?l=openbsd-ports&r=1&w=2), ugly unreviewed ports don't easily enter. We have been developing and tweaking TB on OpenBSD for a long time. Maybe if we could attend to the porting effort with more time and resources, TB would already be in the OpenBSD ports tree, but regardless, look through the comprehensive attention TB has received. Moreover, development on OpenBSD only happens on the -current branch, which can change rapidly and frequently which requires a lot of attention to details.
 
