@@ -97,9 +97,9 @@ We aren't focused on 'superiority' although most people who choose an operating 
 
 It is generally true that each of the BSDs have different roadmaps for implementing standards than Linux. In many cases, the BSDs differ among themselves, despite a shared origin and lots of overlap since.
 
-_I don't understand why you brought Apple into the discussion.
+_I don't understand why you brought Apple into the discussion._
 
-I think the OP refers to the public secret that Apple pilfered one of the *BSDs and adapted it into iOS, because the generous nature of the BSD licence allows it, hence why "BSD things are more better for closed source" as the OP puts it. It's well known that iOS is a Unix clone, at least._
+_I think the OP refers to the public secret that Apple pilfered one of the *BSDs and adapted it into iOS, because the generous nature of the BSD licence allows it, hence why "BSD things are more better for closed source" as the OP puts it. It's well known that iOS is a Unix clone, at least._
 
 In a sense, the BSD license throws up a white flag in the face of corporate usagoe of code. It's a pointless battle, and their side always has more resources and lawyers. The point of the BSD license is to protect the developer, and to let code flow around like it should without restrictions. We view long licenses like the GPL and its various incarnations as great material for legal pro bono projects, but rarely mean anything for the open source projects.
 
