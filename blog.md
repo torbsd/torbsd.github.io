@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __October 2016__
 
-[Replying to Tor Blog Comments(#torblog0)
+[Replying to Tor Blog Comments](#torblog0)
 
 __September 2016__
 
