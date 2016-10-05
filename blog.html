@@ -21,6 +21,10 @@
 
 <h2 id="ablogoracentrallocationforannouncesandnotes">A Blog, or a Central Location for Announces and Notes</h2>
 
+<p><strong>October 2016</strong></p>
+
+<p>[Replying to Tor Blog Comments(#torblog0)</p>
+
 <p><strong>September 2016</strong></p>
 
 <p><a href="#current0">Where Things Stand</a></p>
@@ -58,6 +62,60 @@
 <p><a href="#tb-update">Updated Tor Browser Packages</a> &#8916; <a href="#relay-guides">The BSD Relay Guides</a> &#8916; <a href="#first-bells">Our First Bells</a> &#8916; <a href="#beyond-os">Beyond OS Diversity</a> &#8916; <a href="#tb-5.0.3">Tor Browser version 5.0.3 for OpenBSD</a></p>
 
 <p><a href="#attic">From the Attic</a></p>
+
+<h3 id="20161004">20161004</h3>
+
+<p><a id="torblog0"><strong>Replying to Tor Blog Comments</strong></a> by gman999</p>
+
+<p>The last Tor blog post on <a href="https://blog.torproject.org/blog/tor-0288-released-important-fixes">Tor 0.2.8.8 is released, with important fixes</a> prompted a flurry of comments regarding the BSDs and the Tor Project.</p>
+
+<p>An important part of the Tor 0.2.8.8 release was a fix for a bug discovered by Attila and I <a href="https://bugs.torproject.org/20103">20103</a>, in which Tor Browser on OpenBSD was crashing with BSD relays as the first hop. I first encountered the crashes, while Attila did the heavy lifting and reported it to the TP&#8217;s Trac.</p>
+
+<p>OpenBSD is an ideal bug-finding platform as it follows the classic Unix approach in which a daemon dies loudly rather than quietly hiding its behavior. The bug likely affects other operating systems, so another +1 for operating system diversity.</p>
+
+<p>The comments section opened an noisy series of posts about Tor and the BSDs, some of which we believe are inaccurate and need clarification. Snips from the posted comments are below, with our replies:</p>
+
+<p><em>Since nickm mentioned OpenBSD users have been more seriously affected, we&#8217;d like to take this opportunity to ask why The Tor Project has no plans at all to release Tor Browser Bundle for *BSD operating systems, OpenBSD in particular.</em></p>
+
+<p>There are lots of things the TP should be planning, and as non-Tor Project developers, we jumped on the opportunity to port Tor Browser to OpenBSD back in March 2015. We are in regular contact with the TP, and have been encouraged and assisted by a number of TP core people, including Moritz and Roger. My recent attendance at the <a href="https://trac.torproject.org/projects/tor/wiki/org/meetings/2016SummerMeeting">Seattle Tor Summit</a> illustrated the great attention TDP is getting, I was personally flattered by the recognition.</p>
+
+<p><em>It appears then that The Tor Project is not keen at all to support users of *BSD operating systems. Therein lies the danger. Again the following is a quote from The Tor BSD Diversity Project&#8230;</em></p>
+
+<p>This comment follows up from noting the lack of source tarballs from the TP, which is the preference for porting Tor Browser and other software. Oddly, the poster quotes the TDP www site, yet in the previous comments says the TP &#8220;has no plans at all to release Tor Browser Bundle for *BSD operating systems&#8221;</p>
+
+<p>Nick M is actively using the <a href="https://buildbot.pixelminers.net/">BSD Buildbot</a> initiated by Christian S., and we have corresponded with him about it. Roger has made multiple references to TDP in his postings on various Tor mailing lists. We hardly feel there is some conspiracy against the BSDs from Tor core developers. Rather, there is a genuine recognition of our endeavor.</p>
+
+<p>More generally: yes, the recent vulnerability from RFC5961 TCP implementations on Linux makes yet another strong case for operating system diversity, and it is neither the beginning nor the end of screams for diversity.</p>
+
+<p>And it&#8217;s not just operating system diversity. More relays need to be running on architectures other than x86. PPC and ARMv7 are certainly worthwhile platforms, and the near-future should see production-quality support of 64-bit ARM hardware (aarch64) on FreeBSD.</p>
+
+<p>-Moroever OpenBSD users prefer to download Tor Browser Bundle directly from The Tor Project as the latter is the official software publisher of Tor._</p>
+
+<p>Actually, I doubt any open source operating system user would prefer to directly use any third party for their packages. In the case of OpenBSD, this is doubly true. If software gets into OpenBSD&#8217;s ports tree, a small but real amount of review is conducted. Third-party ports in the tree aren&#8217;t fully audited, but as one can see from the <a href="https://marc.info/?l=openbsd-ports&amp;r=1&amp;w=2">ports@ mailing list</a>, ugly unreviewed ports don&#8217;t easily enter. We have been developing and tweaking TB on OpenBSD for a long time. Maybe if we could attend to the porting effort with more time and resources, TB would already be in the OpenBSD ports tree, but regardless, look through the comprehensive attention TB has received. Moreover, development on OpenBSD only happens on the -current branch, which can change rapidly and frequently which requires a lot of attention to details.</p>
+
+<p><em>If I had seen all this sooner, I wonder if it would have been worthwhile to have suggested tackling *BSD Tor packages be a hack topic at the recent Tor Project Hack Day in Seattle this weekend? Perhaps there&#8217;ll be a future chance?</em></p>
+
+<p>It wasn&#8217;t an explcit topic in Seattle, but there was a fruitful discussion about diversity, and not just operating system diversity. There were also a number of informal discussions on the topic, but the ball is really in TDP&#8217;s court right now. TDP will need more TP involvement in the near future.</p>
+
+<p>Regarding a version of TAILS on a BSD: <em>It will never happen as *BSD kernels are notorious for being behind in their support for the latest Intel CPUs.</em></p>
+
+<p>Actually, the vast majority of hardware is well-supported. This is really just fud. OpenBSD is refreshingly intransigent about signing non-disclosure agreements, which can mean lack of support for some hardware, but they do distribute binaries for some wireless cards, video drivers, etc. Without that stance, a lot of open source development would never occur.</p>
+
+<p>And again regarding the RFC5961 issue in Linux: <em>the argument should just be about having diverse kernels, because saying a known bug &#8220;proves&#8221; one of them to be inherently inferior is actually a temporary fact. In using a diversity argument and avoiding a comparative argument, I&#8217;d expect more support for *BSDs will be attracted from thinking people.</em></p>
+
+<p>We aren&#8217;t focused on &#8216;superiority&#8217; although most people who choose an operating system consider it superior on some level or another, right?</p>
+
+<p>It is generally true that each of the BSDs have different roadmaps for implementing standards than Linux. In many cases, the BSDs differ among themselves, despite a shared origin and lots of overlap since.</p>
+
+<p>_I don&#8217;t understand why you brought Apple into the discussion.</p>
+
+<p>I think the OP refers to the public secret that Apple pilfered one of the *BSDs and adapted it into iOS, because the generous nature of the BSD licence allows it, hence why &#8220;BSD things are more better for closed source&#8221; as the OP puts it. It&#8217;s well known that iOS is a Unix clone, at least._</p>
+
+<p>In a sense, the BSD license throws up a white flag in the face of corporate usagoe of code. It&#8217;s a pointless battle, and their side always has more resources and lawyers. The point of the BSD license is to protect the developer, and to let code flow around like it should without restrictions. We view long licenses like the GPL and its various incarnations as great material for legal pro bono projects, but rarely mean anything for the open source projects.</p>
+
+<p>Apple does use BSD code, as do tons of other software firms. &#8220;Pilfered&#8221; hardly describes the relationship. And yes, that lack of restrictiveness does mean BSD code is used but not loudly credited, but having a license that developers don&#8217;t need a lawyer to read offsets the loss.</p>
+
+<p>That&#8217;s it for now.</p>
 
 <h3 id="20160906">20160906</h3>
 
@@ -529,7 +587,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Tue Sep  6 16:54:01 2016 UTC</code></p>
+<p><code>last updated: Wed Oct  5 02:08:09 2016 UTC</code></p>
 
 </body>
 </html>
