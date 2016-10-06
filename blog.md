@@ -71,7 +71,7 @@ Feedback, comments, gripes not just welcomed, but demanded.
 
 The last Tor blog post on [Tor 0.2.8.8 is released, with important fixes](https://blog.torproject.org/blog/tor-0288-released-important-fixes) prompted a flurry of comments regarding the BSDs and the Tor Project.
 
-An important part of the Tor 0.2.8.8 release was a fix for bug#[20103](https://bugs.torproject.org/20103) discovered by me and Attila. Tor on OpenBSD was crashing with OpenBSD relays running 0.2.8.7 as the first hop. gman999 first encountered the crashes while testing new TBB packages. Attila did the heavy lifting and reported it to the TP's Trac.
+An important part of the Tor 0.2.8.8 release was a fix for bug #[20103](https://bugs.torproject.org/20103) discovered by me and Attila. Tor on OpenBSD was crashing with OpenBSD relays running 0.2.8.7 as the first hop. gman999 first encountered the crashes while testing new TBB packages. Attila did the heavy lifting and reported it to the TP's Trac.
 
 OpenBSD is an ideal bug-finding platform as it follows the classic Unix approach in which a daemon dies loudly rather than quietly hiding its behavior. The bug likely affects other operating systems, so another +1 for operating system diversity.
 
