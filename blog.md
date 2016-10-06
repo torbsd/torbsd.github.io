@@ -71,7 +71,7 @@ Feedback, comments, gripes not just welcomed, but demanded.
 
 The last Tor blog post on [Tor 0.2.8.8 is released, with important fixes](https://blog.torproject.org/blog/tor-0288-released-important-fixes) prompted a flurry of comments regarding the BSDs and the Tor Project.
 
-An important part of the Tor 0.2.8.8 release was a fix for bug#[20103](https://bugs.torproject.org/20103) discovered by me and Attila. Tor on OpenBSD was crashing with OpenBSD relays running 0.2.8.7 as the first hop. I first encountered the crashes while testing new TBB packages. Attila did the heavy lifting and reported it to the TP's Trac.
+An important part of the Tor 0.2.8.8 release was a fix for bug#[20103](https://bugs.torproject.org/20103) discovered by me and Attila. Tor on OpenBSD was crashing with OpenBSD relays running 0.2.8.7 as the first hop. gman999 first encountered the crashes while testing new TBB packages. Attila did the heavy lifting and reported it to the TP's Trac.
 
 OpenBSD is an ideal bug-finding platform as it follows the classic Unix approach in which a daemon dies loudly rather than quietly hiding its behavior. The bug likely affects other operating systems, so another +1 for operating system diversity.
 
@@ -79,7 +79,7 @@ The comments section opened an noisy series of posts about Tor and the BSDs, som
 
 _Since nickm mentioned OpenBSD users have been more seriously affected, we'd like to take this opportunity to ask why The Tor Project has no plans at all to release Tor Browser Bundle for *BSD operating systems, OpenBSD in particular._
 
-There are lots of things the TP should be planning, and as non-Tor Project developers, we jumped on the opportunity to port Tor Browser to OpenBSD back in March 2015. We are in regular contact with the TP, and have been encouraged and assisted by a number of TP core people, including Moritz and Roger. My recent attendance at the [Seattle Tor Summit](https://trac.torproject.org/projects/tor/wiki/org/meetings/2016SummerMeeting) illustrated the great attention TDP is getting, I was personally flattered by the recognition.
+There are lots of things the TP should be planning, and as non-Tor Project developers, we jumped on the opportunity to port Tor Browser to OpenBSD back in March 2015. We are in regular contact with the TP, and have been encouraged and assisted by a number of TP core people, including Moritz and Roger. My recent attendance at the [Seattle Tor Summit](https://trac.torproject.org/projects/tor/wiki/org/meetings/2016SummerMeeting) illustrated the great attention TDP is getting, we were personally flattered by the recognition.
 
 The question for the anonymous poster is "what are you doing?"  TP is an open source project. In BSD Land no one listens to gripes about software if the complainer doesn't at least begin resolving the issue, like submitting debugging information, providing a patch, etc. It's a principle that all open source projects should adopt. The poster in question should at least be testing our TB releases on OpenBSD.
 
@@ -95,7 +95,7 @@ And it's not just operating system diversity. More relays need to be running on 
 
 _Moroever OpenBSD users prefer to download Tor Browser Bundle directly from The Tor Project as the latter is the official software publisher of Tor._
 
-Actually, I doubt any open source operating system user would prefer to directly download any third party for their packages, as opposed to using software packaged specifically built for their operating system in their respective ports or package system.
+Actually, most sane open source operating system users would prefer to directly download any third party for their packages, as opposed to using software packaged specifically built for their operating system in their respective ports or package system.
 
 In the case of OpenBSD, this is doubly true. If software gets into OpenBSD's ports tree, a small but real amount of review is conducted at minimum. Third-party ports in the tree aren't fully audited, but as one can see from the [ports@ mailing list](https://marc.info/?l=openbsd-ports&r=1&w=2), ugly unreviewed ports don't easily enter. We have been developing and tweaking TB on OpenBSD for a long time. Maybe if we could attend to the porting effort with more time and resources, TB would already be in the OpenBSD ports tree, but regardless, look through the comprehensive attention TB has received. Moreover, development on OpenBSD only happens on the -current branch, which changes rapidly and frequently.
 
