@@ -67,11 +67,11 @@ Feedback, comments, gripes not just welcomed, but demanded.
 
 ###20161004###
 
-<a id="torblog0">__Replying to Tor Blog Comments__</a> by gman999
+<a id="torblog0">__Replying to Tor Blog Comments__</a> by gman999 and attila
 
 The last Tor blog post on [Tor 0.2.8.8 is released, with important fixes](https://blog.torproject.org/blog/tor-0288-released-important-fixes) prompted a flurry of comments regarding the BSDs and the Tor Project.
 
-An important part of the Tor 0.2.8.8 release was a fix for bug [20103](https://bugs.torproject.org/20103) discovered by Attila and I, in which Tor Browser on OpenBSD was crashing with BSD relays as the first hop. I first encountered the crashes, while Attila did the heavy lifting and reported it to the TP's Trac.
+An important part of the Tor 0.2.8.8 release was a fix for bug [#20103](https://bugs.torproject.org/20103) discovered by me and Attila. Tor on OpenBSD was crashing with OpenBSD relays running 0.2.8.7 as the first hop. I first encountered the crashes while testing new TBB packages. Attila did the heavy lifting and reported it to the TP's Trac.
 
 OpenBSD is an ideal bug-finding platform as it follows the classic Unix approach in which a daemon dies loudly rather than quietly hiding its behavior. The bug likely affects other operating systems, so another +1 for operating system diversity.
 
@@ -81,7 +81,7 @@ _Since nickm mentioned OpenBSD users have been more seriously affected, we'd lik
 
 There are lots of things the TP should be planning, and as non-Tor Project developers, we jumped on the opportunity to port Tor Browser to OpenBSD back in March 2015. We are in regular contact with the TP, and have been encouraged and assisted by a number of TP core people, including Moritz and Roger. My recent attendance at the [Seattle Tor Summit](https://trac.torproject.org/projects/tor/wiki/org/meetings/2016SummerMeeting) illustrated the great attention TDP is getting, I was personally flattered by the recognition.
 
-The question for the anonymous poster is "what are you doing?"  TP is an open source project. In BSD Land, no one listeners to gripes about software if the complainer doesn't at least begin resolving the issue, like submitting debugging information, providing a patch, etc. It's a principle that all open source projects should adopt. The poster in question should at least be testing our TB releases on OpenBSD.
+The question for the anonymous poster is "what are you doing?"  TP is an open source project. In BSD Land no one listens to gripes about software if the complainer doesn't at least begin resolving the issue, like submitting debugging information, providing a patch, etc. It's a principle that all open source projects should adopt. The poster in question should at least be testing our TB releases on OpenBSD.
 
 _It appears then that The Tor Project is not keen at all to support users of *BSD operating systems. Therein lies the danger. Again the following is a quote from The Tor BSD Diversity Project..._
 
@@ -97,7 +97,9 @@ _Moroever OpenBSD users prefer to download Tor Browser Bundle directly from The 
 
 Actually, I doubt any open source operating system user would prefer to directly download any third party for their packages, as opposed to using software packaged specifically built for their operating system in their respective ports or package system.
 
-In the case of OpenBSD, this is doubly true. If software gets into OpenBSD's ports tree, a small but real amount of review is conducted at minimum. Third-party ports in the tree aren't fully audited, but as one can see from the [ports@ mailing list](https://marc.info/?l=openbsd-ports&r=1&w=2), ugly unreviewed ports don't easily enter. We have been developing and tweaking TB on OpenBSD for a long time. Maybe if we could attend to the porting effort with more time and resources, TB would already be in the OpenBSD ports tree, but regardless, look through the comprehensive attention TB has received. Moreover, development on OpenBSD only happens on the -current branch, which can change rapidly and frequently which requires a lot of attention to details.
+In the case of OpenBSD, this is doubly true. If software gets into OpenBSD's ports tree, a small but real amount of review is conducted at minimum. Third-party ports in the tree aren't fully audited, but as one can see from the [ports@ mailing list](https://marc.info/?l=openbsd-ports&r=1&w=2), ugly unreviewed ports don't easily enter. We have been developing and tweaking TB on OpenBSD for a long time. Maybe if we could attend to the porting effort with more time and resources, TB would already be in the OpenBSD ports tree, but regardless, look through the comprehensive attention TB has received. Moreover, development on OpenBSD only happens on the -current branch, which changes rapidly and frequently.
+
+There is another issue that gets glossed over when people propose that the Tor Project should distribute OpenBSD TBB packages: who signs the packages? It is not that common in the OpenBSD community for users to have umpteen keys from umpteen software repositories installed in `/etc/signify` and to mix packages installed from various sources. Users generally install packages built from ports by the OpenBSD team, signed with the keys distributed with the operating system. We are therefore hesitant to suggest that the Tor Project start distributing packages, since they would then have to sign them and instruct their users to add the appropriate keys to their system. The better way, in our opinion, is for the port to be accepted into the official ports tree and for binary packages to be made available in the usual way.
 
 _If I had seen all this sooner, I wonder if it would have been worthwhile to have suggested tackling *BSD Tor packages be a hack topic at the recent Tor Project Hack Day in Seattle this weekend? Perhaps there'll be a future chance?_
 
@@ -105,7 +107,9 @@ It wasn't an explcit topic in Seattle, but there was a fruitful discussion about
 
 Regarding a version of TAILS on a BSD: _It will never happen as *BSD kernels are notorious for being behind in their support for the latest Intel CPUs._
 
-Actually, the vast majority of hardware is well-supported by the BSDs. This is really just fud. OpenBSD is refreshingly intransigent about signing non-disclosure agreements, which can mean lack of support for some hardware, but they do distribute binaries for some wireless cards, video drivers, etc. Without that stance, a lot of open source development would never occur.
+This is really just FUD: the vast majority of hardware is well-supported by the BSDs. OpenBSD is refreshingly intransigent about signing non-disclosure agreements, which can mean lack of support for some hardware, but they do distribute binaries for some wireless cards, video drivers, etc. Without that stance, a lot of open source development would never occur.
+
+Producing a TAILS-like alternative based on OpenBSD has been a goal of TDP since its inception. We're still on the first step: porting TBB to OpenBSD.
 
 And again regarding the RFC5961 issue in Linux: _the argument should just be about having diverse kernels, because saying a known bug "proves" one of them to be inherently inferior is actually a temporary fact. In using a diversity argument and avoiding a comparative argument, I'd expect more support for *BSDs will be attracted from thinking people._
 
@@ -119,9 +123,9 @@ and,
 
 _I think the OP refers to the public secret that Apple pilfered one of the *BSDs and adapted it into iOS, because the generous nature of the BSD licence allows it, hence why "BSD things are more better for closed source" as the OP puts it. It's well known that iOS is a Unix clone, at least._
 
-In a sense, the BSD license throws up a white flag in the face of corporate usagoe of code. It's a pointless battle, and their side always has more resources and lawyers. The point of the BSD license is to protect the developer, and to let code flow around like it should without restrictions. We view long licenses like the GPL and its various incarnations as great material for legal pro bono projects, but rarely benefit open source projects in terms of code.
+In a sense the BSD license throws up a white flag in the face of corporate usage of code. It's a pointless battle, and their side always has more resources and lawyers. The point of the BSD license is to protect the developer, and to let code flow around like it should without restrictions; the simplicity of BSD-derived licenses is impossible to deny. We view licenses like the GPL (esp. post-v2) as generators of billable hours for corporate lawyers, something we'd care to avoid.
 
-Apple does use BSD code, as do many other firms. "Pilfered" hardly describes the relationship. And yes, that lack of restrictiveness does mean BSD code is used but not loudly credited, but having a license that developers don't need a lawyer to read offsets the loss.
+Apple does use BSD code, as do many other firms. "Pilfered" hardly describes the relationship. And yes, that lack of restrictiveness does mean BSD code is used but not loudly. Having a license that developers don't need a lawyer to read offsets the loss, and BSD-licensed code's influence is deep.
 
 That's it for now.
 
