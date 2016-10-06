@@ -107,7 +107,7 @@ It wasn't an explcit topic in Seattle, but there was a fruitful discussion about
 
 Regarding a version of TAILS on a BSD: _It will never happen as *BSD kernels are notorious for being behind in their support for the latest Intel CPUs._
 
-This is really just [FUD](https://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt): the vast majority of hardware is well-supported by the BSDs. OpenBSD is refreshingly intransigent about signing non-disclosure agreements, which can mean lack of support for some hardware, but they do distribute binaries for some wireless cards, video drivers, etc. Without that stance, a lot of open source development would never occur.
+This is really just [FUD](https://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt): the vast majority of hardware is well-supported by the BSDs. OpenBSD is refreshingly intransigent about signing non-disclosure agreements, which can mean lack of support for some hardware, but they do distribute firmware for some wireless cards and other devices. Without that stance, a lot of open source development would never occur.
 
 Producing a TAILS-like alternative based on OpenBSD has been a goal of TDP since its inception. We're still on the first step: porting TBB to OpenBSD.
 
