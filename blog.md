@@ -95,7 +95,7 @@ And it's not just operating system diversity. More relays need to be running on 
 
 _Moroever OpenBSD users prefer to download Tor Browser Bundle directly from The Tor Project as the latter is the official software publisher of Tor._
 
-We doubt too many open source operating system users would prefer to directly download any third party for their packages, as opposed to using software packaged specifically built for their operating system in their respective ports or package system.
+We doubt too many open source operating system users would prefer to directly download from any third party for their packages as opposed to using software packaged specifically built for their operating system in their respective ports or package system.
 
 In the case of OpenBSD, this is doubly true. If software gets into OpenBSD's ports tree, a small but real amount of review is conducted at minimum. Third-party ports in the tree aren't fully audited, but as one can see from the [ports@ mailing list](https://marc.info/?l=openbsd-ports&r=1&w=2), ugly unreviewed ports don't easily enter. We have been developing and tweaking TB on OpenBSD for a long time. Maybe if we could attend to the porting effort with more time and resources, TB would already be in the OpenBSD ports tree, but regardless, look through the comprehensive attention TB has received. Moreover, development on OpenBSD only happens on the -current branch, which changes rapidly and frequently.
 
