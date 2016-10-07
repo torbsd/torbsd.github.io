@@ -71,23 +71,23 @@ Feedback, comments, gripes not just welcomed, but demanded.
 
 The last Tor blog post on [Tor 0.2.8.8 is released, with important fixes](https://blog.torproject.org/blog/tor-0288-released-important-fixes) prompted a flurry of comments regarding the BSDs and the Tor Project.
 
-An important part of the Tor 0.2.8.8 release was a fix for bug #[20103](https://bugs.torproject.org/20103) discovered by me and Attila. Tor on OpenBSD was crashing with OpenBSD relays running 0.2.8.7 as the first hop. Gman999 first encountered the crashes while testing new TBB packages. Attila did the heavy lifting and reported it to the TP's Trac.
+An important part of the Tor 0.2.8.8 release was a fix for bug #[20103](https://bugs.torproject.org/20103) discovered by __TDP__. Tor on OpenBSD was crashing with OpenBSD relays running 0.2.8.7 as the first hop. Gman999 first encountered the crashes while testing new TBB packages. Attila did the heavy lifting and reported it to the TP's Trac.
 
 OpenBSD is an ideal bug-finding platform as it follows the classic Unix approach in which a daemon dies loudly rather than quietly hiding its behavior. The bug likely affects other operating systems, so another +1 for operating system diversity.
 
-The comments section opened an noisy series of posts about Tor and the BSDs, some of which we believe are inaccurate and demand responses. Snips from the posted comments are below, with our replies:
+The comments section opened a noisy series of posts about Tor and the BSDs, some of which we believe are inaccurate and demand responses. Snips from the posted comments are below, with our replies:
 
 _Since nickm mentioned OpenBSD users have been more seriously affected, we'd like to take this opportunity to ask why The Tor Project has no plans at all to release Tor Browser Bundle for *BSD operating systems, OpenBSD in particular._
 
-There are lots of things the TP should be planning, and as non-Tor Project developers, we jumped on the opportunity to port Tor Browser to OpenBSD back in March 2015. We are in regular contact with the TP, and have been encouraged and assisted by a number of TP core people, including Moritz and Roger. Gman999's recent attendance at the [Seattle Tor Summit](https://trac.torproject.org/projects/tor/wiki/org/meetings/2016SummerMeeting) illustrated the great attention TDP is getting; he was personally flattered by the recognition.
+There are lots of things the TP should be planning, and as non-Tor Project developers, we jumped on the opportunity to port Tor Browser to OpenBSD back in March 2015. We are in regular contact with the TP, and have been encouraged and assisted by a number of TP core people, including Moritz and Roger. Gman999's recent attendance at the [Seattle Tor Summit](https://trac.torproject.org/projects/tor/wiki/org/meetings/2016SummerMeeting) illustrated the great attention __TDP__ is getting; he was personally flattered by the recognition.
 
-The question for the anonymous poster is "what are you doing?"  TP is an open source project. In BSD Land no one listens to gripes about software if the complainer doesn't at least begin resolving the issue, like submitting debugging information, providing a patch, etc. It's a principle that all open source projects should adopt. The poster in question should at least be testing our TB releases on OpenBSD.
+The question for the anonymous poster is "what are you doing?"  TP is an open source project. In BSD Land no one listens to gripes about software if the complainer doesn't at least begin resolving the issue, like submitting debugging information, providing a patch, etc. It's a principle that all open source projects should adopt. The poster in question should at least be testing our TB releases on OpenBSD. [Fork the code](https://github.com/login?return_to=%2Ftorbsd%2Fopenbsd-ports), [submit a useful issue](https://github.com/torbsd/openbsd-ports/issues), and so on, but complaining anonymously on a blog about what _others_ should do is pointless at best.
 
 _It appears then that The Tor Project is not keen at all to support users of *BSD operating systems. Therein lies the danger. Again the following is a quote from The Tor BSD Diversity Project..._
 
-This comment follows up from noting the lack of source tarballs from the TP, which is the preference for porting Tor Browser and other software. Oddly, the poster quotes the TDP www site, yet in the previous comments says the TP "has no plans at all to release Tor Browser Bundle for *BSD operating systems"
+This comment follows up from noting the lack of source tarballs from the TP, which is the preference for porting Tor Browser and other software. Oddly, the poster quotes the __TDP__ www site, yet in the previous comments says the TP "has no plans at all to release Tor Browser Bundle for *BSD operating systems."
 
-Nick M, Roger D, and others actively use the [BSD Buildbot](https://buildbot.pixelminers.net/) initiated by Christian S., and we have corresponded about it. Roger has made multiple references to TDP in his postings on various Tor mailing lists. We hardly feel there is some conspiracy against the BSDs from Tor core developers. Rather, there is a genuine recognition of our endeavor.
+Nick M, Roger D, and others actively use the [BSD Buildbot](https://buildbot.pixelminers.net/) initiated by Christian S., and we have corresponded about it. Roger made multiple references to __TDP__ in his postings on various Tor mailing lists. We hardly feel there is some conspiracy against the BSDs from Tor core developers. Rather, there is a genuine recognition of the __TDP__ endeavor.
 
 More generally: yes, the recent vulnerability from [RFC5961](https://tools.ietf.org/html/rfc5961) TCP implementations on Linux makes yet another strong case for operating system diversity, and it is neither the beginning nor the end of screams for diversity.
 
@@ -103,13 +103,13 @@ There is another issue that gets glossed over when people propose that the Tor P
 
 _If I had seen all this sooner, I wonder if it would have been worthwhile to have suggested tackling *BSD Tor packages be a hack topic at the recent Tor Project Hack Day in Seattle this weekend? Perhaps there'll be a future chance?_
 
-It wasn't an explcit topic in Seattle, but there was a fruitful discussion about diversity, and not just operating system diversity. There were also a number of informal discussions on the topic, but the ball is really in TDP's court right now. TDP will need more TP involvement in the near future.
+It wasn't an explcit topic in Seattle, but there was a fruitful discussion about diversity, and not just operating system diversity. There were also a number of informal discussions on the topic, but the ball is really in __TDP's__ court right now. __TDP__ will need more TP involvement in the near future.
 
 Regarding a version of TAILS on a BSD: _It will never happen as *BSD kernels are notorious for being behind in their support for the latest Intel CPUs._
 
-This is really just [FUD](https://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt): the vast majority of hardware is well-supported by the BSDs. OpenBSD is refreshingly intransigent about signing non-disclosure agreements, which can mean lack of support for some hardware, but they do distribute firmware for some wireless cards and other devices. Without that stance, a lot of open source development would never occur.
+This is really just [FUD](https://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt): the vast majority of hardware is well-supported by the BSDs. OpenBSD is refreshingly intransigent about signing non-disclosure agreements, which can mean lack of support for some hardware, but they do distribute firmware for some wireless cards and other devices. Without that stance, a lot of open source development would never occur. "Open source operating system" would like mean a collection of mysterious bloated binaries with a "Certified Open Source" sticker slapped on the product.
 
-Producing a TAILS-like alternative based on OpenBSD has been a goal of TDP since its inception. We're still on the first step: porting TBB to OpenBSD.
+Producing a TAILS-like alternative based on OpenBSD has been a goal of __TDP__ since its inception. We're still on the first step: porting TBB to OpenBSD.
 
 And again regarding the RFC5961 issue in Linux: _the argument should just be about having diverse kernels, because saying a known bug "proves" one of them to be inherently inferior is actually a temporary fact. In using a diversity argument and avoiding a comparative argument, I'd expect more support for *BSDs will be attracted from thinking people._
 
@@ -194,7 +194,7 @@ Also: yes, we think the terminology of buildbot "slave" and "master" are inappro
 
 <a id="quiet-progress">__So Much Quiet Progress__</a> by gman999
 
-This blog remained silent over the past several months despite a flurry of very significant TDP activities.
+This blog remained silent over the past several months despite a flurry of very significant __TDP__ activities.
 
 The accomplishments are not reducible to a single blog entry, but here are summaries of the more interesting:
 
@@ -204,7 +204,7 @@ The accomplishments are not reducible to a single blog entry, but here are summa
 
 * Also as a consequence of BSDCan, Brian Conway of [resflash](https://stable.rcesoftware.com/resflash/), a flash-based OpenBSD build system began producing [images with a Tor relay pre-configured](https://stable.rcesoftware.com/pub/resflash/tor/). We have been exploring such a system for Tor bridges, with either resflash or [flashrd](http://www.nmedia.net/flashrd/), but are glad to see Brian took the initiative.
 
-We would have replied to the RFP for [EuroBSDCon 2016 in Belgrade, Serbia](https://2016.eurobsdcon.org/) but the TDP schedule doesn't permit.
+We would have replied to the RFP for [EuroBSDCon 2016 in Belgrade, Serbia](https://2016.eurobsdcon.org/) but the __TDP__ schedule doesn't permit.
 
 
 ###20160331###

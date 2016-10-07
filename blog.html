@@ -81,23 +81,23 @@
 
 <p>The last Tor blog post on <a href="https://blog.torproject.org/blog/tor-0288-released-important-fixes">Tor 0.2.8.8 is released, with important fixes</a> prompted a flurry of comments regarding the BSDs and the Tor Project.</p>
 
-<p>An important part of the Tor 0.2.8.8 release was a fix for bug #<a href="https://bugs.torproject.org/20103">20103</a> discovered by me and Attila. Tor on OpenBSD was crashing with OpenBSD relays running 0.2.8.7 as the first hop. Gman999 first encountered the crashes while testing new TBB packages. Attila did the heavy lifting and reported it to the TP&#8217;s Trac.</p>
+<p>An important part of the Tor 0.2.8.8 release was a fix for bug #<a href="https://bugs.torproject.org/20103">20103</a> discovered by <strong>TDP</strong>. Tor on OpenBSD was crashing with OpenBSD relays running 0.2.8.7 as the first hop. Gman999 first encountered the crashes while testing new TBB packages. Attila did the heavy lifting and reported it to the TP&#8217;s Trac.</p>
 
 <p>OpenBSD is an ideal bug-finding platform as it follows the classic Unix approach in which a daemon dies loudly rather than quietly hiding its behavior. The bug likely affects other operating systems, so another +1 for operating system diversity.</p>
 
-<p>The comments section opened an noisy series of posts about Tor and the BSDs, some of which we believe are inaccurate and demand responses. Snips from the posted comments are below, with our replies:</p>
+<p>The comments section opened a noisy series of posts about Tor and the BSDs, some of which we believe are inaccurate and demand responses. Snips from the posted comments are below, with our replies:</p>
 
 <p><em>Since nickm mentioned OpenBSD users have been more seriously affected, we&#8217;d like to take this opportunity to ask why The Tor Project has no plans at all to release Tor Browser Bundle for *BSD operating systems, OpenBSD in particular.</em></p>
 
-<p>There are lots of things the TP should be planning, and as non-Tor Project developers, we jumped on the opportunity to port Tor Browser to OpenBSD back in March 2015. We are in regular contact with the TP, and have been encouraged and assisted by a number of TP core people, including Moritz and Roger. Gman999&#8217;s recent attendance at the <a href="https://trac.torproject.org/projects/tor/wiki/org/meetings/2016SummerMeeting">Seattle Tor Summit</a> illustrated the great attention TDP is getting; he was personally flattered by the recognition.</p>
+<p>There are lots of things the TP should be planning, and as non-Tor Project developers, we jumped on the opportunity to port Tor Browser to OpenBSD back in March 2015. We are in regular contact with the TP, and have been encouraged and assisted by a number of TP core people, including Moritz and Roger. Gman999&#8217;s recent attendance at the <a href="https://trac.torproject.org/projects/tor/wiki/org/meetings/2016SummerMeeting">Seattle Tor Summit</a> illustrated the great attention <strong>TDP</strong> is getting; he was personally flattered by the recognition.</p>
 
-<p>The question for the anonymous poster is &#8220;what are you doing?&#8221; TP is an open source project. In BSD Land no one listens to gripes about software if the complainer doesn&#8217;t at least begin resolving the issue, like submitting debugging information, providing a patch, etc. It&#8217;s a principle that all open source projects should adopt. The poster in question should at least be testing our TB releases on OpenBSD.</p>
+<p>The question for the anonymous poster is &#8220;what are you doing?&#8221; TP is an open source project. In BSD Land no one listens to gripes about software if the complainer doesn&#8217;t at least begin resolving the issue, like submitting debugging information, providing a patch, etc. It&#8217;s a principle that all open source projects should adopt. The poster in question should at least be testing our TB releases on OpenBSD. <a href="https://github.com/login?return_to=%2Ftorbsd%2Fopenbsd-ports">Fork the code</a>, <a href="https://github.com/torbsd/openbsd-ports/issues">submit a useful issue</a>, and so on, but complaining anonymously on a blog about what <em>others</em> should do is pointless at best.</p>
 
 <p><em>It appears then that The Tor Project is not keen at all to support users of *BSD operating systems. Therein lies the danger. Again the following is a quote from The Tor BSD Diversity Project&#8230;</em></p>
 
-<p>This comment follows up from noting the lack of source tarballs from the TP, which is the preference for porting Tor Browser and other software. Oddly, the poster quotes the TDP www site, yet in the previous comments says the TP &#8220;has no plans at all to release Tor Browser Bundle for *BSD operating systems&#8221;</p>
+<p>This comment follows up from noting the lack of source tarballs from the TP, which is the preference for porting Tor Browser and other software. Oddly, the poster quotes the <strong>TDP</strong> www site, yet in the previous comments says the TP &#8220;has no plans at all to release Tor Browser Bundle for *BSD operating systems.&#8221;</p>
 
-<p>Nick M, Roger D, and others actively use the <a href="https://buildbot.pixelminers.net/">BSD Buildbot</a> initiated by Christian S., and we have corresponded about it. Roger has made multiple references to TDP in his postings on various Tor mailing lists. We hardly feel there is some conspiracy against the BSDs from Tor core developers. Rather, there is a genuine recognition of our endeavor.</p>
+<p>Nick M, Roger D, and others actively use the <a href="https://buildbot.pixelminers.net/">BSD Buildbot</a> initiated by Christian S., and we have corresponded about it. Roger made multiple references to <strong>TDP</strong> in his postings on various Tor mailing lists. We hardly feel there is some conspiracy against the BSDs from Tor core developers. Rather, there is a genuine recognition of the <strong>TDP</strong> endeavor.</p>
 
 <p>More generally: yes, the recent vulnerability from <a href="https://tools.ietf.org/html/rfc5961">RFC5961</a> TCP implementations on Linux makes yet another strong case for operating system diversity, and it is neither the beginning nor the end of screams for diversity.</p>
 
@@ -113,13 +113,13 @@
 
 <p><em>If I had seen all this sooner, I wonder if it would have been worthwhile to have suggested tackling *BSD Tor packages be a hack topic at the recent Tor Project Hack Day in Seattle this weekend? Perhaps there&#8217;ll be a future chance?</em></p>
 
-<p>It wasn&#8217;t an explcit topic in Seattle, but there was a fruitful discussion about diversity, and not just operating system diversity. There were also a number of informal discussions on the topic, but the ball is really in TDP&#8217;s court right now. TDP will need more TP involvement in the near future.</p>
+<p>It wasn&#8217;t an explcit topic in Seattle, but there was a fruitful discussion about diversity, and not just operating system diversity. There were also a number of informal discussions on the topic, but the ball is really in <strong>TDP&#8217;s</strong> court right now. <strong>TDP</strong> will need more TP involvement in the near future.</p>
 
 <p>Regarding a version of TAILS on a BSD: <em>It will never happen as *BSD kernels are notorious for being behind in their support for the latest Intel CPUs.</em></p>
 
-<p>This is really just <a href="https://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt">FUD</a>: the vast majority of hardware is well-supported by the BSDs. OpenBSD is refreshingly intransigent about signing non-disclosure agreements, which can mean lack of support for some hardware, but they do distribute firmware for some wireless cards and other devices. Without that stance, a lot of open source development would never occur.</p>
+<p>This is really just <a href="https://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt">FUD</a>: the vast majority of hardware is well-supported by the BSDs. OpenBSD is refreshingly intransigent about signing non-disclosure agreements, which can mean lack of support for some hardware, but they do distribute firmware for some wireless cards and other devices. Without that stance, a lot of open source development would never occur. &#8220;Open source operating system&#8221; would like mean a collection of mysterious bloated binaries with a &#8220;Certified Open Source&#8221; sticker slapped on the product.</p>
 
-<p>Producing a TAILS-like alternative based on OpenBSD has been a goal of TDP since its inception. We&#8217;re still on the first step: porting TBB to OpenBSD.</p>
+<p>Producing a TAILS-like alternative based on OpenBSD has been a goal of <strong>TDP</strong> since its inception. We&#8217;re still on the first step: porting TBB to OpenBSD.</p>
 
 <p>And again regarding the RFC5961 issue in Linux: <em>the argument should just be about having diverse kernels, because saying a known bug &#8220;proves&#8221; one of them to be inherently inferior is actually a temporary fact. In using a diversity argument and avoiding a comparative argument, I&#8217;d expect more support for *BSDs will be attracted from thinking people.</em></p>
 
@@ -198,7 +198,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><a id="quiet-progress"><strong>So Much Quiet Progress</strong></a> by gman999</p>
 
-<p>This blog remained silent over the past several months despite a flurry of very significant TDP activities.</p>
+<p>This blog remained silent over the past several months despite a flurry of very significant <strong>TDP</strong> activities.</p>
 
 <p>The accomplishments are not reducible to a single blog entry, but here are summaries of the more interesting:</p>
 
@@ -208,7 +208,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 <li><p>Also as a consequence of BSDCan, Brian Conway of <a href="https://stable.rcesoftware.com/resflash/">resflash</a>, a flash-based OpenBSD build system began producing <a href="https://stable.rcesoftware.com/pub/resflash/tor/">images with a Tor relay pre-configured</a>. We have been exploring such a system for Tor bridges, with either resflash or <a href="http://www.nmedia.net/flashrd/">flashrd</a>, but are glad to see Brian took the initiative.</p></li>
 </ul>
 
-<p>We would have replied to the RFP for <a href="https://2016.eurobsdcon.org/">EuroBSDCon 2016 in Belgrade, Serbia</a> but the TDP schedule doesn&#8217;t permit.</p>
+<p>We would have replied to the RFP for <a href="https://2016.eurobsdcon.org/">EuroBSDCon 2016 in Belgrade, Serbia</a> but the <strong>TDP</strong> schedule doesn&#8217;t permit.</p>
 
 <h3 id="20160331">20160331</h3>
 
@@ -609,7 +609,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Oct  6 23:57:59 2016 UTC</code></p>
+<p><code>last updated: Fri Oct  7 00:11:50 2016 UTC</code></p>
 
 </body>
 </html>
