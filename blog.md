@@ -278,7 +278,7 @@ We feel very fortunate, since there were a lot of submissions for what is the pr
 
 Last year we conducted a [birds-of-a-feather session](https://www.bsdcan.org/2015/schedule/track/BOF/624.en.html) which attracted around 50 people.
 
-This year, we should hopefully have some good news to publicize about TDP. In the meantime, the actual presentation should start coming together in the next month or so. In all honesty, it's hard to determine what the focus of the presentation should be. We only have a general idea of where we'll be by mid-June.
+This year, we should hopefully have some good news to publicize about __TDP__. In the meantime, the actual presentation should start coming together in the next month or so. In all honesty, it's hard to determine what the focus of the presentation should be. We only have a general idea of where we'll be by mid-June.
 
 At this point, the introductory part should start with "Why Tor Sucks" plagiarizing Henning Brauer's [OpenBSD Sucks](http://quigon.bsws.de/papers/2015/asiabsdcon/index.html) concept. This is a backhand approach to arguing why Tor matters. The reality is that a lot of people in the BSD community continue to see Tor as ineffective or insecure, so the case for Tor being full of problems yet the very best thing available needs to be made.
 
