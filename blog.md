@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __October 2016__
 
-[Test Tor Browser 6.0.5 for OpenBSD](#test605)  [%sep]  [Replying to Tor Blog Comments](#torblog0)
+[signify(1) Sanity](#signifysanity) [%sep] [Some [Test Tor Browser 6.0.5 for OpenBSD](#test605)  [%sep]  [Replying to Tor Blog Comments](#torblog0)
 
 __September 2016__
 
@@ -52,6 +52,12 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20161017###
+
+<a id="signifysanity">__signify(1) Sanity__</a> by gman999
+
+[signify](http://man.openbsd.org/signify) was released in 2014 as a simple means of signing and verifying files on OpenBSD.
 
 ###20161005###
 
