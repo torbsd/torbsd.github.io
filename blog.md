@@ -57,7 +57,7 @@ __October 2015__
 
 <a id="signifysanity">__signify(1) Sanity__</a> by gman999
 
-[signify](http://man.openbsd.org/signify) was released in 2014 as a simple means of signing and verifying files on OpenBSD.
+[signify](http://man.openbsd.org/signify)(1) was released in 2014 as a simple means of signing and verifying files on OpenBSD.
 
 ###20161005###
 
