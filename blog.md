@@ -59,6 +59,10 @@ __October 2015__
 
 [signify](http://man.openbsd.org/signify)(1) was released in 2014 as a simple means of signing and verifying files on OpenBSD.
 
+What does signify have to do with __TDP__?
+
+The current and standard practice for verifying the integrity of digial signatures on software is to use GnuPG.
+
 ###20161005###
 
 <a id="test605">__Test Tor Browser 6.0.5 for OpenBSD__</a> by gman999
