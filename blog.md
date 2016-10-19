@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __October 2016__
 
-[signify(1) Sanity](#signifysanity) [%sep] [Some [Test Tor Browser 6.0.5 for OpenBSD](#test605)  [%sep]  [Replying to Tor Blog Comments](#torblog0)
+[signify(1) Sanity](#signifysanity) [%sep] [Test Tor Browser 6.0.5 for OpenBSD](#test605)  [%sep]  [Replying to Tor Blog Comments](#torblog0)
 
 __September 2016__
 
