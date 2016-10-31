@@ -8,108 +8,114 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 {{header.md}}
 
-__TDP List of Current and Potential Projects__
+### TDP List of Current and Potential Projects ###
 
-project
-summary
-status
-funding goal (release and/or ongoing support)
-estimated time to completion
+We have grouped the various work we wish to do into several
+areas: [development](#development), [documentation](#documentation),
+[events](#events), [research](#research), [infrastructure](#infrastructure),
+and [advocacy/publicity](#advocacy).
 
+<a id="development">__DEVELOPMENT__</a>
 
-__DEVELOPMENT__
+#### [Tor Browser for OpenBSD](https://github.com/torbsd/openbsd-ports/) ####
 
+A port of TB enabling easier porting to other non-WinMacLin systems that
+support the POSIX standard.
 
-[Tor Browser for OpenBSD](https://github.com/torbsd/openbsd-ports/)
+Currently at 25 releases, looking for acceptance in the OpenBSD ports
+system.  Have begun the process of pushing patches upstream to aid in
+other porting efforts _c.f._ [tor ticket 20497](https://trac.torproject.org/projects/tor/ticket/20497).
 
-A POSIX-compliant port of TB enabling easier porting to other POSIX-compliant operating systems
+We are committed to continuing to ensure the OpenBSD community can use
+TBB.  Our preferred method for accomplishing this is getting it into
+the official ports tree, where we will maintain it.
 
-currently at 25 releases, looking for acceptance in the OpenBSD ports system
+An OpenBSD Tor Browser adds to Tor client diversity, engaging a
+security-conscious group of end-users.  It also adds relay diversity
+because all TBB users are also de-facto relay operators while they're
+running TBB.
 
-development is ongoing into the indefinite future
+Future work:
 
-An OpenBSD Tor Browser adds to Tor client diversity, engaging a security-conscious group of end-users.
+* Pluggable Transports: current porting effort focused on the core of TBB: tor-browser and the five key browser extensions.  Next step is to port Pluggable Transports;
+* Automation of various aspects of the process of maintaining the TBB ports so we can shorten turnaround time for new releases;
+* Purchase of hardware to ease in keeping ports up to date and to help with other PETs-related porting efforts to the BSDs.
 
-POSIX-compliant implementation of Tor Browser. In addition to continued maintenance and acceptance into the OpenBSD ports system, future work includes pluggable transports, porting to FreeBSD, etc.
+#### Other PETs-related Ports ####
 
-pluggable transports
+Various ideas on the table for porting targets to OpenBSD to start
+with include:
 
-automated build systems for both i386 and amd64 with OpenBSD snapshot releases
+* Signal
+* TorBirdy
+* FreeNet
+* OnionCat
+* OnionShare
+* TorMessenger
+* BitMessage
 
-hardware for automated build systems
+#### Tor Browser port to FreeBSD ####
 
-ongoing project
+Starting from the __TDP__ OpenBSD port of Tor Browser, FreeBSD should be a relatively easier porting target.  Currently in planning phase.
 
-Tor Browser port to FreeBSD
+#### Porting OpenBSD's [signify](http://man.openbsd.org/signify) to other OSs ####
 
-Starting from the __TDP__ OpenBSD port of Tor Browser, FreeBSD should be a relatively easier porting target.
+As a single-purpose / small-footprint alternative to the complexity of
+GnuPG for the purposes of signing and verifying digital signatures.
+Used by the OpenBSD packaging system and release engineering process.
 
-In planning phase
+#### tor-alpha packages for OpenBSD ####
 
-Release and ongoing development
+OpenBSD only allows stable applications in its port system, which the Tor Project's alpha releases more frequently address mitigation against evolving adversaries and threat models.  __TDP__ would like to investigate the idea of proposing a port that tracks tor's bleeding edge.  The preferred outcome would be to have such a port accepted into the ports tree; there is some small precedent for this despite the norm, e.g. both current Mozilla Firefox and ESR are in the ports tree.  If we failed in convincing the community to accept this our fallback would be to produce and sign our own packages of alpha-release tor for OpenBSD.
 
-Porting OpenBSD's [signify](http://man.openbsd.org/signify) to other OSs
+<a id="documentation">__DOCUMENTATION__</a>
 
-As a single-purpose tool alternative to GnuPG for the purposes of signing and verifying digital signatures.
+#### Tor relay configuration guides ####
 
-tor-alpha packages for OpenBSD
+We have produced and continue to maintain guides for configuring Tor
+relays on both [FreeBSD](fbsd-relays.html) and
+[OpenBSD](obsd-relays.html).  We would like to expand these and
+produce translations in other languages.
 
-OpenBSD only allows stable applications in its port system, which the Tor Project's alpha releases more frequently address mitigation against evolving adversaries and threat models. __TDP__ would package tor-alpha and release __TDP__ signed versions.
+<a id="events">__EVENTS__</a>
 
-initial release and ongoing releases with testing
+#### Internal TDP physical meeting ####
 
-__DOCUMENTATION__
+George and Sean would benefit from a physical meeting, having
+accomplished everything thusfar over the Internet.  This would require
+covering travel costs.
 
-FreeBSD Tor relay configuration
+#### Upcoming Conferences/Summits ####
 
-OpenBSD Tor relay configuration
+* CCC in Hamburg, December 2016;
+* TDP NYC public meeting with lots of cosponsors;
+* IFF in Valencia, March 2017;
+* Tor Summit in Amsterdman, March 2017;
+* AsiaBSDCon (TBD);
+* EuroBSDCon in Paris, September 2017.
 
-Securing FreeBSD
-While FreeBSD is strongly secure by default, additional measures can increase security, and decrease the operating system's footprint.
+<a id="research">__RESEARCH__</a>
 
-building small OpenBSD for i386 and amd64
-OpenBSD 
+George attended the Tor developer summit in Seattle (September, 2016).
+One subject raised at the meeting was the authoring of a Tor diversity
+white paper focused on various metrics of diversity: OS, geography,
+architecture, Autonomous System, _etc._ We are interested in pursuing
+this with the goal of publishing in a PETs-related conference and/or
+journal.
 
-__EVENTS__
-
-internal TDP physical meeting
-
-CCC in Hamburg, December 2016
-
-TDP NYC public meeting
-with lots of cosponsors
-
-IFF in Valencia, March 2017
-
-Tor Summit in Amsterdman, March 2017
-
-AsiaBSDCon (TBD)
-
-EuroBSDCon in Paris, September 2017
-
-__RESEARCH__
-
-diversity white paper: OS, geography, architecture, consensus
-
-__INFRASTRUCTURE__
+<a id="infrastructure">__INFRASTRUCTURE__</a>
 
 For __TDP__ to single-handedly run a lot of *BSD Tor relays would replace the operating system monoculture problem with a monoculture of relay operators. Therefore this list is limited as __TDP__ already operates high-bandwidth Tor relays.
 
-NYI relays
+* NYI relays: take NYI up on their offer to provision and host two high-capacity Tor relays near the core of the Internet.  We would configure, run and maintain them;
+* OpenBSD armv7 relay network: continue our work on bootable flash images based on OpenBSD that work on SoC-style computers (BeagleBone, RasPI, _etc_.);
+* Approach groups that run Tor exit relays that might be interested in increasing the diversity of the Tor ecosystem by adding an additional relay that runs BSD Unix.
 
-OpenBSD armv7 relay network
+<a id="advocacy">__ADVOCACY & PUBLICITY__</a>
 
-__ADVOCACY & PUBLICITY__
-
-open letter to BSD firms to run relays
-
-handout fliers
-
-business cards
-
-stickers
-
-infographic of TDP->PETs Ecosystem
-
+* Open letter to BSD firms to run relays;
+* Handout fliers at conferences;
+* Get business cards and stickers made;
+* Produce infographics of TDP->PETs Ecosystem to show people where they can help.
 
 {{footer.md}}

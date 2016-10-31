@@ -37,7 +37,11 @@ all: $(PAGES)
 .SUFFIXES: .pdf .md .tex .html
 
 .md.tex:
-	$(MMD) -t latex -o $@ $<
+	$(RM_F) $<.tmp
+	$(CP) $< $<.tmp
+	$(TSTAMP) $< >>$<.tmp
+	$(MMD) -t latex -o $@ $<.tmp
+	$(RM_F) $<.tmp
 
 .tex.pdf:
 	$(PDFLATEX) $<
