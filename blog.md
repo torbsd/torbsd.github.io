@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __October 2016__
 
-[signify(1) Sanity](#signifysanity) [%sep] [Test Tor Browser 6.0.5 for OpenBSD](#test605)  [%sep]  [Replying to Tor Blog Comments](#torblog0)
+[More Bananas](#morebananas] [%sep] [signify(1) Sanity](#signifysanity) [%sep] [Test Tor Browser 6.0.5 for OpenBSD](#test605)  [%sep]  [Replying to Tor Blog Comments](#torblog0)
 
 __September 2016__
 
@@ -52,6 +52,15 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20161025###
+
+<a id="morebananas">__More Bananas__</a> by gman999
+
+The easiest way to convey the problems with monocultures in technology is to point to a stark monoculture common to many: bananas.
+
+The [Cavendish banana](https://en.wikipedia.org/wiki/Cavendish_banana) is a non-reproducing variant that dominates global production, and is most likely the one encountered. The Guardian published an article entitled ["The banana as we know it is in imminet danger"](https://www.theguardian.com/commentisfree/2016/oct/25/banana-farming-danger-cavendish-crop-genetics) regarding efforts to diversify banana types.
+
 
 ###20161017###
 
