@@ -41,6 +41,10 @@ Future work:
 * Automation of various aspects of the process of maintaining the TBB ports so we can shorten turnaround time for new releases;
 * Purchase of hardware to ease in keeping ports up to date and to help with other PETs-related porting efforts to the BSDs.
 
+#### OpenBSD Drivers for USB TRNGs ####
+
+We have already produced a driver for the [Alea](https://www.araneus.fi/products/alea2/en/) and had it accepted into the OpenBSD source tree.  As a result of doing this work we have now received donations of two other USB TRNG devices: an [FST-01](wiki.seeedstudio.com/wiki/FST-01) and a [TrueRNG](http://ubld.it/products/truerng-hardware-random-number-generator/).  We will write drivers for them and get them accepted into the tree.  It would also be worth investigating getting the OpenBSD USB TRNG drivers ported to other BSDs.  FreeBSD would be a good first choice.
+
 #### Other PETs-related Ports ####
 
 Various ideas on the table for porting targets to OpenBSD to start
