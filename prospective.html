@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>The Tor BSD Diversity Project</title>
+	<link type="text/css" rel="stylesheet" href="torbsd.css"/>
+	<meta name="author" content="gman999"/>
+	<meta name="editors" content="attila"/>
+	<meta name="data" content="2016-10-31"/>
+	<meta name="x-note" content="These lines at the top are multimarkdown metadata; leave them."/>
+	<meta name="sep" content="&amp;#8916;"/>
+</head>
+<body>
+
+<h1 id="thetorbsddiversityprojecttdp"><a href="index.html">The Tor BSD Diversity Project (TDP)</a></h1>
+
+<p>&#8916; <a href="blog.html">Blog</a> &#8916; <a href="faq.html">Frequently Asked Questions</a> &#8916; <a href="resources.html">Resources</a> &#8916; <a href="https://github.com/torbsd/">GitHub Repositories</a> &#8916; <a href="contact.html">Contact</a> &#8916; <a href="http://bptfp7py2wclht26.onion/">TDP Hidden Service</a> &#8916;</p>
+
+<p><strong><a href="projects.html">The TDP Projects</a>:</strong><br/>
+&#8916; <a href="https://github.com/torbsd/openbsd-ports/">Tor Browser for OpenBSD</a> &#8916; <a href="relay-guides.html">BSD Tor Relay Guides</a> &#8916; <a href="corp-relays.html">BSD Firm Relays</a> &#8916; <a href="porting-pets.html">Porting Targets for PETs</a> &#8916; <a href="dirty-stats.html">Quick-and-Dirty Static Reports</a> &#8916;</p>
+
+<h3 id="tdplistofcurrentandpotentialprojects">TDP List of Current and Potential Projects</h3>
+
+<p>We have grouped the various work we wish to do into several
+areas: <a href="#development">development</a>, <a href="#documentation">documentation</a>,
+<a href="#events">events</a>, <a href="#research">research</a>, <a href="#infrastructure">infrastructure</a>,
+and <a href="#advocacy">advocacy/publicity</a>.</p>
+
+<p><a id="development"><strong>DEVELOPMENT</strong></a></p>
+
+<h4 id="torbrowserforopenbsd"><a href="https://github.com/torbsd/openbsd-ports/">Tor Browser for OpenBSD</a></h4>
+
+<p>A port of Tor Browser (TB) enabling easier porting to other POSIX-based systems.</p>
+
+<p>Currently at 25 releases, looking for acceptance in the OpenBSD ports
+system. Began the process of pushing patches upstream to aid in
+other porting efforts <em>c.f.</em> <a href="https://trac.torproject.org/projects/tor/ticket/20497">tor ticket 20497</a>.</p>
+
+<p>We are committed to continuing to ensure the OpenBSD community can use
+TB. Our preferred method for accomplishing this is getting it into
+the official ports tree. Once there, we will continue maintainership, but this allows development input from the broader OpenBSD community. </p>
+
+<p>An OpenBSD TB adds to Tor client diversity, engaging a
+security-conscious group of end-users. It also can add relay diversity
+because all TB users are also de-facto relay operators while they&#8217;re
+running TBB.</p>
+
+<p>Future work:</p>
+
+<ul>
+<li>Pluggable Transports: current porting effort focused on the core of TBB: tor-browser and the five key browser extensions. Next step is to port Pluggable Transports;</li>
+<li>Automation of various aspects of the process of maintaining the TBB ports so we can shorten turnaround time for new releases;</li>
+<li>Purchase of hardware to ease in keeping ports up to date and to help with other PETs-related porting efforts to the BSDs.</li>
+</ul>
+
+<h4 id="openbsddriversforusbtrngs">OpenBSD Drivers for USB TRNGs</h4>
+
+<p>We have already produced a driver for the <a href="https://www.araneus.fi/products/alea2/en/">Alea</a> and had it accepted into the OpenBSD source tree. As a result of doing this work we have now received donations of two other USB TRNG devices: an <a href="wiki.seeedstudio.com/wiki/FST-01">FST&#8211;01</a> and a <a href="http://ubld.it/products/truerng-hardware-random-number-generator/">TrueRNG</a>. We will write drivers for them and get them accepted into the tree. It would also be worth investigating getting the OpenBSD USB TRNG drivers ported to other BSDs, with FreeBSD as a likely first choice.</p>
+
+<h4 id="otherpets-relatedports"><a href="porting-pets.html">Other PETs-related Ports</a></h4>
+
+<p>Various ideas on the table for porting targets to OpenBSD to start
+with include:</p>
+
+<ul>
+<li>Signal</li>
+<li>TorBirdy</li>
+<li>FreeNet</li>
+<li>OnionCat</li>
+<li>OnionShare</li>
+<li>TorMessenger</li>
+<li>BitMessage</li>
+</ul>
+
+<h4 id="torbrowserporttofreebsd">Tor Browser port to FreeBSD</h4>
+
+<p>Starting from the <strong>TDP</strong> OpenBSD port of Tor Browser, FreeBSD should be a relatively easier porting target. Currently in planning phase.</p>
+
+<h4 id="portingopenbsdssignifytootheross">Porting OpenBSD&#8217;s <a href="http://man.openbsd.org/signify">signify</a> to other OSs</h4>
+
+<p>As a single-purpose/small-footprint alternative to the complexity of
+GnuPG for the purposes of signing and verifying digital signatures.
+Used by the OpenBSD packaging system and release engineering process.</p>
+
+<h4 id="tor-alphapackagesforopenbsd">tor-alpha packages for OpenBSD</h4>
+
+<p>OpenBSD only allows stable applications in its port system, which the Tor Project&#8217;s alpha releases more frequently address mitigation against evolving adversaries and threat models. <strong>TDP</strong> would like to investigate the idea of proposing a port that tracks Tor&#8217;s bleeding edge. The preferred outcome would be to have such a port accepted into the ports tree; there is some small precedent for this despite the norm, e.g. both current Mozilla Firefox and ESR are in the ports tree. If we failed in convincing the community to accept this our fallback would be to produce and sign our own packages of alpha-release Tor for OpenBSD.</p>
+
+<p><a id="documentation"><strong>DOCUMENTATION</strong></a></p>
+
+<h4 id="torrelayconfigurationguides"><a href="relay-guides.html">Tor relay configuration guides</a></h4>
+
+<p>We initiated &#8220;simple English&#8221; guides for configuring Tor
+relays on both <a href="fbsd-relays.html">FreeBSD</a> and
+<a href="obsd-relays.html">OpenBSD</a>. We would like to complete these, and
+produce translations in other languages.</p>
+
+<p><a id="events"><strong>EVENTS</strong></a></p>
+
+<h4 id="internaltdpphysicalmeeting">Internal TDP physical meeting</h4>
+
+<p>George and Sean would benefit from a physical meeting, having
+accomplished everything thusfar over the Internet over a period of years. This would require covering travel costs.</p>
+
+<h4 id="upcomingconferencessummits">Upcoming Conferences/Summits</h4>
+
+<ul>
+<li>CCC in Hamburg, December 2016;</li>
+<li>TDP NYC public meeting with lots of cosponsors;</li>
+<li>IFF in Valencia, March 2017;</li>
+<li>Tor Summit in Amsterdman, March 2017;</li>
+<li>AsiaBSDCon (TBD);</li>
+<li>EuroBSDCon in Paris, September 2017.</li>
+</ul>
+
+<p><a id="research"><strong>RESEARCH</strong></a></p>
+
+<p>George attended the Tor developer summit in Seattle (September, 2016).
+One subject raised at the meeting was the authoring of a Tor diversity
+white paper focused on various metrics of diversity: OS, geography,
+architecture, Autonomous System, <em>etc.</em> We are interested in pursuing
+this with the goal of publishing in a PETs-related conference and/or
+journal.</p>
+
+<p><a id="infrastructure"><strong>INFRASTRUCTURE</strong></a></p>
+
+<p>For <strong>TDP</strong> to single-handedly run a lot of *BSD Tor relays would replace the operating system monoculture problem with a monoculture of relay operators. Therefore this list is limited as <strong>TDP</strong> already operates high-bandwidth Tor relays.</p>
+
+<ul>
+<li>NYI relays: take NYI up on their offer to provision and host two high-capacity Tor relays near the core of the Internet. We would configure, run and maintain them;</li>
+<li>OpenBSD armv7 relay network: continue our work on bootable flash images based on OpenBSD that work on SoC-style computers (BeagleBone, RasPI, <em>etc</em>.);</li>
+<li>Approach groups that run Tor exit relays that might be interested in increasing the diversity of the Tor ecosystem by adding an additional relay that runs BSD Unix.</li>
+</ul>
+
+<p><a id="advocacy"><strong>ADVOCACY &amp; PUBLICITY</strong></a></p>
+
+<ul>
+<li>Open letter to BSD firms to run relays;</li>
+<li>Handout fliers at conferences;</li>
+<li>Get business cards and stickers made;</li>
+<li>Produce infographics of TDP-&gt;PETs Ecosystem to show people where they can help.</li>
+</ul>
+
+<p><hr></p>
+
+<p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
+
+<p><code>last updated: Tue Nov  1 18:19:22 2016 UTC</code></p>
+
+</body>
+</html>
