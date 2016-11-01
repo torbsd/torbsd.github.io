@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __TDP__ has focused primarily on porting Tor Browser to OpenBSD, presentations at various events and conferences, besides finding software bugs and operating high-bandwidth relays. The listed projects are at various stages of development, from planning to the early stages of implementation. Funding would provide the necessary resources to dedicate the time to continue the projects, and bring more to fruition.
 
-We have grouped the various work we wish to do into several areas:
+__TDP's__ work can be divided into several broad categories:
 
 * [development](#development)
 * [documentation](#documentation)
