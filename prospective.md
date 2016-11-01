@@ -19,20 +19,19 @@ and [advocacy/publicity](#advocacy).
 
 #### [Tor Browser for OpenBSD](https://github.com/torbsd/openbsd-ports/) ####
 
-A port of TB enabling easier porting to other non-WinMacLin systems that
-support the POSIX standard.
+A port of Tor Browser (TB) enabling easier porting to other POSIX-based systems.
 
 Currently at 25 releases, looking for acceptance in the OpenBSD ports
-system.  Have begun the process of pushing patches upstream to aid in
+system. Began the process of pushing patches upstream to aid in
 other porting efforts _c.f._ [tor ticket 20497](https://trac.torproject.org/projects/tor/ticket/20497).
 
 We are committed to continuing to ensure the OpenBSD community can use
-TBB.  Our preferred method for accomplishing this is getting it into
-the official ports tree, where we will maintain it.
+TB. Our preferred method for accomplishing this is getting it into
+the official ports tree. Once there, we will continue maintainership, but this allows development input from the broader OpenBSD community. 
 
-An OpenBSD Tor Browser adds to Tor client diversity, engaging a
-security-conscious group of end-users.  It also adds relay diversity
-because all TBB users are also de-facto relay operators while they're
+An OpenBSD TB adds to Tor client diversity, engaging a
+security-conscious group of end-users.  It also can add relay diversity
+because all TB users are also de-facto relay operators while they're
 running TBB.
 
 Future work:
@@ -43,9 +42,9 @@ Future work:
 
 #### OpenBSD Drivers for USB TRNGs ####
 
-We have already produced a driver for the [Alea](https://www.araneus.fi/products/alea2/en/) and had it accepted into the OpenBSD source tree.  As a result of doing this work we have now received donations of two other USB TRNG devices: an [FST-01](wiki.seeedstudio.com/wiki/FST-01) and a [TrueRNG](http://ubld.it/products/truerng-hardware-random-number-generator/).  We will write drivers for them and get them accepted into the tree.  It would also be worth investigating getting the OpenBSD USB TRNG drivers ported to other BSDs.  FreeBSD would be a good first choice.
+We have already produced a driver for the [Alea](https://www.araneus.fi/products/alea2/en/) and had it accepted into the OpenBSD source tree.  As a result of doing this work we have now received donations of two other USB TRNG devices: an [FST-01](wiki.seeedstudio.com/wiki/FST-01) and a [TrueRNG](http://ubld.it/products/truerng-hardware-random-number-generator/).  We will write drivers for them and get them accepted into the tree.  It would also be worth investigating getting the OpenBSD USB TRNG drivers ported to other BSDs, with FreeBSD as a likely first choice.
 
-#### Other PETs-related Ports ####
+#### [Other PETs-related Ports](porting-pets.html) ####
 
 Various ideas on the table for porting targets to OpenBSD to start
 with include:
@@ -64,21 +63,21 @@ Starting from the __TDP__ OpenBSD port of Tor Browser, FreeBSD should be a relat
 
 #### Porting OpenBSD's [signify](http://man.openbsd.org/signify) to other OSs ####
 
-As a single-purpose / small-footprint alternative to the complexity of
+As a single-purpose/small-footprint alternative to the complexity of
 GnuPG for the purposes of signing and verifying digital signatures.
 Used by the OpenBSD packaging system and release engineering process.
 
 #### tor-alpha packages for OpenBSD ####
 
-OpenBSD only allows stable applications in its port system, which the Tor Project's alpha releases more frequently address mitigation against evolving adversaries and threat models.  __TDP__ would like to investigate the idea of proposing a port that tracks tor's bleeding edge.  The preferred outcome would be to have such a port accepted into the ports tree; there is some small precedent for this despite the norm, e.g. both current Mozilla Firefox and ESR are in the ports tree.  If we failed in convincing the community to accept this our fallback would be to produce and sign our own packages of alpha-release tor for OpenBSD.
+OpenBSD only allows stable applications in its port system, which the Tor Project's alpha releases more frequently address mitigation against evolving adversaries and threat models.  __TDP__ would like to investigate the idea of proposing a port that tracks Tor's bleeding edge.  The preferred outcome would be to have such a port accepted into the ports tree; there is some small precedent for this despite the norm, e.g. both current Mozilla Firefox and ESR are in the ports tree.  If we failed in convincing the community to accept this our fallback would be to produce and sign our own packages of alpha-release Tor for OpenBSD.
 
 <a id="documentation">__DOCUMENTATION__</a>
 
-#### Tor relay configuration guides ####
+#### [Tor relay configuration guides](relay-guides.html) ####
 
-We have produced and continue to maintain guides for configuring Tor
+We initiated "simple English" guides for configuring Tor
 relays on both [FreeBSD](fbsd-relays.html) and
-[OpenBSD](obsd-relays.html).  We would like to expand these and
+[OpenBSD](obsd-relays.html).  We would like to complete these, and
 produce translations in other languages.
 
 <a id="events">__EVENTS__</a>
@@ -86,8 +85,7 @@ produce translations in other languages.
 #### Internal TDP physical meeting ####
 
 George and Sean would benefit from a physical meeting, having
-accomplished everything thusfar over the Internet.  This would require
-covering travel costs.
+accomplished everything thusfar over the Internet over a period of years.  This would require covering travel costs.
 
 #### Upcoming Conferences/Summits ####
 
