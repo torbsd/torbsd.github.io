@@ -10,10 +10,17 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ### TDP List of Current and Potential Projects ###
 
+__TDP__ has focused primarily on porting Tor Browser to OpenBSD, presentations at various events and conferences, besides finding software bugs and operating high-bandwidth relays. The listed projects are at various stages of development, from planning to the early stages of implementation. Funding would provide the necessary resources to dedicate the time to continue the projects, and bring more to fruition.
+
 We have grouped the various work we wish to do into several
-areas: [development](#development), [documentation](#documentation),
-[events](#events), [research](#research), [infrastructure](#infrastructure),
-and [advocacy/publicity](#advocacy).
+areas
+
+* [development](#development)
+* [documentation](#documentation)
+* [events](#events)
+* [research](#research)
+* [infrastructure](#infrastructure)
+* [advocacy/publicity](#advocacy)
 
 <a id="development">__DEVELOPMENT__</a>
 
@@ -32,7 +39,7 @@ the official ports tree. Once there, we will continue maintainership, but this a
 An OpenBSD TB adds to Tor client diversity, engaging a
 security-conscious group of end-users.  It also can add relay diversity
 because all TB users are also de-facto relay operators while they're
-running TBB.
+running TB.
 
 Future work:
 
@@ -67,6 +74,8 @@ As a single-purpose/small-footprint alternative to the complexity of
 GnuPG for the purposes of signing and verifying digital signatures.
 Used by the OpenBSD packaging system and release engineering process.
 
+__TDP__ is also considering an open source graphical user interface for signify, to increase usability for less technical users.
+
 #### tor-alpha packages for OpenBSD ####
 
 OpenBSD only allows stable applications in its port system, which the Tor Project's alpha releases more frequently address mitigation against evolving adversaries and threat models.  __TDP__ would like to investigate the idea of proposing a port that tracks Tor's bleeding edge.  The preferred outcome would be to have such a port accepted into the ports tree; there is some small precedent for this despite the norm, e.g. both current Mozilla Firefox and ESR are in the ports tree.  If we failed in convincing the community to accept this our fallback would be to produce and sign our own packages of alpha-release Tor for OpenBSD.
@@ -80,21 +89,26 @@ relays on both [FreeBSD](fbsd-relays.html) and
 [OpenBSD](obsd-relays.html).  We would like to complete these, and
 produce translations in other languages.
 
+A discussion at the September 2016 Tor Summit came to the consensus that these relay guides could play a pivotal role in enlisting more BSD relay operators.
+
 <a id="events">__EVENTS__</a>
 
 #### Internal TDP physical meeting ####
 
-George and Sean would benefit from a physical meeting, having
-accomplished everything thusfar over the Internet over a period of years.  This would require covering travel costs.
+One half of  __TDP__ is located in New York City, the other half is in Mexico. They have collaborated on different levels for over a decade, but have never met face-to-face. A physical meeting at a half-way point would be enormously beneficial to pushing the various __TDP__ projects forward, in addition to planning future projects.
 
 #### Upcoming Conferences/Summits ####
 
+All of these events are excellent platforms for __TDP__ presentations and the distribution of publicity about the project.
+
 * CCC in Hamburg, December 2016;
-* TDP NYC public meeting with lots of cosponsors;
 * IFF in Valencia, March 2017;
 * Tor Summit in Amsterdman, March 2017;
 * AsiaBSDCon (TBD);
 * EuroBSDCon in Paris, September 2017.
+
+Additionally, __TDP__ is looking to conduct a public meeting in New York City. With a large network in the NYC open source and privacy communities, a public meeting could enlist a number of open source, NGO and corporate co-sponsors. The __TDP__ member in Mexico would be involved on a remote video link.
+
 
 <a id="research">__RESEARCH__</a>
 
@@ -109,15 +123,20 @@ journal.
 
 For __TDP__ to single-handedly run a lot of *BSD Tor relays would replace the operating system monoculture problem with a monoculture of relay operators. Therefore this list is limited as __TDP__ already operates high-bandwidth Tor relays.
 
-* NYI relays: take NYI up on their offer to provision and host two high-capacity Tor relays near the core of the Internet.  We would configure, run and maintain them;
+* New York Internet relays: [NYI](https://nyi.net/) offered to provision and host two high-capacity Tor relays near the core of the Internet.  We would configure the relay, and maintain access to them, but we would enlist NYI staff to operate them;
+
 * OpenBSD armv7 relay network: continue our work on bootable flash images based on OpenBSD that work on SoC-style computers (BeagleBone, RasPI, _etc_.);
-* Approach groups that run Tor exit relays that might be interested in increasing the diversity of the Tor ecosystem by adding an additional relay that runs BSD Unix.
+
+* Running an [OpenBSD/macppc](https://www.openbsd.org/macppc.html) relay to enhance bug-finding for __TDP__ and the [BSD Buildbot](https://buildbot.pixelminers.net/) on a non-standard hardware platform for Tor;
 
 <a id="advocacy">__ADVOCACY & PUBLICITY__</a>
 
-* Open letter to BSD firms to run relays;
-* Handout fliers at conferences;
-* Get business cards and stickers made;
-* Produce infographics of TDP->PETs Ecosystem to show people where they can help.
+* [Open letter to BSD firms to run relays](https://torbsd.github.io/corp-relays.html)
+
+There are many large corporations that rely on BSD code and infrastructure, including WhatsApp, Juniper and NetFlix. Following Mozilla's lead in running Tor relays as a business entity, __TDP__ would query these firms through our wide network of contacts and work at convincing them to run relays themselves.
+
+* Publicity materials for conferences, including a generic __TDP__ business card and stickers
+
+The great weakness of __TDP__ since inception is publicity. The focus has been exclusively on development and conferenece presentations. With some publicity, __TDP__ could have a significant impact on the BSD community as the target audience.
 
 {{footer.md}}
