@@ -21,10 +21,19 @@
 
 <h3 id="tdplistofcurrentandpotentialprojects">TDP List of Current and Potential Projects</h3>
 
+<p><strong>TDP</strong> has focused primarily on porting Tor Browser to OpenBSD, presentations at various events and conferences, besides finding software bugs and operating high-bandwidth relays. The listed projects are at various stages of development, from planning to the early stages of implementation. Funding would provide the necessary resources to dedicate the time to continue the projects, and bring more to fruition.</p>
+
 <p>We have grouped the various work we wish to do into several
-areas: <a href="#development">development</a>, <a href="#documentation">documentation</a>,
-<a href="#events">events</a>, <a href="#research">research</a>, <a href="#infrastructure">infrastructure</a>,
-and <a href="#advocacy">advocacy/publicity</a>.</p>
+areas</p>
+
+<ul>
+<li><a href="#development">development</a></li>
+<li><a href="#documentation">documentation</a></li>
+<li><a href="#events">events</a></li>
+<li><a href="#research">research</a></li>
+<li><a href="#infrastructure">infrastructure</a></li>
+<li><a href="#advocacy">advocacy/publicity</a></li>
+</ul>
 
 <p><a id="development"><strong>DEVELOPMENT</strong></a></p>
 
@@ -43,7 +52,7 @@ the official ports tree. Once there, we will continue maintainership, but this a
 <p>An OpenBSD TB adds to Tor client diversity, engaging a
 security-conscious group of end-users. It also can add relay diversity
 because all TB users are also de-facto relay operators while they&#8217;re
-running TBB.</p>
+running TB.</p>
 
 <p>Future work:</p>
 
@@ -82,6 +91,8 @@ with include:</p>
 GnuPG for the purposes of signing and verifying digital signatures.
 Used by the OpenBSD packaging system and release engineering process.</p>
 
+<p><strong>TDP</strong> is also considering an open source graphical user interface for signify, to increase usability for less technical users.</p>
+
 <h4 id="tor-alphapackagesforopenbsd">tor-alpha packages for OpenBSD</h4>
 
 <p>OpenBSD only allows stable applications in its port system, which the Tor Project&#8217;s alpha releases more frequently address mitigation against evolving adversaries and threat models. <strong>TDP</strong> would like to investigate the idea of proposing a port that tracks Tor&#8217;s bleeding edge. The preferred outcome would be to have such a port accepted into the ports tree; there is some small precedent for this despite the norm, e.g. both current Mozilla Firefox and ESR are in the ports tree. If we failed in convincing the community to accept this our fallback would be to produce and sign our own packages of alpha-release Tor for OpenBSD.</p>
@@ -95,23 +106,27 @@ relays on both <a href="fbsd-relays.html">FreeBSD</a> and
 <a href="obsd-relays.html">OpenBSD</a>. We would like to complete these, and
 produce translations in other languages.</p>
 
+<p>A discussion at the September 2016 Tor Summit came to the consensus that these relay guides could play a pivotal role in enlisting more BSD relay operators.</p>
+
 <p><a id="events"><strong>EVENTS</strong></a></p>
 
 <h4 id="internaltdpphysicalmeeting">Internal TDP physical meeting</h4>
 
-<p>George and Sean would benefit from a physical meeting, having
-accomplished everything thusfar over the Internet over a period of years. This would require covering travel costs.</p>
+<p>One half of <strong>TDP</strong> is located in New York City, the other half is in Mexico. They have collaborated on different levels for over a decade, but have never met face-to-face. A physical meeting at a half-way point would be enormously beneficial to pushing the various <strong>TDP</strong> projects forward, in addition to planning future projects.</p>
 
 <h4 id="upcomingconferencessummits">Upcoming Conferences/Summits</h4>
 
+<p>All of these events are excellent platforms for <strong>TDP</strong> presentations and the distribution of publicity about the project.</p>
+
 <ul>
 <li>CCC in Hamburg, December 2016;</li>
-<li>TDP NYC public meeting with lots of cosponsors;</li>
 <li>IFF in Valencia, March 2017;</li>
 <li>Tor Summit in Amsterdman, March 2017;</li>
 <li>AsiaBSDCon (TBD);</li>
 <li>EuroBSDCon in Paris, September 2017.</li>
 </ul>
+
+<p>Additionally, <strong>TDP</strong> is looking to conduct a public meeting in New York City. With a large network in the NYC open source and privacy communities, a public meeting could enlist a number of open source, NGO and corporate co-sponsors. The <strong>TDP</strong> member in Mexico would be involved on a remote video link.</p>
 
 <p><a id="research"><strong>RESEARCH</strong></a></p>
 
@@ -127,25 +142,30 @@ journal.</p>
 <p>For <strong>TDP</strong> to single-handedly run a lot of *BSD Tor relays would replace the operating system monoculture problem with a monoculture of relay operators. Therefore this list is limited as <strong>TDP</strong> already operates high-bandwidth Tor relays.</p>
 
 <ul>
-<li>NYI relays: take NYI up on their offer to provision and host two high-capacity Tor relays near the core of the Internet. We would configure, run and maintain them;</li>
-<li>OpenBSD armv7 relay network: continue our work on bootable flash images based on OpenBSD that work on SoC-style computers (BeagleBone, RasPI, <em>etc</em>.);</li>
-<li>Approach groups that run Tor exit relays that might be interested in increasing the diversity of the Tor ecosystem by adding an additional relay that runs BSD Unix.</li>
+<li><p>New York Internet relays: <a href="https://nyi.net/">NYI</a> offered to provision and host two high-capacity Tor relays near the core of the Internet. We would configure the relay, and maintain access to them, but we would enlist NYI staff to operate them;</p></li>
+<li><p>OpenBSD armv7 relay network: continue our work on bootable flash images based on OpenBSD that work on SoC-style computers (BeagleBone, RasPI, <em>etc</em>.);</p></li>
+<li><p>Running an <a href="https://www.openbsd.org/macppc.html">OpenBSD/macppc</a> relay to enhance bug-finding for <strong>TDP</strong> and the <a href="https://buildbot.pixelminers.net/">BSD Buildbot</a> on a non-standard hardware platform for Tor;</p></li>
 </ul>
 
 <p><a id="advocacy"><strong>ADVOCACY &amp; PUBLICITY</strong></a></p>
 
 <ul>
-<li>Open letter to BSD firms to run relays;</li>
-<li>Handout fliers at conferences;</li>
-<li>Get business cards and stickers made;</li>
-<li>Produce infographics of TDP-&gt;PETs Ecosystem to show people where they can help.</li>
+<li><a href="https://torbsd.github.io/corp-relays.html">Open letter to BSD firms to run relays</a></li>
 </ul>
+
+<p>There are many large corporations that rely on BSD code and infrastructure, including WhatsApp, Juniper and NetFlix. Following Mozilla&#8217;s lead in running Tor relays as a business entity, <strong>TDP</strong> would query these firms through our wide network of contacts and work at convincing them to run relays themselves.</p>
+
+<ul>
+<li>Publicity materials for conferences, including a generic <strong>TDP</strong> business card and stickers</li>
+</ul>
+
+<p>The great weakness of <strong>TDP</strong> since inception is publicity. The focus has been exclusively on development and conferenece presentations. With some publicity, <strong>TDP</strong> could have a significant impact on the BSD community as the target audience.</p>
 
 <p><hr></p>
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Tue Nov  1 18:19:22 2016 UTC</code></p>
+<p><code>last updated: Tue Nov  1 18:54:45 2016 UTC</code></p>
 
 </body>
 </html>
