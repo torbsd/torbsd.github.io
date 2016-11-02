@@ -25,7 +25,7 @@ __TDP's__ work can be divided into several broad categories:
 
 #### [Tor Browser for OpenBSD](https://github.com/torbsd/openbsd-ports/) ####
 
-A port of Tor Browser (TB) enabling easier porting to other
+A port of Tor Browser (TBB) enabling easier porting to other
 POSIX-based systems.
 
 TDP has released multiple sets of packages over the previous year for
@@ -34,14 +34,14 @@ upstream to aid in other porting efforts _c.f._
 [tor ticket 20497](https://trac.torproject.org/projects/tor/ticket/20497).
 
 TDP is committed to continuing to ensure the OpenBSD community can use
-TB. Our preferred method for accomplishing this is getting it into the
+TBB. Our preferred method for accomplishing this is getting it into the
 official ports tree. Once there, TDP will continue maintainership, but
 this allows development input from the broader OpenBSD community.
 
-An OpenBSD TB adds to Tor client diversity, engaging a
+An OpenBSD TBB adds to Tor client diversity, engaging a
 security-conscious group of end-users.  It also can add relay diversity
-because all TB users are also de-facto relay operators while they're
-running TB.
+because all TBB users are also de-facto relay operators while they're
+running TBB.
 
 Future work:
 

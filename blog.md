@@ -70,7 +70,9 @@ The [Cavendish banana](https://en.wikipedia.org/wiki/Cavendish_banana) is a non-
 
 What does signify have to do with __TDP__?
 
-The current and standard practice for verifying the integrity of digial signatures on software is to use GnuPG.
+The current and standard practice for verifying the integrity of digial signatures on software is to use [GnuPG](https://www.gnupg.org/). The [procedure](https://www.torproject.org/docs/verifying-signatures.html.en) is tedious, and likely ignored by most TB users.
+
+signify is small and sticks to the Unix approach of doing one function.
 
 ###20161005###
 
