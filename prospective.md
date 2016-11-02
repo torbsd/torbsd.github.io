@@ -46,9 +46,7 @@ running TBB.
 Future work:
 
 * Pluggable Transports: current porting effort focused on the core of TBB: tor-browser and the five key browser extensions.  Next step is to port Pluggable Transports;
-
 * Automation of various aspects of the process of maintaining the TBB ports to shorten turnaround time for new releases;
-
 * Purchase of hardware to ease in keeping ports up to date and to help with other privacy-enhancing technology-related (PETs) porting efforts to the BSDs.
 
 #### OpenBSD Drivers for USB TRNGs ####
@@ -133,7 +131,6 @@ For __TDP__ to single-handedly run a lot of *BSD Tor relays would replace the op
 <a id="advocacy">__ADVOCACY & PUBLICITY__</a>
 
 * [Open letter to BSD firms to run relays](https://torbsd.github.io/corp-relays.html): There are many large corporations that rely on BSD code and infrastructure, including WhatsApp, Juniper and NetFlix. Following Mozilla's lead in running Tor relays as a business entity, __TDP__ would query these firms through our wide network of contacts and work at convincing them to run relays themselves.
-
-* Publicity materials for conferences, including a generic __TDP__ business card and stickers: The great weakness of __TDP__ since inception is publicity. The focus has been exclusively on development and conferenece presentations. With some publicity, __TDP__ could have a significant impact on the BSD community as the target audience.
+* Publicity materials for conferences, including a generic __TDP__ business card and stickers: The great weakness of __TDP__ since inception is publicity. The focus has been exclusively on development and conference presentations. With some publicity, __TDP__ could have a significant impact on the BSD community as the target audience.
 
 {{footer.md}}
