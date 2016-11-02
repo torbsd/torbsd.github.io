@@ -100,7 +100,7 @@ One half of  __TDP__ is located in New York City, the other half is in Mexico. T
 
 #### Upcoming Conferences/Summits ####
 
-All of these events are excellent platforms for __TDP__ presentations and the distribution of publicity about the project.
+All of these events are excellent platforms for __TDP__ presentations and the distribution of publicity about the project. In addition to presentations, __TDP__ is looking to begin conducting birds-of-feather sessions specifically aimed at current and prospective BSD Tor relays operators.
 
 * CCC in Hamburg, December 2016;
 * IFF in Valencia, March 2017;
