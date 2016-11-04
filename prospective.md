@@ -10,7 +10,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ### TDP List of Current and Potential Projects ###
 
-__TDP__'s current focus is primarily on porting Tor Browser to OpenBSD, presentations at various events and conferences, besides finding software bugs and operating long-term relays and bridges. The listed projects are at various stages of development, from planning to the early stages of implementation. Funding would provide the necessary resources to dedicate the time to continue the projects, and bring more to fruition.
+__TDP__'s current focus is primarily on porting Tor Browser to OpenBSD and presentations at various events and conferences about __TDP__, besides finding software bugs and operating long-term relays and bridges. The listed projects are at various stages of development, from planning to implementation. Funding would provide the necessary resources to dedicate the time to continue the projects, and bring more to fruition.
 
 __TDP's__ work can be divided into several broad categories:
 
@@ -25,28 +25,27 @@ __TDP's__ work can be divided into several broad categories:
 
 #### [Tor Browser for OpenBSD](https://github.com/torbsd/openbsd-ports/) ####
 
-A port of Tor Browser (TBB) enabling easier porting to other
-POSIX-based systems.
+A port of Tor Browser (TB) enables easier porting to other
+POSIX-based systems. Standards enable portability which leads to more operating system diversity.
 
-__TDP__ has released multiple sets of packages over the previous year for
-testers from around the Internet to try.  Began the process of pushing patches
-upstream to aid in other porting efforts _c.f._
+__TDP__ released multiple sets of packages since launching in March 2015 for
+testers from around the Internet. This also commenced the process of pushing patches upstream to aid in other porting efforts _c.f._
 [tor ticket 20497](https://trac.torproject.org/projects/tor/ticket/20497).
 
 __TDP__ is committed to continuing to ensure the OpenBSD community can use
-TBB. Our preferred method for accomplishing this is getting it into the
+TB. Our preferred method for accomplishing this is getting it into the
 official ports tree. Once there, __TDP__ will continue maintainership, but
 acceptance into the OpenBSD ports tree enables development input from the broader OpenBSD community.
 
-An OpenBSD TBB adds to Tor client diversity, engaging a
+An OpenBSD TB adds to Tor client diversity, engaging a
 security-conscious group of end-users.  It also can add relay diversity
-because all TBB users are also de-facto relay operators while they're
-running TBB.
+because all TB users are also de-facto relay operators while they're
+running TB.
 
 Future work:
 
-* Pluggable Transports: current porting effort focused on the core of TBB: tor-browser and the five key browser extensions.  Next step is to port Pluggable Transports;
-* Automation of various aspects of the process of maintaining the TBB ports to shorten turnaround time for new releases;
+* Pluggable Transports: current porting effort focused on the core of TB: tor-browser and the five key browser extensions.  Next step is to port Pluggable Transports;
+* Automation of various aspects of the process of maintaining the TB ports to shorten turnaround time for new releases;
 * Purchase of hardware to ease in keeping ports up to date and to help with other privacy-enhancing technology-related (PETs) porting efforts to the BSDs.
 
 #### OpenBSD Drivers for USB TRNGs ####
