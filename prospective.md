@@ -39,7 +39,7 @@ acceptance into the OpenBSD ports tree enables development input from the broade
 
 An OpenBSD TB adds to Tor client diversity, engaging a
 security-conscious group of end-users.  It also can add relay diversity
-because all TB users are also de-facto relay operators while they're
+because all TB users can also be relay operators while they're
 running TB.
 
 Future work:
@@ -67,7 +67,7 @@ with include:
 
 #### Tor Browser port to FreeBSD ####
 
-Starting from the __TDP__ OpenBSD port of Tor Browser, FreeBSD should be a relatively easier porting target.  Currently in planning phase, with interest expressed by several developers, including one from [HardenedBSD](https://wwww.hardenedbsd.org/)
+Starting from the __TDP__ OpenBSD port of Tor Browser, FreeBSD should be a relatively easier porting target.  Currently in planning phase, with interest expressed by several developers, including from [HardenedBSD](https://wwww.hardenedbsd.org/)
 
 #### Porting OpenBSD's [signify](http://man.openbsd.org/signify) to other OSs ####
 
@@ -125,11 +125,11 @@ For __TDP__ to single-handedly run a lot of *BSD Tor relays would replace the op
 
 * New York Internet relays: [NYI](https://nyi.net/) offered to provision and host two high-capacity Tor relays near the core of the Internet.  __TDP__ would configure the relays and maintain access to them; NYI staff would be enlisted to operate them;
 * OpenBSD armv7 relay network: continue our work on bootable flash images based on OpenBSD that work on SoC-style computers (BeagleBone, RasPI, _etc_.);
-* Running an [OpenBSD/macppc](https://www.openbsd.org/macppc.html) relay to enhance bug-finding for __TDP__ and the [BSD Buildbot](https://buildbot.pixelminers.net/) on a non-standard hardware platform for Tor;
+* Running [OpenBSD/macppc](https://www.openbsd.org/macppc.html) and/or [OpenBSD/sparc64](https://www.openbsd.org/sparc64.html) relays to enhance bug-finding for __TDP__ and the [BSD Buildbot](https://buildbot.pixelminers.net/) as non-standard hardware platforms for Tor;
 
 <a id="advocacy">__ADVOCACY & PUBLICITY__</a>
 
-* [Open letter to BSD firms to run relays](https://torbsd.github.io/corp-relays.html): There are many large corporations that rely on BSD code and infrastructure, including WhatsApp, Juniper and NetFlix. Following Mozilla's lead in running Tor relays as a business entity, __TDP__ would query these firms through our wide network of contacts and work at convincing them to run relays themselves.
+* [Open letter to BSD firms to run relays](https://torbsd.github.io/corp-relays.html): There are many large corporations that rely on BSD code and infrastructure, including WhatsApp, Juniper and NetFlix. Following Mozilla's lead in running Tor relays as a business entity, __TDP__ would query these firms through our wide network of contacts and work at convincing them to run relays themselves. __TDP__ would provide assistance but the relays would be maintained by the respective entity;
 * Publicity materials for conferences, including a generic __TDP__ business card and stickers: The great weakness of __TDP__ since inception is publicity. The focus has been exclusively on development and conference presentations. With some publicity, __TDP__ could have a significant impact on the BSD community as the target audience.
 
 {{footer.md}}
