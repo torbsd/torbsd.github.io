@@ -10,7 +10,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ### TDP List of Current and Potential Projects ###
 
-__TDP__ current focus is primarily on porting Tor Browser to OpenBSD, presentations at various events and conferences, besides finding software bugs and operating long-term relays and bridges. The listed projects are at various stages of development, from planning to the early stages of implementation. Funding would provide the necessary resources to dedicate the time to continue the projects, and bring more to fruition.
+__TDP__'s current focus is primarily on porting Tor Browser to OpenBSD, presentations at various events and conferences, besides finding software bugs and operating long-term relays and bridges. The listed projects are at various stages of development, from planning to the early stages of implementation. Funding would provide the necessary resources to dedicate the time to continue the projects, and bring more to fruition.
 
 __TDP's__ work can be divided into several broad categories:
 
