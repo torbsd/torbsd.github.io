@@ -1,8 +1,8 @@
-For FreeBSD, Andale font is in x11-fonts/webfonts
+For FreeBSD, Andale font is in x11-fonts/webfonts, but not available in OpenBSD?
 
-Should already be available on OpenBSD?
+One space between sentences after period, not two.
 
-Full name is "The Tor BSD Diversity Project" with the acronym "TDP"
+Full name is "__The Tor BSD Diversity Project__" with the acronym "__TDP__"
 
 Project and acronym always __bolded__
 
