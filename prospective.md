@@ -78,7 +78,7 @@ __TDP__ is also considering an open source graphical user interface for signify,
 
 #### tor-alpha packages for OpenBSD ####
 
-OpenBSD only allows stable applications in its port system. Meanwhile the Tor Project's alpha versions are released frequently, and address mitigation against rapidly evolving adversaries and threat models. __TDP__ would like to investigate the idea of proposing a port that tracks Tor's bleeding edge. The preferred outcome would be to have such a port accepted into the ports tree; there is some small precedent for this despite the norm, e.g. both current Mozilla Firefox and ESR are in the ports tree. If __TDP__ fails in convincing the community to accept this our fallback would be to produce and sign our own packages of alpha-release Tor for OpenBSD.
+OpenBSD only allows stable applications in its port system. Meanwhile the Tor Project's alpha versions are released frequently, and address mitigation against rapidly evolving adversaries and threat models. __TDP__ would like to investigate the idea of proposing a port that tracks Tor's bleeding edge. The preferred outcome would be for the inclusion of tor-alpha into the ports tree; there is some small precedent for this despite the norm, e.g. both current Mozilla Firefox and ESR are in the ports tree. If __TDP__ fails in convincing the community to accept this our fallback would be to produce and sign our own packages of alpha-release Tor for OpenBSD.
 
 <a id="documentation">__DOCUMENTATION__</a>
 
@@ -94,7 +94,7 @@ A discussion at the September 2016 Tor Summit came to the consensus that these r
 
 #### Internal TDP physical meeting ####
 
-One half of __TDP__ is located in New York City, the other half is in Mexico. They have collaborated on different levels for over a decade, but have never met face-to-face. A physical meeting at a half-way point would be enormously beneficial to pushing the various __TDP__ projects forward, in addition to planning future projects.
+One half of __TDP__ is located in New York City, the other half is in Mexico. They collaborated on different levels for over a decade, but never met face-to-face. A physical meeting at a half-way point would be enormously beneficial to pushing the various __TDP__ projects forward, in addition to planning future projects.
 
 #### Upcoming Conferences/Summits ####
 
@@ -129,6 +129,6 @@ For __TDP__ to single-handedly run a lot of *BSD Tor relays would replace the op
 <a id="advocacy">__ADVOCACY & PUBLICITY__</a>
 
 * [Open letter to BSD firms to run relays](https://torbsd.github.io/corp-relays.html): There are many large corporations that rely on BSD code and infrastructure, including WhatsApp, Juniper and NetFlix. Following Mozilla's lead in running Tor relays as a business entity, __TDP__ would query these firms through our wide network of contacts and work at convincing them to run relays themselves. __TDP__ would provide assistance but the relays would be maintained by the respective entity;
-* Publicity materials for conferences, including a generic __TDP__ business card and stickers: The great weakness of __TDP__ since inception is publicity. The focus has been exclusively on development and conference presentations. With some publicity, __TDP__ could have a significant impact on the BSD community as the target audience.
+* Publicity materials for conferences, including a generic __TDP__ business card and stickers: The great weakness of __TDP__ since inception is publicity. The focus has been exclusively on development and conference presentations. With some publicity, __TDP__ significantly impact the BSD community as the target audience.
 
 {{footer.md}}
