@@ -1,4 +1,6 @@
-For FreeBSD, Andale font is in x11-fonts/webfonts, but not available in OpenBSD?
+For FreeBSD, Andale font is in x11-fonts/webfonts.
+
+For OpenBSD, Anadale font is in fonts/msttcorefonts.
 
 One space between sentences after period, not two.
 
