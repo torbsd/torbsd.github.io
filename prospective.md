@@ -82,13 +82,15 @@ OpenBSD only allows stable applications in its port system. Meanwhile the Tor Pr
 
 <a id="documentation">__DOCUMENTATION__</a>
 
-#### [Tor relay configuration guides](relay-guides.html) ####
+#### [Tor Relay Configuration Guides](relay-guides.html) ####
 
 __TDP__ initiated "simple English" guides for configuring Tor relays on
 both [FreeBSD](fbsd-relays.html) and [OpenBSD](obsd-relays.html). __TDP__
 intends to complete these and produce translations in other languages.
 
 A discussion at the September 2016 Tor Summit came to the consensus that these relay guides could play a pivotal role in enlisting more BSD relay operators.
+
+Initial target translation languages for relay configuration guides include Russian, Arabic, Spanish, Portuguese and French, partially informed by a recent study on the [most common second languages](http://www.mymodernmet.com/profiles/blogs/second-languages-of-the-world-infographic).
 
 <a id="events">__EVENTS__</a>
 
