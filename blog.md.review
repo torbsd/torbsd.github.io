@@ -74,7 +74,7 @@ Ultimately, what does Tor Browser entering the OpenBSD ports tree mean?
 
 There are other reasons. A critical reason why most users choose a preferred operating system is the choice of available applications. Security-conscious users often consider OpenBSD for its impressive track record. A TB port was a likely deal-breaker to a layer of that group. TB running on a BSD-licensed operating system removes the restrictions of the GPL licensing for those looking to build products with TB on OpenBSD.
 
-Clearly, the book isn't closed with the acceptance of Tor Browser into OpenBSD ports. TB 6.0.6 is coming soon, and we have to begin work on that. We need to automate regular builds on the most recent OpenBSD snapshots.
+Clearly, the book isn't closed with the acceptance of Tor Browser into OpenBSD ports. TB 6.0.6 is coming soon, and we have to begin work on that. We need to automate regular builds on the most recent OpenBSD snapshots. There remains one critical missing component in our TB: that of pluggable transports. PTs are an important tool for those facing adversaries employing deep packet inspection, among other measures.
 
 And while TB is in the -current ports tree, we'll have to deal with patching the -stable version once it hits that branch.
 
