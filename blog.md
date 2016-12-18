@@ -10,6 +10,10 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or a Central Location for Announces and Notes##
 
+__December 2016__
+
+[Welcome Aboard, Vinicius](#vinicius)
+
 __October 2016__
 
 [More Bananas](#morebananas) [%sep] [signify(1) Sanity](#signifysanity) [%sep] [Test Tor Browser 6.0.5 for OpenBSD](#test605)  [%sep]  [Replying to Tor Blog Comments](#torblog0)
@@ -52,6 +56,22 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20161217###
+
+<a id="vinicius">__Welcome Aboard, Vinicius__</a> by gman999
+
+Two of us launched __TDP__ in March 2015. The accomplishments are substantial, and the impact is significant. __TDP__ did more than raise the PETs flag in BSD land, it sparked a number of related projects and efforts.
+
+One important player in the broad effort has been Vincius Zavam, a young BSD hacker in Brazil. Introduced to PETs and Tor in particular as he was an organizer of BSDCon Brasil in 2015, Vincius wasted no time engaging on multiple levels.
+
+He not only started running a number of Tor relays on several BSDs, he also assisted others in Brazil. Without any external assistance, he began porting Tor Browser to FreeBSD, an enormously important endeavor. And most recently, he did a presentation on Tor with a focus on the BSDs.
+
+He is not just full of energy and ingenuity, he is also a pleasure to work with. His locale of Brazil is another massive advantage, which he has utilized to the maximum degree. He has provided patches to the FreeBSD security/tor port several times and is active on the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd).
+
+Like the other __TDP__ members, he might favor one BSD over another for different tasks, but "BSD agnosticism" is his ideology. Although this [tweet](https://twitter.com/HenningBrauer/status/741485723778453504) might belay his deepest allegiance.
+
+Welcome aboard, Vinicius. Our efforts are ongoing without monetary compensation. There is no pot of gold awaiting us, but if we can continue to enhance Tor and the PETs scene in general, the satisfaction is priceless.
 
 ###20161025###
 
