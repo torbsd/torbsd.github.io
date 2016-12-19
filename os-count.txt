@@ -1,4 +1,4 @@
-Sun Dec 18 16:20:42 UTC 2016
+Mon Dec 19 02:13:34 UTC 2016
 Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
@@ -8,17 +8,17 @@ Quick-and-Dirty Static Reports
 'Total Relay Count by Operating System'
 
 Total Number of Public Tor Relays:
-7200
+7150
 -------
 -count- -platform-  -percent-
-6582  Linux         91.4167%
-252   FreeBSD       3.5%
-246   Windows       3.41667%
-85    OpenBSD       1.18056%
-15    Darwin        0.208333%
-6     SunOS         0.0833333%
-6     NetBSD        0.0833333%
-4     ElectroBSD    0.0555556%
-2     DragonFly     0.0277778%
-1     a             0.0138889%
-1     GNU/kFreeBSD  0.0138889%
+6568  Linux         91.8601%
+255   FreeBSD       3.56643%
+208   Windows       2.90909%
+85    OpenBSD       1.18881%
+14    Darwin        0.195804%
+6     SunOS         0.0839161%
+6     NetBSD        0.0839161%
+4     ElectroBSD    0.0559441%
+2     DragonFly     0.027972%
+1     a             0.013986%
+1     GNU/kFreeBSD  0.013986%
