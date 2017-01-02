@@ -16,6 +16,10 @@ h1, h2, h3 {
   border-bottom: 1px solid black;
   padding-bottom: 0.2em;
 }
+h4, h5 {
+  border-bottom: 1px dotted black;
+  padding-bottom: 0.1em;
+}
 img {
   padding: 0.5em;
   margin-left: 1em;

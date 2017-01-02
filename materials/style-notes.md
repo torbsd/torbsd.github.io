@@ -1,8 +1,10 @@
-For FreeBSD, Andale font is in x11-fonts/webfonts
+For FreeBSD, Andale font is in x11-fonts/webfonts.
 
-Should already be available on OpenBSD?
+For OpenBSD, Anadale font is in fonts/msttcorefonts.
 
-Full name is "The Tor BSD Diversity Project" with the acronym "TDP"
+One space between sentences after period, not two.
+
+Full name is "__The Tor BSD Diversity Project__" with the acronym "__TDP__"
 
 Project and acronym always __bolded__
 

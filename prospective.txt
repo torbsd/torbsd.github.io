@@ -1,0 +1,93 @@
+Title: The Tor BSD Diversity Project
+CSS: torbsd.css
+Author: gman
+Editors: attila
+Data: 2016-10-31
+X-Note: These lines at the top are multimarkdown metadata; leave them.
+{{meta.md}}
+
+{{header.md}}
+
+The Tor BSD Diversity Project
+Full List of Current and Potential Projects
+
+|_project_|	_summary_ | _est to completion_ | _status_ |
+|    _component_ |
+| |
+| Tor Browser for OpenBSD | null |ongoing | 25 releases	 |
+
+
+
+* Code
+
+Tor Browser on OpenBSD
+continued development
+pluggable transports
+porting to FreeBSD
+engagement of BSD community into Tor ecosystem
+client diversity
+
+signify(1)
+porting to other OSs
+as a antidote to GnuPG bloat
+
+tor-devel packages for OpenBSD
+signed by TDP?
+only tor-stable in ports
+
+* HowTo
+
+signify(1) for checking Tor digital signatures
+
+FreeBSD relay configuration
+
+OpenBSD relay configuration
+
+Securing FreeBSD
+
+building small OpenBSD
+for small i386 and amd64 hardware
+
+torrcs
+including IPv6
+
+* Events
+
+internal TDP physical meeting
+
+IFF in Valencia, March 2017
+
+Tor Summit in Amsterdman, March 2017
+
+AsiaBSDCon
+
+EuroBSDCon in Paris, September 2017
+
+TDP NYC public meeting
+with lots of cosponsors
+
+CCC in Hamburg, December 2016
+
+* Research
+
+diversity white paper: OS, geography, architecture, consensus
+
+* Infrastructure
+
+NYI relays
+
+OpenBSD armv7 relay network
+
+* Advocacy
+
+handout fliers
+
+business cards
+
+stickers
+
+open letter to BSD firms to run relays
+
+infographic of TDP->PETs Ecosystem
+
+{{footer.md}}

@@ -14,16 +14,16 @@
 
 <h1 id="thetorbsddiversityprojecttdp"><a href="index.html">The Tor BSD Diversity Project (TDP)</a></h1>
 
-<p>&#8916; <a href="blog.html">Blog</a> &#8916; <a href="faq.html">Frequently Asked Questions</a> &#8916; <a href="resources.html">Resources</a> &#8916; <a href="https://github.com/torbsd">GitHub Repositories</a> &#8916; <a href="contact.html">Contact</a> &#8916; <a href="http://bptfp7py2wclht26.onion/">TDP Hidden Service</a> &#8916;</p>
+<p>&#8916; <a href="blog.html">Blog</a> &#8916; <a href="faq.html">Frequently Asked Questions</a> &#8916; <a href="resources.html">Resources</a> &#8916; <a href="https://github.com/torbsd/">GitHub Repositories</a> &#8916; <a href="contact.html">Contact</a> &#8916; <a href="http://bptfp7py2wclht26.onion/">TDP Hidden Service</a> &#8916;</p>
 
 <p><strong><a href="projects.html">The TDP Projects</a>:</strong><br/>
-&#8916; <a href="https://github.com/torbsd/openbsd-ports">Tor Browser for OpenBSD</a> &#8916; <a href="relay-guides.html">BSD Tor Relay Guides</a> &#8916; <a href="corp-relays.html">BSD Firm Relays</a> &#8916; <a href="porting-pets.html">Porting Targets for PETs</a> &#8916; <a href="dirty-stats.html">Quick-and-Dirty Static Reports</a> &#8916;</p>
+&#8916; <a href="https://github.com/torbsd/openbsd-ports/">Tor Browser for OpenBSD</a> &#8916; <a href="relay-guides.html">BSD Tor Relay Guides</a> &#8916; <a href="corp-relays.html">BSD Firm Relays</a> &#8916; <a href="porting-pets.html">Porting Targets for PETs</a> &#8916; <a href="dirty-stats.html">Quick-and-Dirty Static Reports</a> &#8916;</p>
 
 <h2 id="portingtargetsforpets">Porting Targets for PETs</h2>
 
-<p>Over the past few years, a long list of applications spawned from attention to privacy and anonymity solutions. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.</p>
+<p>Over the past few years, concerns about privacy spawned a long list of applications. Most originated as efforts to provide secure, open-source alternatives to common, proprietary solutions. Jitsi and Ricochet, for instance, arose as attempted replacements for Skype.</p>
 
-<p>This is a list of some of those applications. Most have not been ported to any of the BSDs. Some probably <em>shouldn&#8217;t</em> be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/<a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash">bash</a> a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. <strong>No endorsements should be assumed from this list.</strong></p>
+<p>This is a list of some of those alternate tools. Most have not been ported to any of the BSDs. Some probably <em>shouldn&#8217;t</em> be ported to the BSDs or any other sane operating system. Some are unmaintained, or unmaintainable. Is shells/<a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash/">bash</a> a dependency? Maybe a patch should be sent upstream before even considering a port. But this list is an attempt to summarize the applications and provide relevant information for any *BSD developer interested in reviewing or porting them. <strong>No endorsements should be assumed from this list.</strong></p>
 
 <p>The listed information should be considered a guide but should be confirmed due to any inaccuracies or changes. Please use our <a href="https://github.com/torbsd/torbsd.github.io/issues/">GitHub account&#8217;s torbsd.github.io &#8220;issues&#8221; page for any input</a>.</p>
 
@@ -31,15 +31,13 @@
 
 <p>These are loose categorizations of the ports. Where there is no consensus among the BSDs on category, we chose whichever was already ported, then the more specific category, for example <strong>net-p2p</strong> over <strong>net</strong>. For the ports we are unsure how to categorize or haven&#8217;t approached yet, we have put them under <a href="#misc">misc</a>. But overall, the categories are just a basic guide.</p>
 
-<h2 id="opensourcesoftwarepackagesrelevanttopets">Open Source Software Packages Relevant to PETs</h2>
+<h2 id="petsrelatedopensourcesoftwarepackages">PETs Related Open Source Software Packages</h2>
 
 <p><a href="#editors">editors</a> &#8916; <a href="#graphics">graphics</a> &#8916; <a href="#mail">mail</a> &#8916; <a href="#misc">misc</a> &#8916; <a href="#net">net</a> &#8916; <a href="#net-im">net-im</a> &#8916; <a href="#net-p2p">net-p2p</a> &#8916; <a href="#security">security</a> &#8916; <a href="#sysutils">sysutils</a> &#8916; <a href="#www">www</a></p>
 
 <dl>
 <dt><strong>tool-name</strong></dt>
 <dd><strong>Description</strong>: <em>short-descr</em></dd>
-
-<dd><strong>License</strong>: <em>name of license and link to actual text for project</em></dd>
 
 <dd><strong>Site</strong>: <em>www-site</em></dd>
 
@@ -51,11 +49,11 @@
 
 <dd><strong>FreeBSD</strong>: <a href="https://svnweb.freebsd.org/ports/head/">FreeBSD ports system</a></dd>
 
-<dd><strong>OpenBSD</strong>: <a href="http://mirrors.nycbug.org/pub/OpenBSD/snapshots/packages">OpenBSD packages</a>, which generally also apply to BitRig</dd>
+<dd><strong>OpenBSD</strong>: <a href="http://ftp.openbsd.org/pub/OpenBSD/snapshots/packages/">OpenBSD packages</a>, which generally also apply to BitRig</dd>
 
-<dd><strong>NetBSD</strong>: <a href="http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/README.html">NetBSD&#8217;s pkgsrc</a> for multiple operating systems</dd>
+<dd><strong>NetBSD</strong>: <a href="http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/README-all.html">NetBSD&#8217;s pkgsrc</a> for multiple operating systems</dd>
 
-<dd><strong>DragonFly</strong>: <a href="http://mirrors.nycbug.org/pub/DragonflyBSD/dports/dragonfly:4.4:x86:64/LATEST//All/">DragonFly BSD&#8217;s ports</a>, similar to FreeBSD</dd>
+<dd><strong>DragonFly</strong>: <a href="http://avalon.dragonflybsd.org/dports/dragonfly:4.6:x86:64/LATEST/All/">DragonFly BSD&#8217;s ports</a>, similar to FreeBSD</dd>
 
 <dd><strong>Notes</strong>: <em>etc&#8230;</em></dd>
 </dl>
@@ -64,93 +62,99 @@
 
 <dl>
 <dt><a id="pkg-autocanary"><strong>AutoCanary</strong></a></dt>
-<dd><strong>Description</strong>: desktop application for generating machine-readable, signed canary statements</dd>
+<dd>Description: desktop application for generating machine-readable, signed canary statements</dd>
 
-<dd>Site: <a href="https://firstlook.org/code/project/autocanary">https://firstlook.org/code/project/autocanary</a></dd>
+<dd>Site: <a href="https://firstlook.org/code/project/autocanary/">https://firstlook.org/code/project/autocanary/</a></dd>
 
-<dd><strong>License</strong>: <a href="https://github.com/firstlook/autocanary/blob/master/LICENSE.md">GPLv3</a></dd>
+<dd>License: <a href="https://github.com/firstlook/autocanary/blob/master/LICENSE.md">GPLv3</a></dd>
 
-<dd><strong>Source</strong>: <a href="https://github.com/firstlook/autocanary/">GitHub</a></dd>
+<dd>Source: <a href="https://github.com/firstlook/autocanary/">https://github.com/firstlook/autocanary/</a></dd>
 
-<dd><strong>Version</strong>: <a href="https://github.com/firstlook/autocanary/releases/tag/0.1">0.1</a></dd>
+<dd>Version: 0.1</dd>
 
-<dd><strong>FreeBSD</strong>: no</dd>
+<dd>FreeBSD: no</dd>
 
-<dd><strong>OpenBSD</strong>: no</dd>
+<dd>OpenBSD: no</dd>
 
-<dd><strong>NetBSD</strong>: no</dd>
+<dd>NetBSD: no</dd>
 
-<dd><strong>DragonFly</strong>: no</dd>
+<dd>DragonFly: no</dd>
 
-<dd><strong>Notes</strong>: <a href="https://en.wikipedia.org/wiki/Warrant_canary">Wikipedia on Warrant Canaries</a></dd>
+<dd>Notes: <a href="https://en.wikipedia.org/wiki/Warrant_canary/">Wikipedia on Warrant Canaries</a>. Not portable as-is, with builds only for Windows, OSX and Debian.</dd>
 
 <dt><a id="pkg-ethercalc"><strong>EtherCalc</strong></a></dt>
-<dd><strong>Description</strong>: collaborative spreadsheet application</dd>
+<dd>Description: collaborative spreadsheet application</dd>
 
-<dd><strong>Site</strong>: <a href="https://ethercalc.net">https://ethercalc.net</a></dd>
+<dd>Site: <a href="https://ethercalc.net/">https://ethercalc.net/</a></dd>
 
-<dd><strong>License</strong>: <a href="https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt">CPAL 1.0 Artistic License 2.0</a></dd>
+<dd>License: <a href="https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt">CPAL 1.0 Artistic License 2.0</a></dd>
 
-<dd><strong>Source</strong>: <a href="https://github.com/audreyt/ethercalc">GitHub</a></dd>
+<dd>Source: <a href="https://github.com/audreyt/ethercalc/">https://github.com/audreyt/ethercalc/</a></dd>
 
-<dd><strong>Version</strong>: <a href="https://github.com/audreyt/ethercalc/releases/tag/0.20151108.1">0.20151108.1</a></dd>
+<dd>Version: 0.20151108.1</dd>
 
-<dd><strong>FreeBSD</strong>: no</dd>
+<dd>FreeBSD: no</dd>
 
-<dd><strong>OpenBSD</strong>: no</dd>
+<dd>OpenBSD: no</dd>
 
-<dd><strong>NetBSD</strong>: no</dd>
+<dd>NetBSD: no</dd>
 
-<dd><strong>DragonFly</strong>: no</dd>
+<dd>DragonFly: no</dd>
+
+<dd>Notes:</dd>
 
 <dt><a id="pkg-etherpad"><strong>Etherpad</strong></a></dt>
-<dd><strong>Description</strong>: collaborative editing application</dd>
+<dd>Description: collaborative editing application</dd>
 
-<dd><strong>Site</strong>: <a href="http://etherpad.org">http://etherpad.org</a></dd>
+<dd>Site: <a href="http://etherpad.org/">http://etherpad.org/</a></dd>
 
-<dd><strong>License</strong>: <a href="https://github.com/ether/etherpad-lite/blob/develop/LICENSE">Apache 2.0</a></dd>
+<dd>License: <a href="https://github.com/ether/etherpad-lite/blob/develop/LICENSE/">Apache 2.0</a></dd>
 
-<dd><strong>Source</strong>: <a href="https://github.com/ether/etherpad-lite">GitHub</a></dd>
+<dd>Source: <a href="https://github.com/ether/etherpad-lite/">https://github.com/ether/etherpad-lite/</a></dd>
 
-<dd><strong>Version</strong>: <a href="https://github.com/ether/etherpad-lite/releases/tag/1.5.7">1.5.7</a></dd>
+<dd>Version: 1.5.7</dd>
 
-<dd><strong>FreeBSD</strong>: no</dd>
+<dd>FreeBSD: no</dd>
 
-<dd><strong>OpenBSD</strong>: no</dd>
+<dd>OpenBSD: no</dd>
 
-<dd><strong>NetBSD</strong>: no</dd>
+<dd>NetBSD: no</dd>
 
-<dd><strong>DragonFly</strong>: no</dd>
+<dd>DragonFly: no</dd>
+
+<dd>Notes:</dd>
 </dl>
 
 <h3 id="aidgraphicsgraphicsa"><a id="graphics">graphics</a></h3>
 
 <dl>
-<dt><a id="pkg-exiftool">ExifTool</a></dt>
-<dd><strong>Description</strong>: tool for editing, reading, writing metadata on a variety of file types</dd>
+<dt><a id="pkg-exiftool"><strong>ExifTool</strong></a></dt>
+<dd>Description: tool for editing, reading, writing metadata on a variety of file types</dd>
 
-<dd>Site: http://owl.phy.queensu.ca/~phil/exiftool/</dd>
+<dd>Site: <a href="http://owl.phy.queensu.ca/~phil/exiftool/">http://owl.phy.queensu.ca/~phil/exiftool/</a></dd>
 
 <dd>License: <a href="http://owl.phy.queensu.ca/~phil/exiftool/#license">Perl</a></dd>
 
-<dd>Source: http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool&#8211;10.05.tar.gz)</dd>
+<dd>Source: <a href="http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.13.tar.gz">http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool&#8211;10.13.tar.gz</a></dd>
 
-<dd>Version: 10.05</dd>
+<dd>Version: 10.13</dd>
 
 <dd>FreeBSD: yes</dd>
 
-<dd>OpenBSD: no</dd>
+<dd>OpenBSD: yes</dd>
 
 <dd>NetBSD: yes</dd>
 
 <dd>DragonFly: yes</dd>
 
-<dt><a id="pkg-exiv2">Exiv2</a></dt>
+<dt><a id="pkg-exiv2"><strong>Exiv2</strong></a></dt>
 <dd>Description: command-line utility to manage image metadata</dd>
 
-<dd>Site: <a href="http://www.exiv2.org">http://www.exiv2.org</a></dd>
+<dd>Site: <a href="http://www.exiv2.org/">http://www.exiv2.org/</a></dd>
 
-<dd>License: GPLv2 or commercial http://www.exiv2.org/download.html#license</dd>
+<dd>License: <a href="http://www.exiv2.org/download.html#license">GPLv2 or commercial</a></dd>
+
+<dd>Source: <a href="http://www.exiv2.org/exiv2-0.25.tar.gz">http://www.exiv2.org/exiv2&#8211;0.25.tar.gz</a></dd>
 
 <dd>Version: 0.25</dd>
 
@@ -162,14 +166,14 @@
 
 <dd>DragonFly: yes</dd>
 
-<dt>jhead</dt>
-<dd><strong>Description</strong>: tool for manipulating JPEG EXIF files</dd>
+<dt><a id="pkg-jhead"><strong>jhead</strong></a></dt>
+<dd>Description: tool for manipulating JPEG EXIF files</dd>
 
-<dd>http://www.sentex.net/~mwandel/jhead/</dd>
+<dd>Site: <a href="http://www.sentex.net/~mwandel/jhead/">http://www.sentex.net/~mwandel/jhead/</a></dd>
 
-<dd>License: Public Domain http://www.sentex.net/~mwandel/jhead/</dd>
+<dd>License: <a href="http://www.sentex.net/~mwandel/jhead/">Public Domain</a></dd>
 
-<dd>http://www.sentex.net/~mwandel/jhead/jhead&#8211;3.00.tar.gz</dd>
+<dd>Source: <a href="http://www.sentex.net/~mwandel/jhead/jhead-3.00.tar.gz">http://www.sentex.net/~mwandel/jhead/jhead&#8211;3.00.tar.gz</a></dd>
 
 <dd>Version: 3.00</dd>
 
@@ -183,16 +187,16 @@
 
 <dd>notes:</dd>
 
-<dt>MAT</dt>
-<dd><strong>Description</strong>: tool for removing metadata</dd>
+<dt><a id="pkg-mat"><strong>MAT</strong></a></dt>
+<dd>Description: tool for removing metadata</dd>
 
-<dd>http://mat.boum.org</dd>
+<dd>Site: <a href="http://mat.boum.org/">http://mat.boum.org/</a></dd>
 
-<dd>GPLv2: https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE</dd>
+<dd>License: <a href="https://gitweb.torproject.org/user/jvoisin/mat.git/tree/LICENSE/">GPLv2</a></dd>
 
-<dd>https://gitweb.torproject.org/user/jvoisin/mat.git</dd>
+<dd>Source: <a href="https://gitweb.torproject.org/user/jvoisin/mat.git">https://gitweb.torproject.org/user/jvoisin/mat.git</a></dd>
 
-<dd>0.5.4</dd>
+<dd>Version: 0.6.1</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -202,24 +206,24 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: command-line and GUI, with a library.</dd>
+<dd>notes: command-line and GUI, with a library. Uses Linux shred(1)</dd>
 
-<dt>pdf-redact-tools</dt>
-<dd><strong>Description</strong>: tools to redact and strip metadata from documents</dd>
+<dt><a id="pkg-pdf-redact-tools"><strong>pdf-redact-tools</strong></a></dt>
+<dd>Description: tools to redact and strip metadata from documents</dd>
 
-<dd>https://firstlook.org/code/project/pdf-redact-tools/</dd>
+<dd>Site: <a href="https://firstlook.org/code/project/pdf-redact-tools/">https://firstlook.org/code/project/pdf-redact-tools/</a></dd>
 
-<dd>GPLv3: https://github.com/firstlook/pdf-redact-tools/blob/master/LICENSE</dd>
+<dd>License: <a href="https://github.com/firstlook/pdf-redact-tools/blob/master/LICENSE">GPLv3</a></dd>
 
-<dd>https://github.com/firstlook/pdf-redact-tools/</dd>
+<dd>Source: <a href="https://github.com/firstlook/pdf-redact-tools/">https://github.com/firstlook/pdf-redact-tools/</a></dd>
 
-<dd>0.1</dd>
+<dd>Version: 0.1</dd>
 
 <dd>FreeBSD: no</dd>
 
 <dd>OpenBSD: no</dd>
 
-<dd>pkgsrc: no</dd>
+<dd>pkgsrc: yes</dd>
 
 <dd>DPorts: no</dd>
 
@@ -229,16 +233,16 @@
 <h3 id="aidmailmaila"><a id="mail">mail</a></h3>
 
 <dl>
-<dt>Mailpile</dt>
-<dd><strong>Description</strong>: fast webmail client with built-in security features</dd>
+<dt><a id="pkg-mailpile"><strong>Mailpile</strong></a></dt>
+<dd>Description: fast webmail client with built-in security features</dd>
 
-<dd>http://www.mailpile.is</dd>
+<dd>Site: <a href="https://www.mailpile.is/">https://www.mailpile.is</a></dd>
 
-<dd>AGPLv3: https://github.com/mailpile/Mailpile</dd>
+<dd>License: <a href="https://github.com/mailpile/Mailpile/">AGPLv3</a></dd>
 
-<dd>https://github.com/mailpile/Mailpile</dd>
+<dd>Source: <a href="https://github.com/mailpile/Mailpile/">https://github.com/mailpile/Mailpile/</a></dd>
 
-<dd>beta III</dd>
+<dd>Version: 0.5.2</dd>
 
 <dd>FreeBSD: yes</dd>
 
@@ -250,16 +254,16 @@
 
 <dd>notes:</dd>
 
-<dt>Mixmaster</dt>
-<dd><strong>Description</strong>: type II remailer for anonymous email</dd>
+<dt><a id="pkg-mixmaster"><strong>Mixmaster</strong></a></dt>
+<dd>Description: type II anonymous remailer</dd>
 
-<dd>http://mixmaster.sourceforge.net/</dd>
+<dd>Site: <a href="http://mixmaster.sourceforge.net/">http://mixmaster.sourceforge.net/</a></dd>
 
-<dd>MIT: https://anonscm.debian.org/viewvc/pkg-mixmaster/trunk/Mix/COPYRIGHT?view=markup</dd>
+<dd>License: <a href="https://anonscm.debian.org/viewvc/pkg-mixmaster/trunk/Mix/COPYRIGHT?view=markup">MIT</a></dd>
 
-<dd>http://sourceforge.net/projects/mixmaster/files/latest/download?source=files</dd>
+<dd>Source: <a href="http://sourceforge.net/projects/mixmaster/files/latest/download?source=files">http://sourceforge.net/projects/mixmaster/files/latest/download?source=files</a></dd>
 
-<dd>3.0</dd>
+<dd>Version: 3.0</dd>
 
 <dd>FreeBSD: yes</dd>
 
@@ -271,18 +275,18 @@
 
 <dd>notes: not under active development.</dd>
 
-<dt>Mixminion</dt>
-<dd><strong>Description</strong>: type III anonymous remailer</dd>
+<dt><a id="pkg-mixminion"><strong>Mixminion</strong></a></dt>
+<dd>Description: type III anonymous remailer</dd>
 
-<dd>http://mixminion.net</dd>
+<dd>Site: <a href="http://mixminion.net">http://mixminion.net</a></dd>
 
-<dd>MIT: https://github.com/nmathewson/mixminion/blob/master/LICENSE</dd>
+<dd>License: <a href="https://github.com/nmathewson/mixminion/blob/master/LICENSE/">MIT</a></dd>
 
-<dd>https://github.com/nmathewson/mixminion/</dd>
+<dd>Source: <a href="https://github.com/nmathewson/mixminion/">https://github.com/nmathewson/mixminion/</a></dd>
 
-<dd>0.0.8alpha3</dd>
+<dd>Version: 0.0.8alpha3</dd>
 
-<dd>FreeBSD: no*</dd>
+<dd>FreeBSD: no</dd>
 
 <dd>OpenBSD: no</dd>
 
@@ -292,16 +296,16 @@
 
 <dd>notes: not under active development.</dd>
 
-<dt>Torbirdy</dt>
-<dd><strong>Description</strong>: Thunderbird add-on for using accessing email over the Tor network</dd>
+<dt><a id="pkg-torbirdy"><strong>Torbirdy</strong></a></dt>
+<dd>Description: Thunderbird add-on for using accessing email over the Tor network</dd>
 
-<dd>https://trac.torproject.org/projects/tor/wiki/torbirdy/</dd>
+<dd>Site: <a href="https://trac.torproject.org/projects/tor/wiki/torbirdy/">https://trac.torproject.org/projects/tor/wiki/torbirdy/</a></dd>
 
-<dd>BSD: https://gitweb.torproject.org/torbirdy.git/tree/LICENSE</dd>
+<dd>License: <a href="https://gitweb.torproject.org/torbirdy.git/tree/LICENSE">BSD</a></dd>
 
-<dd>https://gitweb.torproject.org/torbirdy.git</dd>
+<dd>Source <a href="https://gitweb.torproject.org/torbirdy.git">https://gitweb.torproject.org/torbirdy.git</a></dd>
 
-<dd>0.1.4</dd>
+<dd>Version: 0.1.4</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -311,43 +315,22 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: should Mozilla add-ons be their own ports? What about ugly /bin/<a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash">bash</a> installs which require shells/<a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash">bash</a> as dependencies?</dd>
+<dd>notes: should Mozilla add-ons be their own ports? What about installs which require shells/<a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash">bash</a> as dependencies?</dd>
 </dl>
 
 <h3 id="aidmiscmisca"><a id="misc">misc</a></h3>
 
 <dl>
-<dt>Kontalk server</dt>
-<dd><strong>Description</strong>: encrypted communications platform</dd>
+<dt><a id="pkg-kontalk"><strong>Kontalk server</strong></a></dt>
+<dd>Description: encrypted communications platform</dd>
 
-<dd>http://www.kontalk.org</dd>
+<dd>Site: <a href="http://www.kontalk.org/">http://www.kontalk.org/</a></dd>
 
-<dd>GPLv3: check each component under GitHub account</dd>
+<dd>License: GPLv3 check each component under GitHub account</dd>
 
-<dd>https://github.com/kontalk/tigase-kontalk/</dd>
+<dd>Source: <a href="https://github.com/kontalk/">https://github.com/kontalk/</a></dd>
 
-<dd>n/a</dd>
-
-<dd>FreeBSD: no</dd>
-
-<dd>OpenBSD: no</dd>
-
-<dd>pkgsrc: no</dd>
-
-<dd>DPorts: no</dd>
-
-<dd>notes: only for smartphones? client and server component of Kontalk XMPP client</dd>
-
-<dt>LEAP</dt>
-<dd><strong>Description</strong>: secure server client platform</dd>
-
-<dd>https://leap.se</dd>
-
-<dd>GPLv3 https://leap.se/git/{bitmask_client.git,leap_platform,git,etc}/blob/HEAD:/LICENSE</dd>
-
-<dd>https://leap.se/git</dd>
-
-<dd>n/a</dd>
+<dd>Version: various</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -357,18 +340,18 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: various components would needed for full porting, but starting point is likely the server.</dd>
+<dd>notes: client and server component of Kontalk XMPP client</dd>
 
-<dt>Libertree</dt>
-<dd><strong>Description</strong>: open-source platform for creating private social networks</dd>
+<dt><a id="pkg-leap"><strong>LEAP</strong></a></dt>
+<dd>Description: secure server client platform</dd>
 
-<dd>http://www.libertree.org</dd>
+<dd>Site: <a href="https://leap.se/">https://leap.se/</a></dd>
 
-<dd>GNU Affero: https://github.com/Libertree/libertree/blob/master/LICENCE</dd>
+<dd>License: GPLv3 https://leap.se/git/{bitmask_client.git,leap_platform,git,etc}/blob/HEAD:/LICENSE</dd>
 
-<dd>https://github.com/LiberTree/libertree</dd>
+<dd>Source: <a href="https://leap.se/git/">https://leap.se/git/</a></dd>
 
-<dd>?</dd>
+<dd>Version: various</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -378,14 +361,18 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes:</dd>
+<dd>notes: various components would needed for full porting, but starting point is likely the platform.</dd>
 
-<dt>Martus Desktop</dt>
-<dd><strong>Description</strong>: platform for collecting, safeguarding, organizing and sharing info</dd>
+<dt><a id="pkg-libertree"><strong>Libertree</strong></a></dt>
+<dd>Description: open-source platform for creating private social networks</dd>
 
-<dd>https://www.martus.org</dd>
+<dd>Site: <a href="http://www.libertree.org/">http://www.libertree.org/</a></dd>
 
-<dd>was on code.google.com, now?</dd>
+<dd>License: <a href="https://github.com/Libertree/libertree/blob/master/LICENCE">GNU Affero</a></dd>
+
+<dd>Source: <a href="https://github.com/LiberTree/libertree/">https://github.com/LiberTree/libertree/</a></dd>
+
+<dd>Version: n/a</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -397,12 +384,16 @@
 
 <dd>notes:</dd>
 
-<dt>Martus Server</dt>
-<dd><strong>Description</strong>: platform for collecting, safeguarding, organizing and sharing info</dd>
+<dt><a id="pkg-martus-desktop"><strong>Martus Desktop</strong></a></dt>
+<dd>Description: platform for collecting, safeguarding, organizing and sharing info</dd>
 
-<dd>https://www.martus.org</dd>
+<dd>Site: <a href="https://www.martus.org/">https://www.martus.org/</a></dd>
 
-<dd>was on code.google.com, now?</dd>
+<dd>License: ???</dd>
+
+<dd>Source: <a href="https://martus.org/installers/Martus-Source-5.1.1.zip">https://martus.org/installers/Martus-Source&#8211;5.1.1.zip</a></dd>
+
+<dd>Version: 5.1.1</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -414,16 +405,16 @@
 
 <dd>notes:</dd>
 
-<dt>SecureDrop</dt>
-<dd><strong>Description</strong>: open-source whistleblower submission system</dd>
+<dt><a id="pkg-martus-server"><strong>Martus Server</strong></a></dt>
+<dd>Description: platform for collecting, safeguarding, organizing and sharing info</dd>
 
-<dd>https://securedrop.org/</dd>
+<dd>Site: <a href="https://www.martus.org/">https://www.martus.org/</a></dd>
 
-<dd>AGPL</dd>
+<dd>License: ??</dd>
 
-<dd>https://github.com/freedomofpress/securedrop/</dd>
+<dd>Source: <a href="https://code.google.com/archive/p/martus/source#hg/source/org/martus/server">https://code.google.com/archive/p/martus/source#hg/source/org/martus/server</a></dd>
 
-<dd>0.3.6</dd>
+<dd>Version: ??</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -433,18 +424,39 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: topology review is probably first step.</dd>
+<dd>notes:</dd>
 
-<dt>SparkleShare</dt>
-<dd><strong>Description</strong>: Git-based file synchronization tool</dd>
+<dt><a id="pkg-securedrop"><strong>SecureDrop</strong></a></dt>
+<dd>Description: open-source whistleblower submission system</dd>
 
-<dd>http://sparkleshare.org</dd>
+<dd>Site: <a href="https://securedrop.org">https://securedrop.org/</a></dd>
 
-<dd>GPLv3: https://github.com/hbons/SparkleShare/blob/master/legal/License_for_SparkleShare.txt</dd>
+<dd>License: <a href="https://github.com/freedomofpress/securedrop/blob/develop/LICENSE">AGPL</a></dd>
 
-<dd>https://github.com/hbons/SparkleShare</dd>
+<dd>Source: <a href="https://github.com/freedomofpress/securedrop/">https://github.com/freedomofpress/securedrop/</a></dd>
 
-<dd>1.4</dd>
+<dd>Version: 0.3.8</dd>
+
+<dd>FreeBSD: no</dd>
+
+<dd>OpenBSD: no</dd>
+
+<dd>pkgsrc: no</dd>
+
+<dd>DPorts: no</dd>
+
+<dd>notes: Topology review is probably first step. Very Debian-centric.</dd>
+
+<dt><a id="pkg-sparkleshare"><strong>SparkleShare</strong></a></dt>
+<dd>Description: Git-based file synchronization tool</dd>
+
+<dd>Site: <a href="http://sparkleshare.org">http://sparkleshare.org/</a></dd>
+
+<dd>License: <a href="https://github.com/hbons/SparkleShare/blob/master/legal/License_for_SparkleShare.txt">GPLv3</a></dd>
+
+<dd>Source: <a href="https://github.com/hbons/SparkleShare/">https://github.com/hbons/SparkleShare/</a></dd>
+
+<dd>Version: 1.5</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -456,16 +468,16 @@
 
 <dd>notes: essentially a GUI for git with server and client components</dd>
 
-<dt>Syncany</dt>
-<dd><strong>Description</strong>: open-source cloud storage and filesharing application</dd>
+<dt><a id="pkg-syncany"><strong>Syncany</strong></a></dt>
+<dd>Description: open-source cloud storage and filesharing application</dd>
 
-<dd>https://www.syncany.org</dd>
+<dd>Site: <a href="https://www.syncany.org/">https://www.syncany.org/</a></dd>
 
-<dd>GPLv3</dd>
+<dd>License: <a href="https://github.com/syncany/syncany/blob/develop/LICENSE.md">GPLv3</a></dd>
 
-<dd>https://github.com/syncany/syncany</dd>
+<dd>Source: <a href="https://github.com/syncany/syncany/">https://github.com/syncany/syncany/</a></dd>
 
-<dd>0.4.7-alpha</dd>
+<dd>Version: 0.4.7-alpha</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -477,16 +489,16 @@
 
 <dd>notes:</dd>
 
-<dt>Turtl: server, client</dt>
-<dd><strong>Description</strong>: encrypted personal database and note-taking application</dd>
+<dt><a id="pkg-turtl"><strong>Turtl</strong></a></dt>
+<dd>Description: encrypted personal database and note-taking application</dd>
 
-<dd>https://turtl.it</dd>
+<dd>Site: <a href="https://turtl.it">https://turtl.it/</a></dd>
 
-<dd>GPLv3: https://github.com/turtl/api/blob/master/LICENSE</dd>
+<dd>License: <a href="https://github.com/turtl/api/blob/master/LICENSE/">GPLv3</a></dd>
 
-<dd>https://github.com/turtl</dd>
+<dd>Source: <a href="https://github.com/turtl/">https://github.com/turtl/</a></dd>
 
-<dd>0.5.2.2</dd>
+<dd>Version: various</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -496,22 +508,22 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: various components for the platform in GitHub.</dd>
+<dd>notes: various components for the platform in GitHub, including API and desktop.</dd>
 </dl>
 
 <h3 id="aidnetneta"><a id="net">net</a></h3>
 
 <dl>
-<dt>arm/nyx</dt>
-<dd><strong>Description</strong>: terminal status monitor for Tor</dd>
+<dt><a id="pkg-arm"><strong>arm/nyx</strong></a></dt>
+<dd>Description: terminal status monitor for Tor</dd>
 
-<dd>https://www.atagar.com/arm/</dd>
+<dd>Site: <a href="https://www.atagar.com/arm/">https://www.atagar.com/arm/</a></dd>
 
-<dd>https://gitweb.torproject.org/nyx.git/tree/LICENSE</dd>
+<dd>License: <a href="https://gitweb.torproject.org/nyx.git/tree/LICENSE">GPLv3</a></dd>
 
-<dd>https://gitweb.torproject.org/nyx.git</dd>
+<dd>Source: <a href="https://gitweb.torproject.org/nyx.git">https://gitweb.torproject.org/nyx.git</a></dd>
 
-<dd>1.4.5.0</dd>
+<dd>Version: 1.4.5.0</dd>
 
 <dd>FreeBSD: yes</dd>
 
@@ -523,35 +535,16 @@
 
 <dd>notes:</dd>
 
-<dt>blockfinder</dt>
-<dd><strong>Description</strong>: tool for enumerating network information by country</dd>
+<dt><a id="pkg-blockfinder"><strong>blockfinder</strong></a></dt>
+<dd>Description: tool for enumerating network information by country</dd>
 
-<dd></dd>
+<dd>Site: n/a</dd>
 
-<dd>BSD: https://github.com/ioerror/blockfinder/blob/master/LICENSE</dd>
+<dd>License: <a href="https://github.com/ioerror/blockfinder/blob/master/LICENSE/">BSD</a></dd>
 
-<dd>https://github.com/ioerror/blockfinder/</dd>
+<dd>Source: <a href="https://github.com/ioerror/blockfinder/">https://github.com/ioerror/blockfinder/</a></dd>
 
-<dd>3.1?</dd>
-
-<dd>FreeBSD: no</dd>
-
-<dd>OpenBSD: no</dd>
-
-<dd>pkgsrc: no</dd>
-
-<dd>DPorts: no</dd>
-
-<dd>notes:</dd>
-
-<dt>OnionShare</dt>
-<dd><strong>Description</strong>: secure and anonymous file-sharing tool</dd>
-
-<dd>https://onionshare.org</dd>
-
-<dd>GPLv3: https://github.com/michahflee/onionshare/blob/master/LICENSE</dd>
-
-<dd>0.7.1</dd>
+<dd>Version: 4.0.0</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -561,81 +554,123 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes:</dd>
+<dd>Notes:</dd>
 
-<dt>ooni-probe</dt>
-<dd><strong>Description</strong>: network measurement framework for detecting network interference</dd>
+<dt><a id="pkg-onioncat"><strong>onioncat</strong></a></dt>
+<dd>Description: IP transparent Tor hidden service connector</dd>
 
-<dd>https://ooni.torproject.org</dd>
+<dd>Site: <a href="https://www.cypherpunk.at/onioncat_trac/">https://www.cypherpunk.at/onioncat_trac/</a></dd>
 
-<dd>BSD: https://gitweb.torproject.org/onionoo.git/tree/LICENSE</dd>
+<dd>License: <a href="https://www.cypherpunk.at/onioncat_trac/wiki/COPYING">GPLv3</a></dd>
 
-<dd>https://github.com/TheTorProject/ooni-probe/</dd>
+<dd>Source: <a href="https://www.cypherpunk.at/ocat/download/Source/">https://www.cypherpunk.at/ocat/download/Source/</a></dd>
 
-<dd>1.3.1</dd>
-
-<dd>FreeBSD: no</dd>
-
-<dd>OpenBSD: no</dd>
-
-<dd>pkgsrc: no</dd>
-
-<dd>DPorts: no</dd>
-
-<dd>notes:</dd>
-
-<dt>Ring client and server</dt>
-<dd><strong>Description</strong>: open source communications platform</dd>
-
-<dd>https://ring.cx</dd>
-
-<dd>git https://gerrit-ring.savoirfairelinux.com/ projects</dd>
-
-<dd>GPLv3: https://ring.cx/en/documentation/about-ring</dd>
-
-<dd>n/a</dd>
-
-<dd>FreeBSD: no</dd>
-
-<dd>OpenBSD: no</dd>
-
-<dd>pkgsrc: no</dd>
-
-<dd>DPorts: no</dd>
-
-<dd>notes: various components for the platform</dd>
-
-<dt>Syncthing</dt>
-<dd><strong>Description</strong>: open-source cloud storage and synchronization</dd>
-
-<dd>https://syncthing.net</dd>
-
-<dd>MPLv2</dd>
-
-<dd>https://github.com/syncthing/syncthing</dd>
-
-<dd>0.12.3</dd>
+<dd>Version: 0.2.2</dd>
 
 <dd>FreeBSD: yes</dd>
 
+<dd>OpenBSD: yes</dd>
+
+<dd>pkgsrc: no</dd>
+
+<dd>DPorts: yes</dd>
+
+<dd>Notes:</dd>
+
+<dt><a id="pkg-onionshare"><strong>OnionShare</strong></a></dt>
+<dd>Description: secure and anonymous file-sharing tool</dd>
+
+<dd>Site: <a href="https://onionshare.org/">https://onionshare.org/</a></dd>
+
+<dd>License: <a href="https://github.com/michahflee/onionshare/blob/master/LICENSE">GPLv3</a></dd>
+
+<dd>Source: <a href="https://github.com/micahflee/onionshare/">https://github.com/micahflee/onionshare/</a></dd>
+
+<dd>Version: 0.9</dd>
+
+<dd>FreeBSD: no</dd>
+
 <dd>OpenBSD: no</dd>
 
-<dd>pkgsrc: yes</dd>
+<dd>pkgsrc: no</dd>
 
 <dd>DPorts: no</dd>
 
-<dd>notes: in FreeBSD ports but not DragonFly BSD?</dd>
+<dd>notes:</dd>
 
-<dt>Tor</dt>
-<dd><strong>Description</strong>: stable version of the onion-routing daemon for anonymous networking</dd>
+<dt><a id="pkg-ooni-probe"><strong>ooni-probe</strong></a></dt>
+<dd>Description: network measurement framework for detecting network interference</dd>
 
-<dd>https://www.torproject.org</dd>
+<dd>Site: <a href="https://ooni.torproject.org/">https://ooni.torproject.org/</a></dd>
 
-<dd>BSD: https://gitweb.torproject.org/tor.git/tree/LICENSE</dd>
+<dd>License: <a href="https://gitweb.torproject.org/onionoo.git/tree/LICENSE">BSD</a></dd>
 
-<dd>https://gitweb.torproject.org/tor.git/</dd>
+<dd>Source: <a href="https://github.com/TheTorProject/ooni-probe/">https://github.com/TheTorProject/ooni-probe/</a></dd>
 
-<dd>0.6.10</dd>
+<dd>Version: 1.3.2</dd>
+
+<dd>FreeBSD: no</dd>
+
+<dd>OpenBSD: no</dd>
+
+<dd>pkgsrc: no</dd>
+
+<dd>DPorts: no</dd>
+
+<dd>notes:</dd>
+
+<dt><a id="pkg-ring"><strong>Ring</strong></a></dt>
+<dd>Description: open source communications platform</dd>
+
+<dd>Site: <a href="https://ring.cx/">https://ring.cx/</a></dd>
+
+<dd>License: <a href="https://ring.cx/en/documentation/about-ring/">GPLv3</a></dd>
+
+<dd>Source: <a href="https://github.com/savoirfairelinux/ring-project">https://github.com/savoirfairelinux/ring-project</a></dd>
+
+<dd>Version: various</dd>
+
+<dd>FreeBSD: no</dd>
+
+<dd>OpenBSD: no</dd>
+
+<dd>pkgsrc: no</dd>
+
+<dd>DPorts: no</dd>
+
+<dd>notes: various components for the platform, including daemon and GNOME client. ring-project initial target? no release yet. python3</dd>
+
+<dt><a id="pkg-syncthing"><strong>Syncthing</strong></a></dt>
+<dd>Description: open-source cloud storage and synchronization</dd>
+
+<dd>Site: <a href="https://syncthing.net/">https://syncthing.net/</a></dd>
+
+<dd>License: <a href="https://github.com/syncthing/syncthing/blob/master/LICENSE">MPLv2</a></dd>
+
+<dd>Source: <a href="https://github.com/syncthing/syncthing/">https://github.com/syncthing/syncthing/</a></dd>
+
+<dd>Version: 0.13-beta</dd>
+
+<dd>FreeBSD: yes</dd>
+
+<dd>OpenBSD: yes</dd>
+
+<dd>pkgsrc: yes</dd>
+
+<dd>DPorts: yes</dd>
+
+<dd>notes: GitHub builds available for OpenBSD i386 and amd64</dd>
+
+<dt><a id="pkg-tor"><strong>Tor</strong></a></dt>
+<dd>Description: stable version of the onion-routing daemon for anonymous networking</dd>
+
+<dd>Site: <a href="https://www.torproject.org/">https://www.torproject.org/</a></dd>
+
+<dd>License: <a href="https://gitweb.torproject.org/tor.git/tree/LICENSE">BSD</a></dd>
+
+<dd>Source: <a href="https://gitweb.torproject.org/tor.git/">https://gitweb.torproject.org/tor.git/</a></dd>
+
+<dd>Version: 0.2.7.6</dd>
 
 <dd>FreeBSD: yes</dd>
 
@@ -647,16 +682,16 @@
 
 <dd>notes:</dd>
 
-<dt>Tor alpha</dt>
-<dd><strong>Description</strong>: development version of the onion-routing daemon for anonymous networking</dd>
+<dt><a id="pkg-tor-alpha"><strong>Tor Alpha/Development</strong></a></dt>
+<dd>Description: development version of the onion-routing daemon for anonymous networking</dd>
 
-<dd>https://www.torproject.org</dd>
+<dd>Site: <a href="https://www.torproject.org/">https://www.torproject.org/</a></dd>
 
-<dd>BSD: https://gitweb.torproject.org/tor.git/tree/LICENSE</dd>
+<dd>License: <a href="https://gitweb.torproject.org/tor.git/tree/LICENSE/">BSD</a></dd>
 
-<dd>https://gitweb.torproject.org/tor.git/</dd>
+<dd>Source: <a href="https://gitweb.torproject.org/tor.git/">https://gitweb.torproject.org/tor.git/</a></dd>
 
-<dd>0.2.7.4rc</dd>
+<dd>Source: 0.2.8.5-alpha</dd>
 
 <dd>FreeBSD: yes</dd>
 
@@ -668,37 +703,37 @@
 
 <dd>notes: The alpha version is worth considering for production since it&#8217;s stable and often the most effective in terms of circumvention counter-measures. OpenBSD does not include alpha or development versions of software in their ports</dd>
 
-<dt>Torsocks</dt>
-<dd><strong>Description</strong>: SOCKS proxy for routing TCP applications through the Tor network</dd>
+<dt><a id="pkg-torsocks"><strong>Torsocks</strong></a></dt>
+<dd>Description: SOCKS proxy for routing TCP applications through the Tor network</dd>
 
-<dd>https://www.torproject.org</dd>
+<dd>Site: <a href="https://www.torproject.org/">https://www.torproject.org/</a></dd>
 
-<dd>GPLv2: https://gitweb.torproject.org/torsocks.git/tree/LICENSE</dd>
+<dd>License: <a href="https://gitweb.torproject.org/torsocks.git/tree/LICENSE/">GPLv2</a></dd>
 
-<dd>https://gitweb.torproject.org/torsocks.git/</dd>
+<dd>Source: <a href="https://gitweb.torproject.org/torsocks.git/">https://gitweb.torproject.org/torsocks.git/</a></dd>
 
-<dd>2.1.0</dd>
+<dd>Version: 2.1.0</dd>
 
 <dd>FreeBSD: yes</dd>
 
 <dd>OpenBSD: yes</dd>
 
-<dd>pkgsrc: yes</dd>
+<dd>pkgsrc: no</dd>
 
 <dd>DPorts: yes</dd>
 
 <dd>notes: relies on torrc SOCKS port matching torsocks configuration.</dd>
 
-<dt>Torstatus</dt>
-<dd><strong>Description</strong>: tool for aggregating and presenting public information about the Tor network</dd>
+<dt><a id="pkg-torstatus"><strong>Torstatus</strong></a></dt>
+<dd>Description: tool for aggregating and presenting public information about the Tor network</dd>
 
-<dd>n/a</dd>
+<dd>Site: n/a</dd>
 
-<dd>BSD: https://gitweb.torproject.org/torstatus.git/tree/doc/LICENSE</dd>
+<dd>License: <a href="https://gitweb.torproject.org/torstatus.git/tree/doc/LICENSE">BSD</a></dd>
 
-<dd>https://gitweb.torproject.org/torstatus.git/</dd>
+<dd>Source: <a href="https://gitweb.torproject.org/torstatus.git/">https://gitweb.torproject.org/torstatus.git/</a></dd>
 
-<dd>n/a</dd>
+<dd>Version: n/a</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -708,22 +743,22 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: outputs to www with Django for easy presentation and queries on the network.</dd>
+<dd>notes: outputs to www with Django for easy presentation and queries on the network with main site at https://torstatus.blutmagie.de/</dd>
 </dl>
 
 <h3 id="aidnet-imnet-ima"><a id="net-im">net-im</a></h3>
 
 <dl>
-<dt>Cryptocat</dt>
-<dd><strong>Description</strong>: accessible chat client</dd>
+<dt><a id="pkg-cryptocat"><strong>Cryptocat</strong></a></dt>
+<dd>Description: accessible chat client</dd>
 
-<dd>https://crypto.cat/</dd>
+<dd>Site: <a href="https://crypto.cat/">https://crypto.cat/</a></dd>
 
-<dd>GNU Affero: https://github.com/cryptocat/cryptocat/blob/master/LICENSE.txt</dd>
+<dd>License: <a href="https://github.com/cryptocat/cryptocat/blob/master/LICENSE.txt">GNU Affero</a></dd>
 
-<dd>https://github.com/cryptocat/cryptocat/</dd>
+<dd>Source: <a href="https://github.com/cryptocat/cryptocat/">https://github.com/cryptocat/cryptocat/</a></dd>
 
-<dd>2.2.2</dd>
+<dd>Version: 3.1.08</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -733,18 +768,18 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: little activity since 201412</dd>
+<dd>notes: no releases</dd>
 
-<dt>Jitsi</dt>
-<dd><strong>Description</strong>: XMPP/SIP client</dd>
+<dt><a id="pkg-jitsi"><strong>Jitsi</strong></a></dt>
+<dd>Description: XMPP/SIP client</dd>
 
-<dd>https://jitsi.org</dd>
+<dd>Site: <a href="https://jitsi.org/">https://jitsi.org/</a></dd>
 
-<dd>Apache 2.0: https://github.com/jitsi/jitsi/blob/master/LICENSE</dd>
+<dd>License: <a href="https://github.com/jitsi/jitsi/blob/master/LICENSE">Apache 2.0</a></dd>
 
-<dd>https://github.com/jitsi/jitsi</dd>
+<dd>Source: <a href="https://github.com/jitsi/jitsi/">https://github.com/jitsi/jitsi/</a></dd>
 
-<dd>2.8.5426</dd>
+<dd>Version: 5509</dd>
 
 <dd>FreeBSD: yes</dd>
 
@@ -756,77 +791,16 @@
 
 <dd>notes: Java-based</dd>
 
-<dt>Ricochet</dt>
-<dd><strong>Description</strong>: instant messaging client</dd>
+<dt><a id="pkg-ricochet"><strong>Ricochet</strong></a></dt>
+<dd>Description: instant messaging client</dd>
 
-<dd>https://ricochet.im</dd>
+<dd>Site: <a href="https://ricochet.im/">https://ricochet.im/</a></dd>
 
-<dd>BSD: https://github.com/ricochet-im/ricochet/blob/master/LICENSE</dd>
+<dd>License: <a href="https://github.com/ricochet-im/ricochet/blob/master/LICENSE">BSD</a></dd>
 
-<dd>https://github.com/ricochet-im/ricochet/</dd>
+<dd>Source: <a href="https://github.com/ricochet-im/ricochet/">https://github.com/ricochet-im/ricochet/</a></dd>
 
-<dd>1.1.1</dd>
-
-<dd>FreeBSD: yes</dd>
-
-<dd>OpenBSD: no</dd>
-
-<dd>pkgsrc: no</dd>
-
-<dd>DPorts: no</dd>
-
-<dd>notes:</dd>
-
-<dt>TorChat2</dt>
-<dd><strong>Description</strong>: peer-to-peer instant messenger running on Tor hidden services</dd>
-
-<dd>https://github.com/prof7bit/TorChat/wiki/</dd>
-
-<dd>GPLv3: https://en.wikipedia.org/wiki/TorChat</dd>
-
-<dd>https://github.com/prof7bit/TorChat/</dd>
-
-<dd>15</dd>
-
-<dd>FreeBSD: no</dd>
-
-<dd>OpenBSD: no</dd>
-
-<dd>pkgsrc: no</dd>
-
-<dd>DPorts: no</dd>
-
-<dd>notes: license file?</dd>
-
-<dt>Tor Messenger</dt>
-<dd><strong>Description</strong>: instant messenger for anonymity utilizing existing protocols</dd>
-
-<dd>n/a</dd>
-
-<dd>GPLv2: https://github.com/rovemonteux/tormessenger/blob/master/LICENSE</dd>
-
-<dd>https://gitweb.torproject.org/tor-messenger-build.git</dd>
-
-<dd>0.1.0b4</dd>
-
-<dd>FreeBSD: no</dd>
-
-<dd>OpenBSD: no</dd>
-
-<dd>pkgsrc: no</dd>
-
-<dd>DPorts: no</dd>
-
-<dd>notes: requires Docker and a bunch of Perl modules. Early stages of dev. License reference is from old GitHub account, so may be inaccurate.</dd>
-
-<dt>Tox/uTox</dt>
-<dd><strong>Description</strong>: UDP-based communications platform</dd>
-
-<dd>https://tox.chat</dd>
-
-<dd>https://github.com/irungentoo/toxcore</dd>
-
-<dd>GPLv3: https://github.com/irungentoo/toxcore/blob/master/COPYING</dd>
+<dd>Version: 1.1.2</dd>
 
 <dd>FreeBSD: yes</dd>
 
@@ -836,14 +810,79 @@
 
 <dd>DPorts: yes</dd>
 
-<dd>notes: FreeBSD builds available on www</dd>
+<dd>notes:</dd>
 
-<dt>vuvuzela</dt>
-<dd><strong>Description</strong>: private messaging system that hides metadata</dd>
+<dt><a id="pkg-torchat2"><strong>TorChat2</strong></a></dt>
+<dd>Description: peer-to-peer instant messenger running on Tor hidden services</dd>
 
-<dd>License: GPLv3 https://github.com/davidlazar/vuvuzela/blob/master/LICENSE</dd>
+<dd>Site: <a href="https://github.com/prof7bit/TorChat/wiki/">https://github.com/prof7bit/TorChat/wiki/</a></dd>
 
-<dd>https://github.com/davidlazar/vuvuzela</dd>
+<dd>License: <a href="https://en.wikipedia.org/wiki/TorChat">GPLv3</a></dd>
+
+<dd>Source: <a href="https://github.com/prof7bit/TorChat/">https://github.com/prof7bit/TorChat/</a></dd>
+
+<dd>Version: 15</dd>
+
+<dd>FreeBSD: no</dd>
+
+<dd>OpenBSD: no</dd>
+
+<dd>pkgsrc: no</dd>
+
+<dd>DPorts: no</dd>
+
+<dd>notes: license? Last activity 2014. 202 forks. jtorchat is Java-based. py_torchat is the original.</dd>
+
+<dt><a id="pkg-tor-messenger"><strong>Tor Messenger</strong></a></dt>
+<dd>Description: instant messenger for anonymity utilizing existing protocols</dd>
+
+<dd>Site: n/a</dd>
+
+<dd>License: <a href="https://github.com/rovemonteux/tormessenger/blob/master/LICENSE">GPLv2</a></dd>
+
+<dd>Source: <a href="https://gitweb.torproject.org/tor-messenger-build.git">https://gitweb.torproject.org/tor-messenger-build.git</a></dd>
+
+<dd>Version: 0.1.0b6</dd>
+
+<dd>FreeBSD: no</dd>
+
+<dd>OpenBSD: no</dd>
+
+<dd>pkgsrc: no</dd>
+
+<dd>DPorts: no</dd>
+
+<dd>notes: requires Docker as a build dependency and a bunch of Perl modules. Early stages of development. License reference is from old GitHub account, so may be inaccurate.</dd>
+
+<dt><a id="pkg-tox"><strong>Tox/uTox</strong></a></dt>
+<dd>Description: UDP-based communications platform</dd>
+
+<dd>Site: <a href="https://tox.chat/">https://tox.chat/</a></dd>
+
+<dd>License: [GPLv3])(https://github.com/irungentoo/toxcore/blob/master/COPYING)</dd>
+
+<dd>Source: <a href="https://github.com/irungentoo/toxcore/">https://github.com/irungentoo/toxcore/</a></dd>
+
+<dd>Version:</dd>
+
+<dd>FreeBSD: yes</dd>
+
+<dd>OpenBSD: no</dd>
+
+<dd>pkgsrc: no</dd>
+
+<dd>DPorts: yes</dd>
+
+<dd>notes: FreeBSD builds available on www. Sole GitHub release entitled &#8220;api_old_version.&#8221; Autconf</dd>
+
+<dt><a id="pkg-vuvuzela"><strong>vuvuzela</strong></a></dt>
+<dd>Description: private messaging system that hides metadata</dd>
+
+<dd>Site: n/a</dd>
+
+<dd>License: <a href="https://github.com/davidlazar/vuvuzela/blob/master/LICENSE">AGPLv3</a></dd>
+
+<dd>Source: <a href="https://github.com/davidlazar/vuvuzela">https://github.com/davidlazar/vuvuzela</a></dd>
 
 <dd>Version: 0.1</dd>
 
@@ -855,41 +894,43 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: in early stages of development. <a href="https://davidlazar.org/papers/vuvuzela.pdf">SOSP 2015 Paper</a> and <a href="https://davidlazar.org/slides/vuvuzela-sosp2015.pdf">SOSP 2015 Slides</a></dd>
+<dd>notes: in early stages of development and no GitHub releases. <a href="https://davidlazar.org/papers/vuvuzela.pdf">SOSP 2015 Paper</a> and <a href="https://davidlazar.org/slides/vuvuzela-sosp2015.pdf">SOSP 2015 Slides</a></dd>
 </dl>
 
 <h3 id="aidnet-p2pnet-p2pa"><a id="net-p2p">net-p2p</a></h3>
 
 <dl>
-<dt>Bitmessage</dt>
-<dd><strong>Description</strong>: https://bitmessage.org/wiki/Main_Page</dd>
+<dt><a id="pkg-bitmessage"><strong>Bitmessage</strong></a></dt>
+<dd>Description: messaging platform to Bitcoin</dd>
 
-<dd>MIT: https://github.com/Bitmessage/PyBitmessage/blob/master/LICENSE</dd>
+<dd>Site: <a href="https://bitmessage.org/wiki/Main_Page">https://bitmessage.org/wiki/Main_Page</a></dd>
 
-<dd>https://github.com/Bitmessage/PyBitMessage</dd>
+<dd>License: <a href="https://github.com/Bitmessage/PyBitmessage/blob/master/LICENSE">MIT</a></dd>
 
-<dd>Version: 0.4.4</dd>
+<dd>Source: <a href="https://github.com/Bitmessage/PyBitMessage">https://github.com/Bitmessage/PyBitMessage</a></dd>
+
+<dd>Version: 0.6.0</dd>
 
 <dd>FreeBSD: yes</dd>
 
 <dd>OpenBSD: no</dd>
 
-<dd>pkgsrc: no</dd>
+<dd>pkgsrc: yes</dd>
 
 <dd>DPorts: yes</dd>
 
-<dd>notes:</dd>
+<dd>notes: as of January 2015, call for a <a href="http://blog.anonymousbitcoinbook.com/2015/01/seeking-bitmessage-code-reviewer/">code review</a>. Requires py-elliptic.</dd>
 
-<dt>RetroShare</dt>
-<dd><strong>Description</strong>: secure, decentralized P2P platform</dd>
+<dt><a id="pkg-retroshare"><strong>RetroShare</strong></a></dt>
+<dd>Description: secure, decentralized P2P platform</dd>
 
-<dd>http://retroshare.sourceforge.net</dd>
+<dd>Site: <a href="http://retroshare.sourceforge.net">http://retroshare.sourceforge.net</a></dd>
 
-<dd>GPLv3: http://retroshare.sourceforge.net/wiki/index.php/Main_Page</dd>
+<dd>License: <a href="http://retroshare.sourceforge.net/wiki/index.php/Main_Page">GPLv3</a></dd>
 
-<dd>https://github.com/RetroShare/RetroShare</dd>
+<dd>Source: <a href="https://github.com/RetroShare/RetroShare">https://github.com/RetroShare/RetroShare</a></dd>
 
-<dd>0.6.0 RC2.8551</dd>
+<dd>Version: 0.6.0</dd>
 
 <dd>FreeBSD: yes</dd>
 
@@ -899,22 +940,22 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: why not in DPorts if it&#8217;s in FreeBSD ports?</dd>
+<dd>notes:</dd>
 </dl>
 
 <h3 id="aidsecuritysecuritya"><a id="security">security</a></h3>
 
 <dl>
-<dt>gpg4usb</dt>
-<dd><strong>Description</strong>: portable editor for encrypting and decrypting files</dd>
+<dt><a id="pkg-gpg4usb"><strong>gpg4usb</strong></a></dt>
+<dd>Description: portable editor for encrypting and decrypting files</dd>
 
-<dd>http://www.gpg4usb.org</dd>
+<dd>Site: <a href="http://www.gpg4usb.org">http://www.gpg4usb.org</a></dd>
 
-<dd>GPLv3: https://github.com/gpg4usb/gpg4usb/blob/master/COPYING</dd>
+<dd>License: <a href="https://github.com/gpg4usb/gpg4usb/blob/master/COPYING">GPLv3</a></dd>
 
-<dd>https://github.com/gpg4usb/gpg4usb</dd>
+<dd>Source: <a href="https://github.com/gpg4usb/gpg4usb">https://github.com/gpg4usb/gpg4usb</a></dd>
 
-<dd>0.3.3&#8211;1</dd>
+<dd>Version: 0.3.3&#8211;2</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -926,16 +967,16 @@
 
 <dd>notes:</dd>
 
-<dt>KeePassX</dt>
-<dd><strong>Description</strong>: password management utility</dd>
+<dt><a id="pkg-keepassx"><strong>KeePassX</strong></a></dt>
+<dd>Description: password management utility</dd>
 
-<dd>http://www.keepassx.org/</dd>
+<dd>Site: <a href="http://www.keepassx.org/">http://www.keepassx.org/</a></dd>
 
-<dd>various: https://github.com/keepassx/keepassx/</dd>
+<dd>License: <a href="https://github.com/keepassx/keepassx/">Various</a></dd>
 
-<dd>https://github.com/keepassx/keepassx/</dd>
+<dd>Source: <a href="https://github.com/keepassx/keepassx/">https://github.com/keepassx/keepassx/</a></dd>
 
-<dd>2.0 Beta 2</dd>
+<dd>Version: 2.0.2</dd>
 
 <dd>FreeBSD: yes</dd>
 
@@ -947,35 +988,58 @@
 
 <dd>notes:</dd>
 
-<dt>obfsproxy</dt>
-<dd><strong>Description</strong>: pluggable transport for Tor</dd>
+<dt><a id="pkg-obfsproxy"><strong>obfsproxy</strong></a></dt>
+<dd>Description: pluggable transport for Tor</dd>
 
-<dd>n/a</dd>
+<dd>Site: n/a</dd>
 
-<dd>BSD: https://gitweb.torproject.org/pluggable-transports/obfsproxy.git/tree/LICENSE</dd>
+<dd>License: <a href="https://gitweb.torproject.org/pluggable-transports/obfsproxy.git/tree/LICENSE">BSD</a></dd>
 
-<dd>0.2.13</dd>
+<dd>Source: <a href="https://gitweb.torproject.org/pluggable-transports/obfsproxy.git">https://gitweb.torproject.org/pluggable-transports/obfsproxy.git</a></dd>
+
+<dd>Version: 0.2.13</dd>
+
+<dd>FreeBSD: yes</dd>
+
+<dd>OpenBSD: no (as WIP)</dd>
+
+<dd>pkgsrc: no</dd>
+
+<dd>DPort: yes</dd>
+
+<dd>notes:</dd>
+
+<dt><a id="pkg-pond"><strong>Pond</strong></a></dt>
+<dd>Description: forward secure, asynchronous messaging</dd>
+
+<dd>Site: <a href="https://pond.imperialviolet.org">https://pond.imperialviolet.org</a></dd>
+
+<dd>License: <a href="https://github.com/agl/pond/blob/master/LICENSE">BSD</a></dd>
+
+<dd>Source: <a href="https://github.com/agl/pond/">https://github.com/agl/pond/</a></dd>
+
+<dd>Version: 0.1.1</dd>
 
 <dd>FreeBSD: yes</dd>
 
 <dd>OpenBSD: no</dd>
 
-<dd>pkgsrc:</dd>
+<dd>pkgsrc: no</dd>
 
-<dd>DPort:</dd>
+<dd>DPorts: no</dd>
 
 <dd>notes:</dd>
 
-<dt>Pond</dt>
-<dd><strong>Description</strong>: forward secure, asynchronous messaging</dd>
+<dt><a id="pkg-pyelliptic"><strong>py-elliptic</strong></a></dt>
+<dd>Description: Python OpenSSL wrapper</dd>
 
-<dd>https://pond.imperialviolet.org</dd>
+<dd>Site: <a href="https://pypyi.python.org/pypi/pyelliptic/">https://pypyi.python.org/pypi/pyelliptic/</a></dd>
 
-<dd>BSD: https://github.com/agl/pond/blob/master/LICENSE</dd>
+<dd>License: <a href="https://github.com/yann2192/pyelliptic/blob/master/LICENSE">BSD</a></dd>
 
-<dd>0.1.1</dd>
+<dd>Source: <a href="https://github.com/yann2192/pyelliptic/">https://github.com/yann2192/pyelliptic/</a></dd>
 
-<dd>https://github.com/agl/pond/</dd>
+<dd>Version: 1.5.7</dd>
 
 <dd>FreeBSD: yes</dd>
 
@@ -985,62 +1049,87 @@
 
 <dd>DPorts: yes</dd>
 
-<dd>notes: in DPorts yet it&#8217;s in FreeBSD ports</dd>
+<dd>notes: run dependency for Bitmessage.</dd>
 
-<dt>Scallion</dt>
-<dd><strong>Description</strong>: GPU-basd Onion hash generator</dd>
+<dt><a id="pkg-py-stem"><strong>py-stem</strong></a></dt>
+<dd>Description: Python controller library for Tor</dd>
 
-<dd>n/a</dd>
+<dd>Site: <a href="https://stem.torproject.org/">https://stem.torproject.org/</a></dd>
 
-<dd>BSD: https://github.com/lachesis/scallion/blob/gpg/LICENCE.txt</dd>
+<dd>License: <a href="https://stem.torproject.org/faq.html#what-license-is-stem-under">LGPLv3</a></dd>
 
-<dd>1.2</dd>
+<dd>Source:</dd>
 
-<dd>https://github.com/lachesis/scallion/</dd>
+<dd>Version: 1.4.1</dd>
 
-<dd>FreeBSD: no</dd>
+<dd>Python www</dd>
 
-<dd>OpenBSD: no</dd>
+<dd>FreeBSD: yes</dd>
 
-<dd>pkgsrc: no</dd>
-
-<dd>DPorts: no</dd>
-
-<dd>notes: useful for creating custom or &#8220;vanity&#8221; GPG keys or .onion addresses</dd>
-
-<dt>sslyze</dt>
-<dd><strong>Description</strong>: full-featured SSL scanner</dd>
-
-<dd>GPLv2: https://github.com/nabla-c0d3/sslyze/blob/master/LICENSE.txt</dd>
-
-<dd>https://github.com/nabla-c0d3/sslyze</dd>
-
-<dd>0.10</dd>
-
-<dd>FreeBSD: no</dd>
-
-<dd>OpenBSD: no</dd>
+<dd>OpenBSD: yes</dd>
 
 <dd>pkgsrc: no</dd>
 
-<dd>DPorts: no</dd>
+<dd>DPorts: yes</dd>
 
 <dd>notes:</dd>
+
+<dt><a id="pkg-scallion"><strong>Scallion</strong></a></dt>
+<dd>Description: GPU-based gpg and onion hash generator</dd>
+
+<dd>Site: n/a</dd>
+
+<dd>License: <a href="https://github.com/lachesis/scallion/blob/gpg/LICENCE.txt">BSD</a></dd>
+
+<dd>Source: <a href="https://github.com/lachesis/scallion/">https://github.com/lachesis/scallion/</a></dd>
+
+<dd>Version: 2.0</dd>
+
+<dd>FreeBSD: no</dd>
+
+<dd>OpenBSD: no</dd>
+
+<dd>pkgsrc: no</dd>
+
+<dd>DPorts: no</dd>
+
+<dd>notes: useful for creating custom or &#8220;vanity&#8221; GPG keys or .onion addresses. Requires shells/<a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash">bash</a> and lang/mono.</dd>
+
+<dt><a id="pkg-sslyze"><strong>sslyze</strong></a></dt>
+<dd>Description: full-featured SSL scanner</dd>
+
+<dd>Site: n/a</dd>
+
+<dd>License: <a href="https://github.com/nabla-c0d3/sslyze/blob/master/LICENSE.txt">GPLv2</a></dd>
+
+<dd>Source: <a href="https://github.com/nabla-c0d3/sslyze">https://github.com/nabla-c0d3/sslyze</a></dd>
+
+<dd>Version: 0.13.5</dd>
+
+<dd>FreeBSD: no</dd>
+
+<dd>OpenBSD: no</dd>
+
+<dd>pkgsrc: no</dd>
+
+<dd>DPorts: no</dd>
+
+<dd>notes: seems to really require https://github.com/nabla-c0d3/nassl/ which requires more work.</dd>
 </dl>
 
 <h3 id="aidsysutilssysutilsa"><a id="sysutils">sysutils</a></h3>
 
 <dl>
-<dt>tlsdate</dt>
-<dd><strong>Description</strong>: secure parasitic rdate replacement</dd>
+<dt><a id="pkg-tlsdate"><strong>tlsdate</strong></a></dt>
+<dd>Description: secure parasitic rdate replacement</dd>
 
-<dd>n/a</dd>
+<dd>Site: n/a</dd>
 
-<dd>BSD: https://github.com/ioerror/tlsdate/blob/master/LICENSE</dd>
+<dd>License: <a href="https://github.com/ioerror/tlsdate/blob/master/LICENSE">BSD</a></dd>
 
-<dd>https://github.com/ioerror/tlsdate/</dd>
+<dd>Source: <a href="https://github.com/ioerror/tlsdate/">https://github.com/ioerror/tlsdate/</a></dd>
 
-<dd>0.0.13</dd>
+<dd>Version: 0.0.13</dd>
 
 <dd>FreeBSD: yes</dd>
 
@@ -1050,14 +1139,22 @@
 
 <dd>DPorts: yes</dd>
 
-<dd>notes:</dd>
+<dd>notes: BDEP autogen</dd>
 </dl>
 
 <h3 id="aidwwwwwwa"><a id="www">www</a></h3>
 
 <dl>
-<dt>HTTPS Everywhere</dt>
-<dd><strong>Description</strong>: Firefox add-on</dd>
+<dt><a id="pkg-httpseverywhere"><strong>HTTPS Everywhere</strong></a></dt>
+<dd>Description: Firefox add-on enabling TLS/SSL when available</dd>
+
+<dd>Site: n/a</dd>
+
+<dd>License:</dd>
+
+<dd>Source:</dd>
+
+<dd>Version:</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -1067,30 +1164,39 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: /bin/<a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash">bash</a> inst
-all script, and therefore a frivilous dependency</dd>
+<dd>notes: /bin/<a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash">bash</a> install script</dd>
 
-<dt>NoScript</dt>
-<dd><strong>Description</strong>: Firefox add-on for blocking scripts</dd>
+<dt><a id="pkg-noscript"><strong>NoScript</strong></a></dt>
+<dd>Description: Firefox add-on for blocking scripts</dd>
 
-<dd>https://noscript.net/</dd>
+<dd>Site: <a href="https://noscript.net/">https://noscript.net/</a></dd>
 
-<dd>GPLv3: https://noscript.net/faq#qa1_14</dd>
+<dd>License: <a href="https://noscript.net/faq#qa1_14">GPLv3</a></dd>
 
-<dd>2.6.9.39</dd>
+<dd>Source:</dd>
+
+<dd>Version: 2.6.9.39</dd>
+
+<dd>FreeBSD: no</dd>
+
+<dd>OpenBSD: no</dd>
+
+<dd>pkgsrc: no</dd>
+
+<dd>DPorts: no</dd>
 
 <dd>notes: Mozilla add-ons as ports?</dd>
 
-<dt>sigbin</dt>
-<dd><strong>Description</strong>: web application for storing PGP-signed messages</dd>
+<dt><a id="pkg-sigbin"><strong>sigbin</strong></a></dt>
+<dd>Description: web application for storing PGP-signed messages</dd>
 
-<dd>none</dd>
+<dd>Site: n/a</dd>
 
-<dd>GPLv3: https://github.com/firstlook/sigbin/blob/master/LICENSE.md</dd>
+<dd>License: <a href="https://github.com/firstlook/sigbin/blob/master/LICENSE.md">GPLv3</a></dd>
 
-<dd>https://github.com/firstlook/sigbin/</dd>
+<dd>Source: <a href="https://github.com/firstlook/sigbin/">https://github.com/firstlook/sigbin/</a></dd>
 
-<dd>n/a</dd>
+<dd>Version:</dd>
 
 <dd>FreeBSD: no</dd>
 
@@ -1102,33 +1208,33 @@ all script, and therefore a frivilous dependency</dd>
 
 <dd>notes: very early stages of development</dd>
 
-<dt>Tor Browser</dt>
-<dd><strong>Description</strong>: Firefox-based browser for using the Tor anonymity network</dd>
+<dt><a id="pkg-torbrowser"><strong>Tor Browser</strong></a></dt>
+<dd>Description: Firefox-based browser for using the Tor anonymity network</dd>
 
-<dd>https://www.torproject.org/projects/torbrowser.html.en</dd>
+<dd>Site: <a href="https://www.torproject.org/projects/torbrowser.html.en">https://www.torproject.org/projects/torbrowser.html.en</a></dd>
 
-<dd>various: https://gitweb.torproject.org/tor-browser.git/tree/toolkit/content/license.html?h=esr24</dd>
+<dd>License: <a href="https://gitweb.torproject.org/tor-browser.git/tree/toolkit/content/license.html?h=esr24">Various</a></dd>
 
-<dd>https://gitweb.torproject.org/tor-browser.git/</dd>
+<dd>Source: <a href="https://gitweb.torproject.org/tor-browser.git/">https://gitweb.torproject.org/tor-browser.git/</a></dd>
 
-<dd>5.0.4</dd>
+<dd>Version: 5.5.4</dd>
 
 <dd>FreeBSD: no</dd>
 
 <dd>OpenBSD: no, <a href="https://github.com/torbsd/openbsd-ports">well&#8230;</a></dd>
 
-<dd>pkgsrc: no</dd>
+<dd>pkgsrc: sort of</dd>
 
 <dd>DPorts: no</dd>
 
-<dd>notes: A lot of effort is going into <strong>TDP&#8217;s</strong> Tor Browser builds for OpenBSD, and we are in conversations about porting to other BSDs.</dd>
+<dd>notes: A lot of effort is going into <strong>TDP&#8217;s</strong> Tor Browser builds for OpenBSD, and we are in conversations about porting to other BSDs. <a href="http://pkgsrc.se/security/tor-browser">pkgsrc version</a> is not a fork and takes a different route completely than <strong>TDP</strong>.</dd>
 </dl>
 
 <p><hr></p>
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Wed Jan 27 01:27:27 2016 UTC</code></p>
+<p><code>last updated: Thu Aug 18 16:32:46 2016 UTC</code></p>
 
 </body>
 </html>

@@ -28,6 +28,7 @@ PAGES=		index.html \
 		porting-pets.html \
 		projects.html \
 		testing-tb.html \
+		prospective.html \
 
 BOILERPLATE=	header.md footer.md meta.md
 
@@ -36,7 +37,11 @@ all: $(PAGES)
 .SUFFIXES: .pdf .md .tex .html
 
 .md.tex:
-	$(MMD) -t latex -o $@ $<
+	$(RM_F) $<.tmp
+	$(CP) $< $<.tmp
+	$(TSTAMP) $< >>$<.tmp
+	$(MMD) -t latex -o $@ $<.tmp
+	$(RM_F) $<.tmp
 
 .tex.pdf:
 	$(PDFLATEX) $<
@@ -67,6 +72,7 @@ support-us.html: support-us.md $(BOILERPLATE)
 porting-pets.html: porting-pets.md $(BOILERPLATE)
 projects.html: projects.md $(BOILERPLATE)
 testing-tb.html: testing-tb.md $(BOILERPLATE)
+prospective.html: prospective.md $(BOILERPLATE)
 
 # by default cleanup only pdf junk and leave html alone
 clean: clean-pdf

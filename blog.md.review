@@ -10,13 +10,8 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or a Central Location for Announces and Notes##
 
-__December 2016__
-
-[Welcome Aboard, Vinicius](#vinicius)
-
 __November 2016__
-
-[In The Tree](#inthetree)
+[TB Accepted Into OpenBSD Ports](#accepted)
 
 __October 2016__
 
@@ -61,33 +56,29 @@ __October 2015__
 
 [From the Attic](#attic)
 
-###20161217###
-
-<a id="vinicius">__Welcome Aboard, Vinicius__</a> by gman999
-
-Two of us launched __TDP__ in March 2015. The accomplishments are substantial, and the impact is significant. __TDP__ did more than raise the PETs flag in BSD land, it sparked a number of related projects and efforts.
-
-One important player in the broad effort has been Vincius Zavam, a young BSD hacker in Brazil. Introduced to PETs and Tor in particular as he was an organizer of BSDCon Brasil in 2015, Vincius wasted no time engaging on multiple levels.
-
-He not only started running a number of Tor relays on several BSDs, he also assisted others in Brazil. Without any external assistance, he began porting Tor Browser to FreeBSD, an enormously important endeavor. And most recently, he did a presentation on Tor with a focus on the BSDs.
-
-He is not just full of energy and ingenuity, he is also a pleasure to work with.  His locale of Brazil is another advantage which he has utilized to the fullest. He has provided patches to the FreeBSD security/tor port several times and is active on the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd).
-
-Like the other __TDP__ members, he might favor one BSD over another for different tasks, but "BSD agnosticism" is his ideology. Although this [tweet](https://twitter.com/HenningBrauer/status/741485723778453504) might belay his deepest allegiance.
-
-Welcome aboard, Vinicius. Our efforts are ongoing without monetary compensation. There is no pot of gold awaiting us, but if we can continue to enhance Tor and the PETs scene in general, the satisfaction is priceless.
-
 ###20161113###
 
-<a id="inthetree">__In The Tree__</a> by attila
+<a id="accepted">__TB Accepted into OpenBSD Ports__</a> by gman999
 
-It was a long haul but the Tor Browser ports were finally [accepted into the OpenBSD ports tree today](https://marc.info/?l=openbsd-ports-cvs&m=147907177720815&w=2%29).
+When we started porting Tor Browser in March 2015, we knew the amount of time and effort would be extraordinary. Third-party ports don't just have to work in order to get into the OpenBSD ports tree, they have to be done correctly. Mozilla ports like Firefox and Thunderbird are heavy. Porting something based on Firefox, significantly customized in the interest of users' privacy and anonymity, is not a simple endeavor.
 
-A huge thanks to `landry@`, `semarie@`, `danj@`, `mmcc@` and all the
-other `ports@` people who made this possible with their critiques,
-observations, pointers, suggestions and just plain work.
+Understanding that context makes receiving [this email from OpenBSD developer landry@](https://marc.info/?l=openbsd-ports&m=147907238921020&w=2) even more thrilling. TB is finally included in the OpenBSD ports tree.
 
-Now we've got to get cracking on [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en).  We won't stop not stopping.
+Ultimately, what does Tor Browser entering the OpenBSD ports tree mean?
+
+* the availability of the most effective privacy and anonymity web browsing tool on what is a security-obsessed open source operating system
+
+* a critical element in extending the Tor's network's operating system diversity, both by providing another operating system platform and also by engaging an important open source community
+
+* a highly portable code base of Tor Browser which allows an easier porting of TB to other POSIX-defined operating systems, such as FreeBSD
+
+There are other reasons. A critical reason why most users choose a preferred operating system is the choice of available applications. Security-conscious users often consider OpenBSD for its impressive track record. A TB port was a likely deal-breaker to a layer of that group. TB running on a BSD-licensed operating system removes the restrictions of the GPL licensing for those looking to build products with TB on OpenBSD.
+
+Clearly, the book isn't closed with the acceptance of Tor Browser into OpenBSD ports. TB 6.0.6 is coming soon, and we have to begin work on that. We need to automate regular builds on the most recent OpenBSD snapshots. There remains one critical missing component in our TB: that of pluggable transports. PTs are an important tool for those facing adversaries employing deep packet inspection, among other measures.
+
+And while TB is in the -current ports tree, we'll have to deal with patching the -stable version once it hits that branch.
+
+Those are exciting problems to confront for us, and we have already put attention into resolving those issues. This time, when we say "stay tuned", we mean it.
 
 ###20161025###
 

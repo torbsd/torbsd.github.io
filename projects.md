@@ -16,7 +16,7 @@ Some projects are simple efforts which don't require much attention, while other
 
 ###Tor Browser Porting to OpenBSD###
 
-Porting [Tor Browser (TB) to OpenBSD](https://github.com/torbsd/openbsd-ports) is our flagship project and demands the most attention. Porting TB requires tracking the upstream Tor Browser, in addition to working the port into a strict OpenBSD ecosystem. The list of dependencies is long plus Firefox add-ons such as TorButton and HTTPS-everywhere. There have been nine releases so far. We are in some initial discussions to get TB ported to other BSDs.
+Porting [Tor Browser (TB) to OpenBSD](https://github.com/torbsd/openbsd-ports/) is our flagship project and demands the most attention. Porting TB requires tracking the upstream Tor Browser, in addition to working the port into a strict OpenBSD ecosystem. The list of dependencies is long plus Firefox add-ons such as TorButton and HTTPS-everywhere. There have been nine releases so far. We are in some initial discussions to get TB ported to other BSDs.
 
 ###[BSD Tor Relay Guides](relay-guides.html)###
 
@@ -32,7 +32,7 @@ Some of the past events include:
 
 * June 2015: [BSDCan 2015 Birds-of-a-Feather session](http://www.bsdcan.org/2015/schedule/track/BOF/624.en.html)
 
-* February 2014: [NYCBSDCon "Exposes" session](http://www.nycbsdcon.org) on "The BSDs and the LibTech Scene"
+* February 2014: [NYCBSDCon "Exposes" session](http://www.nycbsdcon.org/) on "The BSDs and the LibTech Scene"
 
 Possible upcoming events for __TDP__ in 2016 include:
 
@@ -52,7 +52,7 @@ Over the past several years, a proliferation of open source applications seek to
 
 ###[Quick-and-Dirty Static Reports](dirty-stats.html)###
 
-__TDP's__ focus is Tor diversity, and this project provides the evidence for our case. These statistics, generated from simple shell scripts, illustrate an array of monocultures: in operating systems and the geographical placement of relays and bandwidth. Generated statically from [https://torstatus.blutmagie.de](https://torstatus.blutmagie.de), the reports give a revealing snapshot of weaknesses in the public Tor network.
+__TDP's__ focus is Tor diversity, and this project provides the evidence for our case. These statistics, generated from simple shell scripts, illustrate an array of monocultures: in operating systems and the geographical placement of relays and bandwidth. Generated statically from [https://torstatus.blutmagie.de/](https://torstatus.blutmagie.de/), the reports give a revealing snapshot of weaknesses in the public Tor network.
 
 
 {{footer.md}}

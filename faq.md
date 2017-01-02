@@ -20,7 +20,7 @@ categorized for clarity.
 To answer this question, we have to start with your particular skills.
 
 __General__
-:    Review our web site and documentation, and let us know if something is unclear or unstated. If you attend any BSD or open source events, print out some copies of the __TDP__ informational flier. Join the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd).
+:    Review our web site and documentation, and let us know if something is unclear or unstated. If you attend any BSD or open source events, print out some copies of the __TDP__ informational flier. Join the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd/).
 
 __Users__
 :    As a BSD Tor Browser (TB) is available, start using and testing it on OpenBSD. Submit comments and questions.
@@ -29,7 +29,10 @@ __Developers__
 :    Clone our repositories, build and break the software, submit tickets and patches.
 
 __Tor BSD Relay Operators/Admins__
-:    Run a BSD relay, use and review the relay guides, contribute input. Enlist your relay(s) the (unofficial) [BSD Buildbot](http://buildbot.pixelminers.net).
+:    Run a BSD relay, use and review the relay guides, contribute input. Enlist your relay(s) the (unofficial) [BSD Buildbot](http://buildbot.pixelminers.net/).
+
+__Potential Funders__
+:    __TDP__ needs funding. Please contact __TDP__ if interested in assisting us with funding, hardware donations, etc.
 
 ## "If __TDP__ is concerned about operating system diversity, why does it just focus on BSD Systems, and not other operating systems such as Illuminos?" ##
 
@@ -48,9 +51,9 @@ work to other BSDs under cover of our GitHub account if e.g.,
 some enterprising FreeBSD ports person wanted to work on it.
 
 It is important to note that unlike the GNU/Linux distributions, the
-BSD projects, [FreeBSD](http://www.freebsd.org),
-[NetBSD](http://www.netbsd.org), [OpenBSD](http://www.openbsd.org) and
-[DragonFly BSD](http://www.dragonflybsd.org), are distinct operating
+BSD projects, [FreeBSD](http://www.freebsd.org/),
+[NetBSD](http://www.netbsd.org/), [OpenBSD](http://www.openbsd.org/) and
+[DragonFly BSD](http://www.dragonflybsd.org/), are distinct operating
 systems. While the Linux distributions share a reasonably common
 kernel, each BSD project maintains its own kernel and userland, and
 determines the third-party applications available. Each BSD project
@@ -73,7 +76,7 @@ interoperability.
 
 Ultimately diversity *does* mean asking much broader questions. More
 diversity in operating systems, hardware, SSL versions, geographical
-locations, the list could continue endlessly. It's the right question
+locations, etc., the list could continue endlessly. It's the right question
 to ask, but __TDP__ is only beginning to provide a small piece of a
 response.
 
@@ -84,8 +87,8 @@ response.
 ## "How many Tor relays are running a BSD?" ##
 
 The number and percentage of public Tor relays fluctuates, and this
-applies to BSD relays as well. As of October 2015, the percentage is
-just under 4.5%. Web sites such as [BlutMagie](http://torstatus.blutmagie.de)
+applies to BSD relays as well. As of September 2016, the percentage is
+just under 5%. Web sites such as [BlutMagie](http://torstatus.blutmagie.de/)
 provide a full list of public relays with a query function to determine
 the exact current number among other data.
 
@@ -93,16 +96,11 @@ the exact current number among other data.
 a clear graph that strikingly, and disturbingly in our opinions,
 illustrates the monoculture in relay platforms.
 
-## "Doesn't the [Tor web site download page](https://www.torproject.org/download/download-easy.html.en) list a Tor Browser Bundle for GNU/Linux, that also supports 'Unix, BSD'?" ##
-
-That is true, but unfortunately inaccurate. The current Tor download
-does not work on any of the BSDs for a variety of reasons.
-
 ## "I run a Tor relay on such and such Linux distribution. How hard would it be to run a BSD relay for me?" ##
 
 In reference to [this Reddit thread](https://www.reddit.com/r/linux/comments/356iyy/torbsd_diversity_project_help_move_tor_nodes_from/), anyone technical enough to run a robust and secure Tor relay should stick with the operating system they are most comfortable with. Nothing is more dangerous than someone running a public anonymity server on an unfamiliar operating system. __We are not interested in "moving Tor nodes from Linux to BSD."__ We want *more* nodes, preferably by increasing the number of BSD nodes faster, not by converting anyone to anything.
 
-The best recent example of what TDP achieved is in Brazil. Before [BSDCon Brasil] (http://2015.bsdcon.com.br), there were 20 or so Tor relays, all Linux except for two Windows relays. After our presentation and discussions, there are around 5-9 operational relays, accounting for up to a third of observed bandwidth provided on the Tor network. The new relay administrators were BSD users with access to the necessary infrastructure, and their relays enhanced the Tor network.
+The best recent example of what TDP achieved is in Brazil. Before [BSDCon Brasil] (http://2015.bsdcon.com.br/), there were 20 or so Tor relays, all Linux except for two Windows relays. After our presentation and discussions, there are around 5-9 operational relays, accounting for up to a third of observed bandwidth provided on the Tor network. The new relay administrators were BSD users with access to the necessary infrastructure, and their relays enhanced the Tor network.
 
 To a large extent, __TDP's__ target audience is those already familiar
 with the BSDs. Significant numbers in the BSD community have access to
@@ -112,7 +110,7 @@ not so much vice-versa.
 
 For those interested in running a BSD relay, command-line interactions
 are similar enough to the Linux distros. While not the default shell
-on any BSD, [bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves. As a matter of fact, migrating from bash might [decrease security patching time](https://web.nvd.nist.gov/view/vuln/search-results?query=bash&search_type=all&cves=on) compared to [tcsh](https://web.nvd.nist.gov/view/vuln/search-results?query=tcsh&search_type=all&cves=on) or even
+on any BSD, [bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) is available as a port and package on all of them, although shells such as tcsh and ksh are more than capable in themselves. As a matter of fact, migrating from [bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) might [decrease security patching time](https://web.nvd.nist.gov/view/vuln/search-results?query=bash&search_type=all&cves=on) compared to [tcsh](https://web.nvd.nist.gov/view/vuln/search-results?query=tcsh&search_type=all&cves=on) or even
 [ancient, pre-OpenBSD versions of ksh](https://web.nvd.nist.gov/view/vuln/search-results?query=ksh&search_type=all&cves=on).
 
 The BSD install processes vary, but after a few tries, it's hardly a
@@ -123,7 +121,7 @@ Installing a package isn't difficult either. To install the rsync
 package on FreeBSD, for instance, the user just has to type "pkg
 install rsync."  For OpenBSD, it's just "pkg_add rsync." NetBSD's
 [pkgsrc](http://www.netbsd.org/docs/pkgsrc/) also maintains simple
-syntax, and happens to to be portable to a variety of other operating systems.
+syntax and is portable to a variety of other operating systems.
 
 The important principle is to minimize the operating system footprint,
 including daemons listening, applications installed, etc. If it's a
@@ -222,7 +220,7 @@ external components that make up Pluggable Transports.
 
 ## "What are the hurdles to porting the Tor Browser Bundle to OpenBSD?" ##
 
-[This blog post](http://trac.haqistan.net/blog/adventures-ports-tor-browser)
+[This blog post](http://trac.haqistan.net/blog/adventures-ports-tor-browser/)
 by one of the TDP project members summarized many of the issues
 and problems presented by the TBB in the context of OpenBSD, but
 for the sake of completeness we will summarize here.
@@ -272,7 +270,7 @@ is [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.h
 packaging challenges.
 
 As for the rest our status is more or less still as described
-[in this blog post](https://trac.haqistan.net/blog/tor-browser-ports-progress):
+[in this blog post](https://trac.haqistan.net/blog/tor-browser-ports-progress/):
 the OpenBSD ports are for version 4.0.8 of the TBB and include the Tor
 Browser itself, the torbutton and tor-launcher add-ons that are
 required for proper functioning of Tor Browser and the NoScript and
@@ -290,7 +288,7 @@ the hard work for everything but PT has already been done.
 
 We have a long list of potential projects, some of which commenced years ago. This is a list in flux, and we only consider it a loose guide.
 
-__A Presence at BSD Events__ There are a number of BSD conferences that take place around the globe, such as [BSDCan in Ottawa, Canada](http://www.bsdcan.org), [AsiaBSDCon in Tokyo, Japan](http://www.asiabsdcon.org), [EuroBSDCon](http://www.eurobsdcon.org), [MeetBSD in California](http://www.meetbsd.com) and which alternates with [MeetBSD in Polska](http://www.meetbsd.org) and finally [NYCBSDCon in New York City](http://www.nycbsdcon.org). These are opportune places to interact face-to-face with the broader BSD community with presentations and birds-of-a-feather sessions (BoFs). To date, BoFs has been conducted at vBSDCon in the fall of 2013 and NYCBSDCon in February 2014. A very successful [BoF was conducted at](https://www.bsdcan.org/2015/schedule/track/BOF/624.en.html) BSDCan in June 2014. There were around 50 people in the room during this lunchtime session, and many were running Tor relays. Considering just under 300 people registered for BSDCan, this was a huge accomplishment.
+__A Presence at BSD Events__ There are a number of BSD conferences that take place around the globe, such as [BSDCan in Ottawa, Canada](http://www.bsdcan.org/), [AsiaBSDCon in Tokyo, Japan](http://www.asiabsdcon.org/), [EuroBSDCon](http://www.eurobsdcon.org/), [MeetBSD in California](http://www.meetbsd.com/) and which alternates with [MeetBSD in Polska](http://www.meetbsd.org/) and finally [NYCBSDCon in New York City](http://www.nycbsdcon.org/). These are opportune places to interact face-to-face with the broader BSD community with presentations and birds-of-a-feather sessions (BoFs). To date, BoFs has been conducted at vBSDCon in the fall of 2013 and NYCBSDCon in February 2014. A very successful [BoF was conducted at](https://www.bsdcan.org/2015/schedule/track/BOF/624.en.html) BSDCan in June 2014. There were around 50 people in the room during this lunchtime session, and many were running Tor relays. Considering just under 300 people registered for BSDCan, this was a huge accomplishment.
 
 __BSD Relay Configuration Video Tutorials__ Written tutorials are a useful medium for assistance in configuring BSD relays. For some, especially groups of people, professionally produced video tutorials are more appropriate.
 

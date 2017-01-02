@@ -1,0 +1,43 @@
+
++-------------------------------------------------------
+| Running Tor Brower 5.5 on OpenBSD
++-------------------------------------------------------
+
+Tor Brower 5.5 for OpenBSD (TB) is a port of the Tor Project's
+TB.
+
+There are a number of significant differences with the standard TB
+port.
+
+Most importantly, TB's torrc file is located in ~/.tor-browser, as opposed
+to /etc/tor/torrc for the default net/tor package. All changes
+in the Tor Network Settings menu item will appear in that location.
+
+The default torrc file only contains the following settings:
+
+    DataDirectory /home/$user/.tor-browser/tor_data
+    HiddenServiceStatistics 0
+
+The ~/.tor-browser/torrc file can also be used to make other standard
+Tor configuration changes. For instance, to avoid using a particular
+country's exit nodes for the TB's Tor circuits, add the following line to
+~/tor-browser/torrc:
+
+    ExcludeExitNodes $two-digit-country-code
+
+Or to limit the number of writes to disk by TB:
+
+    AvoidDiskWrites 1
+
+Debugging
+=========
+If you encounter any problems with TB, the current version has
+verbose debugging enabled by default to assist diagnosing problems.
+
+If you encounter an issue please save the spew to a file and send
+it to us, e.g.:
+
+    $ /usr/local/bin/tor-browser >~/spew-file 2>&1
+
+Will write all of the messages that come out of tor-browser to `spew-file`
+in your home directory.
