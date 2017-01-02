@@ -14,6 +14,10 @@ __December 2016__
 
 [Welcome Aboard, Vinicius](#vinicius)
 
+__November 2016__
+
+[In The Tree](#inthetree)
+
 __October 2016__
 
 [More Bananas](#morebananas) [%sep] [signify(1) Sanity](#signifysanity) [%sep] [Test Tor Browser 6.0.5 for OpenBSD](#test605)  [%sep]  [Replying to Tor Blog Comments](#torblog0)
@@ -67,11 +71,23 @@ One important player in the broad effort has been Vincius Zavam, a young BSD hac
 
 He not only started running a number of Tor relays on several BSDs, he also assisted others in Brazil. Without any external assistance, he began porting Tor Browser to FreeBSD, an enormously important endeavor. And most recently, he did a presentation on Tor with a focus on the BSDs.
 
-He is not just full of energy and ingenuity, he is also a pleasure to work with. His locale of Brazil is another massive advantage, which he has utilized to the maximum degree. He has provided patches to the FreeBSD security/tor port several times and is active on the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd).
+He is not just full of energy and ingenuity, he is also a pleasure to work with.  His locale of Brazil is another advantage which he has utilized to the fullest. He has provided patches to the FreeBSD security/tor port several times and is active on the [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd).
 
 Like the other __TDP__ members, he might favor one BSD over another for different tasks, but "BSD agnosticism" is his ideology. Although this [tweet](https://twitter.com/HenningBrauer/status/741485723778453504) might belay his deepest allegiance.
 
 Welcome aboard, Vinicius. Our efforts are ongoing without monetary compensation. There is no pot of gold awaiting us, but if we can continue to enhance Tor and the PETs scene in general, the satisfaction is priceless.
+
+###20161113###
+
+<a id="inthetree">__In The Tree__</a> by attila
+
+It was a long haul but the Tor Browser ports were finally [accepted into the OpenBSD ports tree today](https://marc.info/?l=openbsd-ports-cvs&m=147907177720815&w=2%29).
+
+A huge thanks to `landry@`, `semarie@`, `danj@`, `mmcc@` and all the
+other `ports@` people who made this possible with their critiques,
+observations, pointers, suggestions and just plain work.
+
+Now we've got to get cracking on [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en).  We won't stop not stopping.
 
 ###20161025###
 
