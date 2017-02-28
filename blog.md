@@ -10,6 +10,10 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or a Central Location for Announces and Notes##
 
+__February 2017__
+
+[Running OpenBSD -current for Tor Relays?](current-relays)
+
 __December 2016__
 
 [Welcome Aboard, Vinicius](#vinicius)
@@ -60,6 +64,36 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20170227###
+
+<a id="current-relays">__Running OpenBSD -current for Tor Relays?__</a> by gman999
+
+The question of which branch or flavor of OpenBSD to use for a Tor relay is a frequent point of mention.
+
+OpenBSD maintains three [flavors](https://www.openbsd.org/faq/faq5.html#Flavors):
+
+* -release which comes out every six months as sure as the sun rises, if not earlier on occasion
+
+* -stable which includes the addition of necessary patches
+
+* and finally, -current, the bleeding edge of OpenBSD development, which updates regularly and sometimes _very_ frequently
+
+The logical notion is that -stable or even -release should be the Tor relay platorm choice. It does seem to be the most common recommendation.
+
+Yet there are a number of things to consider, and we tend to favor -current as the best option in most use-cases for any OpenBSD box.
+
+First, what is -current in OpenBSD is not some wildly unusable system. -current is the platform for OpenBSD development, in that it is the flavor on which OpenBSD developers actually work. Not a few production servers run on -current, and most significant problems are quickly resolved.
+
+The other issue to consider is that OpenBSD's ports development takes place on -current. Therefore the most current OpenBSD ports are found in -current. net/tor is at version 0.2.9.9 with a single revision, while -stable is still at Tor 0.2.7.6 with three revisions.
+
+And no, for the inquisitive, OpenBSD does not support alpha or beta software in its ports tree, which excludes the Tor development branch.
+
+Updating -stable isn't difficult, which ever [updating routes](https://www.openbsd.org/faq/faq10.html#Patches) chosen. But following -current with the regular snapshots is equally simple. [This guide from Peter Hansteen](https://bsdly.blogspot.com/2012/07/keeping-your-openbsd-system-in-trim.html) is dated, but gives the gist of the procedure.
+
+Just because -current can update as frequently as a few times a day at times, doesn't mean the Tor relay operator has to update the system each time. If one can keep a -current relay updated weekly, it should be fine.
+
+The one other thing to note is that physical or serial console (or similar) access is also necessary for updating -current, as one has to boot off the bsd.rd kernel.
 
 ###20161217###
 
