@@ -21,6 +21,10 @@
 
 <h2 id="ablogoracentrallocationforannouncesandnotes">A Blog, or a Central Location for Announces and Notes</h2>
 
+<p><strong>February 2017</strong></p>
+
+<p><a href="current-relays">Running OpenBSD -current for Tor Relays?</a></p>
+
 <p><strong>December 2016</strong></p>
 
 <p><a href="#vinicius">Welcome Aboard, Vinicius</a></p>
@@ -70,6 +74,36 @@
 <p><a href="#tb-update">Updated Tor Browser Packages</a> &#8916; <a href="#relay-guides">The BSD Relay Guides</a> &#8916; <a href="#first-bells">Our First Bells</a> &#8916; <a href="#beyond-os">Beyond OS Diversity</a> &#8916; <a href="#tb-5.0.3">Tor Browser version 5.0.3 for OpenBSD</a></p>
 
 <p><a href="#attic">From the Attic</a></p>
+
+<h3 id="20170227">20170227</h3>
+
+<p><a id="current-relays"><strong>Running OpenBSD -current for Tor Relays?</strong></a> by gman999</p>
+
+<p>The question of which branch or flavor of OpenBSD to use for a Tor relay is a frequent point of mention.</p>
+
+<p>OpenBSD maintains three <a href="https://www.openbsd.org/faq/faq5.html#Flavors">flavors</a>:</p>
+
+<ul>
+<li><p>-release which comes out every six months as sure as the sun rises, if not earlier on occasion</p></li>
+<li><p>-stable which includes the addition of necessary patches</p></li>
+<li><p>and finally, -current, the bleeding edge of OpenBSD development, which updates regularly and sometimes <em>very</em> frequently</p></li>
+</ul>
+
+<p>The logical notion is that -stable or even -release should be the Tor relay platorm choice. It does seem to be the most common recommendation.</p>
+
+<p>Yet there are a number of things to consider, and we tend to favor -current as the best option in most use-cases for any OpenBSD box.</p>
+
+<p>First, what is -current in OpenBSD is not some wildly unusable system. -current is the platform for OpenBSD development, in that it is the flavor on which OpenBSD developers actually work. Not a few production servers run on -current, and most significant problems are quickly resolved.</p>
+
+<p>The other issue to consider is that OpenBSD&#8217;s ports development takes place on -current. Therefore the most current OpenBSD ports are found in -current. net/tor is at version 0.2.9.9 with a single revision, while -stable is still at Tor 0.2.7.6 with three revisions.</p>
+
+<p>And no, for the inquisitive, OpenBSD does not support alpha or beta software in its ports tree, which excludes the Tor development branch.</p>
+
+<p>Updating -stable isn&#8217;t difficult, which ever <a href="https://www.openbsd.org/faq/faq10.html#Patches">updating routes</a> chosen. But following -current with the regular snapshots is equally simple. <a href="https://bsdly.blogspot.com/2012/07/keeping-your-openbsd-system-in-trim.html">This guide from Peter Hansteen</a> is dated, but gives the gist of the procedure.</p>
+
+<p>Just because -current can update as frequently as a few times a day at times, doesn&#8217;t mean the Tor relay operator has to update the system each time. If one can keep a -current relay updated weekly, it should be fine.</p>
+
+<p>The one other thing to note is that physical or serial console (or similar) access is also necessary for updating -current, as one has to boot off the bsd.rd kernel.</p>
 
 <h3 id="20161217">20161217</h3>
 
@@ -665,7 +699,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Mon Jan  2 22:59:33 2017 UTC</code></p>
+<p><code>last updated: Tue Feb 28 02:19:31 2017 UTC</code></p>
 
 </body>
 </html>

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Mon Feb 20 18:57:15 UTC 2017
+=======
+Tue Feb 28 02:20:26 UTC 2017
+>>>>>>> 6742ba2e0949a5efdb997c9982f3a6905564cce8
 Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
@@ -8,6 +12,7 @@ Quick-and-Dirty Static Reports
 'Exit Relays by Country Code'
 
 Total Number of Tor Exit Relays:
+<<<<<<< HEAD
 854
 ----------
 -num-   -country-  -percent_of_exits-
@@ -70,3 +75,65 @@ Total Number of Tor Exit Relays:
 1          DO         0.114155% 
 1          CR         0.114155% 
 1          CL         0.114155% 
+=======
+870
+----------
+-num-   -country-  -percent_of_exits-
+156        US         17.9104%  
+107        FR         12.2847%  
+80         NL         9.18485%  
+76         DE         8.7256%   
+58         CA         6.65901%  
+50         RO         5.74053%  
+37         SE         4.24799%  
+36         RU         4.13318%  
+28         CH         3.2147%   
+24         GB         2.75545%  
+16         CZ         1.83697%  
+14         MD         1.60735%  
+13         UA         1.49254%  
+13         HU         1.49254%  
+12         NO         1.37773%  
+11         IT         1.26292%  
+9          FI         1.0333%   
+8          ZA         0.918485% 
+8          SC         0.918485% 
+8          LV         0.918485% 
+8          BG         0.918485% 
+7          IS         0.803674% 
+7          BR         0.803674% 
+6          SG         0.688863% 
+6          HK         0.688863% 
+5          TW         0.574053% 
+5          SK         0.574053% 
+5          JP         0.574053% 
+5          ID         0.574053% 
+4          PL         0.459242% 
+4          IN         0.459242% 
+4          ES         0.459242% 
+4          DK         0.459242% 
+3          PA         0.344432% 
+3          LU         0.344432% 
+3          LT         0.344432% 
+3          AU         0.344432% 
+3          AR         0.344432% 
+2          VN         0.229621% 
+2          IE         0.229621% 
+2          AT         0.229621% 
+1          VE         0.114811% 
+1          TR         0.114811% 
+1          TN         0.114811% 
+1          TH         0.114811% 
+1          SI         0.114811% 
+1          PT         0.114811% 
+1          NZ         0.114811% 
+1          LR         0.114811% 
+1          KN         0.114811% 
+1          HR         0.114811% 
+1          GT         0.114811% 
+1          EG         0.114811% 
+1          DO         0.114811% 
+1          CR         0.114811% 
+1          CL         0.114811% 
+1          BE         0.114811% 
+>>>>>>> 6742ba2e0949a5efdb997c9982f3a6905564cce8

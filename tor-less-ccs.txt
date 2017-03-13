@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Mon Feb 20 18:57:58 UTC 2017
+=======
+Tue Feb 28 02:21:11 UTC 2017
+>>>>>>> 6742ba2e0949a5efdb997c9982f3a6905564cce8
 Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
@@ -8,7 +12,11 @@ Quick-and-Dirty Static Reports
 'Countries without Public Tor Relays'
 
 Number of Country Codes without Public Tor Relays:
+<<<<<<< HEAD
 79
+=======
+75
+>>>>>>> 6742ba2e0949a5efdb997c9982f3a6905564cce8
 -------
 -country-
 AFGHANISTAN

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Mon Feb 20 18:57:45 UTC 2017
+=======
+Tue Feb 28 02:20:53 UTC 2017
+>>>>>>> 6742ba2e0949a5efdb997c9982f3a6905564cce8
 Data Source: torstatus.blutmagie.de
 
 The Tor BSD Diversity Project
