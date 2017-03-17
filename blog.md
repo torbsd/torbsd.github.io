@@ -10,6 +10,10 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or a Central Location for Announces and Notes##
 
+__March 2017__
+
+[Amsterdam in March](tsummit-amsterdam)
+
 __February 2017__
 
 [Running OpenBSD -current for Tor Relays?](current-relays)
@@ -64,6 +68,14 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20170317###
+
+<a id="tsummit-amsterdam">__March in Amsterdam__</a> by gman999
+
+For a variety of reasons, only one of us will be attending the upcoming <a href="https://trac.torproject.org/projects/tor/wiki/org/meetings/2017Amsterdam">Tor Summit in Amsterdam</a>. If you are attending, please make sure you speak to Vinicius.
+
+Huge thanks to <a href="https://www.torservers.net/">torservers.net</a> for the last minute support for him. Enormously appreciated.
 
 ###20170227###
 
