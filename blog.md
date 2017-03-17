@@ -12,11 +12,11 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __March 2017__
 
-[Amsterdam in March](tsummit-amsterdam)
+[Amsterdam in March](#tsummit-amsterdam)
 
 __February 2017__
 
-[Running OpenBSD -current for Tor Relays?](current-relays)
+[Running OpenBSD -current for Tor Relays?](#current-relays)
 
 __December 2016__
 
