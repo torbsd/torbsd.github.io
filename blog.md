@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __March 2017__
 
-[Amsterdam in March](#tsummit-amsterdam)
+[Calling All BSD Firms](#calling-bsd) [&sep] [Amsterdam in March](#tsummit-amsterdam)
 
 __February 2017__
 
@@ -68,6 +68,28 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20170324###
+
+<a id="calling-bsd">__Calling All BSD Firms__</a> by gman999
+
+A lot of major firms use BSDs. You just aren't probably aware of them.
+
+From WhatsApp to Juniper and Netflix, and blue-chip storage vendors like NetApp and Isilon, the BSDs are quietly omnipresent.
+
+Some use the BSDs in their infrastructure, others use BSD code in their products. The liberal BSD license places negligible restrictions on the code usage, but doesn't compel firms to publicize it.
+
+The BSD license, whether the two- or three-clause versions, are catered for developers to share code, in that they are clear and succinct, and don't require a lawyer to interpret them. Of course if you ask a lawyer, they will try to convince you legal counsel is necessary for reading a menu at a restaurant.
+
+Many of the firms contribute code back into the BSD projects, a number also provide infrastructure, while others donate to projects such as <a href="http://www.openbsdfoundation.org/contributors.html">OpenBSD</a> and <a href="https://www.freebsdfoundation.org/donors/">FreeBSD</a>.
+
+There's always room for a little more.
+
+__TDP__ is going to be putting out a public call in the near future, asking BSD-employing firms to run a Tor relay on their preferred BSD. These entities already maintains the infrastructure, staff and know-how and can easily work in another bare-metal server into their operation. 
+
+In December 2014, the Mozilla Foundation began <a href="http://www.pcworld.com/article/2877592/mozilla-puts-old-hardware-to-new-use-runs-tor-relays.html">running 12 Tor relays</a>. __TDP__ believes this is an effort that needs to be replicated by BSD-using firms and entities. Hosting relays as corporate infrastructure provides legitimacy to online free speech.
+
+BSD firms running Tor relays benefits the BSDs, the privacy enhancing community and the firms themselves, and our open letter should clearly make that case.
 
 ###20170317###
 
