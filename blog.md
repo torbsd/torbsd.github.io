@@ -99,7 +99,7 @@ The ports tree is mounted on a 16G microSD card. It will enable us to build and 
 
 Running on -current might seem counter-intuitive, as it is the OpenBSD development branch, and may contain bugs and breaks. But like the tor-alpha branch, OpenBSD's -current gets a lot of attention, and also includes the latest stable Tor port which is tor-0.2.9.9p0. While -current snapshots can be released multiple times a day on occasion, updating on a weekly basis is usually sufficient.
 
-Once the relay joins the Tor network, the <a href="https://atlas.torproject.org/">Atlas listing for "BBB-OpenBSD"</a> will be posted here.
+Once the relay joins the Tor network, the <a href="https://atlas.torproject.org/">Atlas listing for "OpenBSDBBB"</a> will be posted here.
 
 ###20170324###
 
