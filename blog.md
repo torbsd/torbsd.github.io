@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __March 2017__
 
-[Tor Relay on a BeagleBone Black Running OpenBSD -current](#obsd-bbb) [&sep] [Calling All BSD Firms](#calling-bsd) [&sep] [Amsterdam in March](#tsummit-amsterdam)
+[Tor Relay on a BeagleBone Black Running OpenBSD -current](#obsd-bbb) [%sep] [Calling All BSD Firms](#calling-bsd) [%sep] [Amsterdam in March](#tsummit-amsterdam)
 
 __February 2017__
 
@@ -78,7 +78,7 @@ For anyone who hasn't gotten the news, x86 hardware no longer reigns supreme in 
 
 On that note __TDP__ is setting up a Tor relay on a BeagleBone Black running OpenBSD.
 
-The dmesg for the relay is <a href="http://dmesgd.nycbug.org/index.cgi?do=view&id=3140">on NYC*BUG's dmesgd</a>. The device will formally joining the Tor network shortly, not to mention the <a href="https://buildbot.pixelminers.net/>Unofficial BSD Buildbot</a> maintained by Christian S.
+The dmesg for the relay is <a href="http://dmesgd.nycbug.org/index.cgi?do=view&id=3140">on NYC*BUG's dmesgd</a>. The device will formally joining the Tor network shortly, not to mention the <a href="https://buildbot.pixelminers.net/">Unofficial BSD Buildbot</a> maintained by Christian S.
 
 The stable release of OpenBSD is 6.0, but this relay is running -current. Both net/tor and devel/py-buildslave are available as OpenBSD packages, making the setup easy enough.
 
