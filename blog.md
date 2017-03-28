@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __March 2017__
 
-[Calling All BSD Firms](#calling-bsd) [&sep] [Amsterdam in March](#tsummit-amsterdam)
+[Tor Relay on a BeagleBone Black Running OpenBSD -current](#obsd-bbb) [&sep] [Calling All BSD Firms](#calling-bsd) [&sep] [Amsterdam in March](#tsummit-amsterdam)
 
 __February 2017__
 
@@ -68,6 +68,25 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20170328###
+
+
+<a id="obsd-bbb">__Tor Relay on a BeagleBone Black Running OpenBSD -current__</a> by gman999
+
+For anyone who hasn't gotten the news, x86 hardware no longer reigns supreme in server land. For years other architectures, namely ARM, are increasingly moving beyond esoteric or hidden purposes. ARM isn't just for your cell phone anymore.
+
+On that note __TDP__ is setting up a Tor relay on a BeagleBone Black running OpenBSD.
+
+The dmesg for the relay is <a href="http://dmesgd.nycbug.org/index.cgi?do=view&id=3140">on NYC*BUG's dmesgd</a>. The device will formally joining the Tor network shortly, not to mention the <a href="https://buildbot.pixelminers.net/>Unofficial BSD Buildbot</a> maintained by Christian S.
+
+The stable release of OpenBSD is 6.0, but this relay is running -current. Both net/tor and devel/py-buildslave are available as OpenBSD packages, making the setup easy enough.
+
+The RelayBandwidthRate is set to 5000 KBytes and is supposed to burst to 6000 KBytes, and it will worthwhile seeing if that rate is attainable.
+
+Running on -current might seem counter-intuitive, as it is a development branch, and may contain bugs and breaks. But like the tor-alpha branch, OpenBSD's -current gets a lot of attention, and also includes the latest stable Tor port which is tor-0.2.9.9p0. While -current snapshots can be released multiple times a day on occasion, updating on a weekly basis is usually sufficient.
+
+Once the relay joins the Tor network, the <a href="https://atlas.torproject.org/">Atlas listing for "BBB-OpenBSD"</a> will be posted here.
 
 ###20170324###
 
