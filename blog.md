@@ -95,7 +95,7 @@ mfs:54396     48.4M    4.0K   45.9M        0%      /tmp
 
 /tmp is running off RAM with mfs.
 
-The ports tree is mounted on a 16G microSD card. It will enable us to build and test new ports on armv7. __TDP__ is looking at 
+The ports tree is mounted on a 16G microSD card. It will enable us to build and test new ports on armv7. __TDP__ is looking at porting other relevant PETs applications such as <a href="https://onionshare.org/">OnionShare</a> and finally moving <a href="https://github.com/jasperla/openbsd-wip/tree/master/net/obfsproxy">obfsproxy</a> into the official ports.
 
 Running on -current might seem counter-intuitive, as it is the OpenBSD development branch, and may contain bugs and breaks. But like the tor-alpha branch, OpenBSD's -current gets a lot of attention, and also includes the latest stable Tor port which is tor-0.2.9.9p0. While -current snapshots can be released multiple times a day on occasion, updating on a weekly basis is usually sufficient.
 
