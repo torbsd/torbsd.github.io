@@ -76,7 +76,7 @@ __October 2015__
 
 For anyone who hasn't gotten the news, x86 hardware no longer reigns supreme in server land. For years other architectures, namely ARM, are increasingly moving beyond esoteric or hidden purposes. ARM isn't just for your cell phone anymore.
 
-On that note __TDP__ is setting up a Tor relay on a <a href="https://beagleboard.org/black">BeagleBone Black</a> running OpenBSD.
+On that note, __TDP__ is setting up a Tor relay on a <a href="https://beagleboard.org/black">BeagleBone Black</a> running OpenBSD. The OpenBSD <a href="https://www.openbsd.org/armv7.html">armv7 platform</a> covers some of the more popular armv7 hardware, including the <a href="http://www.wandboard.org/index.php/details">Wandaboard</a>, <a href="http://cubieboard.org/">Cubieboard</a> and <a href="http://www.banana-pi.org/">Banana Pi</a>, not to mention other BeagleBones and the <a href="https://beagleboard.org/beagleboard-xm">BeagleBoard</a>.
 
 The dmesg for the relay is <a href="http://dmesgd.nycbug.org/index.cgi?do=view&id=3140">on NYC*BUG's dmesgd</a>. The device will formally joining the Tor network shortly, not to mention the <a href="https://buildbot.pixelminers.net/">Unofficial BSD Buildbot</a> maintained by Christian S.
 
@@ -94,6 +94,8 @@ Filesystem     Size    Used   Avail  Capacity   Mounted on
 mfs:54396     48.4M    4.0K   45.9M        0%      /tmp  
 
 /tmp is running off RAM with mfs.
+
+The ports tree is mounted on a 16G microSD card. It will enable us to build and test new ports on armv7. __TDP__ is looking at 
 
 Running on -current might seem counter-intuitive, as it is the OpenBSD development branch, and may contain bugs and breaks. But like the tor-alpha branch, OpenBSD's -current gets a lot of attention, and also includes the latest stable Tor port which is tor-0.2.9.9p0. While -current snapshots can be released multiple times a day on occasion, updating on a weekly basis is usually sufficient.
 
