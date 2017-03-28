@@ -76,7 +76,7 @@ __October 2015__
 
 For anyone who hasn't gotten the news, x86 hardware no longer reigns supreme in server land. For years other architectures, namely ARM, are increasingly moving beyond esoteric or hidden purposes. ARM isn't just for your cell phone anymore.
 
-On that note __TDP__ is setting up a Tor relay on a BeagleBone Black running OpenBSD.
+On that note __TDP__ is setting up a Tor relay on a <a href="https://beagleboard.org/black">BeagleBone Black</a> running OpenBSD.
 
 The dmesg for the relay is <a href="http://dmesgd.nycbug.org/index.cgi?do=view&id=3140">on NYC*BUG's dmesgd</a>. The device will formally joining the Tor network shortly, not to mention the <a href="https://buildbot.pixelminers.net/">Unofficial BSD Buildbot</a> maintained by Christian S.
 
@@ -84,7 +84,18 @@ The stable release of OpenBSD is 6.0, but this relay is running -current. Both n
 
 The RelayBandwidthRate is set to 5000 KBytes and is supposed to burst to 6000 KBytes, and it will worthwhile seeing if that rate is attainable.
 
-Running on -current might seem counter-intuitive, as it is a development branch, and may contain bugs and breaks. But like the tor-alpha branch, OpenBSD's -current gets a lot of attention, and also includes the latest stable Tor port which is tor-0.2.9.9p0. While -current snapshots can be released multiple times a day on occasion, updating on a weekly basis is usually sufficient.
+A quick note on configuration.  There are four partitions, as the output of df(1) illustrates:
+
+Filesystem     Size    Used   Avail Capacity  Mounted on
+/dev/sd1a      491M   42.9M    423M     9%    /
+/dev/sd1f      1.4G   10.2M    1.3G     1%    /home
+/dev/sd1d      1.5G    521M    907M    36%    /usr
+/dev/sd1e      192M   77.7M    105M    43%    /usr/local
+mfs:54396     48.4M    4.0K   45.9M     0%    /tmp
+
+/tmp is running off RAM with mfs.
+
+Running on -current might seem counter-intuitive, as it is the OpenBSD development branch, and may contain bugs and breaks. But like the tor-alpha branch, OpenBSD's -current gets a lot of attention, and also includes the latest stable Tor port which is tor-0.2.9.9p0. While -current snapshots can be released multiple times a day on occasion, updating on a weekly basis is usually sufficient.
 
 Once the relay joins the Tor network, the <a href="https://atlas.torproject.org/">Atlas listing for "BBB-OpenBSD"</a> will be posted here.
 
