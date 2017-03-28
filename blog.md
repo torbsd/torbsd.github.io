@@ -86,12 +86,12 @@ The RelayBandwidthRate is set to 5000 KBytes and is supposed to burst to 6000 KB
 
 A quick note on configuration.  There are four partitions, as the output of df(1) illustrates:
 
-Filesystem     Size    Used   Avail Capacity  Mounted on
-/dev/sd1a      491M   42.9M    423M     9%    /
-/dev/sd1f      1.4G   10.2M    1.3G     1%    /home
-/dev/sd1d      1.5G    521M    907M    36%    /usr
-/dev/sd1e      192M   77.7M    105M    43%    /usr/local
-mfs:54396     48.4M    4.0K   45.9M     0%    /tmp
+Filesystem     Size    Used   Avail Capacity  Mounted on  
+/dev/sd1a      491M   42.9M    423M     9%    /  
+/dev/sd1f      1.4G   10.2M    1.3G     1%    /home  
+/dev/sd1d      1.5G    521M    907M    36%    /usr  
+/dev/sd1e      192M   77.7M    105M    43%    /usr/local  
+mfs:54396     48.4M    4.0K   45.9M     0%    /tmp  
 
 /tmp is running off RAM with mfs.
 
