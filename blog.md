@@ -76,13 +76,15 @@ __October 2015__
 
 For anyone who hasn't gotten the news, x86 hardware no longer reigns supreme in server land. For years other architectures, namely ARM, are increasingly moving beyond esoteric or hidden purposes. ARM isn't just for your cell phone anymore.
 
-On that note, __TDP__ is setting up a Tor relay on a <a href="https://beagleboard.org/black">BeagleBone Black</a> running OpenBSD. The OpenBSD <a href="https://www.openbsd.org/armv7.html">armv7 platform</a> covers some of the more popular armv7 hardware, including the <a href="http://www.wandboard.org/index.php/details">Wandaboard</a>, <a href="http://cubieboard.org/">Cubieboard</a> and <a href="http://www.banana-pi.org/">Banana Pi</a>, not to mention other BeagleBones and the <a href="https://beagleboard.org/beagleboard-xm">BeagleBoard</a>.
+On that note, __TDP__ is set up a Tor relay on a <a href="https://beagleboard.org/black">BeagleBone Black</a> running OpenBSD. The OpenBSD <a href="https://www.openbsd.org/armv7.html">armv7 platform</a> covers some of the more popular armv7 hardware, including the <a href="http://www.wandboard.org/index.php/details">Wandaboard</a>, <a href="http://cubieboard.org/">Cubieboard</a> and <a href="http://www.banana-pi.org/">Banana Pi</a>, not to mention other BeagleBones and the <a href="https://beagleboard.org/beagleboard-xm">BeagleBoard</a>.
 
 The dmesg for the relay is <a href="http://dmesgd.nycbug.org/index.cgi?do=view&id=3140">on NYC*BUG's dmesgd</a>. The device will formally joining the Tor network shortly, not to mention the <a href="https://buildbot.pixelminers.net/">Unofficial BSD Buildbot</a> maintained by Christian S.
 
-The stable release of OpenBSD is 6.0, but this relay is running -current. Both net/tor and devel/py-buildslave are available as OpenBSD packages, making the setup easy enough.
+OpenBSDBBB is listed on <a href="https://torstatus.rueckgr.at/router_detail.php?FP=577b81cd1fce5b3e7c1bd286774758608e50aeeb">Tor Status</a> and also on <a href=https://atlas.torproject.org/#details/577B81CD1FCE5B3E7C1BD286774758608E50AEEB">on the Tor Project's Atlas</a>.
 
-The RelayBandwidthRate is set to 5000 KBytes and is supposed to burst to 6000 KBytes, and it will worthwhile seeing if that rate is attainable.
+The stable release of OpenBSD is 6.0, but this relay is running -current. Both net/tor and devel/py-buildslave are available as OpenBSD armv7 packages, making the setup easy enough.
+
+The RelayBandwidthRate is set to 5000 KBytes and bursting to 6000 KBytes, and it will be worthwhile seeing if that rate is attainable.
 
 A quick note on configuration.  There are four partitions, as the output of df(1) illustrates:
 
@@ -99,7 +101,6 @@ The ports tree is mounted on a 16G microSD card. It will enable us to build and 
 
 Running on -current might seem counter-intuitive, as it is the OpenBSD development branch, and may contain bugs and breaks. But like the tor-alpha branch, OpenBSD's -current gets a lot of attention, and also includes the latest stable Tor port which is tor-0.2.9.9p0. While -current snapshots can be released multiple times a day on occasion, updating on a weekly basis is usually sufficient.
 
-Once the relay joins the Tor network, the <a href="https://atlas.torproject.org/">Atlas listing for "OpenBSDBBB"</a> will be posted here.
 
 ###20170324###
 

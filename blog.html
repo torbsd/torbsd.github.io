@@ -85,13 +85,15 @@
 
 <p>For anyone who hasn&#8217;t gotten the news, x86 hardware no longer reigns supreme in server land. For years other architectures, namely ARM, are increasingly moving beyond esoteric or hidden purposes. ARM isn&#8217;t just for your cell phone anymore.</p>
 
-<p>On that note, <strong>TDP</strong> is setting up a Tor relay on a <a href="https://beagleboard.org/black">BeagleBone Black</a> running OpenBSD. The OpenBSD <a href="https://www.openbsd.org/armv7.html">armv7 platform</a> covers some of the more popular armv7 hardware, including the <a href="http://www.wandboard.org/index.php/details">Wandaboard</a>, <a href="http://cubieboard.org/">Cubieboard</a> and <a href="http://www.banana-pi.org/">Banana Pi</a>, not to mention other BeagleBones and the <a href="https://beagleboard.org/beagleboard-xm">BeagleBoard</a>.</p>
+<p>On that note, <strong>TDP</strong> is set up a Tor relay on a <a href="https://beagleboard.org/black">BeagleBone Black</a> running OpenBSD. The OpenBSD <a href="https://www.openbsd.org/armv7.html">armv7 platform</a> covers some of the more popular armv7 hardware, including the <a href="http://www.wandboard.org/index.php/details">Wandaboard</a>, <a href="http://cubieboard.org/">Cubieboard</a> and <a href="http://www.banana-pi.org/">Banana Pi</a>, not to mention other BeagleBones and the <a href="https://beagleboard.org/beagleboard-xm">BeagleBoard</a>.</p>
 
 <p>The dmesg for the relay is <a href="http://dmesgd.nycbug.org/index.cgi?do=view&id=3140">on NYC*BUG&#8217;s dmesgd</a>. The device will formally joining the Tor network shortly, not to mention the <a href="https://buildbot.pixelminers.net/">Unofficial BSD Buildbot</a> maintained by Christian S.</p>
 
-<p>The stable release of OpenBSD is 6.0, but this relay is running -current. Both net/tor and devel/py-buildslave are available as OpenBSD packages, making the setup easy enough.</p>
+<p>OpenBSDBBB is listed on <a href="https://torstatus.rueckgr.at/router_detail.php?FP=577b81cd1fce5b3e7c1bd286774758608e50aeeb">Tor Status</a> and also on <a href=https://atlas.torproject.org/#details/577B81CD1FCE5B3E7C1BD286774758608E50AEEB">on the Tor Project&#8217;s Atlas</a>.</p>
 
-<p>The RelayBandwidthRate is set to 5000 KBytes and is supposed to burst to 6000 KBytes, and it will worthwhile seeing if that rate is attainable.</p>
+<p>The stable release of OpenBSD is 6.0, but this relay is running -current. Both net/tor and devel/py-buildslave are available as OpenBSD armv7 packages, making the setup easy enough.</p>
+
+<p>The RelayBandwidthRate is set to 5000 KBytes and bursting to 6000 KBytes, and it will be worthwhile seeing if that rate is attainable.</p>
 
 <p>A quick note on configuration. There are four partitions, as the output of df(1) illustrates:</p>
 
@@ -107,8 +109,6 @@ mfs:54396 48.4M 4.0K 45.9M 0% /tmp </p>
 <p>The ports tree is mounted on a 16G microSD card. It will enable us to build and test new ports on armv7. <strong>TDP</strong> is looking at porting other relevant PETs applications such as <a href="https://onionshare.org/">OnionShare</a> and finally moving <a href="https://github.com/jasperla/openbsd-wip/tree/master/net/obfsproxy">obfsproxy</a> into the official ports.</p>
 
 <p>Running on -current might seem counter-intuitive, as it is the OpenBSD development branch, and may contain bugs and breaks. But like the tor-alpha branch, OpenBSD&#8217;s -current gets a lot of attention, and also includes the latest stable Tor port which is tor&#8211;0.2.9.9p0. While -current snapshots can be released multiple times a day on occasion, updating on a weekly basis is usually sufficient.</p>
-
-<p>Once the relay joins the Tor network, the <a href="https://atlas.torproject.org/">Atlas listing for &#8220;OpenBSDBBB&#8221;</a> will be posted here.</p>
 
 <h3 id="20170324">20170324</h3>
 
@@ -764,7 +764,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Tue Mar 28 19:01:51 2017 UTC</code></p>
+<p><code>last updated: Wed Mar 29 02:35:40 2017 UTC</code></p>
 
 </body>
 </html>
