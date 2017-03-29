@@ -78,7 +78,7 @@ For anyone who hasn't gotten the news, x86 hardware no longer reigns supreme in 
 
 On that note, __TDP__ is set up a Tor relay on a <a href="https://beagleboard.org/black">BeagleBone Black</a> running OpenBSD. The OpenBSD <a href="https://www.openbsd.org/armv7.html">armv7 platform</a> covers some of the more popular armv7 hardware, including the <a href="http://www.wandboard.org/index.php/details">Wandaboard</a>, <a href="http://cubieboard.org/">Cubieboard</a> and <a href="http://www.banana-pi.org/">Banana Pi</a>, not to mention other BeagleBones and the <a href="https://beagleboard.org/beagleboard-xm">BeagleBoard</a>.
 
-The dmesg for the relay is <a href="http://dmesgd.nycbug.org/index.cgi?do=view&id=3140">on NYC*BUG's dmesgd</a>. The device will formally joining the Tor network shortly, not to mention the <a href="https://buildbot.pixelminers.net/">Unofficial BSD Buildbot</a> maintained by Christian S.
+The dmesg for the relay is <a href="http://dmesgd.nycbug.org/index.cgi?do=view&id=3140">on NYC*BUG's dmesgd</a>. The device joined the Tor network today, and will be joining the <a href="https://buildbot.pixelminers.net/">Unofficial BSD Buildbot</a> maintained by Christian S. soon.
 
 OpenBSDBBB is listed on <a href="https://torstatus.rueckgr.at/router_detail.php?FP=577b81cd1fce5b3e7c1bd286774758608e50aeeb">Tor Status</a> and also on <a href=https://atlas.torproject.org/#details/577B81CD1FCE5B3E7C1BD286774758608E50AEEB">on the Tor Project's Atlas</a>.
 
