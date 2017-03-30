@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __March 2017__
 
-[Tor Relay on a BeagleBone Black Running OpenBSD -current](#obsd-bbb) [%sep] [Calling All BSD Firms](#calling-bsd) [%sep] [Amsterdam in March](#tsummit-amsterdam)
+[BeagleBone Online and Busy](#busy-bbb) [%sep] [Tor Relay on a BeagleBone Black Running OpenBSD -current](#obsd-bbb) [%sep] [Calling All BSD Firms](#calling-bsd) [%sep] [Amsterdam in March](#tsummit-amsterdam)
 
 __February 2017__
 
@@ -69,8 +69,24 @@ __October 2015__
 
 [From the Attic](#attic)
 
-###20170328###
+###20170330###
 
+<a id="busy-bbb">__BeagleBone Online and Busy__ by gman999
+
+The BeagleBone Black Tor relay is fully operational and according to both <a href=://torstatus.rueckgr.at/router_detail.php?FP=577b81cd1fce5b3e7c1bd286774758608e50aeeba">one of the Tor Status sites</a> and Tor Atlas, is already pushing about 1 MBps.
+
+It's not up on the <a href="https://buildbot.pixelminers.net/">Buildbot</a> yet, but should be once some technical glitches are resolved on our end.
+
+There is a number of advantages to this and similar relays.
+
+* OpenBSD is unique among relay operating system platforms for a number of reasons, including its usage of <a href="https://www.libressl.org/">LibreSSL</a> as opposed to ubiquitous OpenSSL. At the moment, only some 1.42% of relays are running OpenBSD.
+
+* the BeagleBone is an armv7 platform, which stands outside the normal x86 monoculture. All hardware has its own share of advantages and disadvantages from the security-level. But the x86 monoculture is a scary one and often over-looked when assessing operating system diversity. The BeagleBone is open source hardware, and is not saturated with ugly binary blobs so common on x86.
+
+* finally, the BeagleBone is an Altoids-sized, fanless and silent computer easily accomodated in any data center cabinet, and draws insignificant electricity. And considering the amount of under-utilized bandwidth on so many residential connections in places like the US, the BeagleBone is ideal hardware for Tor bridges for any home. Pop some into your friends' and family's homes, and assist those with censored internet connections around the world.
+
+
+###20170328###
 
 <a id="obsd-bbb">__Tor Relay on a BeagleBone Black Running OpenBSD -current__</a> by gman999
 

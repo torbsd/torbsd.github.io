@@ -23,7 +23,7 @@
 
 <p><strong>March 2017</strong></p>
 
-<p><a href="#obsd-bbb">Tor Relay on a BeagleBone Black Running OpenBSD -current</a> &#8916; <a href="#calling-bsd">Calling All BSD Firms</a> &#8916; <a href="#tsummit-amsterdam">Amsterdam in March</a></p>
+<p><a href="#busy-bbb">BeagleBone Online and Busy</a> &#8916; <a href="#obsd-bbb">Tor Relay on a BeagleBone Black Running OpenBSD -current</a> &#8916; <a href="#calling-bsd">Calling All BSD Firms</a> &#8916; <a href="#tsummit-amsterdam">Amsterdam in March</a></p>
 
 <p><strong>February 2017</strong></p>
 
@@ -78,6 +78,22 @@
 <p><a href="#tb-update">Updated Tor Browser Packages</a> &#8916; <a href="#relay-guides">The BSD Relay Guides</a> &#8916; <a href="#first-bells">Our First Bells</a> &#8916; <a href="#beyond-os">Beyond OS Diversity</a> &#8916; <a href="#tb-5.0.3">Tor Browser version 5.0.3 for OpenBSD</a></p>
 
 <p><a href="#attic">From the Attic</a></p>
+
+<h3 id="20170330">20170330</h3>
+
+<p><a id="busy-bbb"><strong>BeagleBone Online and Busy</strong> by gman999</p>
+
+<p>The BeagleBone Black Tor relay is fully operational and according to both <a href=://torstatus.rueckgr.at/router_detail.php?FP=577b81cd1fce5b3e7c1bd286774758608e50aeeba">one of the Tor Status sites</a> and Tor Atlas, is already pushing about 1 MBps.</p>
+
+<p>It&#8217;s not up on the <a href="https://buildbot.pixelminers.net/">Buildbot</a> yet, but should be once some technical glitches are resolved on our end.</p>
+
+<p>There is a number of advantages to this and similar relays.</p>
+
+<ul>
+<li><p>OpenBSD is unique among relay operating system platforms for a number of reasons, including its usage of <a href="https://www.libressl.org/">LibreSSL</a> as opposed to ubiquitous OpenSSL. At the moment, only some 1.42% of relays are running OpenBSD.</p></li>
+<li><p>the BeagleBone is an armv7 platform, which stands outside the normal x86 monoculture. All hardware has its own share of advantages and disadvantages from the security-level. But the x86 monoculture is a scary one and often over-looked when assessing operating system diversity. The BeagleBone is open source hardware, and is not saturated with ugly binary blobs so common on x86.</p></li>
+<li><p>finally, the BeagleBone is an Altoids-sized, fanless and silent computer easily accomodated in any data center cabinet, and draws insignificant electricity. And considering the amount of under-utilized bandwidth on so many residential connections in places like the US, the BeagleBone is ideal hardware for Tor bridges for any home. Pop some into your friends&#8217; and family&#8217;s homes, and assist those with censored internet connections around the world.</p></li>
+</ul>
 
 <h3 id="20170328">20170328</h3>
 
@@ -764,7 +780,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Wed Mar 29 02:37:09 2017 UTC</code></p>
+<p><code>last updated: Thu Mar 30 13:03:31 2017 UTC</code></p>
 
 </body>
 </html>
