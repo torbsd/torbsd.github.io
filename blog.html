@@ -95,6 +95,28 @@
 <li><p>finally, the BeagleBone is an Altoids-sized, fanless and silent computer easily accomodated in any data center cabinet, and draws insignificant electricity. And considering the amount of under-utilized bandwidth on so many residential connections in places like the US, the BeagleBone is ideal hardware for Tor bridges for any home. Pop some into your friends&#8217; and family&#8217;s homes, and assist those with censored internet connections around the world.</p></li>
 </ul>
 
+<p>A final configuration tweak now that the relay seems to be hitting its stride.</p>
+
+<p>OpenBSD is pleasantly stingy in allowing the number of files to be opened per daemon. This restriction works both for security purposes and for a consideration for systems with lesser resources. The tor daemon, to be able to hit its peak bandwidth, likely needs a bump in those values.</p>
+
+<p>There&#8217;s two quick changes, on that note.</p>
+
+<p>Increase the number of files that can be opened, assuming there is no previously configured /etc/sysctl.conf file:</p>
+
+<p>$ echo &#8220;kern.maxfiles=20000&#8221; &gt;/etc/sysctl.conf</p>
+
+<p>To enble that change without a reboot:</p>
+
+<p>$ sysctl kern.maxfiles=20000</p>
+
+<p>Next allow the tor daemon to increase its own openfiles limit, edit the /etc/login.conf file and add the following:</p>
+
+<p>tor:
+ :openfiles-max=8192:
+ :tc=daemon:</p>
+
+<p>While testing node configuration changes on a (mostly) randomized anonymity network is hard to measure, removing those limits can remove some local hindrances.</p>
+
 <h3 id="20170328">20170328</h3>
 
 <p><a id="obsd-bbb"><strong>Tor Relay on a BeagleBone Black Running OpenBSD -current</strong></a> by gman999</p>
@@ -780,7 +802,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Mar 30 13:13:51 2017 UTC</code></p>
+<p><code>last updated: Thu Mar 30 15:00:57 2017 UTC</code></p>
 
 </body>
 </html>
