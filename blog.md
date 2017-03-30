@@ -73,7 +73,7 @@ __October 2015__
 
 <a id="busy-bbb">__BeagleBone Online and Busy__</a> by gman999
 
-The BeagleBone Black Tor relay is fully operational and according to both <a href="https://torstatus.rueckgr.at/router_detail.php?FP=577b81cd1fce5b3e7c1bd286774758608e50aeeba">one of the Tor Status sites</a> and Tor Atlas, is already pushing about 1 MBps.
+The BeagleBone Black Tor relay is fully operational and according to both <a href="https://torstatus.rueckgr.at/router_detail.php?FP=577b81cd1fce5b3e7c1bd286774758608e50aeeb">one of the Tor Status sites</a> and Tor Atlas, is already pushing about 1 MBps.
 
 It's not up on the <a href="https://buildbot.pixelminers.net/">Buildbot</a> yet, but should be once some technical glitches are resolved on our end.
 
