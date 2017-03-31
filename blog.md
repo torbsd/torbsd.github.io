@@ -102,8 +102,8 @@ $ sysctl kern.maxfiles=20000
 Next allow the tor daemon to increase its own openfiles limit, edit the /etc/login.conf file and add the following:
 
 tor:\  
-```	:openfiles-max=8192:\  
-```	:tc=daemon:  
+    :openfiles-max=8192:\  
+    :tc=daemon:  
 
 While testing node configuration changes on a (mostly) randomized anonymity network is hard to measure, removing those limits can remove some local hindrances.
 
