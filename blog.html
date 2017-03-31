@@ -111,9 +111,10 @@
 
 <p>Next allow the tor daemon to increase its own openfiles limit, edit the /etc/login.conf file and add the following:</p>
 
-<p>tor:\<br/>
- :openfiles-max=8192:\<br/>
- :tc=daemon: </p>
+<pre><code>tor:\  
+    :openfiles-max=8192:\  
+    :tc=daemon:  
+</code></pre>
 
 <p>While testing node configuration changes on a (mostly) randomized anonymity network is hard to measure, removing those limits can remove some local hindrances.</p>
 
@@ -802,7 +803,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2016 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Fri Mar 31 13:21:00 2017 UTC</code></p>
+<p><code>last updated: Fri Mar 31 13:23:12 2017 UTC</code></p>
 
 </body>
 </html>
