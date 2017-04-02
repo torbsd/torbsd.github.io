@@ -77,21 +77,27 @@ __October 2015__
 
 <a id="tor-motives">__What Motivates You to Run a Tor Relay?__</a> by gman999
 
-Everyone who contributes to open source projects is driven by some combination of motives. For Tor relay operators, simply taking an occasional glance at the connection statistics should make the task a bit easier.
+Everyone who contributes to open source projects is driven by some combination of motives. For Tor relay operators, simply taking an occasional glance at the connection statistics should be sufficient.
 
-Only in its second full day of operation, <a href="https://torstatus.rueckgr.at/router_detail.php?FP=577b81cd1fce5b3e7c1bd286774">OpenBSDBBB<a/>, the new __TDP__ relay running OpenBSD on a teeny-weeny BeagleBone Black is pushing some 1.31MB of bandwidth. The entry-stats gives us a good sense of a lot of global users assisted:
+Only in its second full day of operation, <a href="https://torstatus.rueckgr.at/router_detail.php?FP=577b81cd1fce5b3e7c1bd286774">OpenBSDBBB</a>, the new __TDP__ relay running OpenBSD on a teeny-weeny BeagleBone Black is pushing some 1.31MB of bandwidth. The entry-stats gives us a good sense of many global users assisted:
 
 ````
 entry-ips us=296,jp=104,de=96,fr=96,es=88,it=72,ru=72,br=48,ar=32,bg=32,ca=32,gb=32,nl=32,pl=32,se=24,ua=24,au=16,gr=16,in=16,mx=16,th=16,ae=8,al=8,am=8,at=8,az=8,ba=8,bb=8,bd=8,be=8,by=8,ch=8,cl=8,cn=8,co=8,cr=8,cy=8,cz=8,dk=8,dz=8,ec=8,eg=8,fi=8,ge=8,hk=8,hu=8,id=8,ie=8,il=8,iq=8,ir=8,is=8,jm=8,ke=8,kh=8,kr=8,kw=8,ky=8,la=8,lk=8,lt=8,lu=8,lv=8,ma=8,md=8,mu=8,my=8,mz=8,no=8,pe=8,ph=8,pr=8,pt=8,py=8,qa=8,re=8,ro=8,rs=8,sa=8,sg=8,si=8,sk=8,sy=8,tn=8,tw=8,uy=8,uz=8,ve=8,vn=8,za=8
 ````
 
-Simply adding lines like this to a torrc file produce wonderful motivations:
+Simply adding lines like this to a torrc file produces wonderful motivations:
 
 ````
 EntryStatistics 1
 ````
 
-Yes, a simple point. But all the more powerful when it provides a snapshot into the relay's users evading censorship and surveillance in a 24 hour period.
+Bridge operators can add this to their torrc to get similar statistics:
+
+````
+BridgeRecordUsageByCountry 1
+````
+
+Yes, a simple point. But all the more powerful when it provides a snapshot into a relay's users as they evade censorship and surveillance in a 24 hour period.
 
 ###20170330###
 
