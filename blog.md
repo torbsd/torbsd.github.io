@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __April 2017__
 
-[What Motivates You to Run a Tor Relay?](#tor-motives)
+[Android Overtaking Windows and OS Diversity](#android-takeover) [&sep] [What Motivates You to Run a Tor Relay?](#tor-motives)
 
 __March 2017__
 
@@ -72,6 +72,28 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20170403###
+
+<a id="android-takeover">Android Overtaking Windows and OS Diversity</a> by gman999
+
+The central focus of __TDP__ is operating system diversity with BSD Unix in the Tor network on all levels. From *BSD relays to Tor Browser ported to OpenBSD, __TDP__ looks hinder the capability for one operating system-specific vulnerability to harm the integrity of the entire Tor network.
+
+From a different angle <a href="http://gs.statcounter.com/press/android-overtakes-windows-for-first-time">Android edging out Windows</a> as the primary client operating system is a notable change.
+
+The user "desktop" no longer necessarily sits at the user's desk. Particularly in less-developed countries and among many working-class people, the main platform for accessing the internet is the phone. Essentially, there is a definition shift in client internet-accessing systems, and Android takes the day with some 37.93% of the market.
+
+This is a far cry from the old <a href="https://cryptome.org/cyberinsecurity.htm">desktop monoculture debate (PDF warning)</a> from the early 2000's. It was only a matter of time before Android took the cake as the role of the phone changed and Android dominates the cheaper end of the phone market globally.
+
+Of course operating system diversity for internet-accessing platforms is good. The question is really is this "good enough"?
+
+Android systems tend to cover a range of versions, some patched to addressed security vulnerabilities, but most are not.
+
+No one gets a notice that a phone is no longer operational if the Android version faces an end-of-life, and many providers aren't particularly interested in devoting resources to maintaining multiple branches of that operating system, and providing timely patching of known issues.
+
+Replacing a Windows monoculture with a Windows/Android mix might seem like a significant step forward in terms of vulerability mitigation, but merely replacing crud with two cruds can't be considered a victory for the security community.
+
+The interesting angle might really be that the "desktop" is now attached to the end-user, and that cell phone network providers and device manufacturers are not better than Microsoft at handling security disclosures. In fact, with hundreds of network providers and handset manufacturers now populating the Android market, it's no longer about one software company to convince. The goal of reasonably secure client systems seems more of a delusion than even a remote possibility.
 
 ###20170401###
 
