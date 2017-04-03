@@ -163,14 +163,13 @@
 
 <p>A quick note on configuration. There are four partitions, as the output of df(1) illustrates:</p>
 
-<p>{{{
-Filesystem Size Used Avail Capacity Mounted on<br/>
-/dev/sd1a 491M 42.9M 423M 9% /<br/>
-/dev/sd1f 1.4G 10.2M 1.3G 1% /home<br/>
-/dev/sd1d 1.5G 521M 907M 36% /usr<br/>
-/dev/sd1e 192M 77.7M 105M 43% /usr/local<br/>
-mfs:54396 48.4M 4.0K 45.9M 0% /tmp<br/>
-}}}</p>
+<pre><code>Filesystem     Size    Used   Avail  Capacity   Mounted on  
+/dev/sd1a      491M   42.9M    423M        9%      /  
+/dev/sd1f      1.4G   10.2M    1.3G        1%      /home  
+/dev/sd1d      1.5G    521M    907M       36%      /usr  
+/dev/sd1e      192M   77.7M    105M       43%      /usr/local  
+mfs:54396     48.4M    4.0K   45.9M        0%      /tmp  
+</code></pre>
 
 <p>/tmp is running off RAM with mfs.</p>
 
@@ -832,7 +831,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2017 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Mon Apr  3 18:41:10 2017 UTC</code></p>
+<p><code>last updated: Mon Apr  3 18:43:08 2017 UTC</code></p>
 
 </body>
 </html>
