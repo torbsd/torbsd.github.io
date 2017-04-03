@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __April 2017__
 
-[Android Overtaking Windows and OS Diversity](#android-takeover) [&sep] [What Motivates You to Run a Tor Relay?](#tor-motives)
+[Android Overtaking Windows and OS Diversity](#android-takeover) [%sep] [What Motivates You to Run a Tor Relay?](#tor-motives)
 
 __March 2017__
 
