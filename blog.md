@@ -77,7 +77,7 @@ __October 2015__
 
 <a id="android-takeover">Android Overtaking Windows and OS Diversity</a> by gman999
 
-The central focus of __TDP__ is operating system diversity with BSD Unix in the Tor network on all levels. From *BSD relays to Tor Browser ported to OpenBSD, __TDP__ looks hinder the capability for one operating system-specific vulnerability to harm the integrity of the entire Tor network.
+The central focus of __TDP__ is operating system diversity with BSD Unix in the Tor network on all levels. From *BSD relays to Tor Browser ported to OpenBSD, __TDP__ looks to hinder the capability of one operating system-specific vulnerability to harm the integrity of the entire Tor network.
 
 From a different angle <a href="http://gs.statcounter.com/press/android-overtakes-windows-for-first-time">Android edging out Windows</a> as the primary client operating system is a notable change.
 
@@ -87,13 +87,15 @@ This is a far cry from the old <a href="https://cryptome.org/cyberinsecurity.htm
 
 Of course operating system diversity for internet-accessing platforms is good. The question is really is this "good enough"?
 
-Android systems tend to cover a range of versions, some patched to addressed security vulnerabilities, but most are not.
+Android systems tend to cover a range of versions, some patched to addressed security vulnerabilities, but most are not. There are some interesting new Android forks such as <a href="https://copperhead.co/android/">CopperheadOS</a>, but mass adoption seems unlikely in the forseeable future.
 
-No one gets a notice that a phone is no longer operational if the Android version faces an end-of-life, and many providers aren't particularly interested in devoting resources to maintaining multiple branches of that operating system, and providing timely patching of known issues.
+No one gets bumped from their cellular carrier when their phone the Android version faces a end-of-life status, and many providers aren't particularly interested in devoting resources to maintaining multiple branches of Android, and providing timely patching of known issues.
 
 Replacing a Windows monoculture with a Windows/Android mix might seem like a significant step forward in terms of vulerability mitigation, but merely replacing crud with two cruds can't be considered a victory for the security community.
 
-The interesting angle might really be that the "desktop" is now attached to the end-user, and that cell phone network providers and device manufacturers are not better than Microsoft at handling security disclosures. In fact, with hundreds of network providers and handset manufacturers now populating the Android market, it's no longer about one software company to convince. The goal of reasonably secure client systems seems more of a delusion than even a remote possibility.
+The interesting angle might really be that the "desktop" is now attached to the end-user one linear step away from science fiction <a href="https://en.wikipedia.org/wiki/Cyborg">Cyborg reality</a>, and that cell phone network providers and device manufacturers are not better than Microsoft at handling security disclosures. In fact, with hundreds of network providers and handset manufacturers now populating the Android market, it's no longer about one software company to convince to address security issues. The goal of reasonably secure client systems seems more of a delusion than even a remote possibility with the decline of the Microsoft monoculture.
+
+Yes, some diversity can be _worse_ for security and network integrity.
 
 ###20170401###
 
