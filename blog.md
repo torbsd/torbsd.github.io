@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __April 2017__
 
-[Tor Summit 2017 in Amsterdam](#summit-2017-amsterdam) [%sep] [Android Overtaking Windows and OS Diversity](#android-takeover) [%sep] [What Motivates You to Run a Tor Relay?](#tor-motives) [%sep] [Tor Summit 2017, Amsterdam](#tor-summit-2017-amsterdam)
+[Tor Summit 2017 in Amsterdam](#summit-2017-amsterdam) [%sep] [Android Overtaking Windows and OS Diversity](#android-takeover) [%sep] [What Motivates You to Run a Tor Relay?](#tor-motives)
 
 __March 2017__
 
