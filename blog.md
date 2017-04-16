@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __April 2017__
 
-[Android Overtaking Windows and OS Diversity](#android-takeover) [%sep] [What Motivates You to Run a Tor Relay?](#tor-motives)
+[Android Overtaking Windows and OS Diversity](#android-takeover) [%sep] [What Motivates You to Run a Tor Relay?](#tor-motives) [%sep] [Tor Summit 2017, Amsterdam](#tor-summit-2017-amsterdam)
 
 __March 2017__
 
@@ -72,6 +72,34 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20170415###
+
+<a id="tor-summit-2017-amsterdam">Tor Summit 2017 (Amsterdam)</a> by egypcio
+
+Thank you! Honestly, there is no way to start this post. Thank you all! It was an amazing experience and I not just hope to do it again, and again, but also hope to share with others what I learned during the days I stayed in Amsterdam to attend the Summit.
+
+I also "need" to express huge gratitude to some people here: George, Atilla, Moritz, Mark, Isabela, drebs, foz, Kali, Alison, Linus, and Jon. You guys rock!
+
+The idea of just reaching out to the Tor Summit 2017 in Amsterdam for me is more than it looks like. My first steps into the Tor Project as user started quite long ago, but getting closer to its community and contributors/volunteers thought the BSDCon Brazil in 2015 and the Tor Diversty Project (TDP) was the big deal that brought me here. My on boarding at the TDP? You can read about it on <a id="vinicius">this</a> blog post. I really had no idea that I would even be attending the Summit; I left Brazil in December 2016 with no guarantee that it would (legaly) be possible to go there. I already had plans to flight to Serbia and stay there for a while waiting some stupid complications with Visa to settle down. My main goal was to get a job somewhere in Europe to work and live abroad - the current political situation running in Brazil since its last presidential elections doesn't need to be discussed here. It feels sad to me talking about it. Let's move on (because life forces us to do it sometimes).
+
+A couple of weeks before the Tor Summit I was getting some codes and patches related to Tor that I had and sending them to my (still not much active) <a href="https://github.com/egypcio">GitHub</a> repositories. Things like the FreeBSD ports for Tor, and the experimental port of the Tor Browser are there now! I also updated a short modified version of a <a href="https://openbsd-br.org/pub/torrc.txt">torrc</a> file and hosted it where people could just get it to start setting up they relays using/reading a more intuitive and reduced version of the huge sample file shipped with Tor - the first draft of this torrc file supported a friend that started the first (public) relay in Paraguay, and it can be easily modified to work as exit node or bridge. There are also information about IPv6 configurations available.
+
+So, a few days before the official date for the Summit I got good news from a company based in Germany regarding one of my job applications. IEI! Guess when I got the Visa? one day before my current one expires :) ...and than I started looking for a way to attend the Summit. I was already working on the week of the Summit, so I couldn't attend to all days and also needed to get a way to Amsterdam only late on Friday 24th. I arrived at the Central Station around 23h, and right after meeting Mark (realitygaps) I went to a little cozy bar with him to try getting in touch with some Tor people. There we met Moritz (<a href="https://torservers.net/">torservers.net</a>) and if it wasn't for me stupid idea of traveling without a jacket I could stay longer enjoying another beer there. heh.
+
+Getting a bike in Amsterdam was, let's say, the obvious choice! That was not my first time there, so after getting some food from the wall I got a bike and rode to Mark's place on the other side of the river. I mentioned to him that I used to get seasick in boat/ferry rides, but luckly nothing bad happened. Nice! At the end, we arrived at his place and chilled a bit. On the next day I needed to get up early and make my way to the Arena. I was part of two nice sessions: <a href="https://trac.torproject.org/projects/tor/wiki/org/meetings/2017Amsterdam/Notes/PluggableTransports">Pluggable Transports</a>, and <a href="https://trac.torproject.org/projects/tor/wiki/org/meetings/2017Amsterdam/Notes/CorpOnionServices">Convincing Big Companies</a>; got a lot from what people said, and also shared some toughts. It was awesome! Later on that day I was also in touch with amazing people getting feedback about the impact Tor plays in many different ways against censourship, how it really supports anonymity, and also how its community really matters to the Globe. I also got closer to people from other projects I used and only knew on the Internet (like <a href="https://ooni.torproject.org">OONI</a>, and others). OlÃ¡ Derechos Digitales, e Primavera Hacker! Sorry I missed the <a href="https://trac.torproject.org/projects/tor/wiki/org/meetings/2017Amsterdam/Notes/GlobalSouth1">first session</a> of the Global South meetings :\
+
+I did not went to any party of late meeting on the Saturday 25th; not just because I was *really* dead tired, but I also wanted to chill an put some ideas, notes, and few lines of code in practice. That night was a regular pizza+code night, but was the best one I ever had. I would like to point you isis' <a href="https://github.com/isisagoralovecruft">GitHub</a> repositories; there are many interesting things you can get and contribute from there. Cool stuff though!
+
+As it also doesn't hurt to remember, if you do have some time to test Tor, try getting the latest code from its <a href="https://gitweb.torproject.org">Git</a> repository and play with it. If you are interested on tests running in different BSD platforms, please check (and try to contribute to) the TorBSD's <a href="https://buildbot.pixelminers.net">BuildBot</a>!
+
+Well... Sunday 26th! On that day I could reach people from the Global South and went to the <a href="https://trac.torproject.org/projects/tor/wiki/org/meetings/2017Amsterdam/Notes/GlobalSouth2">second session</a>. Great discussions that took us to a little 15 minutes pause, and than the part 2 of the second session could start. There we talked about getting more legal support, more effective ways to deploy relays/bridges/nodes, new approaches to spreach the word of Tor and so on. It looks like we will have a meeting, or even a Summit, on latin America soon. Right? During the session I also compromised myself to write materials in portuguese+spanish (portuÃ±ol? heh) to help more people to get close to Tor and its benefits - I already started doing it, and hope to commit some posts soon after this post I am writting you. We are on IRC, btw! #tor-south@oftc :)
+
+Later that day Moritz introduced me to Nick, and we talked about the FreeBSD port for the Tor Browser. I sure got pretty nifty feedback and incredible ideas to work with. There I decided to split the port into 2 "combined" ports; one for the main browser, and other to take care of the extensions - so if we need just a simple update on the extensions, there will be no need to rebuild the entire browser again. Other ideias, regarding the dedicated user profile, also considered the use of ZFS volumes to run the Tor Browser; sounds a good idea, but we might condider different use cases and host scenarios. I trully need to test it a bit more, and patch some stuff (specially because the Tor Browser port is conflicting with the extended support version of Firefox). Well, at the end, it's gonna be just fine :)
+
+My last hours in Amsterdam were incredible! Again, a big thank you to drebs, foz and kali that got me a sweet and cozy couch! So, at 4h00 I cycled from Kali's to the Central Station, dropped the bike and there I got my train back to Germany and went to work. Arrived just in time; 10h00. Worth it every single second. Thank you everyone! 
+
+If I really did not list your name here, it doesn't mean that you did not help me; it goes for 100% of the people I listened or talked to (on IRC, on any mailing list).
 
 ###20170403###
 
