@@ -59,7 +59,7 @@ Install FreeBSD 10 and update to most recent -STABLE version
 
 Populate and/or update the ports tree under */usr/ports*
 
->% svnlite update /usr/ports
+>% svnlite update /usr/ports # didn't work for me
 
 Install either the stable or development version of Tor from the ports tree. The -devel or alpha version of Tor is likely the better choice.
 
