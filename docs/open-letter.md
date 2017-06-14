@@ -10,6 +10,7 @@ It is well-known in the BSD community that there are dozens and dozens of major 
 Taking The Mozilla Foundation's decision to run public Tor relays in Decmeber 2014 as an example, we believe that if BSD commercial firms volunteered to operate and maintain Tor relays, it would be an enormous asset to not just the PETs community who focus on enhancing uninhibited free speech and privacy, but also for the BSD community itself.
 </b>
 
+
 New York Internet (https://www.nyi.net/), a longtime FreeBSD data center firm, committed to running two high-bandwidth relays, maintained by their staff with assistance from TDP. We hope their example, as with the Mozilla Foundation, can inspire other firms to follow suit.
 
 Why would any firm operate a Tor relay?
