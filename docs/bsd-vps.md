@@ -30,7 +30,6 @@ Atlantic.net,https://atlantic.net/,
 M5 Hosting,http://www.m5hosting.com/,1,0,0,0,Cloud,US12,US
 Rackspace,https://www.rackspace.com/,https://www.rackspace.com/information/legal/aup/
 All My Data,https://www.amdwebhost.com/,1,0,1,0,shell,,,https://www.amdwebhost.com/tos/,US2.95,US UK NL FR AT DE JP
-http://www.webdrops.net/,http://www.webdrops.net/acceptable-use-policy/,IT US NL
 Argentina,https://www.argentina.com/, BSD or just Linux?
 Delimiter,https://www.delimiter.com/,KVM,US6.95
 File Sanctuary,https://www.filesanctuary.net/,1,0,0,1,Cloud,,,https://www.filesanctuary.net/terms-of-service/,US14,
@@ -47,5 +46,6 @@ Quonix,http://www.quonix.net/,http://www.quonix.net/aup.html,US31.50,US,
 SmartServ,http://www.smart-serv.net/,?,,,shell,http://www.smart-serv.net/index.php?page=terms,CND5,CA,"does not prohibit the use...Tor" OS?
 Solution Point,https://www.solutionpoint.in/,IN
 Tier1 Hosting,http://www.tier1hosting.net/,1,1,1,1,Cloud,,,US15.50,
+TransIP,https://www.transip.eu/,1,0,1,0,KVM,https://www.transip.eu/terms-of-service/,EU5
 
 https://www.freebsd.org/commercial/isp.html
