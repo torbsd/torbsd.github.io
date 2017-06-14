@@ -1,38 +1,38 @@
 
 * Documentation
 
-relay guides
-
-OpenBSD
-
-FreeBSD
-
-Spanish
-
-German
-
-Portuguese Brazilian
-
-Arabic
-
-Russian
+Relay guides
+OpenBSD		g
+	English
+	Spanish
+	German
+	Portuguese Brazilian
+	Arabic
+	Russian
+FreeBSD		g
+	English
+	Spanish
+	German
+	Portuguese Brazilian
+	Arabic
+	Russian
 
 Print copies
 
-building small x86 OpenBSD
+building small x86 OpenBSD	g
 
 * Promotion
 
-TDP business cards
+TDP business cards	g
 
-NYC Public Meeting
+NYC Public Meeting	g
 
-Firm Relays
+Firm Relays		g
 	NYI
 	direct queries, face-to-face
 	wiki-based guide for ops
 
-Open Letter
+Open Letter	g
 	online posting/circulation
 	hard copies to cons
 	direct queries
@@ -40,25 +40,25 @@ Open Letter
 * Infrastructure
 
 VPS
-	public list
+	public list	g
 		TOS/AUP, base price, geo diversity
-	install/configure script
-		FreeBSD
+	install/configure script	a
+		FreeBSD, which provider(s)?
 
 OpenBSD Ports
 	tor-alpha instructions
-		mtier?
-	obfsproxy
+		mtier?	a
+	obfsproxy	a
 	chroot instructions/into port?
 
 pf rulesets
 
 Relays
-	BBB OpenBSD
-	RPI3 FreeBSD
-	PPC OpenBSD
-	replace NYCBUG0 and NYCBUG1	
+X	BBB OpenBSD	g
+	RPI3 FreeBSD	g
+	PPC OpenBSD	g
+	replace NYCBUG0 and NYCBUG1	g
 
 * Quantifying
-	JSON stats on OS diversity
+	JSON stats on OS diversity	a
 
