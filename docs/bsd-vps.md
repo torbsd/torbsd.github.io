@@ -1,7 +1,7 @@
 # List of VPS Entities and their Policies Regarding Tor
 #provider,wwwsite,FreeBSD,NetBSD,OpenBSD,OtherBSD,type,contact,contact_method,aup-tos,startingprice,countrycodes,notes
 
-RootBSD,https://www.rootbsd.net/,1,0,1,0,Cloud,?,?,https://rootbsd.net/aup/,USD19.95,US CA plus
+RootBSD,https://www.rootbsd.net/,1,0,1,0,Cloud,?,?,https://rootbsd.net/aup/,USD19.95,US CA plus,
 ARP Networks,https://arpnetworks.com/,1,0,1,0,?,?,https://arpnetworks.com/aup/,USD10,US DE
 Tilaa,https://www.tilaa.com/en,1,0,0,,,https://www.tilaa.com/en/terms-of-service,EU7.50,NL
 INIZ,https://iniz.com/,1,0,0,0,,https://www.tilaa.com/en/terms-of-service/,EU6,NL US SG UK
@@ -35,6 +35,17 @@ Argentina,https://www.argentina.com/, BSD or just Linux?
 Delimiter,https://www.delimiter.com/,KVM,US6.95
 File Sanctuary,https://www.filesanctuary.net/,1,0,0,1,Cloud,,,https://www.filesanctuary.net/terms-of-service/,US14,
 Hub.Org,https://www.hub.org/,1,0,0,0,?,?,?,CA UK PA,
-
+IFDNRG,https://www.ifdnrg.com/,1,0,0,0,https://www.ifdnrg.com/about/terms/,GB4.99,UK,
+JohnCompanies,http://www.johncompanies.com/,1,0,0,0,Cloud,,,http://www.johncompanies.com/terms.html,US13.50,US,
+KwShell Internet Services,http://www.kwshells.com/,
+NQHost.com,https://nqhost.com/,1,1,0,0,Xen,,,https://nqhost.com/tos.html,US15,US RU DE,
+netcup GmbH,https://www.netcup.eu/,1,1,0,0,KVM,,,https://www.netcup.eu/bestellen/agb.php,EU4.99,DE,"open proxy services such as TOR" prohibited
+pair Networks,https://www.pair.com/,https://www.pair.com/company/policies.html,US29.95,US
+NYI,https://www.nyi.net/, 
+Polarhome,http://www.polarhome.com/,1,1,1,0,shell Jail,,,http://www.polarhome.com/service/policy.html,EU10,non-commercial multiple architectures
+Quonix,http://www.quonix.net/,http://www.quonix.net/aup.html,US31.50,US,
+SmartServ,http://www.smart-serv.net/,?,,,shell,http://www.smart-serv.net/index.php?page=terms,CND5,CA,"does not prohibit the use...Tor" OS?
+Solution Point,https://www.solutionpoint.in/,IN
+Tier1 Hosting,http://www.tier1hosting.net/,1,1,1,1,Cloud,,,US15.50,
 
 https://www.freebsd.org/commercial/isp.html
