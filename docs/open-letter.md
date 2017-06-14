@@ -6,9 +6,7 @@ Many people in the *BSD community know about TDP, whether from BSD conferences o
 
 It is well-known in the BSD community that there are dozens and dozens of major firms that employ BSD code and systems in their business, including your own. From enterprise-grade backup firms to internet service providers, the BSDs are a popular operating system option.
 
-<b>
-Taking The Mozilla Foundation's decision to run public Tor relays in Decmeber 2014 as an example, we believe that if BSD commercial firms volunteered to operate and maintain Tor relays, it would be an enormous asset to not just the PETs community who focus on enhancing uninhibited free speech and privacy, but also for the BSD community itself.
-</b>
+__Taking The Mozilla Foundation's decision to run public Tor relays in December 2014 as an example, we believe that if BSD commercial firms volunteered to operate and maintain Tor relays, it would be an enormous asset not just the PETs community who focus on enhancing uninhibited free speech and privacy, but also for the BSD community itself.__
 
 
 New York Internet (https://www.nyi.net/), a longtime FreeBSD data center firm, committed to running two high-bandwidth relays, maintained by their staff with assistance from TDP. We hope their example, as with the Mozilla Foundation, can inspire other firms to follow suit.
