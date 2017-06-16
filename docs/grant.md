@@ -20,6 +20,7 @@ FreeBSD		g
 Print copies
 
 building small x86 OpenBSD	g
+building small x86 FreeBSD	g
 
 * Promotion
 
