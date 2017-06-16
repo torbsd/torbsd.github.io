@@ -57,7 +57,7 @@ Relays
 X	BBB OpenBSD	g
 	RPI3 FreeBSD	g
 	PPC OpenBSD	g
-	replace NYCBUG0 and NYCBUG1	g
+	replace NYCBUG0 and NYCBUG1	g order 2xR210s
 
 * Quantifying
 	JSON stats on OS diversity	a
