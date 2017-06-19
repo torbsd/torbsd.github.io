@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ###Summary###
 
-OpenBSD is well-supported on [ARM version 7 hardware](https://www.openbsd.org/armv7.html) such as the [BeagleBon Black](https://beagleboard.org/black/). The AMX335x processor with 512MB of RAM is adequate for a Tor relay or bridge. As a small, fanless and low-power hardware platform, BeagleBone Blacks (BBB) are ideal for residential [Tor bridges](https://www.torproject.org/docs/bridges/).
+OpenBSD is well-supported on [ARM version 7 hardware](https://www.openbsd.org/armv7.html) such as the [BeagleBone Black](https://beagleboard.org/black/). The AMX335x processor with 512MB of RAM is adequate for a Tor relay or bridge. As a small, fanless and low-power hardware platform, BeagleBone Blacks (BBB) are ideal for residential [Tor bridges](https://www.torproject.org/docs/bridges/).
 
 To minimize the need for frequent updates, this example will use the OpenBSD -stable branch, which is released on the first of May and November each year. Secuirty updates to the operating system are simple with the new [syspatch](http://man.openbsd.org/syspatch) tool.
 
@@ -64,7 +64,7 @@ drwxr-xr-x  15 root  wheel   512B Jun 13 21:06 ../
 -rwxr-xr-x   2 root  wheel  10.1M Mar 25 16:39 bsd.rd*
 ```
 
-Install
+###Install###
 
 Insert the microSD card into the slot on the bottom of the BBB board.
 
@@ -84,9 +84,7 @@ The install target will be the eMMC storage on the BBB, and the microSD slot can
 
 
 
-
-
-Maintenance
+###Maintenance###
 
 As with other operating systems, both the base operating system and the applications require regular updates. OpenBSD provides 
 
