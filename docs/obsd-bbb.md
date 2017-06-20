@@ -14,7 +14,13 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 OpenBSD is well-supported on [ARM version 7 hardware](https://www.openbsd.org/armv7.html) such as the [BeagleBone Black](https://beagleboard.org/black/). The AMX335x processor with 512MB of RAM is adequate for a Tor relay or bridge. As a small, fanless and low-power hardware device, BeagleBone Blacks (BBB) are ideal for residential [Tor bridges](https://www.torproject.org/docs/bridges/).
 
-To minimize the need for frequent updates, this example will use the OpenBSD -stable branch, which is released on the first of May and November each year. Security updates to the operating system are simple with the new [syspatch](http://man.openbsd.org/syspatch) tool.
+As a Tor node, OpenBSD on a BeagleBone Black provides the benefit of more diversity to the Tor network. First, as Linux kernel-based operating systems account for some 95% of Tor public relays, OpenBSD is a distinct system which can disrupt the monoculture. OpenBSD's security approach is different, it's methods of randomly generating numbers is different, it uses [LibreSSL](https://www.libressl.org/) as opposed to the more popular OpenSSL, among many other differences.
+
+Additionally, most public Tor relays run on Intel/x86 computers, which represents another monoculture. Increasing diversity of hardware platforms in the Tor network potentially mitigate Intel/x86-specific vulnerabilities. Currently, most low-level hardware attacks are aimed at Intel/x86.
+
+To minimize the need for frequent updates, this example will use the OpenBSD -stable branch, which is released on the first of May and November each year. Security updates to the operating system are simple with the new [syspatch](http://man.openbsd.org/syspatch) tool. The downside of this decision is OpenBSD's -stable ports are not updated as frequently as the -current branch.
+
+OpenBSD only provides stable application releases in its ports tree, which means that the Tor-alpha ports and packages are not available.
 
 ###Hardware###
 
