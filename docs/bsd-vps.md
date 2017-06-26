@@ -1,6 +1,7 @@
 # List of VPS Entities and their Policies Regarding Tor
 #provider,wwwsite,FreeBSD,NetBSD,OpenBSD,OtherBSD,type,contact,contact_method,aup-tos,startingprice,countrycodes,notes
 
+```
 RootBSD,https://www.rootbsd.net/,1,0,1,0,Cloud,?,?,https://rootbsd.net/aup/,USD19.95,US CA plus,
 ARP Networks,https://arpnetworks.com/,1,0,1,0,?,?,https://arpnetworks.com/aup/,USD10,US DE
 Tilaa,https://www.tilaa.com/en,1,0,0,,,https://www.tilaa.com/en/terms-of-service,EU7.50,NL
@@ -47,5 +48,6 @@ SmartServ,http://www.smart-serv.net/,?,,,shell,http://www.smart-serv.net/index.p
 Solution Point,https://www.solutionpoint.in/,IN
 Tier1 Hosting,http://www.tier1hosting.net/,1,1,1,1,Cloud,,,US15.50,
 TransIP,https://www.transip.eu/,1,0,1,0,KVM,https://www.transip.eu/terms-of-service/,EU5
+```
 
 https://www.freebsd.org/commercial/isp.html
