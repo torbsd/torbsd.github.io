@@ -19,7 +19,7 @@ gleSYS,https://glesys.se/,
 Csoft.net Hosting,http://www.csoft.net/,
 prgmr.com,https://prgmr.com/xen/,1,1,1,0,Xen,,,https://prgmr.com/aup.html
 DBI Hosting,http://dbihosting.com/,1,1,1,0,Xen,,,
-henning
+BS Web Services,http://www.bsws.de/en,0,0,1,0,VMWare,,,EU23.80,http://www.bsws.de/en/aup/,DE
 bhost.net,https://www.bhost.net/,
 BSDvm,https://bsdvm.com/,shutting down,
 cloudsigma.com,https://www.cloudsigma.com/,
