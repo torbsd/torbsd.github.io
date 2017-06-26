@@ -1,15 +1,31 @@
 Greetings.
 
-The Tor BSD Diversity Project (https://torbsd.github.io/) is surveying VPS firms for their support of the BSD they provide, plus their acceptable use policies (AUP)towards running nodes for the Tor public anonymity network (https://www.torproject.org/).
+The Tor BSD Diversity Project (https://torbsd.github.io/) is surveying VPS and similar providers that provide BSD support about their acceptable use policy/terms of service (AUP/TOS) in regards to running nodes on the Tor public anonymity network (https://www.torproject.org/).
 
-Our aim is to provide a list of Tor-friendly providers for the general public for anyone interested in running a Tor relay or bridge in an accessible way without purchasing or maintaining server-grade hardware.
+Our aim is to create a public list of Tor-friendly providers for anyone interested in running a BSD Tor relay or bridge without purchasing or maintaining server-grade hardware.
 
-With that in mind, we would appreciate an authorized person from your first providing answers to our brief survey below based on your firm's AUP:
+We believe is it both feasible and business-wise to allow customers to run Tor relays, with an understanding that Tor is a critical tool for the wider pool of users to enjoy uncensored and private access to the internet.
 
-1. Does your firm allow Tor relays?
+With that in mind, we would appreciate an authorized person from your organization to provide answers to our brief survey below based on your firm's service and AUP/TOS:
 
-2. Exit traffic from Tor relays?
+In regards to BSD services provided:
 
-3. Tor bridges, which are privately listed which only allow entry Tor traffic for users blocked from public Tor network access?
+1. FreeBSD?
 
-4. Is your AUP something you would consider discussing further?
+2. NetBSD?
+
+3. OpenBSD?
+
+4. Other BSD?
+
+In regard to your service and running Tor:
+
+5. Does your AUP/TOS explicitly state your policies towards running Tor by users?
+
+6. Does your service allow Tor relays?
+
+7. Is exit traffic from Tor relays allowed?
+
+8. Tor bridges, which are privately listed nodes only allowing Tor traffic entering the network for users blocked from public Tor access?
+
+9. If your entity's AUP/TOS restricts users from running Tor, would you consider engaging in further discussions with TDP about changing it?
