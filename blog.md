@@ -10,6 +10,10 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or a Central Location for Announces and Notes##
 
+__June 2017__
+
+[Back to the Buildbot](#back-to-buildbot) [%sep]
+
 __April 2017__
 
 [Tor Summit 2017 in Amsterdam](#summit-2017-amsterdam) [%sep] [Android Overtaking Windows and OS Diversity](#android-takeover) [%sep] [What Motivates You to Run a Tor Relay?](#tor-motives)
@@ -72,6 +76,18 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20170626###
+
+<a id="back-to-buildbot">Back to the Buildbot</a> by gman999
+
+Christian S.'s [Tor BSD Buildbot](https://buildbot.pixelminers.net/) needs attention again. His Buildbot is a vital tool for Tor core developers to test the Tor development branch on various BSD versions and hardware platforms.
+
+The new 0.9.5 Buildbot software includes a number of noteworthy changes.
+
+First, the new site requires JavaScript enabled to view the site. Also, it is now necessary to make sure that Christian has the hostname and password for each individual Buildbot worker. He can be contacted through the [Tor-BSD](http://lists.nycbug.org/mailman/admin/tor-bsd).
+
+There are only two active Buildbot workers at this moment, NYCBUG0 and NYCBUG2. Time to get to update the BSD buildbot workers back online.
 
 ###20170415###
 
