@@ -85,7 +85,7 @@ Christian S.'s [Tor BSD Buildbot](https://buildbot.pixelminers.net/) needs atten
 
 The new 0.9.5 Buildbot software includes a number of noteworthy changes.
 
-First, the new site requires JavaScript enabled to view the site. Also, it is now necessary to make sure that Christian has the hostname and password for each individual Buildbot worker. He can be contacted through the [Tor-BSD](http://lists.nycbug.org/mailman/admin/tor-bsd).
+First, the new site requires JavaScript enabled to view the site. Also, it is now necessary to make sure that Christian has the hostname and password for each individual Buildbot worker. He can be contacted through the [Tor-BSD](http://lists.nycbug.org/mailman/listinfo/tor-bsd).
 
 There are only two active Buildbot workers at this moment, NYCBUG0 and NYCBUG2. Time to get to update the BSD buildbot workers back online.
 
