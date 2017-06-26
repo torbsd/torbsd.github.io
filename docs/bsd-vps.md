@@ -1,5 +1,5 @@
 # List of VPS Entities and their Policies Regarding Tor
-#provider,wwwsite,FreeBSD,NetBSD,OpenBSD,OtherBSD,type,contact,contact_method,aup-tos,startingprice,countrycodes,notes
+#provider,wwwsite,FreeBSD,NetBSD,OpenBSD,OtherBSD,type,contact,contact_method,aup-tos,startingprice,countrycodes,ipv6,notes
 
 ```
 ,,,,,,,,,,,,
@@ -51,6 +51,8 @@ SmartServ,http://www.smart-serv.net/,?,,,shell,http://www.smart-serv.net/index.p
 Solution Point,https://www.solutionpoint.in/,IN
 Tier1 Hosting,http://www.tier1hosting.net/,1,1,1,1,Cloud,,,US15.50,
 TransIP,https://www.transip.eu/,1,0,1,0,KVM,https://www.transip.eu/terms-of-service/,EU5
+Packet,https://www.packet.net/,1,0,0,0,https://www.packet.net/about/terms/aup/,US JP NL
+Snel.com,https://www.snel.com/,1,0,0,0,https://www.snel.com/terms-and-conditions/,EU9.95,NL
 ```
 
 https://www.freebsd.org/commercial/isp.html

@@ -32,7 +32,7 @@ Finally, a null modem cable with a "female" db9 connector is needed to access th
 
 The [full installation notes](https://ftp.openbsd.org/pub/OpenBSD/6.1/i386/INSTALL.i386) for OpenBSD's 6.1 i386 platform provides all the necessary steps for installation.
 
-The first step is to ensure the CF card is clean, and doesn't includes any residual data.
+The first step is to ensure the CF card is clean, and doesn't includes any residual data. The CF card will be the storage media for the OpenBSD system.
 
 The [dmesg 8](http://man.openbsd.org/dmesg) command displays the system's message buffer, which in this case shows that the 8GB (or 7815MB) CF card is assigned the /dev/sd2 device:
 
@@ -44,23 +44,39 @@ sd2: 7815MB, 512 bytes/sector, 16007040 sectors
 To completely wipe the CF card, use [dd 1](http://man.openbsd.org/dd) to write random data to the device:
 
 ```
-
+$ doas dd if=/dev/random of=/dev/rsd2c       
+dd: /dev/rsd2c: Input/output error
+1659677+0 records in
+1659676+0 records out
+849754112 bytes transferred in 5875.890 secs (144617 bytes/sec)
 
 ```_
 
+The same process can be used to wipe the USB flash media which will contain the bootable install files. dmesg(8) shows the following entry for the inserted 2GB flash device:
 
-The [OpenBSD mirror sites](https://www.openbsd.org/ftp.html) are available globally. The _miniroot-am335x-6.1fs_ file is available in the relative path of OpenBSD/6.1/armv7/ from the main mirror directory. For instance, to use the [ftp4 mirror in the US](https://ftp4.usa.openbsd.org/pub/OpenBSD/), navigate to the 6.1, then armv7 directory. OpenBSD maintains a simple version/architecture hierarchy in the mirror layout.
+```
+sd1 at scsibus4 targ 1 lun 0: <Generic, Flash Disk, 8.07> SCSI2 0/direct removable
+sd1: 1920MB, 512 bytes/sector, 3932160 sectors
+```
+
+Again, dd(1) will wipe the device with random characters, ensuring the device is clean.
+
+```
+XXXXX
+```
+
+The [OpenBSD mirror sites](https://www.openbsd.org/ftp.html) are available globally. The _install61.fs_ file is available in the relative path of OpenBSD/6.1/armv7/ from the main mirror directory. For instance, to use the [ftp4 mirror in the US](https://ftp4.usa.openbsd.org/pub/OpenBSD/), navigate to the 6.1, then i386 directory. OpenBSD maintains a simple version/architecture hierarchy in the mirror layout.
 
 Downloading the install set files, those ending in .tgz, is not necessary as the full install will be done over the internet in this example.
 
-To verify the integrity of the _miniroot-am335x-61.fs_ file, download the _SHA256_ file. For verifying the digital signature, also download the _SHA256.sig_ file. Instructions for checking both the file integrity and the digital signature on OpenBSD is available on [the project web site](https://www.openbsd.org/faq/faq4.html#Download).
+To verify the integrity of the _install61.fs_ file, download the _SHA256_ file. For verifying the digital signature, also download the _SHA256.sig_ file. Instructions for checking both the file integrity and the digital signature on OpenBSD is available on [the project web site](https://www.openbsd.org/faq/faq4.html#Download).
 
-Each operating system writes disk images differently to a microSD card and similar media. The Unix tool dd is avaible on most Unix and Unix-like systems.
+Each operating system writes disk images differently to flash and similar media. The Unix tool dd is avaible on most Unix and Unix-like systems.
 
-On OpenBSD, assuming that /dev/sd1 is the microSD card, the boot image is written like this:
+On OpenBSD, assuming that /dev/sd1 is the CF card, the boot image is written like this:
 
 ```
-$ dd if=nstall61.fs of=/dev/rsd1c
+$ dd if=install61.fs of=/dev/rsd1c
 ```
 
 Which should output something like:
@@ -70,6 +86,8 @@ Which should output something like:
 251658240 bytes transferred in 545.317 secs (461489 bytes/sec)
 
 ```
+
+The same wipe process can be done with the USB flash media, which will be used for the install.
 
 To confirm the data is written to the microSD card, mount it and check the contents:
 
@@ -87,6 +105,15 @@ drwxr-xr-x   2 root  wheel   512B Apr  1 16:23 etc/
 ```
 
 ###Install###
+
+Some devices can boot off USB, while others cannot. Alix3d boards do not boot off USB, therefore a boostrap laptop is used with the CF card as the install target.
+
+As mentioned previously, an ideal bootstrap computer might be a laptop with the hardware removed, to prevent overwriting the hard drive instead of the actual CF card install target.
+
+On the boostrap laptop, connect the USB CF card reader with the wiped CF card, and connect the USB flash media with the 6.1 i386 install files.
+
+
+
 
 The installation step requires connecting to the BBB with the serial cable with an ethernet connection, with the installation microSD card inserted in the BBB.
 
