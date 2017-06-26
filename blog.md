@@ -81,7 +81,7 @@ __October 2015__
 
 <a id="back-to-buildbot">Back to the Buildbot</a> by gman999
 
-Christian S.'s [Tor BSD Buildbot](https://buildbot.pixelminers.net/) needs attention again. His Buildbot is a vital tool for Tor core developers to test the Tor development branch on various BSD versions and hardware platforms.
+Christian S.'s [Tor BSD Buildbot](https://buildbot.pixelminers.net/) needs attention again. His Buildbot is a vital tool for Tor core developers to test the Tor development branch on the various BSDs and hardware platforms.
 
 The new 0.9.5 Buildbot software includes a number of noteworthy changes.
 
