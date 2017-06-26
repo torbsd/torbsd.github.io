@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __June 2017__
 
-[Back to the Buildbot](#back-to-buildbot) [%sep]
+[Back to the Buildbot](#back-to-buildbot)
 
 __April 2017__
 
