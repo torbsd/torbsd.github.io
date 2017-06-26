@@ -2,7 +2,6 @@
 #provider,wwwsite,FreeBSD,NetBSD,OpenBSD,OtherBSD,type,contact,contact_method,aup-tos,startingprice,countrycodes,ipv6,notes
 
 ```
-,,,,,,,,,,,,
 RootBSD,https://www.rootbsd.net/,1,0,1,0,Cloud,?,?,https://rootbsd.net/aup/,USD19.95,US CA plus,
 Devio.us,http://devio.us,0,0,1,0,shell,,,http://devio.us/policy,free,US,invite-only
 SDF Public Access Unix System,http://sdf.org,0,1,0,0,shell,,,http://sdf.org/?faq?BASICS?04,$US0.00,US,
@@ -53,6 +52,14 @@ Tier1 Hosting,http://www.tier1hosting.net/,1,1,1,1,Cloud,,,US15.50,
 TransIP,https://www.transip.eu/,1,0,1,0,KVM,https://www.transip.eu/terms-of-service/,EU5
 Packet,https://www.packet.net/,1,0,0,0,https://www.packet.net/about/terms/aup/,US JP NL
 Snel.com,https://www.snel.com/,1,0,0,0,https://www.snel.com/terms-and-conditions/,EU9.95,NL
+LeaseWeb,https://www.packet.net/about/terms/aup/,EU4.95,
+BlazingNode,http://blazingnode.net,
+Gandi.net,https://www.gandi.net/,1,0,0,0,Cloud,US4.17,1
+xotHost.com,https://www.xothost.com,1,0,0,0,KVM,,,https://www.xothost.com/legal,US5.00,US
+DigitalFyre,https://digitalfyre.com/,1,0,0,KVM,1,formerly CloudBSD?
+Serveraptor,https://www.serveraptor.com,1,1,1,1,US4.00,US PL
+MNX.io,https://mnx.io,1,0,0,0,Cloud,https://mnx.io/tos/,US5.00,US,"Tor exits or relays are prohibited at this time" plus July 16 2014 incident listed
+Cloud At Cost,http://cloudatcost.com,1,0,0,0,Cloud,CND17.50,CA
 ```
 
 https://www.freebsd.org/commercial/isp.html
