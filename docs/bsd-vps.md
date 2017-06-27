@@ -69,6 +69,7 @@ Hostigation,https://www.hostigation.com/,1,1,1,0,KVM,https://www.hostigation.com
 JoinVP.com,http://joinvps.com,1,0,0,0,VDSManager,US4.95,http://joinvps.com/terms_of_use_vps,US,"not allowed on JoinVP... the Onion Router (Tor) exit nodes."
 CS Squad Hosting,http://cs-squad.net/1,0,0,0,jail,,,http://cs-squad.net/legal-documents/aup/,FreeBSD 8.2?
 Encept,http://encept.com/,1,0,0,0,Xen,http://encept.com/legal-policies/terms-of-service/,US10.00,US,FreeBSD 8.1?
+Blinkenshell,https://blinkenshell.org/,0,0,1,0,shell,,,https://blinkenshell.org/wiki/Info/Rules,free,
 ```
 
 https://www.freebsd.org/commercial/isp.html
