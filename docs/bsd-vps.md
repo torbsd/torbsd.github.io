@@ -2,10 +2,10 @@
 #provider,wwwsite,FreeBSD,NetBSD,OpenBSD,OtherBSD,type,contact,contact_method,aup-tos,startingprice,countrycodes,ipv6,notes
 
 ```
-RootBSD,https://www.rootbsd.net/,1,0,1,0,Cloud,?,?,https://rootbsd.net/aup/,USD19.95,US CA plus,
+RootBSD,https://www.rootbsd.net/,1,0,1,0,Cloud,?,?,https://rootbsd.net/aup/,US19.95,US CA plus,
 Devio.us,http://devio.us,0,0,1,0,shell,,,http://devio.us/policy,free,US,invite-only
-SDF Public Access Unix System,http://sdf.org,0,1,0,0,shell,,,http://sdf.org/?faq?BASICS?04,$US0.00,US,
-ARP Networks,https://arpnetworks.com/,1,0,1,0,?,?,https://arpnetworks.com/aup/,USD10,US DE,
+SDF Public Access Unix System,http://sdf.org,0,1,0,0,shell,,,http://sdf.org/?faq?BASICS?04,US0.00,US,
+ARP Networks,https://arpnetworks.com/,1,0,1,0,?,?,https://arpnetworks.com/aup/,US10,US DE,
 Tilaa,https://www.tilaa.com/en,1,0,0,,,https://www.tilaa.com/en/terms-of-service,EU7.50,NL,
 INIZ,https://iniz.com/,1,0,0,0,,https://www.tilaa.com/en/terms-of-service/,EU6,NL US SG UK,
 Vultr.com,https://www.vultr.com/,
