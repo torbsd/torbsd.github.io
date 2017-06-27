@@ -10,11 +10,10 @@ Tilaa,https://www.tilaa.com/en,1,0,0,,,https://www.tilaa.com/en/terms-of-service
 INIZ,https://iniz.com/,1,0,0,0,,https://www.tilaa.com/en/terms-of-service/,EU6,NL US SG UK,
 Vultr.com,https://www.vultr.com/,
 Green Cloud,http://gogreencloud.com/,
-Hetzner Online GmbH,https://www.hetzner.de/en/,
-ovh.com,https://www.ovh.com/,
-Low End Box,https://lowendbox.com/,
-Digital Ocean,https://www.digitalocean.com/,
-VDS6.net,https://vds6.net/,
+Hetzner Online GmbH,https://www.hetzner.de/en/,EU3.90,https://www.hetzner.com/rechtliches/agb,
+ovh.com,https://www.ovh.com/,site doesn't allow Tor?
+Digital Ocean,https://www.digitalocean.com/,Cloudflare site not accessible via Tor
+VDS6.net,https://vds6.net/,1,0,0,0,jail,https://vds6.net/tos/,US9.99,NL UA BG,1,"TOR" listed as "resulting (in) instant termination wtihout notice..."
 gleSYS,https://glesys.se/,
 Csoft.net Hosting,http://www.csoft.net/,
 prgmr.com,https://prgmr.com/xen/,1,1,1,0,Xen,,,https://prgmr.com/aup.html
@@ -36,7 +35,7 @@ All My Data,https://www.amdwebhost.com/,1,0,1,0,shell,,,https://www.amdwebhost.c
 Argentina,https://www.argentina.com/, BSD or just Linux?
 Delimiter,https://www.delimiter.com/,KVM,US6.95
 File Sanctuary,https://www.filesanctuary.net/,1,0,0,1,Cloud,,,https://www.filesanctuary.net/terms-of-service/,US14,
-Hub.Org,https://www.hub.org/,1,0,0,0,?,?,?,CA UK PA,
+Hub.Org,https://www.hub.org/,1,0,0,0,?,?,?,US19.00,CA UK PA,0,,
 IFDNRG,https://www.ifdnrg.com/,1,0,0,0,https://www.ifdnrg.com/about/terms/,GB4.99,UK,
 JohnCompanies,http://www.johncompanies.com/,1,0,0,0,Cloud,,,http://www.johncompanies.com/terms.html,US13.50,US,
 KwShell Internet Services,http://www.kwshells.com/,
@@ -60,6 +59,11 @@ DigitalFyre,https://digitalfyre.com/,1,0,0,KVM,1,formerly CloudBSD?
 Serveraptor,https://www.serveraptor.com,1,1,1,1,US4.00,US PL
 MNX.io,https://mnx.io,1,0,0,0,Cloud,https://mnx.io/tos/,US5.00,US,"Tor exits or relays are prohibited at this time" plus July 16 2014 incident listed
 Cloud At Cost,http://cloudatcost.com,1,0,0,0,Cloud,CND17.50,CA
+QuadraNet,https://www.quadranet.com/,1,0,0,0,Cloud,https://www.quadranet.com/terms-of-service,US
+Webair,https://www.webair.com,
+EUserv,https://www.euserve.com/en/,site requires JavaScript
+ArmorShark
 ```
 
 https://www.freebsd.org/commercial/isp.html
+https://lowendbox.com/tag/freebsd/
