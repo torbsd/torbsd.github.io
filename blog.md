@@ -93,7 +93,7 @@ Cheap systems with a public IP are also a great way to tinker with a new operati
 
 For this reason, __TDP__ created this list of BSD VPS providers. Some explicitly deny running Tor as a server. Some just reference vague "proxy services." Others don't mention Tor or proxies at all.
 
-https://github.com/torbsd/torbsd.github.io/blob/master/docs/bsd-vps.md
+[https://github.com/torbsd/torbsd.github.io/blob/master/docs/bsd-vps.md](https://github.com/torbsd/torbsd.github.io/blob/master/docs/bsd-vps.md)
 
 Our current fields, with comma-separated values to easy shell manipulation include:
 
