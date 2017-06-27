@@ -95,14 +95,14 @@ For this reason, __TDP__ created this list of BSD VPS providers. Some explicitly
 
 [https://github.com/torbsd/torbsd.github.io/blob/master/docs/bsd-vps.md](https://github.com/torbsd/torbsd.github.io/blob/master/docs/bsd-vps.md)
 
-Our current fields, with comma-separated values to easy shell manipulation include:
+The current fields, with comma-separated values for easy Unix shell manipulation, include:
 
 * provider name
 * www site
 * 1/0 for FreeBSD, NetBSD, OpenBSD and other BSDs
 * type of provider, such as Xen, VMWare, FreeBSD Jails, KVM or "the cloud", although we are still wondering what that exactly means
 * the contact and the contact method, based on our future dialog
-* the URL of the acceptable user policies/terms of service, where providers usually state forbidden activities
+* the URL of the acceptable use policy/terms of service, where providers usually state forbidden activities
 * the starting price for the cheapest VPS option
 * the two-digit country code(s) of the VPS facilities
 * 1/0 for IPv6 support
