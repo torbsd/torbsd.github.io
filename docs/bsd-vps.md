@@ -53,7 +53,7 @@ Packet,https://www.packet.net/,1,0,0,0,https://www.packet.net/about/terms/aup/,U
 Snel.com,https://www.snel.com/,1,0,0,0,https://www.snel.com/terms-and-conditions/,EU9.95,NL
 LeaseWeb,https://www.packet.net/about/terms/aup/,EU4.95,
 BlazingNode,http://blazingnode.net,
-Gandi.net,https://www.gandi.net/,1,0,0,0,Cloud,US4.17,1
+Gandi.net,https://www.gandi.net/,1,0,0,0,Cloud,https://www.gandi.net/contracts/all_contracts/,US4.17,1,dig for the AUP/TOS
 xotHost.com,https://www.xothost.com,1,0,0,0,KVM,,,https://www.xothost.com/legal,US5.00,US
 DigitalFyre,https://digitalfyre.com/,1,0,0,KVM,1,formerly CloudBSD?
 Serveraptor,https://www.serveraptor.com,1,1,1,1,US4.00,US PL
