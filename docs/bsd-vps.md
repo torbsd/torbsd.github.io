@@ -51,7 +51,7 @@ Tier1 Hosting,http://www.tier1hosting.net/,1,1,1,1,Cloud,,,US15.50,
 TransIP,https://www.transip.eu/,1,0,1,0,KVM,https://www.transip.eu/terms-of-service/,EU5
 Packet,https://www.packet.net/,1,0,0,0,https://www.packet.net/about/terms/aup/,US JP NL
 Snel.com,https://www.snel.com/,1,0,0,0,https://www.snel.com/terms-and-conditions/,EU9.95,NL
-LeaseWeb,https://www.packet.net/about/terms/aup/,EU4.95,
+LeaseWeb,https://www.leaseweb.com/,EU4.95,site requires JavaScript
 BlazingNode,http://blazingnode.net,
 Gandi.net,https://www.gandi.net/,1,0,0,0,Cloud,https://www.gandi.net/contracts/all_contracts/,US4.17,1,dig for the AUP/TOS
 xotHost.com,https://www.xothost.com,1,0,0,0,KVM,,,https://www.xothost.com/legal,US5.00,US
