@@ -62,7 +62,11 @@ sd1: 1920MB, 512 bytes/sector, 3932160 sectors
 Again, dd(1) will wipe the device with random characters, ensuring the device is clean.
 
 ```
-XXXXX
+s dd if=/dev/zero of=/dev/rsd1c 
+dd: /dev/rsd1c: end of device
+3932161+0 records in
+3932160+0 records out
+2013265920 bytes transferred in 4287.774 secs (469536 bytes/sec)
 ```
 
 The [OpenBSD mirror sites](https://www.openbsd.org/ftp.html) are available globally. The _install61.fs_ file is available in the relative path of OpenBSD/6.1/armv7/ from the main mirror directory. For instance, to use the [ftp4 mirror in the US](https://ftp4.usa.openbsd.org/pub/OpenBSD/), navigate to the 6.1, then i386 directory. OpenBSD maintains a simple version/architecture hierarchy in the mirror layout.
@@ -73,31 +77,37 @@ To verify the integrity of the _install61.fs_ file, download the _SHA256_ file. 
 
 Each operating system writes disk images differently to flash and similar media. The Unix tool dd is avaible on most Unix and Unix-like systems.
 
-On OpenBSD, assuming that /dev/sd1 is the CF card, the boot image is written like this:
+On OpenBSD, assuming that /dev/sd1 is the USB flash media, the boot image is written like this:
 
 ```
-$ dd if=install61.fs of=/dev/rsd1c
+$ doas dd if=install61.fs of=/dev/rsd1c bs=1m                                  
 ```
 
 Which should output something like:
 ```
-491520+0 records in
-491520+0 records out
-251658240 bytes transferred in 545.317 secs (461489 bytes/sec)
-
+240+0 records in
+240+0 records out
+251658240 bytes transferred in 46.148 secs (5453199 bytes/sec)
 ```
 
 The same wipe process can be done with the USB flash media, which will be used for the install.
 
+```
+$ doas dd if=/dev/zero of=/dev/rsd1c 
+dd: /dev/rsd1c: end of device
+3932161+0 records in
+3932160+0 records out
+2013265920 bytes transferred in 4287.774 secs (469536 bytes/sec)
+```
+
 To confirm the data is written to the microSD card, mount it and check the contents:
 
 ```
-$ mount /dev/sd1a /mnt
-
+$ doas mount /dev/sd1a /mnt
 $ ls /mnt/                                                                     
 total 7382
 drwxr-xr-x   4 root  wheel   512B Apr  1 16:23 ./
-drwxr-xr-x  15 root  wheel   512B Jun 13 21:06 ../
+drwxr-xr-x  15 root  wheel   512B Jun 25 18:49 ../
 drwxr-xr-x   3 root  wheel   512B Apr  1 16:23 6.1/
 -rw-r--r--   1 root  wheel  85.2K Apr  1 16:23 boot
 -rw-r--r--   1 root  wheel   3.5M Apr  1 16:23 bsd
