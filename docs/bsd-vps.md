@@ -25,7 +25,7 @@ cloudsigma.com,https://www.cloudsigma.com/,
 GigeNET Cloud,https://www.gigenetcloud.com/,,1,0,0,https://www.gigenetcloud.com/legal/aup/,US,
 Host1.no,https://host1.no/en/,https://host1.no/en/tos/,
 Interoute Germany GmbH,http://www.interoute-deutschland.de/en/start/,
-NQhost.com,https://nqhost.com/,1,1,0,Xen,https://nqhost.com/,US DE RU
+NQhost.com,https://nqhost.com/,1,1,1,0,Xen,http://nqhost.com/tos/tos.pdf,US7.00,US DE RU
 Hosting.co.uk,https://www.hosting.co.uk/vps-hosting/freebsd-vps-hosting/,1,0,0,https://www.hosting.co.uk/usage-policy/
 Tiny KVM Linux and BSD VPS hosting,https://tinykvm.com/,1,0,1,https://tinykvm.com/terms.php
 Atlantic.net,https://atlantic.net/,
@@ -62,7 +62,13 @@ Cloud At Cost,http://cloudatcost.com,1,0,0,0,Cloud,CND17.50,CA
 QuadraNet,https://www.quadranet.com/,1,0,0,0,Cloud,https://www.quadranet.com/terms-of-service,US
 Webair,https://www.webair.com,
 EUserv,https://www.euserve.com/en/,site requires JavaScript
-ArmorShark
+SSD Nodes,https://www.ssdnodes.com/,BSD support?
+AmerINOC,http://www.amerinoc.com/,
+xenSmart,xsensmart.co.uk,1,1,1,1,Xen,,,http://www.xensmart.co.uk/tos.php,GB3.99,UK,users cannot "provide a public proxy"
+Hostigation,https://www.hostigation.com/,1,1,1,0,KVM,https://www.hostigation.com/?page=TOS,US1.40,US,"We do not allow the use of anonymous proxy scripts on our servers"
+JoinVP.com,http://joinvps.com,1,0,0,0,VDSManager,US4.95,http://joinvps.com/terms_of_use_vps,US,"not allowed on JoinVP... the Onion Router (Tor) exit nodes."
+CS Squad Hosting,http://cs-squad.net/1,0,0,0,jail,,,http://cs-squad.net/legal-documents/aup/,FreeBSD 8.2?
+Encept,http://encept.com/,1,0,0,0,Xen,http://encept.com/legal-policies/terms-of-service/,US10.00,US,FreeBSD 8.1?
 ```
 
 https://www.freebsd.org/commercial/isp.html
