@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __June 2017__
 
-[Back to the Buildbot](#back-to-buildbot)
+[Back to the Buildbot](#back-to-buildbot) [%sep] [BSD VPS Providers Needed](#bsd-vps)
 
 __April 2017__
 
@@ -77,7 +77,45 @@ __October 2015__
 
 [From the Attic](#attic)
 
+###20170627###
+
+<a id="bsd-vps">BSD VPS Providers Needed</a> by gman999
+
+One of __TDP's__ recent projects is accumulating a list of virtual private server services (VPS) that provide a BSD option.
+
+VPS's are generally inexpensive services that enable the user to only deal with software configuration, and not be bothered with hardware or basic operating system setup. In the pre-Cloud era, VPS providers were the "other people's computers" that users outsourced their systems to.
+
+The same shortcomings of cloud services apply to VPS providers. You don't control the hardware. Your files are likely viewable by users up the directory hierarchy. The entropy source is a single source for multiple systems. The same time drift applies to all time-keeping services.
+
+Nevertheless, VPS services are often cheap and provide a good spread in terms of geography. All a provider really needs is a few server-grade computers and a decent internet connection. VPS's are still a gateway drug to bare-metal servers, although it seems more and more of these gateway users stop at stage one.
+
+Cheap systems with a public IP are also a great way to tinker with a new operating system.
+
+For this reason, __TDP__ created this list of BSD VPS providers. Some explicitly deny running Tor as a server. Some just reference vague "proxy services." Others don't mention Tor or proxies at all.
+
+https://github.com/torbsd/torbsd.github.io/blob/master/docs/bsd-vps.md
+
+Our current fields, with comma-separated values to easy shell manipulation include:
+
+* provider name
+* www site
+* 1/0 for FreeBSD, NetBSD, OpenBSD and other BSDs
+* type of provider, such as Xen, VMWare, FreeBSD Jails, KVM or "the cloud", although we are still wondering what that exactly means
+* the contact and the contact method, based on our future dialog
+* the URL of the acceptable user policies/terms of service, where providers usually state forbidden activities
+* the starting price for the cheapest VPS option
+* the two-digit country codes of the VPS facilities
+* IPv6 support
+* and finally, any relevant notes, like the odd persistence of Cloudflare for VPS web sites, when one would imagine that a solid provider would host their own web site
+
+The list is a start with just under 70 VPS providers. Input through various channels already started, and __TDP__ intends to update the list in the coming months. A first draft email and open letter were drafted, and we are looking to speak directly to at least some of the better-known BSD VPS providers.
+
+We may be able to convince a few to allow public Tor relays, or at least published bridges. These providers could be new BSD users' gateway drug into the world of BSD Tor nodes.
+
+Let us know via email or GitHub, and we'll be glad to make updates.
+
 ###20170626###
+
 
 <a id="back-to-buildbot">Back to the Buildbot</a> by gman999
 

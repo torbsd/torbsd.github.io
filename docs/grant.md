@@ -49,10 +49,12 @@ VPS
 OpenBSD Ports
 	tor-alpha instructions
 		mtier?	a
-	obfsproxy	a
+	obfsproxy4	a
+		https://git.torproject.org/pluggable-transports/obfs4.git
 	chroot instructions/into port?
+	onion-py
 
-pf rulesets
+pf rulesets	a
 
 Relays
 X	BBB OpenBSD	g
