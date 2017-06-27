@@ -8,28 +8,28 @@ SDF Public Access Unix System,http://sdf.org,0,1,0,0,shell,,,http://sdf.org/?faq
 ARP Networks,https://arpnetworks.com/,1,0,1,0,?,?,https://arpnetworks.com/aup/,US10,US DE,
 Tilaa,https://www.tilaa.com/en,1,0,0,,,https://www.tilaa.com/en/terms-of-service,EU7.50,NL,
 INIZ,https://iniz.com/,1,0,0,0,,https://www.tilaa.com/en/terms-of-service/,EU6,NL US SG UK,
-Vultr.com,https://www.vultr.com/,
-Green Cloud,http://gogreencloud.com/,
+Vultr.com,https://www.vultr.com/,CloudFlare security check
+Green Cloud,http://gogreencloud.com/,site requires JavaScript
 Hetzner Online GmbH,https://www.hetzner.de/en/,EU3.90,https://www.hetzner.com/rechtliches/agb,
 ovh.com,https://www.ovh.com/,site doesn't allow Tor?
 Digital Ocean,https://www.digitalocean.com/,Cloudflare site not accessible via Tor
 VDS6.net,https://vds6.net/,1,0,0,0,jail,https://vds6.net/tos/,US9.99,NL UA BG,1,"TOR" listed as "resulting (in) instant termination wtihout notice..."
-gleSYS,https://glesys.se/,
+gleSYS,https://glesys.se/,site requires JavaScript
 Csoft.net Hosting,http://www.csoft.net/,
 prgmr.com,https://prgmr.com/xen/,1,1,1,0,Xen,,,https://prgmr.com/aup.html
 DBI Hosting,http://dbihosting.com/,1,1,1,0,Xen,,,
 BS Web Services,http://www.bsws.de/en,0,0,1,0,VMWare,,,EU23.80,http://www.bsws.de/en/aup/,DE
 bhost.net,https://www.bhost.net/,
-BSDvm,https://bsdvm.com/,shutting down,
+BSDvm,https://bsdvm.com/,shutting down,Cloudflare captcha
 cloudsigma.com,https://www.cloudsigma.com/,
 GigeNET Cloud,https://www.gigenetcloud.com/,,1,0,0,https://www.gigenetcloud.com/legal/aup/,US,
-Host1.no,https://host1.no/en/,https://host1.no/en/tos/,
+Host1.no,https://host1.no/en/,https://host1.no/en/tos/,BSD offered?
 Interoute Germany GmbH,http://www.interoute-deutschland.de/en/start/,
 NQhost.com,https://nqhost.com/,1,1,1,0,Xen,http://nqhost.com/tos/tos.pdf,US7.00,US DE RU
 Hosting.co.uk,https://www.hosting.co.uk/vps-hosting/freebsd-vps-hosting/,1,0,0,https://www.hosting.co.uk/usage-policy/
-Tiny KVM Linux and BSD VPS hosting,https://tinykvm.com/,1,0,1,https://tinykvm.com/terms.php
+Tiny KVM Linux and BSD VPS hosting,https://tinykvm.com/,1,0,1,0,https://tinykvm.com/terms.php
 Atlantic.net,https://atlantic.net/,
-M5 Hosting,http://www.m5hosting.com/,1,0,0,0,Cloud,US12,US
+M5 Hosting,http://www.m5hosting.com/,1,0,0,0,Cloud,http://www.m5hosting.com/acceptable-use-policy.php,US12.00,US DE
 Rackspace,https://www.rackspace.com/,https://www.rackspace.com/information/legal/aup/
 All My Data,https://www.amdwebhost.com/,1,0,1,0,shell,,,https://www.amdwebhost.com/tos/,US2.95,US UK NL FR AT DE JP
 Argentina,https://www.argentina.com/, BSD or just Linux?
