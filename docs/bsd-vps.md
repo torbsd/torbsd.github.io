@@ -2,7 +2,7 @@
 #provider,wwwsite,FreeBSD,NetBSD,OpenBSD,OtherBSD,type,contact,contact_method,aup-tos,startingprice,countrycodes,ipv6,notes
 
 ```
-RootBSD,https://www.rootbsd.net/,1,0,1,0,Cloud,?,?,https://rootbsd.net/aup/,US19.95,US CA plus,
+RootBSD,https://www.rootbsd.net/,1,0,1,0,Cloud,?,?,https://rootbsd.net/aup/,US19.95,US CA plus Asia and Europe,1,"may NOT be used ...(c)ontent that, in our sole judgment, is designed to function as a 'Tor relay' service or website"
 Devio.us,http://devio.us,0,0,1,0,shell,,,http://devio.us/policy,free,US,invite-only
 SDF Public Access Unix System,http://sdf.org,0,1,0,0,shell,,,http://sdf.org/?faq?BASICS?04,US0.00,US,
 ARP Networks,https://arpnetworks.com/,1,0,1,0,?,?,https://arpnetworks.com/aup/,US10,US DE,
