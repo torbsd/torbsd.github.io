@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __June 2017__
 
-[BSD VPS Providers Needed](#bsd-vps) [%sep] [Back to the Buildbot](#back-to-buildbot)
+[OnionOO/JSON-based Stats](#onionoo-stats-1) [%sep] [BSD VPS Providers Needed](#bsd-vps) [%sep] [Back to the Buildbot](#back-to-buildbot)
 
 __April 2017__
 
@@ -76,6 +76,17 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20170630###
+
+<a id="onionoo-stats-1">OnionOO/JSON-Based Statistics Reports</a> by attila
+
+Preliminary work on switching over to [OnionOO](https://onionoo.torproject.org)'s
+JSON data for the Tor network is completed.  We just put up a repository
+with some scripts and sample output: [tdp-onion-stats](https://github.com/torbsd/tdp-onion-stats).
+It is a work in progress but is good enough to replace our old
+[Quick-and-Dirty Static Reports](dirty-stats.html), which were generated
+from the old, non-JSON, non-historical data sources.
 
 ###20170627###
 
