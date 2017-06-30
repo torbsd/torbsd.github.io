@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>The Tor BSD Diversity Project: OnionOO/JSON-based Statistics</title>
+	<link type="text/css" rel="stylesheet" href="torbsd.css"/>
+	<meta name="author" content="attila"/>
+	<meta name="editors" content="attila, gman"/>
+	<meta name="data" content="2017-06-30"/>
+	<meta name="x-note" content="These lines at the top are multimarkdown metadata; leave them."/>
+	<meta name="sep" content="&amp;#8916;"/>
+</head>
+<body>
+
+<h1 id="thetorbsddiversityprojecttdp"><a href="index.html">The Tor BSD Diversity Project (TDP)</a></h1>
+
+<p>&#8916; <a href="blog.html">Blog</a> &#8916; <a href="faq.html">Frequently Asked Questions</a> &#8916; <a href="resources.html">Resources</a> &#8916; <a href="https://github.com/torbsd/">GitHub Repositories</a> &#8916; <a href="contact.html">Contact</a> &#8916; <a href="http://bptfp7py2wclht26.onion/">TDP Hidden Service</a> &#8916;</p>
+
+<p><strong><a href="projects.html">The TDP Projects</a>:</strong><br/>
+&#8916; <a href="https://github.com/torbsd/openbsd-ports/">Tor Browser for OpenBSD</a> &#8916; <a href="relay-guides.html">BSD Tor Relay Guides</a> &#8916; <a href="corp-relays.html">BSD Firm Relays</a> &#8916; <a href="porting-pets.html">Porting Targets for PETs</a> &#8916; <a href="dirty-stats.html">Quick-and-Dirty Static Reports</a> &#8916;</p>
+
+<h2 id="diversity-orientedstatisticsreports">Diversity-Oriented Statistics Reports</h2>
+
+<p>This project aims at producing simple, relevant reports for making
+broad conclusions about the network diversity of the public Tor relay
+network, based on the new
+<a href="https://onionoo.torproject.org">JSON Statistics Data</a> put out by the
+Tor Project. While primarily providing a glance at the Tor network&#8217;s
+current state, some may find it useful for presentations or static,
+broad snapshots of Tor. This work is based on the simple
+<a href="dirty-stats.html">Quick and Dirty Statistics</a> scripts that gman999
+wrote over a year ago. We intend to move forward based on the new
+raw statistics to provide a view of various diversity-oriented
+metrics over various periods of time.</p>
+
+<p>This is easier now because OnionOO can provide us with
+<a href="https://onionoo.torproject.org/#history">historical data over a few useful time slices</a>.
+For instance, we can get consensus weight over the last week, three
+weeks, month, or year.</p>
+
+<p><strong>TDP</strong> focuses primarily on operating system diversity, specifically
+as related to BSD Unix, but such diversity applies to more than just
+number of relays by operating system. Other considerations are
+important, such as average bandwidth per relay by operating system,
+geographical diversity, and so on.</p>
+
+<h3 id="currentreports">Current Reports</h3>
+
+<p>Our current reports are simple point-in-time snapshots. We are
+working on producing reports in historical context, e.g. over the
+last year, month, week.</p>
+
+<h4 id="asreports">AS Reports</h4>
+
+<ul>
+<li><a href="oostats/bw-by-as.txt">Autonomous System Numbers Ranked by Bandwidth</a></li>
+<li><a href="oostats/bw-by-asn.txt">Autonomous System Names Ranked by Bandwidth</a></li>
+<li><a href="oostats/cweight-by-as.txt">Autonomous System Numbers Ranked by Total Consensus Weight Fraction</a></li>
+<li><a href="oostats/cweight-by-asn.txt">Autonomous System Names Ranked by Total Consensus Weight Fraction</a></li>
+</ul>
+
+<h4 id="countryreports">Country Reports</h4>
+
+<ul>
+<li><a href="oostats/bw-by-cc.txt">Country Codes Ranked by Bandwidth</a></li>
+<li><a href="oostats/cweight-by-cc.txt">Contry Codes Ranked by Total Consensus Weight Fraction</a></li>
+</ul>
+
+<h4 id="operatingsystemreports">Operating System Reports</h4>
+
+<ul>
+<li><a href="oostats/bw-by-os.txt">Operating Systems Ranked by Bandwidth</a></li>
+<li><a href="oostats/cweight-by-os.txt">Operating Systems Ranked by Total Consensus Weight Fraction</a></li>
+<li><a href="oostats/os-count.txt">Operating Systems Count</a></li>
+</ul>
+
+<h4 id="torversionsinusereports">Tor Versions in Use Reports</h4>
+
+<ul>
+<li><a href="oostats/bw-by-vers.txt">Tor Versions in Use Ranked by Bandwidth</a></li>
+<li><a href="oostats/cweight-by-vers.txt">Tor Versions in Use Ranked by Total Consensus Weight Fraction</a></li>
+<li><a href="oostats/vers-count.txt">Tor Versions Count</a></li>
+</ul>
+
+<p><hr></p>
+
+<p><em>Copyright &copy; 2017 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
+
+<p><code>last updated: Fri Jun 30 23:32:36 2017 UTC</code></p>
+
+</body>
+</html>

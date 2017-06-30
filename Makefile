@@ -24,6 +24,7 @@ PAGES=		index.html \
 		corp-relays.html \
 		blog.html \
 		dirty-stats.html \
+		oostats.html \
 		support-us.html \
 		porting-pets.html \
 		projects.html \
@@ -68,6 +69,7 @@ doc-guide.html: doc-guide.md $(BOILERPLATE)
 corp-relays.html: corp-relays.md $(BOILERPLATE)
 blog.html: blog.md $(BOILERPLATE)
 dirty-stats.html: dirty-stats.md $(BOILERPLATE)
+oostats.html: oostats.md $(BOILERPLATE)
 support-us.html: support-us.md $(BOILERPLATE)
 porting-pets.html: porting-pets.md $(BOILERPLATE)
 projects.html: projects.md $(BOILERPLATE)
