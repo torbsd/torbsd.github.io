@@ -14,9 +14,9 @@ This project aims at producing simple, relevant reports for making
 broad conclusions about the network diversity of the public Tor relay
 network, based on the new
 [JSON Statistics Data](https://onionoo.torproject.org) put out by the
-Tor Project.  While primarily providing a glance at the Tor network's
+Tor Project. While primarily providing a glance at the Tor network's
 current state, some may find it useful for presentations or static,
-broad snapshots of Tor.
+snapshots of Tor.
 
 This work is based on the simple
 [Quick and Dirty Statistics](dirty-stats.html) scripts that gman999
@@ -36,9 +36,9 @@ Autonomous System, and so on.
 
 ### Current Reports ###
 
-Our current reports are simple point-in-time snapshots.  We are
-working on producing reports in historical context, e.g.  over the
-last year, month, week.  You can check out the
+Our current reports are simple point-in-time snapshots. We are
+working on producing reports in historical context, e.g. over the
+last year, month, week. You can check out the
 [scripts](https://github.com/torbsd/tdp-onion-stats) we wrote to
 produce the reports; please feel free to open tickets in the GH Issue
 tracker if you find problems or have patches.
