@@ -82,7 +82,7 @@ __October 2015__
 <a id="onionoo-stats-1">OnionOO/JSON-Based Statistics Reports</a> by attila
 
 Preliminary work on switching over to [OnionOO](https://onionoo.torproject.org)'s
-JSON data for the Tor network is completed.  We just put up a repository
+JSON data for the Tor network is completed. We just put up a repository
 with some scripts and sample output: [tdp-onion-stats](https://github.com/torbsd/tdp-onion-stats).
 It is a work in progress but is good enough to replace our old
 [Quick-and-Dirty Static Reports](dirty-stats.html), which were generated
