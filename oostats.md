@@ -16,13 +16,14 @@ network, based on the new
 [JSON Statistics Data](https://onionoo.torproject.org) put out by the
 Tor Project.  While primarily providing a glance at the Tor network's
 current state, some may find it useful for presentations or static,
-broad snapshots of Tor.  This work is based on the simple
-[Quick and Dirty Statistics](dirty-stats.html) scripts that gman999
-wrote over a year ago.  We intend to move forward based on the new
-raw statistics to provide a view of various diversity-oriented
-metrics over various periods of time.
+broad snapshots of Tor.
 
-This is easier now because OnionOO can provide us with
+This work is based on the simple
+[Quick and Dirty Statistics](dirty-stats.html) scripts that gman999
+wrote over a year ago.  We intend to move forward based on the new raw
+statistics to provide a view of various diversity-oriented metrics
+over various periods of time.  This is easier now because OnionOO can
+provide us with
 [historical data over a few useful time slices](https://onionoo.torproject.org/#history).
 For instance, we can get consensus weight over the last week, three
 weeks, month, or year.
@@ -31,7 +32,7 @@ __TDP__ focuses primarily on operating system diversity, specifically
 as related to BSD Unix, but such diversity applies to more than just
 number of relays by operating system. Other considerations are
 important, such as average bandwidth per relay by operating system,
-geographical diversity, and so on.
+Autonomous System, and so on.
 
 ### Current Reports ###
 
@@ -41,6 +42,10 @@ last year, month, week.  You can check out the
 [scripts](https://github.com/torbsd/tdp-onion-stats) we wrote to
 produce the reports; please feel free to open tickets in the GH Issue
 tracker if you find problems or have patches.
+
+For now we are updating the reports manually every week and only
+producing plain text.  HTML output and automated updates are in the
+works.
 
 #### AS Reports ####
 

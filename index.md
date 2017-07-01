@@ -26,7 +26,9 @@ tangential projects including [pfSense](https://www.pfsense.org/),
 for innumerable devices on the Internet. Firms such as Netflix, WhatsApp and Juniper rely on BSD systems and code to build and maintain resilient services and  
 devices.
 
-Originating at the University of California in the 1970's, BSD software is renowned for its Internet infrastructure role since its earliest days.
+Originating at the University of California in the 1970's, BSD
+software is renowned for its Internet infrastructure role since its
+earliest days.
 
 The Tor Project plays a critical component for internet anonymity
 and privacy solutions. With increasing surveillance and censorship,
@@ -56,13 +58,13 @@ Current __TDP__ [work](projects.html) includes:
 * [The creation of OpenBSD Tor Browser ports](https://github.com/torbsd/openbsd-ports/);
 
 * Organizing various events for engaging BSD users about Tor,
-  including presentations, birds-of-a-feather sessions and informal meetings;
+including presentations, birds-of-a-feather sessions and informal meetings;
 
 * [Enlisting BSD-using entities](corp-relays.html) to operate Tor relays;
 
 * Accumulating and maintaining a list of privacy-enhancing related ports and their statuses on the BSDs, in a project entitled [Porting Targets for PETs](porting-pets.html);
 
-* Maintaining a set of reports entitled ["Quick-and-Dirty Statistics"](dirty-stats.html) which provide snapshots of public Tor relay diversity;
+* Maintaining a set of reports entitled [Diversity-Oriented Statistics](oostats.html) which provide snapshots of public Tor relay diversity;
 
 We look forward to inquiries about and involvement in __TDP__.  Fork our [code]
 (https://github.com/torbsd/), submit patches, run a BSD relay and let us know if __TDP__ documentation was useful.

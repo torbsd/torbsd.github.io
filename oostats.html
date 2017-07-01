@@ -17,7 +17,7 @@
 <p>&#8916; <a href="blog.html">Blog</a> &#8916; <a href="faq.html">Frequently Asked Questions</a> &#8916; <a href="resources.html">Resources</a> &#8916; <a href="https://github.com/torbsd/">GitHub Repositories</a> &#8916; <a href="contact.html">Contact</a> &#8916; <a href="http://bptfp7py2wclht26.onion/">TDP Hidden Service</a> &#8916;</p>
 
 <p><strong><a href="projects.html">The TDP Projects</a>:</strong><br/>
-&#8916; <a href="https://github.com/torbsd/openbsd-ports/">Tor Browser for OpenBSD</a> &#8916; <a href="relay-guides.html">BSD Tor Relay Guides</a> &#8916; <a href="corp-relays.html">BSD Firm Relays</a> &#8916; <a href="porting-pets.html">Porting Targets for PETs</a> &#8916; <a href="dirty-stats.html">Quick-and-Dirty Static Reports</a> &#8916;</p>
+&#8916; <a href="https://github.com/torbsd/openbsd-ports/">Tor Browser for OpenBSD</a> &#8916; <a href="relay-guides.html">BSD Tor Relay Guides</a> &#8916; <a href="corp-relays.html">BSD Firm Relays</a> &#8916; <a href="porting-pets.html">Porting Targets for PETs</a> &#8916; <a href="oostats.html">Diversity-Oriented Statistics</a> &#8916;</p>
 
 <h2 id="diversity-orientedstatisticsreports">Diversity-Oriented Statistics Reports</h2>
 
@@ -27,13 +27,14 @@ network, based on the new
 <a href="https://onionoo.torproject.org">JSON Statistics Data</a> put out by the
 Tor Project. While primarily providing a glance at the Tor network&#8217;s
 current state, some may find it useful for presentations or static,
-broad snapshots of Tor. This work is based on the simple
-<a href="dirty-stats.html">Quick and Dirty Statistics</a> scripts that gman999
-wrote over a year ago. We intend to move forward based on the new
-raw statistics to provide a view of various diversity-oriented
-metrics over various periods of time.</p>
+broad snapshots of Tor.</p>
 
-<p>This is easier now because OnionOO can provide us with
+<p>This work is based on the simple
+<a href="dirty-stats.html">Quick and Dirty Statistics</a> scripts that gman999
+wrote over a year ago. We intend to move forward based on the new raw
+statistics to provide a view of various diversity-oriented metrics
+over various periods of time. This is easier now because OnionOO can
+provide us with
 <a href="https://onionoo.torproject.org/#history">historical data over a few useful time slices</a>.
 For instance, we can get consensus weight over the last week, three
 weeks, month, or year.</p>
@@ -42,7 +43,7 @@ weeks, month, or year.</p>
 as related to BSD Unix, but such diversity applies to more than just
 number of relays by operating system. Other considerations are
 important, such as average bandwidth per relay by operating system,
-geographical diversity, and so on.</p>
+Autonomous System, and so on.</p>
 
 <h3 id="currentreports">Current Reports</h3>
 
@@ -52,6 +53,10 @@ last year, month, week. You can check out the
 <a href="https://github.com/torbsd/tdp-onion-stats">scripts</a> we wrote to
 produce the reports; please feel free to open tickets in the GH Issue
 tracker if you find problems or have patches.</p>
+
+<p>For now we are updating the reports manually every week and only
+producing plain text. HTML output and automated updates are in the
+works.</p>
 
 <h4 id="asreports">AS Reports</h4>
 
@@ -89,7 +94,7 @@ tracker if you find problems or have patches.</p>
 
 <p><em>Copyright &copy; 2017 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Fri Jun 30 23:38:27 2017 UTC</code></p>
+<p><code>last updated: Sat Jul  1 03:46:48 2017 UTC</code></p>
 
 </body>
 </html>
