@@ -3,7 +3,7 @@ The Tor BSD Diversity Project
 https://torbsd.github.io/
 Network Diversity Statistics Reports
 
-Report Date: Fri Jun 30 20:24:00 UTC 2017
+Report Date: Sun Jul  2 21:10:15 UTC 2017
 Data Source: https://onionoo.torproject.org
 
 NETWORK BANDWIDTH BY TOR VERSION
@@ -77,7 +77,7 @@ TOTAL (7087)           29037537051.0
 0.2.5.6-alpha (1)      91832.0 (0.0%)
 
 
-Copyright (C) 2017 by Tor Diversity Project <tdp@nycbug.org>
+Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
 All Rights Reserved.
 
 Released under an ISC license; see the GitHub repository

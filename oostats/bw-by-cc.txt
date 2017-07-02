@@ -3,7 +3,7 @@ The Tor BSD Diversity Project
 https://torbsd.github.io/
 Network Diversity Statistics Reports
 
-Report Date: Fri Jun 30 20:24:01 UTC 2017
+Report Date: Sun Jul  2 21:10:16 UTC 2017
 Data Source: https://onionoo.torproject.org
 
 NETWORK BANDWIDTH BY COUNTRY
@@ -94,7 +94,7 @@ gt (1)            56883.0 (0.0%)
 ps (1)            43008.0 (0.0%)
 
 
-Copyright (C) 2017 by Tor Diversity Project <tdp@nycbug.org>
+Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
 All Rights Reserved.
 
 Released under an ISC license; see the GitHub repository

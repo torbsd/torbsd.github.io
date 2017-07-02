@@ -3,7 +3,7 @@ The Tor BSD Diversity Project
 https://torbsd.github.io/
 Network Diversity Statistics Reports
 
-Report Date: Fri Jun 30 20:24:01 UTC 2017
+Report Date: Sun Jul  2 21:10:17 UTC 2017
 Data Source: https://onionoo.torproject.org
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1103,8 +1103,8 @@ Manche Telecom (1)                                       65536.0 (0.0%)
 JEFFERSON CO. CABLE, INC. (1)                            65429.0 (0.0%)
 Telemar Norte Leste S.A. (1)                             64512.0 (0.0%)
 Firm BALTTELEKOM (1)                                     63918.0 (0.0%)
-GOSTARESH-E-ERTEBATAT-E MABNA COMPANY (Private Joi (1)   62464.0 (0.0%)
 CityLanCom LTD (1)                                       62464.0 (0.0%)
+GOSTARESH-E-ERTEBATAT-E MABNA COMPANY (Private Joi (1)   62464.0 (0.0%)
 PT Telekomunikasi Indonesia (2)                          62312.0 (0.0%)
 H88 S.A. (1)                                             60596.0 (0.0%)
 ennit server GmbH (1)                                    59658.0 (0.0%)
@@ -1127,7 +1127,7 @@ Starnet Servicii SRL (1)                                 0.0 (0.0%)
 CONECTA LTDA. (1)                                        0.0 (0.0%)
 
 
-Copyright (C) 2017 by Tor Diversity Project <tdp@nycbug.org>
+Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
 All Rights Reserved.
 
 Released under an ISC license; see the GitHub repository

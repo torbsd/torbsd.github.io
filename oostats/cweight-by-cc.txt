@@ -3,7 +3,7 @@ The Tor BSD Diversity Project
 https://torbsd.github.io/
 Network Diversity Statistics Reports
 
-Report Date: Fri Jun 30 20:24:01 UTC 2017
+Report Date: Sun Jul  2 21:10:16 UTC 2017
 Data Source: https://onionoo.torproject.org
 
 CONSENSUS WEIGHT FRACTION BY COUNTRY
@@ -85,15 +85,15 @@ mn (1)            0.0%
 gt (1)            0.0%
 py (1)            0.0%
 ir (3)            0.0%
-tn (2)            0.0%
 pk (1)            0.0%
 ke (1)            0.0%
+tn (2)            0.0%
 mk (1)            0.0%
 uy (1)            0.0%
 ps (1)            0.0%
 
 
-Copyright (C) 2017 by Tor Diversity Project <tdp@nycbug.org>
+Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
 All Rights Reserved.
 
 Released under an ISC license; see the GitHub repository
