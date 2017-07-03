@@ -53,6 +53,7 @@ OpenBSD Ports
 		https://git.torproject.org/pluggable-transports/obfs4.git
 	chroot instructions/into port?
 	onion-py
+	onionshare
 
 pf rulesets	a
 
