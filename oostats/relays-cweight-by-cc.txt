@@ -3,13 +3,13 @@ The Tor BSD Diversity Project
 https://torbsd.github.io/
 Network Diversity Statistics Reports
 
-Report Type: relays
-Report Date: Fri Jul 28 18:25:14 UTC 2017
-Data Source: https://onionoo.torproject.org
+Report Type: RELAYS
+Report Date: Fri Jul 28 20:04:05 UTC 2017
+Data Source: https://onionoo.torproject.org/details.json
 
 CONSENSUS WEIGHT FRACTION BY COUNTRY
 
-COUNTRY (count)   CONSENSUS_WEIGHT_FRAC
+COUNTRY (records)  CONSENSUS_WEIGHT_FRAC
 ================  =============================================================
 fr (953)          26.0%
 de (1414)         21.9%
@@ -89,8 +89,8 @@ ke (1)            0.0%
 ir (3)            0.0%
 mg (1)            0.0%
 bh (1)            0.0%
-dz (1)            0.0%
 re (1)            0.0%
+dz (1)            0.0%
 uy (1)            0.0%
 
 

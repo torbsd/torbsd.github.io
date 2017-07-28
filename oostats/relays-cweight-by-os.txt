@@ -3,13 +3,13 @@ The Tor BSD Diversity Project
 https://torbsd.github.io/
 Network Diversity Statistics Reports
 
-Report Type: relays
-Report Date: Fri Jul 28 18:25:12 UTC 2017
-Data Source: https://onionoo.torproject.org
+Report Type: RELAYS
+Report Date: Fri Jul 28 20:04:03 UTC 2017
+Data Source: https://onionoo.torproject.org/details.json
 
 CONSENSUS WEIGHT FRACTION BY OPERATING SYSTEM
 
-OS (count)                      CONSENSUS_WEIGHT_FRAC
+OS (records)                    CONSENSUS_WEIGHT_FRAC
 ==============================  ===============================================
 Linux (6408)                    93.3%
 FreeBSD (267)                   5.5%
