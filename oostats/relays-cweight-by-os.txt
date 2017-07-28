@@ -4,8 +4,8 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Fri Jul 28 20:04:03 UTC 2017
-Data Source: https://onionoo.torproject.org/details.json
+Report Date: Fri Jul 28 20:09:24 UTC 2017
+Data Source: https://onionoo.torproject.org/details
 
 CONSENSUS WEIGHT FRACTION BY OPERATING SYSTEM
 
