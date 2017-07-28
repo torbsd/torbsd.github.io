@@ -3,7 +3,8 @@ The Tor BSD Diversity Project
 https://torbsd.github.io/
 Network Diversity Statistics Reports
 
-Report Date: Fri Jul 28 17:14:57 UTC 2017
+Report Type: relays
+Report Date: Fri Jul 28 18:25:12 UTC 2017
 Data Source: https://onionoo.torproject.org
 
 RELAY COUNTS BY OPERATING SYSTEM
@@ -19,9 +20,9 @@ Darwin (13)                     13.0 (0.2%)
 SunOS (4)                       4.0 (0.1%)
 ElectroBSD (4)                  4.0 (0.1%)
 DragonFly (2)                   2.0 (0.0%)
-GNU/kFreeBSD (1)                1.0 (0.0%)
-NetBSD MOS Technology 6510 (1)  1.0 (0.0%)
 NetBSD (1)                      1.0 (0.0%)
+NetBSD MOS Technology 6510 (1)  1.0 (0.0%)
+GNU/kFreeBSD (1)                1.0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>

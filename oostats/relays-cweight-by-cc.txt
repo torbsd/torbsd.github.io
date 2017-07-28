@@ -3,7 +3,8 @@ The Tor BSD Diversity Project
 https://torbsd.github.io/
 Network Diversity Statistics Reports
 
-Report Date: Fri Jul 28 17:14:59 UTC 2017
+Report Type: relays
+Report Date: Fri Jul 28 18:25:14 UTC 2017
 Data Source: https://onionoo.torproject.org
 
 CONSENSUS WEIGHT FRACTION BY COUNTRY

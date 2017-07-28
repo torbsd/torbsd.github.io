@@ -3,7 +3,8 @@ The Tor BSD Diversity Project
 https://torbsd.github.io/
 Network Diversity Statistics Reports
 
-Report Date: Fri Jul 28 17:14:59 UTC 2017
+Report Type: relays
+Report Date: Fri Jul 28 18:25:15 UTC 2017
 Data Source: https://onionoo.torproject.org
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1040,8 +1041,8 @@ JSC RTComm.RU (1)                                        115487.0 (0.0%)
 Princeton University (1)                                 114960.0 (0.0%)
 ConSol Consulting & Solutions Software GmbH (1)          114038.0 (0.0%)
 012 Smile Communications LTD. (1)                        113777.0 (0.0%)
-Source XS B.V. (1)                                       113664.0 (0.0%)
 LOGTEL TELECOMUNICACOES E INFORMATICA LTDA ME (1)        113664.0 (0.0%)
+Source XS B.V. (1)                                       113664.0 (0.0%)
 mywire Datentechnik GmbH (1)                             113449.0 (0.0%)
 Binariang Berhad (1)                                     110688.0 (0.0%)
 Closed Joint Stock Company CROC incorporated (1)         108747.0 (0.0%)
@@ -1095,8 +1096,8 @@ Telmex Colombia S.A. (1)                                 61282.0 (0.0%)
 Nagasaki Cable Media Inc. (1)                            59307.0 (0.0%)
 H88 S.A. (1)                                             59112.0 (0.0%)
 RFTkabel Brandenburg GmbH (1)                            57877.0 (0.0%)
-COPEL Telecomunicações S.A. (1)                        56320.0 (0.0%)
 JSC Vostoktelecom (1)                                    56320.0 (0.0%)
+COPEL Telecomunicações S.A. (1)                        56320.0 (0.0%)
 green.ch AG (1)                                          55736.0 (0.0%)
 BIGLOBE Inc. (1)                                         55397.0 (0.0%)
 Administracion Nacional de Telecomunicaciones (1)        55296.0 (0.0%)

@@ -47,28 +47,29 @@ For now we are updating the reports manually every week and only
 producing plain text.  HTML output and automated updates are in the
 works.
 
-#### AS Reports ####
+#### Relay Reports ####
 
-* [Autonomous System Numbers Ranked by Bandwidth](oostats/bw-by-as.txt)
-* [Autonomous System Names Ranked by Bandwidth](oostats/bw-by-asn.txt)
-* [Autonomous System Numbers Ranked by Total Consensus Weight Fraction](oostats/cweight-by-as.txt)
-* [Autonomous System Names Ranked by Total Consensus Weight Fraction](oostats/cweight-by-asn.txt)
+* [Autonomous System Numbers Ranked by Bandwidth](oostats/relays-bw-by-as.txt)
+* [Autonomous System Names Ranked by Bandwidth](oostats/relays-bw-by-asn.txt)
+* [Autonomous System Numbers Ranked by Total Consensus Weight Fraction](oostats/relays-cweight-by-as.txt)
+* [Autonomous System Names Ranked by Total Consensus Weight Fraction](oostats/relays-cweight-by-asn.txt)
 
-#### Country Reports ####
+* [Country Codes Ranked by Bandwidth](oostats/relays-bw-by-cc.txt)
+* [Contry Codes Ranked by Total Consensus Weight Fraction](oostats/relays-cweight-by-cc.txt)
 
-* [Country Codes Ranked by Bandwidth](oostats/bw-by-cc.txt)
-* [Contry Codes Ranked by Total Consensus Weight Fraction](oostats/cweight-by-cc.txt)
+* [Operating Systems Ranked by Bandwidth](oostats/relays-bw-by-os.txt)
+* [Operating Systems Ranked by Total Consensus Weight Fraction](oostats/relays-cweight-by-os.txt)
+* [Operating Systems Count](oostats/relays-os-count.txt)
 
-#### Operating System Reports ####
+* [Tor Versions in Use Ranked by Bandwidth](oostats/relays-bw-by-vers.txt)
+* [Tor Versions in Use Ranked by Total Consensus Weight Fraction](oostats/relays-cweight-by-vers.txt)
+* [Tor Versions Count](oostats/relays-vers-count.txt)
 
-* [Operating Systems Ranked by Bandwidth](oostats/bw-by-os.txt)
-* [Operating Systems Ranked by Total Consensus Weight Fraction](oostats/cweight-by-os.txt)
-* [Operating Systems Count](oostats/os-count.txt)
+#### Bridge Reports ####
 
-#### Tor Versions in Use Reports ####
-
-* [Tor Versions in Use Ranked by Bandwidth](oostats/bw-by-vers.txt)
-* [Tor Versions in Use Ranked by Total Consensus Weight Fraction](oostats/cweight-by-vers.txt)
-* [Tor Versions Count](oostats/vers-count.txt)
+* [Operating Systems Ranked by Bandwidth](oostats/bridges-bw-by-os.txt)
+* [Operating Systems Count](oostats/bridges-os-count.txt)
+* [Operating System/Transport Composite Count](oostats/bridges-trans-os.txt)
+* [Transports Count](oostats/bridges-trans-count.txt)
 
 {{footer.md}}
