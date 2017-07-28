@@ -13,7 +13,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 This project aims at producing simple, relevant reports for making
 broad conclusions about the network diversity of the public Tor relay
 network, based on the new
-[JSON Statistics Data](https://onionoo.torproject.org) put out by the
+[JSON Statistics Data](https://metrics.torproject.org/onionoo.html) put out by the
 Tor Project. While primarily providing a glance at the Tor network's
 current state, some may find it useful for presentations or static,
 snapshots of Tor.
@@ -24,7 +24,7 @@ wrote over a year ago.  We intend to move forward based on the new raw
 statistics to provide a view of various diversity-oriented metrics
 over various periods of time.  This is easier now because OnionOO can
 provide us with
-[historical data over a few useful time slices](https://onionoo.torproject.org/#history).
+[historical data over a few useful time slices](https://metrics.torproject.org/onionoo.html#history)
 For instance, we can get consensus weight over the last week, three
 weeks, month, or year.
 
