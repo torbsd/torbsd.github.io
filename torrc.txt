@@ -59,8 +59,11 @@ WarnPlaintextPorts
 # On hourly basis, send a heartbeat indicating client usage, uptime, bandwidth
 HeartbeatPeriod 1hours
 
-# Enable obfsproxy
+# Enable obfsproxy2/3
 ServerTransportPlugin obfs2,obfs3 exec /usr/local/bin/obfsproxy managed
+
+# Enable obfsproxy4
+ServerTransportPlugin obfs4 exec /usr/local/bin/obfsproxy managed
 
 # TCP Port for obfsproxy and pluggable transports. Setting to 'auto' means 
 # the port will be dynamically assign on Tor startup

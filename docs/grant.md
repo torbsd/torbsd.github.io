@@ -28,6 +28,17 @@ TDP business cards	g
 
 NYC Public Meeting	g
 
+NYC Bridge Meeting
+	with signup
+	preorder: APUs, BBBs, RPIs
+	serial cables (both)
+	install media (all)
+	sample torrc
+
+	print out/post bridge OS diversity numbers
+		follow up and compare for months after
+		NYC-related ASNs
+
 Firm Relays		g
 	NYI
 	direct queries, face-to-face
