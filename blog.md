@@ -85,13 +85,13 @@ __October 2015__
 
 <a id="getting-sick">Getting Sick</a> by gman999
 
-Bananas are a recurring topic for __TDP__. Not because we are particularly strong fans of them, but because the new stories about the Cavendish banana monoculture just don't stop. Understanding the pitfalls of monocultures in the Tor network is easy enough on some levels, but having an example of the banana monoculture makes the case clear to all.
+Bananas are a recurring topic for __TDP__. Not because we are particularly strong fans of them, but because the news stories about the Cavendish banana monoculture just don't stop. Understanding the pitfalls of monocultures in the Tor network is easy enough on some levels, but having an example of a popular and well-documented monoculture makes the case clear to all.
 
-The New York Times ran an article today entitled [The Secret Life of the Urban Banana](https://www.nytimes.com/2017/08/04/nyregion/the-secret-life-of-the-banana.html). Mostly focused on the dynamics of the New York City banana importing and distribution, the article also points to the dangers of the banana monoculture.
+The New York Times ran an article today entitled [The Secret Life of the Urban Banana](https://www.nytimes.com/2017/08/04/nyregion/the-secret-life-of-the-banana.html). Mostly focused on the dynamics of New York City's banana importing and distribution, the article also points to the dangers of the banana monoculture.
 
-Based in the Bronx's Hunts Point Produce Market, Top Banana's Joe Palumbo diversified his own distribution business fearing solely relying on bananas, faced with low profit margins.
+Based in the Bronx's Hunts Point Produce Market, Top Banana's Joe Palumbo diversified his own distribution business fearing solely relying on bananas, faced with low-profit margins.
 
-The author of "Bananas: The Fate of the Fruit that Changed the World", Dan Koeppel, explains how today's Cavendish monoculture resulted from the previous Gros Michel monoculture. You probably haven't had a Gros Michel banana recently, as the Panama Disease wiped out commercial production by 1960.
+The author of "Bananas: The Fate of the Fruit that Changed the World", Dan Koeppel, explains how today's Cavendish monoculture resulted from the previous Gros Michel banana monoculture. You probably haven't had a Gros Michel banana recently, as the Panama Disease wiped out commercial production by 1960.
 
 While the Cavenish banana succeeded the Gros Michel as it was resistant to the particular strain of the Panama Disease, it required more extensive infrastructure to ship and store the more fragile Cavendish.
 
@@ -99,7 +99,9 @@ Many realize the dangers of the new monoculture, as the Cavendish could be wiped
 
 There is consensus from scientists and laypeople alike that the Cavendish monoculture is poised for collapse, just like previous Gros Michel monoculture debacle.
 
-Monocultures certainly maintain benefits of easily scaling production and a simple common-body of knowledge in cultivation, but as Mr. Koeppel is quoted, "when one gets sick, they all get sick."
+Monocultures certainly maintain benefits of easily scaling production and a simple common-body of knowledge for cultivation, but as Mr. Koeppel is quoted, "when one gets sick, they all get sick."
+
+How about this statistic about Tor bridge [operating system diversity](https://torbsd.github.io/oostats/bridges-os-count.txt)? Enjoying a Gros Michel banana is more likely today than hitting a non-Linux kernel-based bridge.
 
 ###20170630###
 
