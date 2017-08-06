@@ -6,7 +6,7 @@
 
 The Tor Project's [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en) are a mitigation measure against deep-packet inspection, a.k.a. DPI. Commonly deployed on Tor bridges, [obfs4proxy](https://github.com/Yawning/obfs4/blob/master/doc/obfs4-spec.txt) is the [most common PT in use](https://torbsd.github.io/oostats/bridges-trans-count.txt).
 
-Unfortunately, there is currently no official FreeBSD or OpenBSD support for obfs4, which means that the operating system diversity of obfs4proxy providers is [dismal](https://torbsd.github.io/oostats/bridges-trans-os.txt).
+There is currently no official FreeBSD or OpenBSD support for obfs4, which means that the operating system diversity of obfs4proxy providers is [dismal](https://torbsd.github.io/oostats/bridges-trans-os.txt).
 
 __TDP__ is working to change that.
 
