@@ -1,8 +1,8 @@
  [%sep] [Testing obfs4proxy on FreeBSD](#welcome-obfs4-fbsd)
 
-###20170805###
+###20170807###
 
-<a id="welcome-obfs4-fbsd">Testing obfs4proxy on FreeBSD</a> by gman999
+<a id="welcome-obfs4">Testing obfs4proxy on FreeBSD and OpenBSD</a> by gman999
 
 The Tor Project's [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en) are a mitigation measure against deep-packet inspection, a.k.a. DPI. Commonly deployed on Tor bridges, [obfs4proxy](https://github.com/Yawning/obfs4/blob/master/doc/obfs4-spec.txt) is the [most common PT in use](https://torbsd.github.io/oostats/bridges-trans-count.txt).
 
@@ -10,13 +10,13 @@ There is currently no official FreeBSD or OpenBSD support for obfs4, which means
 
 __TDP__ is working to change that.
 
-While our Tor Browser for OpenBSD doesn't yet support PTs, we've made some significant steps recently.
+While our Tor Browser for OpenBSD doesn't yet support PTs on the client side, we've made some significant steps recently.
 
-Vinicius built a security/obfs4proxy with the two previously unported dependencies, security/go-ed25519 and security/go-siphash for FreeBSD, and it's on our [GitHub repo](https://github.com/torbsd/freebsd-ports/tree/egypcio/security).
+Vinicius built [security/obfs4proxy](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/obfs4proxy) with the two previously unported dependencies, [security/go-ed25519](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-ed25519) and [security/go-siphash](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-siphash) for FreeBSD.
 
 We also have net/obfs4proxy for OpenBSD -current, ready for testing.
 
-Within our [openbsd-ports project](https://github.com/torbsd/openbsd-ports), resides [net/obfs4proxy](https://github.com/torbsd/openbsd-ports/tree/master/net/obfs4proxy), along with the required and unofficially ported [devel/go-goptlib](https://github.com/torbsd/openbsd-ports/tree/master/devel/go-goptlib), [security/go-ed25519](https://github.com/torbsd/openbsd-ports/tree/master/security/go-ed25519), [security/go-siphash](https://github.com/torbsd/openbsd-ports/tree/master/security/go-siphash).
+Within our [openbsd-ports project](https://github.com/torbsd/openbsd-ports) resides [net/obfs4proxy](https://github.com/torbsd/openbsd-ports/tree/master/net/obfs4proxy), along with the required and unofficially ported [devel/go-goptlib](https://github.com/torbsd/openbsd-ports/tree/master/devel/go-goptlib), [security/go-ed25519](https://github.com/torbsd/openbsd-ports/tree/master/security/go-ed25519), [security/go-siphash](https://github.com/torbsd/openbsd-ports/tree/master/security/go-siphash).
 
 What can you do?
 
