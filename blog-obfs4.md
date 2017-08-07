@@ -10,13 +10,17 @@ Unfortunately, there is currently no official FreeBSD or OpenBSD support for obf
 
 __TDP__ is working to change that.
 
-While our Tor Browser for OpenBSD doesn't yet support PTs, we've finally embarked on the first steps. Vinicius built a security/obfs4proxy with its two dependencies, security/go-ed25519 and security/go-siphash for FreeBSD, and it's on our [GitHub repo](https://github.com/torbsd/freebsd-ports/tree/egypcio/security).
+While our Tor Browser for OpenBSD doesn't yet support PTs, we've made some significant steps recently.
 
-At this point, it needs review and testing.
+Vinicius built a security/obfs4proxy with the two previously unported dependencies, security/go-ed25519 and security/go-siphash for FreeBSD, and it's on our [GitHub repo](https://github.com/torbsd/freebsd-ports/tree/egypcio/security).
+
+We also have net/obfs4proxy for OpenBSD -current, ready for testing.
+
+Within our [openbsd-ports project](https://github.com/torbsd/openbsd-ports), resides [net/obfs4proxy](https://github.com/torbsd/openbsd-ports/tree/master/net/obfs4proxy), along with the required and unofficially ported [devel/go-goptlib](https://github.com/torbsd/openbsd-ports/tree/master/devel/go-goptlib), [security/go-ed25519](https://github.com/torbsd/openbsd-ports/tree/master/security/go-ed25519), [security/go-siphash](https://github.com/torbsd/openbsd-ports/tree/master/security/go-siphash).
 
 What can you do?
 
-If you're running a FreeBSD Tor bridge, grab the source and build it.
+If you're running a FreeBSD or OpenBSD Tor bridge, grab the source and build it.
 
 Adding obfs4proxy support to a Tor bridge is easy, with the addition of a single line:
 
@@ -27,7 +31,7 @@ ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy -enableLogging \
 
 Note the logging options with _-enableLogging_ and _-logLevel info_. Neither is required, but watching the service on a bridge is useful, particularly in this phase of development.
 
-With _info_ level logging enabled, the log, residing in the Tor data subdirectory pt_state/obfs4proxy.log, should show something like this:
+With _info_ level logging enabled, the log, residing in the Tor data directory pt_state/obfs4proxy.log, should show something like this:
 
 ```
 2017/08/05 18:03:29 [NOTICE]: obfs4proxy-0.0.7 - launched
@@ -36,11 +40,9 @@ With _info_ level logging enabled, the log, residing in the Tor data subdirector
 2017/08/05 18:03:29 [INFO]: obfs4proxy - accepting connections
 ```
 
-Feedback, comments and patches are appreciated, preferably as a [GitHub issue](https://github.com/torbsd/freebsd-ports/issues).
+Feedback, comments and patches are appreciated, preferably as a GitHub issue for [FreeBSD](https://github.com/torbsd/freebsd-ports/issues) or [OpenBSD](https://github.com/torbsd/openbsd-ports/issues).
 
-The OpenBSD version of obfs4proxy should be ready for public testing soon.
-
-Both will be submitted to the respective ports trees.
+Both will be submitted to the respective ports trees in due time.
 
 A final general note on obfsproxy. For obvious obfuscation purposes, the TCP port obfs4 listens on is randomized, although the same port will be used between restarts. That causes an issue for anyone running a bridge on a residential connection, where some form of port forwarding by port and protocol is necessary.
 
