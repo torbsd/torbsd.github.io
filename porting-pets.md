@@ -43,7 +43,7 @@ __tool-name__
 : Site: [https://firstlook.org/code/project/autocanary/](https://firstlook.org/code/project/autocanary/)
 : License: [GPLv3](https://github.com/firstlook/autocanary/blob/master/LICENSE.md)
 : Source: [https://github.com/firstlook/autocanary/](https://github.com/firstlook/autocanary/)
-: Version: 0.1
+: Version: 0.2.0
 : FreeBSD: no
 : OpenBSD: no
 : NetBSD: no
@@ -67,7 +67,7 @@ __tool-name__
 : Site: [http://etherpad.org/](http://etherpad.org/)
 : License: [Apache 2.0](https://github.com/ether/etherpad-lite/blob/develop/LICENSE/)
 : Source: [https://github.com/ether/etherpad-lite/](https://github.com/ether/etherpad-lite/)
-: Version: 1.5.7
+: Version: 1.6.1
 : FreeBSD: no
 : OpenBSD: no
 : NetBSD: no
@@ -80,8 +80,8 @@ __tool-name__
 : Description: tool for editing, reading, writing metadata on a variety of file types
 : Site: [http://owl.phy.queensu.ca/~phil/exiftool/](http://owl.phy.queensu.ca/~phil/exiftool/)
 : License: [Perl](http://owl.phy.queensu.ca/~phil/exiftool/#license)
-: Source: [http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.13.tar.gz](http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.13.tar.gz)
-: Version: 10.13
+: Source: [http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.60.tar.gz](http://owl.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.60.tar.gz)
+: Version: 10.60
 : FreeBSD: yes
 : OpenBSD: yes
 : NetBSD: yes
@@ -91,8 +91,8 @@ __tool-name__
 : Description: command-line utility to manage image metadata
 : Site: [http://www.exiv2.org/](http://www.exiv2.org/)
 : License: [GPLv2 or commercial](http://www.exiv2.org/download.html#license)
-: Source: [http://www.exiv2.org/exiv2-0.25.tar.gz](http://www.exiv2.org/exiv2-0.25.tar.gz)
-: Version: 0.25
+: Source: [http://www.exiv2.org/exiv2-0.26.tar.gz](http://www.exiv2.org/exiv2-0.26.tar.gz)
+: Version: 0.26
 : FreeBSD: yes
 : OpenBSD: yes
 : NetBSD: yes
@@ -127,7 +127,7 @@ __tool-name__
 : Site: [https://firstlook.org/code/project/pdf-redact-tools/](https://firstlook.org/code/project/pdf-redact-tools/)
 : License: [GPLv3](https://github.com/firstlook/pdf-redact-tools/blob/master/LICENSE)
 : Source: [https://github.com/firstlook/pdf-redact-tools/](https://github.com/firstlook/pdf-redact-tools/)
-: Version: 0.1
+: Version: 0.1.2
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: yes
@@ -139,7 +139,7 @@ __tool-name__
 
 <a id="pkg-mailpile">__Mailpile__</a>
 : Description: fast webmail client with built-in security features
-: Site: [https://www.mailpile.is](https://www.mailpile.is/)
+: Site: [https://www.mailpile.is/](https://www.mailpile.is/)
 : License: [AGPLv3](https://github.com/mailpile/Mailpile/)
 : Source: [https://github.com/mailpile/Mailpile/](https://github.com/mailpile/Mailpile/)
 : Version: 0.5.2
@@ -178,7 +178,7 @@ __tool-name__
 : Site: [https://trac.torproject.org/projects/tor/wiki/torbirdy/](https://trac.torproject.org/projects/tor/wiki/torbirdy/)
 : License: [BSD](https://gitweb.torproject.org/torbirdy.git/tree/LICENSE)
 : Source [https://gitweb.torproject.org/torbirdy.git](https://gitweb.torproject.org/torbirdy.git)
-: Version: 0.1.4
+: Version: 0.2.3
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -221,14 +221,14 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes:
+: notes: no releases yet and no commits since 2015
 
 <a id="pkg-martus-desktop">__Martus Desktop__</a>
 : Description: platform for collecting, safeguarding, organizing and sharing info
 : Site: [https://www.martus.org/](https://www.martus.org/)
 : License: ???
-: Source: [https://martus.org/installers/Martus-Source-5.1.1.zip](https://martus.org/installers/Martus-Source-5.1.1.zip)
-: Version: 5.1.1
+: Source: [https://martus.org/installers/Martus-Source-5.2.0.zip](https://martus.org/installers/Martus-Source-5.2.0.zip)
+: Version: 5.2.0
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -252,7 +252,7 @@ __tool-name__
 : Site: [https://securedrop.org/](https://securedrop.org)
 : License: [AGPL](https://github.com/freedomofpress/securedrop/blob/develop/LICENSE)
 : Source: [https://github.com/freedomofpress/securedrop/](https://github.com/freedomofpress/securedrop/)
-: Version: 0.3.8
+: Version: 0.4.1
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -264,12 +264,12 @@ __tool-name__
 : Site: [http://sparkleshare.org/](http://sparkleshare.org)
 : License: [GPLv3](https://github.com/hbons/SparkleShare/blob/master/legal/License_for_SparkleShare.txt)
 : Source: [https://github.com/hbons/SparkleShare/](https://github.com/hbons/SparkleShare/)
-: Version: 1.5
+: Version: 2.0-beta-1
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: essentially a GUI for git with server and client components
+: notes: essentially a GUI for git with server and client components. Back under active development?
 
 <a id="pkg-syncany">__Syncany__</a>
 : Description: open-source cloud storage and filesharing application
