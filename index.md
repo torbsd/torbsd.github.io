@@ -17,12 +17,12 @@ extend the use of the BSD Unix operating systems in the
 BSD Unix is an open source operating system family noted for its
 security and stability. The primary BSD projects include
 [FreeBSD](https://www.freebsd.org/), [NetBSD](https://www.netbsd.org/),
-[OpenBSD](http://www.openbsd.org/) and
-[DragonFly BSD](http://www.dragonflybsd.org/), with a number of
+[OpenBSD](https://www.openbsd.org/) and
+[DragonFly BSD](https://www.dragonflybsd.org/), with a number of
 tangential projects including [pfSense](https://www.pfsense.org/),
 [FreeNAS](https://www.freenas.org/) and
 [PC-BSD](https://www.pcbsd.org/). BSD software such as
-[OpenSSH](http://www.openssh.com/) is the default communication tool
+[OpenSSH](https://www.openssh.com/) is the default communication tool
 for innumerable devices on the Internet. Firms such as Netflix, WhatsApp and Juniper rely on BSD systems and code to build and maintain resilient services and  
 devices.
 
