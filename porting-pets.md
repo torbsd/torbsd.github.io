@@ -276,7 +276,7 @@ __tool-name__
 : Site: [https://www.syncany.org/](https://www.syncany.org/)
 : License: [GPLv3](https://github.com/syncany/syncany/blob/develop/LICENSE.md)
 : Source: [https://github.com/syncany/syncany/](https://github.com/syncany/syncany/)
-: Version: 0.4.7-alpha
+: Version: 0.4.9-alpha
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -338,7 +338,7 @@ __tool-name__
 : Site: [https://onionshare.org/](https://onionshare.org/)
 : License: [GPLv3](https://github.com/michahflee/onionshare/blob/master/LICENSE)
 : Source: [https://github.com/micahflee/onionshare/](https://github.com/micahflee/onionshare/)
-: Version: 0.9
+: Version: 1.1
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -350,7 +350,7 @@ __tool-name__
 : Site: [https://ooni.torproject.org/](https://ooni.torproject.org/)
 : License: [BSD](https://gitweb.torproject.org/onionoo.git/tree/LICENSE)
 : Source: [https://github.com/TheTorProject/ooni-probe/](https://github.com/TheTorProject/ooni-probe/)
-: Version: 1.3.2
+: Version: 2.2.0
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -374,7 +374,7 @@ __tool-name__
 : Site: [https://syncthing.net/](https://syncthing.net/)
 : License: [MPLv2](https://github.com/syncthing/syncthing/blob/master/LICENSE)
 : Source: [https://github.com/syncthing/syncthing/](https://github.com/syncthing/syncthing/)
-: Version: 0.13-beta
+: Version: 0.14.35
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: yes
@@ -386,7 +386,7 @@ __tool-name__
 : Site: [https://www.torproject.org/](https://www.torproject.org/)
 : License: [BSD](https://gitweb.torproject.org/tor.git/tree/LICENSE)
 : Source: [https://gitweb.torproject.org/tor.git/](https://gitweb.torproject.org/tor.git/)
-: Version: 0.2.7.6
+: Version: 0.3.10
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: yes
@@ -398,7 +398,7 @@ __tool-name__
 : Site: [https://www.torproject.org/](https://www.torproject.org/)
 : License: [BSD](https://gitweb.torproject.org/tor.git/tree/LICENSE/)
 : Source: [https://gitweb.torproject.org/tor.git/](https://gitweb.torproject.org/tor.git/)
-: Source: 0.2.8.5-alpha
+: Source: 0.3.1.5-alpha
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: yes
@@ -410,7 +410,7 @@ __tool-name__
 : Site: [https://www.torproject.org/](https://www.torproject.org/)
 : License: [GPLv2](https://gitweb.torproject.org/torsocks.git/tree/LICENSE/)
 : Source: [https://gitweb.torproject.org/torsocks.git/](https://gitweb.torproject.org/torsocks.git/)
-: Version: 2.1.0
+: Version: 2.2.0
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: no
@@ -427,7 +427,7 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: outputs to www with Django for easy presentation and queries on the network with main site at https://torstatus.blutmagie.de/
+: notes: not under active development with new OONI data. outputs to www with Django for easy presentation and queries on the network with main site at https://torstatus.blutmagie.de/
 
 ###<a id="net-im">net-im</a>###
 
@@ -448,7 +448,7 @@ __tool-name__
 : Site: [https://jitsi.org/](https://jitsi.org/)
 : License: [Apache 2.0](https://github.com/jitsi/jitsi/blob/master/LICENSE)
 : Source: [https://github.com/jitsi/jitsi/](https://github.com/jitsi/jitsi/)
-: Version: 5509
+: Version: 5587
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
@@ -460,7 +460,7 @@ __tool-name__
 : Site: [https://ricochet.im/](https://ricochet.im/)
 : License: [BSD](https://github.com/ricochet-im/ricochet/blob/master/LICENSE)
 : Source: [https://github.com/ricochet-im/ricochet/](https://github.com/ricochet-im/ricochet/)
-: Version: 1.1.2
+: Version: 1.1.4
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
@@ -472,7 +472,7 @@ __tool-name__
 : Site: [https://github.com/prof7bit/TorChat/wiki/](https://github.com/prof7bit/TorChat/wiki/)
 : License: [GPLv3](https://en.wikipedia.org/wiki/TorChat)
 : Source: [https://github.com/prof7bit/TorChat/](https://github.com/prof7bit/TorChat/)
-: Version: 15
+: Version: 9.9.553
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -484,7 +484,7 @@ __tool-name__
 : Site: n/a
 : License: [GPLv2](https://github.com/rovemonteux/tormessenger/blob/master/LICENSE)
 : Source: [https://gitweb.torproject.org/tor-messenger-build.git](https://gitweb.torproject.org/tor-messenger-build.git)
-: Version: 0.1.0b6
+: Version: 0.4.0b3
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -494,7 +494,7 @@ __tool-name__
 <a id="pkg-tox">__Tox/uTox__</a>
 : Description: UDP-based communications platform
 : Site: [https://tox.chat/](https://tox.chat/)
-: License: [GPLv3])(https://github.com/irungentoo/toxcore/blob/master/COPYING)
+: License: [GPLv3](https://github.com/irungentoo/toxcore/blob/master/COPYING)
 : Source: [https://github.com/irungentoo/toxcore/](https://github.com/irungentoo/toxcore/)
 : Version:
 : FreeBSD: yes
@@ -507,7 +507,7 @@ __tool-name__
 : Description: private messaging system that hides metadata
 : Site: n/a
 : License: [AGPLv3](https://github.com/davidlazar/vuvuzela/blob/master/LICENSE) 
-: Source: [https://github.com/davidlazar/vuvuzela](https://github.com/davidlazar/vuvuzela)
+: Source: [https://github.com/davidlazar/vuvuzela/](https://github.com/davidlazar/vuvuzela/)
 : Version: 0.1
 : FreeBSD: no
 : OpenBSD: no
@@ -520,10 +520,10 @@ __tool-name__
 
 <a id="pkg-bitmessage">__Bitmessage__</a>
 : Description: messaging platform to Bitcoin
-: Site: [https://bitmessage.org/wiki/Main_Page](https://bitmessage.org/wiki/Main_Page)
-: License: [MIT](https://github.com/Bitmessage/PyBitmessage/blob/master/LICENSE)
-: Source: [https://github.com/Bitmessage/PyBitMessage](https://github.com/Bitmessage/PyBitMessage)
-: Version: 0.6.0
+: Site: [https://bitmessage.org/wiki/Main_Page/](https://bitmessage.org/wiki/Main_Page/)
+: License: [MIT](https://github.com/Bitmessage/PyBitmessage/blob/master/LICENSE/)
+: Source: [https://github.com/Bitmessage/PyBitMessage](https://github.com/Bitmessage/PyBitMessage/)
+: Version: 0.6.2
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: yes
@@ -532,10 +532,10 @@ __tool-name__
 
 <a id="pkg-retroshare">__RetroShare__</a>
 : Description: secure, decentralized P2P platform
-: Site: [http://retroshare.sourceforge.net](http://retroshare.sourceforge.net)
-: License: [GPLv3](http://retroshare.sourceforge.net/wiki/index.php/Main_Page)
-: Source: [https://github.com/RetroShare/RetroShare](https://github.com/RetroShare/RetroShare)
-: Version: 0.6.0
+: Site: [http://retroshare.sourceforge.net](http://retroshare.sourceforge.net/)
+: License: [GPLv3](http://retroshare.sourceforge.net/wiki/index.php/Main_Page/)
+: Source: [https://github.com/RetroShare/RetroShare](https://github.com/RetroShare/RetroShare/)
+: Version: 0.6.3
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: no
@@ -561,24 +561,24 @@ __tool-name__
 : Site: [http://www.keepassx.org/](http://www.keepassx.org/)
 : License: [Various](https://github.com/keepassx/keepassx/)
 : Source: [https://github.com/keepassx/keepassx/](https://github.com/keepassx/keepassx/)
-: Version: 2.0.2
+: Version: 2.0.3
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: yes
 : DPorts: yes
 : notes:
 
-<a id="pkg-obfsproxy">__obfsproxy__</a>
+<a id="pkg-obfsproxy">__obfs4proxy__</a>
 : Description: pluggable transport for Tor
 : Site: n/a
-: License: [BSD](https://gitweb.torproject.org/pluggable-transports/obfsproxy.git/tree/LICENSE)
-: Source: [https://gitweb.torproject.org/pluggable-transports/obfsproxy.git](https://gitweb.torproject.org/pluggable-transports/obfsproxy.git)
-: Version: 0.2.13
-: FreeBSD: yes
-: OpenBSD: no (as WIP)
+: License: [BSD](https://gitweb.torproject.org/pluggable-transports/obfs4.git/tree/LICENSE)
+: Source: [https://gitweb.torproject.org/pluggable-transports/obfs4.git/](https://gitweb.torproject.org/pluggable-transports/obfs4.git/)
+: Version: 0.0.7
+: FreeBSD: no
+: OpenBSD: no
 : pkgsrc: no
 : DPort: yes
-: notes: 
+: notes: see TDP's GitHub for FreeBSD and OpenBSD ports to test
 
 <a id="pkg-pond">__Pond__</a>
 : Description: forward secure, asynchronous messaging
@@ -597,7 +597,7 @@ __tool-name__
 : Site: [https://pypyi.python.org/pypi/pyelliptic/](https://pypyi.python.org/pypi/pyelliptic/)
 : License: [BSD](https://github.com/yann2192/pyelliptic/blob/master/LICENSE)
 : Source: [https://github.com/yann2192/pyelliptic/](https://github.com/yann2192/pyelliptic/)
-: Version: 1.5.7
+: Version: 1.5.8
 : FreeBSD: yes
 : OpenBSD: no
 : pkgsrc: no
@@ -609,7 +609,7 @@ __tool-name__
 : Site: [https://stem.torproject.org/](https://stem.torproject.org/)
 : License: [LGPLv3](https://stem.torproject.org/faq.html#what-license-is-stem-under)
 : Source:
-: Version: 1.4.1
+: Version: 1.5.4
 : Python www
 : FreeBSD: yes
 : OpenBSD: yes
@@ -634,7 +634,7 @@ __tool-name__
 : Site: n/a
 : License: [GPLv2](https://github.com/nabla-c0d3/sslyze/blob/master/LICENSE.txt)
 : Source: [https://github.com/nabla-c0d3/sslyze](https://github.com/nabla-c0d3/sslyze)
-: Version: 0.13.5
+: Version: 1.1.2
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -674,7 +674,7 @@ __tool-name__
 : Site: [https://noscript.net/](https://noscript.net/)
 : License: [GPLv3](https://noscript.net/faq#qa1_14)
 : Source:
-: Version: 2.6.9.39
+: Version: 5.0.8.1
 : FreeBSD: no
 : OpenBSD: no
 : pkgsrc: no
@@ -698,12 +698,12 @@ __tool-name__
 : Site: [https://www.torproject.org/projects/torbrowser.html.en](https://www.torproject.org/projects/torbrowser.html.en)
 : License: [Various](https://gitweb.torproject.org/tor-browser.git/tree/toolkit/content/license.html?h=esr24)
 : Source: [https://gitweb.torproject.org/tor-browser.git/](https://gitweb.torproject.org/tor-browser.git/)
-: Version: 5.5.4
-: FreeBSD: no
-: OpenBSD: no, [well...](https://github.com/torbsd/openbsd-ports)
-: pkgsrc: sort of
+: Version: 7.0.3
+: FreeBSD: in progress by TDP
+: OpenBSD: yes
+: pkgsrc: no
 : DPorts: no
-: notes: A lot of effort is going into __TDP's__ Tor Browser builds for OpenBSD, and we are in conversations about porting to other BSDs. [pkgsrc version](http://pkgsrc.se/security/tor-browser) is not a fork and takes a different route completely than __TDP__.
+: notes: TB for FreeBSD in development by TDP. [pkgsrc version](http://pkgsrc.se/security/tor-browser) is not a fork and takes a different route completely than __TDP__.
 
 
 
