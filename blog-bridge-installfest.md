@@ -12,17 +12,14 @@ One could get online commitments from all over to wear a blue shirt on the first
 
 __TDP__ is organizing a Tor bridge installfest in New York City in the fall.
  
-The meeting will be introduced with a quick overview of Tor and the role of bridges, with a glance at the current [statistics](https://torbsd.github.io/oostats.html].
+The meeting will be introduced with a quick overview of Tor and the role of bridges, with a glance at the current [statistics](https://torbsd.github.io/oostats.html).
 
 Users need to do some prepatory work coming into the installfest, however.
 
 * Get your small and quiet thin client, an [APU2 from PCengines.ch](http://pcengines.ch/apu2.htm) or maybe a [BeagleBone Black](https://beagleboard.org/black) to move beyond the x86/Intel monoculture.
-
 * Install your preferred BSD on the hardware, but keep it lean and small. For FreeBSD users [/etc/src.conf](https://man.freebsd.org/src.conf/) can be your friend. Minimize startup daemons and keep this as a single-purpose system.
-
-* In some places in the world, bandwidth is underutilized. For those with FIOS or regular cable connections in a place like New York City, it's likely that your connection is quiet, even if the providers are being deceptive about the true bandwidth of residential connections. Decide how much bandwidth to dedicate to the bridge. Setting _RelayBandwidthRate_ in the torrc to 5000 KB will probably go unnoticed by you, but could be lifeline to users blocked from the Tor network.
-
-* And again on the homefront, if that's where this bridge will reside, figure out how to port forward a TCP port to the prospective bridge. The bridge should have a static [RFC1918](https://tools.ietf.org/html/rfc1918) IP address, like 192.168.1.20.
+* In some parts of world bandwidth is underutilized. For those with FIOS or regular cable connections in a place like New York City, it's likely that your connection is quiet, even if the providers are being deceptive about the true bandwidth of residential connections. Decide how much bandwidth to dedicate to the bridge. Setting _RelayBandwidthRate_ in the torrc to 5000 KB will probably go unnoticed by you, but could be lifeline to users blocked from the Tor network.
+* If the bridge will be behind a firewall or NAT, figure out how to forward a TCP port to it. The bridge should have a static [RFC1918](https://tools.ietf.org/html/rfc1918) IP address, like 192.168.1.20.
 
 The NYC event will be followed up by some IRC sessions for those wanting more feedback and discussion once the bridge is up and running.
 

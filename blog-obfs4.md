@@ -20,16 +20,15 @@ Within our [openbsd-ports project](https://github.com/torbsd/openbsd-ports) resi
 
 What can you do?
 
-If you're running a FreeBSD or OpenBSD Tor bridge, grab the source and build it.
+If you're running a FreeBSD or OpenBSD-current Tor bridge, grab the source and build it (we're working on a solution for -stable).  In the case of OpenBSD it must be either i386 or amd64 at the moment (the go compiler does not yet support non-x86 architectures there).
 
 Adding obfs4proxy support to a Tor bridge is easy, with the addition of a single line:
 
 ```
-ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy -enableLogging \
- -logLevel info managed
+ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy managed
 ```
 
-Note the logging options with _-enableLogging_ and _-logLevel info_. Neither is required, but watching the service on a bridge is useful, particularly in this phase of development.
+Additional options that control logging are available; read the [man page](docs/obfs4proxy_manpage.txt) for more details. The author's own [README](https://gitweb.torproject.org/pluggable-transports/obfs4.git/tree/README.md) is also recommended reading.
 
 With _info_ level logging enabled, the log, residing in the Tor data directory pt_state/obfs4proxy.log, should show something like this:
 
@@ -42,14 +41,12 @@ With _info_ level logging enabled, the log, residing in the Tor data directory p
 
 Feedback, comments and patches are appreciated, preferably as a GitHub issue for [FreeBSD](https://github.com/torbsd/freebsd-ports/issues) or [OpenBSD](https://github.com/torbsd/openbsd-ports/issues).
 
-Both will be submitted to the respective ports trees in due time.
+Both will be submitted to the respective ports trees.
 
-A final general note on obfsproxy. For obvious obfuscation purposes, the TCP port obfs4 listens on is randomized, although the same port will be used between restarts. That causes an issue for anyone running a bridge on a residential connection, where some form of port forwarding by port and protocol is necessary.
+A final general note on obfs4proxy. For obvious obfuscation purposes, the TCP port obfs4 listens on is randomized, although the same port will be used between restarts. That causes an issue for anyone running a bridge on a residential connection, where some form of port forwarding by port and protocol is necessary.
 
 There is a simple work-around to that problem in the torrc file. Just add the following line with the preferred TCP port allowing a long-term setting for the necessary port forward:
 
 ```
 ServerTransportListenAddr obfs4 0.0.0.0:$preferred_port
 ````
-
-As expected, Yawning Angel's [obfs4 documentation](https://gitweb.torproject.org/pluggable-transports/obfs4.git/tree/README.md) is all you really need.

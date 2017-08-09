@@ -81,6 +81,58 @@ __October 2015__
 
 [From the Attic](#attic)
 
+
+###20170807###
+
+<a id="welcome-obfs4-fbsd">Testing obfs4proxy on FreeBSD and OpenBSD</a> by gman999
+
+The Tor Project's [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en) are a mitigation measure against deep-packet inspection, a.k.a. DPI. Commonly deployed on Tor bridges, [obfs4proxy](https://github.com/Yawning/obfs4/blob/master/doc/obfs4-spec.txt) is the [most common PT in use](https://torbsd.github.io/oostats/bridges-trans-count.txt).
+
+There is currently no official FreeBSD or OpenBSD support for obfs4, which means that the operating system diversity of obfs4proxy providers is [dismal](https://torbsd.github.io/oostats/bridges-trans-os.txt).
+
+__TDP__ is working to change that.
+
+While our Tor Browser for OpenBSD doesn't yet support PTs on the client side, we've made some significant steps recently.
+
+Vinicius built [security/obfs4proxy](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/obfs4proxy) with the two previously unported dependencies, [security/go-ed25519](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-ed25519) and [security/go-siphash](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-siphash) for FreeBSD.
+
+We also have net/obfs4proxy for OpenBSD -current, ready for testing.
+
+Within our [openbsd-ports project](https://github.com/torbsd/openbsd-ports) resides [net/obfs4proxy](https://github.com/torbsd/openbsd-ports/tree/master/net/obfs4proxy), along with the required and unofficially ported [devel/go-goptlib](https://github.com/torbsd/openbsd-ports/tree/master/devel/go-goptlib), [security/go-ed25519](https://github.com/torbsd/openbsd-ports/tree/master/security/go-ed25519), [security/go-siphash](https://github.com/torbsd/openbsd-ports/tree/master/security/go-siphash).
+
+What can you do?
+
+If you're running a FreeBSD or OpenBSD-current Tor bridge, grab the source and build it (we're working on a solution for -stable).  In the case of OpenBSD it must be either i386 or amd64 at the moment (the go compiler does not yet support non-x86 architectures there).
+
+Adding obfs4proxy support to a Tor bridge is easy, with the addition of a single line:
+
+```
+ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy managed
+```
+
+Additional options that control logging are available; read the [man page](docs/obfs4proxy_manpage.txt) for more details. The author's own [README](https://gitweb.torproject.org/pluggable-transports/obfs4.git/tree/README.md) is also recommended reading.
+
+With _info_ level logging enabled, the log, residing in the Tor data directory pt_state/obfs4proxy.log, should show something like this:
+
+```
+2017/08/05 18:03:29 [NOTICE]: obfs4proxy-0.0.7 - launched
+2017/08/05 18:03:29 [INFO]: obfs4proxy - initializing server transport listeners
+2017/08/05 18:03:29 [INFO]: obfs4 - registered listener: [scrubbed]:35549
+2017/08/05 18:03:29 [INFO]: obfs4proxy - accepting connections
+```
+
+Feedback, comments and patches are appreciated, preferably as a GitHub issue for [FreeBSD](https://github.com/torbsd/freebsd-ports/issues) or [OpenBSD](https://github.com/torbsd/openbsd-ports/issues).
+
+Both will be submitted to the respective ports trees.
+
+A final general note on obfs4proxy. For obvious obfuscation purposes, the TCP port obfs4 listens on is randomized, although the same port will be used between restarts. That causes an issue for anyone running a bridge on a residential connection, where some form of port forwarding by port and protocol is necessary.
+
+There is a simple work-around to that problem in the torrc file. Just add the following line with the preferred TCP port allowing a long-term setting for the necessary port forward:
+
+```
+ServerTransportListenAddr obfs4 0.0.0.0:$preferred_port
+```
+
 ###20170804###
 
 <a id="getting-sick">Getting Sick</a> by gman999
@@ -223,21 +275,21 @@ Everyone who contributes to open source projects is driven by some combination o
 
 Only in its second full day of operation, <a href="https://torstatus.rueckgr.at/router_detail.php?FP=577b81cd1fce5b3e7c1bd286774">OpenBSDBBB</a>, the new __TDP__ relay running OpenBSD on a teeny-weeny BeagleBone Black is pushing some 1.31MB of bandwidth. The entry-stats gives us a good sense of many global users assisted:
 
-````
+```
 entry-ips us=296,jp=104,de=96,fr=96,es=88,it=72,ru=72,br=48,ar=32,bg=32,ca=32,gb=32,nl=32,pl=32,se=24,ua=24,au=16,gr=16,in=16,mx=16,th=16,ae=8,al=8,am=8,at=8,az=8,ba=8,bb=8,bd=8,be=8,by=8,ch=8,cl=8,cn=8,co=8,cr=8,cy=8,cz=8,dk=8,dz=8,ec=8,eg=8,fi=8,ge=8,hk=8,hu=8,id=8,ie=8,il=8,iq=8,ir=8,is=8,jm=8,ke=8,kh=8,kr=8,kw=8,ky=8,la=8,lk=8,lt=8,lu=8,lv=8,ma=8,md=8,mu=8,my=8,mz=8,no=8,pe=8,ph=8,pr=8,pt=8,py=8,qa=8,re=8,ro=8,rs=8,sa=8,sg=8,si=8,sk=8,sy=8,tn=8,tw=8,uy=8,uz=8,ve=8,vn=8,za=8
-````
+```
 
 Simply adding lines like this to a torrc file produces wonderful motivations:
 
-````
+```
 EntryStatistics 1
-````
+```
 
 Bridge operators can add this to their torrc to get similar statistics:
 
-````
+```
 BridgeRecordUsageByCountry 1
-````
+```
 
 Yes, a simple point. But all the more powerful when it provides a snapshot into a relay's users as they evade censorship and surveillance in a 24 hour period.
 
@@ -273,11 +325,11 @@ $ sysctl kern.maxfiles=20000
 
 Next allow the tor daemon to increase its own openfiles limit, edit the /etc/login.conf file and add the following:
 
-````
+```
 tor:\  
     :openfiles-max=8192:\  
     :tc=daemon:  
-````
+```
 
 While testing node configuration changes on a (mostly) randomized anonymity network is hard to measure, removing those limits can remove some local hindrances.
 
@@ -299,14 +351,14 @@ The RelayBandwidthRate is set to 5000 KBytes and bursting to 6000 KBytes, and it
 
 A quick note on configuration.  There are four partitions, as the output of df(1) illustrates:
 
-````
+```
 Filesystem     Size    Used   Avail  Capacity   Mounted on  
 /dev/sd1a      491M   42.9M    423M        9%      /  
 /dev/sd1f      1.4G   10.2M    1.3G        1%      /home  
 /dev/sd1d      1.5G    521M    907M       36%      /usr  
 /dev/sd1e      192M   77.7M    105M       43%      /usr/local  
 mfs:54396     48.4M    4.0K   45.9M        0%      /tmp  
-````
+```
 
 /tmp is running off RAM with mfs.
 
