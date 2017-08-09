@@ -18,15 +18,15 @@ We welcome relevant submissions from others.
 
 * [FreeBSD](https://www.freebsd.org/): performance, cutting-edge networking and filesystem features
 
-* [NetBSD](http://www.netbsd.org/): portability, stability, support for many devices
+* [NetBSD](https://www.netbsd.org/): portability, stability, support for many devices
 
-* [OpenBSD](http://www.openbsd.org/): security, correctness, standards-compliance, leadership in addressing serious issues confronting the computing ecosystem
+* [OpenBSD](https://www.openbsd.org/): security, correctness, standards-compliance, leadership in addressing serious issues confronting the computing ecosystem
 
-* [DragonFly BSD](http://www.dragonflybsd.org/): multiprocessing, alternative approaches to filesystem design
+* [DragonFly BSD](https://www.dragonflybsd.org/): multiprocessing, alternative approaches to filesystem design
 
-* [OpenSSH](http://www.openssh.com/): the defacto standard on the Internet for secure command-line access, portable and lightweight VPN features, constant advances in crypto, security
+* [OpenSSH](https://www.openssh.com/): the defacto standard on the Internet for secure command-line access, portable and lightweight VPN features, constant advances in crypto, security
 
-* [LibreSSL](http://www.libressl.org/): a renewed focus on simplicity, correctness and sustainability/maintainability for TLS
+* [LibreSSL](https://www.libressl.org/): a renewed focus on simplicity, correctness and sustainability/maintainability for TLS
 
 * [FreeNAS](https://www.freenas.org/): FreeBSD-based networked-attached storage system
 
@@ -37,22 +37,22 @@ We welcome relevant submissions from others.
 
 * [Tor-BSD Mailing List](http://lists.nycbug.org/mailman/listinfo/tor-bsd/) hosted by the [New York City *BSD User Group](http://www.nycbug.org/)
 
-* [An Unofficial BSD Buildbot for the Tor Project](http://buildbot.pixelminers.net/)
+* [An Unofficial BSD Buildbot for the Tor Project](https://buildbot.pixelminers.net/)
   A distributed test build system for finding problems with BSD Tor builds.
 
 * Christian Bruffer at [MeetBSD 2007 presentation on FreeBSD, Protecting Privacy with Tor](https://www.youtube.com/watch?v=OwBh8ro7xHQ)
 
-* [Tor Network Status](http://torstatus.rueckgr.at/)
+* [Tor Network Status](https://torstatus.rueckgr.at/)
   A useful overview of the current public Tor relays, with a filtering ability to check relay numbers by operating system, and other attributes.
 
-* [Tor Metrics](http://metrics.torproject.org/)
+* [Tor Metrics](https://metrics.torproject.org/)
   More useful graphs about the Tor network, including [platform usage](https://metrics.torproject.org/platforms.html).
 
-* [attila's blog](http://trac.haqistan.net/)
+* [attila's blog](http://www.stalphonsos.com/)
 
 ### Relevant BSD Bits ###
 
-* Theo de Raadt [slides on arc4random](http://www.openbsd.org/papers/hackfest2014-arc4random/index.html)
+* Theo de Raadt [slides on arc4random](https://www.openbsd.org/papers/hackfest2014-arc4random/index.html)
 
 * Kode Vicious' [Column from ACM's Queue Magazine](https://queue.acm.org/listing.cfm?typefilter=Kodevicious&sort=publication_date&order=desc&qc_type=Kodevicious&article_type=&item_topic=all&filter_type=topic&page_title=Kode%20Vicious&filter=all)
 
@@ -60,17 +60,17 @@ We welcome relevant submissions from others.
 
 * Ted Unangst [post on OpenBSD-misc "Improving Browser Security"](https://marc.info/?l=openbsd-misc&m=142523501726732/)
 
-* Theo de Raadt [slides on "Exploit Mitigation Techniques: An Update After 10 Years"](http://www.openbsd.org/papers/ru13-deraadt/)
+* Theo de Raadt [slides on "Exploit Mitigation Techniques: An Update After 10 Years"](https://www.openbsd.org/papers/ru13-deraadt/)
 
-* Ted Unangst [slides on "LibreSSL: More than 30 Days Late"](http://www.openbsd.org/papers/eurobsdcon2014-libressl.html)
+* Ted Unangst [slides on "LibreSSL: More than 30 Days Late"](https://www.openbsd.org/papers/eurobsdcon2014-libressl.html)
 
 * Ted Unangst [blog post on "Reproducible Builds are a Waste of Time"](http://www.tedunangst.com/flak/post/reproducible-builds-are-a-waste-of-time)
 
-* Ted Unangst [blog post on "random in the wild"](http://www.tedunangst.com/flak/post/random-in-the-wild) pointing to scary uses of [rand 3](http://man.openbsd.org/OpenBSD-current/man3/rand.3) which are disturbingly common.
+* Ted Unangst [blog post on "random in the wild"](http://www.tedunangst.com/flak/post/random-in-the-wild) pointing to scary uses of [rand 3](https://man.openbsd.org/OpenBSD-current/man3/rand.3) which are disturbingly common.
 
 ### The Danger of Technology Monocultures ###
 
-* [CyberInsecurity: The Cost of Monopoly. How the Dominance of Microsoft's Products Pose a Risk to Security](https://cryptome.org/cyberinsecurity.htm). Note: the original PDF on the Computer and Communications Industry Association (CCIA) web site is no where to be found. Originally at http://www.ccianet.org/papers/cybersecurity.pdf.
+* [CyberInsecurity: The Cost of Monopoly. How the Dominance of Microsoft's Products Pose a Risk to Security](https://cryptome.org/cyberinsecurity.htm). Note: the original PDF on the Computer and Communications Industry Association (CCIA) web site is no where to be found. Originally at https://www.ccianet.org/papers/cybersecurity.pdf.
 :    An explosive paper arguing Microsoft's desktop monopoly is a critical weakness in global infrastructure. The paper prompted the firing of one of the authors [Dan Geer](https://en.wikipedia.org/wiki/Dan_Geer/) from @Stake (later acquired by Symantec) in 2003.
 
 * [Monoculture on the Back of the Envelope](https://www.usenix.org/legacy/publiccations/login/2005-12/openpds/geer.pdf)
