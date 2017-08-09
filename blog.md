@@ -96,11 +96,11 @@ __TDP__ is working to change that.
 
 While our Tor Browser for OpenBSD doesn't yet support PTs on the client side, we've made some significant steps recently.
 
-Vinicius built [security/obfs4proxy](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/obfs4proxy) with the two previously unported dependencies, [security/go-ed25519](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-ed25519) and [security/go-siphash](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-siphash) for FreeBSD.
+Vinicius built [security/obfs4proxy](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/obfs4proxy/) with the two previously unported dependencies, [security/go-ed25519](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-ed25519/) and [security/go-siphash](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-siphash/) for FreeBSD.
 
-We also have net/obfs4proxy for OpenBSD -current, ready for testing.
+We also have net/obfs4proxy for OpenBSD -current, ready for testing. It seems to also build fine on -stable. Dump the relevant directories into your /usr/ports/mystuff/ and build away.
 
-Within our [openbsd-ports project](https://github.com/torbsd/openbsd-ports) resides [net/obfs4proxy](https://github.com/torbsd/openbsd-ports/tree/master/net/obfs4proxy), along with the required and unofficially ported [devel/go-goptlib](https://github.com/torbsd/openbsd-ports/tree/master/devel/go-goptlib), [security/go-ed25519](https://github.com/torbsd/openbsd-ports/tree/master/security/go-ed25519), [security/go-siphash](https://github.com/torbsd/openbsd-ports/tree/master/security/go-siphash).
+Within our [openbsd-ports project](https://github.com/torbsd/openbsd-ports/) resides [net/obfs4proxy](https://github.com/torbsd/openbsd-ports/tree/master/net/obfs4proxy/), along with the required and unofficially ported [devel/go-goptlib](https://github.com/torbsd/openbsd-ports/tree/master/devel/go-goptlib/), [security/go-ed25519](https://github.com/torbsd/openbsd-ports/tree/master/security/go-ed25519/), [security/go-siphash](https://github.com/torbsd/openbsd-ports/tree/master/security/go-siphash/).
 
 What can you do?
 
@@ -123,7 +123,7 @@ With _info_ level logging enabled, the log, residing in the Tor data directory p
 2017/08/05 18:03:29 [INFO]: obfs4proxy - accepting connections
 ```
 
-Feedback, comments and patches are appreciated, preferably as a GitHub issue for [FreeBSD](https://github.com/torbsd/freebsd-ports/issues) or [OpenBSD](https://github.com/torbsd/openbsd-ports/issues).
+Feedback, comments and patches are appreciated, preferably as a GitHub issue for [FreeBSD](https://github.com/torbsd/freebsd-ports/issues/) or [OpenBSD](https://github.com/torbsd/openbsd-ports/issues/).
 
 Both will be submitted to the respective ports trees.
 
