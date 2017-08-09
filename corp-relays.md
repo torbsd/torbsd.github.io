@@ -21,7 +21,7 @@ __TDP__ is directly querying *BSD firms with adequate infrastructure and staff t
 
 __TDP__ could either administer the server or assist the relay administrator(s). The [Tor-BSD mailing list](http://lists.nycbug.org/mailman/listinfo/tor-bsd/) could be of assistance, not to mention the [Tor relays list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays/).
 
-None of the current __TDP__ relays are exit nodes, however, examples such as [the Bynum Law Office PLLC node](http://tor-exit.bynumlaw.net/) should remove some of the relevant legal black magic.
+It is not necessary to run an exit node. Rather, a high-bandwidth relay or bridge could have a significant impact for the purposes on operating system diversity and available bandwidth.
 
 A simplified, well-commented torrc file is [here](torrc.txt)
 
@@ -35,15 +35,15 @@ Our implementation recommendations include:
 
 * optimizing FreeBSD may not be necessary, while changes for other BSDs are quite simple
 
-* OpenBSD requires some /etc/login.conf changes, and the ports/packages only includes the stable version of Tor, and if time is no constraint, run and maintain Tor on a recent snapshot
+* OpenBSD requires some /etc/login.conf changes, and the ports/packages only includes the stable version of Tor, but with a little effort, run and maintain Tor on a recent snapshot
 
 * ensure there is a regular routine of maintaining and updating the relays' ports/packages and base operating system, especially the SSL implementation
 
 * particular attention should be made to keeping the Tor port/package updated, as anonymity is an "arms race" that can require critical changes to the code
 
-* consider using the unstable version of Tor as opposed to the stable version, as the former version gets more attention
+* consider using the alpha version of Tor as opposed to the stable version, as the former version gets more attention
 
-* in the case the entity is operating more than one relay, make sure the [MyFamily knob](https://www.torproject.org/docs/tor-manual.html.en#MyFamily) is designated in the torrc file
+* in the case the entity is operating more than one relay, make sure the [MyFamily setting](https://www.torproject.org/docs/tor-manual.html.en#MyFamily) is designated in the torrc file
 
 * for high-bandwidth relays, please consult these links for every insight
 
