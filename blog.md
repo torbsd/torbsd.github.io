@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __August 2017__
 
-[Getting Sick](#getting-sick) [%sep] [Testing obfs4proxy on FreeBSD](#welcome-obfs4-fbsd)
+[Getting Sick](#getting-sick) [%sep] [Testing obfs4proxy on FreeBSD and OpenBSD](#welcome-obfs4)
 
 __June 2017__
 
@@ -82,9 +82,9 @@ __October 2015__
 [From the Attic](#attic)
 
 
-###20170807###
+###20170808###
 
-<a id="welcome-obfs4-fbsd">Testing obfs4proxy on FreeBSD and OpenBSD</a> by gman999
+<a id="welcome-obfs4">Testing obfs4proxy on FreeBSD and OpenBSD</a> by gman999
 
 The Tor Project's [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en) are a mitigation measure against deep-packet inspection, a.k.a. DPI. Commonly deployed on Tor bridges, [obfs4proxy](https://github.com/Yawning/obfs4/blob/master/doc/obfs4-spec.txt) is the [most common PT in use](https://torbsd.github.io/oostats/bridges-trans-count.txt).
 
