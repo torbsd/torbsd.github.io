@@ -39,7 +39,7 @@ Autonomous System, and so on.
 Our current reports are simple point-in-time snapshots. We are
 working on producing reports in historical context, e.g. over the
 last year, month, week. You can check out the
-[scripts](https://github.com/torbsd/tdp-onion-stats) we wrote to
+[scripts](https://github.com/torbsd/tdp-onion-stats/) we wrote to
 produce the reports; please feel free to open tickets in the GH Issue
 tracker if you find problems or have patches.
 
