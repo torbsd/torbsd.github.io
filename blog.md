@@ -921,13 +921,13 @@ Just a quick link to a pleasantly polemical post from September 19th by [OpenBSD
 
 Since we launched __TDP__, two of us spend a lot of time, energy and resources getting the various projects designed and implemented.
 
-But there's is always room for one, two, three more.
+But there is always room for one, two, three more.
 
 It's a perfect opportunity to start testing Tor Browser 5.0.3. [Fork the repository](https://github.com/torbsd/openbsd-ports), submit [issues](https://github.com/torbsd/openbsd-ports/issues) about the software.
 
 There's more to do beyond TB though. If you are around a technical user group, get a discussion going about Tor. Have a how-to meeting on running a public relay, especially for those who have access to decent infrastructure and bandwidth, like those at universities or internet-facing firms.
 
-Setting up a high-bandwidth Tor bridge is painless and it will just be a safe gateway for Tor users.
+Setting up a high-bandwidth Tor bridge is painless and it will be a safe gateway for Tor users.
 
 There is no excuse why every BSD user group or conference shouldn't have a discussion or session focused on "recruiting" BSD people to run Tor relays. Many people in the US, Europe and eastern Asia, in particular have excess bandwidth at home. Work at a firm that uses the BSDs in production? Get them to run a relay or two.
 
@@ -939,7 +939,7 @@ There's a lot we'd like to accomplish with __TDP__, and we don't claim a monopol
 
 <a id="tb-update">__Updated Tor Browser Packages__</a> by gman999
 
-The upstream code from the Tor Project and above them Mozilla is a moving target we contend with each release. Then there is the ultimate moving target: the incessant war between surveillance and anonymity, censorship and circumvention. Finally there is the operating system as a moving target all Tor Browser porters face.
+The upstream code from the Tor Project and above them Mozilla are moving targets we contend with each release. Then there is the ultimate moving target: the incessant war between surveillance and anonymity, censorship and circumvention. Finally there is the operating system as a moving target all Tor Browser porters face.
 
 Developing ports on OpenBSD means building on snapshots, a.k.a., [-current](http://www.openbsd.org/faq/faq5.html#Flavors). OpenBSD snapshots are often released several times a week, and as with any other development operating system branch, those changes are sometimes significant. What might work today may be broken tomorrow. It was no surprise that our TB 5.0.3 release was broken on the OpenBSD snapshot released just a few days later.
 
