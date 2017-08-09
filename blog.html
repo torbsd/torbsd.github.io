@@ -105,15 +105,15 @@
 
 <p>While our Tor Browser for OpenBSD doesn&#8217;t yet support PTs on the client side, we&#8217;ve made some significant steps recently.</p>
 
-<p>Vinicius built <a href="https://github.com/torbsd/freebsd-ports/tree/egypcio/security/obfs4proxy/">security/obfs4proxy</a> with the two previously unported dependencies, <a href="https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-ed25519/">security/go-ed25519</a> and <a href="https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-siphash/">security/go-siphash</a> for FreeBSD.</p>
+<p>Vinicius built <a href="https://github.com/torbsd/freebsd-ports/tree/egypcio/security/obfs4proxy/">security/obfs4proxy</a> for FreeBSD with the two previously unported dependencies, <a href="https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-ed25519/">security/go-ed25519</a> and <a href="https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-siphash/">security/go-siphash</a>.</p>
 
-<p>We also have net/obfs4proxy for OpenBSD -current, ready for testing. It seems to also build fine on -stable. Dump the relevant directories into your /usr/ports/mystuff/ and build away.</p>
+<p>We also have <a href="https://github.com/torbsd/openbsd-ports/tree/master/net/obfs4proxy/">net/obfs4proxy</a> for OpenBSD -current, ready for testing. It seems to also build fine on -stable.</p>
 
-<p>Within our <a href="https://github.com/torbsd/openbsd-ports/">openbsd-ports project</a> resides <a href="https://github.com/torbsd/openbsd-ports/tree/master/net/obfs4proxy/">net/obfs4proxy</a>, along with the required and unofficially ported <a href="https://github.com/torbsd/openbsd-ports/tree/master/devel/go-goptlib/">devel/go-goptlib</a>, <a href="https://github.com/torbsd/openbsd-ports/tree/master/security/go-ed25519/">security/go-ed25519</a>, <a href="https://github.com/torbsd/openbsd-ports/tree/master/security/go-siphash/">security/go-siphash</a>.</p>
+<p>Within our <a href="https://github.com/torbsd/openbsd-ports/">openbsd-ports project</a> resides <a href="https://github.com/torbsd/openbsd-ports/tree/master/net/obfs4proxy/">net/obfs4proxy</a>, along with the required and unofficially ported <a href="https://github.com/torbsd/openbsd-ports/tree/master/devel/go-goptlib/">devel/go-goptlib</a>, <a href="https://github.com/torbsd/openbsd-ports/tree/master/security/go-ed25519/">security/go-ed25519</a> and <a href="https://github.com/torbsd/openbsd-ports/tree/master/security/go-siphash/">security/go-siphash</a>.</p>
 
 <p>What can you do?</p>
 
-<p>If you&#8217;re running a FreeBSD or OpenBSD-current Tor bridge, grab the source and build it (we&#8217;re working on a solution for -stable). In the case of OpenBSD it must be either i386 or amd64 at the moment (the go compiler does not yet support non-x86 architectures there).</p>
+<p>If you&#8217;re running a FreeBSD or OpenBSD -current Tor bridge, grab the source and build it. In the case of OpenBSD it must be either i386 or amd64 at the moment (the go compiler does not yet support non-x86 architectures).</p>
 
 <p>Adding obfs4proxy support to a Tor bridge is easy, with the addition of a single line:</p>
 
@@ -1025,7 +1025,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2017 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Wed Aug  9 15:26:11 2017 UTC</code></p>
+<p><code>last updated: Wed Aug  9 16:46:48 2017 UTC</code></p>
 
 </body>
 </html>
