@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Tue Aug  8 14:10:07 UTC 2017
+Report Date: Wed Aug  9 01:31:33 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1096,8 +1096,8 @@ Firm BALTTELEKOM (1)                                     51456 (0.0%)
 BIZNET NETWORKS (1)                                      49330 (0.0%)
 PJSC Telesystems of Ukraine (1)                          49152 (0.0%)
 The Computer Shop Netlink (1)                            39717 (0.0%)
-WildPark Co (1)                                          0 (0.0%)
 Vorco (1)                                                0 (0.0%)
+WildPark Co (1)                                          0 (0.0%)
 Wiland Ltd (1)                                           0 (0.0%)
 
 
