@@ -91,7 +91,7 @@ __tool-name__
 : Description: command-line utility to manage image metadata
 : Site: [http://www.exiv2.org/](http://www.exiv2.org/)
 : License: [GPLv2 or commercial](http://www.exiv2.org/download.html#license)
-: Source: [http://www.exiv2.org/exiv2-0.26.tar.gz](http://www.exiv2.org/exiv2-0.26.tar.gz)
+: Source: [https://github.com/Exiv2/exiv2.git](https://github.com/Exiv2/exiv2.git)
 : Version: 0.26
 : FreeBSD: yes
 : OpenBSD: yes
