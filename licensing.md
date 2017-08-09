@@ -12,7 +12,7 @@ Note: These lines at the top are multimarkdown metadata; leave them.
 
 Unless outside of our control, the following simple BSD/MIT/ISC-style license applies to all __TDP__-produced materials.
 
-Copyright (c) 2016 The Tor BSD Diversity Project
+Copyright (c) 2017 The Tor BSD Diversity Project
 
 Permission to use, copy, modify, and distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
