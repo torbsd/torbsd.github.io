@@ -341,7 +341,7 @@ While testing node configuration changes on a (mostly) randomized anonymity netw
 
 For anyone who hasn't gotten the news, x86 hardware no longer reigns supreme in server land. For years other architectures, namely ARM, are increasingly moving beyond esoteric or hidden purposes. ARM isn't just for your cell phone anymore.
 
-On that note, __TDP__ is set up a Tor relay on a <a href="https://beagleboard.org/black">BeagleBone Black</a> running OpenBSD. The OpenBSD <a href="https://www.openbsd.org/armv7.html">armv7 platform</a> covers some of the more popular armv7 hardware, including the <a href="http://www.wandboard.org/index.php/details">Wandaboard</a>, <a href="http://cubieboard.org/">Cubieboard</a> and <a href="http://www.banana-pi.org/">Banana Pi</a>, not to mention other BeagleBones and the <a href="https://beagleboard.org/beagleboard-xm">BeagleBoard</a>.
+On that note, __TDP__ is set up a Tor relay on a <a href="https://beagleboard.org/black">BeagleBone Black</a> running OpenBSD. The OpenBSD <a href="https://www.openbsd.org/armv7.html">armv7 platform</a> covers some of the more popular armv7 hardware, including the [Wandboard](https://www.wandboard.org/products/), [Cubieboard](http://cubieboard.org/], [Banana Pi](http://www.banana-pi.org/), not to mention other BeagleBones and the [BeagleBoard](https://beagleboard.org/beagleboard-xm/).
 
 The dmesg for the relay is <a href="http://dmesgd.nycbug.org/index.cgi?do=view&id=3140">on NYC*BUG's dmesgd</a>. The device joined the Tor network today, and will be joining the <a href="https://buildbot.pixelminers.net/">Unofficial BSD Buildbot</a> maintained by Christian S. soon.
 
@@ -913,7 +913,7 @@ Nothing ground-breaking or revolutionary about the reports, but we do hope other
 
 <a id="repro-builds">__Thoughts on Reproducible Builds__</a> by gman999
 
-Just a quick link to a pleasantly polemical post from September 19th by [OpenBSD's](http://www.openbsd.org) tedu@ entitled [reproducible builds are a waste of time](http://www.tedunangst.com/flak/post/reproducible-builds-are-a-waste-of-time). There's a follow-up postscript at the end of the post, reacting to a [lobste.rs thread](https://lobste.rs/s/5bbdbo/reproducible_builds_are_a_waste_of_time).
+Just a quick link to a pleasantly polemical post from September 19th by [OpenBSD's](https://www.openbsd.org/) tedu@ entitled [reproducible builds are a waste of time](https://www.tedunangst.com/flak/post/reproducible-builds-are-a-waste-of-time/). There's a follow-up postscript at the end of the post, reacting to a [lobste.rs thread](https://lobste.rs/s/5bbdbo/reproducible_builds_are_a_waste_of_time).
 
 ###20151103###
 

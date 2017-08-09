@@ -76,7 +76,7 @@ We welcome relevant submissions from others.
 * [Monoculture on the Back of the Envelope](https://www.usenix.org/legacy/publiccations/login/2005-12/openpds/geer.pdf)
 :    A short piece by Dan Geer from USENIX's ;login magazine two years later.
 
-* [Schneier-Ranum Face-Off on the dangers of a software monoculture](http://searchsecurity.techtarget.com/magazineContent/Schneier-Ranum-Face-Off-on-the-dangers-of-a-software-monoculture/)
+* [Schneier-Ranum Face-Off on the dangers of a software monoculture](https://searchsecurity.techtarget.com/magazineContent/Schneier-Ranum-Face-Off-on-the-dangers-of-a-software-monoculture/)
 :    In 2010, Bruce Schneier and Marcus Ranum debate the issue. Note that a login is necessary to access the piece.
 
 * [Bruce Schneier's blog entry on "Software Monoculture"](https://www.schneier.com/blog/archives/2010/12/software_monocu.html)
