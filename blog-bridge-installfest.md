@@ -28,6 +28,8 @@ The NYC event will be followed up by a planned IRC sessions for those wanting mo
 
 Take this model of a *BSD Tor bridge installfest and replicate in your own locale or as a birds-of-a-feather session at an upcoming BSD conference.
 
+In the coming weeks, we'll blog a suggested approach to the installfest, with all the all the details covered to ensure a successful event.
+
 Consider this installfest open-sourced and ready to hack and replicate.
 
 Let us know how it goes.
