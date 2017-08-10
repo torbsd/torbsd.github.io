@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Thu Aug 10 14:09:14 UTC 2017
+Report Date: Thu Aug 10 22:45:37 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1048,8 +1048,8 @@ OPTINET (1)                                              100182 (0.0%)
 OOO Bryansk Svyaz-TV (1)                                 97993 (0.0%)
 Aureon Network Services (1)                              95232 (0.0%)
 Moselle Telecom (1)                                      93184 (0.0%)
-Manx Telecom (1)                                         92160 (0.0%)
 Milleni.com (1)                                          92160 (0.0%)
+Manx Telecom (1)                                         92160 (0.0%)
 Netia SA (1)                                             91274 (0.0%)
 ManagedWay (1)                                           90714 (0.0%)
 BEK Communications Cooperative (1)                       89225 (0.0%)
