@@ -40,7 +40,7 @@ __tool-name__
 
 <a id="pkg-autocanary">__AutoCanary__</a>
 : Description: desktop application for generating machine-readable, signed canary statements
-: Site: [https://firstlook.org/code/project/autocanary/](https://firstlook.org/code/project/autocanary/)
+: Site: [https://code.firstlook.media/projects/autocanary.html](https://code.firstlook.media/projects/autocanary.html)
 : License: [GPLv3](https://github.com/firstlook/autocanary/blob/master/LICENSE.md)
 : Source: [https://github.com/firstlook/autocanary/](https://github.com/firstlook/autocanary/)
 : Version: 0.2.0
@@ -124,7 +124,7 @@ __tool-name__
 
 <a id="pkg-pdf-redact-tools">__pdf-redact-tools__</a>
 : Description: tools to redact and strip metadata from documents
-: Site: [https://firstlook.org/code/project/pdf-redact-tools/](https://firstlook.org/code/project/pdf-redact-tools/)
+: Site: [https://code.firstlook.media/projects/pdf-redact-tools.html](https://code.firstlook.media/projects/pdf-redact-tools.html)
 : License: [GPLv3](https://github.com/firstlook/pdf-redact-tools/blob/master/LICENSE)
 : Source: [https://github.com/firstlook/pdf-redact-tools/](https://github.com/firstlook/pdf-redact-tools/)
 : Version: 0.1.2
