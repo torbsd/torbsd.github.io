@@ -31,7 +31,7 @@ __tool-name__
 : __Source__: _url to distfile_
 : __Version__: _version information, e.g. current stable, development release, ..._
 : __FreeBSD__: [FreeBSD ports system](https://svnweb.freebsd.org/ports/head/)
-: __OpenBSD__: [OpenBSD packages](http://ftp.openbsd.org/pub/OpenBSD/snapshots/packages/), which generally also apply to BitRig
+: __OpenBSD__: [OpenBSD packages](http://ftp.openbsd.org/pub/OpenBSD/snapshots/packages/amd64/), which generally also apply to BitRig
 : __NetBSD__: [NetBSD's pkgsrc](http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/README-all.html) for multiple operating systems
 : __DragonFly__: [DragonFly BSD's ports](http://avalon.dragonflybsd.org/dports/dragonfly:4.6:x86:64/LATEST/All/), similar to FreeBSD
 : __Notes__: _etc..._
@@ -221,7 +221,7 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: no releases yet and no commits since 2015
+: notes: no releases yet and no commits since 2015, and www site dead
 
 <a id="pkg-martus-desktop">__Martus Desktop__</a>
 : Description: platform for collecting, safeguarding, organizing and sharing info
@@ -415,7 +415,7 @@ __tool-name__
 : OpenBSD: yes
 : pkgsrc: no
 : DPorts: yes
-: notes: relies on torrc SOCKS port matching torsocks configuration.
+: notes:
 
 <a id="pkg-torstatus">__Torstatus__</a>
 : Description: tool for aggregating and presenting public information about the Tor network
@@ -518,7 +518,7 @@ __tool-name__
 
 ###<a id="net-p2p">net-p2p</a>###
 
-<a id="pkg-bitmessage">__Bitmessage__</a>
+<a id="pkg-bitmessage">__BitMessage__</a>
 : Description: messaging platform to Bitcoin
 : Site: [https://bitmessage.org/wiki/Main_Page/](https://bitmessage.org/wiki/Main_Page/)
 : License: [MIT](https://github.com/Bitmessage/PyBitmessage/blob/master/LICENSE/)
@@ -532,9 +532,9 @@ __tool-name__
 
 <a id="pkg-retroshare">__RetroShare__</a>
 : Description: secure, decentralized P2P platform
-: Site: [http://retroshare.sourceforge.net](http://retroshare.sourceforge.net/)
+: Site: [http://retroshare.sourceforge.net/](http://retroshare.sourceforge.net/)
 : License: [GPLv3](http://retroshare.sourceforge.net/wiki/index.php/Main_Page/)
-: Source: [https://github.com/RetroShare/RetroShare](https://github.com/RetroShare/RetroShare/)
+: Source: [https://github.com/RetroShare/RetroShare/](https://github.com/RetroShare/RetroShare/)
 : Version: 0.6.3
 : FreeBSD: yes
 : OpenBSD: yes
@@ -544,17 +544,29 @@ __tool-name__
 
 ###<a id="security">security</a>###
 
+<a id=pkg-goed25519">__go-ed25519__</a>
+: Description: ed25519 for Go
+: Site:
+: License: [BSD3](https://github.com/agl/ed25519/blob/master/LICENSE)
+: Source: [https://github.com/agl/ed25519/](https://github.com/agl/ed25519/) 
+: Version: no releases yet
+: FreeBSD: 
+: OpenBSD:
+: pkgsrc:
+: DPorts:
+: notes:
+
 <a id="pkg-gpg4usb">__gpg4usb__</a>
 : Description: portable editor for encrypting and decrypting files
 : Site: [http://www.gpg4usb.org](http://www.gpg4usb.org)
 : License: [GPLv3](https://github.com/gpg4usb/gpg4usb/blob/master/COPYING)
 : Source: [https://github.com/gpg4usb/gpg4usb](https://github.com/gpg4usb/gpg4usb)
 : Version: 0.3.3-2
-: FreeBSD: no
-: OpenBSD: no
+: FreeBSD: [in progress](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-ed25519)
+: OpenBSD: [in progress](https://github.com/torbsd/openbsd-ports/tree/master/security/go-ed25519)
 : pkgsrc: no
 : DPorts: no
-: notes:
+: notes: necessary dependency for obfs4
 
 <a id="pkg-keepassx">__KeePassX__</a>
 : Description: password management utility
@@ -570,7 +582,7 @@ __tool-name__
 
 <a id="pkg-obfsproxy">__obfs4proxy__</a>
 : Description: pluggable transport for Tor
-: Site: n/a
+: Site: [https://gitweb.torproject.org/pluggable-transports/obfs4.git/tree/README.md](https://gitweb.torproject.org/pluggable-transports/obfs4.git/tree/README.md)
 : License: [BSD](https://gitweb.torproject.org/pluggable-transports/obfs4.git/tree/LICENSE)
 : Source: [https://gitweb.torproject.org/pluggable-transports/obfs4.git/](https://gitweb.torproject.org/pluggable-transports/obfs4.git/)
 : Version: 0.0.7
@@ -608,7 +620,7 @@ __tool-name__
 : Description: Python controller library for Tor
 : Site: [https://stem.torproject.org/](https://stem.torproject.org/)
 : License: [LGPLv3](https://stem.torproject.org/faq.html#what-license-is-stem-under)
-: Source:
+: Source: [https://gitweb.torproject.org/stem.git](https://gitweb.torproject.org/stem.git)
 : Version: 1.5.4
 : Python www
 : FreeBSD: yes
@@ -639,7 +651,7 @@ __tool-name__
 : OpenBSD: no
 : pkgsrc: no
 : DPorts: no
-: notes: seems to really require https://github.com/nabla-c0d3/nassl/ which requires more work.
+: notes: seems to really require https://github.com/nabla-c0d3/nassl/ which requires more work. Also PyPi at https://pypi.python.org/pypi/SSLyze
 
 ###<a id="sysutils">sysutils</a>###
 

@@ -49,7 +49,7 @@
 
 <dd><strong>FreeBSD</strong>: <a href="https://svnweb.freebsd.org/ports/head/">FreeBSD ports system</a></dd>
 
-<dd><strong>OpenBSD</strong>: <a href="http://ftp.openbsd.org/pub/OpenBSD/snapshots/packages/">OpenBSD packages</a>, which generally also apply to BitRig</dd>
+<dd><strong>OpenBSD</strong>: <a href="http://ftp.openbsd.org/pub/OpenBSD/snapshots/packages/amd64/">OpenBSD packages</a>, which generally also apply to BitRig</dd>
 
 <dd><strong>NetBSD</strong>: <a href="http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/README-all.html">NetBSD&#8217;s pkgsrc</a> for multiple operating systems</dd>
 
@@ -382,7 +382,7 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: no releases yet and no commits since 2015</dd>
+<dd>notes: no releases yet and no commits since 2015, and www site dead</dd>
 
 <dt><a id="pkg-martus-desktop"><strong>Martus Desktop</strong></a></dt>
 <dd>Description: platform for collecting, safeguarding, organizing and sharing info</dd>
@@ -722,7 +722,7 @@
 
 <dd>DPorts: yes</dd>
 
-<dd>notes: relies on torrc SOCKS port matching torsocks configuration.</dd>
+<dd>notes:</dd>
 
 <dt><a id="pkg-torstatus"><strong>Torstatus</strong></a></dt>
 <dd>Description: tool for aggregating and presenting public information about the Tor network</dd>
@@ -900,7 +900,7 @@
 <h3 id="aidnet-p2pnet-p2pa"><a id="net-p2p">net-p2p</a></h3>
 
 <dl>
-<dt><a id="pkg-bitmessage"><strong>Bitmessage</strong></a></dt>
+<dt><a id="pkg-bitmessage"><strong>BitMessage</strong></a></dt>
 <dd>Description: messaging platform to Bitcoin</dd>
 
 <dd>Site: <a href="https://bitmessage.org/wiki/Main_Page/">https://bitmessage.org/wiki/Main_Page/</a></dd>
@@ -924,11 +924,11 @@
 <dt><a id="pkg-retroshare"><strong>RetroShare</strong></a></dt>
 <dd>Description: secure, decentralized P2P platform</dd>
 
-<dd>Site: <a href="http://retroshare.sourceforge.net/">http://retroshare.sourceforge.net</a></dd>
+<dd>Site: <a href="http://retroshare.sourceforge.net/">http://retroshare.sourceforge.net/</a></dd>
 
 <dd>License: <a href="http://retroshare.sourceforge.net/wiki/index.php/Main_Page/">GPLv3</a></dd>
 
-<dd>Source: <a href="https://github.com/RetroShare/RetroShare/">https://github.com/RetroShare/RetroShare</a></dd>
+<dd>Source: <a href="https://github.com/RetroShare/RetroShare/">https://github.com/RetroShare/RetroShare/</a></dd>
 
 <dd>Version: 0.6.3</dd>
 
@@ -946,6 +946,27 @@
 <h3 id="aidsecuritysecuritya"><a id="security">security</a></h3>
 
 <dl>
+<dt><a id=pkg-goed25519"><strong>go-ed25519</strong></a></dt>
+<dd>Description: ed25519 for Go</dd>
+
+<dd>Site:</dd>
+
+<dd>License: <a href="https://github.com/agl/ed25519/blob/master/LICENSE">BSD3</a></dd>
+
+<dd>Source: <a href="https://github.com/agl/ed25519/">https://github.com/agl/ed25519/</a></dd>
+
+<dd>Version: no releases yet</dd>
+
+<dd>FreeBSD:</dd>
+
+<dd>OpenBSD:</dd>
+
+<dd>pkgsrc:</dd>
+
+<dd>DPorts:</dd>
+
+<dd>notes:</dd>
+
 <dt><a id="pkg-gpg4usb"><strong>gpg4usb</strong></a></dt>
 <dd>Description: portable editor for encrypting and decrypting files</dd>
 
@@ -957,15 +978,15 @@
 
 <dd>Version: 0.3.3&#8211;2</dd>
 
-<dd>FreeBSD: no</dd>
+<dd>FreeBSD: <a href="https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-ed25519">in progress</a></dd>
 
-<dd>OpenBSD: no</dd>
+<dd>OpenBSD: <a href="https://github.com/torbsd/openbsd-ports/tree/master/security/go-ed25519">in progress</a></dd>
 
 <dd>pkgsrc: no</dd>
 
 <dd>DPorts: no</dd>
 
-<dd>notes:</dd>
+<dd>notes: necessary dependency for obfs4</dd>
 
 <dt><a id="pkg-keepassx"><strong>KeePassX</strong></a></dt>
 <dd>Description: password management utility</dd>
@@ -991,7 +1012,7 @@
 <dt><a id="pkg-obfsproxy"><strong>obfs4proxy</strong></a></dt>
 <dd>Description: pluggable transport for Tor</dd>
 
-<dd>Site: n/a</dd>
+<dd>Site: <a href="https://gitweb.torproject.org/pluggable-transports/obfs4.git/tree/README.md">https://gitweb.torproject.org/pluggable-transports/obfs4.git/tree/README.md</a></dd>
 
 <dd>License: <a href="https://gitweb.torproject.org/pluggable-transports/obfs4.git/tree/LICENSE">BSD</a></dd>
 
@@ -1058,7 +1079,7 @@
 
 <dd>License: <a href="https://stem.torproject.org/faq.html#what-license-is-stem-under">LGPLv3</a></dd>
 
-<dd>Source:</dd>
+<dd>Source: <a href="https://gitweb.torproject.org/stem.git">https://gitweb.torproject.org/stem.git</a></dd>
 
 <dd>Version: 1.5.4</dd>
 
@@ -1114,7 +1135,7 @@
 
 <dd>DPorts: no</dd>
 
-<dd>notes: seems to really require https://github.com/nabla-c0d3/nassl/ which requires more work.</dd>
+<dd>notes: seems to really require https://github.com/nabla-c0d3/nassl/ which requires more work. Also PyPi at https://pypi.python.org/pypi/SSLyze</dd>
 </dl>
 
 <h3 id="aidsysutilssysutilsa"><a id="sysutils">sysutils</a></h3>
@@ -1234,7 +1255,7 @@
 
 <p><em>Copyright &copy; 2017 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Aug 10 02:45:12 2017 UTC</code></p>
+<p><code>last updated: Thu Aug 10 16:15:36 2017 UTC</code></p>
 
 </body>
 </html>
