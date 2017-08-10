@@ -8,7 +8,7 @@ No exaggeration intended, but when only one operating system kernel is responsib
 
 __TDP__ is looking to attack this problem on the local level with hands-on Tor installfests on the BSDs.
 
-One could get online commitments from all over to wear a blue shirt on the first Tuesday of the month, to stop using salt on kale or to run a Tor bridge on a BSD variant, but those calls generally evaporate on the internet. It's time to start doing physical sessions to corral the hardware, do the Tor configuration and ultimately start changing the bridge operating system count.
+One could get online commitments from all over to wear a blue shirt on the first Tuesday of the month, to stop using salt on kale or to run a Tor bridge on a BSD variant, but those calls generally evaporate on the internet. It's time to start doing physical sessions to gather the hardware, do the Tor configuration and ultimately start changing the bridge operating system count.
 
 __TDP__ is organizing a Tor bridge installfest in New York City in the fall.
  
