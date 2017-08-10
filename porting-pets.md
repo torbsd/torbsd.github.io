@@ -72,7 +72,7 @@ __tool-name__
 : OpenBSD: no
 : NetBSD: no
 : DragonFly: no
-: Notes:
+: Notes: example at [RiseUP.net](https://pad.riseup.net/)
 
 ###<a id="graphics">graphics</a>###
 
@@ -86,6 +86,7 @@ __tool-name__
 : OpenBSD: yes
 : NetBSD: yes
 : DragonFly: yes
+: notes:
 
 <a id="pkg-exiv2">__Exiv2__</a>
 : Description: command-line utility to manage image metadata
@@ -97,6 +98,7 @@ __tool-name__
 : OpenBSD: yes
 : NetBSD: yes
 : DragonFly: yes
+: notes:
 
 <a id="pkg-jhead">__jhead__</a>
 : Description: tool for manipulating JPEG EXIF files

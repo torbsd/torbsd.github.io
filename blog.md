@@ -86,6 +86,8 @@ __October 2015__
 
 <a id="welcome-obfs4">Testing obfs4proxy on FreeBSD and OpenBSD</a> by gman999
 
+__UPDATE 20170810:__ both ports are ready for more testing, and the OpenBSD obfs4 and the two dependencies were submitted for the ports system.
+
 __UPDATE 20170809:__ as per [Yawning's ticket](https://github.com/torbsd/openbsd-ports/issues/8) we're in the process of updating and testing both ports.
 
 The Tor Project's [Pluggable Transports](https://www.torproject.org/docs/pluggable-transports.html.en) are a mitigation measure against deep-packet inspection, a.k.a. DPI. Commonly deployed on Tor bridges, [obfs4proxy](https://github.com/Yawning/obfs4/blob/master/doc/obfs4-spec.txt) is the [most common PT in use](https://torbsd.github.io/oostats/bridges-trans-count.txt).
