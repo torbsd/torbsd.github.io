@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __August 2017__
 
-[Getting Sick](#getting-sick) [%sep] [Testing obfs4proxy on FreeBSD and OpenBSD](#welcome-obfs4)
+[Testing obfs4proxy on FreeBSD and OpenBSD](#welcome-obfs4) [%sep] [Getting Sick](#getting-sick)
 
 __June 2017__
 
