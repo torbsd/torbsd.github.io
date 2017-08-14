@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Sun Aug 13 13:08:31 UTC 2017
+Report Date: Mon Aug 14 02:28:30 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1087,8 +1087,8 @@ RCL CJSC (1)                                             32091 (0.0%)
 Multimedia Polska S.A. (1)                               30309 (0.0%)
 PP MainStream (1)                                        26624 (0.0%)
 JSC Kazakhtelecom (1)                                    11916 (0.0%)
-Brasil Telecom S/A - Filial Distrito Federal (1)         0 (0.0%)
 Freedom Ltd. (1)                                         0 (0.0%)
+Brasil Telecom S/A - Filial Distrito Federal (1)         0 (0.0%)
 Telekom Romania Communication S.A (1)                    0 (0.0%)
 
 
