@@ -4,21 +4,21 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: BRIDGES
-Report Date: Mon Aug 14 02:28:33 UTC 2017
+Report Date: Mon Aug 14 17:20:59 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY OPERATING SYSTEM
 
 OS (records)          BANDWIDTH
 ====================  =========================================================
-TOTAL (2890)          1010393827
-Linux (2804)          1002658587 (99.2%)
-FreeBSD (19)          3378253 (0.3%)
-Windows (52)          2673894 (0.3%)
-OpenBSD (11)          1550201 (0.2%)
+TOTAL (2892)          1034961507
+Linux (2807)          1026251450 (99.2%)
+FreeBSD (20)          4073488 (0.4%)
+Windows (49)          2424596 (0.2%)
+OpenBSD (11)          1973267 (0.2%)
+Darwin (3)            122640 (0.0%)
 NetBSD (1)            102400 (0.0%)
-Unknown platform (1)  19903 (0.0%)
-Darwin (2)            10589 (0.0%)
+Unknown platform (1)  13666 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
