@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: BRIDGES
-Report Date: Wed Aug 16 01:26:59 UTC 2017
+Report Date: Wed Aug 16 12:55:22 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 TRANSPORT            COUNT
