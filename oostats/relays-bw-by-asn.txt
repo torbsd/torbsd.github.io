@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Fri Aug 18 14:53:51 UTC 2017
+Report Date: Fri Aug 18 20:01:25 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -975,8 +975,8 @@ Windstream Communications Inc (1)                        152576 (0.0%)
 Wind Telecomunicazioni SpA (2)                           151675 (0.0%)
 Tyfon (1)                                                150864 (0.0%)
 FortressITX (1)                                          140610 (0.0%)
-Kangaroot BVBA (1)                                       139264 (0.0%)
 sasag Kabelkommunikation AG (1)                          139264 (0.0%)
+Kangaroot BVBA (1)                                       139264 (0.0%)
 Link Ltd. (1)                                            138716 (0.0%)
 Dansk Net A/S (1)                                        134936 (0.0%)
 Unified Layer (1)                                        133152 (0.0%)
@@ -1051,8 +1051,8 @@ Information Technology Company (ITC) (2)                 69181 (0.0%)
 LLC PioneerNet (1)                                       66521 (0.0%)
 YLess4U Regional Broadband (1)                           66091 (0.0%)
 PT. Mediatama Telematika Nusantara (1)                   64969 (0.0%)
-Telemar Norte Leste S.A. (1)                             63488 (0.0%)
 Aria Shatel Company Ltd (1)                              63488 (0.0%)
+Telemar Norte Leste S.A. (1)                             63488 (0.0%)
 green.ch AG (1)                                          62552 (0.0%)
 H88 S.A. (1)                                             60602 (0.0%)
 Hadara (1)                                               58368 (0.0%)
@@ -1070,9 +1070,9 @@ University of Pennsylvania (1)                           28946 (0.0%)
 RCL CJSC (1)                                             26845 (0.0%)
 Telecom Algeria (2)                                      25603 (0.0%)
 PP MainStream (1)                                        21099 (0.0%)
-O2 Czech Republic, a.s. (1)                              0 (0.0%)
-YOU Broadband & Cable India Ltd. (1)                     0 (0.0%)
 Mada ALArab LTD (1)                                      0 (0.0%)
+YOU Broadband & Cable India Ltd. (1)                     0 (0.0%)
+O2 Czech Republic, a.s. (1)                              0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
