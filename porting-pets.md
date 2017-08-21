@@ -55,7 +55,7 @@ __tool-name__
 : Site: [https://ethercalc.net/](https://ethercalc.net/)
 : License: [CPAL 1.0 Artistic License 2.0](https://github.com/audreyt/ethercalc/blob/master/LICENSE.txt)
 : Source: [https://github.com/audreyt/ethercalc/](https://github.com/audreyt/ethercalc/)
-: Version: 0.20151108.1
+: Version: 0.20170704.0
 : FreeBSD: no
 : OpenBSD: no
 : NetBSD: no
