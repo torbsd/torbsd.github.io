@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Mon Aug 21 13:25:56 UTC 2017
+Report Date: Tue Aug 22 02:43:51 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1068,9 +1068,9 @@ Closed Joint Stock Company SibTransTelecom (1)           30720 (0.0%)
 RCL CJSC (1)                                             28028 (0.0%)
 Telecommunication Infrastructure Company (1)             37 (0.0%)
 Saudi Telecom Company JSC (1)                            0 (0.0%)
-ITC Electron Ltd (1)                                     0 (0.0%)
-Vanta Telecommunications Limited (1)                     0 (0.0%)
 Telecom Algeria (1)                                      0 (0.0%)
+Vanta Telecommunications Limited (1)                     0 (0.0%)
+ITC Electron Ltd (1)                                     0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
