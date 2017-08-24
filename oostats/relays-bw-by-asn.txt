@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Wed Aug 23 18:50:43 UTC 2017
+Report Date: Thu Aug 24 03:17:04 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1048,8 +1048,8 @@ PT Telekomunikasi Indonesia (2)                          63362 (0.0%)
 Aria Shatel Company Ltd (1)                              62464 (0.0%)
 H88 S.A. (1)                                             61021 (0.0%)
 mitko.com Eood (1)                                       60457 (0.0%)
-Nagasaki Cable Media Inc. (1)                            60416 (0.0%)
 Cyprus Telecommunications Authority (1)                  60416 (0.0%)
+Nagasaki Cable Media Inc. (1)                            60416 (0.0%)
 ennit server GmbH (1)                                    60164 (0.0%)
 Hadara (1)                                               58368 (0.0%)
 RFTkabel Brandenburg GmbH (1)                            57919 (0.0%)
@@ -1068,9 +1068,9 @@ PP MainStream (1)                                        21463 (0.0%)
 AltusHost B.V. (2)                                       17872 (0.0%)
 OPTINET (1)                                              14336 (0.0%)
 Jupiter Telecommunications Co., Ltd. (1)                 5120 (0.0%)
+TeNeT Scientific Production Enterprise LLC (1)           0 (0.0%)
 VTR BANDA ANCHA S.A. (1)                                 0 (0.0%)
 BT Communications Ireland Limited (1)                    0 (0.0%)
-TeNeT Scientific Production Enterprise LLC (1)           0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
