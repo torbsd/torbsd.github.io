@@ -54,7 +54,7 @@ works.
 * [Autonomous System Numbers Ranked by Total Consensus Weight Fraction](oostats/relays-cweight-by-as.txt)
 * [Autonomous System Names Ranked by Total Consensus Weight Fraction](oostats/relays-cweight-by-asn.txt)
 * [Country Codes Ranked by Bandwidth](oostats/relays-bw-by-cc.txt)
-* [Contry Codes Ranked by Total Consensus Weight Fraction](oostats/relays-cweight-by-cc.txt)
+* [Country Codes Ranked by Total Consensus Weight Fraction](oostats/relays-cweight-by-cc.txt)
 * [Operating Systems Ranked by Bandwidth](oostats/relays-bw-by-os.txt)
 * [Operating Systems Ranked by Total Consensus Weight Fraction](oostats/relays-cweight-by-os.txt)
 * [Operating Systems Count](oostats/relays-os-count.txt)
