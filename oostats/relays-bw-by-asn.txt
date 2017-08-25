@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Fri Aug 25 15:51:34 UTC 2017
+Report Date: Fri Aug 25 21:45:36 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1071,11 +1071,11 @@ Cutting Edge Communications, Inc. (1)                    38515 (0.0%)
 Hutchison Drei Austria GmbH (1)                          37638 (0.0%)
 PP MainStream (1)                                        21053 (0.0%)
 Information Technology Company (ITC) (1)                 14262 (0.0%)
-Sercomtel Participações S.A. (1)                       0 (0.0%)
-Closed Joint Stock Company SibTransTelecom (1)           0 (0.0%)
 BT Communications Ireland Limited (1)                    0 (0.0%)
+Sercomtel Participações S.A. (1)                       0 (0.0%)
 ASMedi (1)                                               0 (0.0%)
 TELTA Citynetz GmbH (1)                                  0 (0.0%)
+Closed Joint Stock Company SibTransTelecom (1)           0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
