@@ -1,0 +1,53 @@
+SocksPort 0
+
+Log notice file /var/log/tor.log
+
+RunAsDaemon 1
+
+# for FreeBSD
+DataDirectory /var/db/tor
+
+# for OpenBSD
+DataDirectory /var/tor
+
+# add a hidden service for SSHD?
+#HiddenServiceDir /var/tor/sshd
+#HiddenServicePort 22 127.0.0.1:22
+
+# sometimes necessary
+#Address ${your_public_ip_address}
+
+# the TCP port for the bridge that will need port forwarding from the NAT device
+ORPort 9001
+
+Nickname ${some nickname}
+
+# The more the better
+# Throttle traffic to 4000KB/s (16000Kbps)
+RelayBandwidthRate 4000 KBytes  # Throttle traffic to 4000KB/s (16000Kbps)
+
+# But allow bursts up to 6000KB (48000Kbps)
+RelayBandwidthBurst 6000 KBytes # But allow bursts up to 6000KB (48000Kbps)
+
+# for obfs4proxy, with logging the TorData directory
+#ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy -enableLogging -logLevel info managed
+#ExtORPort auto
+
+# and static TCP port that obfs4proxy will listen on
+#ServerTransportListenAddr obfs4 ${static_device_IP}:42222
+
+User _tor
+# no exit traffic here
+ExitPolicy reject *:*
+
+PublishServerDescriptor 1
+BridgeRelay 1
+
+# show connection by country code every 24 hours
+BridgeRecordUsageByCountry 1
+EntryStatistics 1
+
+# useful for tail-ing(1) /var/log/tor.log
+HeartbeatPeriod 1 hours
+
+AvoidDiskWrites 1
