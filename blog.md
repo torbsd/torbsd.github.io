@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __August 2017__
 
-[Tor Browser 7.0.4 in OpenBSD -current port](#tb704-ports) [%sep] [Testing obfs4proxy on FreeBSD and OpenBSD](#welcome-obfs4) [%sep] [Getting Sick](#getting-sick)
+[Tor Browser 7.0.4 in OpenBSD -current ports](#tb704-ports) [%sep] [Testing obfs4proxy on FreeBSD and OpenBSD](#welcome-obfs4) [%sep] [Getting Sick](#getting-sick)
 
 __June 2017__
 
@@ -87,19 +87,19 @@ __October 2015__
 
 Earlier today, Tor Browser 7.0.4 (was committed to OpenBSD's -current ports)[https://marc.info/?l=openbsd-ports-cvs&m=150382405504052&w=2].
 
-On some levels it's a non-spectacular event. We build the packages, test those packages, rebuild, retest and then Attila submits the diff to OpenBSD's ports@ list. Sometimes I retest the from source or packages on i386 before it gets into ports. Other times it's tested after it gets into ports on the most recent snapshot.
+On some levels it's a non-spectacular event. We build the packages, test those packages, rebuild, retest and then Attila submits the diff to OpenBSD's ports@ list. Sometimes I retest from source or packages on i386 before it gets into ports. Other times it's tested after it gets into ports on the most recent snapshot.
 
-It may be a boring routine to the outside world, occuring mostly on offline build servers and laptops. You can't watch it on GitHub. But it's also remarkably time-consuming. We fight with ancient hardware, the issues of multiple admins on the same server, not to mention the host of Mozilla zig-zags Attila maps and translates. The statues of Christopher Columbus and Lewis and Clark should be replaced with him.
+It may be a boring routine to the outside world, occuring mostly on offline build servers and laptops. You can't watch it on GitHub. But it's also remarkably time-consuming. We fight with ancient hardware, the issues of multiple admins on the same server, not to mention the host of Mozilla zig-zags Attila maps and translates. The statues of Christopher Columbus and Lewis and Clark should be replaced with him. Each release is a step into uncharted territory on many levels.
 
 Some shiny donated hardware would help a lot, such as a couple of amd64 laptops from this century for testing and a contemporary 64-bit server for the builds. We are running off of our own stock of hardware and colocation [donated by NYC*BUG](http://www.nycbug.org/)
 
-Regardless, it remains __TDP's__ most critical activity. Tor Brower on OpenBSD idled as a topic of chatter for years, since matching an elementary anonymity tool with arguably the most secure open-source operating system was an obvious match . TB ported to OpenBSD put __TDP__ on the map for some and on the radar for many others.
+Regardless, it remains __TDP's__ most basic activity. Tor Brower on the BSDs idled as a topic of chatter for years, since matching a critical anonymity tool with arguably the most secure open-source operating system was an obvious match. TB ported to OpenBSD put __TDP__ on the map for some and on the radar for many others.
 
 Besides hardware, another contribution we request is some feedback. We get loads of [feedback from the OpenBSD ports list](https://marc.info/?l=openbsd-ports&r=1&s=tor+browser&q=b&w=4), but we have little idea of the usage. OpenBSD doesn't keep statistics on package downloads or port installs. That's where _you_ come in. Let us know what you think.
 
-Have you tried TB on OpenBSD -current? -stable? Would have a maintained -stable release (via backporting) be of use? Have you tested the pluggable transport obfs4proxy as a client in the browser? Are there differences with the Windows or Linux TB releases that you notice?
+Have you tried TB on OpenBSD -current? -stable? Would a maintained -stable release (via backporting) be of use? Have you tested the pluggable transport obfs4proxy as a client in the browser? Are there differences with the Windows or Linux TB releases that you notice?
 
-We need to know. __TDP's__ [OODA Loop](https://en.wikipedia.org/wiki/OODA_loop) is inadequate without that feedback. Notify us with a [GitHub issue for the www site](https://github.com/torbsd/torbsd.github.io/issues). And now, __TDP__ can even be contacted by email
+We need to know. __TDP's__ [OODA Loop](https://en.wikipedia.org/wiki/OODA_loop) is inadequate without that feedback. Notify us with a [GitHub issue for the www site](https://github.com/torbsd/torbsd.github.io/issues/). And now, __TDP__ can even be contacted by email
 
 ###20170808###
 
