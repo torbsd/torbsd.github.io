@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Sun Aug 27 04:19:55 UTC 2017
+Report Date: Sun Aug 27 16:38:57 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1039,8 +1039,8 @@ COPEL Telecomunicações S.A. (1)                        57768 (0.0%)
 Hathway IP Over Cable Internet (1)                       57344 (0.0%)
 Nej.cz s.r.o. (1)                                        56622 (0.0%)
 RFTkabel Brandenburg GmbH (1)                            55601 (0.0%)
-WGO Telecomunicações Ltda (1)                          55296 (0.0%)
 mywire Datentechnik GmbH (1)                             55296 (0.0%)
+WGO Telecomunicações Ltda (1)                          55296 (0.0%)
 JSC Vostoktelecom (1)                                    53638 (0.0%)
 Telecom Argentina S.A. (1)                               53202 (0.0%)
 PT. Mediatama Telematika Nusantara (1)                   49417 (0.0%)
@@ -1049,11 +1049,11 @@ Cutting Edge Communications, Inc. (1)                    40896 (0.0%)
 The Computer Shop Netlink (1)                            39188 (0.0%)
 ASMedi (1)                                               21810 (0.0%)
 EPM Telecomunicaciones S.A. E.S.P. (1)                   43 (0.0%)
-AMSNET Andrzej Szreter (1)                               0 (0.0%)
 YOU Broadband & Cable India Ltd. (1)                     0 (0.0%)
-COLOMBIA TELECOMUNICACIONES S.A. ESP (1)                 0 (0.0%)
+AMSNET Andrzej Szreter (1)                               0 (0.0%)
 Stiftelsen Chalmers Studenthem (1)                       0 (0.0%)
 BT Communications Ireland Limited (1)                    0 (0.0%)
+COLOMBIA TELECOMUNICACIONES S.A. ESP (1)                 0 (0.0%)
 University of Pennsylvania (1)                           0 (0.0%)
 
 
