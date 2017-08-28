@@ -23,7 +23,7 @@
 
 <p><strong>August 2017</strong></p>
 
-<p><a href="#welcome-obfs4">Testing obfs4proxy on FreeBSD and OpenBSD</a> &#8916; <a href="#getting-sick">Getting Sick</a></p>
+<p><a href="#tb704-ports">Tor Browser 7.0.4 in OpenBSD -current ports</a> &#8916; <a href="#welcome-obfs4">Testing obfs4proxy on FreeBSD and OpenBSD</a> &#8916; <a href="#getting-sick">Getting Sick</a></p>
 
 <p><strong>June 2017</strong></p>
 
@@ -90,6 +90,28 @@
 <p><a href="#tb-update">Updated Tor Browser Packages</a> &#8916; <a href="#relay-guides">The BSD Relay Guides</a> &#8916; <a href="#first-bells">Our First Bells</a> &#8916; <a href="#beyond-os">Beyond OS Diversity</a> &#8916; <a href="#tb-5.0.3">Tor Browser version 5.0.3 for OpenBSD</a></p>
 
 <p><a href="#attic">From the Attic</a></p>
+
+<h3 id="20170827">20170827</h3>
+
+<p><a id="tb704-ports">Tor Browser 7.0.4 in OpenBSD -current ports</a> by gman999</p>
+
+<p>Earlier today, Tor Browser 7.0.4 (was committed to OpenBSD&#8217;s -current ports)[https://marc.info/?l=openbsd-ports-cvs&m=150382405504052&w=2].</p>
+
+<p>On some levels it&#8217;s a non-spectacular event. We build the packages, test those packages, rebuild, retest and then Attila submits the diff to OpenBSD&#8217;s ports@ list. Sometimes I retest from source or packages on i386 before it gets into ports. Other times it&#8217;s tested after it gets into ports on the most recent snapshot.</p>
+
+<p>It may be a boring routine to the outside world, occuring mostly on offline build servers and laptops. You can&#8217;t watch it on GitHub. But it&#8217;s also remarkably time-consuming. We fight with ancient hardware, the issues of multiple admins on the same server, not to mention the host of Mozilla zig-zags Attila maps and translates. The statues of Christopher Columbus and Lewis and Clark should be replaced with him. Each release can be a step into uncharted territory on many levels.</p>
+
+<p>Some shiny donated hardware would help a lot, such as a couple of amd64 laptops from this century for testing and a contemporary 64-bit server for the builds. We are running off of our own stock of hardware and colocation <a href="http://www.nycbug.org/">donated by NYC*BUG</a> and <a href="https://nyi.net/">New York Internet</a>.</p>
+
+<p>Regardless, it remains <strong>TDP&#8217;s</strong> most basic activity. Tor Brower on the BSDs idled as a topic of chatter for years, since matching a critical anonymity tool with arguably the most secure open-source operating system was a logical progression. TB ported to OpenBSD put <strong>TDP</strong> on the map for some and on the radar for many others.</p>
+
+<p>Besides hardware, another contribution we request is some feedback. We get loads of <a href="https://marc.info/?l=openbsd-ports&r=1&s=tor+browser&q=b&w=4">feedback from the OpenBSD ports list</a>, but we have little idea of the usage. OpenBSD doesn&#8217;t keep statistics on package downloads or port installs. That&#8217;s where <em>you</em> come in. Let us know what you think.</p>
+
+<p>Have you tried TB on OpenBSD -current? -stable? Would a maintained -stable release (via backporting) be of use? Have you tested the pluggable transport obfs4proxy as a client in the browser? Are there differences with the Windows or Linux TB releases that you notice?</p>
+
+<p>We need to know. <strong>TDP&#8217;s</strong> <a href="https://en.wikipedia.org/wiki/OODA_loop">OODA Loop</a> is inadequate without that feedback. Notify us with a <a href="https://github.com/torbsd/torbsd.github.io/issues/">GitHub issue for the www site</a>.</p>
+
+<p>In the next few days, the <strong>TDP</strong> email address with PGP fingerprint will be posted.</p>
 
 <h3 id="20170808">20170808</h3>
 
@@ -1027,7 +1049,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2017 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Sun Aug 13 13:49:25 2017 UTC</code></p>
+<p><code>last updated: Mon Aug 28 02:35:51 2017 UTC</code></p>
 
 </body>
 </html>
