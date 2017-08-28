@@ -85,7 +85,7 @@ __October 2015__
 
 <a id="tb704-ports">Tor Browser 7.0.4 in OpenBSD -current ports</a> by gman999
 
-Earlier today, Tor Browser 7.0.4 (was committed to OpenBSD's -current ports)[https://marc.info/?l=openbsd-ports-cvs&m=150382405504052&w=2].
+Earlier today, Tor Browser 7.0.4 [was committed to OpenBSD's -current ports](https://marc.info/?l=openbsd-ports-cvs&m=150382405504052&w=2).
 
 On some levels it's a non-spectacular event. We build the packages, test those packages, rebuild, retest and then Attila submits the diff to OpenBSD's ports@ list. Sometimes I retest from source or packages on i386 before it gets into ports. Other times it's tested after it gets into ports on the most recent snapshot.
 
