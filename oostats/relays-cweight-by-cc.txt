@@ -4,91 +4,11 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Tue Aug 29 12:32:18 UTC 2017
+Report Date: Wed Aug 30 02:57:40 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 CONSENSUS WEIGHT FRACTION BY COUNTRY
 
-COUNTRY (records)  CONSENSUS_WEIGHT_FRAC
-================  =============================================================
-fr (939)          23.3%
-de (1396)         20.9%
-us (1166)         11.3%
-nl (518)          10.0%
-ca (263)          4.6%
-se (195)          3.7%
-gb (261)          3.3%
-ch (170)          3.0%
-ru (312)          2.2%
-ro (93)           1.8%
-ua (119)          1.5%
-dk (55)           1.4%
-it (80)           1.2%
-pa (11)           1.2%
-pl (71)           1.1%
-cz (84)           1.1%
-no (45)           0.9%
-hu (41)           0.9%
-fi (69)           0.8%
-at (63)           0.6%
-lu (21)           0.6%
-bg (63)           0.6%
-lt (41)           0.5%
-md (46)           0.5%
-lv (30)           0.5%
-sk (19)           0.3%
-es (46)           0.3%
-be (31)           0.3%
-lr (1)            0.2%
-sc (19)           0.2%
-ie (30)           0.1%
-pt (12)           0.1%
-gr (20)           0.1%
-is (21)           0.1%
-jp (78)           0.1%
-ee (10)           0.1%
-sg (63)           0.1%
-in (33)           0.1%
-tr (6)            0.0%
-br (37)           0.0%
-il (17)           0.0%
-null (3)          0.0%
-al (5)            0.0%
-kn (3)            0.0%
-cr (6)            0.0%
-hk (20)           0.0%
-kr (14)           0.0%
-au (54)           0.0%
-hr (4)            0.0%
-tw (12)           0.0%
-my (12)           0.0%
-za (9)            0.0%
-cy (2)            0.0%
-ar (13)           0.0%
-nz (13)           0.0%
-mx (5)            0.0%
-kg (4)            0.0%
-vn (11)           0.0%
-im (2)            0.0%
-id (8)            0.0%
-am (2)            0.0%
-th (2)            0.0%
-ae (2)            0.0%
-ph (1)            0.0%
-cl (5)            0.0%
-kz (2)            0.0%
-rs (2)            0.0%
-ng (1)            0.0%
-mn (1)            0.0%
-do (1)            0.0%
-ke (1)            0.0%
-tn (1)            0.0%
-bo (1)            0.0%
-ir (2)            0.0%
-co (2)            0.0%
-mq (1)            0.0%
-ps (1)            0.0%
-dz (2)            0.0%
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
