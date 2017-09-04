@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Mon Sep  4 14:11:50 UTC 2017
+Report Date: Mon Sep  4 21:24:58 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NUMBER
@@ -1132,8 +1132,8 @@ AS6877 (1)        66432 (0.0%)
 AS5056 (1)        66338 (0.0%)
 AS17974 (2)       66087 (0.0%)
 AS3663 (1)        65578 (0.0%)
-AS3329 (1)        64512 (0.0%)
 AS8675 (1)        64512 (0.0%)
+AS3329 (1)        64512 (0.0%)
 AS8779 (1)        63420 (0.0%)
 AS7303 (1)        62464 (0.0%)
 AS34758 (1)       60268 (0.0%)
@@ -1145,8 +1145,8 @@ AS10594 (1)       52927 (0.0%)
 AS4804 (1)        52224 (0.0%)
 AS8920 (1)        52224 (0.0%)
 AS36923 (1)       50304 (0.0%)
-AS35239 (1)       50176 (0.0%)
 AS36947 (1)       50176 (0.0%)
+AS35239 (1)       50176 (0.0%)
 AS21826 (1)       47104 (0.0%)
 AS8386 (1)        41984 (0.0%)
 AS50212 (1)       41362 (0.0%)
@@ -1157,9 +1157,9 @@ AS47395 (1)       24596 (0.0%)
 AS29256 (1)       18432 (0.0%)
 AS10417 (1)       7539 (0.0%)
 AS206011 (1)      0 (0.0%)
-AS9506 (1)        0 (0.0%)
 AS21021 (1)       0 (0.0%)
 AS34975 (1)       0 (0.0%)
+AS9506 (1)        0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>

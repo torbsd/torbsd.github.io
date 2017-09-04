@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Mon Sep  4 14:11:51 UTC 2017
+Report Date: Mon Sep  4 21:24:59 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1076,10 +1076,10 @@ PJSC Telesystems of Ukraine (1)                          37564 (0.0%)
 MT-MPLS (1)                                              36864 (0.0%)
 Syrian Telecom (1)                                       18432 (0.0%)
 Fundação de Desenvolvimento da Pesquisa (1)            7539 (0.0%)
-Freedom LLC (1)                                          0 (0.0%)
 Azimut-R Ltd. (1)                                        0 (0.0%)
-Singtel Fibre Broadband (1)                              0 (0.0%)
 Multimedia Polska S.A. (1)                               0 (0.0%)
+Freedom LLC (1)                                          0 (0.0%)
+Singtel Fibre Broadband (1)                              0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
