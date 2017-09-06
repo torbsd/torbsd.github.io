@@ -87,7 +87,7 @@ __October 2015__
 
 ###20170906###
 
-<a id="bridge-installfest">A BSD-focused Tor Bridge Installfest</a> by gman999
+<a id="installfest">A BSD-focused Tor Bridge Installfest</a> by gman999
 
 This disturbing picture of the [Tor bridge operating system monoculture](https://torbsd.github.io/oostats/bridges-os-count.txt) should frighten everyone.
 
