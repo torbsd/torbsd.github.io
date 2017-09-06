@@ -10,13 +10,13 @@ __TDP__ is looking to attack this problem on the local level with hands-on Tor i
 
 One could get online commitments from all over to wear a blue shirt on the first Tuesday of the month, to stop using salt on kale or to run a Tor bridge on a BSD variant, but those calls generally evaporate on the internet. It's time to start doing physical sessions to gather the hardware, do the Tor configuration and ultimately start changing the bridge operating system count.
 
-__TDP__ is organizing a Tor bridge installfest in New York City for October 4th, as a New York City *BSD User Group (http://www.nycbug.org/).
+__TDP__ is organizing a *BSD Tor bridge installfest in New York City for [October 4th](http://www.nycbug.org/index.cgi?action=view&id=10654), as a New York City *BSD User Group (http://www.nycbug.org/) meeting.
  
 The meeting will be introduced with a quick overview of Tor and the role of bridges, with a glance at the current [statistics](https://torbsd.github.io/oostats.html).
 
 To make the event fruitful, users should do some prepatory work coming into the installfest.
 
-* Get your small and quiet thin client, an [APU2 from PCengines.ch](http://pcengines.ch/apu2.htm) or maybe a [BeagleBone Black](https://beagleboard.org/black) to move beyond the x86/Intel monoculture. This is a great opportunity to hack on some of the newer (and inexpensive) ARM-based hardware supported by the BSDs.
+* Get your small and quiet thin client, an [APU2 from PCengines.ch](http://pcengines.ch/apu2.htm) or maybe a [BeagleBone Black](https://beagleboard.org/black/) to move beyond the x86/Intel monoculture. This is a great opportunity to hack on some of the newer (and inexpensive) ARM-based hardware supported by the BSDs.
 
 * Install your preferred BSD on the hardware, but keep it lean and small. For FreeBSD users [/etc/src.conf](https://man.freebsd.org/src.conf/) can be your friend. Minimize startup daemons and build this as a single-purpose system.
 

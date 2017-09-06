@@ -21,6 +21,10 @@
 
 <h2 id="ablogoracentrallocationforannouncesandnotes">A Blog, or a Central Location for Announces and Notes</h2>
 
+<p><strong>September 2017</strong></p>
+
+<p><a href="#installfest">*BSD Focused Tor Bridge Installfests</a></p>
+
 <p><strong>August 2017</strong></p>
 
 <p><a href="#tb704-ports">Tor Browser 7.0.4 in OpenBSD -current ports</a> &#8916; <a href="#welcome-obfs4">Testing obfs4proxy on FreeBSD and OpenBSD</a> &#8916; <a href="#getting-sick">Getting Sick</a></p>
@@ -90,6 +94,42 @@
 <p><a href="#tb-update">Updated Tor Browser Packages</a> &#8916; <a href="#relay-guides">The BSD Relay Guides</a> &#8916; <a href="#first-bells">Our First Bells</a> &#8916; <a href="#beyond-os">Beyond OS Diversity</a> &#8916; <a href="#tb-5.0.3">Tor Browser version 5.0.3 for OpenBSD</a></p>
 
 <p><a href="#attic">From the Attic</a></p>
+
+<h3 id="20170906">20170906</h3>
+
+<p><a id="bridge-installfest">A BSD-focused Tor Bridge Installfest</a> by gman999</p>
+
+<p>This disturbing picture of the <a href="https://torbsd.github.io/oostats/bridges-os-count.txt">Tor bridge operating system monoculture</a> should frighten everyone.</p>
+
+<p>No exaggeration intended, but when only one operating system kernel is responsible for the vast majority of censored traffic entering the Tor network, alarm bells should sound.</p>
+
+<p><strong>TDP</strong> is looking to attack this problem on the local level with hands-on Tor installfests on the BSDs.</p>
+
+<p>One could get online commitments from all over to wear a blue shirt on the first Tuesday of the month, to stop using salt on kale or to run a Tor bridge on a BSD variant, but those calls generally evaporate on the internet. It&#8217;s time to start doing physical sessions to gather the hardware, do the Tor configuration and ultimately start changing the bridge operating system count.</p>
+
+<p><strong>TDP</strong> is organizing a *BSD Tor bridge installfest in New York City for <a href="http://www.nycbug.org/index.cgi?action=view&id=10654">October 4th</a>, as a New York City *BSD User Group (http://www.nycbug.org/) meeting.</p>
+
+<p>The meeting will be introduced with a quick overview of Tor and the role of bridges, with a glance at the current <a href="https://torbsd.github.io/oostats.html">statistics</a>.</p>
+
+<p>To make the event fruitful, users should do some prepatory work coming into the installfest.</p>
+
+<ul>
+<li><p>Get your small and quiet thin client, an <a href="http://pcengines.ch/apu2.htm">APU2 from PCengines.ch</a> or maybe a <a href="https://beagleboard.org/black/">BeagleBone Black</a> to move beyond the x86/Intel monoculture. This is a great opportunity to hack on some of the newer (and inexpensive) ARM-based hardware supported by the BSDs.</p></li>
+<li><p>Install your preferred BSD on the hardware, but keep it lean and small. For FreeBSD users <a href="https://man.freebsd.org/src.conf/">/etc/src.conf</a> can be your friend. Minimize startup daemons and build this as a single-purpose system.</p></li>
+<li><p>a simple, well-commented <a href="torrc-bridge.txt">bridge-enabled torrc</a> helps. Pluggable transport support is also important for users censored by deep-packet inspection, so be sure to install and configure our obfs4proxy port for <a href="https://github.com/torbsd/freebsd-ports/tree/egypcio/security/obfs4proxy">FreeBSD</a> and <a href="https://github.com/torbsd/openbsd-ports/tree/master/net/obfs4proxy">OpenBSD</a>. Don&#8217;t forget the dependencies.</p></li>
+<li><p>In some parts of world bandwidth is underutilized. For those with FIOS or regular cable connections in a place like New York City, it&#8217;s likely that your connection is quiet, even if the providers are <a href="https://www.dslreports.com/forum/r31182597-bandwidth-deception">deceptive about the true bandwidth of residential connections</a>. Decide how much bandwidth to dedicate to the bridge. Setting <em>RelayBandwidthRate</em> in the torrc to 5000 or 10000 KB will probably go unnoticed by you, but could be lifeline to users blocked from the Tor network.</p></li>
+<li><p>If the bridge will be behind a firewall or NAT, figure out how to forward a TCP port to it. The bridge should have a static <a href="https://tools.ietf.org/html/rfc1918">RFC1918</a> IP address, like 192.168.1.20.</p></li>
+</ul>
+
+<p>The NYC event will be followed up by a planned IRC sessions for those wanting more feedback and discussion once the bridge is up and running.</p>
+
+<p>Take this model of a *BSD Tor bridge installfest and replicate in your own locale or as a birds-of-a-feather session at an upcoming BSD conference.</p>
+
+<p>In the coming weeks, we&#8217;ll blog a full recipe for *BSD Tor bridge installfests, with all the details covered to ensure a successful event.</p>
+
+<p>Consider this installfest open-sourced and ready to hack and replicate.</p>
+
+<p>Let us know how it goes.</p>
 
 <h3 id="20170827">20170827</h3>
 
@@ -1049,7 +1089,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2017 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Mon Aug 28 02:39:45 2017 UTC</code></p>
+<p><code>last updated: Wed Sep  6 20:27:45 2017 UTC</code></p>
 
 </body>
 </html>
