@@ -97,7 +97,7 @@ __TDP__ is looking to attack this problem on the local level with hands-on Tor i
 
 One could get online commitments from all over to wear a blue shirt on the first Tuesday of the month, to stop using salt on kale or to run a Tor bridge on a BSD variant, but those calls generally evaporate on the internet. It's time to start doing physical sessions to gather the hardware, do the Tor configuration and ultimately start changing the bridge operating system count.
 
-__TDP__ is organizing a *BSD Tor bridge installfest in New York City for [October 4th](http://www.nycbug.org/index.cgi?action=view&id=10654), as a New York City *BSD User Group (http://www.nycbug.org/) meeting.
+__TDP__ is organizing a *BSD Tor bridge installfest in New York City for [October 4th](http://www.nycbug.org/index.cgi?action=view&id=10654), as a [New York City *BSD User Group](http://www.nycbug.org/) meeting.
  
 The meeting will be introduced with a quick overview of Tor and the role of bridges, with a glance at the current [statistics](https://torbsd.github.io/oostats.html).
 
