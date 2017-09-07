@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Wed Sep  6 19:09:48 UTC 2017
+Report Date: Thu Sep  7 01:34:02 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -826,8 +826,8 @@ easystores GmbH (1)                                      613427 (0.0%)
 Utelisys Communications B.V. (1)                         611821 (0.0%)
 Weacom Ltd (1)                                           610165 (0.0%)
 TELEFÓNICA CHILE S.A. (1)                               608549 (0.0%)
-Brutele SC (1)                                           606208 (0.0%)
 SnapServ Ltd (1)                                         606208 (0.0%)
+Brutele SC (1)                                           606208 (0.0%)
 Regional Information Technologies Ltd. (1)               601740 (0.0%)
 Prima S.A. (1)                                           592748 (0.0%)
 PrimaCom Berlin GmbH (3)                                 588701 (0.0%)
@@ -997,8 +997,8 @@ Lightwave Networking, LLC (1)                            116103 (0.0%)
 Elkdata OU (1)                                           116040 (0.0%)
 Vienna University Computer Center (1)                    115914 (0.0%)
 Luxembourg Online S.A. (1)                               115900 (0.0%)
-Tarr Kft. (1)                                            115829 (0.0%)
 ImproWare AG (1)                                         115829 (0.0%)
+Tarr Kft. (1)                                            115829 (0.0%)
 Kcom (1)                                                 115631 (0.0%)
 Andrews & Arnold Ltd (1)                                 115153 (0.0%)
 LigaLink, Ltd. (1)                                       114971 (0.0%)
@@ -1047,14 +1047,14 @@ Milleni.com (1)                                          64512 (0.0%)
 Brasil Telecom S/A - Filial Distrito Federal (1)         63488 (0.0%)
 United Networks Ltd. (1)                                 63488 (0.0%)
 Telemach Rotovz d.d. (1)                                 62464 (0.0%)
-Techtel LMDS Comunicaciones Interactivas S.A. (1)        61440 (0.0%)
 Microplex PTY LTD (1)                                    61440 (0.0%)
+Techtel LMDS Comunicaciones Interactivas S.A. (1)        61440 (0.0%)
 Cutting Edge Communications, Inc. (1)                    60899 (0.0%)
 green.ch AG (1)                                          60870 (0.0%)
 mitko.com Eood (1)                                       60761 (0.0%)
 Cyprus Telecommunications Authority (1)                  59392 (0.0%)
-Freedom LLC (1)                                          58368 (0.0%)
 Cooolbox AD (1)                                          58368 (0.0%)
+Freedom LLC (1)                                          58368 (0.0%)
 Telkom-Internet (1)                                      57343 (0.0%)
 AsterNet Ltd. (1)                                        57144 (0.0%)
 PT Telekomunikasi Indonesia (2)                          57058 (0.0%)
@@ -1073,8 +1073,8 @@ Rochester Institute of Technology (1)                    29064 (0.0%)
 Quadrant Televentures Limited (1)                        26624 (0.0%)
 RCL CJSC (1)                                             22479 (0.0%)
 ESCOM Ltd. - Haskovo (1)                                 0 (0.0%)
-CJSC TSI Service (1)                                     0 (0.0%)
 Azimut-R Ltd. (1)                                        0 (0.0%)
+CJSC TSI Service (1)                                     0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
