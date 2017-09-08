@@ -46,7 +46,9 @@ Some hardware to consider includes:
 
 * The [BeagleBone Black](https://beagleboard.org/black) works well, and may be the best choice for an out-of-sight Tor bridge. BBBs don't use regular DB9 serial cables, but rather [individually pinned serial cables](https://www.adafruit.com/product/954).
 
-* Finally, the [Raspberry Pi](https://www.raspberrypi.org/) is another good option and is well-supported by FreeBSD and NetBSD.
+* The [Raspberry Pi](https://www.raspberrypi.org/) is another good option and is well-supported by FreeBSD and NetBSD.
+
+* The full list of possible hardware is long. Consider the [CubieBoard](http://cubieboard.org/), [PINE64](https://www.pine64.org/)...
 
 For all support hardware platforms, including non-x86 ones, look at the hardware compatibility lists for each BSD:
 
@@ -71,6 +73,8 @@ With larger groups, one or two wandering facilitators can help shift resources o
 ####Beyond the Installfest####
 
 The installfest should result in a certain quantity of bridges with some longevity. It shouldn't be a one-off exercise, but rather one that contributes more BSD bridges into the Tor ecosystem.
+
+Like any public system, the bridges need to be maintained and updated, particularly with any Tor version updates. This can be an easy process with the various *BSD binary update tools for the base and packages.
 
 Consider followup discussions on an email list or IRC to provide further assistance.
 
