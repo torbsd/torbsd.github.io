@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Sat Sep  9 14:48:23 UTC 2017
+Report Date: Sun Sep 10 01:30:14 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1077,9 +1077,9 @@ PT. Mediatama Telematika Nusantara (1)                   37442 (0.0%)
 Telecom Algeria (1)                                      31264 (0.0%)
 Itissalat Al-MAGHRIB (1)                                 26624 (0.0%)
 RCL CJSC (1)                                             22513 (0.0%)
-Pakistan Telecom Company Limited (1)                     0 (0.0%)
 Afrihost (1)                                             0 (0.0%)
 Buzinessware FZCO (1)                                    0 (0.0%)
+Pakistan Telecom Company Limited (1)                     0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
