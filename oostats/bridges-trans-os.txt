@@ -4,36 +4,36 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: BRIDGES
-Report Date: Tue Sep 12 03:09:21 UTC 2017
+Report Date: Tue Sep 12 13:03:35 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 OS:TRANSPORT               COUNT
 =========================  ====================================================
-TOTAL (5498)               6233
-Linux:obfs4                4770 (76.5%)
-Linux:?                    597 (9.6%)
-Linux:obfs3                395 (6.3%)
-Linux:scramblesuit         292 (4.7%)
-Windows:?                  37 (0.6%)
+TOTAL (5715)               6452
+Linux:obfs4                4972 (77.1%)
+Linux:?                    605 (9.4%)
+Linux:obfs3                396 (6.1%)
+Linux:scramblesuit         292 (4.5%)
+Windows:?                  44 (0.7%)
 Linux:fte                  34 (0.5%)
 Linux:websocket            23 (0.4%)
 Linux:obfs2                21 (0.3%)
-FreeBSD:?                  16 (0.3%)
+FreeBSD:?                  16 (0.2%)
 OpenBSD:?                  8 (0.1%)
 Linux:meek                 7 (0.1%)
-Windows:obfs4              5 (0.1%)
+Windows:obfs4              6 (0.1%)
 FreeBSD:obfs4              5 (0.1%)
-OpenBSD:obfs4              5 (0.1%)
-Windows:obfs3              3 (0.0%)
+OpenBSD:obfs4              4 (0.1%)
+Windows:obfs3              4 (0.1%)
 FreeBSD:obfs3              3 (0.0%)
+OpenBSD:obfs3              2 (0.0%)
 Darwin:?                   2 (0.0%)
 Windows:scramblesuit       2 (0.0%)
-OpenBSD:obfs3              2 (0.0%)
-NetBSD:obfs4               1 (0.0%)
-Linux:snowflake            1 (0.0%)
-NetBSD:obfs3               1 (0.0%)
-Linux:obfs3_websocket      1 (0.0%)
 Unknown platform:?         1 (0.0%)
+Linux:snowflake            1 (0.0%)
+Linux:obfs3_websocket      1 (0.0%)
+NetBSD:obfs4               1 (0.0%)
+NetBSD:obfs3               1 (0.0%)
 Windows:obfs2              1 (0.0%)
 
 
