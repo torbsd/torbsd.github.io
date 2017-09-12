@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Tue Sep 12 13:03:27 UTC 2017
+Report Date: Tue Sep 12 23:42:55 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1033,8 +1033,8 @@ Limestone Networks, Inc. (1)                             90687 (0.0%)
 ANGANI-AS (1)                                            89902 (0.0%)
 Nizhnetagilskie Kompyuternye Seti LLC (1)                88904 (0.0%)
 Nej.cz s.r.o. (1)                                        88673 (0.0%)
-3S S.A. (1)                                              87040 (0.0%)
 Information Technology Company (ITC) (1)                 87040 (0.0%)
+3S S.A. (1)                                              87040 (0.0%)
 Transvision Reseau Inc. (1)                              85870 (0.0%)
 AlpineDC SA (1)                                          85469 (0.0%)
 Sc Cloud Troopers International Srl (1)                  83059 (0.0%)
@@ -1072,8 +1072,8 @@ MT-MPLS (1)                                              38912 (0.0%)
 PT. Mediatama Telematika Nusantara (1)                   37501 (0.0%)
 Sharif University Of Technology (1)                      35461 (0.0%)
 Itissalat Al-MAGHRIB (1)                                 30363 (0.0%)
-Corbina Telecom LLC (1)                                  0 (0.0%)
 Community Network Center Inc. (1)                        0 (0.0%)
+Corbina Telecom LLC (1)                                  0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
