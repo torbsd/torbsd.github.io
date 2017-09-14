@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Thu Sep 14 11:16:13 UTC 2017
+Report Date: Thu Sep 14 23:35:37 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1042,8 +1042,8 @@ RAIDNET PROVEDOR DE TELECOMUNICACOES LTDA (1)            59810 (0.0%)
 H88 S.A. (1)                                             59574 (0.0%)
 Seech-Infocom Ltd. (1)                                   58368 (0.0%)
 RFTkabel Brandenburg GmbH (1)                            57518 (0.0%)
-Host Universal Pty Ltd (1)                               55296 (0.0%)
 B2B2C Inc (1)                                            55296 (0.0%)
+Host Universal Pty Ltd (1)                               55296 (0.0%)
 COMCEL GUATEMALA S.A. (1)                                54021 (0.0%)
 Telecom Argentina S.A. (1)                               52915 (0.0%)
 JSC Vostoktelecom (1)                                    51481 (0.0%)
@@ -1053,14 +1053,14 @@ PT. Mediatama Telematika Nusantara (1)                   39813 (0.0%)
 RCL CJSC (1)                                             37218 (0.0%)
 PJSC Telesystems of Ukraine (1)                          35840 (0.0%)
 FLOW (1)                                                 28227 (0.0%)
-P/F Telefonverkid (1)                                    0 (0.0%)
 Patrik Lagerman WEB, Enskild Firma (1)                   0 (0.0%)
 Linknet-Fastnet ASN (1)                                  0 (0.0%)
-TOPNET (1)                                               0 (0.0%)
-Ukrcom Ltd. (1)                                          0 (0.0%)
-Eircom (1)                                               0 (0.0%)
-Schlund Technologies GmbH (1)                            0 (0.0%)
 Nuclearfallout Enterprises, Inc. (1)                     0 (0.0%)
+Schlund Technologies GmbH (1)                            0 (0.0%)
+Ukrcom Ltd. (1)                                          0 (0.0%)
+P/F Telefonverkid (1)                                    0 (0.0%)
+TOPNET (1)                                               0 (0.0%)
+Eircom (1)                                               0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
