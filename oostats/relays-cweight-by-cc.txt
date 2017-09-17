@@ -4,13 +4,18 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
+<<<<<<< HEAD
 Report Date: Sun Sep 17 01:58:07 UTC 2017
+=======
+Report Date: Sat Sep 16 14:09:48 UTC 2017
+>>>>>>> b6237ccaa7bc53f5d287f09691174a5725d0b79e
 Data Source: https://onionoo.torproject.org/details.json
 
 CONSENSUS WEIGHT FRACTION BY COUNTRY
 
 COUNTRY (records)  CONSENSUS_WEIGHT_FRAC
 ================  =============================================================
+<<<<<<< HEAD
 fr (918)          23.4%
 de (1400)         20.8%
 us (1202)         12.1%
@@ -46,10 +51,48 @@ pt (19)           0.1%
 gr (19)           0.1%
 ee (10)           0.1%
 jp (79)           0.1%
+=======
+fr (932)          23.6%
+de (1405)         20.1%
+us (1204)         12.0%
+nl (493)          11.0%
+ca (277)          4.8%
+gb (273)          4.1%
+se (199)          3.3%
+ch (164)          2.5%
+ro (87)           2.1%
+ru (322)          1.9%
+ua (117)          1.5%
+dk (56)           1.2%
+cz (81)           1.0%
+hu (44)           0.9%
+no (47)           0.9%
+pl (80)           0.8%
+it (76)           0.8%
+fi (72)           0.8%
+at (65)           0.7%
+bg (69)           0.6%
+lu (23)           0.6%
+pa (9)            0.6%
+lt (42)           0.5%
+lv (35)           0.4%
+sc (23)           0.4%
+lr (1)            0.4%
+md (40)           0.3%
+sk (20)           0.3%
+es (58)           0.3%
+be (27)           0.3%
+ie (30)           0.3%
+pt (17)           0.1%
+gr (19)           0.1%
+ee (10)           0.1%
+jp (80)           0.1%
+>>>>>>> b6237ccaa7bc53f5d287f09691174a5725d0b79e
 sg (64)           0.1%
 is (22)           0.1%
 kn (3)            0.1%
 hr (6)            0.1%
+<<<<<<< HEAD
 in (32)           0.0%
 null (4)          0.0%
 il (15)           0.0%
@@ -87,6 +130,45 @@ ke (1)            0.0%
 gt (1)            0.0%
 ye (1)            0.0%
 ve (1)            0.0%
+=======
+in (33)           0.1%
+null (3)          0.0%
+il (15)           0.0%
+tr (6)            0.0%
+cr (5)            0.0%
+al (5)            0.0%
+za (9)            0.0%
+au (56)           0.0%
+hk (24)           0.0%
+br (30)           0.0%
+kr (13)           0.0%
+my (10)           0.0%
+nz (13)           0.0%
+tw (13)           0.0%
+am (3)            0.0%
+cy (2)            0.0%
+mx (3)            0.0%
+si (1)            0.0%
+ar (13)           0.0%
+kg (4)            0.0%
+vn (13)           0.0%
+im (2)            0.0%
+th (2)            0.0%
+id (6)            0.0%
+ph (1)            0.0%
+ae (1)            0.0%
+kz (2)            0.0%
+do (2)            0.0%
+rs (1)            0.0%
+mn (1)            0.0%
+cl (3)            0.0%
+tn (1)            0.0%
+ke (1)            0.0%
+ge (1)            0.0%
+ir (1)            0.0%
+bd (1)            0.0%
+gt (1)            0.0%
+>>>>>>> b6237ccaa7bc53f5d287f09691174a5725d0b79e
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>

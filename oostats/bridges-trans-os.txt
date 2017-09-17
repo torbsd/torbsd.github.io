@@ -4,17 +4,30 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: BRIDGES
+<<<<<<< HEAD
 Report Date: Sun Sep 17 01:58:18 UTC 2017
+=======
+Report Date: Sat Sep 16 14:09:55 UTC 2017
+>>>>>>> b6237ccaa7bc53f5d287f09691174a5725d0b79e
 Data Source: https://onionoo.torproject.org/details.json
 
 OS:TRANSPORT               COUNT
 =========================  ====================================================
+<<<<<<< HEAD
 TOTAL (5088)               5821
 Linux:obfs4                4322 (74.2%)
 Linux:?                    628 (10.8%)
 Linux:obfs3                396 (6.8%)
 Linux:scramblesuit         291 (5.0%)
 Windows:?                  46 (0.8%)
+=======
+TOTAL (5233)               5965
+Linux:obfs4                4493 (75.3%)
+Linux:?                    613 (10.3%)
+Linux:obfs3                393 (6.6%)
+Linux:scramblesuit         291 (4.9%)
+Windows:?                  37 (0.6%)
+>>>>>>> b6237ccaa7bc53f5d287f09691174a5725d0b79e
 Linux:fte                  34 (0.6%)
 Linux:websocket            23 (0.4%)
 Linux:obfs2                20 (0.3%)
@@ -22,6 +35,7 @@ FreeBSD:?                  15 (0.3%)
 OpenBSD:?                  8 (0.1%)
 Linux:meek                 7 (0.1%)
 Windows:obfs4              5 (0.1%)
+<<<<<<< HEAD
 OpenBSD:obfs4              4 (0.1%)
 FreeBSD:obfs4              4 (0.1%)
 FreeBSD:obfs3              3 (0.1%)
@@ -34,6 +48,20 @@ NetBSD:obfs4               1 (0.0%)
 Unknown platform:?         1 (0.0%)
 Linux:snowflake            1 (0.0%)
 NetBSD:obfs3               1 (0.0%)
+=======
+FreeBSD:obfs4              4 (0.1%)
+OpenBSD:obfs4              4 (0.1%)
+Windows:obfs3              3 (0.1%)
+FreeBSD:obfs3              3 (0.1%)
+Darwin:?                   2 (0.0%)
+OpenBSD:obfs3              2 (0.0%)
+Windows:scramblesuit       2 (0.0%)
+Linux:snowflake            1 (0.0%)
+NetBSD:obfs3               1 (0.0%)
+NetBSD:obfs4               1 (0.0%)
+Linux:obfs3_websocket      1 (0.0%)
+Unknown platform:?         1 (0.0%)
+>>>>>>> b6237ccaa7bc53f5d287f09691174a5725d0b79e
 Windows:obfs2              1 (0.0%)
 
 
