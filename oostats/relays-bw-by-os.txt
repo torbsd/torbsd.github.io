@@ -4,43 +4,25 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-<<<<<<< HEAD
-Report Date: Sun Sep 17 01:57:54 UTC 2017
-=======
-Report Date: Sat Sep 16 14:09:40 UTC 2017
->>>>>>> b6237ccaa7bc53f5d287f09691174a5725d0b79e
+Report Date: Sun Sep 17 21:53:54 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY OPERATING SYSTEM
 
 OS (records)                    BANDWIDTH
 ==============================  ===============================================
-<<<<<<< HEAD
-TOTAL (6830)                    29147579491
-Linux (6326)                    26969744215 (92.5%)
-FreeBSD (272)                   1775313624 (6.1%)
-Windows (155)                   157955523 (0.5%)
-OpenBSD (54)                    126960876 (0.4%)
-ElectroBSD (4)                  39720092 (0.1%)
-Darwin (11)                     32566524 (0.1%)
-SunOS (4)                       31377467 (0.1%)
-NetBSD (1)                      9034234 (0.0%)
+TOTAL (6850)                    29175854966
+Linux (6326)                    27002220220 (92.5%)
+FreeBSD (272)                   1811111134 (6.2%)
+OpenBSD (55)                    127411333 (0.4%)
+Windows (172)                   119413466 (0.4%)
+ElectroBSD (4)                  42228932 (0.1%)
+SunOS (4)                       34515878 (0.1%)
+Darwin (13)                     25341213 (0.1%)
+NetBSD (1)                      7970399 (0.0%)
+DragonFly (1)                   2501598 (0.0%)
 GNU/kFreeBSD (1)                2128482 (0.0%)
-DragonFly (1)                   1886565 (0.0%)
-=======
-TOTAL (6893)                    29274110002
-Linux (6369)                    27080506254 (92.5%)
-FreeBSD (273)                   1787446027 (6.1%)
-Windows (170)                   158614832 (0.5%)
-OpenBSD (56)                    127531131 (0.4%)
-ElectroBSD (4)                  40734914 (0.1%)
-SunOS (4)                       33120978 (0.1%)
-Darwin (12)                     28734750 (0.1%)
-NetBSD (1)                      8231279 (0.0%)
-DragonFly (2)                   6195324 (0.0%)
-GNU/kFreeBSD (1)                2102624 (0.0%)
->>>>>>> b6237ccaa7bc53f5d287f09691174a5725d0b79e
-NetBSD MOS Technology 6510 (1)  891889 (0.0%)
+NetBSD MOS Technology 6510 (1)  1012311 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
