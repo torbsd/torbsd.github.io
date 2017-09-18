@@ -560,7 +560,7 @@ __tool-name__
 
 <a id="pkg-gpg4usb">__gpg4usb__</a>
 : Description: portable editor for encrypting and decrypting files
-: Site: [http://www.gpg4usb.org](http://www.gpg4usb.org)
+: Site: [http://www.gpg4usb.org/](http://www.gpg4usb.org/)
 : License: [GPLv3](https://github.com/gpg4usb/gpg4usb/blob/master/COPYING)
 : Source: [https://github.com/gpg4usb/gpg4usb](https://github.com/gpg4usb/gpg4usb)
 : Version: 0.3.3-2
@@ -596,7 +596,7 @@ __tool-name__
 
 <a id="pkg-pond">__Pond__</a>
 : Description: forward secure, asynchronous messaging
-: Site: [https://pond.imperialviolet.org](https://pond.imperialviolet.org)
+: Site: [https://pond.imperialviolet.org/](https://pond.imperialviolet.org/)
 : License: [BSD](https://github.com/agl/pond/blob/master/LICENSE)
 : Source: [https://github.com/agl/pond/](https://github.com/agl/pond/)
 : Version: 0.1.1
@@ -678,7 +678,7 @@ __tool-name__
 : Source:
 : Version:
 : FreeBSD: no
-: OpenBSD: no
+: OpenBSD: yes
 : pkgsrc: no
 : DPorts: no
 : notes: /bin/[bash](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bash) install script

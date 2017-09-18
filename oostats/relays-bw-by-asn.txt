@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Mon Sep 18 16:05:19 UTC 2017
+Report Date: Mon Sep 18 23:04:04 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1044,8 +1044,8 @@ PJSC Telesystems of Ukraine (1)                          34747 (0.0%)
 Zappie Host LLC (1)                                      34278 (0.0%)
 Cutting Edge Communications, Inc. (1)                    33615 (0.0%)
 Regional Information Technologies Ltd. (1)               20527 (0.0%)
-EMPRESAS MUNICIPALES DE CALI E.I.C.E. E.S.P. (1)         0 (0.0%)
 Cablelynx (1)                                            0 (0.0%)
+EMPRESAS MUNICIPALES DE CALI E.I.C.E. E.S.P. (1)         0 (0.0%)
 Slovak Telecom, a. s. (1)                                0 (0.0%)
 
 
