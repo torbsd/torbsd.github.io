@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Wed Sep 20 12:54:53 UTC 2017
+Report Date: Wed Sep 20 19:26:19 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1064,11 +1064,11 @@ The Computer Shop Netlink (1)                            40362 (0.0%)
 Zappie Host LLC (1)                                      35500 (0.0%)
 Cutting Edge Communications, Inc. (1)                    32944 (0.0%)
 MT-MPLS (1)                                              31744 (0.0%)
+COLOMBIA TELECOMUNICACIONES S.A. ESP (1)                 0 (0.0%)
 Community Network Center Inc. (1)                        0 (0.0%)
 Telmex Colombia S.A. (1)                                 0 (0.0%)
 Sunline.net.ua LTD (1)                                   0 (0.0%)
 WildPark Co (1)                                          0 (0.0%)
-COLOMBIA TELECOMUNICACIONES S.A. ESP (1)                 0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
