@@ -1,0 +1,5 @@
+##Configuring and Maintaining Tor Relays for *BSD Entities##
+
+This wiki is built for a reference point for those administering *BSD Tor relays at *BSD-using firms and projects.
+
+It's a reference point for building, configuring and maintaining Tor on all the BSDs, including FreeBSD, NetBSD, OpenBSD and Dragonfly BSD.

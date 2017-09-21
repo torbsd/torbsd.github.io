@@ -1,0 +1,47 @@
+##FAQ##
+
+###Preliminary Questions###
+
+####Why should My BSD-using entity run a BSD relay?####
+
+There are multiple reasons on multiple levels to why your entity should run a relay.
+
+* a Tor node with the Nickname of your software project or company conveys your committment to unrestricted internet access
+
+####Is there a benefit to the Tor network if my entity runs a node?####
+
+Tor itself benefts on a number of levels.
+
+* for an entity running a BSD, Tor benefits from the diversification on the operating system level, as the Tor ecosystem is overwhelmingly Linux
+
+####Do other entities or projects run their own Tor nodes?####
+
+The most notable example, and a great example for others, is Mozilla running 12 Tor relays starting in December 2014.
+
+Mozilla's relays were a significant contribution to the Tor network, and their nodes also allow exit traffic.
+
+At this point, New York Internet has contributed two high-bandwidth Tor relays out of its New Jersey data center to the __TDP__ effort.
+
+####What resources do we need to run a BSD relay?####
+
+The main requirements are usually accessible to any entity running a minimal infrastructure:
+
+* at least one public IP address, separate from your production IP block
+
+* a dedicated computer capable of routing internet data, from an APU to a multi-core server with gigabytes of RAM
+
+* a method of upgrading and maintaining the system, in whatever manner is the norm for your entity, whether manual, shell scripts or configuration management tools
+
+####What is the time/labor committment?####
+
+Most entities should only require a few hours to build, configure and test a Tor relay, assuming a purely manual purpose.
+
+Binary and/or automated upgrades are easy enough with the BSDs, and for a single-purpose system such as a Tor relay, the task is even simpler.
+
+####Will there be any problems with my IP space, including blacklisting, etc?####
+
+While not an impossible task, __TDP__ recommends just running a non-exit Tor node, i.e., one which is not the final hop in the Tor three-hop circuit, and therefore is not the IP the TCP destination sees.
+
+Of course, running an exit node would be a terrific contribution, but initally we recommend taking this one step at a time.
+
+Tor relay IPs are all public, not just the exit nodes, and if you don't have an IP in a separate block, it might make more sense to run a bridge. Tor bridges are private gateways into the Tor network selectively distributed to censored users.
