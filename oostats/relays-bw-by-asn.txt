@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Mon Sep 25 15:23:12 UTC 2017
+Report Date: Mon Sep 25 22:06:59 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -939,8 +939,8 @@ Closed Joint Stock Company SibTransTelecom (2)           228124 (0.0%)
 Hathway IP Over Cable Internet (1)                       227341 (0.0%)
 Origin Broadband Limited (1)                             222285 (0.0%)
 Wobcom GmbH (3)                                          221982 (0.0%)
-PERSONA COMMUNICATIONS INC. (1)                          221184 (0.0%)
 OOO Post ltd (1)                                         221184 (0.0%)
+PERSONA COMMUNICATIONS INC. (1)                          221184 (0.0%)
 Tiscali SpA (2)                                          220644 (0.0%)
 ARDH GLOBAL INDONESIA, PT (1)                            220240 (0.0%)
 Biddeford Internet Corp (2)                              217207 (0.0%)
