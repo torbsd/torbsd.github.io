@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __September 2017__
 
-[*BSD Focused Tor Bridge Installfests](#installfest)
+[Tor Browser 7.0.5 in OpenBSD -current ports](#tb705-ports) [%sep} [*BSD Focused Tor Bridge Installfests](#installfest)
 
 __August 2017__
 
@@ -85,11 +85,19 @@ __October 2015__
 
 [From the Attic](#attic)
 
+###20170927###
+
+<a id="tb705-ports">Tor Browser 7.0.5 in OpenBSD -current ports</a> by gman999
+
+Tor Browser 7.0.5 was [committed yesterday into OpenBSD's -current ports](https://marc.info/?l=openbsd-ports-cvs&m=150645572611625&w=2). It hasn't show up as a package yet, but should soon.
+
+We are going to add a patch to backport to OpenBSD -stable again. TB needs to be up-to-date. Anonymity is a bitter, constant war of measure and counter-measures. A step behind means you lose.
+
 ###20170906###
 
 <a id="installfest">A BSD-focused Tor Bridge Installfest</a> by gman999
 
-This disturbing picture of the [Tor bridge operating system monoculture](https://torbsd.github.io/oostats/bridges-os-count.txt) should frighten everyone.
+The disturbing picture of the [Tor bridge operating system monoculture](https://torbsd.github.io/oostats/bridges-os-count.txt) should frighten everyone.
 
 No exaggeration intended, but when only one operating system kernel is responsible for the vast majority of censored traffic entering the Tor network, alarm bells should sound.
 
