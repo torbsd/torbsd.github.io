@@ -91,7 +91,13 @@ __October 2015__
 
 Tor Browser 7.0.5 was [committed yesterday into OpenBSD's -current ports](https://marc.info/?l=openbsd-ports-cvs&m=150645572611625&w=2). It hasn't show up as a package yet, but should soon.
 
-We are going to add a patch to backport TB to OpenBSD -stable again. TB needs to be up-to-date. Anonymity is a bitter, constant war of measures and counter-measures.
+At the moment, the i386 port is building from an updated ports tree. Usually if a port compiles correctly on amd64, it compiles fine on i386, but there are enough differences in the architectures that it's worth a full build. On an old i386 Thinkpad with the -j 4 flag for [make(1)](http://man.openbsd.org/make), recent build times by versions are:
+
+* 7.0.2p0: 211 minutes, 57.80 seconds
+
+* 7.0.4: 252 minutes, 38.865 seconds
+
+We are going to submit a patch to backport TB to OpenBSD -stable again. TB needs to be up-to-date. Anonymity is a bitter, constant war of measures and counter-measures.
 
 A step behind means you lose before you step onto the battlefield.
 
