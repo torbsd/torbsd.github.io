@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __September 2017__
 
-[Tor Browser 7.0.5 in OpenBSD -current ports](#tb705-ports) [%sep} [*BSD Focused Tor Bridge Installfests](#installfest)
+[Tor Browser 7.0.5 in OpenBSD -current ports](#tb705-ports) [%sep] [*BSD Focused Tor Bridge Installfests](#installfest)
 
 __August 2017__
 
@@ -91,7 +91,11 @@ __October 2015__
 
 Tor Browser 7.0.5 was [committed yesterday into OpenBSD's -current ports](https://marc.info/?l=openbsd-ports-cvs&m=150645572611625&w=2). It hasn't show up as a package yet, but should soon.
 
-We are going to add a patch to backport to OpenBSD -stable again. TB needs to be up-to-date. Anonymity is a bitter, constant war of measure and counter-measures. A step behind means you lose.
+We are going to add a patch to backport TB to OpenBSD -stable again. TB needs to be up-to-date. Anonymity is a bitter, constant war of measures and counter-measures.
+
+A step behind means you lose before you step onto the battlefield.
+
+On another note, obfs4proxy was submitted to [FreeBSD's Bugzilla](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=222645). Getting obfs4proxy into FreeBSD's ports is a prerequisite for rectifying the usage of [pluggable transports for bridges](http://torbsd.github.io/oostats/bridges-trans-os.txt).
 
 ###20170906###
 
