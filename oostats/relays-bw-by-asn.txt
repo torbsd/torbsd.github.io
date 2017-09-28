@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Wed Sep 27 14:09:04 UTC 2017
+Report Date: Thu Sep 28 00:49:43 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1068,8 +1068,8 @@ PJSC Telesystems of Ukraine (1)                          47141 (0.0%)
 The Computer Shop Netlink (1)                            39561 (0.0%)
 MT-MPLS (1)                                              32768 (0.0%)
 INSYS LLC (1)                                            20625 (0.0%)
-University of Pennsylvania (1)                           0 (0.0%)
 Levonline AB (1)                                         0 (0.0%)
+University of Pennsylvania (1)                           0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
