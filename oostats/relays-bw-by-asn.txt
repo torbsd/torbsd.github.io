@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Thu Sep 28 13:40:21 UTC 2017
+Report Date: Thu Sep 28 23:53:53 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -808,8 +808,8 @@ InSPire Net Ltd (1)                                      713625 (0.0%)
 SMART Comp. a.s. (2)                                     693752 (0.0%)
 New Wave Communications (1)                              693024 (0.0%)
 FUJITSU LIMITED (1)                                      688560 (0.0%)
-Innsbrucker Kommunalbetriebe AG (1)                      686080 (0.0%)
 UAB Cgates (1)                                           686080 (0.0%)
+Innsbrucker Kommunalbetriebe AG (1)                      686080 (0.0%)
 eTOP sp. z o.o. (1)                                      674786 (0.0%)
 EDSI-Tech Sarl (1)                                       665603 (0.0%)
 QSC AG (6)                                               661956 (0.0%)
@@ -1049,9 +1049,9 @@ PT. Mediatama Telematika Nusantara (1)                   50809 (0.0%)
 RCL CJSC (1)                                             50737 (0.0%)
 The Computer Shop Netlink (1)                            40058 (0.0%)
 VODAFONE GHANA AS INTERNATIONAL TRANSIT (1)              19456 (0.0%)
+ZAO Tele-Service Tula (1)                                0 (0.0%)
 Atlantic.net, Inc. (1)                                   0 (0.0%)
 True Internet Co.,Ltd. (1)                               0 (0.0%)
-ZAO Tele-Service Tula (1)                                0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
