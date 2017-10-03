@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Mon Oct  2 14:26:35 UTC 2017
+Report Date: Mon Oct  2 23:50:49 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1036,10 +1036,10 @@ PT. Mediatama Telematika Nusantara (1)                   41259 (0.0%)
 The Computer Shop Netlink (1)                            39674 (0.0%)
 PJSC MegaFon (1)                                         25863 (0.0%)
 Information Technology Company (ITC) (1)                 8653 (0.0%)
-ITsjefen AS (1)                                          0 (0.0%)
-AVCOM d.o.o. (1)                                         0 (0.0%)
 Magticom Ltd. (1)                                        0 (0.0%)
+ITsjefen AS (1)                                          0 (0.0%)
 MyRepublic Ltd. (1)                                      0 (0.0%)
+AVCOM d.o.o. (1)                                         0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>

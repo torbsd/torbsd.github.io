@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Mon Oct  2 14:26:33 UTC 2017
+Report Date: Mon Oct  2 23:50:48 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 CONSENSUS WEIGHT FRACTION BY COUNTRY
@@ -85,8 +85,8 @@ rs (2)            0.0%
 mn (1)            0.0%
 kz (2)            0.0%
 pf (1)            0.0%
-dz (1)            0.0%
 ke (1)            0.0%
+dz (1)            0.0%
 co (1)            0.0%
 ma (2)            0.0%
 ge (1)            0.0%
