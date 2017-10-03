@@ -99,7 +99,7 @@ Until recently, obfs4proxy wasn't in any of the BSD port systems. During the rec
 
 * net/obfs4proxy is now in the -current OpenBSD ports tree, and will be in the -stable release ports for November 1
 
-* net/obfs4proxy is now in NetBSD's [pkgsrc tree](https://trac.torproject.org/projects/tor/wiki/doc/PluggableTransports/obfs4proxy), which means that not only should it run on NetBSD, but on [15 other hardware platforms](https://www.netbsd.org/docs/software/packages.html#platforms) thanks to [alnsn](http://pkgsrc.se/bbmaint.php?maint=alnsn|a|NetBSD.org)
+* net/obfs4proxy is now in NetBSD's [pkgsrc tree](http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/net/obfs4proxy/), which means that not only should it run on NetBSD, but on [15 other hardware platforms](https://www.netbsd.org/docs/software/packages.html#platforms) thanks to [alnsn](http://pkgsrc.se/bbmaint.php?maint=alnsn|a|NetBSD.org)
 
 * and security/obfs4proxy entered FreeBSD's [Bugzilla as a port submission](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=222645)
 
