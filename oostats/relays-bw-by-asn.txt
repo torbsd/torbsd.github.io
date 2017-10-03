@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Tue Oct  3 11:23:10 UTC 2017
+Report Date: Tue Oct  3 17:39:09 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1042,8 +1042,8 @@ H88 S.A. (1)                                             60662 (0.0%)
 TOV Lekol (1)                                            57668 (0.0%)
 RFTkabel Brandenburg GmbH (1)                            57344 (0.0%)
 Hi3G Access AB (1)                                       54887 (0.0%)
-Telecom Service LLC (1)                                  54272 (0.0%)
 Vodafone Net Iletisim Hizmetleri Anonim Sirketi (1)      54272 (0.0%)
+Telecom Service LLC (1)                                  54272 (0.0%)
 Multimedia Polska S.A. (1)                               53482 (0.0%)
 MDlink online service center GmbH (1)                    53331 (0.0%)
 SWIFTNG-ASN (1)                                          52438 (0.0%)
