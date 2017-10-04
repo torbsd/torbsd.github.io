@@ -21,6 +21,10 @@
 
 <h2 id="ablogoracentrallocationforannouncesandnotes">A Blog, or a Central Location for Announces and Notes</h2>
 
+<p><strong>October 2017</strong></p>
+
+<p><a href="#obfs4-everywhere">obfs4proxy is Everywhere</a></p>
+
 <p><strong>September 2017</strong></p>
 
 <p><a href="#tb705-ports">Tor Browser 7.0.5 in OpenBSD -current ports</a> &#8916; <a href="#installfest">*BSD Focused Tor Bridge Installfests</a></p>
@@ -94,6 +98,26 @@
 <p><a href="#tb-update">Updated Tor Browser Packages</a> &#8916; <a href="#relay-guides">The BSD Relay Guides</a> &#8916; <a href="#first-bells">Our First Bells</a> &#8916; <a href="#beyond-os">Beyond OS Diversity</a> &#8916; <a href="#tb-5.0.3">Tor Browser version 5.0.3 for OpenBSD</a></p>
 
 <p><a href="#attic">From the Attic</a></p>
+
+<h3 id="20171003">20171003</h3>
+
+<p><a id="obfs4-everywhere">obfs4proxy is Everywhere</a> by gman999</p>
+
+<p>obfs4proxy is the <a href="https://torbsd.github.io/oostats/bridges-trans-count.txt">most common pluggable transport</a> offered by Tor to evade censorship.</p>
+
+<p>obfs4proxy wasn&#8217;t in any of the BSD port systems until now.</p>
+
+<ul>
+<li><p>net/obfs4proxy is now in the -current OpenBSD ports tree, and will be in the 6.2 -stable release ports for November 1</p></li>
+<li><p>net/obfs4proxy is now in NetBSD&#8217;s <a href="http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/net/obfs4proxy/">pkgsrc tree</a>, which means that not only should it run on NetBSD, but on <a href="https://www.netbsd.org/docs/software/packages.html#platforms">15 other hardware platforms</a> thanks to <a href="http://pkgsrc.se/bbmaint.php?maint=alnsn|a|NetBSD.org">alnsn</a></p></li>
+<li><p>and security/obfs4proxy entered FreeBSD&#8217;s <a href="https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=222645">Bugzilla as a port submission</a></p></li>
+</ul>
+
+<p>This enables *BSD Tor bridge operators to assist censored Tor users accessing the Tor network, in an effort to begin shifting the overwhelming <a href="https://torbsd.github.io/oostats/bridges-trans-os.txt">Linux monoculture in bridges and pluggable transports</a>.</p>
+
+<p>The same port that listens for obfs4proxy connections can be employed as a client with some simple torrc changes. The OpenBSD port means <strong>TDP</strong> can soon enable obfs4proxy as a client pluggable transport, an important milestone.</p>
+
+<p>Any DragonFly BSD porters listening?</p>
 
 <h3 id="20170927">20170927</h3>
 
@@ -1108,7 +1132,7 @@ export AUTOMAKE_VERSION=&quot;1.14&quot;
 
 <p><em>Copyright &copy; 2017 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Wed Sep 27 16:07:28 2017 UTC</code></p>
+<p><code>last updated: Wed Oct  4 19:54:17 2017 UTC</code></p>
 
 </body>
 </html>

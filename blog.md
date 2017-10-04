@@ -10,6 +10,10 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ##A Blog, or a Central Location for Announces and Notes##
 
+__October 2017__
+
+[obfs4proxy is Everywhere](#obfs4-everywhere)
+
 __September 2017__
 
 [Tor Browser 7.0.5 in OpenBSD -current ports](#tb705-ports) [%sep] [*BSD Focused Tor Bridge Installfests](#installfest)
@@ -84,6 +88,26 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20171003###
+
+<a id="obfs4-everywhere">obfs4proxy is Everywhere</a> by gman999
+
+obfs4proxy is the [most common pluggable transport](https://torbsd.github.io/oostats/bridges-trans-count.txt) offered by Tor to evade censorship.
+
+obfs4proxy wasn't in any of the BSD port systems until now.
+
+* net/obfs4proxy is now in the -current OpenBSD ports tree, and will be in the 6.2 -stable release ports for November 1
+
+* net/obfs4proxy is now in NetBSD's [pkgsrc tree](http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/net/obfs4proxy/), which means that not only should it run on NetBSD, but on [15 other hardware platforms](https://www.netbsd.org/docs/software/packages.html#platforms) thanks to [alnsn](http://pkgsrc.se/bbmaint.php?maint=alnsn|a|NetBSD.org)
+
+* and security/obfs4proxy entered FreeBSD's [Bugzilla as a port submission](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=222645)
+
+This enables *BSD Tor bridge operators to assist censored Tor users accessing the Tor network, in an effort to begin shifting the overwhelming [Linux monoculture in bridges and pluggable transports](https://torbsd.github.io/oostats/bridges-trans-os.txt).
+
+The same port that listens for obfs4proxy connections can be employed as a client with some simple torrc changes. The OpenBSD port means __TDP__ can soon enable obfs4proxy as a client pluggable transport, an important milestone.
+
+Any DragonFly BSD porters listening?
 
 ###20170927###
 

@@ -1,0 +1,146 @@
+%include "default.mgp"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+%nodefault
+%center, size 12, fore "white", font "standard"
+
+The Tor BSD Diversity Project
+and
+a *BSD Bridge Installfest
+
+
+%nodefault
+%right, size 5, fore "white"
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+
+Who is here?
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+
+What is Tor?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+
+What is TDP?
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+
+TDP Projects
+
+
+	porting software: Tor Browser, obfs4proxy, -alpha, onionshare
+
+	documentation
+
+	hands-on chipping away
+
+	corporate relays
+
+	diversity-focused statistics
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+
+Some Numbers
+
+
+cut to the video tape
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+
+Not you, what about where you work?
+
+
+	Mozilla
+
+	NYI
+
+	The NetBSD Foundation
+
+	then the broader targets in and around the community
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+
+Questions?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+
+Now you: BSD bridges at home
+
+
+	+residential bandwidth
+
+	+quiet, inconspicuous hardware
+		APUs, BeagleBones/armv7 in BSD land
+
+	+among an integrated network of integrity intense peoples
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+
+What I Have
+
+# cat /var/tor/stats/bridge-stats                                              
+bridge-stats-end 2017-10-03 19:36:22 (86400 s)
+bridge-ips fr=8,gb=8,ro=8,ru=8,us=8
+bridge-ip-versions v4=16,v6=0
+bridge-ip-transports <OR>=16
+
+# cat /var/tor/stats/bridge-stats                                              
+bridge-stats-end 2017-10-04 14:25:28 (86400 s)
+bridge-ips ??=8
+bridge-ip-versions v4=8,v6=0
+bridge-ip-transports <OR>=8
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+
+A simple torrc
+
+%size 4
+SocksPort 0
+Log notice file /var/log/tor.log
+RunAsDaemon 1
+DataDirectory /var/tor
+ORPort 9001
+Nickname Something
+RelayBandwidthRate 4000 KBytes  # Throttle traffic to 100KB/s (800Kbps)
+RelayBandwidthBurst 6000 KBytes # But allow bursts up to 200KB (1600Kb)
+User _tor
+ExitPolicy reject *:* # no exits allowed
+PublishServerDescriptor 1
+BridgeRelay 1
+BridgeRecordUsageByCountry 1
+EntryStatistics 1
+HeartbeatPeriod 1 hours
+AvoidDiskWrites 1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+
+The End
+
+
+https://torbsd.github.io/
+
+https://github.com/torbsd/
+
+https://www.torproject.org/
