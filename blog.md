@@ -97,7 +97,7 @@ obfs4proxy is the [most common pluggable transport](https://torbsd.github.io/oos
 
 Until recently, obfs4proxy wasn't in any of the BSD port systems. During the recent past, that changed.
 
-* net/obfs4proxy is now in the -current OpenBSD ports tree, and will be in the -stable release ports for November 1
+* net/obfs4proxy is now in the -current OpenBSD ports tree, and will be in the 6.2 -stable release ports for November 1
 
 * net/obfs4proxy is now in NetBSD's [pkgsrc tree](http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/net/obfs4proxy/), which means that not only should it run on NetBSD, but on [15 other hardware platforms](https://www.netbsd.org/docs/software/packages.html#platforms) thanks to [alnsn](http://pkgsrc.se/bbmaint.php?maint=alnsn|a|NetBSD.org)
 
