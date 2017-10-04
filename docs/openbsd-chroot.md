@@ -47,10 +47,10 @@ user ID is in the `wsrc` group and has R/W access to `/usr/ports` (as
 covered in [the wsrc FAQ](https://www.openbsd.org/faq/faq5.html#wsrc)).
 
 We will use the ports infrastructure to relieve us of worrying about
-dependencies too much.  The one dependency you should install first is
-libevent:
+the mechanics of grabbing and verifying the code.  Two dependencies you
+should install before continuing are libevent and gmake:
 
-    $ doas pkg_add -Dsnap libevent
+    $ doas pkg_add -Dsnap gmake libevent
 
 The `-Dsnap` should be used if running OpenBSD-current from a snapshot
 [snapshot](https://www.openbsd.org/faq/faq5.html#Snapshots)

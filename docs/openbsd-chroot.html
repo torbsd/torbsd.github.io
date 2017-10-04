@@ -60,10 +60,10 @@ user ID is in the <code>wsrc</code> group and has R/W access to <code>/usr/ports
 covered in <a href="https://www.openbsd.org/faq/faq5.html#wsrc">the wsrc FAQ</a>).</p>
 
 <p>We will use the ports infrastructure to relieve us of worrying about
-dependencies too much. The one dependency you should install first is
-libevent:</p>
+the mechanics of grabbing and verifying the code. Two dependencies you
+should install before continuing are libevent and gmake:</p>
 
-<pre><code>$ doas pkg_add -Dsnap libevent
+<pre><code>$ doas pkg_add -Dsnap gmake libevent
 </code></pre>
 
 <p>The <code>-Dsnap</code> should be used if running OpenBSD-current from a snapshot
@@ -271,7 +271,7 @@ for <code>SOCKS</code> connections on port 9050.</p>
 
 <p><em>Copyright &copy; 2017 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Wed Oct  4 22:51:07 2017 UTC</code></p>
+<p><code>last updated: Wed Oct  4 22:56:42 2017 UTC</code></p>
 
 </body>
 </html>
