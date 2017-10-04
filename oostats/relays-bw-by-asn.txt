@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Wed Oct  4 18:42:03 UTC 2017
+Report Date: Wed Oct  4 20:18:52 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1033,16 +1033,16 @@ Multimedia Polska S.A. (1)                               72208 (0.0%)
 Administracion Nacional de Telecomunicaciones (1)        71718 (0.0%)
 RAIDNET PROVEDOR DE TELECOMUNICACOES LTDA (1)            71680 (0.0%)
 PT. Mediatama Telematika Nusantara (1)                   70458 (0.0%)
-TE-AS (1)                                                64512 (0.0%)
 Ooredoo Q.S.C. (1)                                       64512 (0.0%)
-Telecom Algeria (1)                                      63488 (0.0%)
+TE-AS (1)                                                64512 (0.0%)
 PJSC Ukrtelecom (1)                                      63488 (0.0%)
+Telecom Algeria (1)                                      63488 (0.0%)
 KhmelnitskInfocom LTD (1)                                63488 (0.0%)
 Afrihost (1)                                             63312 (0.0%)
 Telecom Service LLC (1)                                  63248 (0.0%)
 Telecom Argentina S.A. (1)                               62754 (0.0%)
-Microplex PTY LTD (1)                                    61440 (0.0%)
 Patrik Lagerman WEB, Enskild Firma (1)                   61440 (0.0%)
+Microplex PTY LTD (1)                                    61440 (0.0%)
 manitu GmbH (1)                                          61112 (0.0%)
 RFTkabel Brandenburg GmbH (1)                            59392 (0.0%)
 H88 S.A. (1)                                             59301 (0.0%)

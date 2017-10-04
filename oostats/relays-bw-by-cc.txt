@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Wed Oct  4 18:42:01 UTC 2017
+Report Date: Wed Oct  4 20:18:51 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY COUNTRY
@@ -88,8 +88,8 @@ pf (1)            119550 (0.0%)
 ke (1)            91658 (0.0%)
 ma (3)            77583 (0.0%)
 uy (1)            71718 (0.0%)
-eg (1)            64512 (0.0%)
 qa (1)            64512 (0.0%)
+eg (1)            64512 (0.0%)
 dz (1)            63488 (0.0%)
 py (1)            56948 (0.0%)
 gh (1)            25054 (0.0%)
