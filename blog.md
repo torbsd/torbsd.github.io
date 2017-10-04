@@ -95,7 +95,7 @@ __October 2015__
 
 obfs4proxy is the [most common pluggable transport](https://torbsd.github.io/oostats/bridges-trans-count.txt) offered by Tor to evade censorship.
 
-Until recently, obfs4proxy wasn't in any of the BSD port systems. During the recent past, that changed.
+obfs4proxy wasn't in any of the BSD port systems until now.
 
 * net/obfs4proxy is now in the -current OpenBSD ports tree, and will be in the 6.2 -stable release ports for November 1
 
@@ -105,7 +105,7 @@ Until recently, obfs4proxy wasn't in any of the BSD port systems. During the rec
 
 This enables *BSD Tor bridge operators to assist censored Tor users accessing the Tor network, in an effort to begin shifting the overwhelming [Linux monoculture in bridges and pluggable transports](https://torbsd.github.io/oostats/bridges-trans-os.txt).
 
-The same port that can listen for connections can be employed as a client with some simple syntax changes. The OpenBSD port means __TDP__ can soon enable obfs4proxy as a client pluggable transport, an important milestone.
+The same port that listens for obfs4proxy connections can be employed as a client with some simple torrc changes. The OpenBSD port means __TDP__ can soon enable obfs4proxy as a client pluggable transport, an important milestone.
 
 Any DragonFly BSD porters listening?
 

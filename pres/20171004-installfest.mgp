@@ -2,7 +2,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %page
 %nodefault
-%center, size 13, fore "white", font "standard"
+%center, size 12, fore "white", font "standard"
 
 The Tor BSD Diversity Project
 and
@@ -33,13 +33,6 @@ What is Tor?
 What is TDP?
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%page
-
-Some Numbers
-
-
-cut to the video tape
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %page
@@ -54,6 +47,18 @@ TDP Projects
 	hands-on chipping away
 
 	corporate relays
+
+	diversity-focused statistics
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page
+
+Some Numbers
+
+
+cut to the video tape
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %page
@@ -85,7 +90,7 @@ Now you: BSD bridges at home
 	+quiet, inconspicuous hardware
 		APUs, BeagleBones/armv7 in BSD land
 
-	+among an integrated network of integrity-ladden peoples
+	+among an integrated network of integrity intense peoples
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %page
