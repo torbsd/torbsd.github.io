@@ -1,12 +1,12 @@
 Title: The Tor BSD Diversity Project
-CSS: torbsd.css
+CSS: ../torbsd.css
 Author: attila
 Editors: gman
 Date: 2017-10-03
 X-Note: These lines at the top are multimarkdown metadata; leave them.
-{{meta.md}}
+{{../meta.md}}
 
-{{header.md}}
+{{../header.md}}
 
 ## Running Tor in a chroot under OpenBSD ##
 
@@ -20,6 +20,7 @@ For reference, these instructions apply to OpenBSD-current as of
 [the FAQ on OpenBSD flavors](https://www.openbsd.org/faq/faq5.html#Flavors).
 
 A few notes for those new to OpenBSD:
+
 * The OpenBSD ports tree is a collection ot 3rd party software that
 has been vetted and packaged by the OpenBSD community.  It is usually
 unpacked under `/usr/ports`.  We assume you have it on your system,
@@ -142,15 +143,13 @@ into the right places under the chroot.
         doas tar -C $TORCHROOT -xf -
 
 Since these two commands are quite long and have a similar structure I'll break them down:
-* tar -C foo tells the [tar(1)](https://man.openbsd.org/tar) command
-to change directories to `foo` before doing anything else;
-* the tar command at the start of each compound command is used to
-pack up shared libraries;
+
+* tar -C foo tells the [tar(1)](https://man.openbsd.org/tar) command to change directories to `foo` before doing anything else;
+* the tar command at the start of each compound command is used to pack up shared libraries;
 * the tar at the end of each command is used to unpack them in the chroot;
-* the stuff in the middle produces the list of shared libraries we want to
-copy:
+* the stuff in the middle produces the list of shared libraries we want to copy:
  * [ldd(1)](https://man.openbsd.org/ldd) spits out the raw list of shared libraries;
- * [sed(1)](https://man.openbsd.org/sed) removes the first three lines of output, which ar e noise for our purposes;
+ * [sed(1)](https://man.openbsd.org/sed) removes the first three lines of output, which are noise for our purposes;
  * [awk(1)](https://man.openbsd.org/awk) pulls out the seventh whitespace-separated column and prints all but the first character.  This removes the leading slash in each shared library path (which is why we `-C /` to begin with).
 
 After these two commands, all the shared libraries that `tor` and
@@ -210,6 +209,7 @@ Finally, you should be able to start Tor in the chroot:
     $ doas chroot $TORCHROOT /bin/tor
 
 This should produce output that looks something like:
+
     Oct 04 16:46:55.116 [notice] Tor 0.3.0.10 (git-c33db290a9d8d0f9) running on OpenBSD with Libevent 2.0.22-stable, OpenSSL LibreSSL 2.6.3 and Zlib 1.2.3.
     Oct 04 16:46:55.116 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
     Oct 04 16:46:55.126 [notice] Read configuration file "/tor/etc/tor/torrc".
@@ -231,3 +231,5 @@ start silently and continue running.  To shut it down use the
 
 At this point your chroot'ed Tor installation is working and listening
 for `SOCKS` connections on port 9050.
+
+{{../footer.md}}

@@ -1,13 +1,10 @@
 ## -*- makefile -*-
 
-RM_F?=rm -f
-CP?=cp
 PERL?=perl
 TSTAMP_PL?=tstamp.pl
 TSTAMP?=$(PERL) $(TSTAMP_PL)
 MMD?=multimarkdown
 PDFLATEX?=pdflatex
-RM?=rm
 
 PAGES=		index.html \
 		contact.html \
@@ -38,21 +35,22 @@ all: $(PAGES)
 .SUFFIXES: .pdf .md .tex .html
 
 .md.tex:
-	$(RM_F) $<.tmp
-	$(CP) $< $<.tmp
+	rm -f $<.tmp
+	cp $< $<.tmp
 	$(TSTAMP) $< >>$<.tmp
 	$(MMD) -t latex -o $@ $<.tmp
-	$(RM_F) $<.tmp
+	rm -f $<.tmp
 
 .tex.pdf:
 	$(PDFLATEX) $<
 
 .md.html:
-	$(RM_F) $<.tmp
-	$(CP) $< $<.tmp
+	rm -f $<.tmp
+	cp $< $<.tmp
 	$(TSTAMP) $< >>$<.tmp
 	$(MMD) -t html -o $@ $<.tmp
-	$(RM_F) $<.tmp
+	rm -f $<.tmp
+	sed -i.bak -e 's/\&amp;#8916;/\&#8916;/g' $@
 
 index.html: index.md $(BOILERPLATE)
 contact.html: contact.md $(BOILERPLATE)
