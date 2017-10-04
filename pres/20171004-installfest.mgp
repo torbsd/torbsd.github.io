@@ -2,7 +2,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %page
 %nodefault
-%center, size 12, fore "white", font "standard"
+%center, size 13, fore "white", font "standard"
 
 The Tor BSD Diversity Project
 and
@@ -77,17 +77,15 @@ Questions?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %page
 
-Now you 
+Now you: BSD bridges at home
 
-
-	BSD bridges at home
 
 	+residential bandwidth
 
 	+quiet, inconspicuous hardware
-		APUs, BeagleBones in BSD land
+		APUs, BeagleBones/armv7 in BSD land
 
-	among an integrated network of integrity-ladden peoples
+	+among an integrated network of integrity-ladden peoples
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %page
@@ -117,8 +115,6 @@ SocksPort 0
 Log notice file /var/log/tor.log
 RunAsDaemon 1
 DataDirectory /var/tor
-HiddenServiceDir /var/tor/sshd
-HiddenServicePort 22 127.0.0.1:2221
 ORPort 9001
 Nickname Something
 RelayBandwidthRate 4000 KBytes  # Throttle traffic to 100KB/s (800Kbps)
@@ -131,7 +127,6 @@ BridgeRecordUsageByCountry 1
 EntryStatistics 1
 HeartbeatPeriod 1 hours
 AvoidDiskWrites 1
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %page
