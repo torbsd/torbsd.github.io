@@ -36,11 +36,11 @@ the mechanics of grabbing and verifying the code, and also of chasing
 down dependencies.  As of this writing there is only one dependency
 for Tor but as that changes these instructions should remain valid.
 
-### Unpack, Patch ###
+### Get Tor Source and Dependencies ###
 
 We'll now use the ports tree to grab the Tor source code, verify it is
-the right stuff, unpack it and patch it if necessary.  We'll also
-make sure any ports that Tor depends on are installed.
+the right stuff, unpack it and patch it if necessary.  We'll also make
+sure any ports that Tor depends on are installed.
 
     $ cd /usr/ports/net/tor
     $ env SUDO=doas make patch
@@ -116,29 +116,27 @@ system utility that we will copy into the chroot,
     $ doas cp /usr/sbin/pwd_mkdb $TORCHROOT/usr/sbin
 
 We must copy all shared libraries that both `pwd_mkdb` and `tor` need
-into the right places under the chroot.
+into the right places under the chroot.  We define a shell function
+called `shlibpaths` to make the commands easier to type:
 
-    $ tar -C / -cf - \
-        `ldd $TORCHROOT/tor/bin/tor | sed -e 1,3d | awk '{print substr($7,2)}'` | \
-        doas tar -C $TORCHROOT -xf -
-    $ tar -C / -cf - \
-        `ldd $TORCHROOT/usr/sbin/pwd_mkdb | sed -e 1,3d | awk '{print substr($7,2)}'` | \
-        doas tar -C $TORCHROOT -xf -
+    $ shlibpaths () {
+        ldd $1 | sed -e 1,3d | awk '{print substr($7,2)}'
+    }
+    $ tar -C / -cf - `shlibpaths $TORCHROOT/tor/bin/tor` | doas tar -C $TORCHROOT -xf -
+    $ tar -C / -cf - `shlibpaths $TORCHROOT/usr/sbin/pwd_mkdb` | doas tar -C $TORCHROOT -xf -
 
-Since these two commands are quite long and have a similar structure I'll break them down:
+The `shlibpaths` function works like so:
 
-* tar -C foo tells the [tar(1)](https://man.openbsd.org/tar) command to change directories to `foo` before doing anything else;
-* the tar command at the start of each compound command is used to pack up shared libraries;
-* the tar at the end of each command is used to unpack them in the chroot;
-* the stuff in the middle produces the list of shared libraries we want to copy:
- * [ldd(1)](https://man.openbsd.org/ldd) spits out the raw list of shared libraries;
- * [sed(1)](https://man.openbsd.org/sed) removes the first three lines of output, which are noise for our purposes;
- * [awk(1)](https://man.openbsd.org/awk) pulls out the seventh whitespace-separated column and prints all but the first character.  This removes the leading slash in each shared library path (which is why we `-C /` to begin with).
+* [ldd(1)](https://man.openbsd.org/ldd) spits out the raw list of shared libraries;
+* [sed(1)](https://man.openbsd.org/sed) removes the first three lines of output, which are noise for our purposes;
+* [awk(1)](https://man.openbsd.org/awk) pulls out the seventh whitespace-separated column and prints all but the first character, making the path to the shared library relative to root.
 
-After these two commands, all the shared libraries that `tor` and
-`pwd_mkdb` depend on are in `$TORCHROOT/usr/lib` and
-`$TORCHROOT/usr/local/lib`.  We must now run `ldconfig` in the chroot
-to set up the `/var/run/ld.so.hints` file:
+The -C option to [tar(1)](https://man.openbsd.org/tar) tells tar to change directories to the given place before doing anything else.  In both cases the `tar` command at the head of the pipe packs up the shared libraries in question and the `tar` command at the tail of the pipe unpacks them under the chroot.
+
+Now all the shared libraries that `tor` and `pwd_mkdb` depend on are
+in `$TORCHROOT/usr/lib` and `$TORCHROOT/usr/local/lib`.  We must now
+run `ldconfig` in the chroot to set up the `/var/run/ld.so.hints`
+file:
 
     $ doas mkdir -p $TORCHROOT/var/run
     $ doas chroot $TORCHROOT /sbin/ldconfig /usr/lib /usr/local/lib
