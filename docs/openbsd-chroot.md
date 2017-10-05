@@ -10,11 +10,13 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## Running Tor in a chroot under OpenBSD ##
 
-We take as our model
-[the instructions in the TPO wiki](https://trac.torproject.org/projects/tor/wiki/doc/TorInChroot),
-and have adapted them to suit [OpenBSD](https://www.openbsd.org).  We
-assume basic Unix command-line skills and some familiarity with using
-OpenBSD.
+We have taken
+[the instructions in the TPO wiki](https://trac.torproject.org/projects/tor/wiki/doc/TorInChroot)
+as our model, and have adapted them to suit
+[OpenBSD](https://www.openbsd.org).  We assume basic Unix command-line
+skills and some familiarity with using OpenBSD; the
+[FAQs](https://www.openbsd.org/faq/) and
+[man pages](https://man.openbsd.org) are highly recommended.
 
 For reference, these instructions apply to OpenBSD-current as of
 2017-10-03.  The precise meaning of "current" is given in
@@ -22,10 +24,10 @@ For reference, these instructions apply to OpenBSD-current as of
 
 ### Preliminaries ###
 
-For our purposes in these instructions we assume you have the ports
-tree unpacked under `/usr/ports`.  It is a good idea to read
-[the anoncvs documentation](https://www.openbsd.org/anoncvs.html)
-and follow its instructions for getting a copy of the ports tree.
+We assume you have the ports tree unpacked under `/usr/ports`.  It is
+a good idea to read
+[the anoncvs documentation](https://www.openbsd.org/anoncvs.html) and
+follow its instructions for getting a copy of the ports tree.
 
 For the rest of this guide we assume you have done this and that your
 user ID is in the `wsrc` group and has R/W access to `/usr/ports` (as
@@ -174,7 +176,7 @@ Create a minimal Tor configuration in the chroot:
     ^D
 
 Create the run-time directories needed by `tor` and make sure they are
-owned by the `tor` user:
+owned by the `tor` user and have the right permissions:
 
     $ doas mkdir -p $TORCHROOT/var/run/tor
     $ doas mkdir -p $TORCHROOT/var/lib/tor

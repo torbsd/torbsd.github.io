@@ -21,11 +21,13 @@
 
 <h2 id="runningtorinachrootunderopenbsd">Running Tor in a chroot under OpenBSD</h2>
 
-<p>We take as our model
-<a href="https://trac.torproject.org/projects/tor/wiki/doc/TorInChroot">the instructions in the TPO wiki</a>,
-and have adapted them to suit <a href="https://www.openbsd.org">OpenBSD</a>. We
-assume basic Unix command-line skills and some familiarity with using
-OpenBSD.</p>
+<p>We have taken
+<a href="https://trac.torproject.org/projects/tor/wiki/doc/TorInChroot">the instructions in the TPO wiki</a>
+as our model, and have adapted them to suit
+<a href="https://www.openbsd.org">OpenBSD</a>. We assume basic Unix command-line
+skills and some familiarity with using OpenBSD; the
+<a href="https://www.openbsd.org/faq/">FAQs</a> and
+<a href="https://man.openbsd.org">man pages</a> are highly recommended.</p>
 
 <p>For reference, these instructions apply to OpenBSD-current as of
 2017&#8211;10&#8211;03. The precise meaning of &#8220;current&#8221; is given in
@@ -33,10 +35,10 @@ OpenBSD.</p>
 
 <h3 id="preliminaries">Preliminaries</h3>
 
-<p>For our purposes in these instructions we assume you have the ports
-tree unpacked under <code>/usr/ports</code>. It is a good idea to read
-<a href="https://www.openbsd.org/anoncvs.html">the anoncvs documentation</a>
-and follow its instructions for getting a copy of the ports tree.</p>
+<p>We assume you have the ports tree unpacked under <code>/usr/ports</code>. It is
+a good idea to read
+<a href="https://www.openbsd.org/anoncvs.html">the anoncvs documentation</a> and
+follow its instructions for getting a copy of the ports tree.</p>
 
 <p>For the rest of this guide we assume you have done this and that your
 user ID is in the <code>wsrc</code> group and has R/W access to <code>/usr/ports</code> (as
@@ -201,7 +203,7 @@ Log notice file /var/log/tor/log
 </code></pre>
 
 <p>Create the run-time directories needed by <code>tor</code> and make sure they are
-owned by the <code>tor</code> user:</p>
+owned by the <code>tor</code> user and have the right permissions:</p>
 
 <pre><code>$ doas mkdir -p $TORCHROOT/var/run/tor
 $ doas mkdir -p $TORCHROOT/var/lib/tor
@@ -252,7 +254,7 @@ for <code>SOCKS</code> connections on port 9050.</p>
 
 <p><em>Copyright &copy; 2017 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Oct  5 18:56:04 2017 UTC</code></p>
+<p><code>last updated: Thu Oct  5 22:20:52 2017 UTC</code></p>
 
 </body>
 </html>
