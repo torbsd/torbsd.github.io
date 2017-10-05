@@ -13,7 +13,8 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 We take as our model
 [the instructions in the TPO wiki](https://trac.torproject.org/projects/tor/wiki/doc/TorInChroot),
 and have adapted them to suit [OpenBSD](https://www.openbsd.org).  We
-assume basic Unix command-line skills.
+assume basic Unix command-line skills and some familiarity with using
+OpenBSD.
 
 For reference, these instructions apply to OpenBSD-current as of
 2017-10-03.  The precise meaning of "current" is given in
