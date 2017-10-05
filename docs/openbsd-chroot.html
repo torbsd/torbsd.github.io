@@ -47,11 +47,11 @@ the mechanics of grabbing and verifying the code, and also of chasing
 down dependencies. As of this writing there is only one dependency
 for Tor but as that changes these instructions should remain valid.</p>
 
-<h3 id="unpackpatch">Unpack, Patch</h3>
+<h3 id="gettorsourceanddependencies">Get Tor Source and Dependencies</h3>
 
 <p>We&#8217;ll now use the ports tree to grab the Tor source code, verify it is
-the right stuff, unpack it and patch it if necessary. We&#8217;ll also
-make sure any ports that Tor depends on are installed.</p>
+the right stuff, unpack it and patch it if necessary. We&#8217;ll also make
+sure any ports that Tor depends on are installed.</p>
 
 <pre><code>$ cd /usr/ports/net/tor
 $ env SUDO=doas make patch
@@ -136,32 +136,30 @@ $ doas cp /usr/sbin/pwd_mkdb $TORCHROOT/usr/sbin
 </code></pre>
 
 <p>We must copy all shared libraries that both <code>pwd_mkdb</code> and <code>tor</code> need
-into the right places under the chroot.</p>
+into the right places under the chroot. We define a shell function
+called <code>shlibpaths</code> to make the commands easier to type:</p>
 
-<pre><code>$ tar -C / -cf - \
-    `ldd $TORCHROOT/tor/bin/tor | sed -e 1,3d | awk '{print substr($7,2)}'` | \
-    doas tar -C $TORCHROOT -xf -
-$ tar -C / -cf - \
-    `ldd $TORCHROOT/usr/sbin/pwd_mkdb | sed -e 1,3d | awk '{print substr($7,2)}'` | \
-    doas tar -C $TORCHROOT -xf -
+<pre><code>$ shlibpaths () {
+    ldd $1 | sed -e 1,3d | awk '{print substr($7,2)}'
+}
+$ tar -C / -cf - `shlibpaths $TORCHROOT/tor/bin/tor` | doas tar -C $TORCHROOT -xf -
+$ tar -C / -cf - `shlibpaths $TORCHROOT/usr/sbin/pwd_mkdb` | doas tar -C $TORCHROOT -xf -
 </code></pre>
 
-<p>Since these two commands are quite long and have a similar structure I&#8217;ll break them down:</p>
+<p>The <code>shlibpaths</code> function works like so:</p>
 
 <ul>
-<li>tar -C foo tells the <a href="https://man.openbsd.org/tar">tar(1)</a> command to change directories to <code>foo</code> before doing anything else;</li>
-<li>the tar command at the start of each compound command is used to pack up shared libraries;</li>
-<li>the tar at the end of each command is used to unpack them in the chroot;</li>
-<li>the stuff in the middle produces the list of shared libraries we want to copy:</li>
 <li><a href="https://man.openbsd.org/ldd">ldd(1)</a> spits out the raw list of shared libraries;</li>
 <li><a href="https://man.openbsd.org/sed">sed(1)</a> removes the first three lines of output, which are noise for our purposes;</li>
-<li><a href="https://man.openbsd.org/awk">awk(1)</a> pulls out the seventh whitespace-separated column and prints all but the first character. This removes the leading slash in each shared library path (which is why we <code>-C /</code> to begin with).</li>
+<li><a href="https://man.openbsd.org/awk">awk(1)</a> pulls out the seventh whitespace-separated column and prints all but the first character, making the path to the shared library relative to root.</li>
 </ul>
 
-<p>After these two commands, all the shared libraries that <code>tor</code> and
-<code>pwd_mkdb</code> depend on are in <code>$TORCHROOT/usr/lib</code> and
-<code>$TORCHROOT/usr/local/lib</code>. We must now run <code>ldconfig</code> in the chroot
-to set up the <code>/var/run/ld.so.hints</code> file:</p>
+<p>The -C option to <a href="https://man.openbsd.org/tar">tar(1)</a> tells tar to change directories to the given place before doing anything else. In both cases the <code>tar</code> command at the head of the pipe packs up the shared libraries in question and the <code>tar</code> command at the tail of the pipe unpacks them under the chroot.</p>
+
+<p>Now all the shared libraries that <code>tor</code> and <code>pwd_mkdb</code> depend on are
+in <code>$TORCHROOT/usr/lib</code> and <code>$TORCHROOT/usr/local/lib</code>. We must now
+run <code>ldconfig</code> in the chroot to set up the <code>/var/run/ld.so.hints</code>
+file:</p>
 
 <pre><code>$ doas mkdir -p $TORCHROOT/var/run
 $ doas chroot $TORCHROOT /sbin/ldconfig /usr/lib /usr/local/lib
@@ -254,7 +252,7 @@ for <code>SOCKS</code> connections on port 9050.</p>
 
 <p><em>Copyright &copy; 2017 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Oct  5 17:53:55 2017 UTC</code></p>
+<p><code>last updated: Thu Oct  5 18:56:04 2017 UTC</code></p>
 
 </body>
 </html>
