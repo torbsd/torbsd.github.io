@@ -33,7 +33,7 @@ __tool-name__
 : __FreeBSD__: [FreeBSD ports system](https://svnweb.freebsd.org/ports/head/)
 : __OpenBSD__: [OpenBSD packages](http://ftp.openbsd.org/pub/OpenBSD/snapshots/packages/amd64/)
 : __NetBSD__: [NetBSD's pkgsrc](http://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/README-all.html) for multiple operating systems
-: __DragonFly__: [DragonFly BSD's ports](http://avalon.dragonflybsd.org/dports/dragonfly:4.6:x86:64/LATEST/All/), similar to FreeBSD
+: __DragonFly__: [DragonFly BSD's ports](http://avalon.dragonflybsd.org/dports/dragonfly:5.2:x86:64/LATEST/All/), similar to FreeBSD
 : __Notes__: _etc..._
 
 ###<a id="editors">editors</a>###
@@ -342,7 +342,7 @@ __tool-name__
 : Source: [https://github.com/micahflee/onionshare/](https://github.com/micahflee/onionshare/)
 : Version: 1.1
 : FreeBSD: no
-: OpenBSD: no
+: OpenBSD: soon (https://github.com/torbsd/openbsd-ports/tree/master/net/onionshare)
 : pkgsrc: no
 : DPorts: no
 : notes:
@@ -376,7 +376,7 @@ __tool-name__
 : Site: [https://syncthing.net/](https://syncthing.net/)
 : License: [MPLv2](https://github.com/syncthing/syncthing/blob/master/LICENSE)
 : Source: [https://github.com/syncthing/syncthing/](https://github.com/syncthing/syncthing/)
-: Version: 0.14.35
+: Version: 0.14.38
 : FreeBSD: yes
 : OpenBSD: yes
 : pkgsrc: yes
@@ -554,9 +554,9 @@ __tool-name__
 : Version: no releases yet
 : FreeBSD: [soon](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/go-ed25519)
 : OpenBSD: yes
-: pkgsrc: [as a port WIP](https://wip.pkgsrc.org/cgi-bin/gitweb.cgi?p=pkgsrc-wip.git;a=tree;f=go-ed25519;h=081ae961749d7161a170ca2c5b9870eb62ac5242;hb=HEAD)
+: pkgsrc: yes
 : DPorts: no
-: notes:
+: notes: a dependency for obfs4proxy
 
 <a id="pkg-gpg4usb">__gpg4usb__</a>
 : Description: portable editor for encrypting and decrypting files
@@ -568,7 +568,7 @@ __tool-name__
 : OpenBSD: yes
 : pkgsrc: no
 : DPorts: no
-: notes: necessary dependency for obfs4
+: notes: necessary dependency for obfs4proxy
 
 <a id="pkg-keepassx">__KeePassX__</a>
 : Description: password management utility
@@ -588,11 +588,11 @@ __tool-name__
 : License: [BSD](https://gitweb.torproject.org/pluggable-transports/obfs4.git/tree/LICENSE)
 : Source: [https://gitweb.torproject.org/pluggable-transports/obfs4.git/](https://gitweb.torproject.org/pluggable-transports/obfs4.git/)
 : Version: 0.0.7
-: FreeBSD: [soon](https://github.com/torbsd/freebsd-ports/tree/egypcio/security/obfs4proxy)
+: FreeBSD: [soon](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=222645)
 : OpenBSD: yes
-: pkgsrc: [as a port WIP](https://wip.pkgsrc.org/cgi-bin/gitweb.cgi?p=pkgsrc-wip.git;a=tree;f=obfs4proxy;h=dadbccd61ea8cf4683ed77ea662182d43db4b475;hb=HEAD)
-: DPort: yes
-: notes: see TDP's GitHub for FreeBSD and OpenBSD ports to test
+: pkgsrc: yes
+: DPort: no
+: notes: a critical port for extending the utility of [*BSD Tor bridges](http://torbsd.github.io/oostats/bridges-trans-os.txt) and providing pluggable transport support for Tor Browser
 
 <a id="pkg-pond">__Pond__</a>
 : Description: forward secure, asynchronous messaging
