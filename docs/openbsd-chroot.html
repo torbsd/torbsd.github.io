@@ -24,29 +24,12 @@
 <p>We take as our model
 <a href="https://trac.torproject.org/projects/tor/wiki/doc/TorInChroot">the instructions in the TPO wiki</a>,
 and have adapted them to suit <a href="https://www.openbsd.org">OpenBSD</a>. We
-assume basic Unix command-line skills.</p>
+assume basic Unix command-line skills and some familiarity with using
+OpenBSD.</p>
 
 <p>For reference, these instructions apply to OpenBSD-current as of
 2017&#8211;10&#8211;03. The precise meaning of &#8220;current&#8221; is given in
 <a href="https://www.openbsd.org/faq/faq5.html#Flavors">the FAQ on OpenBSD flavors</a>.</p>
-
-<p>A few notes for those new to OpenBSD:</p>
-
-<ul>
-<li>The OpenBSD ports tree is a collection ot 3rd party software that
-has been vetted and packaged by the OpenBSD community. It is usually
-unpacked under <code>/usr/ports</code>. We assume you have it on your system,
-but it is not required for normal operation;</li>
-<li>Ports generally have names like <code>net/tor</code>, which means you can find
-the port under the path <code>/usr/ports/net/tor</code> in the filesystem
-(assuming you have the ports tree unpacked on your machine). Since
-the last part of the name (e.g. <code>tor</code>) must be unique the package
-names don&#8217;t have the category (<code>net</code>) in them;</li>
-<li>Ports and packages are the same thing in different forms: packages are
-cooked from ports. You don&#8217;t generally need to build packages
-yourself under OpenBSD, but it can be handy to have the ports tree
-around anyway.</li>
-</ul>
 
 <h3 id="preliminaries">Preliminaries</h3>
 
@@ -60,28 +43,24 @@ user ID is in the <code>wsrc</code> group and has R/W access to <code>/usr/ports
 covered in <a href="https://www.openbsd.org/faq/faq5.html#wsrc">the wsrc FAQ</a>).</p>
 
 <p>We will use the ports infrastructure to relieve us of worrying about
-the mechanics of grabbing and verifying the code. Two dependencies you
-should install before continuing are libevent and gmake:</p>
-
-<pre><code>$ doas pkg_add -Dsnap gmake libevent
-</code></pre>
-
-<p>The <code>-Dsnap</code> should be used if running OpenBSD-current from a snapshot
-<a href="https://www.openbsd.org/faq/faq5.html#Snapshots">snapshot</a>
-(recommended).</p>
+the mechanics of grabbing and verifying the code, and also of chasing
+down dependencies. As of this writing there is only one dependency
+for Tor but as that changes these instructions should remain valid.</p>
 
 <h3 id="unpackpatch">Unpack, Patch</h3>
 
 <p>We&#8217;ll now use the ports tree to grab the Tor source code, verify it is
-the right stuff, unpack it and patch it if necessary.</p>
+the right stuff, unpack it and patch it if necessary. We&#8217;ll also
+make sure any ports that Tor depends on are installed.</p>
 
 <pre><code>$ cd /usr/ports/net/tor
-$ make patch
+$ env SUDO=doas make patch
 </code></pre>
 
 <p>This will download, verify, extract and patch the tor source code and
 leave it in a port-specific directory under the ports build area,
-<code>/usr/ports/pobj</code>.</p>
+<code>/usr/ports/pobj</code>. It will also ensure that everything needed to build
+the port is installed.</p>
 
 <h3 id="build">Build</h3>
 
@@ -94,10 +73,11 @@ things):</p>
 
 <p>The <code>make show=FOO</code> idiom is useful in the ports tree generally; it
 shows you the full expansion of a
-<a href="https://man.openbsd.org/make">make(1)</a> variable. The <code>WRKSRC</code>
-variable will contain the name of the working source tree directory,
-which is where we want to go. There is comprehensive documentation on
-this and the other variables used in ports Makefiles in the
+<a href="https://man.openbsd.org/make">make(1)</a> variable used in the port&#8217;s
+Makefile. The <code>WRKSRC</code> variable will contain the name of the working
+source tree directory, which is where we want to go. There is
+comprehensive documentation on this and the other variables used in
+ports Makefiles in the
 <a href="https://man.openbsd.org/bsd.port.mk">bsd.port.mk(5)</a> man page.</p>
 
 <p>Note that we just used the ports tree to make sure we&#8217;re starting with
@@ -106,8 +86,8 @@ a package from the port as is normally done.</p>
 
 <p>To build Tor for use in the chroot, do this after <code>cd</code>&#8217;ing to <code>WRKSRC</code>:</p>
 
-<pre><code>$ ./configure --prefix=/tor --disable-asciidoc
-$ gmake
+<pre><code>$ ./configure --prefix=/tor
+$ make
 </code></pre>
 
 <h3 id="basicchrootsetup">Basic Chroot Setup</h3>
@@ -141,7 +121,7 @@ $ doas chown tor:tor /home/tor
 <p>Next, install the <code>tor</code> binary and support files we just compiled
 into the chroot:</p>
 
-<pre><code>$ doas gmake install prefix=$TORCHROOT/tor exec_prefix=$TORCHROOT
+<pre><code>$ doas make install prefix=$TORCHROOT/tor exec_prefix=$TORCHROOT/tor
 </code></pre>
 
 <p>We must deal with shared libraries both for the <code>tor</code> binary and for a
@@ -151,7 +131,7 @@ system utility that we will copy into the chroot,
 
 <pre><code>$ doas mkdir $TORCHROOT/sbin
 $ doas cp /sbin/ldconfig $TORCHROOT/sbin
-$ doas mkdir $TORCHROOT/usr/sbin
+$ doas mkdir -p $TORCHROOT/usr/sbin
 $ doas cp /usr/sbin/pwd_mkdb $TORCHROOT/usr/sbin
 </code></pre>
 
@@ -159,7 +139,7 @@ $ doas cp /usr/sbin/pwd_mkdb $TORCHROOT/usr/sbin
 into the right places under the chroot.</p>
 
 <pre><code>$ tar -C / -cf - \
-    `ldd $TORCHROOT/bin/tor | sed -e 1,3d | awk '{print substr($7,2)}'` | \
+    `ldd $TORCHROOT/tor/bin/tor | sed -e 1,3d | awk '{print substr($7,2)}'` | \
     doas tar -C $TORCHROOT -xf -
 $ tar -C / -cf - \
     `ldd $TORCHROOT/usr/sbin/pwd_mkdb | sed -e 1,3d | awk '{print substr($7,2)}'` | \
@@ -181,15 +161,17 @@ $ tar -C / -cf - \
 <p>After these two commands, all the shared libraries that <code>tor</code> and
 <code>pwd_mkdb</code> depend on are in <code>$TORCHROOT/usr/lib</code> and
 <code>$TORCHROOT/usr/local/lib</code>. We must now run <code>ldconfig</code> in the chroot
-to set up the <code>ld.so.hints</code> file:</p>
+to set up the <code>/var/run/ld.so.hints</code> file:</p>
 
-<pre><code>$ doas chroot $TORCHROOT /sbin/ldconfig /usr/lib /usr/local/lib
+<pre><code>$ doas mkdir -p $TORCHROOT/var/run
+$ doas chroot $TORCHROOT /sbin/ldconfig /usr/lib /usr/local/lib
 </code></pre>
 
 <p>Now that we have <code>pwd_mkdb</code> usable in the chroot, set up a minimal
 password database:</p>
 
-<pre><code>$ doas sh -c &quot;grep ^tor /etc/passwd &gt; $TORCHROOT/etc/passwd&quot;
+<pre><code>$ doas mkdir $TORCHROOT/etc
+$ doas sh -c &quot;grep ^tor /etc/passwd &gt; $TORCHROOT/etc/passwd&quot;
 $ doas sh -c &quot;grep ^tor /etc/group &gt; $TORCHROOT/etc/group&quot;
 $ doas sh -c &quot;grep ^tor /etc/master.passwd &gt; $TORCHROOT/etc/master.passwd&quot;
 $ doas sh -c &quot;grep ^_shadow /etc/group &gt;&gt; $TORCHROOT/etc/group&quot;
@@ -226,6 +208,7 @@ owned by the <code>tor</code> user:</p>
 <pre><code>$ doas mkdir -p $TORCHROOT/var/run/tor
 $ doas mkdir -p $TORCHROOT/var/lib/tor
 $ doas mkdir -p $TORCHROOT/var/lib/tor2
+$ doas chmod 700 $TORCHROOT/var/lib/tor2
 $ doas mkdir -p $TORCHROOT/var/log/tor
 $ doas chown tor:tor $TORCHROOT/var/run/tor
 $ doas chown tor:tor $TORCHROOT/var/lib/tor
@@ -237,7 +220,7 @@ $ doas chown tor:tor $TORCHROOT/var/log/tor
 
 <p>Finally, you should be able to start Tor in the chroot:</p>
 
-<pre><code>$ doas chroot $TORCHROOT /bin/tor
+<pre><code>$ doas chroot $TORCHROOT /tor/bin/tor
 </code></pre>
 
 <p>This should produce output that looks something like:</p>
@@ -271,7 +254,7 @@ for <code>SOCKS</code> connections on port 9050.</p>
 
 <p><em>Copyright &copy; 2017 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Wed Oct  4 22:56:42 2017 UTC</code></p>
+<p><code>last updated: Thu Oct  5 17:53:55 2017 UTC</code></p>
 
 </body>
 </html>

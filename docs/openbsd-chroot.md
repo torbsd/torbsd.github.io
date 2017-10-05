@@ -13,27 +13,12 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 We take as our model
 [the instructions in the TPO wiki](https://trac.torproject.org/projects/tor/wiki/doc/TorInChroot),
 and have adapted them to suit [OpenBSD](https://www.openbsd.org).  We
-assume basic Unix command-line skills.
+assume basic Unix command-line skills and some familiarity with using
+OpenBSD.
 
 For reference, these instructions apply to OpenBSD-current as of
 2017-10-03.  The precise meaning of "current" is given in
 [the FAQ on OpenBSD flavors](https://www.openbsd.org/faq/faq5.html#Flavors).
-
-A few notes for those new to OpenBSD:
-
-* The OpenBSD ports tree is a collection ot 3rd party software that
-has been vetted and packaged by the OpenBSD community.  It is usually
-unpacked under `/usr/ports`.  We assume you have it on your system,
-but it is not required for normal operation;
-* Ports generally have names like `net/tor`, which means you can find
-the port under the path `/usr/ports/net/tor` in the filesystem
-(assuming you have the ports tree unpacked on your machine).  Since
-the last part of the name (e.g. `tor`) must be unique the package
-names don't have the category (`net`) in them;
-* Ports and packages are the same thing in different forms: packages are
-cooked from ports.  You don't generally need to build packages
-yourself under OpenBSD, but it can be handy to have the ports tree
-around anyway.
 
 ### Preliminaries ###
 
@@ -47,26 +32,23 @@ user ID is in the `wsrc` group and has R/W access to `/usr/ports` (as
 covered in [the wsrc FAQ](https://www.openbsd.org/faq/faq5.html#wsrc)).
 
 We will use the ports infrastructure to relieve us of worrying about
-the mechanics of grabbing and verifying the code.  Two dependencies you
-should install before continuing are libevent and gmake:
-
-    $ doas pkg_add -Dsnap gmake libevent
-
-The `-Dsnap` should be used if running OpenBSD-current from a snapshot
-[snapshot](https://www.openbsd.org/faq/faq5.html#Snapshots)
-(recommended).
+the mechanics of grabbing and verifying the code, and also of chasing
+down dependencies.  As of this writing there is only one dependency
+for Tor but as that changes these instructions should remain valid.
 
 ### Unpack, Patch ###
 
 We'll now use the ports tree to grab the Tor source code, verify it is
-the right stuff, unpack it and patch it if necessary.
+the right stuff, unpack it and patch it if necessary.  We'll also
+make sure any ports that Tor depends on are installed.
 
     $ cd /usr/ports/net/tor
-    $ make patch
+    $ env SUDO=doas make patch
 
 This will download, verify, extract and patch the tor source code and
 leave it in a port-specific directory under the ports build area,
-`/usr/ports/pobj`.
+`/usr/ports/pobj`.  It will also ensure that everything needed to build
+the port is installed.
 
 ### Build ###
 
@@ -78,10 +60,11 @@ things):
 
 The `make show=FOO` idiom is useful in the ports tree generally; it
 shows you the full expansion of a
-[make(1)](https://man.openbsd.org/make) variable.  The `WRKSRC`
-variable will contain the name of the working source tree directory,
-which is where we want to go.  There is comprehensive documentation on
-this and the other variables used in ports Makefiles in the
+[make(1)](https://man.openbsd.org/make) variable used in the port's
+Makefile.  The `WRKSRC` variable will contain the name of the working
+source tree directory, which is where we want to go.  There is
+comprehensive documentation on this and the other variables used in
+ports Makefiles in the
 [bsd.port.mk(5)](https://man.openbsd.org/bsd.port.mk) man page.
 
 Note that we just used the ports tree to make sure we're starting with
@@ -90,8 +73,8 @@ a package from the port as is normally done.
 
 To build Tor for use in the chroot, do this after `cd`'ing to `WRKSRC`:
 
-    $ ./configure --prefix=/tor --disable-asciidoc
-    $ gmake
+    $ ./configure --prefix=/tor
+    $ make
 
 ### Basic Chroot Setup ###
 
@@ -120,7 +103,7 @@ Add a "tor" user and home directory:
 Next, install the `tor` binary and support files we just compiled
 into the chroot:
 
-    $ doas gmake install prefix=$TORCHROOT/tor exec_prefix=$TORCHROOT
+    $ doas make install prefix=$TORCHROOT/tor exec_prefix=$TORCHROOT/tor
 
 We must deal with shared libraries both for the `tor` binary and for a
 system utility that we will copy into the chroot,
@@ -129,14 +112,14 @@ system utility that we will copy into the chroot,
 
     $ doas mkdir $TORCHROOT/sbin
     $ doas cp /sbin/ldconfig $TORCHROOT/sbin
-    $ doas mkdir $TORCHROOT/usr/sbin
+    $ doas mkdir -p $TORCHROOT/usr/sbin
     $ doas cp /usr/sbin/pwd_mkdb $TORCHROOT/usr/sbin
 
 We must copy all shared libraries that both `pwd_mkdb` and `tor` need
 into the right places under the chroot.
 
     $ tar -C / -cf - \
-        `ldd $TORCHROOT/bin/tor | sed -e 1,3d | awk '{print substr($7,2)}'` | \
+        `ldd $TORCHROOT/tor/bin/tor | sed -e 1,3d | awk '{print substr($7,2)}'` | \
         doas tar -C $TORCHROOT -xf -
     $ tar -C / -cf - \
         `ldd $TORCHROOT/usr/sbin/pwd_mkdb | sed -e 1,3d | awk '{print substr($7,2)}'` | \
@@ -155,13 +138,15 @@ Since these two commands are quite long and have a similar structure I'll break 
 After these two commands, all the shared libraries that `tor` and
 `pwd_mkdb` depend on are in `$TORCHROOT/usr/lib` and
 `$TORCHROOT/usr/local/lib`.  We must now run `ldconfig` in the chroot
-to set up the `ld.so.hints` file:
+to set up the `/var/run/ld.so.hints` file:
 
+    $ doas mkdir -p $TORCHROOT/var/run
     $ doas chroot $TORCHROOT /sbin/ldconfig /usr/lib /usr/local/lib
 
 Now that we have `pwd_mkdb` usable in the chroot, set up a minimal
 password database:
 
+    $ doas mkdir $TORCHROOT/etc
     $ doas sh -c "grep ^tor /etc/passwd > $TORCHROOT/etc/passwd"
     $ doas sh -c "grep ^tor /etc/group > $TORCHROOT/etc/group"
     $ doas sh -c "grep ^tor /etc/master.passwd > $TORCHROOT/etc/master.passwd"
@@ -196,6 +181,7 @@ owned by the `tor` user:
     $ doas mkdir -p $TORCHROOT/var/run/tor
     $ doas mkdir -p $TORCHROOT/var/lib/tor
     $ doas mkdir -p $TORCHROOT/var/lib/tor2
+    $ doas chmod 700 $TORCHROOT/var/lib/tor2
     $ doas mkdir -p $TORCHROOT/var/log/tor
     $ doas chown tor:tor $TORCHROOT/var/run/tor
     $ doas chown tor:tor $TORCHROOT/var/lib/tor
@@ -206,7 +192,7 @@ owned by the `tor` user:
 
 Finally, you should be able to start Tor in the chroot:
 
-    $ doas chroot $TORCHROOT /bin/tor
+    $ doas chroot $TORCHROOT /tor/bin/tor
 
 This should produce output that looks something like:
 
