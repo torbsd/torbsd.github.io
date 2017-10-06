@@ -10,13 +10,13 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 ## A Separate Data Directory for Tor ##
 
-A default install for most Unix-like operating systems places the Tor data directory somewhere underneath the /var partition.
+A default install for most Unix-like operating systems places the Tor data directory somewhere underneath the `/var` partition.
 
 The Tor data directory contains the critical elements for a Tor node, including the node's fingerprint, information from the directory servers such as certificates and microdescriptors, private keys and for any hidden services, the .onion hostname and fingerprint.
 
-On FreeBSD, the Tor data directory is /var/db/tor.
+On FreeBSD, the Tor data directory is `/var/db/tor`.
 
-On OpenBSD it is /var/tor.
+On OpenBSD it is `/var/tor`.
 
 This document assumes that a dedicated Tor data directory is created with the install process, and will not detail the steps necessary for creating the exclusive partition.
 
@@ -26,7 +26,7 @@ There is some utility in providing a dedicated Tor data directory on a Tor node.
 
 * separate mount(8) options can be declared, limiting the execution of binaries, for instance
 
-* a predetermined size isolated from the chance that a bug in Tor could fill the /var partition, which could deprecate system stability, something which is more likely to occur on an embedded system with limited storage
+* a predetermined size isolated from the chance that a bug in Tor could fill the `/var` partition, which could deprecate system stability, something which is more likely to occur on an embedded system with limited storage
 
 While a dedicated data directory does not qualify as a full-blown security feature, it can be considered a useful mitigation step.
 
@@ -42,13 +42,13 @@ It would likely be adequate to partition 300M for a data directory in most cases
 
 Different operating systems allow different options for mounting partitions.
 
-While the size of a partition is most easily set during the install process, mount options can be adjusted in the _/etc/fstab_ file or with the mount(8) command itself to immediately implement a change on a running system.
+While the size of a partition is most easily set during the install process, mount options can be adjusted in the `/etc/fstab` file or with the mount(8) command itself to immediately implement a change on a running system.
 
-One mount option available on most operating systems is the _noexec_ setting. Applied to a partition, it prevents binaries from being executed on the partition. Users with root-level privileges, however, can bypass this mitigation feature by remounting the partition without the _noexec_ option.
+One mount option available on most operating systems is the `noexec` setting. Applied to a partition, it prevents binaries from being executed on the partition. Users with root-level privileges, however, can bypass this mitigation feature by remounting the partition without the `noexec` option.
 
 ###Summary###
 
-A dedicated Tor data directory partition should not be considered a full-blown security feature, but there are benefits to implementing it for embedded systems. First, segmenting the data from the rest of the system inhibits the ability for a Tor bug to fill up the /var partition. Second, dedicated mount options, as provided by the operating system, can provide useful mitigation steps for the purpose of security.
+A dedicated Tor data directory partition should not be considered a full-blown security feature, but there are benefits to implementing it for embedded systems. First, segmenting the data from the rest of the system inhibits the ability for a Tor bug to fill up the `/var` partition. Second, dedicated mount options, as provided by the operating system, can provide useful mitigation steps for the purpose of security.
 
 
 {{../footer.md}}
