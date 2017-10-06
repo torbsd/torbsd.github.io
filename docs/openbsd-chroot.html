@@ -23,7 +23,7 @@
 
 <p>We have taken
 <a href="https://trac.torproject.org/projects/tor/wiki/doc/TorInChroot">the instructions in the TPO wiki</a>
-as our model, and have adapted them to suit
+as a starting point, and have adapted them to suit
 <a href="https://www.openbsd.org">OpenBSD</a>. We assume basic Unix command-line
 skills and some familiarity with using OpenBSD; the
 <a href="https://www.openbsd.org/faq/">FAQs</a> and
@@ -35,6 +35,102 @@ skills and some familiarity with using OpenBSD; the
 
 <h3 id="preliminaries">Preliminaries</h3>
 
+<h4 id="filesystem">Filesystem</h4>
+
+<p>From the <a href="https://man.openbsd.org/mount">mount(8)</a> man page:</p>
+
+<pre><code>nodev      Do not interpret character or block special devices on
+           the file system.  This option is useful for a server
+           that has file systems containing special devices for
+           architectures other than its own.
+</code></pre>
+
+<p>The installer marks fstab entries for partitions created during
+installation as <code>nodev</code> by default; only the root filesystem, where
+<code>/dev/</code> lives, is not. This presents a problem for Tor in a chroot,
+because Tor needs to use three device special files: <code>/dev/random</code>,
+<code>/dev/urandom</code> and <code>/dev/null</code>. The usual way of making device files
+available in a chroot is to use the
+<a href="https://man.openbsd.org/mknod">mknod(8)</a> command in the chroot, but
+if the chroot lives on a filesystem mounted <code>nodev</code> (likely under
+OpenBSD) this will not work as expected when Tor tries to use the
+device.</p>
+
+<p>A discussion of disk partitioning and configuration is beyond the
+scope of this document. The
+<a href="https://www.openbsd.org/faq/faq4.html#Partitioning">FAQ on Disk Partitioning in the Installer</a>
+has links to much of the relevant documentation. if you wish to make
+a small partition available for use as a chroot area this is where to
+start. We also will not counsel you to stick your chroot in the root
+filesystem, as this is bad form and could cause you problems in many
+cases.</p>
+
+<p>For our purposes here we will take another approach: create a small
+filesystem stored in a regular user file and mount it without the
+<code>nodev</code> option. The <a href="https://man.openbsd.org/vnconfig">vnconfig(8)</a>
+command is the key. Let&#8217;s start by being careful and looking at what,
+if any files have been attached to
+<a href="https://man.openbsd.org/vnd">vnd(4)</a> devices:</p>
+
+<pre><code>$ doas vnconfig -l
+vnd0: covering /home/me/something/file.img on sd0k, inode 4783121
+vnd1: not in use
+vnd2: not in use
+vnd3: not in use
+</code></pre>
+
+<p>A couple important points:</p>
+
+<ul>
+<li>by default there are four vnd devices configured;</li>
+<li>if one is in use and you vnconfig it again it is overwritten, so you need to know which ones are not in use;</li>
+<li>nothing in the system will use a vnd device by default.</li>
+</ul>
+
+<p>In the above example the system is using <code>vnd0</code> to attach to a file
+containing a disk image on <code>vnd0</code>. This means we should use <code>vnd1</code> for
+the chroot; we&#8217;ll use <code>vnd1</code> for the rest of this document to stay
+consistent.</p>
+
+<p>First, prepare a file to hold the disk image and attach it as <code>vnd1</code>:</p>
+
+<pre><code>$ dd if=/dev/zero of=chroot.img bs=1m count=50
+$ doas vnconfig vnd1 chroot.img
+</code></pre>
+
+<p>Next, use <a href="https://man.openbsd.org">disklabel(8)</a> to add a partition
+of the right type that takes up all of the virtual disk; for simplicity
+we use the interactive editor (<code>-E</code> option):</p>
+
+<pre><code>$ doas disklabel -E vnd1
+Label editor (enter '?' for help at any prompt)
+&gt; a a
+offset: [0] 
+size: [102400] 
+FS type: [4.2BSD] 
+&gt; w
+&gt; q
+No label changes.
+</code></pre>
+
+<p>Finally, create a filesystem on the partition we just created
+(<code>/dev/vnd1a</code>):</p>
+
+<pre><code>$ doas newfs /dev/rvnd1a
+</code></pre>
+
+<p>At this point you can mount <code>/dev/vnd1a</code> somewhere in your filesystem
+without the <code>nodev</code> option and use it for the chroot; we will mount it
+under <code>/home/tor/chroot</code> below. Once you are done using the chroot
+(no Tor process running anymore), you can do the following to clean
+up:</p>
+
+<pre><code>$ doas umount /home/tor/chroot
+$ doas vnconfig -u vnd1
+</code></pre>
+
+<h4 id="portstree">Ports Tree</h4>
+
 <p>We assume you have the ports tree unpacked under <code>/usr/ports</code>. It is
 a good idea to read
 <a href="https://www.openbsd.org/anoncvs.html">the anoncvs documentation</a> and
@@ -42,55 +138,12 @@ follow its instructions for getting a copy of the ports tree.</p>
 
 <p>For the rest of this guide we assume you have done this and that your
 user ID is in the <code>wsrc</code> group and has R/W access to <code>/usr/ports</code> (as
-covered in <a href="https://www.openbsd.org/faq/faq5.html#wsrc">the wsrc FAQ</a>).</p>
+covered in
+<a href="https://www.openbsd.org/faq/faq5.html#wsrc">the wsrc FAQ</a>).</p>
 
 <p>We will use the ports infrastructure to relieve us of worrying about
-the mechanics of grabbing and verifying the code, and also of chasing
-down dependencies. As of this writing there is only one dependency
-for Tor but as that changes these instructions should remain valid.</p>
-
-<h3 id="gettorsourceanddependencies">Get Tor Source and Dependencies</h3>
-
-<p>We&#8217;ll now use the ports tree to grab the Tor source code, verify it is
-the right stuff, unpack it and patch it if necessary. We&#8217;ll also make
-sure any ports that Tor depends on are installed.</p>
-
-<pre><code>$ cd /usr/ports/net/tor
-$ env SUDO=doas make patch
-</code></pre>
-
-<p>This will download, verify, extract and patch the tor source code and
-leave it in a port-specific directory under the ports build area,
-<code>/usr/ports/pobj</code>. It will also ensure that everything needed to build
-the port is installed.</p>
-
-<h3 id="build">Build</h3>
-
-<p>Next, we change working directories to the root of the source tree
-(that place under <code>/usr/ports/pobj</code> where <code>make patch</code> unpacked
-things):</p>
-
-<pre><code>$ cd `make show=WRKSRC`
-</code></pre>
-
-<p>The <code>make show=FOO</code> idiom is useful in the ports tree generally; it
-shows you the full expansion of a
-<a href="https://man.openbsd.org/make">make(1)</a> variable used in the port&#8217;s
-Makefile. The <code>WRKSRC</code> variable will contain the name of the working
-source tree directory, which is where we want to go. There is
-comprehensive documentation on this and the other variables used in
-ports Makefiles in the
-<a href="https://man.openbsd.org/bsd.port.mk">bsd.port.mk(5)</a> man page.</p>
-
-<p>Note that we just used the ports tree to make sure we&#8217;re starting with
-code that is known to build and work under OpenBSD, we&#8217;re not building
-a package from the port as is normally done.</p>
-
-<p>To build Tor for use in the chroot, do this after <code>cd</code>&#8217;ing to <code>WRKSRC</code>:</p>
-
-<pre><code>$ ./configure --prefix=/tor
-$ make
-</code></pre>
+the mechanics of grabbing and verifying the code and chasing down
+dependencies.</p>
 
 <h3 id="basicchrootsetup">Basic Chroot Setup</h3>
 
@@ -101,7 +154,7 @@ $ make
 <li>the password database;</li>
 <li>device nodes;</li>
 <li>directory structure and ownership;</li>
-<li>Tor configuration.</li>
+<li>Tor software and configuration.</li>
 </ul>
 
 <p>First off, set an environment variable to point at the base directory
@@ -120,11 +173,53 @@ $ doas mkdir /home/tor
 $ doas chown tor:tor /home/tor
 </code></pre>
 
-<p>Next, install the <code>tor</code> binary and support files we just compiled
-into the chroot:</p>
+<p>Mount our little filesystem under <code>/home/tor/chroot</code>:</p>
 
-<pre><code>$ doas make install prefix=$TORCHROOT/tor exec_prefix=$TORCHROOT/tor
+<pre><code>$ doas mkdir /home/tor/chroot
+$ doas chown tor:tor /home/tor/chroot
+$ mount /dev/vnd1a /home/tor/chroot
 </code></pre>
+
+<h3 id="compiletorandinstallinchroot">Compile Tor and Install in Chroot</h3>
+
+<p>We&#8217;ll now use the ports tree to grab the Tor source code, verify it is
+the right stuff, unpack it, patch it (if necessary) and build it:</p>
+
+<pre><code>$ cd /usr/ports/net/tor
+$ env SUDO=doas make
+</code></pre>
+
+<p>This will download, verify, extract and patch the tor source code and
+leave it in a port-specific directory under the ports build area,
+<code>/usr/ports/pobj</code>. It will also ensure that everything needed to
+build the port is installed. We set the <code>SUDO</code> environment variable
+in the <code>make</code> invocation in case any ports on which Tor depends on
+must be installed prior to building; this tells the ports system to
+become root at the appropriate times to install pacakges that are
+created as a by-product of chasing down these dependencies. As of
+this writing there is only one dependency (libevent) for Tor but as
+that changes these instructions should remain valid.</p>
+
+<p>Note that we just used the ports tree to make sure we&#8217;re starting with
+code that is known to build and work under OpenBSD, we&#8217;re not building
+a package from the port as is normally done.</p>
+
+<p>Next, we change working directories to the root of the source tree:</p>
+
+<pre><code>$ cd `make show=WRKSRC`
+$ doas make install prefix=$TORCHROOT exec_prefix=$TORCHROOT sysconfdir=$TORCHROOT/etc
+</code></pre>
+
+<p>The <code>make show=FOO</code> idiom is useful in the ports tree generally; it
+shows you the full expansion of a
+<a href="https://man.openbsd.org/make">make(1)</a> variable used in the port&#8217;s
+Makefile. The <code>WRKSRC</code> variable will contain the name of the working
+source tree directory, which is where we want to go. There is
+comprehensive documentation on this and the other variables used in
+ports Makefiles in the
+<a href="https://man.openbsd.org/bsd.port.mk">bsd.port.mk(5)</a> man page.</p>
+
+<h3 id="sharedlibraries">Shared Libraries</h3>
 
 <p>We must deal with shared libraries both for the <code>tor</code> binary and for a
 system utility that we will copy into the chroot,
@@ -144,7 +239,7 @@ called <code>shlibpaths</code> to make the commands easier to type:</p>
 <pre><code>$ shlibpaths () {
     ldd $1 | sed -e 1,3d | awk '{print substr($7,2)}'
 }
-$ tar -C / -cf - `shlibpaths $TORCHROOT/tor/bin/tor` | doas tar -C $TORCHROOT -xf -
+$ tar -C / -cf - `shlibpaths $TORCHROOT/bin/tor` | doas tar -C $TORCHROOT -xf -
 $ tar -C / -cf - `shlibpaths $TORCHROOT/usr/sbin/pwd_mkdb` | doas tar -C $TORCHROOT -xf -
 </code></pre>
 
@@ -170,15 +265,14 @@ $ doas chroot $TORCHROOT /sbin/ldconfig /usr/lib /usr/local/lib
 <p>Now that we have <code>pwd_mkdb</code> usable in the chroot, set up a minimal
 password database:</p>
 
-<pre><code>$ doas mkdir $TORCHROOT/etc
-$ doas sh -c &quot;grep ^tor /etc/passwd &gt; $TORCHROOT/etc/passwd&quot;
+<pre><code>$ doas sh -c &quot;grep ^tor /etc/passwd &gt; $TORCHROOT/etc/passwd&quot;
 $ doas sh -c &quot;grep ^tor /etc/group &gt; $TORCHROOT/etc/group&quot;
 $ doas sh -c &quot;grep ^tor /etc/master.passwd &gt; $TORCHROOT/etc/master.passwd&quot;
 $ doas sh -c &quot;grep ^_shadow /etc/group &gt;&gt; $TORCHROOT/etc/group&quot;
 $ doas chroot $TORCHROOT /usr/sbin/pwd_mkdb /etc/master.passwd
 </code></pre>
 
-<p>Set up device nodes that <code>tor</code> needs:</p>
+<p>Set up device nodes that Tor needs:</p>
 
 <pre><code>$ doas mkdir $TORCHROOT/dev
 $ doas mknod -m 644 $TORCHROOT/dev/random c 45 0
@@ -193,10 +287,10 @@ chroot is complete.</p>
 
 <p>Create a minimal Tor configuration in the chroot:</p>
 
-<pre><code>$ doas sh -c &quot;cat &gt; $TORCHROOT/tor/etc/tor/torrc&quot;
+<pre><code>$ doas sh -c &quot;cat &gt; $TORCHROOT/etc/tor/torrc&quot;
 User tor
-DataDirectory /var/lib/tor2
-GeoIPFile /tor/share/tor/geoip
+DataDirectory /var/lib/tor
+GeoIPFile /share/tor/geoip
 PidFile /var/run/tor/tor.pid
 Log notice file /var/log/tor/log
 ^D
@@ -207,12 +301,10 @@ owned by the <code>tor</code> user and have the right permissions:</p>
 
 <pre><code>$ doas mkdir -p $TORCHROOT/var/run/tor
 $ doas mkdir -p $TORCHROOT/var/lib/tor
-$ doas mkdir -p $TORCHROOT/var/lib/tor2
-$ doas chmod 700 $TORCHROOT/var/lib/tor2
+$ doas chmod 700 $TORCHROOT/var/lib/tor
 $ doas mkdir -p $TORCHROOT/var/log/tor
 $ doas chown tor:tor $TORCHROOT/var/run/tor
 $ doas chown tor:tor $TORCHROOT/var/lib/tor
-$ doas chown tor:tor $TORCHROOT/var/lib/tor2
 $ doas chown tor:tor $TORCHROOT/var/log/tor
 </code></pre>
 
@@ -220,7 +312,7 @@ $ doas chown tor:tor $TORCHROOT/var/log/tor
 
 <p>Finally, you should be able to start Tor in the chroot:</p>
 
-<pre><code>$ doas chroot $TORCHROOT /tor/bin/tor
+<pre><code>$ doas chroot $TORCHROOT /bin/tor
 </code></pre>
 
 <p>This should produce output that looks something like:</p>
@@ -237,7 +329,7 @@ Oct 04 16:46:55.192 [notice] Opening Socks listener on 127.0.0.1:9050
 Tor to fork into the background and run as a daemon, add one more line
 to your torrc file:</p>
 
-<pre><code>$ doas sh -c &quot;echo RunAsDaemon 1 &gt;&gt; $TORCHROOT/tor/etc/tor/torrc&quot;
+<pre><code>$ doas sh -c &quot;echo RunAsDaemon 1 &gt;&gt; $TORCHROOT/etc/tor/torrc&quot;
 </code></pre>
 
 <p>If you start Tor with the above command after adding that line it will
@@ -254,7 +346,7 @@ for <code>SOCKS</code> connections on port 9050.</p>
 
 <p><em>Copyright &copy; 2017 by The Tor BSD Diversity Project (TDP). All Rights Reserved.</em></p>
 
-<p><code>last updated: Thu Oct  5 22:20:52 2017 UTC</code></p>
+<p><code>last updated: Fri Oct  6 20:33:26 2017 UTC</code></p>
 
 </body>
 </html>
