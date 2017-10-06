@@ -47,7 +47,7 @@ device.
 A discussion of disk partitioning and configuration is beyond the
 scope of this document.  The
 [FAQ on Disk Partitioning in the Installer](https://www.openbsd.org/faq/faq4.html#Partitioning)
-has links to much of the relevant documentation.  if you wish to make
+has links to much of the relevant documentation.  If you wish to make
 a small partition available for use as a chroot area this is where to
 start.  We also will not counsel you to stick your chroot in the root
 filesystem, as this is bad form and could cause you problems in many
@@ -283,7 +283,7 @@ This should produce output that looks something like:
 
     Oct 04 16:46:55.116 [notice] Tor 0.3.0.10 (git-c33db290a9d8d0f9) running on OpenBSD with Libevent 2.0.22-stable, OpenSSL LibreSSL 2.6.3 and Zlib 1.2.3.
     Oct 04 16:46:55.116 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
-    Oct 04 16:46:55.126 [notice] Read configuration file "/tor/etc/tor/torrc".
+    Oct 04 16:46:55.126 [notice] Read configuration file "/etc/tor/torrc".
     Oct 04 16:46:55.192 [notice] Opening Socks listener on 127.0.0.1:9050
 
 It will also produce a verbose log of its operation in `$TORCHROOT/var/log/tor/log`.
