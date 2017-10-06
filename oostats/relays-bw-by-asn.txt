@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Thu Oct  5 18:16:38 UTC 2017
+Report Date: Fri Oct  6 01:46:56 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1049,8 +1049,8 @@ AVCOM d.o.o. (1)                                         66560 (0.0%)
 Microplex PTY LTD (1)                                    65536 (0.0%)
 JSC Vostoktelecom (1)                                    64203 (0.0%)
 Cutting Edge Communications, Inc. (1)                    63550 (0.0%)
-PJSC Ukrtelecom (1)                                      63488 (0.0%)
 RFTkabel Brandenburg GmbH (1)                            63488 (0.0%)
+PJSC Ukrtelecom (1)                                      63488 (0.0%)
 Manx Telecom (1)                                         63255 (0.0%)
 Balnet Ltd. (1)                                          62692 (0.0%)
 Euskaltel S.A. (1)                                       62464 (0.0%)
