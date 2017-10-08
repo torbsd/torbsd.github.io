@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Sun Oct  8 16:13:39 UTC 2017
+Report Date: Sun Oct  8 16:43:41 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1066,8 +1066,8 @@ LLC Balttelecom (1)                                      49573 (0.0%)
 MT-MPLS (1)                                              48128 (0.0%)
 Nagasaki Cable Media Inc. (1)                            45376 (0.0%)
 Outremer Telecom (1)                                     0 (0.0%)
-DataOppdrag AS (1)                                       0 (0.0%)
 Eircom (1)                                               0 (0.0%)
+DataOppdrag AS (1)                                       0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
