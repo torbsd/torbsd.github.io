@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Sun Oct  8 23:34:52 UTC 2017
+Report Date: Mon Oct  9 02:35:20 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1066,8 +1066,8 @@ MT-MPLS (1)                                              48128 (0.0%)
 Telecom Algeria (1)                                      39322 (0.0%)
 Itissalat Al-MAGHRIB (1)                                 27648 (0.0%)
 VODAFONE GHANA AS INTERNATIONAL TRANSIT (1)              21187 (0.0%)
-BSE Software GmbH (1)                                    0 (0.0%)
 Perfect International, Inc (1)                           0 (0.0%)
+BSE Software GmbH (1)                                    0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
