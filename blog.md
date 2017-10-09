@@ -12,7 +12,7 @@ X-Note: These lines at the top are multimarkdown metadata; leave them.
 
 __October 2017__
 
-[obfs4proxy is Everywhere](#obfs4-everywhere)
+[Ports Really Matter](#ports-matter) [%sep] [obfs4proxy is Everywhere](#obfs4-everywhere)
 
 __September 2017__
 
@@ -88,6 +88,32 @@ __October 2015__
 [Updated Tor Browser Packages](#tb-update) [%sep] [The BSD Relay Guides](#relay-guides) [%sep] [Our First Bells](#first-bells) [%sep] [Beyond OS Diversity](#beyond-os) [%sep] [Tor Browser version 5.0.3 for OpenBSD](#tb-5.0.3)
 
 [From the Attic](#attic)
+
+###20171009###
+
+<a id="ports-matter">Ports Really Matter</a> by gman999
+
+The end-user doesn't get the attention it deserves in BSD land. The end-user refers to the non-developer who doesn't know or care which shell they are running and whether it plays nice with POSIX. The end-user who wants things to "just work."
+
+There are obvious and justifiable reasons the BSD operating systems aren't necessarily user friendly. The BSDs have always been focused on the backend, the layer beyond the immediate grasp of the typical end-user. BSD code and infrastructure is the great invisible giant guided by the principle of making things work correctly with stability and security front and center. So the end-user can get their Netflix video streamed without knowing or appreciating the role of FreeBSD in that infrastructure. Or beyond the stereotypical end-user, the sysadmin (aka, "devops") can securely access servers over SSH without knowing the difference between SSHv1 or v2, or how asymmetric cryptography works.
+
+That's fine, and the BSDs will continue their legacy without end-user recognition. But fine isn't really good enough.
+
+A central criteria that all end-users weigh is whether an particular operating system can run ${application}. More importantly, it shapes the options for their respective sysadmin or help desk to determine which operating system "their users" will use or what will serve data and services to those end-users.
+
+Samba is easy. All open-source Unix-like systems support contemporary versions of Samba to do file-serving. There might be questions of NFS support, Windows Active Directory authentication, but there is really no bad choice.
+
+This is the reasoning behind __TDP's__ [Porting PETs](porting-pets.html). The large and growing community of users looking for privacy-enhancing applications jumps with each new wave of identity theft disclosures, unauthorized leaks of one sort or another or the revelation of censorship or surveillance amid political crisis.
+
+Not providing the applications those particular end-users seek means your operating system is out of the running for their usage.
+
+This is why __TDP__ focused on porting Tor Browser. The BSDs are renowned for their security approaches, and choosing OpenBSD as the first platform means porting TB would be easier for other POSIX-respecting Unix-like OSs.
+
+Since TB, attention has been directed to ports that assist relay operators, like obfs4proxy. Or the upcoming how-to for chroot'g Tor on OpenBSD.
+
+Those ports put the BSDs in more serious contention as options for relay or bridge operators. Without ports like obfs4proxy, the BSDs are a non-starter for some end-users.
+
+For the less-technical end-user, it's TB, and now onionshare is ready for testing. [Porting PETs](porting-pets.html) is kept relatively fresh, and will expand as resources allow. __TDP__ wants to see more popular PETs ports running on all the BSDs so they can be a more plausible option for the BSD-inclined sysadmin, or the more common "end-user."
 
 ###20171003###
 
