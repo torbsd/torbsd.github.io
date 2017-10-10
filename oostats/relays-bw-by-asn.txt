@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Tue Oct 10 13:13:07 UTC 2017
+Report Date: Tue Oct 10 22:30:20 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1031,8 +1031,8 @@ Mahanagar Telephone Nigam Limited (1)                    77022 (0.0%)
 Administracion Nacional de Telecomunicaciones (1)        74791 (0.0%)
 Cutting Edge Communications, Inc. (1)                    73152 (0.0%)
 JSC Kazakhtelecom (1)                                    71145 (0.0%)
-Microplex PTY LTD (1)                                    70656 (0.0%)
 YLess4U Regional Broadband (1)                           70656 (0.0%)
+Microplex PTY LTD (1)                                    70656 (0.0%)
 CO.PA.CO. (1)                                            65010 (0.0%)
 Public Telecommunication Corporation (1)                 62464 (0.0%)
 manitu GmbH (1)                                          61137 (0.0%)
@@ -1046,12 +1046,12 @@ RFTkabel Brandenburg GmbH (1)                            55304 (0.0%)
 Quadrant Televentures Limited (1)                        52224 (0.0%)
 JSC Vostoktelecom (1)                                    52058 (0.0%)
 PJSC Telesystems of Ukraine (1)                          37888 (0.0%)
-National Telecommunication Corporation HQ (1)            23552 (0.0%)
 MT-MPLS (1)                                              23552 (0.0%)
+National Telecommunication Corporation HQ (1)            23552 (0.0%)
 VODAFONE GHANA AS INTERNATIONAL TRANSIT (1)              21098 (0.0%)
 Pars Online PJS (1)                                      1024 (0.0%)
-Mega Cable, S.A. de C.V. (1)                             0 (0.0%)
 Snap Internet Limited (1)                                0 (0.0%)
+Mega Cable, S.A. de C.V. (1)                             0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>

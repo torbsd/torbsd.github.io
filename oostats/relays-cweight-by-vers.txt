@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Tue Oct 10 13:13:05 UTC 2017
+Report Date: Tue Oct 10 22:30:18 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 CONSENSUS WEIGHT FRACTION BY TOR VERSION
@@ -48,8 +48,8 @@ VERS (records)          CONSENSUS_WEIGHT_FRAC
 0.2.8.14 (2)            0.1%
 0.2.4.20 (9)            0.0%
 0.3.0.5-rc (3)          0.0%
-0.2.9.8-dev (1)         0.0%
 0.3.0.2-alpha (1)       0.0%
+0.2.9.8-dev (1)         0.0%
 0.2.8.8 (16)            0.0%
 0.2.4.22 (10)           0.0%
 0.2.6.0-alpha-dev (5)   0.0%
