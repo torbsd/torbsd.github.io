@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Mon Oct  9 15:09:37 UTC 2017
+Report Date: Tue Oct 10 00:20:59 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -945,8 +945,8 @@ FreeBit Co.,Ltd. (1)                                     235568 (0.0%)
 The Computer Shop Netlink (1)                            233917 (0.0%)
 Biddeford Internet Corp (2)                              230887 (0.0%)
 CABO SERVICOS DE TELECOMUNICACOES LTDA (1)               230260 (0.0%)
-WGO Telecomunicações Ltda (1)                          228352 (0.0%)
 Tim Celular S.A. (1)                                     228352 (0.0%)
+WGO Telecomunicações Ltda (1)                          228352 (0.0%)
 Origin Broadband Limited (1)                             227847 (0.0%)
 HostSlim BV (1)                                          225553 (0.0%)
 Teleradiocompany Teleos-1 Ltd (1)                        222076 (0.0%)
@@ -1011,8 +1011,8 @@ CenturyTel Internet Holdings, Inc. (1)                   121022 (0.0%)
 Nexinto GmbH (1)                                         120936 (0.0%)
 VINI SAS (1)                                             120597 (0.0%)
 Spin Internet Service (1)                                120371 (0.0%)
-TAU INTERNET Lukasz Chajkaluk (1)                        119808 (0.0%)
 Nizhnetagilskie Kompyuternye Seti LLC (1)                119808 (0.0%)
+TAU INTERNET Lukasz Chajkaluk (1)                        119808 (0.0%)
 Digital United Inc. (1)                                  119105 (0.0%)
 iCONNECT (1)                                             118041 (0.0%)
 OAO Osnova Telecom (1)                                   117843 (0.0%)
@@ -1030,8 +1030,8 @@ Ukrcom Ltd. (1)                                          110592 (0.0%)
 NSS S.A. (1)                                             108539 (0.0%)
 mitko.com Eood (1)                                       107571 (0.0%)
 Host Universal Pty Ltd (1)                               107520 (0.0%)
-ASMedi (1)                                               106496 (0.0%)
 Pishgaman Toseeh Ertebatat Company (Private Joint  (1)   106496 (0.0%)
+ASMedi (1)                                               106496 (0.0%)
 PJSC MegaFon (2)                                         102573 (0.0%)
 FASTER CZ spol. s r.o. (1)                               100313 (0.0%)
 Manx Telecom (1)                                         99887 (0.0%)
@@ -1067,9 +1067,9 @@ MT-MPLS (1)                                              30720 (0.0%)
 Syrian Telecom (1)                                       29696 (0.0%)
 Itissalat Al-MAGHRIB (1)                                 27648 (0.0%)
 Starhub Internet Pte Ltd (1)                             14336 (0.0%)
+Entanet (1)                                              0 (0.0%)
 Ojsc oao Tattelecom (1)                                  0 (0.0%)
 Base IP B.V. (1)                                         0 (0.0%)
-Entanet (1)                                              0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
