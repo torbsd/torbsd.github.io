@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Tue Oct 10 05:55:24 UTC 2017
+Report Date: Tue Oct 10 13:13:07 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1046,8 +1046,8 @@ RFTkabel Brandenburg GmbH (1)                            55304 (0.0%)
 Quadrant Televentures Limited (1)                        52224 (0.0%)
 JSC Vostoktelecom (1)                                    52058 (0.0%)
 PJSC Telesystems of Ukraine (1)                          37888 (0.0%)
-MT-MPLS (1)                                              23552 (0.0%)
 National Telecommunication Corporation HQ (1)            23552 (0.0%)
+MT-MPLS (1)                                              23552 (0.0%)
 VODAFONE GHANA AS INTERNATIONAL TRANSIT (1)              21098 (0.0%)
 Pars Online PJS (1)                                      1024 (0.0%)
 Mega Cable, S.A. de C.V. (1)                             0 (0.0%)
