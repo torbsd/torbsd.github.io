@@ -89,23 +89,23 @@ __October 2015__
 
 [From the Attic](#attic)
 
-###20171009###
+###20171010###
 
 <a id="ports-matter">Ports Really Matter</a> by gman999
 
 The end-user doesn't get the attention it deserves in BSD land. The end-user refers to the non-developer who doesn't know or care which shell they are running and whether it plays nice with POSIX. The end-user who wants things to "just work."
 
-There are obvious and justifiable reasons the BSD operating systems aren't necessarily user friendly. The BSDs have always been focused on the backend, the layer beyond the immediate grasp of the typical end-user. BSD code and infrastructure is the great invisible giant guided by the principle of making things work correctly with stability and security front and center. So the end-user can get their Netflix video streamed without knowing or appreciating the role of FreeBSD in that infrastructure. Or beyond the stereotypical end-user, the sysadmin (aka, "devops") can securely access servers over SSH without knowing the difference between SSHv1 or v2, or how asymmetric cryptography works.
+There are obvious and justifiable reasons the BSD operating systems aren't necessarily user friendly. The BSDs have always been focused on the backend, the layer beyond the immediate grasp of the typical end-user. BSD code and infrastructure is the great invisible giant guided by the principle of making things work correctly with stability and security front and center. So the end-user can get their Netflix video streamed without knowing or appreciating the role of FreeBSD in that infrastructure. Or beyond the more common end-user, the sysadmin (aka, "devops") can securely access servers over SSH without knowing the difference between SSHv1 or v2, or how asymmetric cryptography works.
 
 That's fine, and the BSDs will continue their legacy without end-user recognition. But fine isn't really good enough.
 
-A central criteria that all end-users weigh is whether an particular operating system can run ${application}. More importantly, it shapes the options for their respective sysadmin or help desk to determine which operating system "their users" will use or what will serve data and services to those end-users.
+A central criteria that all end-users weigh is whether a particular operating system can run ${application}. More importantly, it shapes the options for their respective sysadmin or help desk to determine which operating system "their users" will use or what will serve data and services to those end-users.
 
-Samba is easy. All open-source Unix-like systems support contemporary versions of Samba to do file-serving. There might be questions of NFS support, Windows Active Directory authentication, but there is really no bad choice.
+Samba is easy. All open-source Unix-like systems support contemporary versions of Samba to do file-serving. There might be questions of NFS support or Windows Active Directory authentication, but there is really no bad choice.
 
 This is the reasoning behind __TDP's__ [Porting PETs](porting-pets.html). The large and growing community of users looking for privacy-enhancing applications jumps with each new wave of identity theft disclosures, unauthorized leaks of one sort or another or the revelation of censorship or surveillance amid political crisis.
 
-Not providing the applications those particular end-users seek means your operating system is out of the running for their usage.
+Not providing the applications those particular end-users seek means your operating system is out of the running as an option.
 
 This is why __TDP__ focused on porting Tor Browser. The BSDs are renowned for their security approaches, and choosing OpenBSD as the first platform means porting TB would be easier for other POSIX-respecting Unix-like OSs.
 
