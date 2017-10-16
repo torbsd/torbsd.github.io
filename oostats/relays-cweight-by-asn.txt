@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Mon Oct 16 15:30:22 UTC 2017
+Report Date: Mon Oct 16 21:25:12 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 CONSENSUS WEIGHT FRACTION BY AUTONOMOUS SYSTEM NAME
@@ -244,8 +244,8 @@ US Internet Corp (2)                                     0.0%
 Visual Online S.A. (2)                                   0.0%
 Zdruzenie pouzivatelov Slovenskej akademickej dato (2)   0.0%
 Ziggo (16)                                               0.0%
-Adam Thompson (1)                                        0.0%
 HitMe.pl Marek Bajerski (1)                              0.0%
+Adam Thompson (1)                                        0.0%
 Daticum JSC (1)                                          0.0%
 Saint-Petersburg Computer Networks Ltd. (2)              0.0%
 Enzu Inc (4)                                             0.0%
@@ -278,8 +278,8 @@ HIVELOCITY VENTURES CORP (2)                             0.0%
 7heaven LLC (1)                                          0.0%
 Sologigabit S.L. (4)                                     0.0%
 prgmr.com, Inc. (6)                                      0.0%
-UAB Esnet (1)                                            0.0%
 NetsurfUSA, Inc. (1)                                     0.0%
+UAB Esnet (1)                                            0.0%
 Concorde inc. (1)                                        0.0%
 Start LLC (3)                                            0.0%
 Telenet BVBA (10)                                        0.0%
@@ -300,8 +300,8 @@ Greenhost BV (4)                                         0.0%
 SFR (18)                                                 0.0%
 BELNET (2)                                               0.0%
 Aktsiaselts WaveCom (1)                                  0.0%
-UAB Porenta (1)                                          0.0%
 WebNX, Inc. (1)                                          0.0%
+UAB Porenta (1)                                          0.0%
 DoclerWeb Kft. (2)                                       0.0%
 LLC tc Tel Center (4)                                    0.0%
 Istanbuldc Veri Merkezi Ltd. Sti (4)                     0.0%
@@ -390,9 +390,9 @@ RCN (7)                                                  0.0%
 Douglas FastNet (1)                                      0.0%
 HOSTING90 systems s.r.o. (1)                             0.0%
 DirectSpace Networks, LLC. (1)                           0.0%
+GARS Telecom - Telecommunications Management LLC (1)     0.0%
 Fibersphere Communications, Inc. (1)                     0.0%
 Solcon Internetdiensten N.V. (1)                         0.0%
-GARS Telecom - Telecommunications Management LLC (1)     0.0%
 Verixi Sprl (1)                                          0.0%
 ACONET (1)                                               0.0%
 Klimenko Anna.Aleksandrovna PE (1)                       0.0%
@@ -511,8 +511,8 @@ Octopuce s.a.r.l. (1)                                    0.0%
 TekSavvy Solutions, Inc. (8)                             0.0%
 Jump Networks Ltd (3)                                    0.0%
 Nette sp. z o.o. (2)                                     0.0%
-PLANET IC GmbH (1)                                       0.0%
 OOO MediaSeti (1)                                        0.0%
+PLANET IC GmbH (1)                                       0.0%
 Sky UK Limited (7)                                       0.0%
 Alta Tecnologia en Comunicacions, S.L (1)                0.0%
 NTE Bredband AS (1)                                      0.0%
@@ -530,8 +530,8 @@ Tiscali UK Limited (2)                                   0.0%
 Im Level7 Srl (1)                                        0.0%
 KDDI CORPORATION (5)                                     0.0%
 A1 Telekom Austria AG (6)                                0.0%
-PACSWITCH IP NETWORK (1)                                 0.0%
 Nevod Ltd (1)                                            0.0%
+PACSWITCH IP NETWORK (1)                                 0.0%
 NC Numericable S.A. (6)                                  0.0%
 Art Invest Ltd (1)                                       0.0%
 Quickline AG (4)                                         0.0%
@@ -550,8 +550,8 @@ IT Expert LLC (3)                                        0.0%
 Cloudlayer8 Limited (1)                                  0.0%
 Net-style Atarim Ltd (3)                                 0.0%
 meerfarbig GmbH & Co. KG (1)                             0.0%
-ON-LINE Ltd (1)                                          0.0%
 GTT a.s. (1)                                             0.0%
+ON-LINE Ltd (1)                                          0.0%
 Proximus NV (8)                                          0.0%
 FuslVZ Ltd. (1)                                          0.0%
 Saskatchewan Telecommunications (1)                      0.0%
@@ -568,8 +568,8 @@ Next point Host EOOD. (1)                                0.0%
 Grenode (1)                                              0.0%
 Red digital de telecomunicaciones de las islas bal (1)   0.0%
 iTeract inc. (1)                                         0.0%
-Igra-Service LLC (1)                                     0.0%
 Brezhnev D.S. PE (1)                                     0.0%
+Igra-Service LLC (1)                                     0.0%
 OU Web Hosting Solutions (2)                             0.0%
 Trader soft LLC (1)                                      0.0%
 Iskratelecom CJSC (4)                                    0.0%
@@ -597,10 +597,10 @@ CoreSpace, Inc. (1)                                      0.0%
 Mike Kaldig (1)                                          0.0%
 HighSpeed Office Limited (2)                             0.0%
 Vectra S.A. (4)                                          0.0%
-Hostway Services, Inc. (1)                               0.0%
-Allo Communications LLC (1)                              0.0%
-Internet Initiative Japan Inc. (1)                       0.0%
 Netsign Networks GmbH (1)                                0.0%
+Internet Initiative Japan Inc. (1)                       0.0%
+Allo Communications LLC (1)                              0.0%
+Hostway Services, Inc. (1)                               0.0%
 Telecom3 Sverige AB (2)                                  0.0%
 GMO Internet,Inc (4)                                     0.0%
 Carolina Internet, Ltd. (1)                              0.0%
@@ -608,18 +608,18 @@ CityNet Telekom Ltd. (1)                                 0.0%
 Domashnya Merezha, LLC (1)                               0.0%
 OOO National Telecommunications (1)                      0.0%
 Sternforth Ltd. (2)                                      0.0%
-Hawaiian Telcom Services Company, Inc. (1)               0.0%
 Broadnet AS (1)                                          0.0%
+Hawaiian Telcom Services Company, Inc. (1)               0.0%
 Krasnoyarsklespromproekt OJSC (1)                        0.0%
 WIBO Baltic UAB (1)                                      0.0%
 SIA Digitalas Ekonomikas Attistibas Centrs (1)           0.0%
-Vakka-Suomen Puhelin Oy (1)                              0.0%
 WebJanssen ISP ltd & Co KG (1)                           0.0%
+Vakka-Suomen Puhelin Oy (1)                              0.0%
 TDS TELECOM (2)                                          0.0%
-Logitus Sp. z o.o. (1)                                   0.0%
 TheNebulaCloud, Inc. (1)                                 0.0%
-LLC Murmansk Multiservice Networks (1)                   0.0%
+Logitus Sp. z o.o. (1)                                   0.0%
 Primus Telecommunications Canada Inc. (1)                0.0%
+LLC Murmansk Multiservice Networks (1)                   0.0%
 Private Joint Stock Company datagroup (2)                0.0%
 Optima Telecom Ltd. (4)                                  0.0%
 Bradler & Krantz GmbH & Co. KG (3)                       0.0%
@@ -638,13 +638,13 @@ FOP Kichuk Ivan Ivanovich (1)                            0.0%
 NEPHAX Spolka jawna Arkadiusz Kawalec Michal Podsi (1)   0.0%
 Servicos De Comunicacoes E Multimedia S.A. (3)           0.0%
 LeapSwitch Networks Pvt Ltd (2)                          0.0%
-TVINGO Telecom Ltd. (1)                                  0.0%
 Vivacom (1)                                              0.0%
+TVINGO Telecom Ltd. (1)                                  0.0%
 VNET a.s. (2)                                            0.0%
+Science Production Company Trifle Ltd. (1)               0.0%
+European Backbone Networks Inc. (1)                      0.0%
 mhs internet AG (1)                                      0.0%
 SateliX s.r.o. (1)                                       0.0%
-European Backbone Networks Inc. (1)                      0.0%
-Science Production Company Trifle Ltd. (1)               0.0%
 GX INTERNET E WEB HOSTING SERV DE INFORMATICA LTDA (1)   0.0%
 Datapark AG (1)                                          0.0%
 HostMySite (1)                                           0.0%
@@ -652,9 +652,9 @@ NIIFI (Nemzeti Informacios Infrastruktura Fejleszt (1)   0.0%
 Wi-Manx Limited (1)                                      0.0%
 GEORGIA PUBLIC WEB, INC. (1)                             0.0%
 Ojsc oao Tattelecom (1)                                  0.0%
-HT (1)                                                   0.0%
 MegaStyle-Service (1)                                    0.0%
 Zyztm Research Division 10 B.V. (1)                      0.0%
+HT (1)                                                   0.0%
 Telia Stofa A/S (3)                                      0.0%
 Tele 2 Nederland B.V. (3)                                0.0%
 KrasLink, Ltd. (1)                                       0.0%
@@ -663,8 +663,8 @@ SK Broadband Co Ltd (2)                                  0.0%
 DSi DATA s.r.o. (1)                                      0.0%
 CJSC Ural WES (2)                                        0.0%
 LLC TOMTEL (1)                                           0.0%
-Occino GmbH (1)                                          0.0%
 Radio Muzyka Fakty Sp. z o.o. (1)                        0.0%
+Occino GmbH (1)                                          0.0%
 Technische Universitat Wien (1)                          0.0%
 NTT Communications Corporation (9)                       0.0%
 Equinix Asia Pacific (8)                                 0.0%
@@ -696,8 +696,8 @@ ESDS Software Solution Pvt. Ltd. (1)                     0.0%
 Hong Kong Broadband Network Ltd. (2)                     0.0%
 NTT PC Communications, Inc. (6)                          0.0%
 BRIGHT HOUSE NETWORKS, LLC (4)                           0.0%
-Gamma Telecom Holdings Ltd (1)                           0.0%
 Hosteam S.c. Tomasz Groszewski Bartosz Waszak Luka (1)   0.0%
+Gamma Telecom Holdings Ltd (1)                           0.0%
 ABC Domain LLC (1)                                       0.0%
 New Wave Communications (1)                              0.0%
 EDSI-Tech Sarl (1)                                       0.0%
@@ -736,8 +736,8 @@ Zelenaya Tochka Belgorod LLC (1)                         0.0%
 Rochester Institute of Technology (1)                    0.0%
 TelemaxX Telekommunikation GmbH (1)                      0.0%
 Orange Espagne SA (4)                                    0.0%
-Interhost Communication Solutions Ltd. (1)               0.0%
 BiConsult Eood (1)                                       0.0%
+Interhost Communication Solutions Ltd. (1)               0.0%
 Net Onboard Sdn Bhd - Quality & Reliable Cloud Hos (1)   0.0%
 Xirra GmbH (1)                                           0.0%
 Innsbrucker Kommunalbetriebe AG (1)                      0.0%
@@ -750,8 +750,8 @@ Trustica s.r.o. (2)                                      0.0%
 Bowdoin College (1)                                      0.0%
 Host Virtual, Inc (1)                                    0.0%
 B2 Net Solutions Inc. (1)                                0.0%
-Ticinocom SA (1)                                         0.0%
 Aalto University Student Union (1)                       0.0%
+Ticinocom SA (1)                                         0.0%
 Codero (2)                                               0.0%
 OTEnet S.A. (6)                                          0.0%
 IP-Converge Data Center, Inc. (1)                        0.0%
@@ -841,8 +841,8 @@ InSPire Net Ltd (1)                                      0.0%
 e-Net, s.r.o. (1)                                        0.0%
 ServeNET Solution Limited Partnership (1)                0.0%
 Omsoft Technologies (1)                                  0.0%
-EBL Global Networks, Inc. (1)                            0.0%
 Sun Network (Hong Kong) Limited - HongKong Backbon (1)   0.0%
+EBL Global Networks, Inc. (1)                            0.0%
 LIWEST Kabelmedien GmbH (1)                              0.0%
 TBS Strom AG (1)                                         0.0%
 Cerberus Networks Ltd (1)                                0.0%
@@ -858,8 +858,8 @@ ennit server GmbH (1)                                    0.0%
 ANEXIA Internetdienstleistungs GmbH (1)                  0.0%
 Hiawatha Broadband Communications, Inc (1)               0.0%
 RadioLAN spol. s r.o. (1)                                0.0%
-WTT HK Limited (1)                                       0.0%
 UGMK-Telecom LLC (1)                                     0.0%
+WTT HK Limited (1)                                       0.0%
 FIBERNETICS CORPORATION (1)                              0.0%
 uvensys GmbH (4)                                         0.0%
 Sigterm Mikal Villa (1)                                  0.0%
@@ -909,8 +909,8 @@ Connexions4London Ltd (4)                                0.0%
 TELTA Citynetz GmbH (1)                                  0.0%
 TeNeT Scientific Production Enterprise LLC (1)           0.0%
 Hrvatski Telekom d.d. (1)                                0.0%
-Midcontinent Communications (1)                          0.0%
 ELEMENTMEDIA GmbH (1)                                    0.0%
+Midcontinent Communications (1)                          0.0%
 Lightup Network Solutions GmbH & Co. KG (3)              0.0%
 e-Quest Automatisering B.V. (1)                          0.0%
 Windstream Communications Inc (2)                        0.0%
@@ -930,123 +930,123 @@ CABO SERVICOS DE TELECOMUNICACOES LTDA (1)               0.0%
 BEK Communications Cooperative (1)                       0.0%
 Unified Layer (1)                                        0.0%
 Biddeford Internet Corp (2)                              0.0%
-Fiber 1 Ltd. (1)                                         0.0%
-Tarr Kft. (1)                                            0.0%
 Speedbone Internet & Connectivity GmbH (1)               0.0%
-Vodafone Enterprise U.K. (1)                             0.0%
+Fiber 1 Ltd. (1)                                         0.0%
 OOO Bryansk Svyaz-TV (1)                                 0.0%
-Cable One, Inc. (1)                                      0.0%
-Exa Networks Limited (1)                                 0.0%
+Vodafone Enterprise U.K. (1)                             0.0%
+Tarr Kft. (1)                                            0.0%
 Inter.Net Germany (1)                                    0.0%
-Vienna University Computer Center (1)                    0.0%
+Exa Networks Limited (1)                                 0.0%
+Cable One, Inc. (1)                                      0.0%
 LigaLink, Ltd. (1)                                       0.0%
 Elkdata OU (1)                                           0.0%
+Vienna University Computer Center (1)                    0.0%
 Nebula Oy (2)                                            0.0%
 Kcom (1)                                                 0.0%
-TELE AG (1)                                              0.0%
 ConSol Consulting & Solutions Software GmbH (1)          0.0%
+TELE AG (1)                                              0.0%
 Avensys Networks Ltd (1)                                 0.0%
 Princeton University (1)                                 0.0%
-OAO Osnova Telecom (1)                                   0.0%
 Corporate Colocation Inc. (1)                            0.0%
+OAO Osnova Telecom (1)                                   0.0%
 Kangaroot BVBA (1)                                       0.0%
-FortressITX (1)                                          0.0%
 EastLink (1)                                             0.0%
-Individual Entrepreneur Tetiana Markova (1)              0.0%
+FortressITX (1)                                          0.0%
 Synergy Internet Services Florida (1)                    0.0%
+Individual Entrepreneur Tetiana Markova (1)              0.0%
 Digital United Inc. (1)                                  0.0%
 noris network AG (1)                                     0.0%
 SAREnet, S.A. (1)                                        0.0%
-mitko.com Eood (1)                                       0.0%
-TE-AS (1)                                                0.0%
-Source XS B.V. (1)                                       0.0%
 Closed Joint Stock Company CROC incorporated (1)         0.0%
+Source XS B.V. (1)                                       0.0%
+TE-AS (1)                                                0.0%
+mitko.com Eood (1)                                       0.0%
 N.Nikolov Ltd (1)                                        0.0%
 Wobcom GmbH (3)                                          0.0%
 JSC Kazakhtelecom (2)                                    0.0%
 Gtd Internet S.A. (1)                                    0.0%
 JEFFERSON CO. CABLE, INC. (1)                            0.0%
-Nexinto GmbH (1)                                         0.0%
 Ruscom Ltd. (1)                                          0.0%
 Nizhnetagilskie Kompyuternye Seti LLC (1)                0.0%
+Nexinto GmbH (1)                                         0.0%
 Bergon Internet Ltd. (1)                                 0.0%
 SOUL Converged Communications Australia (2)              0.0%
 Wintek Corporation (1)                                   0.0%
 VINI SAS (1)                                             0.0%
 SWITCH (1)                                               0.0%
-Network Presence (1)                                     0.0%
-CYBERSERVICE Internetdienstleistungs GmbH (1)            0.0%
-NSS S.A. (1)                                             0.0%
 TOCICI LLC (1)                                           0.0%
-Sentris Network LLC (1)                                  0.0%
-inexio Informationstechnologie und Telekommunikati (1)   0.0%
-Darwin City Council (1)                                  0.0%
-Clio S.R.L (1)                                           0.0%
-Limestone Networks, Inc. (1)                             0.0%
-Bluebird Network (1)                                     0.0%
 ManagedWay (1)                                           0.0%
-ANGANI-AS (1)                                            0.0%
-RFTkabel Brandenburg GmbH (1)                            0.0%
-Rethem Hosting LLC (1)                                   0.0%
 K-Opticom Corporation (1)                                0.0%
-Koumbit (1)                                              0.0%
-Chaos Computer Club e.V. (1)                             0.0%
+Network Presence (1)                                     0.0%
 Nashnet Ltd (1)                                          0.0%
+Sentris Network LLC (1)                                  0.0%
+ANGANI-AS (1)                                            0.0%
+inexio Informationstechnologie und Telekommunikati (1)   0.0%
 YOU Broadband & Cable India Ltd. (1)                     0.0%
-FASTER CZ spol. s r.o. (1)                               0.0%
+RFTkabel Brandenburg GmbH (1)                            0.0%
+Chaos Computer Club e.V. (1)                             0.0%
+Koumbit (1)                                              0.0%
+NSS S.A. (1)                                             0.0%
+Clio S.R.L (1)                                           0.0%
+CYBERSERVICE Internetdienstleistungs GmbH (1)            0.0%
+Bluebird Network (1)                                     0.0%
+Darwin City Council (1)                                  0.0%
+Rethem Hosting LLC (1)                                   0.0%
+Limestone Networks, Inc. (1)                             0.0%
 NetNet (1)                                               0.0%
+FASTER CZ spol. s r.o. (1)                               0.0%
 Community Network Center Inc. (1)                        0.0%
 CenturyTel Internet Holdings, Inc. (1)                   0.0%
 RECONN. Operator Svyazi, LLC (1)                         0.0%
-ITISINTERNET (1)                                         0.0%
 Tiscali SpA (1)                                          0.0%
-AlpineDC SA (1)                                          0.0%
+ITISINTERNET (1)                                         0.0%
 TAU INTERNET Lukasz Chajkaluk (1)                        0.0%
+AlpineDC SA (1)                                          0.0%
 Aureon Network Services (1)                              0.0%
 Nej.cz s.r.o. (1)                                        0.0%
-KSS-Telecom OOO (1)                                      0.0%
 United Networks Ltd. (1)                                 0.0%
 ASMedi (1)                                               0.0%
+KSS-Telecom OOO (1)                                      0.0%
 Hathway IP Over Cable Internet (1)                       0.0%
-Forthnet (1)                                             0.0%
-Balnet Ltd. (1)                                          0.0%
 RCL CJSC (1)                                             0.0%
 Panamaserver.com (1)                                     0.0%
+Balnet Ltd. (1)                                          0.0%
+Forthnet (1)                                             0.0%
 Telecom Argentina S.A. (2)                               0.0%
-Metroset (1)                                             0.0%
-Sc Cloud Troopers International Srl (1)                  0.0%
 Teleradiocompany Teleos-1 Ltd (1)                        0.0%
+Sc Cloud Troopers International Srl (1)                  0.0%
+Metroset (1)                                             0.0%
 Manx Telecom (1)                                         0.0%
+Spoldzielnia Telekomunikacyjna OST (1)                   0.0%
 manitu GmbH (1)                                          0.0%
 Host Universal Pty Ltd (1)                               0.0%
-Spoldzielnia Telekomunikacyjna OST (1)                   0.0%
 Primus Telecommunications (2)                            0.0%
 Exetel Pty Ltd (3)                                       0.0%
-Netia SA (1)                                             0.0%
 MILLICOM CABLE COSTA RICA S.A. (1)                       0.0%
+Netia SA (1)                                             0.0%
 Cutting Edge Communications, Inc. (1)                    0.0%
 New Telesystems - TV, Ltd. (1)                           0.0%
-Public Telecommunication Corporation (1)                 0.0%
 Cyprus Telecommunications Authority (1)                  0.0%
+Public Telecommunication Corporation (1)                 0.0%
 PJSC MegaFon (2)                                         0.0%
 Telecom Algeria (1)                                      0.0%
 JSC Vostoktelecom (1)                                    0.0%
-Telecom Service LLC (1)                                  0.0%
-H88 S.A. (1)                                             0.0%
 Spin Internet Service (1)                                0.0%
+Telecom Service LLC (1)                                  0.0%
 The Computer Shop Netlink (1)                            0.0%
-Afrihost (1)                                             0.0%
+H88 S.A. (1)                                             0.0%
 LLC Balttelecom (1)                                      0.0%
+Afrihost (1)                                             0.0%
 iCONNECT (1)                                             0.0%
 Telkom-Internet (1)                                      0.0%
 Lightwave Networking, LLC (1)                            0.0%
-Andishe Sabz Khazar Co. P.j.s. (1)                       0.0%
-PT. Mediatama Telematika Nusantara (1)                   0.0%
-Administracion Nacional de Telecomunicaciones (1)        0.0%
-Telmex Colombia S.A. (1)                                 0.0%
 CMB (1)                                                  0.0%
-MT-MPLS (1)                                              0.0%
+PT. Mediatama Telematika Nusantara (1)                   0.0%
+Andishe Sabz Khazar Co. P.j.s. (1)                       0.0%
+Telmex Colombia S.A. (1)                                 0.0%
 CO.PA.CO. (1)                                            0.0%
+MT-MPLS (1)                                              0.0%
+Administracion Nacional de Telecomunicaciones (1)        0.0%
 Purevoltage Enterprises Inc. (1)                         0.0%
 
 

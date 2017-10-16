@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Mon Oct 16 15:30:20 UTC 2017
+Report Date: Mon Oct 16 21:25:10 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1031,13 +1031,13 @@ Jupiter Telecommunications Co., Ltd. (1)                 65420 (0.0%)
 LLC Balttelecom (1)                                      65086 (0.0%)
 Clio S.R.L (1)                                           62464 (0.0%)
 manitu GmbH (1)                                          61513 (0.0%)
-MILLICOM CABLE COSTA RICA S.A. (1)                       61440 (0.0%)
 Afrihost (1)                                             61440 (0.0%)
+MILLICOM CABLE COSTA RICA S.A. (1)                       61440 (0.0%)
 Host Universal Pty Ltd (1)                               60416 (0.0%)
 United Networks Ltd. (1)                                 59553 (0.0%)
 Forthnet (1)                                             59418 (0.0%)
-Public Telecommunication Corporation (1)                 59392 (0.0%)
 YOU Broadband & Cable India Ltd. (1)                     59392 (0.0%)
+Public Telecommunication Corporation (1)                 59392 (0.0%)
 JEFFERSON CO. CABLE, INC. (1)                            59078 (0.0%)
 Administracion Nacional de Telecomunicaciones (1)        58869 (0.0%)
 H88 S.A. (1)                                             58541 (0.0%)
