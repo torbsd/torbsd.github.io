@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Tue Oct 17 16:19:32 UTC 2017
+Report Date: Wed Oct 18 00:05:23 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1054,22 +1054,22 @@ MT-MPLS (1)                                              55296 (0.0%)
 hd.net.nz (1)                                            54615 (0.0%)
 Telmex Colombia S.A. (1)                                 53787 (0.0%)
 LLC Balttelecom (1)                                      53751 (0.0%)
-Starhub Internet Pte Ltd (1)                             53248 (0.0%)
 Cyprus Telecommunications Authority (1)                  53248 (0.0%)
+Starhub Internet Pte Ltd (1)                             53248 (0.0%)
 JSC Transtelecom (1)                                     52538 (0.0%)
 Andishe Sabz Khazar Co. P.j.s. (1)                       51200 (0.0%)
 Zappie Host LLC (1)                                      34276 (0.0%)
 Cutting Edge Communications, Inc. (1)                    32846 (0.0%)
 K-Opticom Corporation (1)                                30711 (0.0%)
+Eircom (1)                                               0 (0.0%)
+BlueAngelHost Pvt. Ltd (1)                               0 (0.0%)
 Digital Energy Technologies Chile SpA (1)                0 (0.0%)
 Nerim SAS (1)                                            0 (0.0%)
-Sercomtel Participações S.A. (1)                       0 (0.0%)
-Information Technology Company (ITC) (1)                 0 (0.0%)
 IP-Max SA (1)                                            0 (0.0%)
-Eircom (1)                                               0 (0.0%)
-Gorset Ltd. (1)                                          0 (0.0%)
-BlueAngelHost Pvt. Ltd (1)                               0 (0.0%)
+Information Technology Company (ITC) (1)                 0 (0.0%)
 LLC Murmansk Multiservice Networks (1)                   0 (0.0%)
+Sercomtel Participações S.A. (1)                       0 (0.0%)
+Gorset Ltd. (1)                                          0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
