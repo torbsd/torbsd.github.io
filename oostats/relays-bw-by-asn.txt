@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Wed Oct 18 13:06:52 UTC 2017
+Report Date: Wed Oct 18 22:46:23 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1066,10 +1066,10 @@ Gigabit Hosting Sdn Bhd (1)                              41663 (0.0%)
 Zappie Host LLC (1)                                      34164 (0.0%)
 Nagasaki Cable Media Inc. (1)                            31744 (0.0%)
 Pars Online PJS (1)                                      27656 (0.0%)
-COLOMBIA TELECOMUNICACIONES S.A. ESP (1)                 0 (0.0%)
-Digital Energy Technologies Limited (1)                  0 (0.0%)
-iFiber Communications Corp. (1)                          0 (0.0%)
 Verein zur Foerderung freier Netze (ZVR: 814804682 (1)   0 (0.0%)
+iFiber Communications Corp. (1)                          0 (0.0%)
+Digital Energy Technologies Limited (1)                  0 (0.0%)
+COLOMBIA TELECOMUNICACIONES S.A. ESP (1)                 0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>

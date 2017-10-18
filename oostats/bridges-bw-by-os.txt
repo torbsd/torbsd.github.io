@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: BRIDGES
-Report Date: Wed Oct 18 13:06:54 UTC 2017
+Report Date: Wed Oct 18 22:46:24 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY OPERATING SYSTEM
