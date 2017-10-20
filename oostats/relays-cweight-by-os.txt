@@ -4,21 +4,20 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Wed Oct 18 22:46:20 UTC 2017
+Report Date: Thu Oct 19 21:59:45 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 CONSENSUS WEIGHT FRACTION BY OPERATING SYSTEM
 
 OS (records)                    CONSENSUS_WEIGHT_FRAC
 ==============================  ===============================================
-Linux (6123)                    92.8%
-FreeBSD (243)                   6.1%
-OpenBSD (53)                    0.5%
-Windows (169)                   0.2%
-ElectroBSD (4)                  0.2%
+Linux (6149)                    92.9%
+FreeBSD (242)                   6.1%
+OpenBSD (52)                    0.5%
+Windows (163)                   0.2%
+ElectroBSD (4)                  0.1%
 SunOS (4)                       0.1%
-Darwin (11)                     0.1%
-NetBSD (1)                      0.0%
+Darwin (13)                     0.1%
 GNU/kFreeBSD (1)                0.0%
 DragonFly (3)                   0.0%
 NetBSD MOS Technology 6510 (1)  0.0%
