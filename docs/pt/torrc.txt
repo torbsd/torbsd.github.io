@@ -1,0 +1,23 @@
+DataDirectory	/var/db/tor
+Log notice file /var/log/tor/notice.log
+Nickname	TorHemisferioSul
+ContactInfo	Seu Nome, E-mail e/ou Chave PGP
+
+SocksPort	0		# Habilita Funcao de Relay!
+ORPort		auto		# Padrao: 9001
+DirPort		auto		# Padrao: 9030
+
+ExitPolicy	reject  *:*	# NAO opera como no' de saida
+ExitPolicy	reject6	*:*	# NAO opera como no' de saida
+
+AvoidDiskWrites		1	# Eviter escritas em disco
+CellStatistics		1	# Acumular estatisticas (metadados)
+ConnDirectionStatistics	1	# Acumular estatisticas (metadados)
+EntryStatistics		1	# Acumular estatisticas (metadados)
+ExtraInfoStatistics	1	# Acumular estatisticas (metadados)
+HardwareAccel		1	# Tenta usar chip dedicado para criptografia
+HeartbeatPeriod		1hours	# Intervalo para envio de status+estatisticas
+HiddenServiceStatistics	1	# Acumular estatisticas (metadados)
+LogMessageDomains	1	# Adiciona registro de dominios nas mensagens de log
+PublishServerDescriptor	1	# Publica informacoes sobre o relay (Atlas, Metrics, Status, ...)
+WarnPlaintextPorts		# Informa usuarios/clientes sobre envio de texto-plano
