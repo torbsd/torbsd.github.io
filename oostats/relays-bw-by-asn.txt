@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Mon Oct 23 12:59:35 UTC 2017
+Report Date: Mon Oct 23 21:54:46 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -994,8 +994,8 @@ Fiber 1 Ltd. (1)                                         122955 (0.0%)
 Tarr Kft. (1)                                            122914 (0.0%)
 Synergy Internet Services Florida (1)                    122892 (0.0%)
 Lost Oasis SARL (1)                                      122884 (0.0%)
-inexio Informationstechnologie und Telekommunikati (1)   122880 (0.0%)
 Hosting Ukraine LTD (1)                                  122880 (0.0%)
+inexio Informationstechnologie und Telekommunikati (1)   122880 (0.0%)
 Speedbone Internet & Connectivity GmbH (1)               122862 (0.0%)
 Kcom (1)                                                 122845 (0.0%)
 Ruscom Ltd. (1)                                          122122 (0.0%)
@@ -1059,8 +1059,8 @@ PJSC Telesystems of Ukraine (1)                          25931 (0.0%)
 PJSC MegaFon (1)                                         24613 (0.0%)
 PT. Mediatama Telematika Nusantara (1)                   22772 (0.0%)
 JSC Transtelecom (1)                                     3750 (0.0%)
-IP-Max SA (1)                                            0 (0.0%)
 HitMe.pl Marek Bajerski (1)                              0 (0.0%)
+IP-Max SA (1)                                            0 (0.0%)
 United Networks Ltd. (1)                                 0 (0.0%)
 
 
