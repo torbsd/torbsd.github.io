@@ -1,0 +1,238 @@
+##
+##	References
+##
+##	https://gitweb.torproject.org/tor.git/plain/src/config/torrc.sample.in
+##
+##	https://www.torproject.org/docs/tor-doc-relay.html.en
+##	https://www.torproject.org/docs/tor-manual.html.en
+##	https://www.torproject.org/docs/tor-relay-debian.html.en
+##	https://www.torproject.org/docs/pluggable-transports.html.en
+##
+#####################################################################
+
+## REQUIRED: Store working data, fingerprint, and stats related to your relay.
+DataDirectory /var/db/tor	# Default: /var/db/tor
+
+Log notice file /var/log/tor/notice.log
+# Log debug  file /var/log/tor/debug.log
+#####################################################################
+
+## REQUIRED: The relay nickname appearing in Tor's Network.
+##	Nicknames must be between 1 and 19 characters inclusive, and must 
+##	contain only the characters [a-zA-Z0-9].
+Nickname	torBSD	# Please Change it ;)
+
+## Provide a contact name, and/or email address, and/or PGP key.
+ContactInfo	Your Name and/or <your-email@domain.tld> and/or 0xY0URPGPK3YH3R3
+
+## Declare that this Tor server is controlled or administered by a
+##	group or organization identical or similar to that of the other
+##	servers, defined by their identity fingerprints. When two servers
+##	both declare that they are in the same 'family', Tor clients will
+##	not use them in the same circuit. (Each server only needs to list
+##	the other servers in its family; it doesn’t need to list itself,
+##	but it won’t hurt.) Do not list any bridge relay as it would
+##	compromise its concealment.
+# MyFamily		$FINGERPRINT,$FINGERPRINT2,$FINGERPRINT3,$...
+
+## If you have more than one network interfaces and/or IP addresses available,
+##	it's a good idea to bind a specific to this service. Use it more than
+##	once if you would like to bind to more addresses, either IPv4 or IPv6.
+# OutboundBindAddress	2001:db8:dead:cafe::b5d
+# OutboundBindAddress	10.6.6.6
+
+## REQUIRED: This line designates that the this node will relay traffic.   
+SocksPort	0
+
+## REQUIRED: TCP port available/advertised for Tor traffic.
+##	- Setting it as 'auto' allows the daemon to use a random port and 
+##	  stick to it till the next start.
+##	- Follow the same behavior decribed by "OutboundBindAddress" 
+##	  if you would like to bind different IP addresses for it.
+##	- Works with IPv4 and IPv6!
+#
+#	[NOTE]: If you need to use low ports, or let Tor running behind NAT, you
+#		need to setup port forwarding and configure it in your firewall
+#		before start getting Tor working and dealing its traffic!
+#
+#	Example (Advertise port 443, but listen to 9999)
+# 	  ORPort	443	NoListen
+# 	  ORPort	9999	NoAdvertise
+#
+#	Example (Behind NAT, and Remote Port Forwarding)
+#	  ORPort	203.0.113.234:9001	NoListen	# Public IP
+#	  ORPort	10.6.6.6:9999		NoAdvertise	# Private IP
+#
+#	Example (IPv4+IPv6)
+#	  ORPort	203.0.113.234:17500		IPv4Only
+#	  ORPort	[2001:db8:dead:cafe::b5d]:17500	IPv6Only
+ORPort	auto	# Default: 9001
+
+## TCP port available/advertised for directory servers. Unfortunately, DirPort 
+##	works *ONLY* with IPv4.
+#
+#       [NOTE]: If you need to use low ports, or let Tor running behind NAT, you
+#               need to setup port forwarding and configure it in your firewall 
+#               before start getting Tor working and dealing its traffic!
+#
+#       Example (Advertise port 80, but listen to 9980)              
+#         DirPort        80     NoListen
+#         DirPort        9980   NoAdvertise
+#
+#       Example (Behind NAT, and Remote Port Forwarding) 
+#         ORPort        203.0.113.234:9030      NoListen        # Public IP
+#         ORPort        10.6.6.6:9980           NoAdvertise     # Private IP
+DirPort	auto	# Default: 9030
+
+## Tells Tor whether to run as an exit relay. If Tor is running as a
+##	 non-bridge server, and ExitRelay is set to 1, then Tor allows
+##	traffic to exit according to the ExitPolicy option (or the default
+##	ExitPolicy if none is specified).
+# ExitRelay	0	# Default: auto
+
+## This torrc config do *NOT* allow traffic to go outside of the Tor network 
+##	It means that we are *NOT* an Exit Node. Although we do strongly 
+##	encourage exploring that option :)
+##
+## Set an exit policy for this server. Each policy is of the form
+##	"accept[6]|reject[6]ADDR[/MASK][:PORT]". If /MASK is omitted then
+##	this policy just applies to the host given. Instead of giving a
+##	host or network you can also use "*" to denote the universe
+##	(0.0.0.0/0 and ::/128), or *4 to denote all IPv4 addresses, and *6
+##	to denote all IPv6 addresses.  PORT can be a single port number, an
+##	interval of ports "FROM_PORT-TO_PORT", or "*". If PORT is omitted,
+##	that means "*".
+#
+#		*** Please read the tor(1) man page for more details! ***
+#
+#	Default:
+#		reject *:25
+#		reject *:119
+#		reject *:135-139
+#		reject *:445
+#		reject *:563
+#		reject *:1214
+#		reject *:4661-4666
+#		reject *:6346-6429
+#		reject *:6699
+#		reject *:6881-6999
+#		accept *:*
+#
+ExitPolicy	reject  *:*
+ExitPolicy	reject6	*:*
+######################################################################
+
+## The Tor relay launches the pluggable transport proxy in
+##      path-to-binary using options as its command-line options, and
+##      expects to receive proxied client traffic from it.
+# ServerTransportPlugin transport exec path-to-binary [options]
+# ServerTransportPlugin obfs2,obfs3 exec /usr/local/bin/obfsproxy --data-dir /var/db/tor --log-file /var/log/tor/obfsproxy.log --log-min-severity info managed
+
+## When this option is set, Tor will suggest IP:PORT as the listening
+##	address of any pluggable transport proxy that tries to launch transport.
+# ServerTransportListenAddr transport IP:PORT
+
+## When this option is set, Tor will pass the k=v parameters to any
+##	pluggable transport proxy that tries to launch transport.
+# ServerTransportOptions obfs45 shared-secret=bridgepasswd cache=/var/db/tor/cache
+
+## TCP Port for pluggable transports. Setting to 'auto' means the port
+##      will be dynamically assign on Tor startup. If employing a firewall,
+##      should set statically to assign pass rule for.
+# ExtORPort auto
+#####################################################################
+
+## This option configures a threshold above which Tor will assume that it 
+##	needs to stop queueing or buffering data because it's about to 
+##	run out of memory. If it hits this threshold, it will begin killing 
+##	circuits until it has recovered at least 10% of this memory. 
+##	Do not set this option too low, or your relay may be unreliable 
+##	under (heavy) load.
+# MaxMemInQueues	1	GB
+
+## If you want to run a relay in the public network, this needs to be at 
+##	the very least 75 KBytes for a relay (that is, 600 kbits) or 
+##	50 KBytes for a bridge (400 kbits) — but of course, more is better
+##	we recommend at least 250 KBytes (2 mbits) if possible.
+# BandwidthRate		768	Kbits	# N bytes|KBytes|MBytes|GBytes|KBits|MBits|GBits
+
+## Limit the maximum token bucket size (also known as the burst) to
+##	the given number of bytes in each direction.
+# BandwidthBurst	960	Kbits	# N bytes|KBytes|MBytes|GBytes|KBits|MBits|GBits
+
+## If not 0, a separate token bucket limits the average incoming bandwidth 
+##	usage for 'relayed traffic' on this node to the specified number 
+##	of bytes per second, and the average outgoing bandwidth usage to 
+##	that same value. 
+# RelayBandwidthRate	768	Kbits	# N bytes|KBytes|MBytes|GBytes|KBits|MBits|GBits
+
+## If not 0, limit the maximum token bucket size (also known as the burst) 
+##	for _relayed traffic_ to the given number of bytes in each direction. 
+# RelayBandwidthBurst	960	Kbits	# N bytes|KBytes|MBytes|GBytes|KBits|MBits|GBits
+
+## How many processes to use at once for decrypting onionskins and
+##	other parallelizable operations. If this is set to 0, Tor will try
+##	to detect how many CPUs you have, defaulting to 1 if it can’t tell.
+# NumCPUs 2	# Default: 0
+#####################################################################
+
+## Sets the relay to act as a "bridge" with respect to relaying
+##	connections from bridge users to the Tor network. It mainly causes
+##	Tor to publish a server descriptor to the bridge database, rather
+##      than to the public directory authorities.
+# BridgeRelay 0
+
+## When set, Tor will fetch descriptors for each bridge listed in the
+##	"Bridge" config lines, and use these relays as both entry guards
+##      and directory guards.
+# UseBridges 0	# Default: 0
+
+## When set along with UseBridges, instructs Tor to use the relay at
+##	"IP:ORPort" as a "bridge" relaying into the Tor network. If
+##      "fingerprint" is provided (using the same format as for
+##      DirAuthority), we will verify that the relay running at that
+##      location has the right fingerprint. We also use fingerprint to look
+##      up the bridge descriptor at the bridge authority, if it’s provided
+##      and if UpdateBridgesFromAuthority is set too.
+##
+## If "transport" is provided, it must match a ClientTransportPlugin
+##	line. We then use that pluggable transport’s proxy to transfer data
+##	to the bridge, rather than connecting to the bridge directly. Some
+##	transports use a transport-specific method to work out the remote
+##	address to connect to. These transports typically ignore the
+##	"IP:ORPort" specified in the bridge line.
+#
+#	Example (Pluggable Transport)
+#	  Bridge obfs3 203.0.113.127:9001 BDCADCABDCADABDCABCDBA76431DDBACD123
+#
+# Bridge IP:ORPort [fingerprint]
+
+## When set along with a corresponding Bridge line, the Tor client forwards 
+##	its traffic to a SOCKS-speaking proxy on "IP:PORT". It’s the dut
+##	of that proxy to properly forward t traffic to the bridge.
+#
+# ClientTransportPlugin transport socks4|socks5 IP:PORT
+#
+## In its second form, when set along with a corresponding Bridge
+##	line, the Tor client launches the pluggable transport proxy
+##	executable in path-to-binary using options as its command-line
+##	options, and forwards its traffic to it. It’s the duty of that
+##	proxy to properly forward the traffic to the bridge.
+#
+# ClientTransportPlugin obfs2,obfs3 exec /usr/local/bin/obfsproxy --data-dir /var/db/tor --log-file /var/log/tor/obfsproxy.log --log-min-severity info managed
+#####################################################################
+
+AvoidDiskWrites		1	# Try to write to disk less frequently.
+CellStatistics		1	# Accumulate some statistics :)
+ConnDirectionStatistics	1	# Accumulate some statistics :)
+# DisableAllSwap	0	# '1' IS REPORTED AS UNTESTED UNDER *BSD!
+EntryStatistics		1	# Accumulate some statistics :)
+ExtraInfoStatistics	1	# Accumulate some statistics :)
+HardwareAccel		1	# Try to use built-in (static) crypto hw accel.
+HeartbeatPeriod		1hours	# Let you know your server is still alive.
+HiddenServiceStatistics	1	# Writes obfuscated statistics on its role.
+LogMessageDomains	1	# Includes message domains with each log msg.
+PublishServerDescriptor	1	# REQUIRED: Publicly announce the relay.
+WarnPlaintextPorts		# Warn relay users when clear-text ports used,
+				#	potentially compromising them.
+
