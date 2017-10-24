@@ -1,0 +1,28 @@
+## Coding Rights
+# Tor e Rede Onion
+https://cpiciber.codingrights.org/tor-onion/
+
+## Cripto Anarquia
+# A Rede Tor é Segura?
+https://cryptoanarquia.wordpress.com/2015/07/05/a-rede-tor-e-segura/
+
+## Tails
+# Sobre 
+https://tails.boum.org/about/index.pt.html
+
+## Tor Project
+# Manual de Uso do Navegador Tor
+https://tb-manual.torproject.org/pt-BR/index.html
+----------------------------------------------------------------------
+
+## Techne Digitus
+# Configurando Tor Para Escolher Quais Relays (ou Países) Usar
+https://www.technedigitus.com/2015/09/configurando-o-tor-para-escolher-quais.html
+# Proxy Transparente na Rede Tor Utilizando ProxyChains
+https://www.technedigitus.com/2016/12/proxy-transparente-pela-tor-utilizando.html
+----------------------------------------------------------------------
+
+EN: https://emeraldonion.org/hardenedbsd/
+EN: https://www.qubes-os.org/
+EN: https://trac.torproject.org/projects/tor/wiki/doc/OperationalSecurity
+EN: https://www.bsdnow.tv/tutorials/tor
