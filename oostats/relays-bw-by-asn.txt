@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Tue Oct 24 14:44:34 UTC 2017
+Report Date: Wed Oct 25 03:21:20 UTC 2017
 Data Source: https://onionoo.torproject.org/details.json
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1033,8 +1033,8 @@ Afrihost (1)                                             69654 (0.0%)
 JSC Vostoktelecom (1)                                    63616 (0.0%)
 NSS S.A. (1)                                             63100 (0.0%)
 Telkom-Internet (1)                                      62496 (0.0%)
-KhmelnitskInfocom LTD (1)                                62464 (0.0%)
 CO.PA.CO. (1)                                            62464 (0.0%)
+KhmelnitskInfocom LTD (1)                                62464 (0.0%)
 manitu GmbH (1)                                          61386 (0.0%)
 United Networks Ltd. (1)                                 60416 (0.0%)
 Manx Telecom (1)                                         59919 (0.0%)
@@ -1056,8 +1056,8 @@ Cutting Edge Communications, Inc. (1)                    36734 (0.0%)
 PJSC MegaFon (1)                                         24591 (0.0%)
 PT. Mediatama Telematika Nusantara (1)                   16779 (0.0%)
 Dalhousie University (1)                                 2750 (0.0%)
-Reliance Communications Ltd.DAKC MUMBAI (1)              0 (0.0%)
 Ivstar Ltd (1)                                           0 (0.0%)
+Reliance Communications Ltd.DAKC MUMBAI (1)              0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
