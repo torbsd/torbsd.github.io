@@ -183,11 +183,9 @@ Switched to a new branch 'release-0.2.4'
 
 Set autoconf and automake versions and proceed:
 
-automake 1.11
-
 ```
 $ export AUTOCONF_VERSION=2.69
-$ export AUTOMAKE_VERSION=1.1
+$ export AUTOMAKE_VERSION=1.11
 $ /bin/sh ./autogen.sh
 ```
 ```
@@ -203,10 +201,11 @@ Lots of output:
 
 ```
 $ /bin/sh ./configure --disable-asciidoc
-$ make -j 4
+$ make -j 4 change to make -j `sysctl -n hw.ncpu`
 ```
 
-Fail with tortls.o
+Fail with tortls.o since old Tor version was installed
+
 
 ```
 depbase.Tpo" -c -o src/common/crypto.o src/common/crypto.c;  then mv -f "$depbase.Tpo" "$depbase.Po"; else rm -f "$depbase.Tpo"; exit 1; fi
@@ -222,6 +221,11 @@ src/common/tortls.c:2181: error: 'SSL' has no member named 'mode'
 *** Error 1 in . (Makefile:1431 'src/common/tortls.o')
 *** Error 2 in /data/tor.git (Makefile:818 'all')
 ```
+
+above, then
+
+cd tor.git/
+
 
 ```
 $ cd torflow/NetworkScanners/BwAuth
@@ -287,3 +291,17 @@ Detailed logs are in ./data/scanner.*/bw.log.
 Progress can also be inferred from files in ./data/scanner.*/scan-data
 
 
+setup.sh changes
+
+no more pushd popd: bashism
+	cd
+
+cron -e not in OpenBSD
+git checkout release-0.3.0
+
+scripts:
+
+setup.sh: for setting up Python virtualenv
+add_torctl.sh: for cloning pytorctl/TorCtl in torflow.git repo
+cron.sh/cron-mine.sh: for setting up the cron entries for the bwauth
+run_scan.sh
