@@ -185,7 +185,7 @@ Set autoconf and automake versions and proceed:
 
 ```
 $ export AUTOCONF_VERSION=2.69
-$ export AUTOMAKE_VERSION=1.11
+$ export AUTOMAKE_VERSION=1.11 or 1.9
 $ /bin/sh ./autogen.sh
 ```
 ```
@@ -305,3 +305,5 @@ setup.sh: for setting up Python virtualenv
 add_torctl.sh: for cloning pytorctl/TorCtl in torflow.git repo
 cron.sh/cron-mine.sh: for setting up the cron entries for the bwauth
 run_scan.sh
+
+move from TorCtl to stem
