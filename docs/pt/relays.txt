@@ -3,16 +3,49 @@
 	Descritos abaixo, alguns exemplos de instalação e configuração de um ambiente propício para operar um relay Tor. 
 
 	Aqui, nestes exemplos, *NÃO* serão contemplados casos de configuração para bridges ou nós de saída. Outro documento 
-	deverá descrever estas outras alternativas de relay. Aqui também ainda não estão sendo contemplados os meios de 
-	transporte alternativos que podem ser utilizados para acesso a rede Tor (conhecidos como obfuscadores de trávego, 
-	ou Pluggable Transports).
+	deverá descrever estas outras alternativas de relay. Aqui também ainda não estão sendo contemplados meios de 
+	transporte alternativos que podem ser utilizados na rede Tor (obfuscadores de tráfego, ou Pluggable Transports).
 
-	Recomenda-se uma implementação própria e ajustes finos na configuração de DNS nas máquinas que você pretende 
-	utilizar como relay; é importante que elas estejam prezando pelo anonimato dos usuários que através dela trafegam. 
-	Um material muito interessante que pode ser considerado está disponível em https://github.com/isislovecruft; outro 
-	material que pode ser considerado está disponível na página do DNS Crypt Proxy (https://www.dnscrypt.org). Procure 
-	ler um pouco sobre estas e outras possibilidades de configuração, e implemente a solução de DNS que melhor lhe convem 
-	(prezando pelos usuários da rede, e a privicidade de todos).
+		* Exeplos de obfuscadores de tráfego?
+
+			~ obfs4proxy
+			~ meek
+
+	Dando continuidade a configuração de seu relay, recomenda-se uma implementação própria e ajustes finos nas máquinas 
+	que você pretende utilizar como relay; é importante que elas estejam prezando pelo anonimato dos usuários que através 
+	dela trafegam.
+
+		* O que pode se entender por ajustes finos?
+
+			~ blocos de endereços IP dedicados para uso do relay;
+			~ serviços distintos separados por VLAN;
+			~ preferencialmente utilizar uma máquina física;
+
+				+ implementação plenamente dedicada a operar relays, nós de saída ou bridges
+				+ diferentes versões do Tor disponíveis em diferentes sistemas operacionais, ou arquiteturas
+				+ não executar várias instâncias do Tor em um ambiente compartilhado
+
+			~ evitar utilização de NAT, sempre que possível;
+
+				+ há um limite máximo/recomendado de 2 daemons compartilhando mesmo IP público
+
+			~ caso possível, encriptar os sistemas de arquivo utilizados;
+			~ NTP? procure implementar seu próprio Stratum 1 (GPS);
+
+	Talvez o ponto mais fraco, e esquecido/ignorado por várias pessoas, está ligado ao uso "indevido" de servidores DNS!
+
+	Sempre preze pelo seu próprio setup de DNS. Precisa de ajuda? Veja material disponível em https://github.com/isislovecruft/scripts.
+	Outro material que pode ser considerado está disponível na página do projeto DNS Crypt Proxy (https://www.dnscrypt.org). 
+
+	Procure ler um pouco sobre estas e outras possibilidades de configuração, e implemente a solução de DNS que melhor lhe convem 
+	(prezando pelos usuários da rede, e a privicidade de todos). Um pouco mais sobre DNS? https://www.opennic.org 
+
+		* Combinar seu cenário dedicado com DNS Crypt?
+
+			~ unbound
+			~ bind
+			~ dnsmasq
+			~ pdnsd
 
 	Dependendo do cenário onde se encontra a máquina que você decide "doar" para ser utilizada como relay, pode ser 
 	necessário que você configure redirecionamento de portas. Por favor, procure informações adicionais de como realizar 
