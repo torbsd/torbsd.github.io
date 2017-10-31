@@ -1,7 +1,7 @@
 DataDirectory	/var/db/tor
 Log notice file /var/log/tor/notice.log
 Nickname	TorHemisferioSul
-ContactInfo	Seu Nome, E-mail e/ou Chave PGP
+ContactInfo	Informacoes de Contato <seu@e-mail.aqui>, 0xCHAVE123456789
 
 SocksPort	0		# Habilita Funcao de Relay!
 ORPort		auto		# Padrao: 9001
@@ -10,9 +10,10 @@ DirPort		auto		# Padrao: 9030
 ExitPolicy	reject  *:*	# NAO opera como no' de saida
 ExitPolicy	reject6	*:*	# NAO opera como no' de saida
 
-AvoidDiskWrites		1	# Eviter escritas em disco
+AvoidDiskWrites		1	# Evitar escritas em disco
 CellStatistics		1	# Acumular estatisticas (metadados)
 ConnDirectionStatistics	1	# Acumular estatisticas (metadados)
+DisableAllSwap		1	# Desativar utilizacao de swap
 EntryStatistics		1	# Acumular estatisticas (metadados)
 ExtraInfoStatistics	1	# Acumular estatisticas (metadados)
 HardwareAccel		1	# Tenta usar chip dedicado para criptografia

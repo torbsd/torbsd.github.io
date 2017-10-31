@@ -10,15 +10,37 @@
 
 	### O que é?
 
-	Por definição do próprio projeto, o termo Tor pode ser definido como uma rede de servidores operador por voluntários que oferecem a seus usuários a possibilidade de permanecerem anônimos e seguros na Internet. Uma série de túneis virtuais são utilizados/criados entre a conexão originada pelos usuários e os servidores/serviços que eles desejam utilizar através da Internet, de forma a não comprometer a privacidade destes usuários. Tor também age como uma importante ferramenta de combate a censura e filtros de informações que deveriam ser públicas em todo o globo - também, através da Internet.
+	Por definição do próprio projeto, o termo Tor pode ser definido como uma rede de servidores 
+	operados por voluntários que oferecem a seus usuários a possibilidade de permanecerem anônimos 
+	e seguros na Internet. 
 
-	Além de oferecer a possibilidade de usuários acessarem serviços e conteúdos de forma anônima, ainda é possível publicar e servir conteúdos de forma anônima através dos chamados "hidden services" (identificados por um sufixo '.onion' ao final do nome do servidor/host/serviço que o usuário deseja acessar).
+	Uma série de túneis virtuais são utilizados/criados entre a conexão originada pelos usuários 
+	e os servidores/serviços que eles desejam utilizar através da Internet, de forma a não 
+	comprometer a privacidade destes usuários. Tor também age como uma importante ferramenta de 
+	combate a censura e filtros de informações que deveriam ser públicas em todo o globo.
+
+	Além de oferecer a possibilidade de usuários acessarem serviços e conteúdos de forma anônima, 
+	ainda é possível publicar e servir conteúdos de forma anônima através dos chamados 
+	"hidden services" (identificados por um sufixo '.onion' ao final do nome do servidor/host/serviço 
+	que o usuário deseja acessar).
 
 	### Para que serve?
 
-	Utilizar Tor te protege contra diferentes tipos de ataque ou monitoramentos indesejados; ambos relacionados a análise de tráfego. Esta análise pode servir, por exemplo, para identificar quem está se correspondendo com quem numa rede aberta/pública. Outro exemplo? Sítios web ou portais de comércio eletrônico podem identificar os comportamentos de internautas e, de maneira abusiva, alterar preços e enviar propagandas diferenciadas a seus visitantes (muitos podem, até, bloquear ou redirecionar visitantes para outros portais).
+	Utilizar Tor te protege contra diferentes tipos de ataques ou monitoramentos indesejados; 
+	ambos relacionados a análise de tráfego. Esta análise pode servir, por exemplo, para identificar 
+	quem está se correspondendo com quem numa rede aberta/pública. Outro exemplo? Sítios web 
+	ou portais de comércio eletrônico podem identificar os comportamentos de internautas e, de maneira abusiva, 
+	alterar preços e enviar propagandas diferenciadas a seus visitantes (muitos podem, até, bloquear 
+	ou redirecionar visitantes para outros portais).
 
-	Através do uso de Tor você pode prevenir que seus comportamentos sejam rastreados numa rede pública. Se você estiver viajando de férias e visitar sua conta de email pessoal através da rede de um Hotel ou Albergue, além de ser possível que pessoas mal intensionadas interceptem seu tráfego, é possível que você comece a receber mensagens indesejadas ou seja abordado nos corredores ou na recepção do Hotel para ser questionado sobre promoções e etc. Sem o uso de Tor você poderia nem ter acesso a suas redes sociais preferidas, caso esteja viajando por continentes ou países que apliquem censura ou monitoramentos excessivos nesse tipo de serviço provido através da Internet.
+	Através do uso de Tor você pode prevenir que seus comportamentos sejam rastreados numa rede pública. 
+
+	Se você estiver viajando de férias e visitar sua conta de email pessoal através da rede de um 
+	Hotel ou Albergue, além de ser possível que pessoas mal intensionadas interceptem seu tráfego, é possível 
+	que você comece a receber mensagens indesejadas ou seja abordado nos corredores ou na recepção do Hotel 
+	para ser questionado sobre promoções e etc. Sem o uso de Tor você poderia nem ter acesso a suas 
+	redes sociais preferidas, caso esteja viajando por continentes ou países que apliquem censura ou 
+	monitoramentos excessivos nesse tipo de serviço provido através da Internet.
 
 	### Quem usa?
 
@@ -33,35 +55,87 @@
 
 ## Porque eu deveria me preocupar em usar Tor?
 
-	Você ainda têm dúvidas de porque deve utilizar Tor? Provavelmente a mídia e todo um complô formado para denegrir a imagem da rede esteja impedindo que você sequer experimente e usufrua dos benefícios oferecidos através do protocolo Tor.
+	Você ainda têm dúvidas de porque deve utilizar Tor? Provavelmente a mídia e todo um complô formado 
+	para denegrir a imagem da rede esteja impedindo que você sequer experimente e usufrua dos benefícios 
+	oferecidos através do protocolo Tor.
 
-	Aqui, um causo compartilhado durante uma apresentação sobre Tor:
+	Aqui, um caso compartilhado durante uma apresentação sobre Tor:
 
-		* Suponha que você, infelizmente, tenha um parente que esteja a sofrer com algum tipo de doença que lhe forçará a usar seu seguro de saúde e, talvez, se ausentar alguns dias do trabalho. Por algumas poucas vezes, enquanto você estava no trabalho (sem infringir nenhuma condição de acesso a Internet imposta por sua empresa), você pesquisou sobre como deveriam ser os procedimentos ou medicamentos para ajudar no tratamento de seu parente; você está apenas utilizando ferramentas de busca na web para obter algumas informações úteis e até mesmo vitais. Okay? Eis que, um belo dia, você chega no trabalho e descobre que será desligado da empresa! Mas porquê? Durante o processamento de um relatório interno realizado pelo departamento técnico, constatou-se que um dos funcionários estava com um parente doente e a empresa teria de custear alguns benefícios relacionados ao seguro de saúde; você é este funcionário! Este motivo você descobre só depois de já ter perdido seu emprego e estar, quem sabe, sobrevivendo "apenas" do seguro desemprego oferecido em seu país, ou região. Você não desrespeitou ou não saltou através de nenhuma das políticas impostas pela sua empresa. Você apenas acessou conteúdo público, disponível na Internet, e leu algumas páginas especializadas ou blogs. Agora? Realize a dor de cabeça e toda a perda de tempo e energia que você vai ter, lutando contra a empresa que de despediu e o quanto que você terá de se dispor a faltar no acompanhamento de seu parente doente. Pense nisso!
+		* Suponha que você, infelizmente, tenha um parente que esteja a sofrer com algum tipo de doença 
+	que lhe forçará a usar seu seguro de saúde e, talvez, se ausentar alguns dias do trabalho. Por algumas 
+	poucas vezes, enquanto você estava no trabalho (sem infringir nenhuma condição de acesso a Internet 
+	imposta por sua empresa), você pesquisou sobre como deveriam ser os procedimentos ou medicamentos para 
+	ajudar no tratamento de seu parente; você está apenas utilizando ferramentas de busca na web para obter 
+	algumas informações úteis e até mesmo vitais. Okay? Eis que, um belo dia, você chega no trabalho e 
+	descobre que será desligado da empresa! Mas porquê? Durante o processamento de um relatório interno realizado 
+	pelo departamento técnico, constatou-se que um dos funcionários estava com um parente doente e a empresa 
+	teria de custear alguns benefícios relacionados ao seguro de saúde; você é este funcionário! Este motivo 
+	você descobre só depois de já ter perdido seu emprego e estar, quem sabe, sobrevivendo "apenas" do seguro 
+	desemprego oferecido em seu país, ou região. Você não desrespeitou ou não saltou através de nenhuma das 
+	políticas impostas pela sua empresa. Você apenas acessou conteúdo público, disponível na Internet, e leu 
+	algumas páginas especializadas ou blogs. Agora? Realize a dor de cabeça e toda a perda de tempo e energia 
+	que você vai ter, lutando contra a empresa que te demitiu e o quanto que você terá de se dispor a faltar 
+	no acompanhamento de seu parente doente. Pense nisso!
 
-	Mesmo assim, você ainda está com dúvidas e teme por utilizar ferramentas que te levem a usufrir da rede? Não quer nem baixar o Tor Browser? Certo, aqui vai um outro causo:
+	Mesmo assim, você ainda está com dúvidas e teme por utilizar ferramentas que te levem a usufrir da rede? 
+	Não quer nem baixar e testar o Tor Browser? Certo, aqui vai um outro causo:
 
-		* Refugiado e lutando para conseguir axilo político, você, que é pai ou mãe de uma criança, quer MUITO entrar em contato com ela para dar notícias de que você está bem e que, se tudo continuar dando certo, em breve vocês poderão estar juntos outra vez e mudar de vida longe do país onde antes se encontravam (longe de guerras, conflitos e, quem sabe, carnificinas propiciadas por brigas religiosas). Com auxílio de Tor vocês podem se comunicar de forma segura e anônima através da Internet.
+		* Refugiadx e lutando para conseguir axilo político, você, que é pai ou mãe de uma criança, quer 
+	MUITO entrar em contato com ela para dar notícias de que você está bem e que, se tudo continuar dando certo, 
+	em breve vocês poderão estar juntos outra vez e mudar de vida longe do país onde antes se encontravam 
+	(longe de guerras, conflitos e, quem sabe, carnificinas propiciadas por brigas religiosas). Com auxílio de Tor 
+	vocês podem se comunicar de forma segura e anônima através da Internet.
 
 ## Quero ajudar! Como configurar um relay?
 
-	Descritos abaixo, alguns exemplos de instalação e configuração de um ambiente propício para operar um relay Tor. Aqui, nestes exemplos, *NÃO* serão contemplados casos de configuração para bridges ou nós de saída. Outro documento deverá descrever estas outras alternativas de relay. Aqui também ainda não estão sendo contemplados os meios de transporte alternativos que podem ser utilizados para acesso a rede Tor (conhecidos como obfuscadores de trávego, ou Pluggable Transports).
+	Descritos abaixo, alguns exemplos de instalação e configuração de um ambiente propício para operar um relay Tor. 
 
-	Recomenda-se uma implementação própria e ajustes finos na configuração de DNS nas máquinas que você pretende utilizar como relay; é importante que elas estejam prezando pelo anonimato dos usuários que através dela trafegam. Um material muito interessante que pode ser considerado está disponível em https://github.com/isislovecruft; outro material que pode ser considerado está disponível na página do DNS Crypt Proxy (https://www.dnscrypt.org). Procure ler um pouco sobre estas e outras possibilidades de configuração, e implemente a solução de DNS que melhor lhe convem (prezando pelos usuários da rede, e a privicidade de todos).
+	Aqui, nestes exemplos, *NÃO* serão contemplados casos de configuração para bridges ou nós de saída. Outro documento 
+	deverá descrever estas outras alternativas de relay. Aqui também ainda não estão sendo contemplados os meios de 
+	transporte alternativos que podem ser utilizados para acesso a rede Tor (conhecidos como obfuscadores de trávego, 
+	ou Pluggable Transports).
 
-	Dependendo do cenário onde se encontra a máquina que você decide "doar" para ser utilizada como relay, pode ser necessário que você configure redirecionamento de portas. Por favor, procure informações adicionais de como realizar este tipo de procedimento ou configuração adicional.
+	Recomenda-se uma implementação própria e ajustes finos na configuração de DNS nas máquinas que você pretende 
+	utilizar como relay; é importante que elas estejam prezando pelo anonimato dos usuários que através dela trafegam. 
+	Um material muito interessante que pode ser considerado está disponível em https://github.com/isislovecruft; outro 
+	material que pode ser considerado está disponível na página do DNS Crypt Proxy (https://www.dnscrypt.org). Procure 
+	ler um pouco sobre estas e outras possibilidades de configuração, e implemente a solução de DNS que melhor lhe convem 
+	(prezando pelos usuários da rede, e a privicidade de todos).
+
+	Dependendo do cenário onde se encontra a máquina que você decide "doar" para ser utilizada como relay, pode ser 
+	necessário que você configure redirecionamento de portas. Por favor, procure informações adicionais de como realizar 
+	este tipo de procedimento ou configuração adicional.
+
+		-------------------------------------------------------------------------------------------------
+		sempre revise o arquivo de confiração padrão (http://openbsd-br.org/tor/pt/torrc) que está sendo 
+		utilizado neste documento; ele pode conter informações meramente fictícias que não correspondem 
+		ao seu cenário, ou pode utilizar caminhos diferentes referentes a configuração do DataDir ou Log.
+		-------------------------------------------------------------------------------------------------
 
 	### FreeBSD
 
-	Supondo um sistema sem pacotes adicionais instalados, e atualizado em sua última RELEASE (11.0-RELEASE-p9), num piscar de olhos você consegue pôr um relay em operação! 
+	Supondo um sistema sem pacotes adicionais instalados, e atualizado (11.1-RELEASE-p2 GENERIC):
 
-		user$ su - 
+		usuario$ su - 
 		Password:
-		root$ env ASSUME_ALWAYS_YES=yes pkg bootstrap
-		root$ pkg install -y tor
-		root$ fetch http://openbsd-br.org/tor/pt/torrc -o /usr/local/etc/tor/torrc
-		root$ sysrc tor_enable=YES
-		root$ echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
-		root$ sysctl net.inet.ip.random_id=1
-		root$ service tor start
+		root# env ASSUME_ALWAYS_YES=yes pkg bootstrap
+		root# pkg install -y tor
+		root# fetch http://openbsd-br.org/tor/pt/torrc -o /usr/local/etc/tor/torrc
+		root# sysrc tor_enable=YES
+		root# echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
+		root# sysctl net.inet.ip.random_id=1
+		root# service tor start
+
+	### OpenBSD
+
+	Supondo um sistema sem pacotes adicionais instalados, e atualizado (6.2 GENERIC):
+
+		usuario$ su - 
+		Password:
+		root# echo "https://ftp.openbsd.org/pub/OpenBSD" > /etc/installurl
+		root# pkg_add tor
+		root# ftp -o /etc/tor/torrc http://openbsd-br.org/tor/pt/torrc
+		root# rcctl enable tor 
+		root# rcctl set tor flags "-f /etc/tor/torrc -User _tor"
+		root# /etc/rc.d/tor start 
 

@@ -1,0 +1,27 @@
+
+Tor suporta IPv6!
+
+	desde janeiro de 2013 o suporte tanto para relays quanto para clientes utilizando ipv6 é suportado pelo protocolo e pela rede Tor.
+
+	infelizmente um relay não tem como funcionar (ainda) *APENAS* com ipv6, ele necessita operar em pilha dupla.
+
+	habilitar ipv6? suave.
+
+		# acrescentar o endereço IP a sua 'ORPort', e explicitar que você gostaria de sair para a rede através de v6; feito.
+		# independente de ser um nó de saída ou não, a opção de 'IPv6Exit' deve estar habilitada!
+
+		ORPort		[2001:db8:dead:beef::b5d]:2017
+		IPv6Exit	1
+
+		# claro, se você opera somente um relay que *NÃO* é nó de saída, altere sua 'ExisPolicy'.
+
+		ExitPolicy	reject6 *:*
+
+		# no lado do cliente, também é possível refinar o uso de ipv6.
+
+		ClientUseIPv6		1
+		ClientPreferIPv6ORPort	1
+
+	* outras opções de customização, como 'ClientUseIPv4' ou 'ClientPreferIPv6DirPort' estão disponíveis desde a versão 0.2.8.0-alpha-dev.
+	* nenhuma configuração específica para utilização de bridges via ipv6 é necessária; o simples fato de usar o IP em v6 já basta.
+
