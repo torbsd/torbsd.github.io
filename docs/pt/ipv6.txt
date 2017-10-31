@@ -13,7 +13,7 @@ Tor suporta IPv6!
 		ORPort		[2001:db8:dead:beef::b5d]:2017
 		IPv6Exit	1
 
-		# claro, se você opera somente um relay que *NÃO* é nó de saída, altere sua 'ExisPolicy'.
+		# claro, se você opera somente um relay que *NÃO* é nó de saída, altere sua 'ExitPolicy'.
 
 		ExitPolicy	reject6 *:*
 
