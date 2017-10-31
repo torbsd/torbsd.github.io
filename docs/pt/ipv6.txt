@@ -22,6 +22,10 @@ Tor suporta IPv6!
 		ClientUseIPv6		1
 		ClientPreferIPv6ORPort	1
 
+		# brincando com 'SocksPort' um pouco? a opção também aceita parâmetros que habilitam uso adequado de ipv6
+
+		SocksPort	[::1]:9150	IPv6Traffic
+
 	* outras opções de customização, como 'ClientUseIPv4' ou 'ClientPreferIPv6DirPort' estão disponíveis desde a versão 0.2.8.0-alpha-dev.
 	* nenhuma configuração específica para utilização de bridges via ipv6 é necessária; o simples fato de usar o IP em v6 já basta.
-
+	* você pode procurar por IPv6 na página de manual do Tor, em tor(1), para obter ainda mais detalhes e informações sobre o uso do protocolo.
