@@ -1,0 +1,65 @@
+# Quero ajudar! Como configurar um relay?
+
+	Descritos abaixo, alguns exemplos de instalação e configuração de um ambiente propício para operar um relay Tor. 
+
+	Aqui, nestes exemplos, *NÃO* serão contemplados casos de configuração para bridges ou nós de saída. Outro documento 
+	deverá descrever estas outras alternativas de relay. Aqui também ainda não estão sendo contemplados os meios de 
+	transporte alternativos que podem ser utilizados para acesso a rede Tor (conhecidos como obfuscadores de trávego, 
+	ou Pluggable Transports).
+
+	Recomenda-se uma implementação própria e ajustes finos na configuração de DNS nas máquinas que você pretende 
+	utilizar como relay; é importante que elas estejam prezando pelo anonimato dos usuários que através dela trafegam. 
+	Um material muito interessante que pode ser considerado está disponível em https://github.com/isislovecruft; outro 
+	material que pode ser considerado está disponível na página do DNS Crypt Proxy (https://www.dnscrypt.org). Procure 
+	ler um pouco sobre estas e outras possibilidades de configuração, e implemente a solução de DNS que melhor lhe convem 
+	(prezando pelos usuários da rede, e a privicidade de todos).
+
+	Dependendo do cenário onde se encontra a máquina que você decide "doar" para ser utilizada como relay, pode ser 
+	necessário que você configure redirecionamento de portas. Por favor, procure informações adicionais de como realizar 
+	este tipo de procedimento ou configuração adicional.
+
+		-------------------------------------------------------------------------------------------------
+		sempre revise o arquivo de confiração padrão (http://openbsd-br.org/tor/pt/torrc) que está sendo 
+		utilizado neste documento; ele pode conter informações meramente fictícias que não correspondem 
+		ao seu cenário, ou pode utilizar caminhos diferentes referentes a configuração do DataDir ou Log.
+		-------------------------------------------------------------------------------------------------
+
+	## FreeBSD
+
+	Supondo um sistema sem pacotes adicionais instalados, e atualizado (11.1-RELEASE-p2 GENERIC):
+
+		usuario$ su - 
+		Password:
+		root# env ASSUME_ALWAYS_YES=yes pkg bootstrap
+		root# pkg install -y tor
+		root# fetch http://openbsd-br.org/tor/pt/torrc -o /usr/local/etc/tor/torrc
+		root# sysrc tor_enable=YES
+		root# echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
+		root# sysctl net.inet.ip.random_id=1
+		root# service tor start
+
+	## NetBSD
+
+	Supondo um sistema sem pacotes adicionais instalados, e atualizado (7.1 GENERIC) com pkgin disponível:
+
+		usuario$ su - 
+		Password:
+		root# pkgin -y install tor
+		root# ftp -o /usr/pkg/etc/tor/torrc http://openbsd-br.org/tor/pt/torrc
+		root# ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor
+		root# echo "tor=YES" >> /etc/rc.conf
+		root# /etc/rc.d/tor start
+
+	## OpenBSD
+
+	Supondo um sistema sem pacotes adicionais instalados, e atualizado (6.2 GENERIC):
+
+		usuario$ su - 
+		Password:
+		root# echo "https://ftp.openbsd.org/pub/OpenBSD" > /etc/installurl
+		root# pkg_add tor
+		root# ftp -o /etc/tor/torrc http://openbsd-br.org/tor/pt/torrc
+		root# rcctl enable tor 
+		root# rcctl set tor flags "-f /etc/tor/torrc -User _tor"
+		root# /etc/rc.d/tor start 
+
