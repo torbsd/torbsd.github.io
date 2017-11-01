@@ -57,9 +57,22 @@
 		ao seu cenário, ou pode utilizar caminhos diferentes referentes a configuração do DataDir ou Log.
 		-------------------------------------------------------------------------------------------------
 
+	## DragonFlyBSD
+
+	Supondo um sistema atualizado (5.0.0 X86_64_GENERIC), já com 'pkg' disponível:
+
+		usuario$ su - 
+		Password:
+		root# pkg install -y tor
+		root# fetch http://openbsd-br.org/tor/pt/torrc -o /usr/local/etc/tor/torrc
+		root# echo "tor_enable=YES" >> /etc/rc.conf
+		root# echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
+		root# sysctl net.inet.ip.random_id=1
+		root# service tor start
+
 	## FreeBSD
 
-	Supondo um sistema sem pacotes adicionais instalados, e atualizado (11.1-RELEASE-p2 GENERIC):
+	Supondo um sistema sem pacotes adicionais instalados e atualizado (11.1-RELEASE-p2 GENERIC):
 
 		usuario$ su - 
 		Password:
@@ -73,7 +86,7 @@
 
 	## NetBSD
 
-	Supondo um sistema sem pacotes adicionais instalados, e atualizado (7.1 GENERIC) com pkgin disponível:
+	Supondo um sistema sem pacotes adicionais instalados e atualizado (7.1 GENERIC), já com 'pkgin' disponível:
 
 		usuario$ su - 
 		Password:
@@ -85,7 +98,7 @@
 
 	## OpenBSD
 
-	Supondo um sistema sem pacotes adicionais instalados, e atualizado (6.2 GENERIC):
+	Supondo um sistema sem pacotes adicionais instalados e atualizado (6.2 GENERIC):
 
 		usuario$ su - 
 		Password:
