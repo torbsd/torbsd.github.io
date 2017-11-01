@@ -3,7 +3,7 @@ CSS: torbsd.css
 Author: gman999
 Editors:
 Date: 20150505
-Note: These lines are at the top are multimarkdown metadata; leave them.
+Note: These lines at the top are multimarkdown metadata; leave them.
 {{meta.md}}
 
 {{header.md}}
@@ -20,7 +20,7 @@ With its default install, OpenBSD is not a high-bandwidth relay due to its secur
 
 For installing applications, OpenBSD's [recommended method] is the [pkg_add(1)] system, as opposed to using ports build from source. pkg_add uses pre-compiled binary files with set options. Rarely should a user have an issue with the defaults. There are cases in which a more experienced OpenBSD user would opt for the ports system.
 
-This guide is based on OpenBSD 5.7, which was released on May 1, 2015.
+This guide is based on OpenBSD 6.2, which was released on Oct 9, 2017.
 
 ### Syntax ###
 
@@ -60,17 +60,19 @@ These are the basic steps to configure a Tor relay with OpenBSD, based on the de
 
 >$ pkg_add tor
 
-6. Copy the torrc.sample file to torrc:
+6. Edit */etc/tor/torrc* appropriately
 
->$
+7. Use rcctl(8) to enable Tor on startup:
 
-7. Edit */etc/tor/torrc* appropriately
+>$ doas rcctl enable tor
 
-8. Add the line tor_flags="-f /etc/tor/torrc" in the /etc/rc.conf.local file
+8. Use rcctl(8) to start the Tor daemon:
 
-9. Start Tor with /etc/rc.d/tor start
+>$ doas rcctl start tor
+*tor(ok)*
+$
 
-10. Watch the Tor log with "tail -f /var/log/tor/notices.log"
+9. Watch the Tor log with "tail -f /var/log/tor/notices.log"
 
 ## Some Additional Configuration Considerations & Options ##
 
