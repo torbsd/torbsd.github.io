@@ -1,5 +1,6 @@
 https://cpiciber.codingrights.org/tor-onion/
 https://cryptoanarquia.wordpress.com/2015/07/05/a-rede-tor-e-segura/
+https://media.torproject.org/misc/2015-03-tor-brochure/tor-brochure-pt-BR.pdf
 https://tails.boum.org/about/index.pt.html
 https://tb-manual.torproject.org/pt-BR/index.html
 https://www.technedigitus.com/2015/09/configurando-o-tor-para-escolher-quais.html
