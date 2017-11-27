@@ -32,11 +32,11 @@ OpenBSD will run from the 4GB eMMC. The microSD card is only necessary for the i
 
 ###Preparation of Install Media###
 
-The [full installation notes](https://ftp.openbsd.org/pub/OpenBSD/6.1/armv7/INSTALL.armv7) for the OpenBSD armv7 plaform for 6.1 provides all the necessary steps for installation.
+The [full installation notes](https://ftp.openbsd.org/pub/OpenBSD/6.2/armv7/INSTALL.armv7) for the OpenBSD armv7 plaform for 6.2 provides all the necessary steps for installation.
 
 To prepare the microSD card with the boot media the _miniroot-am335x-61.fs_ file is required. Note that the _miniroot-beagle-61.fs_ file is not for the BBB, but for the BeagleBoard.
 
-The [OpenBSD mirror sites](https://www.openbsd.org/ftp.html) are available globally. The _miniroot-am335x-6.1fs_ file is available in the relative path of OpenBSD/6.1/armv7/ from the main mirror directory. For instance, to use the [ftp4 mirror in the US](https://ftp4.usa.openbsd.org/pub/OpenBSD/), navigate to the 6.1, then armv7 directory. OpenBSD maintains a simple version/architecture hierarchy in the mirror layout.
+The [OpenBSD mirror sites](https://www.openbsd.org/ftp.html) are available globally. The _miniroot-am335x-62.fs_ file is available in the relative path of OpenBSD/6.2/armv7/ from the main mirror directory. For instance, to use the [ftp4 mirror in the US](https://ftp4.usa.openbsd.org/pub/OpenBSD/), navigate to the 6.2, then armv7 directory. OpenBSD maintains a simple version/architecture hierarchy in the mirror layout.
 
 Downloading the install set files, those ending in .tgz, is not necessary as the full install will be done over the internet in this example.
 
@@ -174,7 +174,7 @@ Copyright (c) 1982, 1986, 1989, 1991, 1993
 	The Regents of the University of California.  All rights reserved.
 Copyright (c) 1995-2017 OpenBSD. All rights reserved.  https://www.OpenBSD.org
 
-OpenBSD 6.1 (RAMDISK) #81: Sat Apr  1 19:47:29 MDT 2017
+OpenBSD 6.2 (RAMDISK) #81: Sat Apr  1 19:47:29 MDT 2017
     deraadt@armv7.openbsd.org:/usr/src/sys/arch/armv7/compile/RAMDISK
 real mem  = 536870912 (512MB)
 avail mem = 512077824 (488MB)
@@ -230,7 +230,7 @@ root on rd0a swap on rd0b dump on rd0b
 WARNING: CHECK AND RESET THE DATE!
 erase ^?, werase ^W, kill ^U, intr ^C, status ^T
 
-Welcome to the OpenBSD/armv7 6.1 installation program.
+Welcome to the OpenBSD/armv7 6.2 installation program.
 (I)nstall, (U)pgrade, (A)utoinstall or (S)hell? 
 ```
 At that prompt, type _I_ for install. User replies are highlighted below:
