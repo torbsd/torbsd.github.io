@@ -1,0 +1,16 @@
+
+HiddenServiceDir	/caminho/para/salvar/chave/secreta/e/hostname/
+HiddenServicePort	<PORTA_CEBOLA>	<IP_SERVICO>:<PORTA_SERVICO>
+
+	exemplo para servicos diferenciados que utilizam pelo endereco .onion:
+
+HiddenServiceDir	/var/db/tor_onion/
+HiddenServicePort	6667	10.55.85.9:6667
+HiddenServicePort	80	172.26.80.1:80
+HiddenServicePort	22	127.0.0.1:22
+
+	ainda pode-se utilizar um socket unix:
+
+HiddenServiceDir	/var/db/tor_onion2/
+HiddenServicePort	80	unix:/caminho/do/socket
+
