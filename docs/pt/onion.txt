@@ -1,16 +1,30 @@
 
-HiddenServiceDir	/caminho/para/salvar/chave/secreta/e/hostname/
-HiddenServicePort	<PORTA_CEBOLA>	<IP_SERVICO>:<PORTA_SERVICO>
+uma configuracao simples para operar um onion (hidden) service inclui nada mais 
+que duas linhas de configuracao no arquivo 'torrc'.
 
-	exemplo para servicos diferenciados que utilizam pelo endereco .onion:
+	HiddenServiceDir	/caminho/para/salvar/chave/secreta/e/hostname/
+	HiddenServicePort	<PORTA_CEBOLA>	<IP_SERVICO>:<PORTA_SERVICO>
 
-HiddenServiceDir	/var/db/tor_onion/
-HiddenServicePort	6667	10.55.85.9:6667
-HiddenServicePort	80	172.26.80.1:80
-HiddenServicePort	22	127.0.0.1:22
+exemplo para servicos diferenciados que utilizam pelo endereco .onion:
 
-	ainda pode-se utilizar um socket unix:
+	HiddenServiceDir	/var/db/tor_onion/
+	HiddenServicePort	6667	10.55.85.9:6667
+	HiddenServicePort	80	172.26.80.1:80
+	HiddenServicePort	81	172.26.80.2:80
+	HiddenServicePort	82	172.26.80.3:80
+	HiddenServicePort	22	127.0.0.1:22
 
-HiddenServiceDir	/var/db/tor_onion2/
-HiddenServicePort	80	unix:/caminho/do/socket
+ainda pode-se utilizar um socket unix:
+
+	HiddenServiceDir	/var/db/tor_onion2/
+	HiddenServicePort	80	unix:/caminho/do/socket
+
+o uso de ssl/tls num servico desses nao e' algo mandatorio; o hash que voce utiliza
+para acessar o servico e' a chave publica dele, garantindo que vc acessa aquele 
+servico de forma segura - no sentido de ele realmente e' o que diz ser.
+
+por outro lado, se vc tem um certificado *valido* para utilizar, va em frente. umas
+poucas camadas a mais nao devem doer :)
+
+leia mais sobre HiddenService na pagina de manual tor(1).
 
