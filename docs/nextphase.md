@@ -13,6 +13,7 @@
 
 * PETs Ports
 	and to other BSDs
+	onionscan
 
 ###Travel###
 

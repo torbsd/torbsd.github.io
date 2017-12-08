@@ -265,7 +265,6 @@ Location of sets? (disk http nfs or 'done') [http]
 HTTP proxy URL? (e.g. 'http://proxy:8080', or 'none') [none] 
 HTTP Server? (hostname or 'done') ftp4.usa.openbsd.org
 Server directory? [pub/OpenBSD/6.2/armv7] 
-Unable to connect using https. Use http instead? [no] yes
 
 Select sets by entering a set name, a file name pattern or 'all'. De-select
 sets by prepending a '-', e.g.: '-game*'. Selected sets are labelled '[X]'.
@@ -273,7 +272,59 @@ sets by prepending a '-', e.g.: '-game*'. Selected sets are labelled '[X]'.
     [X] bsd.rd        [X] man62.tgz     [X] xshare62.tgz
     [X] base62.tgz    [X] game62.tgz    [X] xfont62.tgz
 Set name(s)? (or 'abort' or 'done') [done] 
+Installing bsd          100% |**************************|  5029 KB    00:07    
+Installing bsd.rd       100% |**************************| 10685 KB    00:11    
+Installing base62.tgz   100% |**************************| 67103 KB    03:41    
+Extracting etc.tgz      100% |**************************|   189 KB    00:00    
+Installing comp62.tgz   100% |**************************| 41939 KB    01:53    
+Installing man62.tgz    100% |**************************|  7015 KB    00:49    
+Installing game62.tgz   100% |**************************|  2707 KB    00:10    
+Installing xbase62.tgz  100% |**************************| 15414 KB    01:03    
+Extracting xetc.tgz     100% |**************************|  7037       00:00    
+Installing xshare62.tgz 100% |**************************|  4419 KB    00:43    
+Installing xfont62.tgz  100% |**************************| 39353 KB    01:30    
+Installing xserv62.tgz  100% |**************************|  6614 KB    00:16    
+Location of sets? (disk http nfs or 'done') [done] 
+
+What timezone are you in? ('?' for list) [Canada/Mountain] UTC
+Saving configuration files...done.
+Making all device nodes...done.
+Relinking to create unique kernel...done.
+
+CONGRATULATIONS! Your OpenBSD install has been successfully completed!
+To boot the new system, enter 'reboot' at the command prompt.
+When you login to your new system the first time, please read your mail
+using the 'mail' command.
+
+# 
 ```
+
+Type _halt_, disconnect the power and remove the microSD card.
+
+###Setup###
+
+Reinsert the power adapter and boot the BeagleBone.
+
+Login as _root_ at the prompt.
+
+Setup the nonprivileged user in the [doas.conf(5)](https://man.openbsd.org/doas.conf) to avoid logging in as root in the future.
+
+```
+# echo "permit keepenv  _user_ as root" >/etc/doas.conf
+```
+
+Next, add a /tmp partition using mfs:
+
+```
+# echo "swap /tmp mfs rw,-s=30M 0 0a" >>/etc/fstab
+```
+Reboot and login as _user_ account:
+```
+# reboot
+```
+
+
+
 
 
 
