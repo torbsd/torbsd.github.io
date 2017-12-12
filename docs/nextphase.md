@@ -14,6 +14,12 @@
 * PETs Ports
 	and to other BSDs
 	onionscan
+	txtorcon
+	torsocks
+	ooniprobe
+	atagar list
+	https://trac.torproject.org/projects/tor/wiki/org/teams/NetworkTeam/NetworkTeamProducts
+	https://trac.torproject.org/projects/tor/wiki/doc/packages
 
 ###Travel###
 
@@ -38,4 +44,3 @@
 * extending BSD bridges
 
 * colo list "Tor-okay"
-
