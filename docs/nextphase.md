@@ -44,3 +44,5 @@
 * extending BSD bridges
 
 * colo list "Tor-okay"
+
+* bwauth/dirauth/node monitoring by sysmon
