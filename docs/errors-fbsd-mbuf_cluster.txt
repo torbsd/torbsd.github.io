@@ -1,0 +1,10 @@
+[zone: mbuf_cluster] kern.ipc.nmbclusters limit reached
+
+Relevant thread
+https://lists.freebsd.org/pipermail/freebsd-questions/2014-June/258847.html
+
+% sysctl kern.ipc.nmbclusters
+
+% sysctl kern.ipc.somaxcon
+
+
