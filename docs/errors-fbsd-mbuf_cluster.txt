@@ -5,6 +5,16 @@ https://lists.freebsd.org/pipermail/freebsd-questions/2014-June/258847.html
 
 % sysctl kern.ipc.nmbclusters
 
-% sysctl kern.ipc.somaxcon
+(defaults to 238212?)
+
+% sysctl kern.ipc.somaxconn
+
+(defaults to 128)
+
+Look at current usage:
+
+% netstat -m
+
+check value for "mbuf clusters in use (current/cache/total/max)
 
 
