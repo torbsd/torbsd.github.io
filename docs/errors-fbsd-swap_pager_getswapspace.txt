@@ -1,0 +1,7 @@
+error: swap_pager_getswapspace(N): failed
+
+https://www.freebsd.org/doc/handbook/configtuning-kernel-limits.html
+
+https://lists.freebsd.org/pipermail/freebsd-questions/2011-April/228996.html
+
+out of swap space
