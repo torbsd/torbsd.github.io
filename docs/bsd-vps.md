@@ -70,6 +70,7 @@ JoinVP.com,http://joinvps.com,1,0,0,0,VDSManager,US4.95,http://joinvps.com/terms
 CS Squad Hosting,http://cs-squad.net/1,0,0,0,jail,,,http://cs-squad.net/legal-documents/aup/,FreeBSD 8.2?
 Encept,http://encept.com/,1,0,0,0,Xen,http://encept.com/legal-policies/terms-of-service/,US10.00,US,FreeBSD 8.1?
 Blinkenshell,https://blinkenshell.org/,0,0,1,0,shell,,,https://blinkenshell.org/wiki/Info/Rules,free,
+Host1Plus,https://www.host1plus.com/cloud-servers/,0,0,0,0,Virtuozzo,$USD6.40,US ZA DE BR HK,,"custom ISO" option
 ```
 
 https://www.freebsd.org/commercial/isp.html
