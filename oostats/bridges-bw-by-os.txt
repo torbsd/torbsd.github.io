@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: BRIDGES
-Report Date: Mon Dec 18 03:05:04 UTC 2017
+Report Date: Mon Dec 18 03:25:39 UTC 2017
 Data Source: https://onionoo.torproject.org/details
 
 NETWORK BANDWIDTH BY OPERATING SYSTEM
@@ -21,7 +21,7 @@ Darwin (1)            60967 (0.0%)
 Unknown platform (1)  53835 (0.0%)
 
 
-Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
+Copyright (C) 2017 by Tor Diversity Project <info@torbsd.org>
 All Rights Reserved.
 
 Released under an ISC license; see the GitHub repository

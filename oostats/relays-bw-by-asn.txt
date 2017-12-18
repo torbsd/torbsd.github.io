@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Mon Dec 18 03:05:01 UTC 2017
+Report Date: Mon Dec 18 03:25:36 UTC 2017
 Data Source: https://onionoo.torproject.org/details
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -929,8 +929,8 @@ ImproWare AG (1)                                         151989 (0.0%)
 Tyfon (1)                                                151100 (0.0%)
 TalkTalk (2)                                             151083 (0.0%)
 Sc Cloud Troopers International Srl (1)                  150671 (0.0%)
-Worldcall Telecom Limited (1)                            150528 (0.0%)
 Rychly drat, s.r.o. (1)                                  150528 (0.0%)
+Worldcall Telecom Limited (1)                            150528 (0.0%)
 CO.PA.CO. (2)                                            146432 (0.0%)
 Teleradiocompany Teleos-1 Ltd (1)                        137216 (0.0%)
 Kangaroot BVBA (1)                                       134318 (0.0%)
@@ -1005,8 +1005,8 @@ New Telesystems - TV, Ltd. (1)                           59967 (0.0%)
 Pishgaman Toseeh Ertebatat Company (Private Joint  (1)   56320 (0.0%)
 RFTkabel Brandenburg GmbH (1)                            56131 (0.0%)
 Everest Broadcasting Company Ltd (1)                     55965 (0.0%)
-Sercomtel Participações S.A. (1)                       55296 (0.0%)
 Telemar Norte Leste S.A. (1)                             55296 (0.0%)
+Sercomtel Participações S.A. (1)                       55296 (0.0%)
 JSC Transtelecom (1)                                     53739 (0.0%)
 GPTC Autonomous System, Tripoli Libya (1)                45069 (0.0%)
 Nessus GmbH (1)                                          41402 (0.0%)
@@ -1017,12 +1017,12 @@ Zappie Host LLC (1)                                      34850 (0.0%)
 JSC Kazakhtelecom (1)                                    30122 (0.0%)
 PJSC MegaFon (1)                                         25478 (0.0%)
 DIGI Tavkozlesi es Szolgaltato Kft. (1)                  24737 (0.0%)
-EMPRESAS MUNICIPALES DE CALI E.I.C.E. E.S.P. (1)         0 (0.0%)
 BSE Software GmbH (1)                                    0 (0.0%)
 COLOMBIA TELECOMUNICACIONES S.A. ESP (1)                 0 (0.0%)
+EMPRESAS MUNICIPALES DE CALI E.I.C.E. E.S.P. (1)         0 (0.0%)
 
 
-Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
+Copyright (C) 2017 by Tor Diversity Project <info@torbsd.org>
 All Rights Reserved.
 
 Released under an ISC license; see the GitHub repository

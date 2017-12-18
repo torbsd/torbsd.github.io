@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Mon Dec 18 03:04:54 UTC 2017
+Report Date: Mon Dec 18 03:25:21 UTC 2017
 Data Source: https://onionoo.torproject.org/details
 
 NETWORK BANDWIDTH BY OPERATING SYSTEM
@@ -23,7 +23,7 @@ NetBSD (1)        17655611 (0.1%)
 DragonFly (2)     3076857 (0.0%)
 
 
-Copyright (C) 2017 by Tor Diversity Project <tdp@torbsd.org>
+Copyright (C) 2017 by Tor Diversity Project <info@torbsd.org>
 All Rights Reserved.
 
 Released under an ISC license; see the GitHub repository
