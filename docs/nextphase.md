@@ -13,6 +13,13 @@
 
 * PETs Ports
 	and to other BSDs
+	onionscan
+	txtorcon
+	torsocks
+	ooniprobe
+	atagar list
+	https://trac.torproject.org/projects/tor/wiki/org/teams/NetworkTeam/NetworkTeamProducts
+	https://trac.torproject.org/projects/tor/wiki/doc/packages
 
 ###Travel###
 
@@ -38,3 +45,4 @@
 
 * colo list "Tor-okay"
 
+* bwauth/dirauth/node monitoring by sysmon
