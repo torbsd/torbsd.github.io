@@ -32,6 +32,7 @@ sshd_config(5)
 
 ---
 unbound.conf(5)
+
     server: 
         harden-glue:            yes
         hide-identity:          yes
@@ -44,6 +45,12 @@ unbound.conf(5)
         forward-addr:   127.0.53.1
         forward-addr:   127.0.53.2
         forward-addr:   127.0.53.3
+
+---
+
+	bind, dnsmasq, pdnsd, dns2socks, ...
+
+	socat -> [tcp/53] -> *
 
 ---
 dnscrypt-proxy(8)
