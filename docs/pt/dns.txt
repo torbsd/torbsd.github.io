@@ -1,0 +1,53 @@
+
+	nao copie e cole cegamente! isso e' um rascunho; pode nao servir pra vc
+
+---
+tor(1)
+
+       DNSPort [address:]port|auto [isolation flags]
+
+           If non-zero, open this port to listen for UDP DNS requests, and
+           resolve them anonymously. This port only handles A, AAAA, and PTR
+           requests---it doesn’t handle arbitrary DNS request types. Set the
+           port to "auto" to have Tor pick a port for you. This directive can
+           be specified multiple times to bind to multiple addresses/ports.
+           See SocksPort for an explanation of isolation flags. (Default: 0)
+
+---
+ssh_config(5)
+
+	Host	*.onion
+
+		ProxyCommand 
+
+		>    /usr/bin/nc    -x 127.0.0.1:9050 -X 5 %h %p
+		>    /usr/local/bin/socat STDIO SOCKS4A:localhost:%h:%p,socksport=9050
+		>    /usr/local/bin/torsocks -a 127.0.0.1 -P 9050 %h %p
+		>    connect -4 -S 127.0.0.1:9050 $(tor-resolve %h localhost:9050) %p
+
+---
+sshd_config(5)
+
+	UseDNS	no
+
+---
+unbound.conf(5)
+    server: 
+        harden-glue:            yes
+        hide-identity:          yes
+        hide-version:           yes
+        qname-minimisation:     yes
+        do-not-query-localhost: no
+
+    forward-zone:
+        name:           "."
+        forward-addr:   127.0.53.1
+        forward-addr:   127.0.53.2
+        forward-addr:   127.0.53.3
+
+---
+dnscrypt-proxy(8)
+
+        ifconfig lo0 inet 127.0.53.1/32 alias
+        dnscrypt-proxy -a 127.0.53.1 -d -p /var/run/dnscrypt-proxy.pid -u _dnscrypt-proxy -R random
+
