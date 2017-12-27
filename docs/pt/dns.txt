@@ -1,35 +1,47 @@
 
-	nao copie e cole cegamente! isso e' um rascunho; pode nao servir pra vc
+	Por favor, não copie e cole este conteúdo cegamente!
+		Este material é um rascunho e pode não servir para você.
+		As páginas de manual estão aí para ajudar. Boa sorte :)
 
+	Guia simplificado para configuração de um nó? Consulte 'relay.txt'.
+
+	Sugestão para cenário utilizando serviço de DNS customizado?
+
+	    LOCAL:{bind/dnsmasq/unbound} -> TUNNEL:{socat/tor} -> RESOLVER:{opennic/dnscrypt}
+ 
 ---
 tor(1)
 
-       DNSPort [address:]port|auto [isolation flags]
+    DNSPort [address:]port|auto [isolation flags]
 
-           If non-zero, open this port to listen for UDP DNS requests, and
-           resolve them anonymously. This port only handles A, AAAA, and PTR
-           requests---it doesn’t handle arbitrary DNS request types. Set the
-           port to "auto" to have Tor pick a port for you. This directive can
-           be specified multiple times to bind to multiple addresses/ports.
-           See SocksPort for an explanation of isolation flags. (Default: 0)
+	Se for diferente de zero, abra esta porta para ouvir os pedidos de DNS via UDP e resolva-os anonimamente.
+	Válido apenas para registros dos tipos A, AAAA e PTR - não lida com tipos de solicitação de DNS arbitrárias.
+	Caso a porta esteja definida como "auto", tor(1) escolherá uma porta para você (automaticamente). Esta 
+		opcão pode ser utilizada mais de uma vez, para disponibilizar o serviço em diferentes portes e/ou 
+		endereços IP. (Padrão: 0).
 
 ---
 ssh_config(5)
 
 	Host	*.onion
 
-		ProxyCommand 
-
-		>    /usr/bin/nc    -x 127.0.0.1:9050 -X 5 %h %p
-		>    /usr/local/bin/socat STDIO SOCKS4A:localhost:%h:%p,socksport=9050
-		>    /usr/local/bin/torsocks -a 127.0.0.1 -P 9050 %h %p
-		>    connect -4 -S 127.0.0.1:9050 $(tor-resolve %h localhost:9050) %p
+		VersionAddendum	NULL
+		# ProxyCommand 
+		#
+		#		/usr/bin/nc -x 127.0.0.1:9050 -X 5 %h %p
+		#		/usr/bin/socat STDIO SOCKS4A:localhost:%h:%p,socksport=9050
+		#		/usr/bin/torsocks -a 127.0.0.1 -P 9050 %h %p
+		#		/usr/bin/connect-proxy -4 -S 127.0.0.1:9050 $(tor-resolve %h localhost:9050) %p
 
 ---
 sshd_config(5)
 
-	UseDNS	no
+		Utilize Chaves! Verifique Chaves! Sério.
 
+	ListenAddress	127.0.0.1
+	UseDNS		no
+	VersionAddendum	NULL
+	
 ---
 unbound.conf(5)
 
@@ -47,14 +59,43 @@ unbound.conf(5)
         forward-addr:   127.0.53.3
 
 ---
+named.conf(5)
 
-	bind, dnsmasq, pdnsd, dns2socks, ...
+    options {
 
-	socat -> [tcp/53] -> *
+        listen-on               { 127.0.0.1; };
+
+	dnssec-enable           yes;
+	dnssec-validation       auto;
+	dnssec-lookaside        auto;
+
+	# notify-source         192.168.3.21;
+        # transfer-source       192.168.3.21;
+        # query-source address	192.168.3.21	port *;
+
+	allow-query     	{ 127.0.0.1; };
+	allow-recursion 	{ 127.0.0.1; };
+	allow-transfer		{ none; };
+
+	version         	"NULL";
+    }
 
 ---
 dnscrypt-proxy(8)
 
         ifconfig lo0 inet 127.0.53.1/32 alias
         dnscrypt-proxy -a 127.0.53.1 -d -p /var/run/dnscrypt-proxy.pid -u _dnscrypt-proxy -R random
+
+---
+resolvconf.conf(5)
+
+	resolv_conf=/dev/null
+	resolvconf=NO
+
+---
+dhclient.conf(5)
+
+    interface "em0" {
+        send host-name "klamotten";
+    }
 
