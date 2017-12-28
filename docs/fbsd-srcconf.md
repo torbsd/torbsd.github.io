@@ -47,4 +47,4 @@ If a system is being built from source, then [freebsd-update(8)](https://www.fre
 	     Set to not	build freebsd-update(8).
 ```
 
-There are many other possible FreeBSD subsystems to remove. This [src.conf example](src.conf.example) is actively used on a production system.
+There are many other possible FreeBSD subsystems to remove. This [src.conf example](src.conf.example) is actively used on a production system, with the contents extracted from the manual page.
