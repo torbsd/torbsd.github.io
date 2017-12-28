@@ -1,7 +1,9 @@
 
 	Por favor, não copie e cole este conteúdo cegamente!
 		Este material é um rascunho e pode não servir para você.
-		As páginas de manual estão aí para ajudar. Boa sorte :)
+		As páginas de manual estão aí para ajudar.
+
+	Utilizar "coisas" como systemd fica por *SUA* conta! Boa sorte :)
 
 	Guia simplificado para configuração de um nó? Consulte 'relay.txt'.
 
@@ -9,6 +11,8 @@
 
 	    LOCAL:{bind/dnsmasq/unbound} -> TUNNEL:{socat/tor} -> RESOLVER:{opennic/dnscrypt}
  
+	Network Manager? https://duckduckgo.com/?q=disable+networkmanager
+
 ---
 tor(1)
 
@@ -87,6 +91,14 @@ dnscrypt-proxy(8)
         dnscrypt-proxy -a 127.0.53.1 -d -p /var/run/dnscrypt-proxy.pid -u _dnscrypt-proxy -R random
 
 ---
+resolv.conf(5)
+
+	domain local. localdomain.
+	search local. localdomain.
+	nameserver 127.0.0.1
+	options edns0
+
+---
 resolvconf.conf(5)
 
 	resolv_conf=/dev/null
@@ -96,6 +108,24 @@ resolvconf.conf(5)
 dhclient.conf(5)
 
     interface "em0" {
-        send host-name "klamotten";
+        send      host-name           "klamotten";
+        supersede domain-name         "localdomain";
+        supersede domain-name-servers 127.0.0.1;
+        request   subnet-mask, broadcast-address, routers;
     }
+
+---
+git(1)
+
+    git config --global user.name       "Fulano da Silva"
+    git config --global user.email      "fulano@silva.local"
+    git config --global user.signingkey "0xABCDEF0123456789"
+
+---
+git-config(1)
+
+    [user]  
+        email         =       "usuario@maquinalocal.dominiolocal"
+        name          =       "Sagás Homem Fumaça"
+        signingkey    =       "0x0123456789ABCDEF"
 
