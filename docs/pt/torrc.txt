@@ -13,7 +13,7 @@ ExitPolicy	reject6	*:*	# NAO opera como no' de saida
 AvoidDiskWrites		1	# Evitar escritas em disco
 CellStatistics		1	# Acumular estatisticas (metadados)
 ConnDirectionStatistics	1	# Acumular estatisticas (metadados)
-DisableAllSwap		1	# Desativar utilizacao de swap
+# DisableAllSwap	1	# Desativar utilizacao de swap (reportado como FALHO em *BSD)
 EntryStatistics		1	# Acumular estatisticas (metadados)
 ExtraInfoStatistics	1	# Acumular estatisticas (metadados)
 HardwareAccel		1	# Tenta usar chip dedicado para criptografia

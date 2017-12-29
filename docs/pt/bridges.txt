@@ -1,0 +1,10 @@
+
+	obfs4 é o obfuscador recomendado para operar bridges atualmente.
+	exitem pacotes já disponíveis para FreeBSD, NetBSD e OpenBSD!
+
+	uma configuração básica está disponível em 'https://torbsd.org/torrc-bridge.txt'
+
+	a instalação do obfs4 pode ser feita via pkg, ports, pkg_add ou pkgsrc.
+
+	toda a atualização deste artigo está sendo elaborada/traduzida :)
+
