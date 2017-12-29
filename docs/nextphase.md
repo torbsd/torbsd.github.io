@@ -4,6 +4,8 @@
 
 ###Ports###
 
+* onion service mirrors for the bsd projects
+
 * chroot as a port option for the BSDs
 
 * sample torrcs
