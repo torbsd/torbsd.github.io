@@ -1,10 +1,46 @@
 
-	obfs4 é o obfuscador recomendado para operar bridges atualmente.
-	exitem pacotes já disponíveis para FreeBSD, NetBSD e OpenBSD!
+	Certamente uma das formas mais transparentes de colaborar/contribuir com o Projeto Tor é operar uma Bridge 
+	    com suporte a obfuscadores de tráfego. Isso pode ser feito até mesmo utilizando/doando uma pequena parcela 
+	    de sua conexão residencial com a Internet; por padrão, não são publicados nenhum dos endereços IP de 
+	    Bridges que operam na rede Tor :)
 
-	uma configuração básica está disponível em 'https://torbsd.org/torrc-bridge.txt'
+	Atualmente 'obfs4' (O Obfuscador) é o mais recomendado entre os obfuscadores de tráfego disponíveis! Quer
+	    saber ainda um pouco mais sobre obfuscadores e Pluggable Transports? Vale a pena uma visita ao sítio oficial
+	    em https://www.torproject.org/docs/pluggable-transports.html.en
 
-	a instalação do obfs4 pode ser feita via pkg, ports, pkg_add ou pkgsrc.
+	Exitem pacotes disponíveis do obfs4 para FreeBSD e para OpenBSD que podem ser facilmente instalados,
+	    seja via pkg(8) ou pkg_add(8)! Por outro lado, ainda é possível efetuar instalação via ports ou pkgsrc.
 
-	toda a atualização deste artigo está sendo elaborada/traduzida :)
+		-------------------------------------------------------------------------------------------------
+		sempre revise o arquivo de confiração padrão (https://torbsd.org/torrc-bridge.txt) que está sendo 
+		utilizado neste documento; ele pode conter informações meramente fictícias que não correspondem 
+		ao seu cenário, ou pode utilizar caminhos diferentes referentes a configuração do DataDir ou Log.
+		-------------------------------------------------------------------------------------------------
+
+	## FreeBSD
+
+	Supondo um sistema sem pacotes adicionais instalados e atualizado (11.1-RELEASE-p2 GENERIC):
+
+		usuario$ su - 
+		Password:
+		root# env ASSUME_ALWAYS_YES=yes pkg bootstrap
+		root# pkg install -y tor obfs4proxy-tor
+		root# fetch http://torbsd.org/torrc-bridge.txt -o /usr/local/etc/tor/torrc
+		root# sysrc tor_enable=YES
+		root# echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
+		root# sysctl net.inet.ip.random_id=1
+		root# service tor start
+
+	## OpenBSD
+
+	Supondo um sistema sem pacotes adicionais instalados e atualizado (6.2 GENERIC):
+
+		usuario$ su - 
+		Password:
+		root# echo "https://ftp.openbsd.org/pub/OpenBSD" > /etc/installurl
+		root# pkg_add tor obfs4proxy
+		root# ftp -o /etc/tor/torrc http://torbsd.org/torrc-bridge.txt
+		root# rcctl enable tor 
+		root# rcctl set tor flags "-f /etc/tor/torrc -User _tor"
+		root# /etc/rc.d/tor start 
 

@@ -52,7 +52,7 @@
 	este tipo de procedimento ou configuração adicional.
 
 		-------------------------------------------------------------------------------------------------
-		sempre revise o arquivo de confiração padrão (http://openbsd-br.org/tor/pt/torrc) que está sendo 
+		sempre revise o arquivo de confiração padrão (https://openbsd-br.org/tor/pt/torrc) que está sendo 
 		utilizado neste documento; ele pode conter informações meramente fictícias que não correspondem 
 		ao seu cenário, ou pode utilizar caminhos diferentes referentes a configuração do DataDir ou Log.
 		-------------------------------------------------------------------------------------------------
