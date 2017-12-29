@@ -1,17 +1,21 @@
 
 	Por favor, não copie e cole este conteúdo cegamente!
-		Este material é um rascunho e pode não servir para você.
-		As páginas de manual estão aí para ajudar.
+
+		* Este material é um rascunho e pode não servir para você.
+		* As páginas de manual estão aí para ajudar.
+
+	Referências listadas aqui não são 100% voltadas à instalação/configuração de serviços 
+	    de resolução de nomes (DNS); acredite.
 
 	Utilizar "coisas" como systemd fica por *SUA* conta! Boa sorte :)
 
-	Guia simplificado para configuração de um nó? Consulte 'relay.txt'.
+	Guia simplificado para configuração de um nó? Consulte 'relays.txt'.
 
 	Sugestão para cenário utilizando serviço de DNS customizado?
 
 	    LOCAL:{bind/dnsmasq/unbound} -> TUNNEL:{socat/tor} -> RESOLVER:{opennic/dnscrypt}
  
-	Network Manager? https://duckduckgo.com/?q=disable+networkmanager
+	Network Manager? Sério?! https://duckduckgo.com/?q=disable+networkmanager
 
 ---
 tor(1)
@@ -128,4 +132,19 @@ git-config(1)
         email         =       "usuario@maquinalocal.dominiolocal"
         name          =       "Sagás Homem Fumaça"
         signingkey    =       "0x0123456789ABCDEF"
+
+---
+curl(1)
+
+    curl  --user-agent "ZWNobyBiYXNlNjQgfCBiYXNlNjQK"
+
+---
+fetch(1)
+
+    fetch --user-agent="ZWNobyBiYXNlNjQgfCBiYXNlNjQK"
+
+---
+wget(1)
+
+    wget  --user-agent="ZWNobyBiYXNlNjQgfCBiYXNlNjQK"
 
