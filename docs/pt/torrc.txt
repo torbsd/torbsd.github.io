@@ -7,8 +7,13 @@ SocksPort	0		# Habilita Funcao de Relay!
 ORPort		auto		# Padrao: 9001
 DirPort		auto		# Padrao: 9030
 
+# MyFamily	FINGERPRINT,FINGERPRINT2,FINGERPRINT3,...
+
 ExitPolicy	reject  *:*	# NAO opera como no' de saida
 ExitPolicy	reject6	*:*	# NAO opera como no' de saida
+
+# HiddenServiceDir  /var/db/tor/meuhiddenservice
+# HiddenServicePort <PORTA_CEBOLA> <IP_SERVICO>:<PORTA_SERVICO>
 
 AvoidDiskWrites		1	# Evitar escritas em disco
 CellStatistics		1	# Acumular estatisticas (metadados)
