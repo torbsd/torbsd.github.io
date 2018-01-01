@@ -22,6 +22,7 @@
 	atagar list
 	https://trac.torproject.org/projects/tor/wiki/org/teams/NetworkTeam/NetworkTeamProducts
 	https://trac.torproject.org/projects/tor/wiki/doc/packages
+	telegram: https://github.com/telegramdesktop/tdesktop/
 
 ###Travel###
 

@@ -4,16 +4,16 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: BRIDGES
-Report Date: Sat Dec 30 19:27:39 UTC 2017
+Report Date: Mon Jan  1 23:49:15 UTC 2018
 Data Source: https://onionoo.torproject.org/details
 
 TRANSPORT           COUNT
 ==================  ===========================================================
-TOTAL (2090)        2688
-obfs4               1450 (53.9%)
-null                601 (22.4%)
-obfs3               327 (12.2%)
-scramblesuit        231 (8.6%)
+TOTAL (2120)        2720
+obfs4               1463 (53.8%)
+null                616 (22.6%)
+obfs3               330 (12.1%)
+scramblesuit        232 (8.5%)
 fte                 33 (1.2%)
 websocket           22 (0.8%)
 obfs2               20 (0.7%)
