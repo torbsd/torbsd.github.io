@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Tue Jan  2 11:24:39 UTC 2018
+Report Date: Tue Jan  2 21:40:45 UTC 2018
 Data Source: https://onionoo.torproject.org/details
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -982,8 +982,8 @@ INSYS LLC (1)                                            86529 (0.0%)
 RCL CJSC (1)                                             82428 (0.0%)
 Panamaserver.com (1)                                     81110 (0.0%)
 Community Network Center Inc. (1)                        80896 (0.0%)
-Cutting Edge Communications, Inc. (1)                    79872 (0.0%)
 Spin Internet Service (1)                                79872 (0.0%)
+Cutting Edge Communications, Inc. (1)                    79872 (0.0%)
 Chiliy Valery Mykhaylovych PE (1)                        78481 (0.0%)
 TUNISIANA (1)                                            74520 (0.0%)
 Everest Broadcasting Company Ltd (1)                     70831 (0.0%)
@@ -998,8 +998,8 @@ Telecom Algeria (1)                                      57344 (0.0%)
 RFTkabel Brandenburg GmbH (1)                            56532 (0.0%)
 Sardegna Wifi Srl (1)                                    56320 (0.0%)
 JSC Vostoktelecom (1)                                    55136 (0.0%)
-Telemar Norte Leste S.A. (1)                             53248 (0.0%)
 GENERAL COMMUNICATION, INC. (1)                          53248 (0.0%)
+Telemar Norte Leste S.A. (1)                             53248 (0.0%)
 JSC Transtelecom (1)                                     52534 (0.0%)
 Uninet S.A. de C.V. (1)                                  48254 (0.0%)
 Gigabit Hosting Sdn Bhd (1)                              46543 (0.0%)
@@ -1007,11 +1007,11 @@ GPTC Autonomous System, Tripoli Libya (1)                44518 (0.0%)
 The Computer Shop Netlink (1)                            40947 (0.0%)
 PJSC MegaFon (1)                                         25605 (0.0%)
 PJSC Telesystems of Ukraine (1)                          25600 (0.0%)
-Kievline LLC (1)                                         0 (0.0%)
+HostMySite (1)                                           0 (0.0%)
 TM Net, Internet Service Provider (1)                    0 (0.0%)
 Azimut-R Ltd. (1)                                        0 (0.0%)
+Kievline LLC (1)                                         0 (0.0%)
 Compañía Dominicana de Teléfonos, C. por A. - C (1)   0 (0.0%)
-HostMySite (1)                                           0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <info@torbsd.org>
