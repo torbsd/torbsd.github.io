@@ -4,7 +4,7 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: RELAYS
-Report Date: Thu Jan  4 15:01:17 UTC 2018
+Report Date: Fri Jan  5 01:24:58 UTC 2018
 Data Source: https://onionoo.torproject.org/details
 
 NETWORK BANDWIDTH BY AUTONOMOUS SYSTEM NAME
@@ -1017,8 +1017,8 @@ Forthnet (1)                                             30720 (0.0%)
 PJSC MegaFon (1)                                         25817 (0.0%)
 Everest Broadcasting Company Ltd (1)                     24376 (0.0%)
 Gigabit Hosting Sdn Bhd (1)                              20910 (0.0%)
-Telecom.ru Ltd (1)                                       0 (0.0%)
 Uninet S.A. de C.V. (1)                                  0 (0.0%)
+Telecom.ru Ltd (1)                                       0 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <info@torbsd.org>
