@@ -4,21 +4,21 @@ https://torbsd.github.io/
 Network Diversity Statistics Reports
 
 Report Type: BRIDGES
-Report Date: Fri Jan  5 01:25:01 UTC 2018
+Report Date: Fri Jan  5 13:43:00 UTC 2018
 Data Source: https://onionoo.torproject.org/details
 
 COUNTS BY OPERATING SYSTEM
 
 OS                    COUNT
 ====================  =========================================================
-TOTAL (2098)          2098
-Linux                 2045 (97.5%)
-FreeBSD               23 (1.1%)
-Windows               16 (0.8%)
+TOTAL (2093)          2093
+Linux                 2039 (97.4%)
+FreeBSD               21 (1.0%)
+Windows               19 (0.9%)
 OpenBSD               10 (0.5%)
 Darwin                2 (0.1%)
-Unknown platform      1 (0.0%)
 NetBSD                1 (0.0%)
+Unknown platform      1 (0.0%)
 
 
 Copyright (C) 2017 by Tor Diversity Project <info@torbsd.org>
