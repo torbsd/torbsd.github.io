@@ -29,14 +29,19 @@ Once rctl is enabled and operational, the rules require simple syntax. The patte
 
 subject:subject-id:resource:action=number/subject
 
-In this case, the tor daemon will only be allowed to use up to 2Gb of RAM.
+In this case, the tor daemon will only be allowed to use up to 2.5Gb of RAM.
 ```
-% rctl -a user:_tor:memoryuse:deny=2G/_tor
+% rctl -a user:_tor:memoryuse:deny=2500M/_tor
 ```
 
-As with /etc/sysctl.conf settings, rules persist across reboots if added to the relevant configuration file, in this case /etc/rctl.conf:
+To confirm that the rule is implemented
+```
+% rctl
+user:_tor:memoryuse:deny=2621440000
+```
+
+Rules persist across reboots if added to /etc/rctl.conf:
 
 ```
-user:_tor:memoryuse:deny=2G/_tor
+user:_tor:memoryuse:deny=2500M/_tor
 ```
-Other relevant resources to consider restricting include maxproc and openfiles.
