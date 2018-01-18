@@ -14,7 +14,7 @@ There is another solution starting with FreeBSD 9.x: [rctl(8)](https://www.freeb
 
 After it's enabled, a reboot is required.
 
-The sysctl knob can then be set.
+The sysctl knob will change.
 ```
 % sysctl kern.racct.enable=1
 ```
