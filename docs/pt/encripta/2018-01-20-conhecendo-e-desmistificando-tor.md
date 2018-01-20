@@ -27,9 +27,13 @@ Uma série de túneis virtuais são utilizados/criados entre a conexão originada pe
 
 ### O que a rede Tor **NÃO** é?
 
-    Praticamente toda a imagem estereoripada que Hollywood promoveu em seus filmes de ficção sobre crimes e condutas ilícitas na Internet.
-    
-    Uma das maiores ignorâncias ligadas a rede, infelizmente, é essa conexão direta a uma criminalização de seus usuários (e/ou desenvolvedores). É, sim, triste e vergonhoso saber que alguns casos existem; entretanto a execução de tais estúpidas ações pode ser realizada mesmo sem que a rede Tor existisse. Reflita.
+> Praticamente toda a imagem estereoripada que Hollywood promoveu em seus filmes de ficção sobre crimes e condutas ilícitas na Internet.
+> 
+> Uma das maiores ignorâncias ligadas a rede, infelizmente, é essa conexão direta a uma criminalização de seus usuários (e/ou desenvolvedores).
+> 
+> É, sim, triste e vergonhoso saber que alguns casos existem; entretanto a execução de tais estúpidas ações pode ser realizada mesmo sem que a rede Tor existisse.
+> 
+> Reflita.
 
 Para que serve?
 ---------------
