@@ -25,7 +25,7 @@ Por definição do próprio projeto, o termo Tor pode ser definido como uma rede de
 
 Uma série de túneis virtuais são utilizados/criados entre a conexão originada pelos usuários e os servidores/serviços que eles desejam utilizar através da Internet, de forma a não comprometer a privacidade destes usuários. Tor também age como uma importante ferramenta de combate a censura e filtros de informações que deveriam ser públicas em todo o globo. Além de oferecer a possibilidade de usuários acessarem serviços e conteúdos de forma anônima, ainda é possível publicar e servir conteúdos de forma anônima através dos chamados "onion services" (identificados por um sufixo '.onion' ao final do nome do servidor/host/serviço que o usuário deseja acessar).
 
-### O que a rede Tor **NÃO** é?
+**O que a rede Tor _NÃO_ é?**
 
 > Praticamente toda a imagem estereoripada que Hollywood promoveu em seus filmes de ficção sobre crimes e condutas ilícitas na Internet.
 > 
