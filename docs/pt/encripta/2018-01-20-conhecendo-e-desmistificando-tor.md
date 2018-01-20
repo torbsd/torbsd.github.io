@@ -10,10 +10,10 @@ tags:		tor
 
 Tor (O Roteador Cebola, do inglês The Onion Router), além de ser um projeto de software livre e com código aberto, pode ser compreendido basicamente como 3 coisas: um protocolo, uma rede, ou um navegador.
 
-    * O projeto está registrado como uma organização não governamental, sem fins lucrativos;
-    * O protocolo está definido publicamente em especificações técnicas nos repositórios do projeto;
-    * A rede provê à seus usuários a privacidade para acessar/pulicar conteúdos/serviços diversos;
-    * O navegador é a porta de entrada mais simples para se ter acesso a rede.
+  * O projeto está registrado como uma organização não governamental, sem fins lucrativos;
+  * O protocolo está definido publicamente em especificações técnicas nos repositórios do projeto;
+  * A rede provê à seus usuários a privacidade para acessar/pulicar conteúdos/serviços diversos;
+  * O navegador é a porta de entrada mais simples para se ter acesso a rede.
 
 O que é, para que serve e quem usa Tor?
 =======================================
@@ -27,9 +27,9 @@ Uma série de túneis virtuais são utilizados/criados entre a conexão originada pe
 
 ### O que a rede Tor **NÃO** é?
 
-Praticamente toda a imagem estereoripada que Hollywood promoveu em seus filmes de ficção sobre crimes e condutas ilícitas na Internet.
-
-Uma das maiores ignorâncias ligadas a rede, infelizmente, é essa conexão direta a uma criminalização de seus usuários (e/ou desenvolvedores). É, sim, triste e vergonhoso saber que alguns casos existem; entretanto a execução de tais estúpidas ações pode ser realizada mesmo sem que a rede Tor existisse. Reflita.
+    Praticamente toda a imagem estereoripada que Hollywood promoveu em seus filmes de ficção sobre crimes e condutas ilícitas na Internet.
+    
+    Uma das maiores ignorâncias ligadas a rede, infelizmente, é essa conexão direta a uma criminalização de seus usuários (e/ou desenvolvedores). É, sim, triste e vergonhoso saber que alguns casos existem; entretanto a execução de tais estúpidas ações pode ser realizada mesmo sem que a rede Tor existisse. Reflita.
 
 Para que serve?
 ---------------
@@ -41,14 +41,14 @@ Se você estiver viajando de férias e visitar sua conta de email pessoal através 
 Quem usa?
 ---------
 
-    * eu;
-    * Famílias (preocupadas com a privacidade/segurança dos parentes);
-    * Jornalistas e Repórteres;
-    * Universidades ou Institutos de Tecnologia;
-    * Ativistas e Ciberativistas;
-    * Companhias de Pesquisa e Desenvolvimento;
-    * Organizações não Governamentais;
-    * ...
+  * eu;
+  * Famílias (preocupadas com a privacidade/segurança dos parentes);
+  * Jornalistas e Repórteres;
+  * Universidades ou Institutos de Tecnologia;
+  * Ativistas e Ciberativistas;
+  * Companhias de Pesquisa e Desenvolvimento;
+  * Organizações não Governamentais;
+  * ...
 
 Porque eu deveria me preocupar em usar Tor?
 ===========================================
