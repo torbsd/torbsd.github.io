@@ -23,7 +23,9 @@ O que é?
 
 Por definição do próprio projeto, o termo _Tor_, pode ser definido como uma rede de servidores operados por voluntários que oferecem a seus usuários a possibilidade de permanecerem anônimos e seguros na Internet.
 
-Uma série de túneis virtuais são utilizados/criados entre a conexão originada pelos usuários e os servidores/serviços que eles desejam utilizar através da Internet, de forma a não comprometer a privacidade destes usuários. _Tor_ também age como uma importante ferramenta de combate a censura e filtros de informações que deveriam ser públicas em todo o globo. Além de oferecer a possibilidade de usuários acessarem serviços e conteúdos de forma anônima, ainda é possível publicar e servir conteúdos de forma anônima através dos chamados "onion services" (identificados por um sufixo `.onion` ao final do nome do servidor/serviço que o usuário deseja acessar).
+Uma série de túneis virtuais são utilizados/criados entre a conexão originada pelos usuários e os servidores/serviços que eles desejam utilizar através da Internet, de forma a não comprometer a privacidade destes usuários. _Tor_ também age como uma importante ferramenta de combate a censura e filtros de informações que deveriam ser públicas em todo o globo. Além de oferecer a possibilidade de usuários acessarem serviços e conteúdos de forma anônima, ainda é possível publicar e servir conteúdos de forma anônima através dos chamados _"onion services"_ (antigamente conhecidos como _hidden services_). Todos os endereços dentro da rede _Tor_ são identificados por um sufixo `.onion` atrelado ao nome/hash do serviço que o usuário deseja acessar.
+
+Uma pequena cartilha disponibilizada pelo projeto pode ser acessada **[aqui](https://media.torproject.org/misc/2015-03-tor-brochure/tor-brochure-pt-BR.pdf)**.
 
 **O que _NÃO_ é?**
 
@@ -34,6 +36,8 @@ Uma série de túneis virtuais são utilizados/criados entre a conexão originada pe
 > É, sim, triste e vergonhoso saber que alguns casos existem; entretanto a execução de tais estúpidas ações pode ser realizada mesmo sem que a rede _Tor_ existisse.
 > 
 > Reflita.
+
+Tor pode ser utilizado em sistemas operacionais Windows, em sistemas baseados no kernel Linux e em outros sistemas de linhagem BSD/UNIX (incluindo Mac/OSX).
 
 Para que serve?
 ---------------
@@ -81,19 +85,38 @@ Aqui, um caso compartilhado durante uma apresentação sobre _Tor_:
 > que você vai ter, lutando contra a empresa que te demitiu e o quanto que você terá de se dispor a faltar 
 > no acompanhamento de seu parente doente.
  
-Mesmo assim, você ainda está com dúvidas e teme por utilizar ferramentas que te levem a usufrir da rede? Não quer nem baixar e testar o navegador? Certo, aqui vai um outro caso:
+Mesmo assim, você ainda está com dúvidas e teme por utilizar ferramentas que te levem a usufruir da rede? Não quer nem baixar e testar o navegador? Certo, aqui vai um outro caso:
 
 >  Refugiadx e lutando para conseguir axilo político, você, que é pai ou mãe de uma criança, quer 
 > MUITO entrar em contato com ela para dar notícias de que você está bem e que, se tudo continuar dando certo, 
 > em breve vocês poderão estar juntos outra vez e mudar de vida longe do país onde antes se encontravam 
-> (longe de guerras, conflitos e, quem sabe, carnificinas propiciadas por brigas religiosas). Com auxílio de _Tor _
+> (longe de guerras, conflitos e, quem sabe, carnificinas propiciadas por brigas religiosas). Com auxílio de _Tor_
 > vocês podem se comunicar de forma segura e anônima através da Internet.
 
 Continua com dúvidas ou está parecendo algo muito dubioso? Visite a [biblioteca](https://media.torproject.org/) de mídias do projeto.
 
-Como usar ou colaborar com o uso do Tor?
-========================================
+Como utilizar? Como colaborar?
+==============================
 
+Mencionada anteriormente, a forma mais simples é a utilização do [navegador](https://www.torproject.org/download/download-easy.html.en) disponibilizado pelo projeto, o **_Tor_ Browser**. Esta é, sem dúvida, a forma mais recomendada para ter seu primeiro contato com _Tor_.
+
+Utilizando
+----------
+
+O navegador é uma versão customizada do [Mozilla Firefox](https://www.mozilla.org/firefox/) e vem acompanhado do conjunto de bibliotecas e aplicações necessárias para você ter acesso a rede _Tor_ e também conseguir manter sua privacidade no acesso à Internet. Nenhum outro software adicional é necessário, e não é preciso que você instale o navegador; ele pode ser usado logo depois que você obtiver o pacote e descomprimir os arquivos numa pasta de sua preferência.
+
+Para usuários do sistema operacional Android, é possível usar o **Orbot** em conjunto com o **Orfox**! Ambos os aplicativos são gratuitos e de código aberto (assinados pelo [The Guardian Project](https://guardianproject.info/)).
+
+Alternativas para uso do _Tor_ estão descritas no sítio oficial e em páginas da wiki do projeto.
+
+Colaborando
+-----------
+
+Toda ajuda é muito bem vinda! O projeto agradece pelo seu tempo e interesse :-)
+
+Se você se interessou e quer ajudar, converse com 
+
+Você pode, ainda, fazer uma [doação](https://www.torproject.org/donate/donate-button.html.en).
 
 
 **RASCUNHO**
