@@ -1,7 +1,7 @@
 ---
 layout:		post
 title:		Conhecendo e Desmistificando Tor
-date:		2018-01-20 16:20:00 +0000
+date:		2018-01-20 16:20:00 -0000
 category:	privacidade
 tags:		tor
 ---
