@@ -11,13 +11,9 @@ tags:		tor
 _Tor_ (O roteador cebola, do inglês **T**he **o**nion **r**outer), além de ser um [projeto](https://www.torproject.org/) de software livre e com código aberto, pode ser compreendido basicamente como 3 coisas: um protocolo, uma rede, ou um navegador.
 
   * O projeto está registrado como uma organização não governamental, sem fins lucrativos;
-    ~ 874328ttt
   * O [protocolo](https://gitweb.torproject.org/torspec.git/) está definido publicamente em especificações técnicas nos repositórios do projeto;
-    + 123teste
-    + 000teste
   * A rede provê à seus usuários a privacidade para acessar/publicar conteúdos/[serviços](https://www.torproject.org/docs/onion-services) diversos;
   * O [navegador](https://www.torproject.org/download/download-easy.html.en) é a porta de entrada mais simples para se ter acesso a rede.
-    - tehsaudhsaudste
 
 O que é, para que serve e quem usa Tor?
 =======================================
