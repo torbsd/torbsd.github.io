@@ -37,7 +37,7 @@ Uma pequena cartilha disponibilizada pelo projeto pode ser acessada **[aqui](htt
 > 
 > Reflita.
 
-Tor pode ser utilizado em sistemas operacionais Windows, em sistemas baseados no kernel Linux e em outros sistemas de linhagem BSD/UNIX (incluindo Mac/OSX).
+_Tor_ pode ser utilizado em sistemas operacionais Windows, em sistemas baseados no kernel Linux, Mac/OSX e em outros sistemas de linhagem [BSD/UNIX](https://torbsd.org/).
 
 Para que serve?
 ---------------
@@ -107,14 +107,14 @@ O navegador é uma versão customizada do [Mozilla Firefox](https://www.mozilla.or
 
 Para usuários do sistema operacional Android, é possível usar o **Orbot** em conjunto com o **Orfox**! Ambos os aplicativos são gratuitos e de código aberto (assinados pelo [The Guardian Project](https://guardianproject.info/)).
 
-Alternativas para uso do _Tor_ estão descritas no sítio oficial e em páginas da wiki do projeto.
+Alternativas para uso do _Tor_ estão descritas no [sítio](https://www.torproject.org/docs/installguide.html.en) oficial e em páginas da [wiki](https://trac.torproject.org/projects/tor/wiki/WikiStart#InstallingandConfiguringTor) do projeto.
 
 Colaborando
 -----------
 
-Toda ajuda é muito bem vinda! O projeto agradece pelo seu tempo e interesse :-)
+Se você se interessou e quer ajudar, visite a página oficial do projeto, sobre ser [voluntário](https://www.torproject.org/getinvolved/volunteer.html.en).
 
-Se você se interessou e quer ajudar, converse com 
+Caso necessite de guias em português para configuração de bridges e relays, visite o [repositório](https://github.com/torbsd/torbsd.github.io/tree/egypcio/docs/pt) do projeto _TorBSD_.
 
 Você pode, ainda, fazer uma [doação](https://www.torproject.org/donate/donate-button.html.en).
 
