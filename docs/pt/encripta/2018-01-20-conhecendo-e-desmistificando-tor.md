@@ -95,6 +95,33 @@ Mesmo assim, você ainda está com dúvidas e teme por utilizar ferramentas que te 
 
 Continua com dúvidas ou está parecendo algo muito dubioso? Visite a [biblioteca](https://media.torproject.org/) de mídias do projeto.
 
+Como funciona?
+==============
+
+Se você precisa acessar um servidor/serviço na Internet, em resumo, funciona assim:
+
+  Cliente -> Bridge/Relay -> Relay -> Nós de Saída -> Internet
+
+Se você precisa acessar um _onion service_, em resumo, funciona assim:
+
+  Cliente -> Bridge/Relay -> Relay -> ~ -> endereco.onion 
+
+### Bridge
+
+Uma bridge funciona uma conexão de apoio/ponte para que você consiga realizar o primeiro salto para dentro da rede _Tor_; Bridges são utilizadas quando há uma censura excessiva ou filtros abusivos em sua conexão com a Internet.
+
+Muitas das bridges existentes fazem uso de [obfuscadores de tráfego](https://www.torproject.org/docs/pluggable-transports.html.en). Estes, por sua vez, auxiliam o mascaramento do tipo de tráfego que ocorre entre você e a bridge (seu primeiro salto para dentro da rede).
+
+### Relay
+
+Relay é a definição básica de um nó na rede _Tor_.
+
+Recebem nomes específicos quando estão operando em funções especiais; Bridge ou Nó de Saída.
+
+### Nó de Saída
+
+São nós que permitem você sair da rede _Tor_ e chegar até sítios/portais/servidores/serviços hospedados na Internet.
+
 Como utilizar? Como colaborar?
 ==============================
 
@@ -117,7 +144,6 @@ Se você se interessou e quer ajudar, visite a página oficial do projeto, sobre s
 Caso necessite de guias em português para configuração de bridges e relays, visite o [repositório](https://github.com/torbsd/torbsd.github.io/tree/egypcio/docs/pt) do projeto _TorBSD_.
 
 Você pode, ainda, fazer uma [doação](https://www.torproject.org/donate/donate-button.html.en).
-
 
 **RASCUNHO**
 
