@@ -104,7 +104,7 @@ Se você precisa acessar um servidor/serviço na Internet, em resumo, funciona ass
 
 Se você precisa acessar um _onion service_, em resumo, funciona assim:
 
-  Cliente -> Bridge/Relay -> Relay -> ~ -> endereco.onion 
+  Cliente -> Bridge/Relay -> Relay -> ~ -> endereço.onion 
 
 ### Bridge
 
