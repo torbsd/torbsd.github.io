@@ -10,7 +10,7 @@ tags:		tor
 
 _Tor_ (O roteador cebola, do inglês **T**he **o**nion **r**outer), além de ser um [projeto](https://www.torproject.org/) de software livre e com código aberto, pode ser compreendido basicamente como 3 coisas: um protocolo, uma rede, ou um navegador.
 
-  ![Tor](./tor-logo.svg "https://www.torproject.org/")
+  ![Tor](./tor-logo.svg "https://www.torproject.org/"){: .center-image }
 
   * O projeto está registrado como uma organização não governamental, sem fins lucrativos;
   * O [protocolo](https://gitweb.torproject.org/torspec.git/) está definido publicamente em especificações técnicas nos repositórios do projeto;
@@ -55,7 +55,7 @@ Caso você esteja viajando por continentes ou países que apliquem censura ou moni
 Quem usa?
 ---------
 
-  ![Tor - Usuários](./tor-usuarios.png "https://www.youtube.com/watch?v=n6Wa9CoEGrc")
+  ![Tor - Usuários](./tor-usuarios.png "https://www.youtube.com/watch?v=n6Wa9CoEGrc"){: .center-image }
 
   * eu;
   * Famílias (preocupadas com a privacidade/segurança dos parentes);
@@ -110,11 +110,11 @@ Se você precisa acessar um _onion service_, em resumo, funciona assim:
 
   Cliente -> Bridge/Relay -> Relay -> ~ -> endereço.onion 
 
-  ![Tor - Globo](./tor-globo.png "https://cpiciber.codingrights.org/tor-onion/")
+  ![Tor - Globo](./tor-globo.png "https://cpiciber.codingrights.org/tor-onion/"){: .center-image }
 
 Cada salto que você dá para dentro da rede têm sua própria camada de criptografia. O último pulo, para a Internet (se necessário), não sabe de onde a solicitação originalmente veio.
 
-  ![Tor - Camadas](./tor-camadas.png "https://cpiciber.codingrights.org/tor-onion/")
+  ![Tor - Camadas](./tor-camadas.png "https://cpiciber.codingrights.org/tor-onion/"){: .center-image }
 
 ### Bridge (Apoio/Ponte)
 
@@ -144,7 +144,7 @@ Mencionada anteriormente, a forma mais simples é a utilização do [navegador](htt
 Utilizando
 ----------
 
-  ![Tor - Navegador](./tor-navegador.png "https://www.redeszone.net/2017/10/20/tor-browser-7-0-7/")
+  ![Tor - Navegador](./tor-navegador.png "https://www.redeszone.net/2017/10/20/tor-browser-7-0-7/"){: .center-image }
 
 O navegador é uma versão customizada do [Mozilla Firefox](https://www.mozilla.org/firefox/) e vem acompanhado do conjunto de bibliotecas e aplicações necessárias para você ter acesso a rede _Tor_ e também conseguir manter sua privacidade no acesso à Internet. Nenhum outro software adicional é necessário, e não é preciso que você instale o navegador; ele pode ser usado logo depois que você obtiver o pacote e descomprimir os arquivos numa pasta de sua preferência.
 
