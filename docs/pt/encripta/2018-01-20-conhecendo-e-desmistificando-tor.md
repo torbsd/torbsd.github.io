@@ -10,6 +10,8 @@ tags:		tor
 
 _Tor_ (O roteador cebola, do inglês **T**he **o**nion **r**outer), além de ser um [projeto](https://www.torproject.org/) de software livre e com código aberto, pode ser compreendido basicamente como 3 coisas: um protocolo, uma rede, ou um navegador.
 
+  ![Tor](/tor-logo.svg "https://www.torproject.org/")
+
   * O projeto está registrado como uma organização não governamental, sem fins lucrativos;
   * O [protocolo](https://gitweb.torproject.org/torspec.git/) está definido publicamente em especificações técnicas nos repositórios do projeto;
   * A rede provê à seus usuários a privacidade para acessar/publicar conteúdos/[serviços](https://www.torproject.org/docs/onion-services) diversos;
@@ -52,6 +54,8 @@ Caso você esteja viajando por continentes ou países que apliquem censura ou moni
 
 Quem usa?
 ---------
+
+  ![Tor - Usuários](/tor-usuarios.png "https://www.youtube.com/watch?v=n6Wa9CoEGrc")
 
   * eu;
   * Famílias (preocupadas com a privacidade/segurança dos parentes);
@@ -106,17 +110,25 @@ Se você precisa acessar um _onion service_, em resumo, funciona assim:
 
   Cliente -> Bridge/Relay -> Relay -> ~ -> endereço.onion 
 
-### Bridge
+  ![Tor - Globo](/tor-globo.png "https://cpiciber.codingrights.org/tor-onion/")
+
+  ![Tor - Camadas](/tor-camadas.png "https://cpiciber.codingrights.org/tor-onion/")
+
+### Bridge (Apoio/Ponte)
 
 Uma bridge funciona uma conexão de apoio/ponte para que você consiga realizar o primeiro salto para dentro da rede _Tor_; Bridges são utilizadas quando há uma censura excessiva ou filtros abusivos em sua conexão com a Internet.
 
 Muitas das bridges existentes fazem uso de [obfuscadores de tráfego](https://www.torproject.org/docs/pluggable-transports.html.en). Estes, por sua vez, auxiliam o mascaramento do tipo de tráfego que ocorre entre você e a bridge (seu primeiro salto para dentro da rede).
 
-### Relay
+Por desempenharem funções vitais na rede _Tor_, os endereços IP públicos de bridges não são publicados junto com outros endereços de servidores qeu operam apenas como relays. Entretanto, como toda a rede é aberta e o projeto trabalha da forma mais transparente possível, é possível tem acesso a alguns dos endereços IP e das assinaturas dos servidores bridge (pontes) através da [Base de Dados](https://bridges.torproject.org/) oficial.
+
+### Relay (Rebatedor/Repetidor/Refletor)
 
 Relay é a definição básica de um nó na rede _Tor_.
 
-Recebem nomes específicos quando estão operando em funções especiais; Bridge ou Nó de Saída.
+Algumas documentações referenciam o primeiro salto para dentro da rede como 'Relay de Entrada', 'Relay de Guarda', ou 'Relay Guardião'. Existe, ainda, um ciclo de vida que a rede respeita para eleição dos servidores que devem desempenhar esta função (não são quaisquer novos servidores que podem simplesmente se ligar a rede e operar como guardiões - para maiores detalhes a respeito deste ciclo de vida, uma publicação no blog oficial do projeto está disponível para leitura [aqui](https://blog.torproject.org/lifecycle-new-relay)).
+
+Recebem nomes específicos quando estão operando em funções especiais, como 'Bridge' ou 'Nó de Saída'.
 
 ### Nó de Saída
 
@@ -129,6 +141,8 @@ Mencionada anteriormente, a forma mais simples é a utilização do [navegador](htt
 
 Utilizando
 ----------
+
+  ![Tor - Navegador](/tor-navegador.png)
 
 O navegador é uma versão customizada do [Mozilla Firefox](https://www.mozilla.org/firefox/) e vem acompanhado do conjunto de bibliotecas e aplicações necessárias para você ter acesso a rede _Tor_ e também conseguir manter sua privacidade no acesso à Internet. Nenhum outro software adicional é necessário, e não é preciso que você instale o navegador; ele pode ser usado logo depois que você obtiver o pacote e descomprimir os arquivos numa pasta de sua preferência.
 
