@@ -10,7 +10,7 @@ tags:		tor
 
 _Tor_ (O roteador cebola, do inglês **T**he **o**nion **r**outer), além de ser um [projeto](https://www.torproject.org/) de software livre e com código aberto, pode ser compreendido basicamente como 3 coisas: um protocolo, uma rede, ou um navegador.
 
-  ![Tor](./tor-logo.svg "https://www.torproject.org/"){: .center-image }
+  ![Tor](./tor-logo.svg "https://www.torproject.org/"){:.center-image}
 
   * O projeto está registrado como uma organização não governamental, sem fins lucrativos;
   * O [protocolo](https://gitweb.torproject.org/torspec.git/) está definido publicamente em especificações técnicas nos repositórios do projeto;
