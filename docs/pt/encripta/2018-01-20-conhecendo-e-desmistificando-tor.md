@@ -6,8 +6,6 @@ category:	privacidade
 tags:		tor
 ---
 
-**RASCUNHO**
-
 _Tor_ (O roteador cebola, do inglês **T**he **o**nion **r**outer), além de ser um [projeto](https://www.torproject.org/) de software livre e com código aberto, pode ser compreendido basicamente como 3 coisas: um protocolo, uma rede, ou um navegador.
 
   ![Tor](./tor-logo.svg "https://www.torproject.org/")
@@ -104,11 +102,11 @@ Como funciona?
 
 Se você precisa acessar um servidor/serviço na Internet, em resumo, funciona assim:
 
-  Cliente -> Bridge/Relay -> Relay -> Nós de Saída -> Internet
+    Cliente -> Bridge/Relay -> Relay -> Nós de Saída -> Internet
 
 Se você precisa acessar um _onion service_, em resumo, funciona assim:
 
-  Cliente -> Bridge/Relay -> Relay -> ~ -> endereço.onion 
+    Cliente -> Bridge/Relay -> Relay -> ~ -> endereço.onion 
 
   ![Tor - Globo](./tor-globo.png "https://cpiciber.codingrights.org/tor-onion/")
 
@@ -160,6 +158,3 @@ Se você se interessou e quer ajudar, visite a página oficial do projeto, sobre s
 Caso necessite de guias em português para configuração de bridges e relays, visite o [repositório](https://github.com/torbsd/torbsd.github.io/tree/egypcio/docs/pt) do projeto _TorBSD_.
 
 Você pode, ainda, fazer uma [doação](https://www.torproject.org/donate/donate-button.html.en).
-
-**RASCUNHO**
-
