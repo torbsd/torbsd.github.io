@@ -6,34 +6,34 @@ category:	privacidade
 tags:		tor
 ---
 
-_Tor_ (O roteador cebola, do inglês **T**he **o**nion **r**outer), além de ser um [projeto](https://www.torproject.org/) de software livre e com código aberto, pode ser compreendido basicamente como 3 coisas: um protocolo, uma rede, ou um navegador.
+_Tor_ (O roteador cebola, do inglÃªs **T**he **o**nion **r**outer), alÃ©m de ser um [projeto](https://www.torproject.org/) de software livre e com cÃ³digo aberto, pode ser compreendido basicamente como 3 coisas: um protocolo, uma rede, ou um navegador.
 
   ![Tor](./tor-logo.svg "https://www.torproject.org/")
 
-  * O projeto está registrado como uma organização não governamental, sem fins lucrativos;
-  * O [protocolo](https://gitweb.torproject.org/torspec.git/) está definido publicamente em especificações técnicas nos repositórios do projeto;
-  * A rede provê à seus usuários a privacidade para acessar/publicar conteúdos/[serviços](https://www.torproject.org/docs/onion-services) diversos;
-  * O [navegador](https://www.torproject.org/download/download-easy.html.en) é a porta de entrada mais simples para se ter acesso a rede.
+  * O projeto estÃ¡ registrado como uma organizaÃ§Ã£o nÃ£o governamental, sem fins lucrativos;
+  * O [protocolo](https://gitweb.torproject.org/torspec.git/) estÃ¡ definido publicamente em especificaÃ§Ãµes tÃ©cnicas nos repositÃ³rios do projeto;
+  * A rede provÃª Ã  seus usuÃ¡rios a privacidade para acessar/publicar conteÃºdos/[serviÃ§os](https://www.torproject.org/docs/onion-services) diversos;
+  * O [navegador](https://www.torproject.org/download/download-easy.html.en) Ã© a porta de entrada mais simples para se ter acesso a rede.
 
-O que é, para que serve e quem usa Tor?
+O que Ã©, para que serve e quem usa Tor?
 =======================================
 
-O que é?
+O que Ã©?
 --------
 
-Por definição do próprio projeto, o termo _Tor_, pode ser definido como uma rede de servidores operados por voluntários que oferecem a seus usuários a possibilidade de permanecerem anônimos e seguros na Internet.
+Por definiÃ§Ã£o do prÃ³prio projeto, o termo _Tor_, pode ser definido como uma rede de servidores operados por voluntÃ¡rios que oferecem a seus usuÃ¡rios a possibilidade de permanecerem anÃ´nimos e seguros na Internet.
 
-Uma série de túneis virtuais são utilizados/criados entre a conexão originada pelos usuários e os servidores/serviços que eles desejam utilizar através da Internet, de forma a não comprometer a privacidade destes usuários. _Tor_ também age como uma importante ferramenta de combate a censura e filtros de informações que deveriam ser públicas em todo o globo. Além de oferecer a possibilidade de usuários acessarem serviços e conteúdos de forma anônima, ainda é possível publicar e servir conteúdos de forma anônima através dos chamados _"onion services"_ (antigamente conhecidos como _hidden services_). Todos os endereços dentro da rede _Tor_ são identificados por um sufixo `.onion` atrelado ao nome/hash do serviço que o usuário deseja acessar.
+Uma sÃ©rie de tÃºneis virtuais sÃ£o utilizados/criados entre a conexÃ£o originada pelos usuÃ¡rios e os servidores/serviÃ§os que eles desejam utilizar atravÃ©s da Internet, de forma a nÃ£o comprometer a privacidade destes usuÃ¡rios. _Tor_ tambÃ©m age como uma importante ferramenta de combate a censura e filtros de informaÃ§Ãµes que deveriam ser pÃºblicas em todo o globo. AlÃ©m de oferecer a possibilidade de usuÃ¡rios acessarem serviÃ§os e conteÃºdos de forma anÃ´nima, ainda Ã© possÃ­vel publicar e servir conteÃºdos de forma anÃ´nima atravÃ©s dos chamados _"onion services"_ (antigamente conhecidos como _hidden services_). Todos os endereÃ§os dentro da rede _Tor_ sÃ£o identificados por um sufixo `.onion` atrelado ao nome/hash do serviÃ§o que o usuÃ¡rio deseja acessar.
 
 Uma pequena cartilha disponibilizada pelo projeto pode ser acessada **[aqui](https://media.torproject.org/misc/2015-03-tor-brochure/tor-brochure-pt-BR.pdf)**.
 
-**O que _NÃO_ é?**
+**O que _NÃƒO_ Ã©?**
 
-> Praticamente toda a imagem estereotipada que _"Hollywood"_ criou e promoveu em seus filmes onde existiam quaisquer crimes e condutas ilícitas na Internet.
+> Praticamente toda a imagem estereotipada que _"Hollywood"_ criou e promoveu em seus filmes onde existiam quaisquer crimes e condutas ilÃ­citas na Internet.
 > 
-> Uma das maiores ignorâncias ligadas a rede, infelizmente, é essa conexão direta a uma criminalização de seus usuários (e/ou desenvolvedores).
+> Uma das maiores ignorÃ¢ncias ligadas a rede, infelizmente, Ã© essa conexÃ£o direta a uma criminalizaÃ§Ã£o de seus usuÃ¡rios (e/ou desenvolvedores).
 > 
-> É, sim, triste e vergonhoso saber que alguns casos existem; entretanto a execução de tais estúpidas ações pode ser realizada mesmo sem que a rede _Tor_ existisse.
+> Ã‰, sim, triste e vergonhoso saber que alguns casos existem; entretanto a execuÃ§Ã£o de tais estÃºpidas aÃ§Ãµes pode ser realizada mesmo sem que a rede _Tor_ existisse.
 > 
 > Reflita.
 
@@ -42,119 +42,119 @@ _Tor_ pode ser utilizado em sistemas operacionais Windows, em sistemas baseados 
 Para que serve?
 ---------------
 
-Utilizar _Tor_ te protege contra diferentes tipos de ataques ou monitoramentos indesejados; ambos relacionados a análise de tráfego. Esta análise pode servir, por exemplo, para identificar quem está se correspondendo com quem numa rede aberta/pública.
+Utilizar _Tor_ te protege contra diferentes tipos de ataques ou monitoramentos indesejados; ambos relacionados a anÃ¡lise de trÃ¡fego. Esta anÃ¡lise pode servir, por exemplo, para identificar quem estÃ¡ se correspondendo com quem numa rede aberta/pÃºblica.
 
-Diversos e diferentes sítios ou portais de comércio eletrônico podem identificar os comportamentos de internautas e, de maneira abusiva, alterar preços e enviar propagandas diferenciadas a seus visitantes (muitos podem, até, bloquear ou redirecionar visitantes para outros portais). Com ajuda do _Tor_ você pode prevenir que seus comportamentos sejam rastreados numa rede pública, ou até mesmo numa rede privada. 
+Diversos e diferentes sÃ­tios ou portais de comÃ©rcio eletrÃ´nico podem identificar os comportamentos de internautas e, de maneira abusiva, alterar preÃ§os e enviar propagandas diferenciadas a seus visitantes (muitos podem, atÃ©, bloquear ou redirecionar visitantes para outros portais). Com ajuda do _Tor_ vocÃª pode prevenir que seus comportamentos sejam rastreados numa rede pÃºblica, ou atÃ© mesmo numa rede privada. 
 
-Se você estiver viajando de férias e visitar sua conta de email pessoal através da rede de um hotel/motel/albergue, além de ser possível que pessoas mal intensionadas interceptem seu tráfego, é possível que você comece a receber mensagens indesejadas ou seja abordado nos corredores ou na recepção para ser questionado sobre promoções e outras situações peculiares.
+Se vocÃª estiver viajando de fÃ©rias e visitar sua conta de email pessoal atravÃ©s da rede de um hotel/motel/albergue, alÃ©m de ser possÃ­vel que pessoas mal intensionadas interceptem seu trÃ¡fego, Ã© possÃ­vel que vocÃª comece a receber mensagens indesejadas ou seja abordado nos corredores ou na recepÃ§Ã£o para ser questionado sobre promoÃ§Ãµes e outras situaÃ§Ãµes peculiares.
 
-Caso você esteja viajando por continentes ou países que apliquem censura ou monitoramentos excessivos em conteúdos disponíveis na Internet, pode ser que, sem o uso de _Tor_, você não possa sequer ter acesso a suas redes sociais preferidas! Você pode, ainda, ser impedido de ter acesso a seus portais de notícias preferidos ou aquele mensageiro instantâneo que tanto gosta. _Tor_ te ajuda a acessar suas redes sociais, ler suas notícias favoritas e poder manter contato com seus amigos/familiares. 
+Caso vocÃª esteja viajando por continentes ou paÃ­ses que apliquem censura ou monitoramentos excessivos em conteÃºdos disponÃ­veis na Internet, pode ser que, sem o uso de _Tor_, vocÃª nÃ£o possa sequer ter acesso a suas redes sociais preferidas! VocÃª pode, ainda, ser impedido de ter acesso a seus portais de notÃ­cias preferidos ou aquele mensageiro instantÃ¢neo que tanto gosta. _Tor_ te ajuda a acessar suas redes sociais, ler suas notÃ­cias favoritas e poder manter contato com seus amigos/familiares. 
 
 Quem usa?
 ---------
 
-  ![Tor - Usuários](./tor-usuarios.png "https://www.youtube.com/watch?v=n6Wa9CoEGrc")
+  ![Tor - UsuÃ¡rios](./tor-usuarios.png "https://www.youtube.com/watch?v=n6Wa9CoEGrc")
 
   * eu;
-  * Famílias (preocupadas com a privacidade/segurança dos parentes);
-  * Jornalistas e Repórteres;
+  * FamÃ­lias (preocupadas com a privacidade/seguranÃ§a dos parentes);
+  * Jornalistas e RepÃ³rteres;
   * Universidades ou Institutos de Tecnologia;
   * Ativistas e Ciberativistas;
   * Companhias de Pesquisa e Desenvolvimento;
-  * Organizações não Governamentais;
+  * OrganizaÃ§Ãµes nÃ£o Governamentais;
   * ...
 
 Porque eu deveria me preocupar em usar Tor?
 ===========================================
 
-Você ainda têm dúvidas de porque utilizar _Tor_? Provavelmente a mídia e todo um complô formado para denegrir a imagem da rede esteja impedindo que você sequer experimente e usufrua dos benefícios oferecidos (de forma aberta, gratuita e voluntária).
+VocÃª ainda tÃªm dÃºvidas de porque utilizar _Tor_? Provavelmente a mÃ­dia e todo um complÃ´ formado para denegrir a imagem da rede esteja impedindo que vocÃª sequer experimente e usufrua dos benefÃ­cios oferecidos (de forma aberta, gratuita e voluntÃ¡ria).
 
-Aqui, um caso compartilhado durante uma apresentação sobre _Tor_:
+Aqui, um caso compartilhado durante uma apresentaÃ§Ã£o sobre _Tor_:
 
->  Suponha que você, infelizmente, tenha um parente que esteja a sofrer com algum tipo de doença 
-> que lhe forçará a usar seu seguro de saúde e, talvez, se ausentar alguns dias do trabalho. Por algumas 
-> poucas vezes, enquanto você estava no trabalho (sem infringir nenhuma condição de acesso a Internet 
-> imposta por sua empresa), você pesquisou sobre como deveriam ser os procedimentos ou medicamentos para 
-> ajudar no tratamento de seu parente; você está apenas utilizando ferramentas de busca na web para obter 
-> algumas informações úteis e até mesmo vitais. Okay? Eis que, um belo dia, você chega no trabalho e 
-> descobre que será desligado da empresa! Mas porquê? Durante o processamento de um relatório interno realizado 
-> pelo departamento técnico, constatou-se que um dos funcionários estava com um parente doente e a empresa 
-> teria de custear alguns benefícios relacionados ao seguro de saúde; você é este funcionário! Este motivo 
-> você descobre só depois de já ter perdido seu emprego e estar, quem sabe, sobrevivendo "apenas" do seguro 
-> desemprego oferecido em seu país, ou região. Você não desrespeitou ou não saltou através de nenhuma das 
-> políticas impostas pela sua empresa. Você apenas acessou conteúdo público, disponível na Internet, e leu 
-> algumas páginas especializadas ou blogs. Agora? Realize a dor de cabeça e toda a perda de tempo e energia 
-> que você vai ter, lutando contra a empresa que te demitiu e o quanto que você terá de se dispor a faltar 
+>  Suponha que vocÃª, infelizmente, tenha um parente que esteja a sofrer com algum tipo de doenÃ§a 
+> que lhe forÃ§arÃ¡ a usar seu seguro de saÃºde e, talvez, se ausentar alguns dias do trabalho. Por algumas 
+> poucas vezes, enquanto vocÃª estava no trabalho (sem infringir nenhuma condiÃ§Ã£o de acesso a Internet 
+> imposta por sua empresa), vocÃª pesquisou sobre como deveriam ser os procedimentos ou medicamentos para 
+> ajudar no tratamento de seu parente; vocÃª estÃ¡ apenas utilizando ferramentas de busca na web para obter 
+> algumas informaÃ§Ãµes Ãºteis e atÃ© mesmo vitais. Okay? Eis que, um belo dia, vocÃª chega no trabalho e 
+> descobre que serÃ¡ desligado da empresa! Mas porquÃª? Durante o processamento de um relatÃ³rio interno realizado 
+> pelo departamento tÃ©cnico, constatou-se que um dos funcionÃ¡rios estava com um parente doente e a empresa 
+> teria de custear alguns benefÃ­cios relacionados ao seguro de saÃºde; vocÃª Ã© este funcionÃ¡rio! Este motivo 
+> vocÃª descobre sÃ³ depois de jÃ¡ ter perdido seu emprego e estar, quem sabe, sobrevivendo "apenas" do seguro 
+> desemprego oferecido em seu paÃ­s, ou regiÃ£o. VocÃª nÃ£o desrespeitou ou nÃ£o saltou atravÃ©s de nenhuma das 
+> polÃ­ticas impostas pela sua empresa. VocÃª apenas acessou conteÃºdo pÃºblico, disponÃ­vel na Internet, e leu 
+> algumas pÃ¡ginas especializadas ou blogs. Agora? Realize a dor de cabeÃ§a e toda a perda de tempo e energia 
+> que vocÃª vai ter, lutando contra a empresa que te demitiu e o quanto que vocÃª terÃ¡ de se dispor a faltar 
 > no acompanhamento de seu parente doente.
  
-Mesmo assim, você ainda está com dúvidas e teme por utilizar ferramentas que te levem a usufruir da rede? Não quer nem baixar e testar o navegador? Certo, aqui vai um outro caso:
+Mesmo assim, vocÃª ainda estÃ¡ com dÃºvidas e teme por utilizar ferramentas que te levem a usufruir da rede? NÃ£o quer nem baixar e testar o navegador? Certo, aqui vai um outro caso:
 
->  Refugiadx e lutando para conseguir axilo político, você, que é pai ou mãe de uma criança, quer 
-> MUITO entrar em contato com ela para dar notícias de que você está bem e que, se tudo continuar dando certo, 
-> em breve vocês poderão estar juntos outra vez e mudar de vida longe do país onde antes se encontravam 
-> (longe de guerras, conflitos e, quem sabe, carnificinas propiciadas por brigas religiosas). Com auxílio de _Tor_
-> vocês podem se comunicar de forma segura e anônima através da Internet.
+>  Refugiadx e lutando para conseguir axilo polÃ­tico, vocÃª, que Ã© pai ou mÃ£e de uma crianÃ§a, quer 
+> MUITO entrar em contato com ela para dar notÃ­cias de que vocÃª estÃ¡ bem e que, se tudo continuar dando certo, 
+> em breve vocÃªs poderÃ£o estar juntos outra vez e mudar de vida longe do paÃ­s onde antes se encontravam 
+> (longe de guerras, conflitos e, quem sabe, carnificinas propiciadas por brigas religiosas). Com auxÃ­lio de _Tor_
+> vocÃªs podem se comunicar de forma segura e anÃ´nima atravÃ©s da Internet.
 
-Continua com dúvidas ou está parecendo algo muito dubioso? Visite a [biblioteca](https://media.torproject.org/) de mídias do projeto.
+Continua com dÃºvidas ou estÃ¡ parecendo algo muito dubioso? Visite a [biblioteca](https://media.torproject.org/) de mÃ­dias do projeto.
 
 Como funciona?
 ==============
 
-Se você precisa acessar um servidor/serviço na Internet, em resumo, funciona assim:
+Se vocÃª precisa acessar um servidor/serviÃ§o na Internet, em resumo, funciona assim:
 
-    Cliente -> Bridge/Relay -> Relay -> Nós de Saída -> Internet
+    Cliente -> Bridge/Relay -> Relay -> NÃ³s de SaÃ­da -> Internet
 
-Se você precisa acessar um _onion service_, em resumo, funciona assim:
+Se vocÃª precisa acessar um _onion service_, em resumo, funciona assim:
 
-    Cliente -> Bridge/Relay -> Relay -> ~ -> endereço.onion 
+    Cliente -> Bridge/Relay -> Relay -> ~ -> endereÃ§o.onion 
 
   ![Tor - Globo](./tor-globo.png "https://cpiciber.codingrights.org/tor-onion/")
 
-Cada salto que você dá para dentro da rede têm sua própria camada de criptografia. O último pulo, para a Internet (se necessário), não sabe de onde a solicitação originalmente veio.
+Cada salto que vocÃª dÃ¡ para dentro da rede tÃªm sua prÃ³pria camada de criptografia. O Ãºltimo pulo, para a Internet (se necessÃ¡rio), nÃ£o sabe de onde a solicitaÃ§Ã£o originalmente veio.
 
   ![Tor - Camadas](./tor-camadas.png "https://cpiciber.codingrights.org/tor-onion/")
 
 ### Bridge (Apoio/Ponte)
 
-Uma bridge funciona uma conexão de apoio/ponte para que você consiga realizar o primeiro salto para dentro da rede _Tor_; Bridges são utilizadas quando há uma censura excessiva ou filtros abusivos em sua conexão com a Internet.
+Uma bridge funciona uma conexÃ£o de apoio/ponte para que vocÃª consiga realizar o primeiro salto para dentro da rede _Tor_; Bridges sÃ£o utilizadas quando hÃ¡ uma censura excessiva ou filtros abusivos em sua conexÃ£o com a Internet.
 
-Muitas das bridges existentes fazem uso de [obfuscadores de tráfego](https://www.torproject.org/docs/pluggable-transports.html.en). Estes, por sua vez, auxiliam o mascaramento do tipo de tráfego que ocorre entre você e a bridge (seu primeiro salto para dentro da rede).
+Muitas das bridges existentes fazem uso de [obfuscadores de trÃ¡fego](https://www.torproject.org/docs/pluggable-transports.html.en). Estes, por sua vez, auxiliam o mascaramento do tipo de trÃ¡fego que ocorre entre vocÃª e a bridge (seu primeiro salto para dentro da rede).
 
-Por desempenharem funções vitais na rede _Tor_, os endereços IP públicos de bridges não são publicados junto com outros endereços de servidores qeu operam apenas como relays. Entretanto, como toda a rede é aberta e o projeto trabalha da forma mais transparente possível, é possível tem acesso a alguns dos endereços IP e das assinaturas dos servidores bridge (pontes) através da [Base de Dados](https://bridges.torproject.org/) oficial.
+Por desempenharem funÃ§Ãµes vitais na rede _Tor_, os endereÃ§os IP pÃºblicos de bridges nÃ£o sÃ£o publicados junto com outros endereÃ§os de servidores qeu operam apenas como relays. Entretanto, como toda a rede Ã© aberta e o projeto trabalha da forma mais transparente possÃ­vel, Ã© possÃ­vel tem acesso a alguns dos endereÃ§os IP e das assinaturas dos servidores bridge (pontes) atravÃ©s da [Base de Dados](https://bridges.torproject.org/) oficial.
 
 ### Relay (Rebatedor/Repetidor/Refletor)
 
-Relay é a definição básica de um nó na rede _Tor_.
+Relay Ã© a definiÃ§Ã£o bÃ¡sica de um nÃ³ na rede _Tor_.
 
-Algumas documentações referenciam o primeiro salto para dentro da rede como 'Relay de Entrada', 'Relay de Guarda', ou 'Relay Guardião'. Existe, ainda, um ciclo de vida que a rede respeita para eleição dos servidores que devem desempenhar esta função (não são quaisquer novos servidores que podem simplesmente se ligar a rede e operar como guardiões - para maiores detalhes a respeito deste ciclo de vida, uma publicação no blog oficial do projeto está disponível para leitura [aqui](https://blog.torproject.org/lifecycle-new-relay)).
+Algumas documentaÃ§Ãµes referenciam o primeiro salto para dentro da rede como 'Relay de Entrada', 'Relay de Guarda', ou 'Relay GuardiÃ£o'. Existe, ainda, um ciclo de vida que a rede respeita para eleiÃ§Ã£o dos servidores que devem desempenhar esta funÃ§Ã£o (nÃ£o sÃ£o quaisquer novos servidores que podem simplesmente se ligar a rede e operar como guardiÃµes - para maiores detalhes a respeito deste ciclo de vida, uma publicaÃ§Ã£o no blog oficial do projeto estÃ¡ disponÃ­vel para leitura [aqui](https://blog.torproject.org/lifecycle-new-relay)).
 
-Recebem nomes específicos quando estão operando em funções especiais, como 'Bridge' ou 'Nó de Saída'.
+Recebem nomes especÃ­ficos quando estÃ£o operando em funÃ§Ãµes especiais, como 'Bridge' ou 'NÃ³ de SaÃ­da'.
 
-### Nó de Saída
+### NÃ³ de SaÃ­da
 
-São nós que permitem você sair da rede _Tor_ e chegar até sítios/portais/servidores/serviços hospedados na Internet.
+SÃ£o nÃ³s que permitem vocÃª sair da rede _Tor_ e chegar atÃ© sÃ­tios/portais/servidores/serviÃ§os hospedados na Internet.
 
 Como utilizar? Como colaborar?
 ==============================
 
-Mencionada anteriormente, a forma mais simples é a utilização do [navegador](https://www.torproject.org/download/download-easy.html.en) disponibilizado pelo projeto, o **_Tor_ Browser**. Esta é, sem dúvida, a forma mais recomendada para ter seu primeiro contato com _Tor_.
+Mencionada anteriormente, a forma mais simples Ã© a utilizaÃ§Ã£o do [navegador](https://www.torproject.org/download/download-easy.html.en) disponibilizado pelo projeto, o **_Tor_ Browser**. Esta Ã©, sem dÃºvida, a forma mais recomendada para ter seu primeiro contato com _Tor_.
 
 Utilizando
 ----------
 
   ![Tor - Navegador](./tor-navegador.png "https://www.redeszone.net/2017/10/20/tor-browser-7-0-7/")
 
-O navegador é uma versão customizada do [Mozilla Firefox](https://www.mozilla.org/firefox/) e vem acompanhado do conjunto de bibliotecas e aplicações necessárias para você ter acesso a rede _Tor_ e também conseguir manter sua privacidade no acesso à Internet. Nenhum outro software adicional é necessário, e não é preciso que você instale o navegador; ele pode ser usado logo depois que você obtiver o pacote e descomprimir os arquivos numa pasta de sua preferência.
+O navegador Ã© uma versÃ£o customizada do [Mozilla Firefox](https://www.mozilla.org/firefox/) e vem acompanhado do conjunto de bibliotecas e aplicaÃ§Ãµes necessÃ¡rias para vocÃª ter acesso a rede _Tor_ e tambÃ©m conseguir manter sua privacidade no acesso Ã  Internet. Nenhum outro software adicional Ã© necessÃ¡rio, e nÃ£o Ã© preciso que vocÃª instale o navegador; ele pode ser usado logo depois que vocÃª obtiver o pacote e descomprimir os arquivos numa pasta de sua preferÃªncia.
 
-Para usuários do sistema operacional Android, é possível usar o **Orbot** em conjunto com o **Orfox**! Ambos os aplicativos são gratuitos e de código aberto (assinados pelo [The Guardian Project](https://guardianproject.info/)).
+Para usuÃ¡rios do sistema operacional Android, Ã© possÃ­vel usar o **Orbot** em conjunto com o **Orfox**! Ambos os aplicativos sÃ£o gratuitos e de cÃ³digo aberto (assinados pelo [The Guardian Project](https://guardianproject.info/)).
 
-Alternativas para uso do _Tor_ estão descritas no [sítio](https://www.torproject.org/docs/installguide.html.en) oficial e em páginas da [wiki](https://trac.torproject.org/projects/tor/wiki/WikiStart#InstallingandConfiguringTor) do projeto.
+Alternativas para uso do _Tor_ estÃ£o descritas no [sÃ­tio](https://www.torproject.org/docs/installguide.html.en) oficial e em pÃ¡ginas da [wiki](https://trac.torproject.org/projects/tor/wiki/WikiStart#InstallingandConfiguringTor) do projeto.
 
 Colaborando
 -----------
 
-Se você se interessou e quer ajudar, visite a página oficial do projeto, sobre ser [voluntário](https://www.torproject.org/getinvolved/volunteer.html.en).
+Se vocÃª se interessou e quer ajudar, visite a pÃ¡gina oficial do projeto, sobre ser [voluntÃ¡rio](https://www.torproject.org/getinvolved/volunteer.html.en).
 
-Caso necessite de guias em português para configuração de bridges e relays, visite o [repositório](https://github.com/torbsd/torbsd.github.io/tree/egypcio/docs/pt) do projeto _TorBSD_.
+Caso necessite de guias em portuguÃªs para configuraÃ§Ã£o de bridges e relays, visite o [repositÃ³rio](https://github.com/torbsd/torbsd.github.io/tree/egypcio/docs/pt) do projeto _TorBSD_.
 
-Você pode, ainda, fazer uma [doação](https://www.torproject.org/donate/donate-button.html.en).
+VocÃª pode, ainda, fazer uma [doaÃ§Ã£o](https://www.torproject.org/donate/donate-button.html.en).
