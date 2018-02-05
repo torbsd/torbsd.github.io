@@ -66,9 +66,9 @@ These are the basic steps to configure a Tor relay with OpenBSD, based on the de
 
 7. Edit */etc/tor/torrc* appropriately
 
-8. Add the line tor_flags="-f /etc/tor/torrc" in the /etc/rc.conf.local file
+8. Enable tor with rcctl enable tor
 
-9. Start Tor with /etc/rc.d/tor start
+9. Start Tor with rcctl start tor
 
 10. Watch the Tor log with "tail -f /var/log/tor/notices.log"
 
@@ -92,13 +92,13 @@ Log
 
 ### Tor on Startup ###
 
-$ cat /etc/rc.conf.local
+$ rcctl get tor    
+> tor_class=tor
+> tor_flags=
+> tor_rtable=0
+> tor_timeout=60
+> tor_user=root
 
->tor_flags="-f /etc/tor/torrc"
-
->ntpd_flags="-s"
-
->sndiod_flags=NO
 
 /etc/sysctl.conf
 
