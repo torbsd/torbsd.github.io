@@ -98,7 +98,7 @@ $ tail -n20f /var/log/daemon
 
 [OpenBSD]: http://www.openbsd.org "OpenBSD Project"
 [FAQ]: http://www.openbsd.org/faq/index.html "OpenBSD FAQ"
-[manual pages]: http://www.openbsd.org/cgi-bin/man.cgi "OpenBSD Manual Pages"
+[manual pages]: http://man.openbsd.org "OpenBSD manual pages"
 [recommended method]: http://www.openbsd.org/faq/faq15.html#Intro "The OpenBSD packages and ports system"
 [pkg_add(1)]: http://www.openbsd.org/faq/faq15.html#PkgMgmt "pkg_add system"
 [ports]: http://www.openbsd.org/faq/faq15.html#Ports "ports system"
