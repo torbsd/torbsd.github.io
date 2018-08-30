@@ -96,12 +96,6 @@ $ doas rcctl start tor
 $ tail -n20f /var/log/daemon
 ```
 
-## Future ##
-
-### Why To Use Ports as Opposed to Packages ###
-
-OpenBSD's pkg_add system is easy to use and smooth in operation.
-
 [OpenBSD]: http://www.openbsd.org "OpenBSD Project"
 [FAQ]: http://www.openbsd.org/faq/index.html "OpenBSD FAQ"
 [manual pages]: http://www.openbsd.org/cgi-bin/man.cgi "OpenBSD Manual Pages"
