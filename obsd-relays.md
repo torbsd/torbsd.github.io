@@ -96,26 +96,6 @@ $ doas rcctl start tor
 $ tail -n20f /var/log/daemon
 ```
 
-## Some Additional Configuration Considerations & Options ##
-
-Installing OpenBSD
-
-System Configuration
-
-RAM-based disks such as tmpfs or are useful for avoiding writes to the hard disk, which limits residual data after reboots and can increase the longevity of sensitive disk media, particularly compact flash cards.
-
-#### Layout of Tor Files on OpenBSD ###
-
-The Tor config file file is located in /etc/tor/torrc.
-
-By default, Tor logs to the daemon facility which ends up in /var/log/daemon.
-
-### Encrypting Swap ###
-
-By default, OpenBSD enables encrypted swap in /etc/sysctl.conf, so no changes are necessary:
-
-`#vm.swapencrypt.enable=0        # 0=Do not encrypt pages that go to swap`
-
 ## Future ##
 
 ### Why To Use Ports as Opposed to Packages ###
