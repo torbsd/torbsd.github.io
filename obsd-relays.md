@@ -20,7 +20,7 @@ With its default install, OpenBSD is not a high-bandwidth relay due to its secur
 
 For installing applications, OpenBSD's [recommended method] is the [pkg_add(1)] system, as opposed to using ports build from source. pkg_add uses pre-compiled binary files with set options. Rarely should a user have an issue with the defaults. There are cases in which a more experienced OpenBSD user would opt for the ports system.
 
-This guide is based on OpenBSD 5.7, which was released on May 1, 2015.
+This guide is based on OpenBSD 6.3, which was released on April 15, 2018.
 
 ### Syntax ###
 
@@ -36,19 +36,21 @@ OpenBSD's -STABLE branch is released every six months. The -CURRENT branch, in t
 
 OpenBSD's [pkg_add] system is reliable and errors are rare. For most users, the [ports] system is not recommended. However, it is important to note that OpenBSD does not include the alpha or unstable versions of Tor in its packages. In one case, OpenBSD did use the alpha version as its default package due to a significant Tor vulnerability.
 
-## The Quick and Short Version ##
+## Installation and configuration ##
 
-These are the basic steps to configure a Tor relay with OpenBSD, based on the default install. This will create a relay. For more detailed instructions and for additional tips on securing and optimizing the relay
+These are the basic steps to create a new Tor relay with OpenBSD, based on the default install.
 
-1. Install OpenBSD, then reboot
+1. Install OpenBSD and reboot
 
-2. Add the following section to */etc/login.conf* file:
+2. By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised. Add the following section to the */etc/login.conf* file:
 
 >`tor:\`
+
 >>`:openfiles-max=8192:\`
+
 >>`:tc=daemon:`
 
-3. Increase the kernel limit on maximum files:
+3. And increase the kernel maximum number of files limit:
 
 >$ sysctl kern.maxfiles=20000
 
@@ -60,17 +62,27 @@ These are the basic steps to configure a Tor relay with OpenBSD, based on the de
 
 >$ pkg_add tor
 
-6. Copy the torrc.sample file to torrc:
+6. Edit */etc/tor/torrc* appropriately. Settings you definitely want to take a look at are:
+* SOCKSPort
+* ORPort
+* Nickname
+* RelayBandwidthRate
+* RelayBandwidthBurst
+* ContactInfo
+* DirPort
+* ExitRelay
 
->$
+7. Start Tor automatically after a reboot:
 
-7. Edit */etc/tor/torrc* appropriately
+>$ doas rcctl enable tor
 
-8. Add the line tor_flags="-f /etc/tor/torrc" in the /etc/rc.conf.local file
+8. Start Tor now:
 
-9. Start Tor with /etc/rc.d/tor start
+>$ doas rcctl start tor
 
-10. Watch the Tor log with "tail -f /var/log/tor/notices.log"
+9. And at last, watch the Tor log for anything special:
+
+>$ tail -n20f /var/log/daemon
 
 ## Some Additional Configuration Considerations & Options ##
 
@@ -82,37 +94,9 @@ RAM-based disks such as tmpfs or are useful for avoiding writes to the hard disk
 
 #### Layout of Tor Files on OpenBSD ###
 
-The torrc file is located in /etc/tor/torrc.
+The Tor config file file is located in /etc/tor/torrc.
 
-The sample file is in /usr/local/share/examples/tor/torrc.sample
-
-Log
-
-/var/log/tor/notices.log
-
-### Tor on Startup ###
-
-$ cat /etc/rc.conf.local
-
->tor_flags="-f /etc/tor/torrc"
-
->ntpd_flags="-s"
-
->sndiod_flags=NO
-
-/etc/sysctl.conf
-
-kern.maxfiles=20000 default is 7030
-
-/etc/login.conf
-
-By default, OpenBSD maintains limits for kernel functions with an eye on security. For higher-bandwidth on an array of kernel functions. One in particular that will significantly throttle a Tor relay's operation is the number of open files allowed. This raises the number of open files for the Tor daemon:
-
-`tor:\`
-
->`:openfiles-max=8192:\`
-
->`:tc=daemon:`
+By default, Tor logs to the daemon facility which ends up in /var/log/daemon.
 
 ### Encrypting Swap ###
 
