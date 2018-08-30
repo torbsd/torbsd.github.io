@@ -78,15 +78,15 @@ $ pkg_add tor
 * DirPort
 * ExitRelay
 
-7. Start Tor automatically after a reboot:
+7. Enable configuration backup and change notifications to root. Add the following to ` /etc/changelist`:
+```
+/etc/tor/torrc
+```
+
+8. Start Tor automatically after a reboot and start it now:
 
 ```shell
 $ doas rcctl enable tor
-```
-
-8. Start Tor now:
-
-```shell
 $ doas rcctl start tor
 ```
 
