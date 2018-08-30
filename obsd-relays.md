@@ -42,7 +42,7 @@ These are the basic steps to create a new Tor relay with OpenBSD, based on the d
 
 1. Install OpenBSD and reboot
 
-2. By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised. Add the following section to `/etc/login.conf`:
+2. By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised. Append the following section to `/etc/login.conf`:
 
 ```
 tor:\
@@ -56,7 +56,7 @@ tor:\
 $ sysctl kern.maxfiles=20000
 ```
 
-4. And make this change persistent so that it is in effect after a reboot by adding the following to `/etc/sysctl.conf`:
+4. And make this change persistent so that it is in effect after a reboot by appending the following to `/etc/sysctl.conf`:
 
 ```
 kern.maxfiles=20000
@@ -78,7 +78,7 @@ $ pkg_add tor
 * DirPort
 * ExitRelay
 
-7. Enable configuration backup and change notifications to root. Add the following to ` /etc/changelist`:
+7. Enable configuration backup and change notifications to root. Append the following to ` /etc/changelist`:
 ```
 /etc/tor/torrc
 ```
