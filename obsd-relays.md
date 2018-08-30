@@ -50,13 +50,13 @@ tor:\
 	:tc=daemon:
 ```
 
-3. Increase the kernel maximum number of files limit:
+3. Increase the kernel maximum number of files:
 
 ```shell
 $ sysctl kern.maxfiles=20000
 ```
 
-4. To make that sysctl change remains after rebooting, add the following to `/etc/sysctl.conf`:
+4. And make this change persistent so that it is in effect after a reboot by adding the following to `/etc/sysctl.conf`:
 
 ```
 kern.maxfiles=20000
