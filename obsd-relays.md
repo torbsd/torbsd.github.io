@@ -42,27 +42,33 @@ These are the basic steps to create a new Tor relay with OpenBSD, based on the d
 
 1. Install OpenBSD and reboot
 
-2. By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised. Add the following section to the */etc/login.conf* file:
+2. By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised. Add the following section to `/etc/login.conf`:
 
->`tor:\`
+```
+tor:\
+	:openfiles-max=8192:\
+	:tc=daemon:
+```
 
->>`:openfiles-max=8192:\`
+3. Increase the kernel maximum number of files limit:
 
->>`:tc=daemon:`
+```shell
+$ sysctl kern.maxfiles=20000
+```
 
-3. And increase the kernel maximum number of files limit:
+4. To make that sysctl change remains after rebooting, add the following to `/etc/sysctl.conf`:
 
->$ sysctl kern.maxfiles=20000
-
-4. To make that sysctl change remains after rebooting, add the following to the */etc/sysctl.conf* file:
-
->>kern.maxfiles=20000
+```
+kern.maxfiles=20000
+```
 
 5. Install Tor:
 
->$ pkg_add tor
+```shell
+$ pkg_add tor
+```
 
-6. Edit */etc/tor/torrc* appropriately. Settings you definitely want to take a look at are:
+6. Edit `/etc/tor/torrc` appropriately. Settings you definitely want to take a look at are:
 * SOCKSPort
 * ORPort
 * Nickname
@@ -74,15 +80,21 @@ These are the basic steps to create a new Tor relay with OpenBSD, based on the d
 
 7. Start Tor automatically after a reboot:
 
->$ doas rcctl enable tor
+```shell
+$ doas rcctl enable tor
+```
 
 8. Start Tor now:
 
->$ doas rcctl start tor
+```shell
+$ doas rcctl start tor
+```
 
 9. And at last, watch the Tor log for anything special:
 
->$ tail -n20f /var/log/daemon
+```shell
+$ tail -n20f /var/log/daemon
+```
 
 ## Some Additional Configuration Considerations & Options ##
 
