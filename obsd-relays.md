@@ -26,9 +26,9 @@ This guide is based on OpenBSD 6.3, which was released on April 15, 2018.
 
 Refer to the [Documentation Style Guide](doc-guide.html) for information about syntax in this document.
 
-### OpenBSD Documentation ###
+### OpenBSD Documentation and Tor Relay Guide ###
 
-OpenBSD documentation, both its [FAQ] and [manual pages], are comprehensive and accurate. The vast majority of questions faced by a user are answered there. The manual pages are also available directly on an OpenBSD system.
+OpenBSD documentation, both its [FAQ] and [manual pages], are comprehensive and accurate. The vast majority of questions faced by a user are answered there. The manual pages are also available directly on an OpenBSD system. Additionally make sure to read the official [Tor Relay Guide].
 
 ### Some Preliminary Issues: OpenBSD -STABLE -CURRENT or snapshots? Ports or Packages? ###
 
@@ -102,5 +102,6 @@ $ tail -n20f /var/log/daemon
 [recommended method]: http://www.openbsd.org/faq/faq15.html#Intro "The OpenBSD packages and ports system"
 [pkg_add(1)]: http://www.openbsd.org/faq/faq15.html#PkgMgmt "pkg_add system"
 [ports]: http://www.openbsd.org/faq/faq15.html#Ports "ports system"
+[Tor Relay Guide]:https://trac.torproject.org/projects/tor/wiki/TorRelayGuide
 
 {{footer.md}}
