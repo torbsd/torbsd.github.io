@@ -40,35 +40,34 @@ OpenBSD's [pkg_add] system is reliable and errors are rare. For most users, the 
 
 These are the basic steps to create a new Tor relay with OpenBSD, based on the default install.
 
-1. Install OpenBSD and reboot
-
-2. By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised. Append the following section to `/etc/login.conf`:
+1. By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised. Append the following section to `/etc/login.conf`:
 
 ```
 tor:\
-	:openfiles-max=8192:\
+	:openfiles-max=13500:\
 	:tc=daemon:
 ```
 
-3. Increase the kernel maximum number of files:
+2. OpenBSD stores a kernel-level file descriptor limit in the sysctl variable
+kern.maxfiles. Increase it from the default of 7,030 to 16,000:
 
 ```shell
-$ sysctl kern.maxfiles=20000
+$ sysctl kern.maxfiles=16000
 ```
 
-4. And make this change persistent so that it is in effect after a reboot by appending the following to `/etc/sysctl.conf`:
+3. And make this change persistent so that it is in effect after a reboot by appending the following to `/etc/sysctl.conf`:
 
 ```
-kern.maxfiles=20000
+kern.maxfiles=16000
 ```
 
-5. Install Tor:
+4. Install Tor:
 
 ```shell
 $ pkg_add tor
 ```
 
-6. Edit `/etc/tor/torrc` appropriately. Settings you definitely want to take a look at are:
+5. Edit `/etc/tor/torrc` appropriately. Settings you definitely want to take a look at are:
 * SOCKSPort
 * ORPort
 * Nickname
@@ -78,19 +77,19 @@ $ pkg_add tor
 * DirPort
 * ExitRelay
 
-7. Enable configuration backup and change notifications to root. Append the following to ` /etc/changelist`:
+6. Enable configuration backup and change notifications to root. Append the following to ` /etc/changelist`:
 ```
 /etc/tor/torrc
 ```
 
-8. Start Tor automatically after a reboot and start it now:
+7. Start Tor automatically after a reboot and start it now:
 
 ```shell
 $ doas rcctl enable tor
 $ doas rcctl start tor
 ```
 
-9. And at last, watch the Tor log for anything special:
+8. And at last, watch the Tor log for anything special:
 
 ```shell
 $ tail -n20f /var/log/daemon
