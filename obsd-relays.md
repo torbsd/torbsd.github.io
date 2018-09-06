@@ -20,15 +20,15 @@ With its default install, OpenBSD is not a high-bandwidth relay due to its secur
 
 For installing applications, OpenBSD's [recommended method] is the [pkg_add(1)] system, as opposed to using ports build from source. pkg_add uses pre-compiled binary files with set options. Rarely should a user have an issue with the defaults. There are cases in which a more experienced OpenBSD user would opt for the ports system.
 
-This guide is based on OpenBSD 5.7, which was released on May 1, 2015.
+This guide is based on OpenBSD 6.3, which was released on April 15, 2018.
 
 ### Syntax ###
 
 Refer to the [Documentation Style Guide](doc-guide.html) for information about syntax in this document.
 
-### OpenBSD Documentation ###
+### OpenBSD Documentation and Tor Relay Guide ###
 
-OpenBSD documentation, both its [FAQ] and [manual pages], are comprehensive and accurate. The vast majority of questions faced by a user are answered there. The manual pages are also available directly on an OpenBSD system.
+OpenBSD documentation, both its [FAQ] and [manual pages], are comprehensive and accurate. The vast majority of questions faced by a user are answered there. The manual pages are also available directly on an OpenBSD system. Additionally make sure to read the official [Tor Relay Guide].
 
 ### Some Preliminary Issues: OpenBSD -STABLE -CURRENT or snapshots? Ports or Packages? ###
 
@@ -36,101 +36,71 @@ OpenBSD's -STABLE branch is released every six months. The -CURRENT branch, in t
 
 OpenBSD's [pkg_add] system is reliable and errors are rare. For most users, the [ports] system is not recommended. However, it is important to note that OpenBSD does not include the alpha or unstable versions of Tor in its packages. In one case, OpenBSD did use the alpha version as its default package due to a significant Tor vulnerability.
 
-## The Quick and Short Version ##
+## Installation and configuration ##
 
-These are the basic steps to configure a Tor relay with OpenBSD, based on the default install. This will create a relay. For more detailed instructions and for additional tips on securing and optimizing the relay
+These are the basic steps to create a new Tor relay with OpenBSD, based on the default install.
 
-1. Install OpenBSD, then reboot
+1. By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised. Append the following section to `/etc/login.conf`:
 
-2. Add the following section to */etc/login.conf* file:
+```
+tor:\
+	:openfiles-max=13500:\
+	:tc=daemon:
+```
 
->`tor:\`
->>`:openfiles-max=8192:\`
->>`:tc=daemon:`
+2. OpenBSD stores a kernel-level file descriptor limit in the sysctl variable
+kern.maxfiles. Increase it from the default of 7,030 to 16,000:
 
-3. Increase the kernel limit on maximum files:
+```shell
+$ sysctl kern.maxfiles=16000
+```
 
->$ sysctl kern.maxfiles=20000
+3. And make this change persistent so that it is in effect after a reboot by appending the following to `/etc/sysctl.conf`:
 
-4. To make that sysctl change remains after rebooting, add the following to the */etc/sysctl.conf* file:
+```
+kern.maxfiles=16000
+```
 
->>kern.maxfiles=20000
+4. Install Tor:
 
-5. Install Tor:
+```shell
+$ pkg_add tor
+```
 
->$ pkg_add tor
+5. Edit `/etc/tor/torrc` appropriately. Settings you definitely want to take a look at are:
+* SOCKSPort
+* ORPort
+* Nickname
+* RelayBandwidthRate
+* RelayBandwidthBurst
+* ContactInfo
+* DirPort
+* ExitRelay
 
-6. Copy the torrc.sample file to torrc:
+6. Enable configuration backup and change notifications to root. Append the following to ` /etc/changelist`:
+```
+/etc/tor/torrc
+```
 
->$
+7. Start Tor automatically after a reboot and start it now:
 
-7. Edit */etc/tor/torrc* appropriately
+```shell
+$ doas rcctl enable tor
+$ doas rcctl start tor
+```
 
-8. Add the line tor_flags="-f /etc/tor/torrc" in the /etc/rc.conf.local file
+8. And at last, watch the Tor log for anything special:
 
-9. Start Tor with /etc/rc.d/tor start
-
-10. Watch the Tor log with "tail -f /var/log/tor/notices.log"
-
-## Some Additional Configuration Considerations & Options ##
-
-Installing OpenBSD
-
-System Configuration
-
-RAM-based disks such as tmpfs or are useful for avoiding writes to the hard disk, which limits residual data after reboots and can increase the longevity of sensitive disk media, particularly compact flash cards.
-
-#### Layout of Tor Files on OpenBSD ###
-
-The torrc file is located in /etc/tor/torrc.
-
-The sample file is in /usr/local/share/examples/tor/torrc.sample
-
-Log
-
-/var/log/tor/notices.log
-
-### Tor on Startup ###
-
-$ cat /etc/rc.conf.local
-
->tor_flags="-f /etc/tor/torrc"
-
->ntpd_flags="-s"
-
->sndiod_flags=NO
-
-/etc/sysctl.conf
-
-kern.maxfiles=20000 default is 7030
-
-/etc/login.conf
-
-By default, OpenBSD maintains limits for kernel functions with an eye on security. For higher-bandwidth on an array of kernel functions. One in particular that will significantly throttle a Tor relay's operation is the number of open files allowed. This raises the number of open files for the Tor daemon:
-
-`tor:\`
-
->`:openfiles-max=8192:\`
-
->`:tc=daemon:`
-
-### Encrypting Swap ###
-
-By default, OpenBSD enables encrypted swap in /etc/sysctl.conf, so no changes are necessary:
-
-`#vm.swapencrypt.enable=0        # 0=Do not encrypt pages that go to swap`
-
-## Future ##
-
-### Why To Use Ports as Opposed to Packages ###
-
-OpenBSD's pkg_add system is easy to use and smooth in operation.
+```shell
+$ tail -n20f /var/log/daemon
+```
 
 [OpenBSD]: http://www.openbsd.org "OpenBSD Project"
 [FAQ]: http://www.openbsd.org/faq/index.html "OpenBSD FAQ"
-[manual pages]: http://www.openbsd.org/cgi-bin/man.cgi "OpenBSD Manual Pages"
+[manual pages]: http://man.openbsd.org "OpenBSD manual pages"
 [recommended method]: http://www.openbsd.org/faq/faq15.html#Intro "The OpenBSD packages and ports system"
 [pkg_add(1)]: http://www.openbsd.org/faq/faq15.html#PkgMgmt "pkg_add system"
 [ports]: http://www.openbsd.org/faq/faq15.html#Ports "ports system"
+[Tor Relay Guide]:https://trac.torproject.org/projects/tor/wiki/TorRelayGuide
 
 {{footer.md}}
